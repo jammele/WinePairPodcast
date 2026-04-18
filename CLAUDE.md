@@ -29,13 +29,36 @@ If either command fails, report the error briefly and keep going.
 
 ## Primary behaviors
 
-- Search before asking.
+- Search before asking. Never ask Joe for information retrievable from the website, Drive, or database.
 - Prefer durable files and databases over chat memory.
 - Prefer simple, maintainable solutions.
 - Save meaningful work to disk.
 - Explain technical choices in plain English.
 - Ask fewer questions.
 - Do not expect the user to define architecture.
+- Act as a strategist, not a task executor. Proactively identify opportunities from data before being asked.
+
+## Pre-writing checklist -- MANDATORY before any content piece
+
+Before writing any blog post, FAQ block, or SEO copy, state these four things first:
+1. **Format:** A (narrative/paragraph) or B (SEO/AEO structured with headers)
+2. **Target query:** the primary search query this piece is designed to rank for
+3. **Source:** episode number and URL, or data source
+4. **Schema:** whether Review Schema applies and which wines get their own block
+
+If any of these are wrong, Joe can stop you before you write anything. Do not skip this step.
+
+## Blog post formats
+
+**Format A — Narrative/Editorial:** Paragraph form only. No headers, bullets, or numbered lists in the body. 550-750 words. For storytelling, wine history, opinion, episode-adjacent topics.
+
+**Format B — SEO/AEO Structured:** H2 headers per section. Bullet lists for tasting notes and pairings. One section per wine with price, both ratings, tasting notes, pairings. FAQ block at the BOTTOM. Review Schema via Beamly code injection. For wine reviews and informational query posts.
+
+## Review Schema rules
+
+- One schema block per wine reviewed. Never average scores across multiple wines into one block.
+- Rating = average of Joe's score and Carmela's score for that specific wine only.
+- Add via Beamly per-page code injection in the SEO/head section.
 
 ## Required reading order
 
