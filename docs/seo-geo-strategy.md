@@ -43,7 +43,7 @@ Everything in this strategy builds on that model. The goal is: more entry points
 Blog posts fix this. Each post for a high-traffic wine review:
 - Leads with the verdict and ratings
 - Includes key tasting notes in plain language
-- Has a structured FAQ block at the top (for AEO — AI engine citation)
+- Has a structured FAQ block at the bottom (for AEO — AI engines crawl the full page; bottom placement avoids looking machine-generated to human visitors)
 - Links to the episode for the full tasting
 - Gets Review Schema markup (see Technical section below)
 
