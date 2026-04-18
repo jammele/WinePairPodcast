@@ -1,0 +1,10 @@
+node_modules/
+google_credentials.json
+google_token.json
+db/
+source_cache/
+outputs/drafts/
+*.db
+*.db-shm
+*.db-wal
+null
