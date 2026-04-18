@@ -97,16 +97,16 @@ Pillar #1 ("How to Spot a Trustworthy Wine Podcast") targets a query no one sear
 
 Before scheduling any episode, cross-reference with GSC high-impression zero-click topics. These are the topics where the site is already showing up in search but has no episode to send people to:
 
-| Topic | GSC Impressions | Why It Fits |
-|---|---|---|
-| **2 Buck Chuck / Charles Shaw** | 1,331+ | Perfect show format; just dropped back to $1.99 in CA; natural affordable wine anchor |
-| **Pinotage** | 1,722 | Polarizing wine (coffee/smoke notes), high curiosity, no current episode |
-| **Grenache Blanc** | 817 | White grenache queries also showing up; accessible price |
-| **Orvieto** | 734 | Italian white, accessible, underknown |
-| **Verdicchio** | 711 | Italian white, distinct style, no current episode |
-| **Txakoli** | 740 | Already in data, unusual grape, high curiosity |
+| Topic | GSC Impressions | Status | Action Needed |
+|---|---|---|---|
+| **2 Buck Chuck / Charles Shaw** | 1,331+ | EP116 + EP140 already exist | Blog post (not a new episode) |
+| **Pinotage** | 1,722 | EP111 already exists | Blog post (not a new episode) |
+| **Grenache Blanc** | 817 | No episode found | New episode candidate |
+| **Orvieto** | 734 | No episode found | New episode candidate |
+| **Verdicchio** | 711 | No episode found | New episode candidate |
+| **Txakoli** | 740 | EP120 exists | Blog post candidate |
 
-**Highest priority:** 2 Buck Chuck. Directly anchors the affordable wine strategy. 1,331+ impressions waiting. Cultural awareness is high. Price just dropped — news hook.
+**Key finding (2026-04-18):** Two Buck Chuck and Pinotage already have episodes. Priority action is writing blog posts for them, not recording new content. EP116 "Wallet Friendly Wine Reviews: Two Buck Chuck and More" and EP140 "Two Buck Chuck Sauvignon Blanc Challenge" give strong material for a combined blog post targeting the full 2 Buck Chuck query cluster.
 
 ---
 
@@ -193,20 +193,21 @@ All content can be written with Claude Code's help. Bottleneck is Joe's review a
 | Day | Task | Type | Primary Query Target |
 |---|---|---|---|
 | Apr 25–26 | Meiomi blog post | Blog post | "meiomi wine" (3,568 impr) |
-| Apr 26–28 | Trader Joe's wine guide | New page | "best trader joe's wine," TJ platinum reserve, 2 buck chuck |
-| Apr 28–30 | Find Similar Wines expansion | Page update | "wines similar to merlot/malbec/chardonnay" |
-| Apr 30–May 1 | Pillar #1 rewrite | Page update | "honest wine reviews," "unbiased wine podcast" |
+| Apr 26–28 | Two Buck Chuck blog post (draws from EP116 + EP140) | Blog post | "2 buck chuck," "charles shaw" (1,331+ impr, 0 clicks) |
+| Apr 28–30 | Pinotage blog post (draws from EP111) | Blog post | "pinotage" (1,722 impr, 0 clicks) |
+| Apr 28–30 | Trader Joe's wine guide | New page | "best trader joe's wine," TJ platinum reserve, 2 buck chuck |
+| Apr 30–May 1 | Find Similar Wines expansion | Page update | "wines similar to merlot/malbec/chardonnay" |
 | May 1–2 | Review Schema on all new blog posts | Technical | CTR improvement on all review pages |
 
 ### Week 3+ (May 2 onward)
 
 | Task | Notes |
 |---|---|
-| 2 Buck Chuck episode | Record and publish; episode page targets full query cluster |
+| Pillar #1 rewrite | "honest wine reviews" / "unbiased wine podcast" angle |
 | Costco wine guide | Captures Kirkland query cluster (25+ queries in GSC) |
-| Pinotage episode | 1,722 impressions waiting |
-| Layer Cake blog post | 754 impr, 6 clicks — already ranking, needs blog post to convert |
-| Firstleaf blog post | 2,205 impr, 7 clicks |
+| Layer Cake blog post | EP161 exists; 754 impr, 6 clicks — blog post to convert impressions |
+| Firstleaf blog post | EP found; 2,205 impr, 7 clicks |
+| New episodes: Grenache Blanc, Orvieto, Verdicchio | No existing episodes; high-impression zero-click opportunities |
 
 ---
 
