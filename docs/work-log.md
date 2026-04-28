@@ -62,9 +62,16 @@
 **Next Claude Code tasks:**
 - ~~Build dimension bar card HTML/CSS template~~ DONE — `templates/dimension-bar-card.html`
 
-**Content drafting (needs Claude chat session):**
-- Draft hub page copy — upload project docs (01-04) to Claude chat
-- Draft spoke #1 (Malbec) as template reference
+**Content drafting status:**
+- Pinot Noir spoke page — IN PROGRESS in Claude chat (2026-04-27)
+- Hub page — deferred until Pinot Noir spoke is voice-edited; hub borrows proven language from it
+
+**Key decisions from Claude chat (2026-04-27):**
+- All Winedr references removed from drafts — app not yet built
+- Spoke template Section 8 (Winedr CTA) replaced with podcast/newsletter funnel; Winedr drops back in when app launches
+- Hub "how the guide works" trust section: use Joe and Carmela's tasting/podcast catalog as credibility, not Winedr — decide exact framing before writing hub
+- Soul Document and Strategy doc still reference Winedr as live — revisit when app launches, not urgent
+- Pinot Noir draft output: Claude chat saves to outputs/wines-similar-to-pinot-noir.md — Joe to copy to Drive when done
 
 **Open decisions waiting on Joe:**
 - [ ] Confirm CMS supports `/similar-wines` slug
