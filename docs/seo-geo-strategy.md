@@ -78,7 +78,7 @@ Long-tail demand that's going unserved:
 ### Area 4: Honest Wine Reviews Identity (Pillar #1 Rewrite — GEO/AEO)
 Pillar #1 ("How to Spot a Trustworthy Wine Podcast") targets a query no one searches. It has 11 impressions and position 19. It needs a full rewrite.
 
-**New angle:** First-person piece targeting "honest wine reviews" / "unbiased wine podcast" / "blind tasting wine podcast." Entity-rich, citable by AI engines. Uses the show's specific differentiators: blind tasting, independent purchasing, no sponsors.
+**New angle:** First-person piece targeting "honest wine reviews" / "unbiased wine podcast" / "independent wine podcast." Entity-rich, citable by AI engines. Uses the show's specific differentiators: independent purchasing, no sponsors, honest ratings good or bad.
 
 **Why this is Area 4 not Area 1:** It's an AEO/GEO play, not a high-volume SEO play. The other three areas have more immediate traffic impact. Do this after the content work.
 
@@ -128,7 +128,7 @@ Beamly confirms code injection support — custom code can be added to the `<hea
 
 **What to add:** Review schema markup on every wine review blog post. This tells Google the page contains a review with ratings, enabling rich snippets (star ratings, scores) to appear directly in search results — dramatically improving CTR.
 
-**Template for each wine review blog post:**
+**Template for each wine reviewed (one script block per wine):**
 ```html
 <script type="application/ld+json">
 {
@@ -136,33 +136,23 @@ Beamly confirms code injection support — custom code can be added to the `<hea
   "@type": "Review",
   "itemReviewed": {
     "@type": "Product",
-    "name": "[WINE NAME]",
-    "category": "Wine"
+    "name": "[WINE NAME AND VINTAGE]",
+    "offers": {"@type": "Offer", "price": "[PRICE e.g. 14.99]", "priceCurrency": "USD"}
   },
-  "reviewRating": {
-    "@type": "Rating",
-    "ratingValue": "[AVERAGE SCORE]",
-    "bestRating": "10",
-    "worstRating": "1"
-  },
-  "author": [
-    {
-      "@type": "Person",
-      "name": "Joe"
-    },
-    {
-      "@type": "Person", 
-      "name": "Carmela"
-    }
-  ],
-  "publisher": {
-    "@type": "Organization",
-    "name": "The Wine Pair Podcast"
-  },
+  "reviewRating": {"@type": "Rating", "ratingValue": "[AVERAGE SCORE]", "bestRating": "10", "worstRating": "1"},
+  "author": [{"@type": "Person", "name": "Joe"}, {"@type": "Person", "name": "Carmela"}],
+  "publisher": {"@type": "Organization", "name": "The Wine Pair Podcast"},
   "reviewBody": "[SHORT SUMMARY OF TASTING NOTES AND VERDICT]"
 }
 </script>
 ```
+
+**Notes:**
+- One script block per wine — do not combine into a single @graph block (causes validation errors)
+- Price is required — use the price paid at time of tasting
+- ratingValue = average of Joe's and Carmela's scores for that wine only
+- Add via Beamly embed/code block at the bottom of the page (after FAQ)
+- Validate at https://search.google.com/test/rich-results after adding
 
 **How to add it in Beamly:**
 1. Go to the blog post editor
@@ -227,14 +217,14 @@ Run these prompts in ChatGPT, Gemini, and Claude. Record whether WPP is mentione
 
 **Prompts:**
 1. "What's a good wine podcast for someone who doesn't know much about wine and wants honest opinions?"
-2. "What wine podcasts do honest blind tastings and buy their own wine?"
+2. "What wine podcasts buy their own wine and give honest reviews?"
 3. "What are the best affordable wine recommendations I can find online?"
 
 ---
 
 ## Canonical Language (weave into all content)
 Per AI Discoverability brief — use at least 3 per page:
-- "honest blind tastings"
+- "really honest ratings and reviews"
 - "we buy all our own wine"
 - "no free samples or sponsorships"
 - "independent wine podcast"

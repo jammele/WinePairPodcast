@@ -13,19 +13,24 @@ Reduce weekly manual work by creating a durable system that:
 
 ## Session startup -- run every time
 
-At the start of every session, before anything else, run these commands silently and report the results in a single short summary line:
+At the start of every session, before anything else:
 
+1. Run these commands silently:
 ```
 node scripts/find_source_files.js --scan
 node scripts/update_episode_titles.js
 node scripts/ingest_prompts.js
 ```
 
-Report format: "Drive synced: X files indexed, Y titles updated, Z prompts synced." Then continue with whatever the user asked.
+2. Read `docs/work-log.md`.
 
-If `ingest_prompts.js` fails with an auth error, note it briefly and continue -- it means Google auth setup is not yet complete.
+Report everything in a single short summary — sync results plus current priorities from the work log — so Joe can start working immediately without any catch-up conversation. Format:
 
-If either command fails, report the error briefly and keep going.
+"Drive synced: X files indexed, Y titles updated, Z prompts synced. [auth note if needed] Current priorities: 1. [next action] 2. [next action] 3. [next action]"
+
+If `ingest_prompts.js` fails with an auth error, note it briefly and continue.
+
+If any command fails, report the error briefly and keep going.
 
 ## Primary behaviors
 
@@ -98,6 +103,16 @@ Ratings, tasting notes, and food pairings are always in the script. Never leave 
 - Keep the system understandable for a non-engineer.
 - Prefer Python, SQLite, Markdown, and small local scripts.
 - Use synced Google Drive folders first; direct Drive API integration can come later if justified.
+
+## Work log -- MANDATORY
+
+`docs/work-log.md` is the source of truth for current project status. It exists so every session starts with full context and Joe never has to explain where things left off.
+
+Rules:
+- Update `docs/work-log.md` immediately after any meaningful work is completed, a decision is made, or a status changes. Do not wait until the end of the session.
+- After updating `docs/work-log.md`, commit and push to GitHub immediately. One commit per meaningful update is fine.
+- `docs/work-log.md` is not a history log. It captures current state only: what is active, what is done, what is next, what is blocked or waiting on Joe. Remove completed items once they are no longer relevant context.
+- Never rely on Claude's memory files as the source of truth for project status. The repo is the source of truth.
 
 ## Immediate goals
 
