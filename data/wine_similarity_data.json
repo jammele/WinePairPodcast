@@ -1,0 +1,2748 @@
+{
+  "generated": "2026-04-28",
+  "source": "Extracted from Winedr app wineCards.ts. Supplemental wines scored from wine knowledge.",
+  "total_wines": 84,
+  "dimensions_scale": "1-10 (app wines converted from 0-100 stats; supplemental wines scored directly)",
+  "wines": [
+    {
+      "id": "beaujolais",
+      "name": "Beaujolais",
+      "wine_color": "light_red",
+      "grapes": [
+        "Gamay"
+      ],
+      "region": "Beaujolais, France",
+      "style_family": "Light and Lively",
+      "wine_vector_type": "light_fruity_red",
+      "pronunciation": "boh-zhuh-LAY",
+      "pairing_note": "The high acidity and light body make this the ultimate food-friendly red wine - pair with anything",
+      "flavors": [
+        "strawberry",
+        "violet",
+        "cherry"
+      ],
+      "foods": [
+        "Fried Chicken",
+        "Pizza",
+        "Cheese Board"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 3.5,
+        "acidity": 7.5,
+        "tannin": 2.5,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 4
+      }
+    },
+    {
+      "id": "cinsault",
+      "name": "Cinsault",
+      "wine_color": "light_red",
+      "grapes": [
+        "Cinsault"
+      ],
+      "region": "Southern France / South Africa",
+      "style_family": "Light and Lively",
+      "wine_vector_type": "light_fruity_red",
+      "pronunciation": "san-SOH",
+      "pairing_note": "Silky and fresh — excellent slightly chilled with charcuterie, grilled vegetables, and casual summer meals.",
+      "flavors": [
+        "strawberry",
+        "red cherry",
+        "herbs"
+      ],
+      "foods": [
+        "Charcuterie",
+        "Grilled vegetables",
+        "Salmon"
+      ],
+      "price_range": "$12–22",
+      "source": "manual",
+      "dimensions": {
+        "body": 3.5,
+        "acidity": 7,
+        "tannin": 2.5,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 5
+      }
+    },
+    {
+      "id": "etna_rosso",
+      "name": "Etna Rosso",
+      "wine_color": "light_red",
+      "grapes": [
+        "Nerello Mascalese"
+      ],
+      "region": "Mount Etna, Sicily, Italy",
+      "style_family": "Graceful and Earthy",
+      "wine_vector_type": "elegant_terroir_red",
+      "pronunciation": "ET-nah ROH-soh",
+      "pairing_note": "Volcanic minerality and high acidity work beautifully with umami-rich dishes and delicate proteins",
+      "flavors": [
+        "red cherry",
+        "volcanic mineral",
+        "dried herbs"
+      ],
+      "foods": [
+        "Grilled Fish",
+        "Lamb",
+        "Mushroom Dishes"
+      ],
+      "price_range": "$25–45",
+      "dimensions": {
+        "body": 5.5,
+        "acidity": 8,
+        "tannin": 5,
+        "sweetness": 1,
+        "oak": 3,
+        "alcohol": 5.5
+      }
+    },
+    {
+      "id": "frappato",
+      "name": "Frappato",
+      "wine_color": "light_red",
+      "grapes": [
+        "Frappato"
+      ],
+      "region": "Sicily, Italy",
+      "style_family": "Light and Lively",
+      "wine_vector_type": "light_fruity_red",
+      "pronunciation": "frah-PAH-toh",
+      "pairing_note": "Delicate red fruit and floral lift pair beautifully with light Italian food and grilled fish",
+      "flavors": [
+        "strawberry",
+        "rose petal",
+        "pomegranate"
+      ],
+      "foods": [
+        "Antipasti",
+        "Light Pasta",
+        "Grilled Fish"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 3,
+        "acidity": 7.5,
+        "tannin": 2.5,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 4.5
+      }
+    },
+    {
+      "id": "gamay_de_touraine",
+      "name": "Gamay de Touraine",
+      "wine_color": "light_red",
+      "grapes": [
+        "Gamay"
+      ],
+      "region": "Touraine, Loire Valley, France",
+      "style_family": "Light and Lively",
+      "wine_vector_type": "light_fruity_red",
+      "pronunciation": "gah-MAY duh too-REN",
+      "pairing_note": "Crunchy red fruit and bright acidity make this the perfect casual food wine — works with almost anything light",
+      "flavors": [
+        "red cherry",
+        "violet",
+        "cranberry"
+      ],
+      "foods": [
+        "Cheese Board",
+        "Charcuterie",
+        "Pizza"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 3,
+        "acidity": 8,
+        "tannin": 2.5,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 4.5
+      }
+    },
+    {
+      "id": "mencia",
+      "name": "Mencía",
+      "wine_color": "light_red",
+      "grapes": [
+        "Mencía"
+      ],
+      "region": "Bierzo / Ribeira Sacra, Spain",
+      "style_family": "Graceful and Earthy",
+      "wine_vector_type": "elegant_terroir_red",
+      "pronunciation": "MEN-thee-ah",
+      "pairing_note": "Floral and mineral with a food-friendly structure — great with roast chicken, pork, and tapas.",
+      "flavors": [
+        "cherry",
+        "violet",
+        "mineral"
+      ],
+      "foods": [
+        "Roast pork",
+        "Tapas",
+        "Roast chicken"
+      ],
+      "price_range": "$12–25",
+      "source": "manual",
+      "dimensions": {
+        "body": 5.5,
+        "acidity": 7.5,
+        "tannin": 5,
+        "sweetness": 1,
+        "oak": 2,
+        "alcohol": 5.5
+      }
+    },
+    {
+      "id": "morgon",
+      "name": "Morgon",
+      "wine_color": "light_red",
+      "grapes": [
+        "Gamay"
+      ],
+      "region": "Morgon, Beaujolais, France",
+      "style_family": "Light and Lively",
+      "wine_vector_type": "light_fruity_red",
+      "pronunciation": "mor-GOHN",
+      "pairing_note": "Earthy depth and dark cherry fruit bridge the gap between light reds and more structured wines",
+      "flavors": [
+        "dark cherry",
+        "dark earth",
+        "peach pit"
+      ],
+      "foods": [
+        "Charcuterie",
+        "Duck",
+        "Roast Chicken"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 4.5,
+        "acidity": 7.5,
+        "tannin": 3.5,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 5
+      }
+    },
+    {
+      "id": "pinot_noir_oregon",
+      "name": "Oregon Pinot Noir",
+      "wine_color": "light_red",
+      "grapes": [
+        "Pinot Noir"
+      ],
+      "region": "Willamette Valley, Oregon",
+      "style_family": "Graceful and Earthy",
+      "wine_vector_type": "elegant_terroir_red",
+      "pronunciation": "PEE-noh NWAHR",
+      "pairing_note": "Silky texture and earthy notes work beautifully with delicate proteins like salmon and duck",
+      "flavors": [
+        "cherry",
+        "mushroom",
+        "rose petal"
+      ],
+      "foods": [
+        "Salmon",
+        "Roast Chicken",
+        "Duck"
+      ],
+      "price_range": "$25–45",
+      "dimensions": {
+        "body": 5.5,
+        "acidity": 7.5,
+        "tannin": 4,
+        "sweetness": 1,
+        "oak": 3,
+        "alcohol": 5.5
+      }
+    },
+    {
+      "id": "red_burgundy",
+      "name": "Red Burgundy",
+      "wine_color": "light_red",
+      "grapes": [
+        "Pinot Noir"
+      ],
+      "region": "Burgundy, France",
+      "style_family": "Graceful and Earthy",
+      "wine_vector_type": "elegant_terroir_red",
+      "pronunciation": "red bur-GUN-dee",
+      "pairing_note": "Silk tannins and earthy depth pair beautifully with duck, salmon, and any dish where subtlety matters",
+      "flavors": [
+        "cherry",
+        "forest floor",
+        "red rose"
+      ],
+      "foods": [
+        "Duck",
+        "Salmon",
+        "Aged Cheese"
+      ],
+      "price_range": "$25–45",
+      "dimensions": {
+        "body": 5,
+        "acidity": 7.5,
+        "tannin": 4,
+        "sweetness": 1,
+        "oak": 3,
+        "alcohol": 5.2
+      }
+    },
+    {
+      "id": "valpolicella",
+      "name": "Valpolicella",
+      "wine_color": "light_red",
+      "grapes": [
+        "Corvina",
+        "Rondinella",
+        "Molinara"
+      ],
+      "region": "Veneto, Italy",
+      "style_family": "Classic and Food-Friendly",
+      "wine_vector_type": "old_world_elegant_red",
+      "pronunciation": "val-poh-lee-CHEL-lah",
+      "pairing_note": "Light and tart with sour cherry fruit — perfect with pizza, pasta, and Italian-American food.",
+      "flavors": [
+        "sour cherry",
+        "herbs",
+        "spice"
+      ],
+      "foods": [
+        "Pizza",
+        "Pasta",
+        "Antipasto"
+      ],
+      "price_range": "$10–18",
+      "source": "manual",
+      "dimensions": {
+        "body": 5,
+        "acidity": 7.5,
+        "tannin": 4,
+        "sweetness": 1,
+        "oak": 2,
+        "alcohol": 5
+      }
+    },
+    {
+      "id": "barbera",
+      "name": "Barbera",
+      "wine_color": "dark_red",
+      "grapes": [
+        "Barbera"
+      ],
+      "region": "Piedmont, Italy",
+      "style_family": "Classic and Food-Friendly",
+      "wine_vector_type": "old_world_elegant_red",
+      "pronunciation": "bar-BEAR-ah",
+      "pairing_note": "High acidity and bright fruit cut through rich tomato sauces and fatty Italian dishes",
+      "flavors": [
+        "cherry",
+        "blackberry",
+        "herbs"
+      ],
+      "foods": [
+        "Pizza",
+        "Lasagna",
+        "Mushroom Risotto"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 6,
+        "acidity": 8.5,
+        "tannin": 4,
+        "sweetness": 1,
+        "oak": 3,
+        "alcohol": 6
+      }
+    },
+    {
+      "id": "barolo",
+      "name": "Barolo",
+      "wine_color": "dark_red",
+      "grapes": [
+        "Nebbiolo"
+      ],
+      "region": "Piedmont, Italy",
+      "style_family": "Classic and Food-Friendly",
+      "wine_vector_type": "old_world_elegant_red",
+      "pronunciation": "bah-ROH-loh",
+      "pairing_note": "Huge tannins and complex flavors need rich fatty foods like aged beef and truffle dishes",
+      "flavors": [
+        "rose",
+        "cherry",
+        "truffle"
+      ],
+      "foods": [
+        "Steak",
+        "Truffle Pasta",
+        "Aged Cheese"
+      ],
+      "price_range": "$50+",
+      "dimensions": {
+        "body": 8,
+        "acidity": 8,
+        "tannin": 8.5,
+        "sweetness": 1,
+        "oak": 6,
+        "alcohol": 7
+      }
+    },
+    {
+      "id": "chianti_classico",
+      "name": "Chianti Classico",
+      "wine_color": "dark_red",
+      "grapes": [
+        "Sangiovese"
+      ],
+      "region": "Tuscany, Italy",
+      "style_family": "Classic and Food-Friendly",
+      "wine_vector_type": "old_world_elegant_red",
+      "pronunciation": "kee-AHN-tee KLAH-see-koh",
+      "pairing_note": "Made to pair with tomato-based Italian food - the high acidity cuts right through rich red sauce",
+      "flavors": [
+        "cherry",
+        "tomato leaf",
+        "dried oregano"
+      ],
+      "foods": [
+        "Steak",
+        "Spaghetti and Meatballs",
+        "Pizza"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 6,
+        "acidity": 8,
+        "tannin": 5.5,
+        "sweetness": 1,
+        "oak": 3,
+        "alcohol": 5.8
+      }
+    },
+    {
+      "id": "cotes_du_rhone",
+      "name": "Cotes du Rhone",
+      "wine_color": "dark_red",
+      "grapes": [
+        "Grenache",
+        "Syrah",
+        "Mourvèdre"
+      ],
+      "region": "Rhone Valley, France",
+      "style_family": "Rich and Savory",
+      "wine_vector_type": "earthy_spice_red",
+      "pronunciation": "coat doo RONE",
+      "pairing_note": "Versatile and balanced enough to pair with everything from roast chicken to cheese",
+      "flavors": [
+        "cherry",
+        "herbs",
+        "spice"
+      ],
+      "foods": [
+        "Roast Chicken",
+        "Mediterranean",
+        "Cheese"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 6,
+        "acidity": 6.5,
+        "tannin": 5,
+        "sweetness": 1,
+        "oak": 3,
+        "alcohol": 6
+      }
+    },
+    {
+      "id": "dolcetto",
+      "name": "Dolcetto",
+      "wine_color": "dark_red",
+      "grapes": [
+        "Dolcetto"
+      ],
+      "region": "Piedmont, Italy",
+      "style_family": "Classic and Food-Friendly",
+      "wine_vector_type": "old_world_elegant_red",
+      "pronunciation": "dohl-CHET-toh",
+      "pairing_note": "Low acid and soft tannins make it unusually food-flexible — great with pizza, antipasto, and casual Italian meals.",
+      "flavors": [
+        "blackberry",
+        "licorice",
+        "bitter chocolate"
+      ],
+      "foods": [
+        "Pizza",
+        "Antipasto",
+        "Pasta"
+      ],
+      "price_range": "$12–20",
+      "source": "manual",
+      "dimensions": {
+        "body": 5.5,
+        "acidity": 5.5,
+        "tannin": 5.5,
+        "sweetness": 1,
+        "oak": 2,
+        "alcohol": 5.5
+      }
+    },
+    {
+      "id": "grenache",
+      "name": "Grenache",
+      "wine_color": "dark_red",
+      "grapes": [
+        "Grenache"
+      ],
+      "region": "Southern France and Spain",
+      "style_family": "Rich and Savory",
+      "wine_vector_type": "earthy_spice_red",
+      "pronunciation": "greh-NAHSH",
+      "pairing_note": "Juicy ripe fruit and warm spice pair beautifully with grilled foods and Mediterranean flavors",
+      "flavors": [
+        "strawberry",
+        "spice",
+        "herbs"
+      ],
+      "foods": [
+        "BBQ",
+        "Mediterranean",
+        "Lamb"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 7,
+        "acidity": 6,
+        "tannin": 4.5,
+        "sweetness": 1,
+        "oak": 3,
+        "alcohol": 7
+      }
+    },
+    {
+      "id": "malbec",
+      "name": "Malbec",
+      "wine_color": "dark_red",
+      "grapes": [
+        "Malbec"
+      ],
+      "region": "Mendoza, Argentina",
+      "style_family": "Bold and Fruit-Forward",
+      "wine_vector_type": "new_world_bold_red",
+      "pronunciation": "mahl-BECK",
+      "pairing_note": "Fruit forward and smooth with enough structure to stand up to grilled meats and bold flavors",
+      "flavors": [
+        "blueberry",
+        "chocolate",
+        "coffee"
+      ],
+      "foods": [
+        "Steak",
+        "BBQ",
+        "Empanadas"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 7.5,
+        "acidity": 5.5,
+        "tannin": 6,
+        "sweetness": 1,
+        "oak": 6,
+        "alcohol": 7
+      }
+    },
+    {
+      "id": "merlot",
+      "name": "Merlot",
+      "wine_color": "dark_red",
+      "grapes": [
+        "Merlot"
+      ],
+      "region": "Bordeaux, France / Napa Valley, California",
+      "style_family": "Classic and Food-Friendly",
+      "wine_vector_type": "old_world_elegant_red",
+      "pronunciation": "mer-LOH",
+      "pairing_note": "Plush tannins and dark fruit pair well with roasted meats, mushroom dishes, and aged cheeses.",
+      "flavors": [
+        "plum",
+        "black cherry",
+        "chocolate"
+      ],
+      "foods": [
+        "Roast beef",
+        "Mushroom pasta",
+        "Aged cheese"
+      ],
+      "price_range": "$12–25",
+      "source": "manual",
+      "dimensions": {
+        "body": 7,
+        "acidity": 5.5,
+        "tannin": 5.5,
+        "sweetness": 1,
+        "oak": 5,
+        "alcohol": 6.5
+      }
+    },
+    {
+      "id": "montepulciano",
+      "name": "Montepulciano",
+      "wine_color": "dark_red",
+      "grapes": [
+        "Montepulciano"
+      ],
+      "region": "Abruzzo, Italy",
+      "style_family": "Classic and Food-Friendly",
+      "wine_vector_type": "old_world_elegant_red",
+      "pronunciation": "mon-teh-pull-CHAH-no",
+      "pairing_note": "Juicy fruit and bright acidity pair perfectly with tomato sauce and casual Italian food",
+      "flavors": [
+        "cherry",
+        "plum",
+        "herbs"
+      ],
+      "foods": [
+        "Pizza",
+        "Lasagna",
+        "Burgers"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 6.5,
+        "acidity": 7,
+        "tannin": 5,
+        "sweetness": 1,
+        "oak": 3,
+        "alcohol": 6
+      }
+    },
+    {
+      "id": "mourvedre",
+      "name": "Mourvèdre",
+      "wine_color": "dark_red",
+      "grapes": [
+        "Mourvèdre",
+        "Monastrell"
+      ],
+      "region": "Southern Rhône, France / Jumilla, Spain",
+      "style_family": "Rich and Savory",
+      "wine_vector_type": "earthy_spice_red",
+      "pronunciation": "moor-VEH-druh",
+      "pairing_note": "Gamey and meaty with firm tannins — built for lamb, wild game, and hearty stews.",
+      "flavors": [
+        "blackberry",
+        "meat",
+        "black olive"
+      ],
+      "foods": [
+        "Lamb",
+        "Wild boar",
+        "Cassoulet"
+      ],
+      "price_range": "$12–25",
+      "source": "manual",
+      "dimensions": {
+        "body": 8,
+        "acidity": 6,
+        "tannin": 7.5,
+        "sweetness": 1,
+        "oak": 4,
+        "alcohol": 7.5
+      }
+    },
+    {
+      "id": "napa_cabernet",
+      "name": "Napa Cabernet Sauvignon",
+      "wine_color": "dark_red",
+      "grapes": [
+        "Cabernet Sauvignon"
+      ],
+      "region": "Napa Valley, California",
+      "style_family": "Bold and Fruit-Forward",
+      "wine_vector_type": "new_world_bold_red",
+      "pronunciation": "NAP-ah CAB-er-nay SOH-veen-yohn",
+      "pairing_note": "Big tannins need fat and protein to shine - think rich steaks, aged cheese, or anything grilled",
+      "flavors": [
+        "blackberry",
+        "cedar",
+        "espresso"
+      ],
+      "foods": [
+        "Steak",
+        "Burger",
+        "BBQ Ribs"
+      ],
+      "price_range": "$50+",
+      "dimensions": {
+        "body": 8.5,
+        "acidity": 6,
+        "tannin": 8,
+        "sweetness": 1,
+        "oak": 8,
+        "alcohol": 7.5
+      }
+    },
+    {
+      "id": "nero_davola",
+      "name": "Nero d'Avola",
+      "wine_color": "dark_red",
+      "grapes": [
+        "Nero d'Avola"
+      ],
+      "region": "Sicily, Italy",
+      "style_family": "Bold and Fruit-Forward",
+      "wine_vector_type": "new_world_bold_red",
+      "pronunciation": "NEH-ro DAH-voh-lah",
+      "pairing_note": "Bold dark fruit and warm spice pair well with grilled lamb, pasta with rich meat sauce, and aged cheeses.",
+      "flavors": [
+        "blackberry",
+        "plum",
+        "spice"
+      ],
+      "foods": [
+        "Grilled lamb",
+        "Pasta Bolognese",
+        "Aged pecorino"
+      ],
+      "price_range": "$12–25",
+      "source": "manual",
+      "dimensions": {
+        "body": 7,
+        "acidity": 6.5,
+        "tannin": 6,
+        "sweetness": 1,
+        "oak": 3,
+        "alcohol": 7
+      }
+    },
+    {
+      "id": "pinotage",
+      "name": "Pinotage",
+      "wine_color": "dark_red",
+      "grapes": [
+        "Pinotage"
+      ],
+      "region": "South Africa",
+      "style_family": "Bold and Fruit-Forward",
+      "wine_vector_type": "new_world_bold_red",
+      "pronunciation": "PEE-noh-tahzh",
+      "pairing_note": "Smoky and fruit-forward — pairs well with BBQ, grilled meats, and anything off the fire.",
+      "flavors": [
+        "blackberry",
+        "smoke",
+        "coffee"
+      ],
+      "foods": [
+        "BBQ",
+        "Braai",
+        "Grilled steak"
+      ],
+      "price_range": "$10–20",
+      "source": "manual",
+      "dimensions": {
+        "body": 7.5,
+        "acidity": 6,
+        "tannin": 6.5,
+        "sweetness": 1,
+        "oak": 4,
+        "alcohol": 7
+      }
+    },
+    {
+      "id": "primitivo",
+      "name": "Primitivo",
+      "wine_color": "dark_red",
+      "grapes": [
+        "Primitivo"
+      ],
+      "region": "Puglia, Italy",
+      "style_family": "Bold and Fruit-Forward",
+      "wine_vector_type": "new_world_bold_red",
+      "pronunciation": "pree-MEE-tee-voh",
+      "pairing_note": "Rich and jammy with a warming finish — built for grilled meats, hearty pasta, and strong cheeses.",
+      "flavors": [
+        "blackberry jam",
+        "dried fig",
+        "black pepper"
+      ],
+      "foods": [
+        "Grilled sausage",
+        "Beef stew",
+        "Pecorino"
+      ],
+      "price_range": "$10–20",
+      "source": "manual",
+      "dimensions": {
+        "body": 8,
+        "acidity": 5.5,
+        "tannin": 6,
+        "sweetness": 2,
+        "oak": 5,
+        "alcohol": 7.5
+      }
+    },
+    {
+      "id": "rioja",
+      "name": "Rioja",
+      "wine_color": "dark_red",
+      "grapes": [
+        "Tempranillo",
+        "Garnacha",
+        "Graciano",
+        "Mazuelo"
+      ],
+      "region": "Rioja, Spain",
+      "style_family": "Classic and Food-Friendly",
+      "wine_vector_type": "old_world_elegant_red",
+      "pronunciation": "ree-OH-hah",
+      "pairing_note": "Oak and savory notes pair beautifully with aged meats, lamb, and Spanish tapas",
+      "flavors": [
+        "cherry",
+        "tobacco",
+        "vanilla"
+      ],
+      "foods": [
+        "Tapas",
+        "Lamb",
+        "Cheese Board"
+      ],
+      "price_range": "$20–35",
+      "dimensions": {
+        "body": 6.5,
+        "acidity": 6.5,
+        "tannin": 5,
+        "sweetness": 1,
+        "oak": 8,
+        "alcohol": 6
+      }
+    },
+    {
+      "id": "ruby_port",
+      "name": "Ruby Port",
+      "wine_color": "dark_red",
+      "grapes": [
+        "Touriga Nacional",
+        "Tinta Roriz"
+      ],
+      "region": "Douro Valley, Portugal",
+      "style_family": "Fortified and Rich",
+      "wine_vector_type": "fortified_rich_sweet",
+      "pronunciation": "ROO-bee PORT",
+      "pairing_note": "Dark fruit and rich sweetness stand up to bold desserts and strong cheese — the classic chocolate pairing",
+      "flavors": [
+        "blackberry",
+        "dark chocolate",
+        "black cherry"
+      ],
+      "foods": [
+        "Dark Chocolate",
+        "Stilton",
+        "Walnuts"
+      ],
+      "price_range": "Under $15",
+      "dimensions": {
+        "body": 8,
+        "acidity": 5.5,
+        "tannin": 4.5,
+        "sweetness": 7.8,
+        "oak": 3,
+        "alcohol": 9.5
+      }
+    },
+    {
+      "id": "syrah",
+      "name": "Syrah/Shiraz",
+      "wine_color": "dark_red",
+      "grapes": [
+        "Syrah"
+      ],
+      "region": "Rhone Valley, France",
+      "style_family": "Rich and Savory",
+      "wine_vector_type": "earthy_spice_red",
+      "pronunciation": "sih-RAH",
+      "pairing_note": "Smoky peppery notes and dark fruit pair perfectly with grilled meats and bold flavors",
+      "flavors": [
+        "blackberry",
+        "black pepper",
+        "smoke"
+      ],
+      "foods": [
+        "BBQ",
+        "Lamb",
+        "Steak"
+      ],
+      "price_range": "$20–35",
+      "dimensions": {
+        "body": 8,
+        "acidity": 6.5,
+        "tannin": 7.5,
+        "sweetness": 1,
+        "oak": 6,
+        "alcohol": 7.5
+      }
+    },
+    {
+      "id": "tawny_port",
+      "name": "Tawny Port",
+      "wine_color": "dark_red",
+      "grapes": [
+        "Touriga Nacional",
+        "Tinta Roriz",
+        "Touriga Franca"
+      ],
+      "region": "Douro Valley, Portugal",
+      "style_family": "Fortified and Rich",
+      "wine_vector_type": "fortified_rich_sweet",
+      "pronunciation": "TAW-nee PORT",
+      "pairing_note": "Oxidative aging creates walnut and caramel notes — extraordinary with blue cheese or alone after dinner",
+      "flavors": [
+        "roasted nuts",
+        "caramel",
+        "dried orange"
+      ],
+      "foods": [
+        "Nuts",
+        "Blue Cheese",
+        "Crème Brûlée"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 7.5,
+        "acidity": 5,
+        "tannin": 3,
+        "sweetness": 8,
+        "oak": 8,
+        "alcohol": 9.5
+      }
+    },
+    {
+      "id": "tempranillo",
+      "name": "Tempranillo",
+      "wine_color": "dark_red",
+      "grapes": [
+        "Tempranillo"
+      ],
+      "region": "Spain",
+      "style_family": "Classic and Food-Friendly",
+      "wine_vector_type": "old_world_elegant_red",
+      "pronunciation": "tem-prah-NEE-yo",
+      "pairing_note": "Earthy savory notes and medium body pair beautifully with cured meats and traditional Spanish dishes",
+      "flavors": [
+        "cherry",
+        "leather",
+        "herbs"
+      ],
+      "foods": [
+        "Tapas",
+        "Chorizo",
+        "Lamb"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 6.5,
+        "acidity": 7,
+        "tannin": 5.5,
+        "sweetness": 1,
+        "oak": 6,
+        "alcohol": 6
+      }
+    },
+    {
+      "id": "zinfandel",
+      "name": "Zinfandel",
+      "wine_color": "dark_red",
+      "grapes": [
+        "Zinfandel"
+      ],
+      "region": "California, USA",
+      "style_family": "Bold and Fruit-Forward",
+      "wine_vector_type": "new_world_bold_red",
+      "pronunciation": "ZIN-fan-dell",
+      "pairing_note": "Bold jammy fruit and high alcohol pair with bold flavors like BBQ sauce and grilled meats",
+      "flavors": [
+        "blackberry jam",
+        "spice",
+        "mocha"
+      ],
+      "foods": [
+        "BBQ",
+        "Burgers",
+        "Pizza"
+      ],
+      "price_range": "$20–35",
+      "dimensions": {
+        "body": 8.5,
+        "acidity": 6,
+        "tannin": 6,
+        "sweetness": 1,
+        "oak": 6,
+        "alcohol": 8
+      }
+    },
+    {
+      "id": "bandol_rose",
+      "name": "Bandol Rosé",
+      "wine_color": "rose",
+      "grapes": [
+        "Mourvèdre",
+        "Grenache",
+        "Cinsault"
+      ],
+      "region": "Bandol, Provence, France",
+      "style_family": "Structured and Savory Rosé",
+      "wine_vector_type": "red_adjacent_rose",
+      "pronunciation": "ban-DOL roh-ZAY",
+      "pairing_note": "Mourvèdre backbone gives it structure to match rich Provençal dishes and seafood stews",
+      "flavors": [
+        "peach",
+        "spice",
+        "garrigue"
+      ],
+      "foods": [
+        "Bouillabaisse",
+        "Lamb",
+        "Charcuterie"
+      ],
+      "price_range": "$25–45",
+      "dimensions": {
+        "body": 7,
+        "acidity": 6.5,
+        "tannin": 2.5,
+        "sweetness": 1,
+        "oak": 3,
+        "alcohol": 7
+      }
+    },
+    {
+      "id": "cerasuolo_dabruzzo",
+      "name": "Cerasuolo d'Abruzzo",
+      "wine_color": "rose",
+      "grapes": [
+        "Montepulciano"
+      ],
+      "region": "Abruzzo, Italy",
+      "style_family": "Structured and Savory Rosé",
+      "wine_vector_type": "red_adjacent_rose",
+      "pronunciation": "cheh-rah-ZWOH-loh dah-BRUT-tsoh",
+      "pairing_note": "Bright cherry fruit and good acidity make this a natural pizza and pasta companion",
+      "flavors": [
+        "cherry",
+        "strawberry",
+        "rose"
+      ],
+      "foods": [
+        "Pasta",
+        "Pizza",
+        "Grilled Chicken"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 5.5,
+        "acidity": 7.5,
+        "tannin": 1.5,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 5.8
+      }
+    },
+    {
+      "id": "malbec_rose",
+      "name": "Malbec Rosé",
+      "wine_color": "rose",
+      "grapes": [
+        "Malbec"
+      ],
+      "region": "Mendoza, Argentina",
+      "style_family": "Bold Personality Rosé",
+      "wine_vector_type": "varietal_character_rose",
+      "pronunciation": "MAL-beck roh-ZAY",
+      "pairing_note": "Plummy Malbec fruit survives the rosé process — excellent with grilled meats",
+      "flavors": [
+        "blueberry",
+        "cherry",
+        "rose"
+      ],
+      "foods": [
+        "BBQ",
+        "Burgers",
+        "Empanadas"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 5,
+        "acidity": 6,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 6
+      }
+    },
+    {
+      "id": "nebbiolo_rosato",
+      "name": "Nebbiolo Rosato",
+      "wine_color": "rose",
+      "grapes": [
+        "Nebbiolo"
+      ],
+      "region": "Piedmont, Italy",
+      "style_family": "Bold Personality Rosé",
+      "wine_vector_type": "varietal_character_rose",
+      "pronunciation": "neh-BYO-loh roh-ZAH-toh",
+      "pairing_note": "Nebbiolo's signature tannins persist even in rosé — it wants food, preferably Northern Italian",
+      "flavors": [
+        "rose",
+        "cherry",
+        "dried herbs"
+      ],
+      "foods": [
+        "Risotto",
+        "Veal",
+        "Mushrooms"
+      ],
+      "price_range": "$20–35",
+      "dimensions": {
+        "body": 4.5,
+        "acidity": 8.5,
+        "tannin": 3.5,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 5.5
+      }
+    },
+    {
+      "id": "pinot_noir_rose",
+      "name": "Pinot Noir Rosé",
+      "wine_color": "rose",
+      "grapes": [
+        "Pinot Noir"
+      ],
+      "region": "Burgundy, France / Oregon, USA",
+      "style_family": "Light and Delicate Rosé",
+      "wine_vector_type": "white_adjacent_rose",
+      "pronunciation": "PEE-noh nwahr roh-ZAY",
+      "pairing_note": "The delicate, mineral style pairs beautifully with lighter fare — sushi, salads, fresh cheeses",
+      "flavors": [
+        "strawberry",
+        "rose petal",
+        "lemon zest"
+      ],
+      "foods": [
+        "Sushi",
+        "Salad",
+        "Goat Cheese"
+      ],
+      "price_range": "$20–35",
+      "dimensions": {
+        "body": 3,
+        "acidity": 8,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 4.2
+      }
+    },
+    {
+      "id": "provence_rose",
+      "name": "Provence Rosé",
+      "wine_color": "rose",
+      "grapes": [
+        "Grenache",
+        "Cinsault",
+        "Syrah"
+      ],
+      "region": "Provence, France",
+      "style_family": "Light and Delicate Rosé",
+      "wine_vector_type": "white_adjacent_rose",
+      "pronunciation": "proh-VAHNSS roh-ZAY",
+      "pairing_note": "Crisp and dry with bright acidity that cuts through rich or oily foods while staying light and refreshing",
+      "flavors": [
+        "watermelon",
+        "herbs",
+        "citrus"
+      ],
+      "foods": [
+        "Salad with Goat Cheese",
+        "Mediterranean",
+        "Sushi"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 3,
+        "acidity": 7,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 4.5
+      }
+    },
+    {
+      "id": "sangiovese_rosato",
+      "name": "Sangiovese Rosato",
+      "wine_color": "rose",
+      "grapes": [
+        "Sangiovese"
+      ],
+      "region": "Tuscany / Abruzzo, Italy",
+      "style_family": "Bold Personality Rosé",
+      "wine_vector_type": "varietal_character_rose",
+      "pronunciation": "san-jo-VEH-zeh roh-ZAH-toh",
+      "pairing_note": "Sangiovese's natural savory character shines in rosé form — perfect with Italian food",
+      "flavors": [
+        "tart cherry",
+        "tomato",
+        "herbs"
+      ],
+      "foods": [
+        "Pasta",
+        "Antipasto",
+        "Grilled Vegetables"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 4.5,
+        "acidity": 8,
+        "tannin": 1.5,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 5.5
+      }
+    },
+    {
+      "id": "tavel",
+      "name": "Tavel Rosé",
+      "wine_color": "rose",
+      "grapes": [
+        "Grenache",
+        "Cinsault",
+        "Clairette"
+      ],
+      "region": "Rhône Valley, France",
+      "style_family": "Structured and Savory Rosé",
+      "wine_vector_type": "red_adjacent_rose",
+      "pronunciation": "tah-VEL",
+      "pairing_note": "The fullest, most food-serious rosé in France — built for the table, not the pool deck",
+      "flavors": [
+        "blood orange",
+        "garrigue",
+        "peach"
+      ],
+      "foods": [
+        "Lamb",
+        "Grilled Fish",
+        "Ratatouille"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 6.5,
+        "acidity": 7,
+        "tannin": 2,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 6.5
+      }
+    },
+    {
+      "id": "white_zinfandel",
+      "name": "White Zinfandel",
+      "wine_color": "rose",
+      "grapes": [
+        "Zinfandel"
+      ],
+      "region": "California, USA",
+      "style_family": "Light and Delicate Rosé",
+      "wine_vector_type": "white_adjacent_rose",
+      "pronunciation": "white ZIN-fan-del",
+      "pairing_note": "Off-dry sweetness makes it surprisingly food-friendly — great with BBQ, pizza, or anything spicy",
+      "flavors": [
+        "strawberry candy",
+        "peach",
+        "watermelon sugar"
+      ],
+      "foods": [
+        "BBQ",
+        "Pizza",
+        "Spicy Food"
+      ],
+      "price_range": "Under $15",
+      "dimensions": {
+        "body": 3,
+        "acidity": 5,
+        "tannin": 1,
+        "sweetness": 5,
+        "oak": 1,
+        "alcohol": 3
+      }
+    },
+    {
+      "id": "albarino",
+      "name": "Albarino",
+      "wine_color": "white",
+      "grapes": [
+        "Albariño"
+      ],
+      "region": "Galicia, Spain",
+      "style_family": "Crisp and Mineral",
+      "wine_vector_type": "mineral_crisp_white",
+      "pronunciation": "al-bah-REE-nyo",
+      "pairing_note": "Saline mineral notes and citrus acidity match ocean flavors perfectly - born for shellfish",
+      "flavors": [
+        "lemon",
+        "peach",
+        "sea salt"
+      ],
+      "foods": [
+        "Seafood",
+        "Sushi",
+        "Light Salads"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 4,
+        "acidity": 8,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 5
+      }
+    },
+    {
+      "id": "assyrtiko",
+      "name": "Assyrtiko",
+      "wine_color": "white",
+      "grapes": [
+        "Assyrtiko"
+      ],
+      "region": "Santorini, Greece",
+      "style_family": "Crisp and Mineral",
+      "wine_vector_type": "mineral_crisp_white",
+      "pronunciation": "ah-SEER-tee-koh",
+      "pairing_note": "Electric acidity and saline minerality mirror the sea — born to drink with anything pulled from the ocean",
+      "flavors": [
+        "lemon zest",
+        "sea salt",
+        "volcanic ash"
+      ],
+      "foods": [
+        "Grilled Octopus",
+        "Sushi",
+        "Greek Salad"
+      ],
+      "price_range": "$20–35",
+      "dimensions": {
+        "body": 4.5,
+        "acidity": 9,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 5.8
+      }
+    },
+    {
+      "id": "chablis",
+      "name": "Chablis",
+      "wine_color": "white",
+      "grapes": [
+        "Chardonnay"
+      ],
+      "region": "Chablis, France",
+      "style_family": "Crisp and Mineral",
+      "wine_vector_type": "mineral_crisp_white",
+      "pronunciation": "shah-BLEE",
+      "pairing_note": "Striking mineral notes and bright acidity mirror the taste of the sea - perfect with shellfish",
+      "flavors": [
+        "lemon",
+        "flint",
+        "oyster shell"
+      ],
+      "foods": [
+        "Oysters",
+        "Sushi",
+        "Roast Chicken"
+      ],
+      "price_range": "$25–45",
+      "dimensions": {
+        "body": 4.5,
+        "acidity": 8.5,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 5
+      }
+    },
+    {
+      "id": "chenin_blanc",
+      "name": "Chenin Blanc",
+      "wine_color": "white",
+      "grapes": [
+        "Chenin Blanc"
+      ],
+      "region": "Loire Valley, France",
+      "style_family": "Off-Dry and Approachable",
+      "wine_vector_type": "off_dry_aromatic_white",
+      "pronunciation": "SHEN-in BLAHNK",
+      "pairing_note": "Touch of sweetness and honeyed texture balance spicy foods while high acidity keeps it fresh",
+      "flavors": [
+        "honey",
+        "pear",
+        "chamomile"
+      ],
+      "foods": [
+        "Thai Food",
+        "Roast Pork",
+        "Salads"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 5,
+        "acidity": 7.5,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 3,
+        "alcohol": 5
+      }
+    },
+    {
+      "id": "dry_gewurztraminer",
+      "name": "Dry Gewurztraminer",
+      "wine_color": "white",
+      "grapes": [
+        "Gewürztraminer"
+      ],
+      "region": "Alsace, France",
+      "style_family": "Bright and Aromatic",
+      "wine_vector_type": "aromatic_dry_white",
+      "pronunciation": "geh-VURTS-trah-mee-ner",
+      "pairing_note": "Bold aromatics and slight spice cut through rich fatty dishes and complement bold Asian flavors",
+      "flavors": [
+        "lychee",
+        "rose water",
+        "ginger"
+      ],
+      "foods": [
+        "Thai Curry",
+        "Aged Cheese",
+        "Roast Pork"
+      ],
+      "price_range": "$20–35",
+      "dimensions": {
+        "body": 6.5,
+        "acidity": 6,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 6
+      }
+    },
+    {
+      "id": "dry_muscat",
+      "name": "Dry Muscat",
+      "wine_color": "white",
+      "grapes": [
+        "Muscat Blanc a Petits Grains"
+      ],
+      "region": "Alsace, France",
+      "style_family": "Bright and Aromatic",
+      "wine_vector_type": "aromatic_dry_white",
+      "pronunciation": "moos-KAH",
+      "pairing_note": "Grapey freshness and floral lift make this a natural aperitif — light enough for delicate dishes",
+      "flavors": [
+        "orange blossom",
+        "fresh grape",
+        "jasmine"
+      ],
+      "foods": [
+        "Light Salads",
+        "Brunch",
+        "Light Seafood"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 4,
+        "acidity": 6.5,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 4.5
+      }
+    },
+    {
+      "id": "riesling_dry",
+      "name": "Dry Riesling",
+      "wine_color": "white",
+      "grapes": [
+        "Riesling"
+      ],
+      "region": "Germany",
+      "style_family": "Bright and Aromatic",
+      "wine_vector_type": "aromatic_dry_white",
+      "pronunciation": "REEZ-ling",
+      "pairing_note": "Razor-sharp acidity and mineral backbone cut through rich foods while complementing delicate flavors",
+      "flavors": [
+        "lime",
+        "wet stone",
+        "green apple"
+      ],
+      "foods": [
+        "Thai Food",
+        "Sushi",
+        "Roast Pork"
+      ],
+      "price_range": "$20–35",
+      "dimensions": {
+        "body": 4,
+        "acidity": 8.5,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 4.5
+      }
+    },
+    {
+      "id": "gruner_veltliner",
+      "name": "Gruner Veltliner",
+      "wine_color": "white",
+      "grapes": [
+        "Grüner Veltliner"
+      ],
+      "region": "Austria",
+      "style_family": "Crisp and Mineral",
+      "wine_vector_type": "mineral_crisp_white",
+      "pronunciation": "GROO-ner VELT-lee-ner",
+      "pairing_note": "Spicy peppery notes and high acidity work with bold flavors that would overwhelm other whites",
+      "flavors": [
+        "lemon",
+        "white pepper",
+        "herbs"
+      ],
+      "foods": [
+        "Schnitzel",
+        "Thai Food",
+        "Salads"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 4.5,
+        "acidity": 8,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 5
+      }
+    },
+    {
+      "id": "late_harvest_riesling",
+      "name": "Late Harvest Riesling",
+      "wine_color": "white",
+      "grapes": [
+        "Riesling"
+      ],
+      "region": "Mosel / Rhine, Germany",
+      "style_family": "Complex Sweet",
+      "wine_vector_type": "complex_sweet",
+      "pronunciation": "LATE HAR-vest REEZ-ling",
+      "pairing_note": "Riesling's electric acidity keeps even extreme sweetness tasting fresh and lively",
+      "flavors": [
+        "peach",
+        "lemon curd",
+        "honey"
+      ],
+      "foods": [
+        "Fruit Desserts",
+        "Blue Cheese",
+        "Spicy Food"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 4,
+        "acidity": 9,
+        "tannin": 1,
+        "sweetness": 7.8,
+        "oak": 1,
+        "alcohol": 2.5
+      }
+    },
+    {
+      "id": "malmsey_madeira",
+      "name": "Malmsey Madeira",
+      "wine_color": "white",
+      "grapes": [
+        "Malvasia"
+      ],
+      "region": "Madeira Island, Portugal",
+      "style_family": "Fortified and Rich",
+      "wine_vector_type": "fortified_rich_sweet",
+      "pronunciation": "MAHL-mzee mah-DAIR-ah",
+      "pairing_note": "Madeira's volcanic terroir and unique estufagem process creates wine that literally cannot go bad once opened",
+      "flavors": [
+        "caramel",
+        "roasted almonds",
+        "dried orange peel"
+      ],
+      "foods": [
+        "Nuts and Cheese",
+        "Pecan Pie",
+        "Fruit Cake"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 7,
+        "acidity": 7.5,
+        "tannin": 1,
+        "sweetness": 8.2,
+        "oak": 8,
+        "alcohol": 9.5
+      }
+    },
+    {
+      "id": "moscato",
+      "name": "Moscato",
+      "wine_color": "white",
+      "grapes": [
+        "Moscato"
+      ],
+      "region": "Piedmont, Italy",
+      "style_family": "Off-Dry and Approachable",
+      "wine_vector_type": "off_dry_aromatic_white",
+      "pronunciation": "moh-SKAH-toh",
+      "pairing_note": "Sweet fruity wine pairs beautifully with fruit desserts or sip on its own as dessert",
+      "flavors": [
+        "peach",
+        "honey",
+        "orange blossom"
+      ],
+      "foods": [
+        "Dessert",
+        "Fresh Fruit",
+        "Brunch"
+      ],
+      "price_range": "Under $15",
+      "dimensions": {
+        "body": 2,
+        "acidity": 6,
+        "tannin": 1,
+        "sweetness": 7.5,
+        "oak": 1,
+        "alcohol": 3
+      }
+    },
+    {
+      "id": "sauvignon_blanc_nz",
+      "name": "New Zealand Sauvignon Blanc",
+      "wine_color": "white",
+      "grapes": [
+        "Sauvignon Blanc"
+      ],
+      "region": "Marlborough, New Zealand",
+      "style_family": "Crisp and Mineral",
+      "wine_vector_type": "mineral_crisp_white",
+      "pronunciation": "SOH-veen-yohn BLAHNK",
+      "pairing_note": "Electric acidity and bold citrus flavors pair beautifully with fresh Asian flavors and salads",
+      "flavors": [
+        "kiwi",
+        "lime",
+        "fresh herbs"
+      ],
+      "foods": [
+        "Sushi",
+        "Goat Cheese Salad",
+        "Thai Food"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 3.5,
+        "acidity": 9,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 5
+      }
+    },
+    {
+      "id": "oaked_chardonnay",
+      "name": "Oaked Chardonnay",
+      "wine_color": "white",
+      "grapes": [
+        "Chardonnay"
+      ],
+      "region": "Burgundy, France / California",
+      "style_family": "Rich and Rounded",
+      "wine_vector_type": "rich_textured_white",
+      "pronunciation": "SHAR-doh-nay",
+      "pairing_note": "Butter and vanilla from oak aging coat rich proteins beautifully — the classic white with rich food",
+      "flavors": [
+        "butter",
+        "vanilla",
+        "ripe apple"
+      ],
+      "foods": [
+        "Roast Chicken",
+        "Lobster",
+        "Creamy Pasta"
+      ],
+      "price_range": "$20–35",
+      "dimensions": {
+        "body": 7.5,
+        "acidity": 6,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 8,
+        "alcohol": 6.5
+      }
+    },
+    {
+      "id": "sancerre",
+      "name": "Sancerre",
+      "wine_color": "white",
+      "grapes": [
+        "Sauvignon Blanc"
+      ],
+      "region": "Loire Valley, France",
+      "style_family": "Crisp and Mineral",
+      "wine_vector_type": "mineral_crisp_white",
+      "pronunciation": "sahn-SAIR",
+      "pairing_note": "Bright acidity and herbal notes pair beautifully with fresh green flavors and goat cheese",
+      "flavors": [
+        "lemon",
+        "cut grass",
+        "minerals"
+      ],
+      "foods": [
+        "Pesto Pasta",
+        "Salad with Goat Cheese",
+        "Sushi"
+      ],
+      "price_range": "$25–45",
+      "dimensions": {
+        "body": 4,
+        "acidity": 8.5,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 5
+      }
+    },
+    {
+      "id": "sauternes",
+      "name": "Sauternes",
+      "wine_color": "white",
+      "grapes": [
+        "Semillon",
+        "Sauvignon Blanc",
+        "Muscadelle"
+      ],
+      "region": "Sauternes, Bordeaux, France",
+      "style_family": "Complex Sweet",
+      "wine_vector_type": "complex_sweet",
+      "pronunciation": "soh-TURN",
+      "pairing_note": "Noble rot concentrates the grapes to extraordinary complexity — acidity balances the intense sweetness",
+      "flavors": [
+        "honey",
+        "apricot",
+        "toasted almond"
+      ],
+      "foods": [
+        "Foie Gras",
+        "Roquefort",
+        "Crème Brûlée"
+      ],
+      "price_range": "$50+",
+      "dimensions": {
+        "body": 6,
+        "acidity": 7.5,
+        "tannin": 1,
+        "sweetness": 9,
+        "oak": 3,
+        "alcohol": 4.5
+      }
+    },
+    {
+      "id": "tokaji_aszu",
+      "name": "Tokaji Aszú",
+      "wine_color": "white",
+      "grapes": [
+        "Furmint",
+        "Hárslevelű"
+      ],
+      "region": "Tokaj, Hungary",
+      "style_family": "Complex Sweet",
+      "wine_vector_type": "complex_sweet",
+      "pronunciation": "TOH-kye AH-soo",
+      "pairing_note": "Called 'wine of kings' since the 17th century — extraordinary acidity keeps extreme sweetness alive",
+      "flavors": [
+        "dried apricot",
+        "orange marmalade",
+        "honey"
+      ],
+      "foods": [
+        "Foie Gras",
+        "Blue Cheese",
+        "Fruit Cake"
+      ],
+      "price_range": "$35–60",
+      "dimensions": {
+        "body": 6.5,
+        "acidity": 8.5,
+        "tannin": 1,
+        "sweetness": 8.8,
+        "oak": 3,
+        "alcohol": 4
+      }
+    },
+    {
+      "id": "vermentino",
+      "name": "Vermentino",
+      "wine_color": "white",
+      "grapes": [
+        "Vermentino"
+      ],
+      "region": "Sardinia, Italy",
+      "style_family": "Crisp and Mineral",
+      "wine_vector_type": "mineral_crisp_white",
+      "pronunciation": "vehr-men-TEE-noh",
+      "pairing_note": "Herbal citrus notes and bright acidity pair beautifully with fresh vegetables and seafood",
+      "flavors": [
+        "lemon",
+        "herbs",
+        "pear"
+      ],
+      "foods": [
+        "Seafood",
+        "Mediterranean",
+        "Salads"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 3.5,
+        "acidity": 7.5,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 5
+      }
+    },
+    {
+      "id": "vinho_verde",
+      "name": "Vinho Verde",
+      "wine_color": "white",
+      "grapes": [
+        "Loureiro",
+        "Arinto",
+        "Trajadura"
+      ],
+      "region": "Portugal",
+      "style_family": "Crisp and Mineral",
+      "wine_vector_type": "mineral_crisp_white",
+      "pronunciation": "VEE-nyo VEHR-day",
+      "pairing_note": "Light fizz and low alcohol pair perfectly with light foods without weighing you down",
+      "flavors": [
+        "lemon",
+        "green apple",
+        "spritz"
+      ],
+      "foods": [
+        "Seafood",
+        "Light Salads",
+        "Brunch"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 2,
+        "acidity": 7.5,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 3.5
+      }
+    },
+    {
+      "id": "viognier",
+      "name": "Viognier",
+      "wine_color": "white",
+      "grapes": [
+        "Viognier"
+      ],
+      "region": "Rhone Valley, France",
+      "style_family": "Rich and Rounded",
+      "wine_vector_type": "rich_textured_white",
+      "pronunciation": "vee-own-YAY",
+      "pairing_note": "Lush texture and exotic aromatics pair beautifully with rich foods and bold spicy flavors",
+      "flavors": [
+        "peach",
+        "honeysuckle",
+        "mango"
+      ],
+      "foods": [
+        "Thai Food",
+        "Roast Pork",
+        "Lobster"
+      ],
+      "price_range": "$20–35",
+      "dimensions": {
+        "body": 7,
+        "acidity": 6,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 3,
+        "alcohol": 6.5
+      }
+    },
+    {
+      "id": "vouvray",
+      "name": "Vouvray",
+      "wine_color": "white",
+      "grapes": [
+        "Chenin Blanc"
+      ],
+      "region": "Loire Valley, France",
+      "style_family": "Off-Dry and Approachable",
+      "wine_vector_type": "off_dry_aromatic_white",
+      "pronunciation": "voo-VRAY",
+      "pairing_note": "Touch of honey and rich texture balance spice while high acidity keeps it food friendly",
+      "flavors": [
+        "honey",
+        "apple",
+        "chamomile"
+      ],
+      "foods": [
+        "Roast Pork",
+        "Thai Food",
+        "Cheese"
+      ],
+      "price_range": "$20–35",
+      "dimensions": {
+        "body": 5,
+        "acidity": 7.5,
+        "tannin": 1,
+        "sweetness": 2,
+        "oak": 1,
+        "alcohol": 5
+      }
+    },
+    {
+      "id": "white_rioja",
+      "name": "White Rioja",
+      "wine_color": "white",
+      "grapes": [
+        "Viura",
+        "Garnacha Blanca"
+      ],
+      "region": "Rioja, Spain",
+      "style_family": "Rich and Rounded",
+      "wine_vector_type": "rich_textured_white",
+      "pronunciation": "ree-OH-hah BLAHNK-oh",
+      "pairing_note": "Oak aging adds texture and nuttiness that bridges between light and rich whites — excellent with shellfish",
+      "flavors": [
+        "vanilla",
+        "toasted almond",
+        "ripe pear"
+      ],
+      "foods": [
+        "Tapas",
+        "Roast Chicken",
+        "Shellfish"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 6.5,
+        "acidity": 6,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 8,
+        "alcohol": 6
+      }
+    },
+    {
+      "id": "asti_spumante",
+      "name": "Asti Spumante",
+      "wine_color": "sparkling",
+      "grapes": [
+        "Moscato Bianco"
+      ],
+      "region": "Piedmont, Italy",
+      "style_family": "Sweet and Simple Bubbles",
+      "wine_vector_type": "sweet_easy_sparkling",
+      "pronunciation": "AH-stee spoo-MAHN-teh",
+      "pairing_note": "Fully sparkling and very sweet — made for cake, panettone, and festive occasions",
+      "flavors": [
+        "peach",
+        "orange blossom",
+        "grape candy"
+      ],
+      "foods": [
+        "Birthday Cake",
+        "Panettone",
+        "Fruit Tart"
+      ],
+      "price_range": "Under $15",
+      "dimensions": {
+        "body": 3,
+        "acidity": 6,
+        "tannin": 1,
+        "sweetness": 8.5,
+        "oak": 1,
+        "alcohol": 2.2
+      }
+    },
+    {
+      "id": "blanc_de_blancs",
+      "name": "Blanc de Blancs Champagne",
+      "wine_color": "sparkling",
+      "grapes": [
+        "Chardonnay"
+      ],
+      "region": "Côte des Blancs, Champagne, France",
+      "style_family": "Dry and Focused Bubbles",
+      "wine_vector_type": "austere_traditional_sparkling",
+      "pronunciation": "blahn duh BLAHN",
+      "pairing_note": "Pure Chardonnay Champagne — all chalk, lemon, and toasted bread. The highest expression of mineral sparkling",
+      "flavors": [
+        "lemon",
+        "brioche",
+        "chalk"
+      ],
+      "foods": [
+        "Oysters",
+        "Sushi",
+        "Caviar"
+      ],
+      "price_range": "$35–60",
+      "dimensions": {
+        "body": 3.5,
+        "acidity": 9.5,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 5
+      }
+    },
+    {
+      "id": "brachetto_dacqui",
+      "name": "Brachetto d'Acqui",
+      "wine_color": "sparkling",
+      "grapes": [
+        "Brachetto"
+      ],
+      "region": "Piedmont, Italy",
+      "style_family": "Sweet and Simple Bubbles",
+      "wine_vector_type": "sweet_easy_sparkling",
+      "pronunciation": "brah-KET-toh DAH-kwee",
+      "pairing_note": "The only wine that truly pairs with chocolate — strawberry and rose notes bridge the gap",
+      "flavors": [
+        "strawberry",
+        "rose petal",
+        "raspberry"
+      ],
+      "foods": [
+        "Chocolate",
+        "Strawberry Desserts",
+        "Tiramisu"
+      ],
+      "price_range": "Under $15",
+      "dimensions": {
+        "body": 2.5,
+        "acidity": 6.5,
+        "tannin": 1,
+        "sweetness": 8,
+        "oak": 1,
+        "alcohol": 1.5
+      }
+    },
+    {
+      "id": "brut_nature_cava",
+      "name": "Brut Nature Cava",
+      "wine_color": "sparkling",
+      "grapes": [
+        "Macabeo",
+        "Xarello",
+        "Parellada"
+      ],
+      "region": "Catalonia, Spain",
+      "style_family": "Dry and Focused Bubbles",
+      "wine_vector_type": "austere_traditional_sparkling",
+      "pronunciation": "BROO-t NAH-too-reh KAH-vah",
+      "pairing_note": "No added sugar lets the earthy, toasty character shine through — ideal with savory Spanish bites",
+      "flavors": [
+        "lemon zest",
+        "toast",
+        "almond"
+      ],
+      "foods": [
+        "Tapas",
+        "Seafood",
+        "Charcuterie"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 3,
+        "acidity": 8.8,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 5
+      }
+    },
+    {
+      "id": "bugey_cerdon",
+      "name": "Bugey-Cerdon",
+      "wine_color": "sparkling",
+      "grapes": [
+        "Gamay",
+        "Poulsard"
+      ],
+      "region": "Bugey, Ain, France",
+      "style_family": "Red Bubbles",
+      "wine_vector_type": "sparkling_red",
+      "pronunciation": "boo-ZHAY sehr-DAWN",
+      "pairing_note": "Fizzy pink semi-sweet Gamay — Beaujolais and Brachetto had a French baby",
+      "flavors": [
+        "strawberry",
+        "raspberry",
+        "rose"
+      ],
+      "foods": [
+        "Charcuterie",
+        "Fruit Desserts",
+        "Brunch"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 3,
+        "acidity": 7.2,
+        "tannin": 1,
+        "sweetness": 4.5,
+        "oak": 1,
+        "alcohol": 3
+      }
+    },
+    {
+      "id": "cava_brut",
+      "name": "Cava Brut",
+      "wine_color": "sparkling",
+      "grapes": [
+        "Macabeo",
+        "Xarello",
+        "Parellada"
+      ],
+      "region": "Catalonia, Spain",
+      "style_family": "Classic Bubbles",
+      "wine_vector_type": "classic_traditional_sparkling",
+      "pronunciation": "KAH-vah BROO-t",
+      "pairing_note": "Brut Cava is one of the world's best values in sparkling wine — biscuity and food-friendly",
+      "flavors": [
+        "green apple",
+        "toast",
+        "citrus"
+      ],
+      "foods": [
+        "Tapas",
+        "Paella",
+        "Fried Food"
+      ],
+      "price_range": "Under $15",
+      "dimensions": {
+        "body": 3.5,
+        "acidity": 8.2,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 5
+      }
+    },
+    {
+      "id": "cava_semisec",
+      "name": "Cava Semi-Seco",
+      "wine_color": "sparkling",
+      "grapes": [
+        "Macabeo",
+        "Xarello",
+        "Parellada"
+      ],
+      "region": "Catalonia, Spain",
+      "style_family": "Sweet and Elegant Bubbles",
+      "wine_vector_type": "sweet_traditional_sparkling",
+      "pronunciation": "KAH-vah seh-MEE-seh-koh",
+      "pairing_note": "Spanish bubbles with gentle sweetness — the affordable crowd-pleaser for dessert toasts",
+      "flavors": [
+        "apple",
+        "peach",
+        "toast"
+      ],
+      "foods": [
+        "Churros",
+        "Fruit Desserts",
+        "Mild Cheese"
+      ],
+      "price_range": "Under $15",
+      "dimensions": {
+        "body": 3.5,
+        "acidity": 7.5,
+        "tannin": 1,
+        "sweetness": 3.5,
+        "oak": 1,
+        "alcohol": 4.8
+      }
+    },
+    {
+      "id": "champagne",
+      "name": "Champagne",
+      "wine_color": "sparkling",
+      "grapes": [
+        "Chardonnay",
+        "Pinot Noir",
+        "Pinot Meunier"
+      ],
+      "region": "Champagne, France",
+      "style_family": "Classic Bubbles",
+      "wine_vector_type": "classic_traditional_sparkling",
+      "pronunciation": "sham-PAYN",
+      "pairing_note": "High acidity and elegant bubbles cut through rich foods while elevating any moment to special",
+      "flavors": [
+        "lemon",
+        "brioche",
+        "green apple"
+      ],
+      "foods": [
+        "Oysters",
+        "Caviar",
+        "Fried Chicken"
+      ],
+      "price_range": "$50+",
+      "dimensions": {
+        "body": 4.5,
+        "acidity": 8,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 5
+      }
+    },
+    {
+      "id": "cremant_dalsace",
+      "name": "Crémant d'Alsace",
+      "wine_color": "sparkling",
+      "grapes": [
+        "Pinot Blanc",
+        "Auxerrois",
+        "Riesling"
+      ],
+      "region": "Alsace, France",
+      "style_family": "Classic Bubbles",
+      "wine_vector_type": "classic_traditional_sparkling",
+      "pronunciation": "kreh-MAHN dal-ZASS",
+      "pairing_note": "Alsatian aromatics make this more floral and expressive than other Crémants — great aperitif wine",
+      "flavors": [
+        "apple",
+        "white flower",
+        "citrus"
+      ],
+      "foods": [
+        "Quiche",
+        "Charcuterie",
+        "Shellfish"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 3.5,
+        "acidity": 8,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 4.8
+      }
+    },
+    {
+      "id": "cremant_de_bourgogne",
+      "name": "Crémant de Bourgogne",
+      "wine_color": "sparkling",
+      "grapes": [
+        "Chardonnay",
+        "Pinot Noir"
+      ],
+      "region": "Burgundy, France",
+      "style_family": "Dry and Focused Bubbles",
+      "wine_vector_type": "austere_traditional_sparkling",
+      "pronunciation": "kreh-MAHN duh boor-GON-yuh",
+      "pairing_note": "Burgundian grapes with traditional method — Champagne elegance at a fraction of the cost",
+      "flavors": [
+        "green apple",
+        "lemon cream",
+        "brioche"
+      ],
+      "foods": [
+        "Oysters",
+        "Cheese Board",
+        "Smoked Salmon"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 3.5,
+        "acidity": 8.8,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 4.8
+      }
+    },
+    {
+      "id": "cremant_demisec",
+      "name": "Crémant Demi-Sec",
+      "wine_color": "sparkling",
+      "grapes": [
+        "Chenin Blanc",
+        "Chardonnay"
+      ],
+      "region": "Loire Valley, France",
+      "style_family": "Sweet and Elegant Bubbles",
+      "wine_vector_type": "sweet_traditional_sparkling",
+      "pronunciation": "kreh-MAHN duh-MEE-SEK",
+      "pairing_note": "Loire Chenin Blanc's honey and floral notes bloom with a touch of sweetness",
+      "flavors": [
+        "pear",
+        "white flowers",
+        "honey"
+      ],
+      "foods": [
+        "Fruit Tart",
+        "Soft Cheese",
+        "Crêpes"
+      ],
+      "price_range": "Under $15",
+      "dimensions": {
+        "body": 3.5,
+        "acidity": 8,
+        "tannin": 1,
+        "sweetness": 3.8,
+        "oak": 1,
+        "alcohol": 4.5
+      }
+    },
+    {
+      "id": "champagne_demisec",
+      "name": "Demi-Sec Champagne",
+      "wine_color": "sparkling",
+      "grapes": [
+        "Chardonnay",
+        "Pinot Noir",
+        "Pinot Meunier"
+      ],
+      "region": "Champagne, France",
+      "style_family": "Sweet and Elegant Bubbles",
+      "wine_vector_type": "sweet_traditional_sparkling",
+      "pronunciation": "duh-MEE-SEK shahm-PAN-yuh",
+      "pairing_note": "Champagne's signature acidity keeps the sweetness lifted — perfect with fruit desserts",
+      "flavors": [
+        "peach",
+        "honey",
+        "brioche"
+      ],
+      "foods": [
+        "Fruit Tart",
+        "Cheesecake",
+        "Blue Cheese"
+      ],
+      "price_range": "$35–60",
+      "dimensions": {
+        "body": 4,
+        "acidity": 8,
+        "tannin": 1,
+        "sweetness": 4,
+        "oak": 1,
+        "alcohol": 5
+      }
+    },
+    {
+      "id": "frizzante_soave",
+      "name": "Frizzante Soave",
+      "wine_color": "sparkling",
+      "grapes": [
+        "Garganega",
+        "Trebbiano"
+      ],
+      "region": "Veneto, Italy",
+      "style_family": "Fresh and Easy Bubbles",
+      "wine_vector_type": "fresh_easy_sparkling",
+      "pronunciation": "freet-ZAHN-teh SWAH-veh",
+      "pairing_note": "Garganega's natural almond note and light bubbles make this the ultimate Italian aperitivo",
+      "flavors": [
+        "almond",
+        "lemon",
+        "white pear"
+      ],
+      "foods": [
+        "Antipasto",
+        "Light Pasta",
+        "Grilled Fish"
+      ],
+      "price_range": "Under $15",
+      "dimensions": {
+        "body": 2.8,
+        "acidity": 7.2,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 3.8
+      }
+    },
+    {
+      "id": "lambrusco",
+      "name": "Lambrusco",
+      "wine_color": "sparkling",
+      "grapes": [
+        "Lambrusco"
+      ],
+      "region": "Emilia-Romagna, Italy",
+      "style_family": "Red Bubbles",
+      "wine_vector_type": "sparkling_red",
+      "pronunciation": "lahm-BROOS-koh",
+      "pairing_note": "Bubbles and acidity cut through rich fatty foods while fruit keeps it fun and approachable",
+      "flavors": [
+        "strawberry",
+        "cherry",
+        "bubbles"
+      ],
+      "foods": [
+        "Pizza",
+        "Charcuterie",
+        "Fried Chicken"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 3,
+        "acidity": 7.5,
+        "tannin": 2,
+        "sweetness": 1.5,
+        "oak": 1,
+        "alcohol": 4.5
+      }
+    },
+    {
+      "id": "moscato_dasti",
+      "name": "Moscato d'Asti",
+      "wine_color": "sparkling",
+      "grapes": [
+        "Moscato Bianco"
+      ],
+      "region": "Piedmont, Italy",
+      "style_family": "Sweet and Simple Bubbles",
+      "wine_vector_type": "sweet_easy_sparkling",
+      "pronunciation": "moh-SKAH-toh DAH-stee",
+      "pairing_note": "Light frizzante sweetness with only 5-6% alcohol — the original brunch wine and perfect dessert pairing",
+      "flavors": [
+        "peach",
+        "orange blossom",
+        "muscat grape"
+      ],
+      "foods": [
+        "Fruit Desserts",
+        "Biscotti",
+        "Fresh Fruit"
+      ],
+      "price_range": "Under $15",
+      "dimensions": {
+        "body": 2.5,
+        "acidity": 6.5,
+        "tannin": 1,
+        "sweetness": 8,
+        "oak": 1,
+        "alcohol": 1.5
+      }
+    },
+    {
+      "id": "petnat",
+      "name": "Pét-Nat",
+      "wine_color": "sparkling",
+      "grapes": [
+        "Chenin Blanc",
+        "Gamay",
+        "Glera"
+      ],
+      "region": "Everywhere (natural wine world)",
+      "style_family": "Fresh and Easy Bubbles",
+      "wine_vector_type": "fresh_easy_sparkling",
+      "pronunciation": "PET-nah",
+      "pairing_note": "Low-intervention sparkling with slight fizz — hazy, textural, and uniquely alive",
+      "flavors": [
+        "crunchy apple",
+        "lemon",
+        "bread"
+      ],
+      "foods": [
+        "Charcuterie",
+        "Natural Cheese",
+        "Light Snacks"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 3,
+        "acidity": 8,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 3.8
+      }
+    },
+    {
+      "id": "prosecco",
+      "name": "Prosecco",
+      "wine_color": "sparkling",
+      "grapes": [
+        "Glera"
+      ],
+      "region": "Veneto, Italy",
+      "style_family": "Fresh and Easy Bubbles",
+      "wine_vector_type": "fresh_easy_sparkling",
+      "pronunciation": "proh-SEH-koh",
+      "pairing_note": "Light bubbles and touch of sweetness pair beautifully with brunch foods and salty appetizers",
+      "flavors": [
+        "pear",
+        "peach",
+        "white flowers"
+      ],
+      "foods": [
+        "Brunch",
+        "Prosciutto",
+        "Fresh Fruit"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 2.5,
+        "acidity": 7,
+        "tannin": 1,
+        "sweetness": 1.5,
+        "oak": 1,
+        "alcohol": 4.5
+      }
+    },
+    {
+      "id": "sparkling_shiraz",
+      "name": "Sparkling Shiraz",
+      "wine_color": "sparkling",
+      "grapes": [
+        "Shiraz"
+      ],
+      "region": "Barossa Valley, Australia",
+      "style_family": "Red Bubbles",
+      "wine_vector_type": "sparkling_red",
+      "pronunciation": "SPAR-kling shih-RAZ",
+      "pairing_note": "Bold Shiraz with bubbles — Australia's most festive party trick. Especially beloved at Christmas",
+      "flavors": [
+        "blackberry",
+        "dark chocolate",
+        "pepper"
+      ],
+      "foods": [
+        "BBQ",
+        "Lamb",
+        "Meat Pie"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 7.5,
+        "acidity": 6.5,
+        "tannin": 5,
+        "sweetness": 1.5,
+        "oak": 3,
+        "alcohol": 8
+      }
+    },
+    {
+      "id": "amber_pinot_grigio",
+      "name": "Amber Pinot Grigio",
+      "wine_color": "orange",
+      "grapes": [
+        "Pinot Grigio"
+      ],
+      "region": "Northeastern Italy / Slovenia",
+      "style_family": "Orange and Unconventional",
+      "wine_vector_type": "lightly_skin_contact",
+      "pronunciation": "AM-ber PEE-noh GREE-joh",
+      "pairing_note": "Light skin contact adds texture without overwhelming — the accessible entry point to orange wine",
+      "flavors": [
+        "apricot",
+        "almond",
+        "orange blossom"
+      ],
+      "foods": [
+        "Charcuterie",
+        "Roasted Veg",
+        "Mild Cheese"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 4.5,
+        "acidity": 7.2,
+        "tannin": 1.5,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 5.5
+      }
+    },
+    {
+      "id": "georgian_mtsvane",
+      "name": "Georgian Mtsvane",
+      "wine_color": "orange",
+      "grapes": [
+        "Mtsvane Kakhuri"
+      ],
+      "region": "Kakheti, Georgia",
+      "style_family": "Orange and Unconventional",
+      "wine_vector_type": "full_amber_skin_contact",
+      "pronunciation": "mm-TSVAH-neh",
+      "pairing_note": "More floral than Rkatsiteli but equally tannic — traditional Georgian skin-contact at its most aromatic",
+      "flavors": [
+        "rose",
+        "dried orange",
+        "nuts"
+      ],
+      "foods": [
+        "Lamb",
+        "Georgian Cuisine",
+        "Spiced Dishes"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 6,
+        "acidity": 7.2,
+        "tannin": 5,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 6.2
+      }
+    },
+    {
+      "id": "georgian_rkatsiteli",
+      "name": "Georgian Rkatsiteli",
+      "wine_color": "orange",
+      "grapes": [
+        "Rkatsiteli"
+      ],
+      "region": "Kakheti, Georgia",
+      "style_family": "Orange and Unconventional",
+      "wine_vector_type": "full_amber_skin_contact",
+      "pronunciation": "rkah-tsee-TEH-lee",
+      "pairing_note": "Extended qvevri skin contact produces serious tannins and walnut depth — a natural wine landmark",
+      "flavors": [
+        "walnut",
+        "dried orange",
+        "dried herbs"
+      ],
+      "foods": [
+        "Lamb",
+        "Walnuts",
+        "Hard Cheese"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 6.5,
+        "acidity": 7,
+        "tannin": 5.5,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 6.5
+      }
+    },
+    {
+      "id": "long_maceration_amber",
+      "name": "Long-Maceration Amber",
+      "wine_color": "orange",
+      "grapes": [
+        "Pinot Gris",
+        "Gewurztraminer",
+        "Malvasia"
+      ],
+      "region": "Slovenia / Friuli, Italy / Georgia",
+      "style_family": "Orange and Unconventional",
+      "wine_vector_type": "full_amber_skin_contact",
+      "pronunciation": "long MASS-er-AY-shun AM-ber",
+      "pairing_note": "Extended maceration creates white wine with red wine tannins — extraordinary with rich savory food",
+      "flavors": [
+        "orange marmalade",
+        "hazelnuts",
+        "tea tannins"
+      ],
+      "foods": [
+        "Game Meat",
+        "Aged Cheese",
+        "Charcuterie"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 7,
+        "acidity": 6.5,
+        "tannin": 6.5,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 7
+      }
+    },
+    {
+      "id": "ramato",
+      "name": "Ramato Pinot Grigio",
+      "wine_color": "orange",
+      "grapes": [
+        "Pinot Grigio"
+      ],
+      "region": "Friuli-Venezia Giulia, Italy",
+      "style_family": "Orange and Unconventional",
+      "wine_vector_type": "lightly_skin_contact",
+      "pronunciation": "rah-MAH-toh",
+      "pairing_note": "Short skin contact gives copper color, tannic grip, and savory depth — the original Pinot Grigio",
+      "flavors": [
+        "dried orange peel",
+        "almond",
+        "spice"
+      ],
+      "foods": [
+        "Charcuterie",
+        "Hard Cheese",
+        "Antipasto"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 5,
+        "acidity": 7.2,
+        "tannin": 2,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 5.8
+      }
+    },
+    {
+      "id": "skin_contact_pinot_gris",
+      "name": "Skin-Contact Pinot Gris",
+      "wine_color": "orange",
+      "grapes": [
+        "Pinot Gris"
+      ],
+      "region": "Alsace, France / Slovenia / Oregon, USA",
+      "style_family": "Orange and Unconventional",
+      "wine_vector_type": "lightly_skin_contact",
+      "pronunciation": "PEE-noh GREE (skin contact)",
+      "pairing_note": "Extended skin contact amplifies Pinot Gris's natural spice and texture — extraordinary with rich food",
+      "flavors": [
+        "orange",
+        "pear skin",
+        "ginger"
+      ],
+      "foods": [
+        "Foie Gras",
+        "Aged Cheese",
+        "Pork"
+      ],
+      "price_range": "$15–25",
+      "dimensions": {
+        "body": 6,
+        "acidity": 6.8,
+        "tannin": 2.5,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 6.5
+      }
+    }
+  ]
+}

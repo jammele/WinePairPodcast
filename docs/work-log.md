@@ -50,12 +50,21 @@
 - Phase 1: reds (hub + 6 spoke pages). Spoke #1 is Malbec (template reference).
 - All 6 Phase 1 red spokes have dedicated podcast episode links confirmed
 
-**Phase 1 (Hub + 6 red spoke pages): NOT STARTED**
+**Phase 1 (Hub + 6 red spoke pages): DATA READY, CONTENT NOT STARTED**
 
-Next steps:
-- Draft hub page copy (Claude chat session with project docs uploaded)
+**Claude Code work completed (2026-04-27):**
+- Extracted all 75 Winedr wine cards from app source (`wineCards.ts`) into blog-ready JSON
+- Added 9 supplemental wines not yet in the app but needed for Phase 1 spoke pages (Merlot, Nero d'Avola, Primitivo, Pinotage, Mencía, Dolcetto, Mourvèdre, Valpolicella, Cinsault)
+- All 6 Phase 1 spoke wines confirmed present with correct dimension scores
+- Output: `data/wine_similarity_data.json` (84 wines) and `G:/My Drive/Wine Podcast/Phase 2/Wine Similarity Project/wine_data.json`
+- Script: `scripts/extract_wine_data.cjs` — re-run anytime the Winedr app wine cards are updated
+
+**Next Claude Code tasks:**
+- Build dimension bar card HTML/CSS template
+
+**Content drafting (needs Claude chat session):**
+- Draft hub page copy — upload project docs (01-04) to Claude chat
 - Draft spoke #1 (Malbec) as template reference
-- Claude Code: extract 75 Winedr wine cards from `WINEDR_SCORING_SPEC_V2.md` into blog-ready JSON (can start anytime, no Joe input needed)
 
 **Open decisions waiting on Joe:**
 - [ ] Confirm CMS supports `/similar-wines` slug
