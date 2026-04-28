@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wine Dimension Bar Card — Template Preview</title>
+<style>
+
+/* ============================================================
+   WINE DIMENSION BAR CARD
+   The Wine Pair Podcast — Wine Similarity Project
+
+   Usage:
+   - Copy a single .wine-card block into Beamly as an HTML block
+   - Include the CSS once per page (paste into Beamly's custom CSS field)
+   - Update the data-value attributes and style percentages per wine
+   ============================================================ */
+
+/* --- Base card --- */
+.wine-card {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #ffffff;
+  border: 1px solid #e8e0d8;
+  border-radius: 10px;
+  padding: 20px 22px;
+  max-width: 420px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* --- Header: name + badge --- */
+.wine-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.wine-card__name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 2px 0;
+  line-height: 1.2;
+}
+
+.wine-card__region {
+  font-size: 0.78rem;
+  color: #777;
+  display: block;
+}
+
+/* --- Style family badge --- */
+.wine-card__badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 4px 9px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  color: #fff;
+}
+
+/* Red style families */
+.wine-card__badge--light-lively        { background: #5a8a60; }
+.wine-card__badge--graceful-earthy     { background: #8a6040; }
+.wine-card__badge--classic-food        { background: #8a7030; }
+.wine-card__badge--bold-fruit          { background: #6a3070; }
+.wine-card__badge--rich-savory         { background: #505040; }
+
+/* White style families */
+.wine-card__badge--crisp-mineral       { background: #3a6080; }
+.wine-card__badge--bright-aromatic     { background: #7a7030; }
+.wine-card__badge--rich-rounded        { background: #8a6030; }
+.wine-card__badge--off-dry             { background: #6a8060; }
+.wine-card__badge--orange-unconventional { background: #8a5030; }
+
+/* Rosé */
+.wine-card__badge--rose                { background: #a05060; }
+
+/* --- Short description --- */
+.wine-card__description {
+  font-size: 0.85rem;
+  color: #444;
+  margin: 10px 0 14px 0;
+  line-height: 1.5;
+}
+
+/* --- Dimension bars --- */
+.wine-card__dimensions {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 14px;
+}
+
+.wine-card__dim {
+  display: grid;
+  grid-template-columns: 80px 1fr 28px;
+  align-items: center;
+  gap: 8px;
+}
+
+.wine-card__dim-label {
+  font-size: 0.75rem;
+  color: #555;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.wine-card__bar-track {
+  height: 8px;
+  background: #f0ebe4;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.wine-card__bar-fill {
+  height: 100%;
+  background: #8b1a2e;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.wine-card__dim-value {
+  font-size: 0.72rem;
+  color: #888;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- Footer: grapes + price --- */
+.wine-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f0ebe4;
+  padding-top: 10px;
+  margin-top: 2px;
+}
+
+.wine-card__grapes {
+  font-size: 0.78rem;
+  color: #666;
+  font-style: italic;
+}
+
+.wine-card__price {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #8b1a2e;
+}
+
+/* --- Responsive: stack on very small screens --- */
+@media (max-width: 380px) {
+  .wine-card__header {
+    flex-direction: column;
+  }
+  .wine-card__dim {
+    grid-template-columns: 70px 1fr 24px;
+  }
+}
+
+/* ============================================================
+   PREVIEW PAGE STYLES (not needed in Beamly — for preview only)
+   ============================================================ */
+body {
+  background: #f5f0eb;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+h1 {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.preview-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 900px;
+}
+.preview-label {
+  font-size: 0.7rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Wine Dimension Bar Card — Template Preview</h1>
+
+<div class="preview-grid">
+
+  <!-- =====================================================
+       CARD 1: Oregon Pinot Noir (Graceful and Earthy)
+       Spoke #1 — the template reference card
+       ===================================================== -->
+  <div>
+    <p class="preview-label">Spoke wine — featured card</p>
+    <div class="wine-card">
+      <div class="wine-card__header">
+        <div>
+          <h3 class="wine-card__name">Oregon Pinot Noir</h3>
+          <span class="wine-card__region">Willamette Valley, Oregon</span>
+        </div>
+        <span class="wine-card__badge wine-card__badge--graceful-earthy">Graceful and Earthy</span>
+      </div>
+      <p class="wine-card__description">Light to medium body, high acidity, silky tannins. Cherry, mushroom, and rose petal. The red wine that drinks like it has something to say.</p>
+      <div class="wine-card__dimensions">
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Body</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:55%"></div></div>
+          <span class="wine-card__dim-value">5.5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Acidity</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:75%"></div></div>
+          <span class="wine-card__dim-value">7.5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Tannin</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:40%"></div></div>
+          <span class="wine-card__dim-value">4</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Sweetness</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:10%"></div></div>
+          <span class="wine-card__dim-value">1</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Oak</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:30%"></div></div>
+          <span class="wine-card__dim-value">3</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Alcohol</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:55%"></div></div>
+          <span class="wine-card__dim-value">5.5</span>
+        </div>
+      </div>
+      <div class="wine-card__footer">
+        <span class="wine-card__grapes">Pinot Noir</span>
+        <span class="wine-card__price">$15–30</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       CARD 2: Beaujolais (Light and Lively) — similar wine
+       ===================================================== -->
+  <div>
+    <p class="preview-label">Similar wine card</p>
+    <div class="wine-card">
+      <div class="wine-card__header">
+        <div>
+          <h3 class="wine-card__name">Beaujolais</h3>
+          <span class="wine-card__region">Beaujolais, France</span>
+        </div>
+        <span class="wine-card__badge wine-card__badge--light-lively">Light and Lively</span>
+      </div>
+      <p class="wine-card__description">Lighter than Pinot Noir, higher-toned fruit, almost no tannin. Strawberry, violet, cherry. The one you can serve slightly chilled.</p>
+      <div class="wine-card__dimensions">
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Body</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:35%"></div></div>
+          <span class="wine-card__dim-value">3.5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Acidity</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:75%"></div></div>
+          <span class="wine-card__dim-value">7.5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Tannin</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:25%"></div></div>
+          <span class="wine-card__dim-value">2.5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Sweetness</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:10%"></div></div>
+          <span class="wine-card__dim-value">1</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Oak</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:10%"></div></div>
+          <span class="wine-card__dim-value">1</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Alcohol</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:40%"></div></div>
+          <span class="wine-card__dim-value">4</span>
+        </div>
+      </div>
+      <div class="wine-card__footer">
+        <span class="wine-card__grapes">Gamay</span>
+        <span class="wine-card__price">$12–20</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       CARD 3: Malbec (Bold and Fruit-Forward) — contrast example
+       ===================================================== -->
+  <div>
+    <p class="preview-label">Different style family — for contrast</p>
+    <div class="wine-card">
+      <div class="wine-card__header">
+        <div>
+          <h3 class="wine-card__name">Malbec</h3>
+          <span class="wine-card__region">Mendoza, Argentina</span>
+        </div>
+        <span class="wine-card__badge wine-card__badge--bold-fruit">Bold and Fruit-Forward</span>
+      </div>
+      <p class="wine-card__description">Full body, ripe dark fruit, approachable tannins. Blueberry, chocolate, coffee. The crowd-pleaser that actually delivers.</p>
+      <div class="wine-card__dimensions">
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Body</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:75%"></div></div>
+          <span class="wine-card__dim-value">7.5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Acidity</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:55%"></div></div>
+          <span class="wine-card__dim-value">5.5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Tannin</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:60%"></div></div>
+          <span class="wine-card__dim-value">6</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Sweetness</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:10%"></div></div>
+          <span class="wine-card__dim-value">1</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Oak</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:60%"></div></div>
+          <span class="wine-card__dim-value">6</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Alcohol</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:70%"></div></div>
+          <span class="wine-card__dim-value">7</span>
+        </div>
+      </div>
+      <div class="wine-card__footer">
+        <span class="wine-card__grapes">Malbec</span>
+        <span class="wine-card__price">$12–25</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!--
+  ================================================================
+  HOW TO USE IN BEAMLY
+  ================================================================
+
+  STEP 1 — Add the CSS once per page:
+  Go to the page editor → SEO / Code Injection → <head> section.
+  Paste everything between the .wine-card { ... } blocks above
+  (stop before "PREVIEW PAGE STYLES").
+
+  STEP 2 — Add a card:
+  In Beamly, add an HTML/Code block where you want the card to appear.
+  Copy one .wine-card div from above and paste it in.
+  Update the following for each wine:
+    - wine-card__name: the wine name
+    - wine-card__region: region / country
+    - wine-card__badge class: match the style family (see class list above)
+    - wine-card__badge text: the style family name
+    - wine-card__description: 1-2 sentences in plain language
+    - Each bar: style="width:[score×10]%" and the dim-value text
+      Example: score 7.5 → style="width:75%", value "7.5"
+    - wine-card__grapes: grape variety or varieties
+    - wine-card__price: price range like $15–25
+
+  STEP 3 — Badge class reference:
+    Graceful and Earthy     → wine-card__badge--graceful-earthy
+    Light and Lively        → wine-card__badge--light-lively
+    Classic and Food-Friendly → wine-card__badge--classic-food
+    Bold and Fruit-Forward  → wine-card__badge--bold-fruit
+    Rich and Savory         → wine-card__badge--rich-savory
+    Crisp and Mineral       → wine-card__badge--crisp-mineral
+    Bright and Aromatic     → wine-card__badge--bright-aromatic
+    Rich and Rounded        → wine-card__badge--rich-rounded
+    Off-Dry and Approachable → wine-card__badge--off-dry
+    Orange and Unconventional → wine-card__badge--orange-unconventional
+
+  ================================================================
+-->
+
+</body>
+</html>

@@ -60,7 +60,7 @@
 - Script: `scripts/extract_wine_data.cjs` — re-run anytime the Winedr app wine cards are updated
 
 **Next Claude Code tasks:**
-- Build dimension bar card HTML/CSS template
+- ~~Build dimension bar card HTML/CSS template~~ DONE — `templates/dimension-bar-card.html`
 
 **Content drafting (needs Claude chat session):**
 - Draft hub page copy — upload project docs (01-04) to Claude chat
