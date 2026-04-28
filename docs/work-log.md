@@ -63,19 +63,37 @@
 - ~~Build dimension bar card HTML/CSS template~~ DONE — `templates/dimension-bar-card.html`
 
 **Content drafting status:**
-- Pinot Noir spoke page — IN PROGRESS in Claude chat (2026-04-27)
-- Hub page — deferred until Pinot Noir spoke is voice-edited; hub borrows proven language from it
+- Pinot Noir spoke page — DRAFT COMPLETE (2026-04-27), saved to `G:/My Drive/Wine Podcast/Phase 2/Blog Posts/wines-similar-to-pinot-noir.md`
+- Hub page — deferred until Pinot Noir spoke is voice-edited and live; hub borrows proven language from it
 
-**Key decisions from Claude chat (2026-04-27):**
+**Next Claude Code task (start of next session):**
+Generate 7 ready-to-paste Beamly HTML card blocks for the Pinot Noir spoke page:
+- Oregon Pinot Noir (anchor card)
+- Frappato
+- Beaujolais
+- Cinsault
+- Mencía
+- Etna Rosso
+- Red Burgundy
+
+Wine card dimensions and scores are all in `data/wine_similarity_data.json`. HTML template is in `templates/dimension-bar-card.html`. Output should be 7 standalone `.wine-card` div blocks, one per wine, ready to paste into Beamly HTML blocks.
+
+**Publishing checklist for Pinot Noir spoke:**
+1. [ ] Joe voice-edits the draft (read aloud, fix anything that doesn't sound right)
+2. [ ] Claude Code generates 7 HTML card blocks (next session — first task)
+3. [ ] Joe creates page in Beamly at `/wines-similar-to-pinot-noir`
+4. [ ] Joe pastes text + swaps [WINE_CARD] placeholders with HTML card blocks
+5. [ ] No Review Schema needed (similarity guide, not a wine review)
+6. [ ] Publish
+
+**Key decisions locked (2026-04-27):**
 - All Winedr references removed from drafts — app not yet built
-- Spoke template Section 8 (Winedr CTA) replaced with podcast/newsletter funnel; Winedr drops back in when app launches
-- Hub "how the guide works" trust section: use Joe and Carmela's tasting/podcast catalog as credibility, not Winedr — decide exact framing before writing hub
+- Spoke template Winedr CTA replaced with podcast/newsletter funnel; Winedr drops back in when app launches
+- Hub "how the guide works" trust section: use Joe and Carmela's tasting/podcast catalog as credibility, not Winedr
 - Soul Document and Strategy doc still reference Winedr as live — revisit when app launches, not urgent
-- Pinot Noir draft output: Claude chat saves to outputs/wines-similar-to-pinot-noir.md — Joe to copy to Drive when done
 
 **Open decisions waiting on Joe:**
-- [ ] Confirm CMS supports `/similar-wines` slug
-- [ ] Decide Moscato and Champagne handling (no dedicated episodes yet)
+- [ ] Decide Moscato and Champagne handling (skip until episodes recorded — agreed in session)
 - [ ] Confirm whether Winedr style family names propagate to app UI
 
 ---
