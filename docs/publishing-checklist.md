@@ -23,10 +23,10 @@ Every new page or blog post must go through this checklist. Writing great conten
    - Screenshot or note the result (accepted vs. error)
    - Repeat for every new URL published
 
-2. **Verify the sitemap includes the new URL**
-   - Go to GSC → Sitemaps
-   - Confirm the sitemap is submitted and shows no errors
-   - If the sitemap was last fetched before your publish date, resubmit it
+2. **Resubmit the sitemap**
+   - Go to GSC → Indexing → Sitemaps
+   - Click on `https://thewinepairpodcast.com/sitemap.xml` → Resubmit
+   - Do this every time a new post goes live — do not wait for Google to auto-fetch it
 
 ---
 
@@ -85,16 +85,12 @@ Work through this in order — most causes are simple.
 
 ---
 
-## Standing Issues (as of April 2026)
+## Sitemap notes (as of April 2026)
 
-**Last three published posts not appearing in GSC URL Inspection:**
-- "Should You Chill Red Wine?"
-- "Is Josh Wine Good?"
-- Pinot Noir spoke page (https://thewinepairpodcast.com/blog/wines-similar-to-pinot-noir)
+Two sitemaps exist in GSC:
+- `https://thewinepairpodcast.com/sitemap.xml` — **current, active** (448 pages, Success, resubmitted April 2026)
+- `https://www.thewinepairpodcast.com/sitemap.xml` — stale, 1 error, last read March 2025. Cannot be deleted from GSC. Ignore it.
 
-**Immediate actions:**
-1. Open each URL in an incognito browser window — confirm the page loads publicly
-2. Run each through GSC URL Inspection → Request Indexing
-3. Check GSC → Coverage → Excluded tab for "noindex" entries
-4. Check `https://thewinepairpodcast.com/robots.txt` for any block on `/blog/`
-5. Report what you find — if all three have the same issue, it's likely a Beamly site-wide setting, not a per-post problem
+**After every new post goes live:** resubmit the non-www sitemap in GSC → Indexing → Sitemaps so Google picks up the new URL promptly. Do not rely on Google auto-fetching it on schedule.
+
+**Known error in www sitemap:** A dead `/blog/` URL for EP111 Pinotage with an auto-generated slug containing the full show notes. The page 404s. This is a Beamly artifact and cannot be easily removed. It does not affect the working non-www sitemap.
