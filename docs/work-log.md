@@ -66,21 +66,14 @@
 - Pinot Noir spoke page — DRAFT COMPLETE (2026-04-27), saved to `G:/My Drive/Wine Podcast/Phase 2/Blog Posts/wines-similar-to-pinot-noir.md`
 - Hub page — deferred until Pinot Noir spoke is voice-edited and live; hub borrows proven language from it
 
-**Next Claude Code task (start of next session):**
-Generate 7 ready-to-paste Beamly HTML card blocks for the Pinot Noir spoke page:
-- Oregon Pinot Noir (anchor card)
-- Frappato
-- Beaujolais
-- Cinsault
-- Mencía
-- Etna Rosso
-- Red Burgundy
-
-Wine card dimensions and scores are all in `data/wine_similarity_data.json`. HTML template is in `templates/dimension-bar-card.html`. Output should be 7 standalone `.wine-card` div blocks, one per wine, ready to paste into Beamly HTML blocks.
+**HTML card blocks: DONE (2026-04-28)**
+7 ready-to-paste Beamly HTML card blocks generated and saved:
+- Local: `outputs/pinot-noir-wine-cards.html`
+- Drive: `G:/My Drive/Wine Podcast/Phase 2/Wine Similarity Project/pinot-noir-wine-cards.html`
 
 **Publishing checklist for Pinot Noir spoke:**
 1. [ ] Joe voice-edits the draft (read aloud, fix anything that doesn't sound right)
-2. [ ] Claude Code generates 7 HTML card blocks (next session — first task)
+2. [x] Claude Code generates 7 HTML card blocks — DONE, see `outputs/pinot-noir-wine-cards.html`
 3. [ ] Joe creates page in Beamly at `/wines-similar-to-pinot-noir`
 4. [ ] Joe pastes text + swaps [WINE_CARD] placeholders with HTML card blocks
 5. [ ] No Review Schema needed (similarity guide, not a wine review)
