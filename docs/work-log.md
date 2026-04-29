@@ -121,6 +121,26 @@
 
 ---
 
+## Indexing issue -- IMMEDIATE ACTION NEEDED
+
+**Problem (2026-04-29):** Last 3 published posts are not appearing in Google Search Console URL Inspection — meaning they are not indexed and getting zero traffic from Google.
+
+**Affected pages:**
+- "Should You Chill Red Wine?"
+- "Is Josh Wine Good?"
+- Pinot Noir spoke page (https://thewinepairpodcast.com/blog/wines-similar-to-pinot-noir)
+
+**Steps for Joe to run through now:**
+1. Open each URL in an incognito browser window — confirm they load publicly
+2. Go to https://search.google.com/search-console → paste each URL → Request Indexing
+3. Go to GSC → Coverage → Excluded tab → look for "Excluded by 'noindex' tag"
+4. Check https://thewinepairpodcast.com/robots.txt — look for any block on `/blog/`
+5. If all three have the same issue it's probably a Beamly site-wide setting, not a per-post problem
+
+**New process going forward:** `docs/publishing-checklist.md` — every post must be submitted via GSC URL Inspection on the day it's published.
+
+---
+
 ## GSC / SEO checkpoints
 
 - **June 14, 2026:** Check Pillar #2 intent shift. If queries have moved from "podcasters" to listeners, add Chablis → Pillar #2 internal link.

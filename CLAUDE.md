@@ -53,6 +53,15 @@ Before writing any blog post, FAQ block, or SEO copy, state these four things fi
 
 If any of these are wrong, Joe can stop you before you write anything. Do not skip this step.
 
+## Post-publish checklist -- MANDATORY after any content piece goes live
+
+After any page or blog post is published, remind Joe to complete `docs/publishing-checklist.md`. At minimum:
+1. Submit the URL in Google Search Console → URL Inspection → Request Indexing (same day as publish)
+2. Check back in 48–72 hours to confirm "URL is on Google"
+3. If not indexed after 72 hours, work through the diagnosis table in `docs/publishing-checklist.md`
+
+If Joe reports that published posts are not appearing in GSC URL Inspection, treat it as a priority diagnostic task and walk through `docs/publishing-checklist.md` Step 3 together before writing any new content.
+
 ## Blog post formats
 
 **Format A — Narrative/Editorial:** Paragraph form only. No headers, bullets, or numbered lists in the body. 550-750 words. For storytelling, wine history, opinion, episode-adjacent topics.
@@ -77,6 +86,7 @@ Always read these files before major work:
 7. `docs/guest-policy.md`
 8. `docs/drive-retrieval-rules.md`
 9. `docs/build-roadmap.md`
+10. `docs/publishing-checklist.md`
 
 ## Episode content rule -- MANDATORY
 
