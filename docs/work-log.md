@@ -32,6 +32,7 @@
 **Technical:**
 - Review Schema needs to be added via Beamly code injection on every published review post
 - Beamly confirmed: supports per-page code injection
+- **Beamly strips `<style>` tags from code embeds.** All HTML card embeds must use fully inline styles (style="" on every element). Never use a `<style>` block inside a Beamly embed — it will be stripped on save/publish.
 
 ---
 
@@ -78,10 +79,15 @@
 
 **Pinot Noir spoke — assets complete (2026-04-28):**
 - Draft: `G:/My Drive/Wine Podcast/Phase 2/Blog Posts/wines-similar-to-pinot-noir.md`
-- Self-contained card embeds (paste one per Beamly code block): `outputs/pinot-noir-wine-cards-embeds.html`
-- Card preview (open in browser to see rendered cards): `outputs/pinot-noir-wine-cards-preview.html`
-- Blog post image: use ChatGPT prompt (flat illustration, five wine glasses in a row, different shades of red, wide 16:9, cream background)
+- Card embeds — fully inline styles, Beamly-safe (paste one per code block): `outputs/pinot-noir-wine-cards-embeds.html`
+- Card preview (open in browser to verify appearance): `outputs/pinot-noir-wine-cards-preview.html`
+- Blog post image: generate in ChatGPT — flat illustration, five wine glasses in a row, different shades of red, wide 16:9, cream background
 - Joe has episode links for the page
+
+**Beamly card embed workflow (use for all future spoke pages):**
+1. Generate card data from `data/wine_similarity_data.json`
+2. Write embeds with fully inline styles — no `<style>` tags (Beamly strips them)
+3. One embed block per card in Beamly
 
 **Publishing checklist for Pinot Noir spoke:**
 1. [ ] Joe voice-edits the draft (read aloud, fix anything that doesn't sound right)
