@@ -130,6 +130,8 @@
 - Non-www sitemap resubmitted — now shows 448 pages, Success, no errors
 - Old www sitemap cannot be deleted from GSC (not an option) but is harmless
 
+**Update (2026-04-29):** Google sent validation notification — actively checking "Crawled - currently not indexed" issue affecting 58 pages. Validation takes a few days; GSC will send email when complete.
+
 **Expected:** All 3 posts should appear as "URL is on Google" within 3–5 days. Check GSC URL Inspection around May 2–4.
 
 **Affected pages (check back May 2–4):**
