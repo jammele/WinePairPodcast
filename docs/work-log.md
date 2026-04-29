@@ -93,8 +93,8 @@
 1. [ ] Joe voice-edits the draft (read aloud, fix anything that doesn't sound right)
 2. [x] Card embeds generated — `outputs/pinot-noir-wine-cards-embeds.html`
 3. [x] Blog image prompt ready — generate in ChatGPT
-4. [ ] Joe creates page in Beamly at `/wines-similar-to-pinot-noir`
-5. [ ] Joe pastes text, adds card embeds, adds episode links, uploads image
+4. [x] Joe creates page in Beamly at `/wines-similar-to-pinot-noir`
+5. [x] All 7 inline-style card embeds added to page
 6. [ ] No Review Schema needed (similarity guide, not a wine review)
 7. [ ] Publish
 
