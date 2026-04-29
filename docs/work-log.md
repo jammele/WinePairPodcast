@@ -69,7 +69,7 @@
 
 | Spoke | Status | Notes |
 |---|---|---|
-| Pinot Noir | DRAFT COMPLETE — publishing in progress | Draft in Drive, cards ready, Joe has episode links |
+| Pinot Noir | LIVE | https://thewinepairpodcast.com/blog/wines-similar-to-pinot-noir |
 | Malbec | Not started | Template reference spoke per strategy doc |
 | Cabernet Sauvignon | Not started | |
 | Chardonnay | Not started | |
@@ -89,14 +89,8 @@
 2. Write embeds with fully inline styles — no `<style>` tags (Beamly strips them)
 3. One embed block per card in Beamly
 
-**Publishing checklist for Pinot Noir spoke:**
-1. [ ] Joe voice-edits the draft (read aloud, fix anything that doesn't sound right)
-2. [x] Card embeds generated — `outputs/pinot-noir-wine-cards-embeds.html`
-3. [x] Blog image prompt ready — generate in ChatGPT
-4. [x] Joe creates page in Beamly at `/wines-similar-to-pinot-noir`
-5. [x] All 7 inline-style card embeds added to page
-6. [ ] No Review Schema needed (similarity guide, not a wine review)
-7. [ ] Publish
+**Publishing checklist for Pinot Noir spoke: COMPLETE**
+- Published at: https://thewinepairpodcast.com/blog/wines-similar-to-pinot-noir
 
 **Key decisions locked (2026-04-27):**
 - All Winedr references removed from drafts — app not yet built
