@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pinot Noir Wine Cards — Preview</title>
+<style>
+
+/* --- Base card --- */
+.wine-card {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #ffffff;
+  border: 1px solid #e8e0d8;
+  border-radius: 10px;
+  padding: 20px 22px;
+  max-width: 420px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* --- Header: name + badge --- */
+.wine-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.wine-card__name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 2px 0;
+  line-height: 1.2;
+}
+
+.wine-card__region {
+  font-size: 0.78rem;
+  color: #777;
+  display: block;
+}
+
+/* --- Style family badge --- */
+.wine-card__badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 4px 9px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  color: #fff;
+}
+
+.wine-card__badge--light-lively        { background: #5a8a60; }
+.wine-card__badge--graceful-earthy     { background: #8a6040; }
+.wine-card__badge--classic-food        { background: #8a7030; }
+.wine-card__badge--bold-fruit          { background: #6a3070; }
+.wine-card__badge--rich-savory         { background: #505040; }
+.wine-card__badge--crisp-mineral       { background: #3a6080; }
+.wine-card__badge--bright-aromatic     { background: #7a7030; }
+.wine-card__badge--rich-rounded        { background: #8a6030; }
+.wine-card__badge--off-dry             { background: #6a8060; }
+.wine-card__badge--orange-unconventional { background: #8a5030; }
+.wine-card__badge--rose                { background: #a05060; }
+
+/* --- Short description --- */
+.wine-card__description {
+  font-size: 0.85rem;
+  color: #444;
+  margin: 10px 0 14px 0;
+  line-height: 1.5;
+}
+
+/* --- Dimension bars --- */
+.wine-card__dimensions {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 14px;
+}
+
+.wine-card__dim {
+  display: grid;
+  grid-template-columns: 80px 1fr 28px;
+  align-items: center;
+  gap: 8px;
+}
+
+.wine-card__dim-label {
+  font-size: 0.75rem;
+  color: #555;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.wine-card__bar-track {
+  height: 8px;
+  background: #f0ebe4;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.wine-card__bar-fill {
+  height: 100%;
+  background: #8b1a2e;
+  border-radius: 4px;
+}
+
+.wine-card__dim-value {
+  font-size: 0.72rem;
+  color: #888;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- Footer: grapes + price --- */
+.wine-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f0ebe4;
+  padding-top: 10px;
+  margin-top: 2px;
+}
+
+.wine-card__grapes {
+  font-size: 0.78rem;
+  color: #666;
+  font-style: italic;
+}
+
+.wine-card__price {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #8b1a2e;
+}
+
+@media (max-width: 380px) {
+  .wine-card__header { flex-direction: column; }
+  .wine-card__dim { grid-template-columns: 70px 1fr 24px; }
+}
+
+/* Preview page layout */
+body {
+  background: #f5f0eb;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+h1 {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+p.note {
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: 30px;
+}
+.preview-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 900px;
+}
+.preview-item {}
+.preview-label {
+  font-size: 0.7rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Wines Similar to Pinot Noir — Card Preview</h1>
+<p class="note">Preview only. To use in Beamly, copy individual .wine-card divs from pinot-noir-wine-cards.html.</p>
+
+<div class="preview-grid">
+
+  <div class="preview-item">
+    <p class="preview-label">Anchor card (the featured wine)</p>
+    <div class="wine-card">
+      <div class="wine-card__header">
+        <div>
+          <h3 class="wine-card__name">Oregon Pinot Noir</h3>
+          <span class="wine-card__region">Willamette Valley, Oregon</span>
+        </div>
+        <span class="wine-card__badge wine-card__badge--graceful-earthy">Graceful and Earthy</span>
+      </div>
+      <p class="wine-card__description">Light to medium body, high acidity, silky tannins. Cherry, mushroom, and rose petal. The red wine that drinks like it has something to say.</p>
+      <div class="wine-card__dimensions">
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Body</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:55%"></div></div>
+          <span class="wine-card__dim-value">5.5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Acidity</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:75%"></div></div>
+          <span class="wine-card__dim-value">7.5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Tannin</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:40%"></div></div>
+          <span class="wine-card__dim-value">4</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Sweetness</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:10%"></div></div>
+          <span class="wine-card__dim-value">1</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Oak</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:30%"></div></div>
+          <span class="wine-card__dim-value">3</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Alcohol</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:55%"></div></div>
+          <span class="wine-card__dim-value">5.5</span>
+        </div>
+      </div>
+      <div class="wine-card__footer">
+        <span class="wine-card__grapes">Pinot Noir</span>
+        <span class="wine-card__price">$25–45</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="preview-item">
+    <p class="preview-label">Similar wine</p>
+    <div class="wine-card">
+      <div class="wine-card__header">
+        <div>
+          <h3 class="wine-card__name">Frappato</h3>
+          <span class="wine-card__region">Sicily, Italy</span>
+        </div>
+        <span class="wine-card__badge wine-card__badge--light-lively">Light and Lively</span>
+      </div>
+      <p class="wine-card__description">Even lighter than Pinot Noir, with a floral lift and bright red berry fruit. Strawberry, pomegranate, rose petal. Sicily's most delicate red.</p>
+      <div class="wine-card__dimensions">
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Body</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:30%"></div></div>
+          <span class="wine-card__dim-value">3</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Acidity</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:75%"></div></div>
+          <span class="wine-card__dim-value">7.5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Tannin</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:25%"></div></div>
+          <span class="wine-card__dim-value">2.5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Sweetness</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:10%"></div></div>
+          <span class="wine-card__dim-value">1</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Oak</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:10%"></div></div>
+          <span class="wine-card__dim-value">1</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Alcohol</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:45%"></div></div>
+          <span class="wine-card__dim-value">4.5</span>
+        </div>
+      </div>
+      <div class="wine-card__footer">
+        <span class="wine-card__grapes">Frappato</span>
+        <span class="wine-card__price">$15–25</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="preview-item">
+    <p class="preview-label">Similar wine</p>
+    <div class="wine-card">
+      <div class="wine-card__header">
+        <div>
+          <h3 class="wine-card__name">Beaujolais</h3>
+          <span class="wine-card__region">Beaujolais, France</span>
+        </div>
+        <span class="wine-card__badge wine-card__badge--light-lively">Light and Lively</span>
+      </div>
+      <p class="wine-card__description">Lighter than Pinot Noir, higher-toned fruit, almost no tannin. Strawberry, violet, cherry. The one you can serve slightly chilled.</p>
+      <div class="wine-card__dimensions">
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Body</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:35%"></div></div>
+          <span class="wine-card__dim-value">3.5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Acidity</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:75%"></div></div>
+          <span class="wine-card__dim-value">7.5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Tannin</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:25%"></div></div>
+          <span class="wine-card__dim-value">2.5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Sweetness</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:10%"></div></div>
+          <span class="wine-card__dim-value">1</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Oak</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:10%"></div></div>
+          <span class="wine-card__dim-value">1</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Alcohol</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:40%"></div></div>
+          <span class="wine-card__dim-value">4</span>
+        </div>
+      </div>
+      <div class="wine-card__footer">
+        <span class="wine-card__grapes">Gamay</span>
+        <span class="wine-card__price">$12–20</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="preview-item">
+    <p class="preview-label">Similar wine</p>
+    <div class="wine-card">
+      <div class="wine-card__header">
+        <div>
+          <h3 class="wine-card__name">Cinsault</h3>
+          <span class="wine-card__region">Southern France / South Africa</span>
+        </div>
+        <span class="wine-card__badge wine-card__badge--light-lively">Light and Lively</span>
+      </div>
+      <p class="wine-card__description">Silky and fresh, low tannin, high acid. Strawberry, red cherry, dried herbs. Closest in feel to Pinot Noir in an easygoing mood. Good slightly chilled.</p>
+      <div class="wine-card__dimensions">
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Body</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:35%"></div></div>
+          <span class="wine-card__dim-value">3.5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Acidity</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:70%"></div></div>
+          <span class="wine-card__dim-value">7</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Tannin</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:25%"></div></div>
+          <span class="wine-card__dim-value">2.5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Sweetness</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:10%"></div></div>
+          <span class="wine-card__dim-value">1</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Oak</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:10%"></div></div>
+          <span class="wine-card__dim-value">1</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Alcohol</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:50%"></div></div>
+          <span class="wine-card__dim-value">5</span>
+        </div>
+      </div>
+      <div class="wine-card__footer">
+        <span class="wine-card__grapes">Cinsault</span>
+        <span class="wine-card__price">$12–22</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="preview-item">
+    <p class="preview-label">Similar wine</p>
+    <div class="wine-card">
+      <div class="wine-card__header">
+        <div>
+          <h3 class="wine-card__name">Mencía</h3>
+          <span class="wine-card__region">Bierzo / Ribeira Sacra, Spain</span>
+        </div>
+        <span class="wine-card__badge wine-card__badge--graceful-earthy">Graceful and Earthy</span>
+      </div>
+      <p class="wine-card__description">Spain's answer to Pinot Noir territory. Same body and acidity, with a mineral edge and more grip. Cherry, violet, wet stone. Worth knowing.</p>
+      <div class="wine-card__dimensions">
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Body</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:55%"></div></div>
+          <span class="wine-card__dim-value">5.5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Acidity</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:75%"></div></div>
+          <span class="wine-card__dim-value">7.5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Tannin</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:50%"></div></div>
+          <span class="wine-card__dim-value">5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Sweetness</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:10%"></div></div>
+          <span class="wine-card__dim-value">1</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Oak</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:20%"></div></div>
+          <span class="wine-card__dim-value">2</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Alcohol</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:55%"></div></div>
+          <span class="wine-card__dim-value">5.5</span>
+        </div>
+      </div>
+      <div class="wine-card__footer">
+        <span class="wine-card__grapes">Mencía</span>
+        <span class="wine-card__price">$12–25</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="preview-item">
+    <p class="preview-label">Similar wine</p>
+    <div class="wine-card">
+      <div class="wine-card__header">
+        <div>
+          <h3 class="wine-card__name">Etna Rosso</h3>
+          <span class="wine-card__region">Mount Etna, Sicily, Italy</span>
+        </div>
+        <span class="wine-card__badge wine-card__badge--graceful-earthy">Graceful and Earthy</span>
+      </div>
+      <p class="wine-card__description">Pinot Noir's volcanic Italian cousin. Same weight class, sharper acidity, a distinct mineral tension from the Mt. Etna soil. Tastes like somewhere specific.</p>
+      <div class="wine-card__dimensions">
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Body</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:55%"></div></div>
+          <span class="wine-card__dim-value">5.5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Acidity</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:80%"></div></div>
+          <span class="wine-card__dim-value">8</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Tannin</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:50%"></div></div>
+          <span class="wine-card__dim-value">5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Sweetness</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:10%"></div></div>
+          <span class="wine-card__dim-value">1</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Oak</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:30%"></div></div>
+          <span class="wine-card__dim-value">3</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Alcohol</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:55%"></div></div>
+          <span class="wine-card__dim-value">5.5</span>
+        </div>
+      </div>
+      <div class="wine-card__footer">
+        <span class="wine-card__grapes">Nerello Mascalese</span>
+        <span class="wine-card__price">$25–45</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="preview-item">
+    <p class="preview-label">Similar wine</p>
+    <div class="wine-card">
+      <div class="wine-card__header">
+        <div>
+          <h3 class="wine-card__name">Red Burgundy</h3>
+          <span class="wine-card__region">Burgundy, France</span>
+        </div>
+        <span class="wine-card__badge wine-card__badge--graceful-earthy">Graceful and Earthy</span>
+      </div>
+      <p class="wine-card__description">The original. Same grape as Oregon Pinot Noir, older soil, cooler climate, more forest floor than fruit. The one everything else gets compared to.</p>
+      <div class="wine-card__dimensions">
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Body</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:50%"></div></div>
+          <span class="wine-card__dim-value">5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Acidity</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:75%"></div></div>
+          <span class="wine-card__dim-value">7.5</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Tannin</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:40%"></div></div>
+          <span class="wine-card__dim-value">4</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Sweetness</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:10%"></div></div>
+          <span class="wine-card__dim-value">1</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Oak</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:30%"></div></div>
+          <span class="wine-card__dim-value">3</span>
+        </div>
+        <div class="wine-card__dim">
+          <span class="wine-card__dim-label">Alcohol</span>
+          <div class="wine-card__bar-track"><div class="wine-card__bar-fill" style="width:52%"></div></div>
+          <span class="wine-card__dim-value">5.2</span>
+        </div>
+      </div>
+      <div class="wine-card__footer">
+        <span class="wine-card__grapes">Pinot Noir</span>
+        <span class="wine-card__price">$25–45</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
