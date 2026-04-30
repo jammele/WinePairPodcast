@@ -21,7 +21,7 @@
 - "Is Josh Wine Good?" — written with FAQ block included, ready to publish (needs Review Schema in Beamly first)
 
 **Queue (in priority order):**
-1. Bread & Butter wine review — EP143, 8,062 impressions, show notes fetched
+1. Bread & Butter wine review — EP143, 8,062 impressions — **DRAFT COMPLETE** at `outputs/drafts/bread-and-butter-wine-review.md`. Ready to build in Beamly. Episode URL: https://thewinepairpodcast.com/episode/episode-143-are-bread-butter-wines-good. Review Schema included in draft file.
 2. Meiomi wine review — EP201, 3,568 impressions, need to read episode script
 3. Two Buck Chuck — EP116 + EP140, 1,331+ impressions, need to read episode scripts
 4. Pinotage — EP111, 1,722 impressions, need to read episode script
