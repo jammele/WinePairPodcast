@@ -152,5 +152,5 @@
 
 ## Standing open items
 
-- Google OAuth needs refresh (ingest_prompts.js failing with auth error each session)
+- Google OAuth expires periodically — fix: `rm google_token.json` then `node scripts/setup_google_auth.js` (see CLAUDE.md for details)
 - Confirm GitHub repo URL: github.com/jammele/WinePairPodcast

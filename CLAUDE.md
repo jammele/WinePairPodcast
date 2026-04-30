@@ -137,6 +137,20 @@ Build these first:
 - reply drafting
 - Drive-aware file discovery
 
+## Google OAuth -- how to fix when it breaks
+
+Symptoms: `invalid_grant` errors from `ingest_prompts.js`, `read_gdoc.js`, or any Drive/Docs script.
+
+Fix (two commands, run from `C:\Users\jamme\podcast-os`):
+```
+rm google_token.json
+node scripts/setup_google_auth.js
+```
+
+The second command opens a browser window. Complete the authorization flow, then retry whatever script was failing. The token is saved back to `google_token.json` automatically.
+
+This happens because Google OAuth refresh tokens expire after a period of inactivity. No other action needed — the credentials file (`google_credentials.json`) is fine and does not need to be changed.
+
 ## Output style
 
 When generating listener-facing copy, follow the podcast voice:
