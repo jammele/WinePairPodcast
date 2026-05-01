@@ -130,12 +130,36 @@ Validate at https://search.google.com/test/rich-results after publishing.
 
 ---
 
+## Image prompt (every post)
+
+Claude Code generates an image prompt for each blog post. Style must be consistent across all posts:
+- Flat illustration, wide 16:9, cream background, clean and simple
+- Subject must make the wine or brand immediately obvious
+- Try the brand name in the prompt first (ChatGPT may resist; if it does, use a visual metaphor instead)
+- Joe generates the image in ChatGPT and uploads it to Beamly as the post's featured image
+
+---
+
+## Beamly fields to fill in (every post)
+
+When building the post in Beamly, fill in these fields:
+
+- **Excerpt / Short description:** 1-2 sentences summarizing the post. Conversational, not keyword-stuffed. This may appear in blog listing pages.
+- **Custom SEO Title:** The H1/page title optimized for the target query. Example: "Is Bread & Butter Wine Good? An Honest Review"
+- **Custom SEO Description:** 1-2 sentences, 150-160 characters. Lead with the verdict. Example: "We tasted all three Bread & Butter wines and gave them honest ratings. Here is what we found, and whether any of them are worth buying."
+- **URL slug:** Short, keyword-first. Example: `is-bread-and-butter-wine-good`
+- **Review Schema:** See section below — needs to go in a code injection field (see note)
+
+Claude Code includes suggested copy for all of these fields at the bottom of every draft file.
+
+---
+
 ## Post-publish checklist (every post)
 
-1. Add Review Schema via Beamly per-page code injection
-2. Set page title and meta description in Beamly
-3. Set URL slug (short, keyword-first)
-4. Add Buzzsprout embed for the relevant episode
+1. Fill in all Beamly fields above
+2. Add Review Schema via Beamly code injection (field location TBD — confirm with Beamly support if not visible)
+3. Add Buzzsprout embed: log into Buzzsprout → find episode → Share → Embed → copy HTML → paste as a code block in Beamly
+4. Upload featured image (generated in ChatGPT using the prompt from the draft)
 5. Submit URL in GSC → URL Inspection → Request Indexing
 6. Resubmit sitemap: GSC → Indexing → Sitemaps → Resubmit
 7. Check back in 3-5 days to confirm "URL is on Google"
