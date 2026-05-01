@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-01
+**Last updated:** 2026-05-01 (end of session)
 
 ---
 
@@ -120,6 +120,18 @@
 
 - **May 2-5, 2026:** Check indexing status on all 4 submitted posts
 - **June 14, 2026:** Check Pillar #2 intent shift; re-run AI discoverability tests
+
+---
+
+## System changes made 2026-05-01
+
+- Corrected blog post queue: removed Meiomi (already converts at 1.18% CTR / 241 clicks — no post needed), added Portuguese wine episode as #1 SEO priority (20,154 impr, 19 clicks, 0.09% CTR)
+- Added blog post threshold rule to CLAUDE.md: only propose posts where impressions >5,000 AND CTR <0.5%
+- Added project priority order to CLAUDE.md: hub/spoke first, blog posts second
+- Added session discipline rules to CLAUDE.md: work log is authoritative, never contradict it without new data
+- Doc consolidation: 16 docs → 9. Deleted 7 obsolete files. Merged editorial-rules, social-style, episode-format into `docs/voice-and-format.md`. Folded drive-retrieval-rules into CLAUDE.md.
+- Updated seo-geo-strategy.md: removed stale April calendar, updated priority table with real GSC page-level data
+- Added `memory/feedback_session_discipline.md` — rules for staying on documented priorities
 
 ---
 
