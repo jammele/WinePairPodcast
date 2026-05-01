@@ -67,11 +67,13 @@ Short version:
 
 ---
 
-## Episode script retrieval
+## Finding files
 
-1. Search `db/drivefs_meta_temp.db` by episode number
-2. Get the doc ID from the `items` table (`local_title` column)
-3. Run `node scripts/read_gdoc.js <docId>`
+Search before asking. Never ask Joe for something findable in the Drive, database, or website.
+
+- **Episode scripts:** Search `db/drivefs_meta_temp.db` → `items` table → `local_title` column → run `node scripts/read_gdoc.js <docId>`
+- **Other Drive files:** Check `C:/Users/jamme/Downloads/` and `G:/My Drive/Wine Podcast/` before asking
+- **Episode URLs:** Search `site:thewinepairpodcast.com` via WebSearch
 
 If OAuth is broken: `rm google_token.json` then `node scripts/setup_google_auth.js`
 
@@ -92,8 +94,6 @@ If OAuth is broken: `rm google_token.json` then `node scripts/setup_google_auth.
 |---|---|
 | Writing a blog post | `docs/blog-post-guide.md` |
 | Publishing a page | `docs/publishing-checklist.md` |
-| Episode copy, show notes, social | `docs/episode-format.md`, `docs/social-style.md` |
+| Episode copy, show notes, social copy | `docs/voice-and-format.md` |
 | SEO strategy and priorities | `docs/seo-geo-strategy.md` |
-| Voice and editorial rules | `docs/editorial-rules.md` |
-| Drive file retrieval | `docs/drive-retrieval-rules.md` |
-| Project context | `docs/project-brief.md`, `docs/soul-document.md` |
+| Project context and show identity | `docs/soul-document.md` |
