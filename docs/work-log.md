@@ -7,8 +7,10 @@
 ## Immediate next actions
 
 1. **Malbec spoke page** — Next in hub/spoke plan. Pinot Noir is live; Malbec is the template reference spoke. Write before any other spokes.
-2. **Portuguese wine blog post** — 20,154 impressions, 19 clicks, 0.09% CTR. Same high-impressions/no-clicks pattern as Josh and Chill Red Wine. Biggest untapped SEO opportunity right now.
+2. **Remaining 4 spokes** — Cabernet Sauvignon, Chardonnay, Sauvignon Blanc, 6th spoke (TBD). All must be live before hub is written.
 3. **Check GSC May 2-5** — Confirm "URL is on Google" for the 4 posts with pending indexing requests.
+
+Blog post sprint resumes after all spokes are live.
 
 ---
 
