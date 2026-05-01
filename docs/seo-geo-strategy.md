@@ -1,8 +1,8 @@
 # The Wine Pair Podcast — SEO / GEO / AEO Strategy
 
 **Owner:** Joe  
-**Last updated:** 2026-04-18  
-**Status:** Active — compress execution into 2 weeks starting 2026-04-18
+**Last updated:** 2026-05-01  
+**Status:** Active — see `docs/work-log.md` for current priorities and queue. This doc is strategy reference; the work log is the live task list.
 
 ---
 
@@ -47,17 +47,19 @@ Blog posts fix this. Each post for a high-traffic wine review:
 - Links to the episode for the full tasting
 - Gets Review Schema markup (see Technical section below)
 
-**Priority wine review blog posts (ranked by GSC impression volume):**
+**Priority wine review blog posts — updated from GSC page data (as of 2026-05-01):**
 
-| Wine | Impr | Clicks | Current CTR | Episode |
+Rule: only write blog posts where page impressions >5,000 AND CTR <0.5%. Pages already converting at CTR >1% do not need a blog post.
+
+| Wine | Page Impr | Page Clicks | CTR | Status |
 |---|---|---|---|---|
-| Josh wine | 11,244 | 3 | 0.03% | Find ep # |
-| Bread & Butter | 8,062 | 42 | 0.52% | EP143 |
-| Meiomi wine | 3,568 | 18 | 0.50% | Find ep # |
-| Firstleaf | 2,205 | 7 | 0.32% | Find ep # |
-| 2 Buck Chuck | 1,331 | 0 | 0% | Not yet — plan this episode |
-| Pinotage | 1,722 | 0 | 0% | Not yet — plan this episode |
-| Layer Cake | 754 | 6 | 0.80% | Find ep # |
+| Chill Red Wine (minisode) | 27,508 | 16 | 0.06% | **PUBLISHED** 2026-04-29 |
+| Josh wine | 21,929 | 54 | 0.25% | **PUBLISHED** 2026-04-29 |
+| Meiomi | 20,494 | 241 | 1.18% | **SKIP** — already converts well |
+| Bread & Butter | 16,814 | 90 | 0.54% | **PUBLISHED** 2026-04-30 |
+| Portuguese wine | 20,154 | 19 | 0.09% | **NEXT** — biggest untapped gap |
+| Pinotage | 6,011 | 21 | 0.35% | In queue |
+| Two Buck Chuck | 5,055 | 13 | 0.26% | In queue (EP116 + EP140) |
 
 ---
 
@@ -164,40 +166,22 @@ Beamly confirms code injection support — custom code can be added to the `<hea
 
 ---
 
-## Content Calendar — Compressed (2 weeks)
+## Content Queue
 
-All content can be written with Claude Code's help. Bottleneck is Joe's review and publishing time.
+**See `docs/work-log.md` for the current prioritized queue.** Do not use this document as the task list — it will go stale. This document is strategy reference only.
 
-### Week 1 (April 18–25)
+**Completed (as of 2026-05-01):**
+- "Should You Chill Red Wine?" — published 2026-04-29
+- "Is Josh Wine Good?" — published 2026-04-29
+- Bread & Butter wine review — published 2026-04-30
+- Pinot Noir Wine Similarity spoke — published, indexing requested 2026-04-29
 
-| Day | Task | Type | Primary Query Target |
-|---|---|---|---|
-| Apr 18–19 | "Do you chill red wine?" post | Blog post | "do you chill red wine" cluster (2,500+ impr) |
-| Apr 19–20 | FAQ blocks for Meiomi, Bread & Butter, Josh episode pages | Page update | "is meiomi wine good," "is josh wine good" |
-| Apr 20–22 | Josh Wine blog post | Blog post | "josh wine" (11,244 impr) |
-| Apr 22–23 | Bread & Butter blog post | Blog post | "bread and butter wine" (8,062 impr) |
-| Apr 23–25 | "Best Wines Under $20" hub page | New page | "best inexpensive wines," "best wines under $20" |
-
-### Week 2 (April 25 – May 2)
-
-| Day | Task | Type | Primary Query Target |
-|---|---|---|---|
-| Apr 25–26 | Meiomi blog post | Blog post | "meiomi wine" (3,568 impr) |
-| Apr 26–28 | Two Buck Chuck blog post (draws from EP116 + EP140) | Blog post | "2 buck chuck," "charles shaw" (1,331+ impr, 0 clicks) |
-| Apr 28–30 | Pinotage blog post (draws from EP111) | Blog post | "pinotage" (1,722 impr, 0 clicks) |
-| Apr 28–30 | Trader Joe's wine guide | New page | "best trader joe's wine," TJ platinum reserve, 2 buck chuck |
-| Apr 30–May 1 | Find Similar Wines expansion | Page update | "wines similar to merlot/malbec/chardonnay" |
-| May 1–2 | Review Schema on all new blog posts | Technical | CTR improvement on all review pages |
-
-### Week 3+ (May 2 onward)
-
-| Task | Notes |
-|---|---|
-| Pillar #1 rewrite | "honest wine reviews" / "unbiased wine podcast" angle |
-| Costco wine guide | Captures Kirkland query cluster (25+ queries in GSC) |
-| Layer Cake blog post | EP161 exists; 754 impr, 6 clicks — blog post to convert impressions |
-| Firstleaf blog post | EP found; 2,205 impr, 7 clicks |
-| New episodes: Grenache Blanc, Orvieto, Verdicchio | No existing episodes; high-impression zero-click opportunities |
+**Future candidates (after current queue):**
+- Pillar #1 rewrite ("honest wine reviews" / "unbiased wine podcast" angle)
+- Costco wine guide (25+ Kirkland queries in GSC)
+- Layer Cake blog post (EP161 exists; 4,327 impr, 46 clicks)
+- Firstleaf blog post (2,205 impr, 7 clicks)
+- New episodes: Grenache Blanc, Orvieto, Verdicchio (no existing episodes; high-impression zero-click opportunities)
 
 ---
 
