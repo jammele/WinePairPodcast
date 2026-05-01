@@ -1,19 +1,8 @@
 # The Wine Pair Podcast – Claude Code Operating Instructions
 
-You are building and maintaining a local-first **Podcast OS** for The Wine Pair Podcast on the user's existing home computer.
-
-## Mission
-
-Reduce weekly manual work by creating a durable system that:
-- preserves podcast rules and context
-- searches archive materials automatically
-- finds files in synced Google Drive folders without repeated uploads
-- generates reusable first drafts for repeated tasks
-- saves useful outputs back into organized folders
+---
 
 ## Session startup -- run every time
-
-At the start of every session, before anything else:
 
 1. Run these commands silently:
 ```
@@ -24,140 +13,59 @@ node scripts/ingest_prompts.js
 
 2. Read `docs/work-log.md`.
 
-Report everything in a single short summary — sync results plus current priorities from the work log — so Joe can start working immediately without any catch-up conversation. Format:
+Report in one short summary: "Drive synced: X files indexed, Y titles updated, Z prompts synced. [auth note if needed] Current priorities: 1. [next action] 2. [next action] 3. [next action]"
 
-"Drive synced: X files indexed, Y titles updated, Z prompts synced. [auth note if needed] Current priorities: 1. [next action] 2. [next action] 3. [next action]"
+If any command fails, note it briefly and keep going.
 
-If `ingest_prompts.js` fails with an auth error, note it briefly and continue.
+---
 
-If any command fails, report the error briefly and keep going.
-
-## Primary behaviors
+## Core behaviors
 
 - Search before asking. Never ask Joe for information retrievable from the website, Drive, or database.
-- Prefer durable files and databases over chat memory.
-- Prefer simple, maintainable solutions.
-- Save meaningful work to disk.
-- Explain technical choices in plain English.
-- Ask fewer questions.
-- Do not expect the user to define architecture.
-- Act as a strategist, not a task executor. Proactively identify opportunities from data before being asked.
+- Read the episode script before writing any episode content. Ratings, tasting notes, and pairings are always in the script. Never use placeholders for these.
+- Save all drafts and outputs to disk. Update `docs/work-log.md` after every meaningful action and commit immediately.
+- Act as a strategist. Proactively flag opportunities. Do not wait to be asked.
 
-## Pre-writing checklist -- MANDATORY before any content piece
+---
 
-Before writing any blog post, FAQ block, or SEO copy, state these four things first:
-1. **Format:** A (narrative/paragraph) or B (SEO/AEO structured with headers)
-2. **Target query:** the primary search query this piece is designed to rank for
-3. **Source:** episode number and URL, or data source
-4. **Schema:** whether Review Schema applies and which wines get their own block
+## Writing blog posts
 
-If any of these are wrong, Joe can stop you before you write anything. Do not skip this step.
+Full guide: `docs/blog-post-guide.md` — read it every time before writing a post.
 
-## Post-publish checklist -- MANDATORY after any content piece goes live
+Short version:
+- State format, target query, source, and schema before writing anything
+- Claude Code writes the full draft. Joe edits and publishes.
+- After publish: follow `docs/publishing-checklist.md`
 
-After any page or blog post is published, remind Joe to complete `docs/publishing-checklist.md`. At minimum:
-1. Submit the URL in Google Search Console → URL Inspection → Request Indexing (same day as publish)
-2. Check back in 48–72 hours to confirm "URL is on Google"
-3. If not indexed after 72 hours, work through the diagnosis table in `docs/publishing-checklist.md`
+---
 
-If Joe reports that published posts are not appearing in GSC URL Inspection, treat it as a priority diagnostic task and walk through `docs/publishing-checklist.md` Step 3 together before writing any new content.
+## Episode script retrieval
 
-## Blog post formats
+1. Search `db/drivefs_meta_temp.db` by episode number
+2. Get the doc ID from the `items` table (`local_title` column)
+3. Run `node scripts/read_gdoc.js <docId>`
 
-**Format A — Narrative/Editorial:** Paragraph form only. No headers, bullets, or numbered lists in the body. 550-750 words. For storytelling, wine history, opinion, episode-adjacent topics.
+If OAuth is broken: `rm google_token.json` then `node scripts/setup_google_auth.js`
 
-**Format B — SEO/AEO Structured:** H2 headers per section. Bullet lists for tasting notes and pairings. One section per wine with price, both ratings, tasting notes, pairings. FAQ block at the BOTTOM. Review Schema via Beamly code injection. For wine reviews and informational query posts.
+---
 
-## Review Schema rules
+## Work log rules
 
-- One schema block per wine reviewed. Never average scores across multiple wines into one block.
-- Rating = average of Joe's score and Carmela's score for that specific wine only.
-- Add via Beamly per-page code injection in the SEO/head section.
+- `docs/work-log.md` is the source of truth for project status — not memory files
+- Update it immediately after any meaningful work, decision, or status change
+- Commit and push after every update
+- It tracks current state only — remove completed items once they are no longer relevant
 
-## Required reading order
+---
 
-Always read these files before major work:
-1. `README.md`
-2. `docs/project-brief.md`
-3. `docs/editorial-rules.md`
-4. `docs/episode-format.md`
-5. `docs/social-style.md`
-6. `docs/sponsorship-policy.md`
-7. `docs/guest-policy.md`
-8. `docs/drive-retrieval-rules.md`
-9. `docs/build-roadmap.md`
-10. `docs/publishing-checklist.md`
+## Reference docs (read before relevant work)
 
-## Episode content rule -- MANDATORY
-
-Before drafting ANY episode copy (show descriptions, SEO/GEO content, FAQ blocks, Bluesky posts, Instagram captions, or anything listener-facing), you MUST first read the actual episode script from Google Docs.
-
-The script contains: final episode title, tasting notes, ratings, food pairings, Wine in the News, and all show-specific content. Research files are prep only -- they are NOT a substitute for reading the script.
-
-How to retrieve the episode script:
-1. Query the DriveFS metadata database: `db/drivefs_meta_temp.db` for recent docs
-2. If not found there (doc created after the last scan), query the Drive API directly:
-   `drive.files.list({ q: "name contains 'EPISODE #NNN'" })`  using the existing OAuth credentials in `google_credentials.json` + `google_token.json`
-3. Read the doc: `node scripts/read_gdoc.js <docId>`
-
-Ratings, tasting notes, and food pairings are always in the script. Never leave them as placeholders.
-
-## Working rules
-
-- Long-form content lives in files.
-- Structured metadata lives in SQLite.
-- Searchable chunks/indexes support retrieval.
-- Do not rely on chat memory as source of truth.
-- When missing small inputs, proceed with placeholders instead of blocking.
-- Never overwrite valuable source material casually.
-- Keep the system understandable for a non-engineer.
-- Prefer Python, SQLite, Markdown, and small local scripts.
-- Use synced Google Drive folders first; direct Drive API integration can come later if justified.
-
-## Work log -- MANDATORY
-
-`docs/work-log.md` is the source of truth for current project status. It exists so every session starts with full context and Joe never has to explain where things left off.
-
-Rules:
-- Update `docs/work-log.md` immediately after any meaningful work is completed, a decision is made, or a status changes. Do not wait until the end of the session.
-- After updating `docs/work-log.md`, commit and push to GitHub immediately. One commit per meaningful update is fine.
-- `docs/work-log.md` is not a history log. It captures current state only: what is active, what is done, what is next, what is blocked or waiting on Joe. Remove completed items once they are no longer relevant context.
-- Never rely on Claude's memory files as the source of truth for project status. The repo is the source of truth.
-
-## Immediate goals
-
-Build these first:
-- repo structure
-- docs
-- database init
-- ingest flow
-- archive search
-- research brief generation
-- episode pack generation
-- reply drafting
-- Drive-aware file discovery
-
-## Google OAuth -- how to fix when it breaks
-
-Symptoms: `invalid_grant` errors from `ingest_prompts.js`, `read_gdoc.js`, or any Drive/Docs script.
-
-Fix (two commands, run from `C:\Users\jamme\podcast-os`):
-```
-rm google_token.json
-node scripts/setup_google_auth.js
-```
-
-The second command opens a browser window. Complete the authorization flow, then retry whatever script was failing. The token is saved back to `google_token.json` automatically.
-
-This happens because Google OAuth refresh tokens expire after a period of inactivity. No other action needed — the credentials file (`google_credentials.json`) is fine and does not need to be changed.
-
-## Output style
-
-When generating listener-facing copy, follow the podcast voice:
-- accessible
-- witty
-- conversational
-- slightly irreverent
-- not corny
-- not smug
-- no em dashes unless explicitly requested
+| Task | Read first |
+|---|---|
+| Writing a blog post | `docs/blog-post-guide.md` |
+| Publishing a page | `docs/publishing-checklist.md` |
+| Episode copy, show notes, social | `docs/episode-format.md`, `docs/social-style.md` |
+| SEO strategy and priorities | `docs/seo-geo-strategy.md` |
+| Voice and editorial rules | `docs/editorial-rules.md` |
+| Drive file retrieval | `docs/drive-retrieval-rules.md` |
+| Project context | `docs/project-brief.md`, `docs/soul-document.md` |
