@@ -28,9 +28,11 @@ If any command fails, note it briefly and keep going.
 
 Work follows this order unless Joe explicitly changes it:
 
-1. **Wine Similarity Hub & Spoke** — primary structural project. Spoke pages must be written and published before the hub. Do not let the blog post sprint crowd this out.
-2. **SEO Blog Post Sprint** — only for pages with high impressions and low CTR (see rule below).
-3. **Episode copy and social** — when a new episode is recorded and ready.
+1. **Wine Similarity Hub & Spoke** — active now. All 5 remaining spokes must be written and published before the hub. This project is not complete until the hub is live.
+2. **Episode copy and social** — when a new episode is recorded and ready.
+3. **SEO Blog Post Sprint** — on hold until all hub/spoke spokes are live. Do not propose blog posts while hub/spoke work remains.
+
+Do not suggest blog post work while the hub/spoke project has open spokes. The queue exists for reference, not as current work.
 
 ---
 

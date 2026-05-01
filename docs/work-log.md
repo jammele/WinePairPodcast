@@ -58,7 +58,7 @@ Blog post sprint resumes after all spokes are live.
 - "Is Josh Wine Good?" — 2026-04-29
 - Bread & Butter review — https://thewinepairpodcast.com/blog/is-bread-butter-wine-good-an-honest-review — 2026-04-30
 
-**Queue — ranked by impressions/clicks gap (from GSC data):**
+**Queue — ON HOLD until all hub/spoke spokes are live. For reference only.**
 
 | Priority | Post | Episode | Impressions | Clicks | CTR |
 |---|---|---|---|---|---|
