@@ -148,7 +148,7 @@ When building the post in Beamly, fill in these fields:
 - **Custom SEO Title:** The H1/page title optimized for the target query. Example: "Is Bread & Butter Wine Good? An Honest Review"
 - **Custom SEO Description:** 1-2 sentences, 150-160 characters. Lead with the verdict. Example: "We tasted all three Bread & Butter wines and gave them honest ratings. Here is what we found, and whether any of them are worth buying."
 - **URL slug:** Short, keyword-first. Example: `is-bread-and-butter-wine-good`
-- **Review Schema:** See section below — needs to go in a code injection field (see note)
+- **Review Schema:** Added as a code block inside the post body in Beamly, at the very bottom of the page after the FAQ. Same method as the Buzzsprout embed.
 
 Claude Code includes suggested copy for all of these fields at the bottom of every draft file.
 
@@ -157,7 +157,7 @@ Claude Code includes suggested copy for all of these fields at the bottom of eve
 ## Post-publish checklist (every post)
 
 1. Fill in all Beamly fields above
-2. Add Review Schema via Beamly code injection (field location TBD — confirm with Beamly support if not visible)
+2. Add Review Schema as a code block at the bottom of the post in Beamly (same as Buzzsprout embed)
 3. Add Buzzsprout embed: log into Buzzsprout → find episode → Share → Embed → copy HTML → paste as a code block in Beamly
 4. Upload featured image (generated in ChatGPT using the prompt from the draft)
 5. Submit URL in GSC → URL Inspection → Request Indexing
