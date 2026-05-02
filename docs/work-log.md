@@ -1,12 +1,12 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-01 (end of session)
+**Last updated:** 2026-05-02
 
 ---
 
 ## Immediate next actions
 
-1. **Malbec spoke page** — Next in hub/spoke plan. Pinot Noir is live; Malbec is the template reference spoke. Write before any other spokes.
+1. **Malbec spoke page** — Draft written 2026-05-02. Outputs: `outputs/malbec-spoke.md` + `outputs/malbec-wine-cards-embeds.html`. Joe to edit, build in Beamly, publish. URL: `/blog/wines-similar-to-malbec`.
 2. **Remaining 4 spokes** — Cabernet Sauvignon, Chardonnay, Sauvignon Blanc, 6th spoke (TBD). All must be live before hub is written.
 3. **Check GSC May 2-5** — Confirm "URL is on Google" for the 4 posts with pending indexing requests.
 
@@ -31,7 +31,7 @@ Blog post sprint resumes after all spokes are live.
 | Spoke | Status | Notes |
 |---|---|---|
 | Pinot Noir | LIVE | https://thewinepairpodcast.com/blog/wines-similar-to-pinot-noir |
-| Malbec | **NEXT** | Template reference spoke — write first |
+| Malbec | **DRAFT READY** | outputs/malbec-spoke.md + outputs/malbec-wine-cards-embeds.html |
 | Cabernet Sauvignon | Not started | |
 | Chardonnay | Not started | |
 | Sauvignon Blanc | Not started | |
@@ -98,7 +98,7 @@ Blog post sprint resumes after all spokes are live.
 
 ### Episode 216 — Viura
 
-**Status:** All written outputs complete. Cover art pending ChatGPT generation. Show notes not yet published.
+**Status:** Complete.
 **Google Doc ID:** 1ElzHd3K8lbLQageMUZ4evB2g9JQcYFQhfuBBMPK3b60
 **Confirmed title:** Viura: The Great White Wine Hiding in Rioja's Red Wine Shadow
 **Wines:** 2024 CVNE Monopole ($14.97) — Joe 7, Carmela 8 | 2024 Sierra de Tolono Rioja Blanco ($24.97) — Joe 8, Carmela 8
