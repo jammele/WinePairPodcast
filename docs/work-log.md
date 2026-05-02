@@ -98,7 +98,10 @@ Blog post sprint resumes after all spokes are live.
 
 ### Episode 216 — Viura
 
-**Status:** Script exists in Drive. No work done yet.
+**Status:** Script read. Title in progress.
+**Google Doc ID:** 1ElzHd3K8lbLQageMUZ4evB2g9JQcYFQhfuBBMPK3b60
+**Wines:** 2024 CVNE Monopole ($14.97) — Joe 7, Carmela 8 | 2024 Sierra de Tolono Rioja Blanco ($24.97) — Joe 8, Carmela 8
+**Finish tonight:** Both chose Sierra de Tolono
 
 ---
 

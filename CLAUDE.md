@@ -73,7 +73,11 @@ Short version:
 
 Search before asking. Never ask Joe for something findable in the Drive, database, or website.
 
-- **Episode scripts:** Search `db/drivefs_meta_temp.db` → `items` table → `local_title` column → run `node scripts/read_gdoc.js <docId>`
+- **Episode scripts:** Check `docs/work-log.md` first — current episode doc IDs are listed there. If not listed, search `db/drivefs_meta_temp.db` → `items` table → `local_title` column. If the episode is too recent to be in the database, use the Drive API to find it by name:
+  ```
+  node -e "import('./scripts/read_gdoc.js').then(async m => { const {google} = await import('googleapis'); const drive = google.drive({version:'v3', auth: m.getAuthClient()}); const r = await drive.files.list({q:\"name contains 'EPISODE' and mimeType='application/vnd.google-apps.document'\",fields:'files(id,name)',orderBy:'modifiedTime desc',pageSize:10}); console.log(JSON.stringify(r.data.files,null,2)); }).catch(e=>console.error(e.message));"
+  ```
+  Then run `node scripts/read_gdoc.js <docId>`
 - **Other Drive files:** Check `C:/Users/jamme/Downloads/` and `G:/My Drive/Wine Podcast/` before asking
 - **Episode URLs:** Search `site:thewinepairpodcast.com` via WebSearch
 
@@ -99,3 +103,4 @@ If OAuth is broken: `rm google_token.json` then `node scripts/setup_google_auth.
 | Episode copy, show notes, social copy | `docs/voice-and-format.md` |
 | SEO strategy and priorities | `docs/seo-geo-strategy.md` |
 | Project context and show identity | `docs/soul-document.md` |
+| Episode title generation | `memory/title_writing.md` (read before every title task; check last 3–5 episode titles first) |
