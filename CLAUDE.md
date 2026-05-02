@@ -53,7 +53,7 @@ To check: `C:/Users/jamme/Downloads/gsc_data_temp/Pages.csv` has current GSC pag
 
 - Search before asking. Never ask Joe for information retrievable from the website, Drive, or database.
 - Read the episode script before writing any episode content. Ratings, tasting notes, and pairings are always in the script. Never use placeholders for these.
-- Save all drafts and outputs to disk. Update `docs/work-log.md` after every meaningful action and commit immediately.
+- Save all drafts and outputs to disk at `outputs/episodes/ep[NUMBER]-[slug].md` (e.g. `outputs/episodes/ep216-viura.md`). One file per episode, all outputs in that file. This folder is committed to the repo. Update `docs/work-log.md` after every meaningful action and commit immediately.
 - Act as a strategist. Proactively flag opportunities. Do not wait to be asked.
 
 ---
