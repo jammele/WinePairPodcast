@@ -104,6 +104,7 @@ Blog post sprint resumes after all spokes are live.
 **Wines:** 2024 CVNE Monopole ($14.97) — Joe 7, Carmela 8 | 2024 Sierra de Tolono Rioja Blanco ($24.97) — Joe 8, Carmela 8
 **Finish tonight:** Both chose Sierra de Tolono
 **Cover art concept:** Joe reaching into a rack of dark red bottles, triumphantly pulling out a pale white bottle; Carmela beside him with delighted surprise. Full ChatGPT prompt in `memory/feedback_cover_art.md`.
+**SEO/AEO copy:** Complete — `outputs/drafts/ep216-viura-seo-aeo.md`
 
 ---
 
