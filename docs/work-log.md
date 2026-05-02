@@ -98,14 +98,13 @@ Blog post sprint resumes after all spokes are live.
 
 ### Episode 216 — Viura
 
-**Status:** Title and cover art prompt complete. SEO/GEO copy not yet written.
+**Status:** All written outputs complete. Cover art pending ChatGPT generation. Show notes not yet published.
 **Google Doc ID:** 1ElzHd3K8lbLQageMUZ4evB2g9JQcYFQhfuBBMPK3b60
 **Confirmed title:** Viura: The Great White Wine Hiding in Rioja's Red Wine Shadow
 **Wines:** 2024 CVNE Monopole ($14.97) — Joe 7, Carmela 8 | 2024 Sierra de Tolono Rioja Blanco ($24.97) — Joe 8, Carmela 8
 **Finish tonight:** Both chose Sierra de Tolono
-**Cover art concept:** Joe reaching into a rack of dark red bottles, triumphantly pulling out a pale white bottle; Carmela beside him with delighted surprise. Full ChatGPT prompt in `memory/feedback_cover_art.md`.
-**SEO/AEO copy:** Complete — `outputs/drafts/ep216-viura-seo-aeo.md`
-**Bluesky posts:** Complete (10 posts) — same file
+**Outputs:** `outputs/episodes/ep216-viura.md` — Key Questions, Q&A, FAQ schema, 10 Bluesky posts
+**Cover art:** Concept selected. Use image-reference workflow with ep215 approved image. Scene description in `memory/feedback_cover_art.md`.
 
 ---
 

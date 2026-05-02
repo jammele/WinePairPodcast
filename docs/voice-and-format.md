@@ -44,6 +44,7 @@ All content should feel:
 - For URLs over 180 characters, use a link card instead of inline text
 - Mix of fact-led, opinion-led, and curiosity-led options
 - Sound like a human, not ad copy
+- **Do NOT include the Wine in the News segment** in Bluesky posts — the segment is for the episode only. The saved blue-sky-prompt says to cover the News angle; ignore that instruction.
 
 **Instagram:**
 - Readable, natural, not forced
@@ -78,7 +79,7 @@ All content should feel:
 - Timestamps for every section
 - Wine details: Region / Year / Price / Retailer / Alcohol / Grapes / Rating
 - Tasting notes: Color / Nose / Mouth / Food pairings
-- Full Q&A at bottom (6-8 questions, answers 40-60 words each — see SEO/AEO rules below)
+- Full Q&A at bottom (6-8 questions, answers 40-60 words each — see SEO/AEO rules below; format as Q. / A. with bold Q. before each question and A. before each answer)
 - Research links compiled at bottom
 
 **SEO/AEO rules for show notes:**

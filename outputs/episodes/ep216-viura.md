@@ -124,5 +124,5 @@ White Rioja gets compared to White Burgundy for complexity and aging. The price 
 winefolly.com/deep-dive/amazing-white-rioja-wines/
 
 **10.**
-Two bottles of 1870 Château Lafite surfaced from a crypt under a Scottish castle. Opened in the 1970s: "undrinkable." A wine expert just re-tasted them: "balance and flavour perfection." They're selling for $50k each. Pre-phylloxera wine. The vines don't exist anymore.
-[link card: https://www.cnn.com/2026/04/15/style/chateau-lafite-glamis-castle-wine-sothebys-auction-scli-intl]
+Crianza on a wine label doesn't mean it's a grape or a region. It means the wine was aged at least 18 months, including 6 months in oak barrels. Reserva = 2+ years. Gran Reserva = 4+ years. Now you know more than most people at the wine shop.
+en.wikipedia.org/wiki/Rioja_DOCa
