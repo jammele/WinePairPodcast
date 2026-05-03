@@ -179,4 +179,4 @@ Love Malbec? Here are six wines with the same dark fruit and bold style, from Sy
 
 ## IMAGE PROMPT
 
-Flat illustration, 16:9 wide format, cream background. A single dark purple wine bottle of Argentine Malbec in the center foreground, slightly larger than the others. Behind it, five other wine bottles arranged in a loose arc. Each bottle is a slightly different shade: deep purple, dark crimson, charcoal red, burgundy, dark ruby. No labels, no text, no wine glasses. Clean, minimal, bold.
+Flat illustration, 16:9 wide format, warm terracotta background. Seven wine bottles arranged in a casual, slightly overlapping row. Each bottle has a simple label with the wine name in clean sans-serif text: Malbec (center, tallest, deep purple bottle), Syrah, Zinfandel, Grenache, Nero d'Avola, Pinotage, Primitivo. Bottles vary in shape: Malbec is Bordeaux-style, Syrah is tall and narrow, Grenache is rounder and shorter, Zinfandel has a slight taper. Colors range from deep violet to dark crimson to burgundy to near-black. No wine glasses, no people, no table setting. The Malbec bottle is slightly forward and larger than the others. Bold, minimal, editorial feel.
