@@ -1,13 +1,13 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-02
+**Last updated:** 2026-05-03
 
 ---
 
 ## Immediate next actions
 
-1. **Next spoke page** — Cabernet Sauvignon. Same format as Malbec spoke (reference: `outputs/malbec-spoke.md`).
-2. **Remaining spokes after Cab Sauv** — Chardonnay, Sauvignon Blanc, 6th spoke (TBD). All must be live before hub is written.
+1. **Next spoke page** — Chardonnay. Same format as prior spokes.
+2. **Remaining spokes after Chardonnay** — Sauvignon Blanc, 6th spoke (TBD). All must be live before hub is written.
 3. **Check GSC May 2-5** — Confirm "URL is on Google" for the 4 posts with pending indexing requests.
 
 Blog post sprint resumes after all spokes are live.
@@ -32,7 +32,7 @@ Blog post sprint resumes after all spokes are live.
 |---|---|---|
 | Pinot Noir | LIVE | https://thewinepairpodcast.com/blog/wines-similar-to-pinot-noir |
 | Malbec | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-malbec |
-| Cabernet Sauvignon | Not started | |
+| Cabernet Sauvignon | **Draft ready** | `outputs/cabernet-sauvignon-spoke.md`, cards: `outputs/cabernet-sauvignon-wine-cards-embeds.html` |
 | Chardonnay | Not started | |
 | Sauvignon Blanc | Not started | |
 | 6th spoke | Not started | Waiting on Joe to confirm |
