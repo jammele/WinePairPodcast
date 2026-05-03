@@ -6,8 +6,8 @@
 
 ## Immediate next actions
 
-1. **Malbec spoke page** — Draft written 2026-05-02. Outputs: `outputs/malbec-spoke.md` + `outputs/malbec-wine-cards-embeds.html`. Joe to edit, build in Beamly, publish. URL: `/blog/wines-similar-to-malbec`.
-2. **Remaining 4 spokes** — Cabernet Sauvignon, Chardonnay, Sauvignon Blanc, 6th spoke (TBD). All must be live before hub is written.
+1. **Next spoke page** — Cabernet Sauvignon. Same format as Malbec spoke (reference: `outputs/malbec-spoke.md`).
+2. **Remaining spokes after Cab Sauv** — Chardonnay, Sauvignon Blanc, 6th spoke (TBD). All must be live before hub is written.
 3. **Check GSC May 2-5** — Confirm "URL is on Google" for the 4 posts with pending indexing requests.
 
 Blog post sprint resumes after all spokes are live.
@@ -31,7 +31,7 @@ Blog post sprint resumes after all spokes are live.
 | Spoke | Status | Notes |
 |---|---|---|
 | Pinot Noir | LIVE | https://thewinepairpodcast.com/blog/wines-similar-to-pinot-noir |
-| Malbec | **DRAFT READY** | outputs/malbec-spoke.md + outputs/malbec-wine-cards-embeds.html |
+| Malbec | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-malbec |
 | Cabernet Sauvignon | Not started | |
 | Chardonnay | Not started | |
 | Sauvignon Blanc | Not started | |
