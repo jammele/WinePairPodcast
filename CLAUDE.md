@@ -98,7 +98,7 @@ If OAuth is broken: `rm google_token.json` then `node scripts/setup_google_auth.
 
 | Task | Read first |
 |---|---|
-| Writing a spoke page | `docs/spoke-page-checklist.md` — run both passes before saving anything |
+| Writing a spoke page | `docs/spoke-page-checklist.md` — run all 3 passes. After writing: `node scripts/validate_spoke.js` then `/review-spoke` before showing Joe anything |
 | Writing a blog post | `docs/blog-post-guide.md` |
 | Publishing a page | `docs/publishing-checklist.md` |
 | Episode copy, show notes, social copy | `docs/voice-and-format.md` |

@@ -97,3 +97,23 @@ Run this checklist in two passes: once before writing, once before saving. Do no
 - [ ] Title subtitle is distinct from all previously published subtitles
 - [ ] Wine list is confirmed against all existing spokes one more time before saving
 - [ ] No wine that has its own spoke page appears as an alternative in this page
+
+---
+
+## Pass 3: Automated validation (mandatory before handing to Joe)
+
+Run both files through the validator script:
+
+```
+node scripts/validate_spoke.js outputs/<slug>-spoke.md outputs/<slug>-wine-cards-embeds.html
+```
+
+All errors must be resolved. Warnings must be reviewed. Do not proceed until the script exits with no errors.
+
+Then run the reviewer subagent:
+
+```
+/review-spoke outputs/<slug>-spoke.md
+```
+
+Fix any issues the subagent flags before presenting work to Joe. Joe should only see output that has passed all three passes.
