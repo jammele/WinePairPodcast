@@ -11,7 +11,7 @@ Run this checklist in two passes: once before writing, once before saving. Do no
 - [ ] Pull the full wine list from every existing spoke page. Current spokes and their wines:
   - Pinot Noir: Frappato, Beaujolais, Cinsault, Mencia, Etna Rosso, Red Burgundy
   - Malbec: Syrah/Shiraz, Zinfandel, Grenache, Nero d'Avola, Pinotage, Primitivo
-  - Cabernet Sauvignon: Merlot, Bordeaux Blend, Carmenere, Cabernet Franc, Rioja, Barolo
+  - Cabernet Sauvignon: Merlot, Bordeaux Blend, Carmenere, Tannat, Rioja, Barolo
 - [ ] Build the proposed wine list for the new spoke
 - [ ] Confirm: zero wines overlap with any existing spoke list
 - [ ] Confirm: none of the 6 alternatives is a wine that already has its own spoke page (e.g., do not list Malbec as an alternative in any other spoke)
@@ -110,7 +110,15 @@ node scripts/validate_spoke.js outputs/<slug>-spoke.md outputs/<slug>-wine-cards
 
 All errors must be resolved. Warnings must be reviewed. Do not proceed until the script exits with no errors.
 
-Then run the reviewer subagent:
+Then run the wine card reviewer:
+
+```
+/review-wine-cards outputs/<slug>-wine-cards-embeds.html
+```
+
+This checks description format, badge assignments, bar math, and footer structure. Fix all issues before proceeding.
+
+Then run the spoke reviewer:
 
 ```
 /review-spoke outputs/<slug>-spoke.md

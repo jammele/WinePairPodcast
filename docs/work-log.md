@@ -131,6 +131,18 @@ Blog post sprint resumes after all spokes are live.
 
 ---
 
+## System changes made 2026-05-03
+
+- **Cabernet Sauvignon spoke completed:** Draft at `outputs/cabernet-sauvignon-spoke.md`, cards at `outputs/cabernet-sauvignon-wine-cards-embeds.html`. Wine list: Merlot, Bordeaux Blend, Carménère, Tannat, Rioja, Barolo. Title: "Wines Similar to Cabernet Sauvignon: Cabernet Lovers Love These Wines, Too."
+- **Created `/review-wine-cards` slash command** at `.claude/commands/review-wine-cards.md` — mandatory QA step for HTML wine card files. Checks: description fragment format (predicate clauses, comparative clauses, subject-verb clauses, 4-item sentence 2, explanatory phrases), em-dashes, style tags, card count, badge assignments, bar width math, footer format, sentence 3 quality.
+- **Updated `scripts/validate_spoke.js`** — added word-count check (S1 and S2 must be under 14 words) and comma-count check (S2 must have ≤2 commas / exactly 3 flavor notes). Updated Cab Sauv wine list with Carménère accent. Updated EXISTING_SPOKE_WINES for all three published spokes.
+- **Enhanced `.claude/commands/review-spoke.md`** — subagent now required to use WebSearch to verify factual claims and compare wine list against expert sources. Added Carménère accent throughout.
+- **Updated `docs/spoke-page-checklist.md`** — Pass 3 is now three mandatory steps in order: validate_spoke.js → /review-wine-cards → /review-spoke. Wine list corrected to include Carménère.
+- **Updated `memory/feedback_spoke_pages.md`** — card format rule expanded with side-by-side correct/wrong examples and third regression documented. Subtitle rule updated with confirmed Cab Sauv subtitle.
+- **Root cause for recurring card format regression:** Cards were drafted without explicitly consulting the Malbec reference. Three-layer fix now in place: /review-wine-cards mandatory step, validator word-count/comma checks, expanded memory documentation.
+
+---
+
 ## System changes made 2026-05-01
 
 - Corrected blog post queue: removed Meiomi (already converts at 1.18% CTR / 241 clicks — no post needed), added Portuguese wine episode as #1 SEO priority (20,154 impr, 19 clicks, 0.09% CTR)

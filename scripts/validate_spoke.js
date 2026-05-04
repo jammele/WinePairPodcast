@@ -16,7 +16,7 @@ const EXISTING_SPOKE_WINES = {
     'syrah', 'shiraz', 'zinfandel', 'grenache', "nero d'avola", 'pinotage', 'primitivo'
   ],
   'Cabernet Sauvignon': [
-    'merlot', 'bordeaux blend', 'carmenere', 'cabernet franc', 'rioja', 'barolo'
+    'merlot', 'bordeaux blend', 'carménère', 'tannat', 'rioja', 'barolo'
   ],
 };
 
@@ -31,7 +31,7 @@ const SPOKE_ANCHORS = [
 const PUBLISHED_SUBTITLES = [
   '6 wines to try if you love pinot noir',  // Pinot Noir — LIVE
   '6 bold reds to try next',                 // Malbec — LIVE
-  // '6 full-bodied reds to try next',       // Cabernet Sauvignon — add when live
+  // 'cabernet lovers love these wines, too', // Cabernet Sauvignon — add when live
 ];
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
@@ -190,12 +190,28 @@ function run(filePath) {
       errors.push('Em-dash found in HTML file. Remove every one.');
     }
 
-    // 3. Card description sentence counts
+    // 3. Card description sentence counts and length
     const descriptions = extractCardDescriptions(content);
     descriptions.forEach((desc, i) => {
       const count = countSentences(desc);
       if (count !== 3) {
         errors.push(`Card description #${i + 1} has ${count} sentence(s) — must be exactly 3. Text: "${desc.slice(0, 80)}..."`);
+      }
+      // Warn if any individual sentence is too long (prose, not fragments)
+      const sentences = desc.split(/[.!?]+(?:\s|$)/).filter(s => s.trim().length > 0);
+      sentences.slice(0, 2).forEach((s, si) => {
+        const wordCount = s.trim().split(/\s+/).length;
+        if (wordCount > 14) {
+          errors.push(`Card #${i + 1} sentence ${si + 1} is ${wordCount} words — must be a short fragment under 14 words. Got: "${s.trim().slice(0, 70)}"`);
+        }
+      });
+      // Sentence 2 must have exactly 3 flavor notes (2 commas)
+      if (sentences.length >= 2) {
+        const s2 = sentences[1].trim();
+        const commaCount = (s2.match(/,/g) || []).length;
+        if (commaCount > 2) {
+          errors.push(`Card #${i + 1} sentence 2 has ${commaCount + 1} items — must be exactly 3 flavor notes. Got: "${s2}"`);
+        }
       }
     });
 
