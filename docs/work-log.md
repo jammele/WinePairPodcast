@@ -6,8 +6,8 @@
 
 ## Immediate next actions
 
-1. **Next spoke page** — Chardonnay. Same format as prior spokes.
-2. **Remaining spokes after Chardonnay** — Sauvignon Blanc, 6th spoke (TBD). All must be live before hub is written.
+1. **FAQPage schema — 4 remaining pages** — Blocks are ready in `outputs/seo-aeo/faqpage-schema-blocks.md`. Add to each page in order: Malbec spoke, Bread & Butter review, Is Josh Wine Good?, Should You Chill Red Wine?. WARNING: After adding to Malbec spoke (which has wine cards), re-paste all card blocks from `outputs/malbec-wine-cards-embeds.html` — Beamly re-encoding bug will break badges on re-save.
+2. **Next spoke page** — Cabernet Sauvignon (draft ready). Then Chardonnay, Sauvignon Blanc, 6th spoke (TBD). All must be live before hub is written.
 3. **Check GSC May 2-5** — Confirm "URL is on Google" for the 4 posts with pending indexing requests.
 
 Blog post sprint resumes after all spokes are live.
@@ -136,6 +136,9 @@ Blog post sprint resumes after all spokes are live.
 - **Built SEO & AEO analyzer tool** (`scripts/seo-aeo/`): scans portfolio of pages against 30+ content signals across 6 categories (On-Page SEO, Technical SEO, Schema, Featured Snippet, Conversational, AI Readiness) plus Google Lighthouse. Outputs HTML dashboard to `outputs/seo-aeo/report.html`. Run with `npm run seo` (full, ~8 min) or `npm run seo:fast` (content only, ~30 sec). Portfolio in `scripts/seo-aeo/page-portfolio.json`.
 - **Author participant rule established:** Every blog post and spoke page must have Joe Mele added as a participant with role "Author" in Beamly (Authors / Participants section). Profile already exists — just connect it. Added to `docs/publishing-checklist.md`, `docs/blog-post-guide.md`, and memory. Note: Beamly renders the byline visually but does not inject it into Article schema (platform limitation, worth raising with Beamly support).
 - **Existing posts needing author added:** Pinot Noir spoke, Malbec spoke, Bread & Butter review, "Should You Chill Red Wine?", "Is Josh Wine Good?" — all published without author participant. Cab Sauv spoke already updated.
+- **FAQPage schema added to Pinot Noir spoke** — schema blocks generated for 5 published pages in `outputs/seo-aeo/faqpage-schema-blocks.md`. Pinot Noir done. Four remaining: Malbec, Bread & Butter, Is Josh Wine Good?, Should You Chill Red Wine?
+- **Beamly re-encoding bug documented:** When a published page is edited and re-saved in Beamly, all `<span>` tags inside existing code embed blocks are HTML-encoded (e.g., badge labels show as raw `<span style="...">` text instead of rendering). Fix: after editing any page with wine cards, delete all card code blocks in Beamly and re-paste from the source file in `outputs/`. Documented in `memory/feedback_beamly.md` and `docs/publishing-checklist.md`.
+- **Created `/verify-published` slash command** at `.claude/commands/verify-published.md` — runs after Joe publishes or edits any page. Checks: card re-encoding (encoded spans), FAQPage schema present, Review schema present (where applicable), meta description set, author byline visible, page title set. Closes the loop between "code pasted in Beamly" and "confirmed working on live page." Updated CLAUDE.md reference table to require this after every publish.
 
 ---
 
