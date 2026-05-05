@@ -13,6 +13,7 @@ Every new page or blog post must go through this checklist. Writing great conten
 - [ ] Page title and meta description set in Beamly (not left as Beamly defaults)
 - [ ] Author participant added in Beamly: search "Joe Mele" in the Authors / Participants section, select role "Author" (applies to all blog posts and spoke pages)
 - [ ] FAQPage schema block added as a code embed at the very bottom of the page (after Review Schema and Buzzsprout embed if present). Copy the block from the draft file — everything between COPY START and COPY END lines.
+- [ ] **After any edit to a page with wine cards:** Check the published page and confirm card badges are rendering correctly (not showing as raw `<span>` text). Beamly re-encodes HTML in existing code blocks on re-save. If cards are broken, delete and re-paste them from the source embeds file in `outputs/`.
 
 ---
 
