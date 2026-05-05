@@ -4,6 +4,12 @@ Every new page or blog post must go through this checklist. Writing great conten
 
 ---
 
+## After You Publish — Claude runs this automatically
+
+When you tell Claude a page is live (any phrasing), Claude will immediately run `/verify-published <url>`. You do not need to ask. Claude will report the results and tell you what to fix if anything is broken.
+
+---
+
 ## Step 1 — Before You Hit Publish
 
 - [ ] Review Schema added via Beamly per-page code injection (for any post that includes wine ratings)
