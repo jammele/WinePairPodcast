@@ -148,6 +148,7 @@ When building the post in Beamly, fill in these fields:
 - **Custom SEO Title:** The H1/page title optimized for the target query. Example: "Is Bread & Butter Wine Good? An Honest Review"
 - **Custom SEO Description:** 1-2 sentences, 150-160 characters. Lead with the verdict. Example: "We tasted all three Bread & Butter wines and gave them honest ratings. Here is what we found, and whether any of them are worth buying."
 - **URL slug:** Short, keyword-first. Example: `is-bread-and-butter-wine-good`
+- **Author / Participant:** In the Authors / Participants section, search "Joe Mele" and add with role "Author". This adds a visible byline (E-E-A-T signal). Note: Beamly does not currently inject this into the Article JSON-LD schema — that is a platform limitation, not a configuration error.
 - **Review Schema:** Added as a code block inside the post body in Beamly, at the very bottom of the page after the FAQ. Same method as the Buzzsprout embed.
 
 Claude Code includes suggested copy for all of these fields at the bottom of every draft file.
@@ -157,11 +158,12 @@ Claude Code includes suggested copy for all of these fields at the bottom of eve
 ## Post-publish checklist (every post)
 
 1. Fill in all Beamly fields above
-2. Add Review Schema as a code block at the bottom of the post in Beamly (same as Buzzsprout embed)
-3. Add Buzzsprout embed: log into Buzzsprout → find episode → Share → Embed → copy HTML → paste as a code block in Beamly
-4. Upload featured image (generated in ChatGPT using the prompt from the draft)
-5. Submit URL in GSC → URL Inspection → Request Indexing
-6. Resubmit sitemap: GSC → Indexing → Sitemaps → Resubmit
-7. Check back in 3-5 days to confirm "URL is on Google"
+2. Add Joe Mele as Author participant (Authors / Participants section → search "Joe Mele" → role: Author)
+3. Add Review Schema as a code block at the bottom of the post in Beamly (same as Buzzsprout embed)
+4. Add Buzzsprout embed: log into Buzzsprout → find episode → Share → Embed → copy HTML → paste as a code block in Beamly
+5. Upload featured image (generated in ChatGPT using the prompt from the draft)
+6. Submit URL in GSC → URL Inspection → Request Indexing
+7. Resubmit sitemap: GSC → Indexing → Sitemaps → Resubmit
+8. Check back in 3-5 days to confirm "URL is on Google"
 
 Full details in `docs/publishing-checklist.md`.

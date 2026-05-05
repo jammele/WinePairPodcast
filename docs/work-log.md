@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-03
+**Last updated:** 2026-05-04
 
 ---
 
@@ -128,6 +128,14 @@ Blog post sprint resumes after all spokes are live.
 
 - **May 2-5, 2026:** Check indexing status on all 4 submitted posts
 - **June 14, 2026:** Check Pillar #2 intent shift; re-run AI discoverability tests
+
+---
+
+## System changes made 2026-05-04
+
+- **Built SEO & AEO analyzer tool** (`scripts/seo-aeo/`): scans portfolio of pages against 30+ content signals across 6 categories (On-Page SEO, Technical SEO, Schema, Featured Snippet, Conversational, AI Readiness) plus Google Lighthouse. Outputs HTML dashboard to `outputs/seo-aeo/report.html`. Run with `npm run seo` (full, ~8 min) or `npm run seo:fast` (content only, ~30 sec). Portfolio in `scripts/seo-aeo/page-portfolio.json`.
+- **Author participant rule established:** Every blog post and spoke page must have Joe Mele added as a participant with role "Author" in Beamly (Authors / Participants section). Profile already exists — just connect it. Added to `docs/publishing-checklist.md`, `docs/blog-post-guide.md`, and memory. Note: Beamly renders the byline visually but does not inject it into Article schema (platform limitation, worth raising with Beamly support).
+- **Existing posts needing author added:** Pinot Noir spoke, Malbec spoke, Bread & Butter review, "Should You Chill Red Wine?", "Is Josh Wine Good?" — all published without author participant. Cab Sauv spoke already updated.
 
 ---
 

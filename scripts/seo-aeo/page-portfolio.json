@@ -1,0 +1,54 @@
+{
+  "pages": [
+    {
+      "url": "https://thewinepairpodcast.com/",
+      "name": "Homepage",
+      "category": "core"
+    },
+    {
+      "url": "https://thewinepairpodcast.com/episodes",
+      "name": "Episodes Index",
+      "category": "core"
+    },
+    {
+      "url": "https://thewinepairpodcast.com/about",
+      "name": "About",
+      "category": "core"
+    },
+    {
+      "url": "https://thewinepairpodcast.com/blog",
+      "name": "Blog Index",
+      "category": "core"
+    },
+    {
+      "url": "https://thewinepairpodcast.com/media-kit",
+      "name": "Media Kit",
+      "category": "core"
+    },
+    {
+      "url": "https://thewinepairpodcast.com/shopwine",
+      "name": "Shop Wine",
+      "category": "core"
+    },
+    {
+      "url": "https://thewinepairpodcast.com/episode/viura-the-great-white-wine-hiding-in-riojas-red-wine-shadow",
+      "name": "Episode: Viura",
+      "category": "episode"
+    },
+    {
+      "url": "https://thewinepairpodcast.com/blog/wines-similar-to-pinot-noir",
+      "name": "Spoke: Wines Similar to Pinot Noir",
+      "category": "spoke"
+    },
+    {
+      "url": "https://thewinepairpodcast.com/blog/is-bread-butter-wine-good-an-honest-review",
+      "name": "Blog: Bread & Butter Review",
+      "category": "blog"
+    }
+  ],
+  "settings": {
+    "outputDir": "outputs/seo-aeo",
+    "historyDir": "outputs/seo-aeo/history",
+    "reportFile": "outputs/seo-aeo/report.html"
+  }
+}

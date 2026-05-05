@@ -1,0 +1,24 @@
+{
+  "name": "podcast-os",
+  "version": "1.0.0",
+  "description": "Local-first podcast operating system for The Wine Pair Podcast",
+  "type": "module",
+  "scripts": {
+    "init-db": "node scripts/init_db.js",
+    "ingest": "node scripts/ingest_episode.js",
+    "search": "node scripts/search_archive.js",
+    "find-files": "node scripts/find_source_files.js",
+    "scan-drive": "node scripts/find_source_files.js --scan",
+    "seo": "node scripts/seo-aeo/analyze.js",
+    "seo:fast": "node scripts/seo-aeo/analyze.js --skip-lighthouse"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.8.0",
+    "cheerio": "^1.2.0",
+    "chrome-launcher": "^1.2.1",
+    "google-auth-library": "^10.6.2",
+    "googleapis": "^171.4.0",
+    "lighthouse": "^12.8.2",
+    "mammoth": "^1.12.0"
+  }
+}

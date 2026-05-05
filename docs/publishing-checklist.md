@@ -11,6 +11,7 @@ Every new page or blog post must go through this checklist. Writing great conten
 - [ ] All card embed HTML uses fully inline styles — no `<style>` blocks (Beamly strips them)
 - [ ] Internal links: does this post link to at least one existing page on the site, and does at least one existing page link to it?
 - [ ] Page title and meta description set in Beamly (not left as Beamly defaults)
+- [ ] Author participant added in Beamly: search "Joe Mele" in the Authors / Participants section, select role "Author" (applies to all blog posts and spoke pages)
 
 ---
 
