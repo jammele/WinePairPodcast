@@ -55,6 +55,15 @@ You have access to WebSearch. Use it to:
 
 **Check the draft for these issues:**
 
+0. **Beamly publish requirements** — Confirm the draft includes all of the following at the bottom, clearly labeled with COPY START / COPY END markers:
+   - Excerpt / Short description
+   - Custom SEO Title
+   - Custom SEO Description (under 160 characters)
+   - URL slug
+   - FAQPage schema block (required for any page with a FAQ/Q&A section)
+   - Image prompt
+   Flag anything missing.
+
 1. Does any wine in the alternatives list also appear in an existing spoke? Flag it with the spoke name.
 2. Does any alternative wine have its own spoke page (Pinot Noir, Malbec, Cabernet Sauvignon, Chardonnay, Sauvignon Blanc)? Flag it.
 3. Is the wine list genuinely specific to the anchor wine's character, or is it a generic bold-reds/crisp-whites grab-bag that could apply to any similar wine? Search "wines similar to [anchor wine]" and compare.

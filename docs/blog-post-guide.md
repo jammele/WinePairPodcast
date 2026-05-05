@@ -87,7 +87,7 @@ Rules:
 - Questions should match real search queries.
 
 ### 8. Review Schema
-One script block per wine. Goes in Beamly per-page code injection (SEO/head section). See template below.
+One script block per wine. Added as a code block inside the post body in Beamly — at the very bottom of the page, after the FAQ. Same method as the Buzzsprout embed. Note: blog pages do not have head code injection; the body code block works fine for JSON-LD schema (Google reads it wherever it appears on the page). See template below.
 
 ---
 
@@ -149,9 +149,9 @@ When building the post in Beamly, fill in these fields:
 - **Custom SEO Description:** 1-2 sentences, 150-160 characters. Lead with the verdict. Example: "We tasted all three Bread & Butter wines and gave them honest ratings. Here is what we found, and whether any of them are worth buying."
 - **URL slug:** Short, keyword-first. Example: `is-bread-and-butter-wine-good`
 - **Author / Participant:** In the Authors / Participants section, search "Joe Mele" and add with role "Author". This adds a visible byline (E-E-A-T signal). Note: Beamly does not currently inject this into the Article JSON-LD schema — that is a platform limitation, not a configuration error.
-- **Review Schema:** Added as a code block inside the post body in Beamly, at the very bottom of the page after the FAQ. Same method as the Buzzsprout embed.
+- **Review Schema + FAQPage Schema:** Added as code blocks inside the post body in Beamly, at the very bottom of the page after the FAQ. Same method as the Buzzsprout embed. Blog pages do not have head code injection — body code blocks work for JSON-LD schema.
 
-Claude Code includes suggested copy for all of these fields at the bottom of every draft file.
+Claude Code includes suggested copy for all of these fields at the bottom of every draft file, along with the FAQPage schema block.
 
 ---
 
@@ -159,11 +159,12 @@ Claude Code includes suggested copy for all of these fields at the bottom of eve
 
 1. Fill in all Beamly fields above
 2. Add Joe Mele as Author participant (Authors / Participants section → search "Joe Mele" → role: Author)
-3. Add Review Schema as a code block at the bottom of the post in Beamly (same as Buzzsprout embed)
-4. Add Buzzsprout embed: log into Buzzsprout → find episode → Share → Embed → copy HTML → paste as a code block in Beamly
-5. Upload featured image (generated in ChatGPT using the prompt from the draft)
-6. Submit URL in GSC → URL Inspection → Request Indexing
-7. Resubmit sitemap: GSC → Indexing → Sitemaps → Resubmit
-8. Check back in 3-5 days to confirm "URL is on Google"
+3. Add Buzzsprout embed: log into Buzzsprout → find episode → Share → Embed → copy HTML → paste as a code block in Beamly
+4. Add Review Schema code block (copy from draft — everything between COPY START and COPY END lines)
+5. Add FAQPage Schema code block (copy from draft — everything between COPY START and COPY END lines). Goes after Review Schema, at the very bottom.
+6. Upload featured image (generated in ChatGPT using the prompt from the draft)
+7. Submit URL in GSC → URL Inspection → Request Indexing
+8. Resubmit sitemap: GSC → Indexing → Sitemaps → Resubmit
+9. Check back in 3-5 days to confirm "URL is on Google"
 
 Full details in `docs/publishing-checklist.md`.

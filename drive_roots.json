@@ -1,0 +1,26 @@
+{
+  "_note": "Add any folder path here to include it in scans. Paths are scanned recursively up to 6 folders deep.",
+  "_google_drive_note": "When you install Google Drive Desktop, it usually syncs to C:/Users/jamme/Google Drive or G:/My Drive. Add whichever path it creates to the roots list below, then run: node scripts/find_source_files.js --scan",
+  "roots": [
+    {
+      "path": "G:/My Drive/Wine Podcast/Phase 2",
+      "label": "Google Drive - Phase 2"
+    },
+    {
+      "path": "G:/My Drive/Wine Podcast/Phase 1 Old",
+      "label": "Google Drive - Phase 1"
+    },
+    {
+      "path": "C:/Users/jamme/OneDrive",
+      "label": "OneDrive"
+    },
+    {
+      "path": "C:/Users/jamme/Documents",
+      "label": "Documents"
+    },
+    {
+      "path": "C:/Users/jamme/Downloads",
+      "label": "Downloads"
+    }
+  ]
+}

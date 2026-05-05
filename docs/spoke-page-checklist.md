@@ -91,6 +91,8 @@ Run this checklist in two passes: once before writing, once before saving. Do no
 - [ ] Custom SEO Title (matches H1)
 - [ ] Custom SEO Description (under 160 characters)
 - [ ] URL slug
+- [ ] Author participant: add Joe Mele with role "Author" in the Authors / Participants section
+- [ ] FAQPage schema block: Claude Code generates this at the end of the draft. Add as a code embed block at the very bottom of the page in Beamly (after all other content). Copy everything between COPY START and COPY END lines.
 
 **Final cross-checks**
 

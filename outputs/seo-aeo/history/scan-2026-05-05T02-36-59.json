@@ -1,0 +1,2405 @@
+[
+  {
+    "url": "https://thewinepairpodcast.com/",
+    "name": "Homepage",
+    "category": "core",
+    "timestamp": "2026-05-05T02:36:55.725Z",
+    "scores": {
+      "categories": {
+        "onPage": {
+          "score": 81,
+          "level": "green",
+          "signals": [
+            {
+              "name": "Title Tag",
+              "score": 70,
+              "level": "green",
+              "value": "\"The Wine Pair Podcast - Find Great Wines Without Breaking the Bank\" (66 chars)",
+              "recommendation": null
+            },
+            {
+              "name": "Meta Description",
+              "score": 60,
+              "level": "yellow",
+              "value": "169 characters",
+              "recommendation": "Meta description is too long — trim to 160 characters"
+            },
+            {
+              "name": "H1 Heading",
+              "score": 100,
+              "level": "green",
+              "value": "\"The Wine Pair Podcast\"",
+              "recommendation": null
+            },
+            {
+              "name": "Heading Hierarchy",
+              "score": 40,
+              "level": "yellow",
+              "value": "H1: 1, H2: 0, H3: 35",
+              "recommendation": "Add H2 subheadings to break up content and signal topic structure"
+            },
+            {
+              "name": "Content Length",
+              "score": 100,
+              "level": "green",
+              "value": "3,065 words",
+              "recommendation": null
+            },
+            {
+              "name": "Image Alt Text",
+              "score": 100,
+              "level": "green",
+              "value": "53/53 have alt text",
+              "recommendation": null
+            },
+            {
+              "name": "Internal Links",
+              "score": 100,
+              "level": "green",
+              "value": "161 internal links",
+              "recommendation": null
+            }
+          ]
+        },
+        "technical": {
+          "score": 100,
+          "level": "green",
+          "signals": [
+            {
+              "name": "HTTPS",
+              "score": 100,
+              "level": "green",
+              "value": "Secure (HTTPS)",
+              "recommendation": null
+            },
+            {
+              "name": "Canonical URL",
+              "score": 100,
+              "level": "green",
+              "value": "https://thewinepairpodcast.com/",
+              "recommendation": null
+            },
+            {
+              "name": "Robots / Indexing",
+              "score": 100,
+              "level": "green",
+              "value": "max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+              "recommendation": null
+            },
+            {
+              "name": "Mobile Viewport",
+              "score": 100,
+              "level": "green",
+              "value": "width=device-width, initial-scale=1.0",
+              "recommendation": null
+            },
+            {
+              "name": "Open Graph Tags",
+              "score": 100,
+              "level": "green",
+              "value": "3/3 tags present (title, description, image)",
+              "recommendation": null
+            },
+            {
+              "name": "Twitter / Social Card",
+              "score": 100,
+              "level": "green",
+              "value": "summary_large_image",
+              "recommendation": null
+            }
+          ]
+        },
+        "schema": {
+          "score": 61,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "JSON-LD Present",
+              "score": 100,
+              "level": "green",
+              "value": "1 block(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Schema Types Used",
+              "score": 80,
+              "level": "green",
+              "value": "WebSite",
+              "recommendation": null
+            },
+            {
+              "name": "Podcast Schema",
+              "score": 30,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add PodcastSeries schema to help Google and Apple show rich podcast results"
+            },
+            {
+              "name": "FAQ Schema",
+              "score": 20,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add FAQPage schema to hub/spoke and blog pages for featured snippet eligibility"
+            },
+            {
+              "name": "Schema Completeness",
+              "score": 75,
+              "level": "green",
+              "value": "75% of key properties filled",
+              "recommendation": null
+            }
+          ]
+        },
+        "snippet": {
+          "score": 55,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Question-Style Headings",
+              "score": 60,
+              "level": "yellow",
+              "value": "1 of 35 headings are question-style",
+              "recommendation": "Add more question-style H2/H3 headings — each one is a featured snippet opportunity"
+            },
+            {
+              "name": "List Formatting",
+              "score": 100,
+              "level": "green",
+              "value": "5 list(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Table Formatting",
+              "score": 40,
+              "level": "yellow",
+              "value": "0 table(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Direct Answer Paragraphs",
+              "score": 20,
+              "level": "red",
+              "value": "0 question heading(s) followed by a direct paragraph answer",
+              "recommendation": "After each question heading, write a direct 40-80 word answer — this is the exact format Google pulls into featured snippets"
+            }
+          ]
+        },
+        "conversational": {
+          "score": 45,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Conversational Headings",
+              "score": 50,
+              "level": "yellow",
+              "value": "1 question-style headings",
+              "recommendation": "Write headings as questions your listeners would actually ask"
+            },
+            {
+              "name": "FAQ Section",
+              "score": 20,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add a FAQ section — \"People also ask\" results drive significant podcast discovery traffic"
+            },
+            {
+              "name": "Conversational Tone",
+              "score": 80,
+              "level": "green",
+              "value": "\"you/your\" density: 2.1% of words",
+              "recommendation": null
+            },
+            {
+              "name": "Answer-First Opening",
+              "score": 30,
+              "level": "red",
+              "value": "(no opening paragraph found)",
+              "recommendation": "Lead with a clear, direct opening paragraph — AI models prefer content that states the main point first"
+            }
+          ]
+        },
+        "aiReadiness": {
+          "score": 66,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Author Markup",
+              "score": 30,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add author markup — AI models prioritize content with identifiable, credible authors"
+            },
+            {
+              "name": "Publication Date",
+              "score": 30,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add publication and update dates — AI answer engines prefer fresh, dated content"
+            },
+            {
+              "name": "Content Structure",
+              "score": 70,
+              "level": "green",
+              "value": "35 section headings for 3065 words",
+              "recommendation": null
+            },
+            {
+              "name": "Factual Specificity",
+              "score": 100,
+              "level": "green",
+              "value": "6 specific facts/numbers detected",
+              "recommendation": null
+            },
+            {
+              "name": "Topical Depth",
+              "score": 100,
+              "level": "green",
+              "value": "3065 words across 35 sections",
+              "recommendation": null
+            }
+          ]
+        }
+      },
+      "overallScore": 69,
+      "overallLevel": "yellow"
+    },
+    "lighthouse": null,
+    "finalUrl": "https://thewinepairpodcast.com/"
+  },
+  {
+    "url": "https://thewinepairpodcast.com/episodes",
+    "name": "Episodes Index",
+    "category": "core",
+    "timestamp": "2026-05-05T02:36:56.270Z",
+    "scores": {
+      "categories": {
+        "onPage": {
+          "score": 54,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Title Tag",
+              "score": 40,
+              "level": "yellow",
+              "value": "\"Episodes | The Wine Pair Podcast - Find Great Wines Without Breaking the Bank\" (77 chars)",
+              "recommendation": "Title is too long — trim to under 60 characters"
+            },
+            {
+              "name": "Meta Description",
+              "score": 30,
+              "level": "red",
+              "value": "63 characters",
+              "recommendation": "Meta description is too short — aim for 150-160 characters"
+            },
+            {
+              "name": "H1 Heading",
+              "score": 0,
+              "level": "red",
+              "value": "(missing)",
+              "recommendation": "Add exactly one H1 heading containing your primary keyword"
+            },
+            {
+              "name": "Heading Hierarchy",
+              "score": 10,
+              "level": "red",
+              "value": "H1: 0, H2: 0, H3: 35",
+              "recommendation": "Add H2 subheadings to break up content and signal topic structure"
+            },
+            {
+              "name": "Content Length",
+              "score": 100,
+              "level": "green",
+              "value": "2,973 words",
+              "recommendation": null
+            },
+            {
+              "name": "Image Alt Text",
+              "score": 100,
+              "level": "green",
+              "value": "52/52 have alt text",
+              "recommendation": null
+            },
+            {
+              "name": "Internal Links",
+              "score": 100,
+              "level": "green",
+              "value": "160 internal links",
+              "recommendation": null
+            }
+          ]
+        },
+        "technical": {
+          "score": 100,
+          "level": "green",
+          "signals": [
+            {
+              "name": "HTTPS",
+              "score": 100,
+              "level": "green",
+              "value": "Secure (HTTPS)",
+              "recommendation": null
+            },
+            {
+              "name": "Canonical URL",
+              "score": 100,
+              "level": "green",
+              "value": "https://thewinepairpodcast.com/episodes",
+              "recommendation": null
+            },
+            {
+              "name": "Robots / Indexing",
+              "score": 100,
+              "level": "green",
+              "value": "max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+              "recommendation": null
+            },
+            {
+              "name": "Mobile Viewport",
+              "score": 100,
+              "level": "green",
+              "value": "width=device-width, initial-scale=1.0",
+              "recommendation": null
+            },
+            {
+              "name": "Open Graph Tags",
+              "score": 100,
+              "level": "green",
+              "value": "3/3 tags present (title, description, image)",
+              "recommendation": null
+            },
+            {
+              "name": "Twitter / Social Card",
+              "score": 100,
+              "level": "green",
+              "value": "summary_large_image",
+              "recommendation": null
+            }
+          ]
+        },
+        "schema": {
+          "score": 4,
+          "level": "red",
+          "signals": [
+            {
+              "name": "JSON-LD Present",
+              "score": 0,
+              "level": "red",
+              "value": "(none found)",
+              "recommendation": "Add JSON-LD structured data — critical for rich results and AI citation"
+            },
+            {
+              "name": "Schema Types Used",
+              "score": 0,
+              "level": "red",
+              "value": "(none)",
+              "recommendation": null
+            },
+            {
+              "name": "Podcast Schema",
+              "score": 0,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add PodcastSeries schema to help Google and Apple show rich podcast results"
+            },
+            {
+              "name": "FAQ Schema",
+              "score": 20,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add FAQPage schema to hub/spoke and blog pages for featured snippet eligibility"
+            },
+            {
+              "name": "Schema Completeness",
+              "score": 0,
+              "level": "red",
+              "value": "No schema to evaluate",
+              "recommendation": null
+            }
+          ]
+        },
+        "snippet": {
+          "score": 55,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Question-Style Headings",
+              "score": 60,
+              "level": "yellow",
+              "value": "1 of 35 headings are question-style",
+              "recommendation": "Add more question-style H2/H3 headings — each one is a featured snippet opportunity"
+            },
+            {
+              "name": "List Formatting",
+              "score": 100,
+              "level": "green",
+              "value": "4 list(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Table Formatting",
+              "score": 40,
+              "level": "yellow",
+              "value": "0 table(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Direct Answer Paragraphs",
+              "score": 20,
+              "level": "red",
+              "value": "0 question heading(s) followed by a direct paragraph answer",
+              "recommendation": "After each question heading, write a direct 40-80 word answer — this is the exact format Google pulls into featured snippets"
+            }
+          ]
+        },
+        "conversational": {
+          "score": 45,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Conversational Headings",
+              "score": 50,
+              "level": "yellow",
+              "value": "1 question-style headings",
+              "recommendation": "Write headings as questions your listeners would actually ask"
+            },
+            {
+              "name": "FAQ Section",
+              "score": 20,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add a FAQ section — \"People also ask\" results drive significant podcast discovery traffic"
+            },
+            {
+              "name": "Conversational Tone",
+              "score": 80,
+              "level": "green",
+              "value": "\"you/your\" density: 2.2% of words",
+              "recommendation": null
+            },
+            {
+              "name": "Answer-First Opening",
+              "score": 30,
+              "level": "red",
+              "value": "(no opening paragraph found)",
+              "recommendation": "Lead with a clear, direct opening paragraph — AI models prefer content that states the main point first"
+            }
+          ]
+        },
+        "aiReadiness": {
+          "score": 66,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Author Markup",
+              "score": 30,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add author markup — AI models prioritize content with identifiable, credible authors"
+            },
+            {
+              "name": "Publication Date",
+              "score": 30,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add publication and update dates — AI answer engines prefer fresh, dated content"
+            },
+            {
+              "name": "Content Structure",
+              "score": 70,
+              "level": "green",
+              "value": "35 section headings for 2973 words",
+              "recommendation": null
+            },
+            {
+              "name": "Factual Specificity",
+              "score": 100,
+              "level": "green",
+              "value": "6 specific facts/numbers detected",
+              "recommendation": null
+            },
+            {
+              "name": "Topical Depth",
+              "score": 100,
+              "level": "green",
+              "value": "2973 words across 35 sections",
+              "recommendation": null
+            }
+          ]
+        }
+      },
+      "overallScore": 54,
+      "overallLevel": "yellow"
+    },
+    "lighthouse": null,
+    "finalUrl": "https://thewinepairpodcast.com/episodes"
+  },
+  {
+    "url": "https://thewinepairpodcast.com/about",
+    "name": "About",
+    "category": "core",
+    "timestamp": "2026-05-05T02:36:56.518Z",
+    "scores": {
+      "categories": {
+        "onPage": {
+          "score": 68,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Title Tag",
+              "score": 40,
+              "level": "yellow",
+              "value": "\"About | The Wine Pair Podcast - Find Great Wines Without Breaking the Bank\" (74 chars)",
+              "recommendation": "Title is too long — trim to under 60 characters"
+            },
+            {
+              "name": "Meta Description",
+              "score": 100,
+              "level": "green",
+              "value": "156 characters",
+              "recommendation": null
+            },
+            {
+              "name": "H1 Heading",
+              "score": 0,
+              "level": "red",
+              "value": "(missing)",
+              "recommendation": "Add exactly one H1 heading containing your primary keyword"
+            },
+            {
+              "name": "Heading Hierarchy",
+              "score": 80,
+              "level": "green",
+              "value": "H1: 0, H2: 1, H3: 0",
+              "recommendation": null
+            },
+            {
+              "name": "Content Length",
+              "score": 65,
+              "level": "yellow",
+              "value": "430 words",
+              "recommendation": "Consider expanding to at least 600 words for competitive pages"
+            },
+            {
+              "name": "Image Alt Text",
+              "score": 94,
+              "level": "green",
+              "value": "17/18 have alt text",
+              "recommendation": "Add descriptive alt text to 1 image(s)"
+            },
+            {
+              "name": "Internal Links",
+              "score": 100,
+              "level": "green",
+              "value": "20 internal links",
+              "recommendation": null
+            }
+          ]
+        },
+        "technical": {
+          "score": 100,
+          "level": "green",
+          "signals": [
+            {
+              "name": "HTTPS",
+              "score": 100,
+              "level": "green",
+              "value": "Secure (HTTPS)",
+              "recommendation": null
+            },
+            {
+              "name": "Canonical URL",
+              "score": 100,
+              "level": "green",
+              "value": "https://thewinepairpodcast.com/about",
+              "recommendation": null
+            },
+            {
+              "name": "Robots / Indexing",
+              "score": 100,
+              "level": "green",
+              "value": "max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+              "recommendation": null
+            },
+            {
+              "name": "Mobile Viewport",
+              "score": 100,
+              "level": "green",
+              "value": "width=device-width, initial-scale=1.0",
+              "recommendation": null
+            },
+            {
+              "name": "Open Graph Tags",
+              "score": 100,
+              "level": "green",
+              "value": "3/3 tags present (title, description, image)",
+              "recommendation": null
+            },
+            {
+              "name": "Twitter / Social Card",
+              "score": 100,
+              "level": "green",
+              "value": "summary_large_image",
+              "recommendation": null
+            }
+          ]
+        },
+        "schema": {
+          "score": 4,
+          "level": "red",
+          "signals": [
+            {
+              "name": "JSON-LD Present",
+              "score": 0,
+              "level": "red",
+              "value": "(none found)",
+              "recommendation": "Add JSON-LD structured data — critical for rich results and AI citation"
+            },
+            {
+              "name": "Schema Types Used",
+              "score": 0,
+              "level": "red",
+              "value": "(none)",
+              "recommendation": null
+            },
+            {
+              "name": "Podcast Schema",
+              "score": 0,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add PodcastSeries schema to help Google and Apple show rich podcast results"
+            },
+            {
+              "name": "FAQ Schema",
+              "score": 20,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add FAQPage schema to hub/spoke and blog pages for featured snippet eligibility"
+            },
+            {
+              "name": "Schema Completeness",
+              "score": 0,
+              "level": "red",
+              "value": "No schema to evaluate",
+              "recommendation": null
+            }
+          ]
+        },
+        "snippet": {
+          "score": 75,
+          "level": "green",
+          "signals": [
+            {
+              "name": "Question-Style Headings",
+              "score": 60,
+              "level": "yellow",
+              "value": "1 of 1 headings are question-style",
+              "recommendation": "Add more question-style H2/H3 headings — each one is a featured snippet opportunity"
+            },
+            {
+              "name": "List Formatting",
+              "score": 100,
+              "level": "green",
+              "value": "4 list(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Table Formatting",
+              "score": 40,
+              "level": "yellow",
+              "value": "0 table(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Direct Answer Paragraphs",
+              "score": 100,
+              "level": "green",
+              "value": "1 question heading(s) followed by a direct paragraph answer",
+              "recommendation": null
+            }
+          ]
+        },
+        "conversational": {
+          "score": 58,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Conversational Headings",
+              "score": 100,
+              "level": "green",
+              "value": "1 question-style headings",
+              "recommendation": "Write headings as questions your listeners would actually ask"
+            },
+            {
+              "name": "FAQ Section",
+              "score": 20,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add a FAQ section — \"People also ask\" results drive significant podcast discovery traffic"
+            },
+            {
+              "name": "Conversational Tone",
+              "score": 80,
+              "level": "green",
+              "value": "\"you/your\" density: 3.0% of words",
+              "recommendation": null
+            },
+            {
+              "name": "Answer-First Opening",
+              "score": 30,
+              "level": "red",
+              "value": "(no opening paragraph found)",
+              "recommendation": "Lead with a clear, direct opening paragraph — AI models prefer content that states the main point first"
+            }
+          ]
+        },
+        "aiReadiness": {
+          "score": 44,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Author Markup",
+              "score": 30,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add author markup — AI models prioritize content with identifiable, credible authors"
+            },
+            {
+              "name": "Publication Date",
+              "score": 30,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add publication and update dates — AI answer engines prefer fresh, dated content"
+            },
+            {
+              "name": "Content Structure",
+              "score": 90,
+              "level": "green",
+              "value": "1 section headings for 430 words",
+              "recommendation": "Add more H2/H3 section headings — AI models extract from well-structured, scannable content"
+            },
+            {
+              "name": "Factual Specificity",
+              "score": 30,
+              "level": "red",
+              "value": "0 specific facts/numbers detected",
+              "recommendation": "Include specific facts, numbers, and dates — AI models cite specific claims, not vague descriptions"
+            },
+            {
+              "name": "Topical Depth",
+              "score": 40,
+              "level": "yellow",
+              "value": "430 words across 1 sections",
+              "recommendation": "AI models prefer thorough, comprehensive content — aim for depth over brevity on key pages"
+            }
+          ]
+        }
+      },
+      "overallScore": 59,
+      "overallLevel": "yellow"
+    },
+    "lighthouse": null,
+    "finalUrl": "https://thewinepairpodcast.com/about"
+  },
+  {
+    "url": "https://thewinepairpodcast.com/blog",
+    "name": "Blog Index",
+    "category": "core",
+    "timestamp": "2026-05-05T02:36:56.880Z",
+    "scores": {
+      "categories": {
+        "onPage": {
+          "score": 71,
+          "level": "green",
+          "signals": [
+            {
+              "name": "Title Tag",
+              "score": 40,
+              "level": "yellow",
+              "value": "\"Blog | The Wine Pair Podcast - Find Great Wines Without Breaking the Bank\" (73 chars)",
+              "recommendation": "Title is too long — trim to under 60 characters"
+            },
+            {
+              "name": "Meta Description",
+              "score": 30,
+              "level": "red",
+              "value": "4 characters",
+              "recommendation": "Meta description is too short — aim for 150-160 characters"
+            },
+            {
+              "name": "H1 Heading",
+              "score": 100,
+              "level": "green",
+              "value": "\"Blog\"",
+              "recommendation": null
+            },
+            {
+              "name": "Heading Hierarchy",
+              "score": 40,
+              "level": "yellow",
+              "value": "H1: 1, H2: 0, H3: 30",
+              "recommendation": "Add H2 subheadings to break up content and signal topic structure"
+            },
+            {
+              "name": "Content Length",
+              "score": 85,
+              "level": "green",
+              "value": "843 words",
+              "recommendation": null
+            },
+            {
+              "name": "Image Alt Text",
+              "score": 100,
+              "level": "green",
+              "value": "47/47 have alt text",
+              "recommendation": null
+            },
+            {
+              "name": "Internal Links",
+              "score": 100,
+              "level": "green",
+              "value": "80 internal links",
+              "recommendation": null
+            }
+          ]
+        },
+        "technical": {
+          "score": 100,
+          "level": "green",
+          "signals": [
+            {
+              "name": "HTTPS",
+              "score": 100,
+              "level": "green",
+              "value": "Secure (HTTPS)",
+              "recommendation": null
+            },
+            {
+              "name": "Canonical URL",
+              "score": 100,
+              "level": "green",
+              "value": "https://thewinepairpodcast.com/blog",
+              "recommendation": null
+            },
+            {
+              "name": "Robots / Indexing",
+              "score": 100,
+              "level": "green",
+              "value": "max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+              "recommendation": null
+            },
+            {
+              "name": "Mobile Viewport",
+              "score": 100,
+              "level": "green",
+              "value": "width=device-width, initial-scale=1.0",
+              "recommendation": null
+            },
+            {
+              "name": "Open Graph Tags",
+              "score": 100,
+              "level": "green",
+              "value": "3/3 tags present (title, description, image)",
+              "recommendation": null
+            },
+            {
+              "name": "Twitter / Social Card",
+              "score": 100,
+              "level": "green",
+              "value": "summary_large_image",
+              "recommendation": null
+            }
+          ]
+        },
+        "schema": {
+          "score": 4,
+          "level": "red",
+          "signals": [
+            {
+              "name": "JSON-LD Present",
+              "score": 0,
+              "level": "red",
+              "value": "(none found)",
+              "recommendation": "Add JSON-LD structured data — critical for rich results and AI citation"
+            },
+            {
+              "name": "Schema Types Used",
+              "score": 0,
+              "level": "red",
+              "value": "(none)",
+              "recommendation": null
+            },
+            {
+              "name": "Podcast Schema",
+              "score": 0,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add PodcastSeries schema to help Google and Apple show rich podcast results"
+            },
+            {
+              "name": "FAQ Schema",
+              "score": 20,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add FAQPage schema to hub/spoke and blog pages for featured snippet eligibility"
+            },
+            {
+              "name": "Schema Completeness",
+              "score": 0,
+              "level": "red",
+              "value": "No schema to evaluate",
+              "recommendation": null
+            }
+          ]
+        },
+        "snippet": {
+          "score": 65,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Question-Style Headings",
+              "score": 100,
+              "level": "green",
+              "value": "7 of 30 headings are question-style",
+              "recommendation": null
+            },
+            {
+              "name": "List Formatting",
+              "score": 100,
+              "level": "green",
+              "value": "4 list(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Table Formatting",
+              "score": 40,
+              "level": "yellow",
+              "value": "0 table(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Direct Answer Paragraphs",
+              "score": 20,
+              "level": "red",
+              "value": "0 question heading(s) followed by a direct paragraph answer",
+              "recommendation": "After each question heading, write a direct 40-80 word answer — this is the exact format Google pulls into featured snippets"
+            }
+          ]
+        },
+        "conversational": {
+          "score": 58,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Conversational Headings",
+              "score": 50,
+              "level": "yellow",
+              "value": "7 question-style headings",
+              "recommendation": null
+            },
+            {
+              "name": "FAQ Section",
+              "score": 20,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add a FAQ section — \"People also ask\" results drive significant podcast discovery traffic"
+            },
+            {
+              "name": "Conversational Tone",
+              "score": 80,
+              "level": "green",
+              "value": "\"you/your\" density: 2.2% of words",
+              "recommendation": null
+            },
+            {
+              "name": "Answer-First Opening",
+              "score": 80,
+              "level": "green",
+              "value": "\"Six wines with the same bold, structured character...\"",
+              "recommendation": null
+            }
+          ]
+        },
+        "aiReadiness": {
+          "score": 47,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Author Markup",
+              "score": 30,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add author markup — AI models prioritize content with identifiable, credible authors"
+            },
+            {
+              "name": "Publication Date",
+              "score": 30,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add publication and update dates — AI answer engines prefer fresh, dated content"
+            },
+            {
+              "name": "Content Structure",
+              "score": 70,
+              "level": "green",
+              "value": "30 section headings for 843 words",
+              "recommendation": null
+            },
+            {
+              "name": "Factual Specificity",
+              "score": 30,
+              "level": "red",
+              "value": "1 specific facts/numbers detected",
+              "recommendation": "Include specific facts, numbers, and dates — AI models cite specific claims, not vague descriptions"
+            },
+            {
+              "name": "Topical Depth",
+              "score": 75,
+              "level": "green",
+              "value": "843 words across 30 sections",
+              "recommendation": null
+            }
+          ]
+        }
+      },
+      "overallScore": 59,
+      "overallLevel": "yellow"
+    },
+    "lighthouse": null,
+    "finalUrl": "https://thewinepairpodcast.com/blog"
+  },
+  {
+    "url": "https://thewinepairpodcast.com/media-kit",
+    "name": "Media Kit",
+    "category": "core",
+    "timestamp": "2026-05-05T02:36:57.170Z",
+    "scores": {
+      "categories": {
+        "onPage": {
+          "score": 74,
+          "level": "green",
+          "signals": [
+            {
+              "name": "Title Tag",
+              "score": 40,
+              "level": "yellow",
+              "value": "\"Media Kit | The Wine Pair Podcast - Find Great Wines Without Breaking the Bank\" (78 chars)",
+              "recommendation": "Title is too long — trim to under 60 characters"
+            },
+            {
+              "name": "Meta Description",
+              "score": 60,
+              "level": "yellow",
+              "value": "161 characters",
+              "recommendation": "Meta description is too long — trim to 160 characters"
+            },
+            {
+              "name": "H1 Heading",
+              "score": 50,
+              "level": "yellow",
+              "value": "4 H1s found",
+              "recommendation": "Remove extra H1s — found 4, should have exactly 1"
+            },
+            {
+              "name": "Heading Hierarchy",
+              "score": 100,
+              "level": "green",
+              "value": "H1: 4, H2: 2, H3: 2",
+              "recommendation": null
+            },
+            {
+              "name": "Content Length",
+              "score": 100,
+              "level": "green",
+              "value": "1,224 words",
+              "recommendation": null
+            },
+            {
+              "name": "Image Alt Text",
+              "score": 71,
+              "level": "green",
+              "value": "17/24 have alt text",
+              "recommendation": "Add descriptive alt text to 7 image(s)"
+            },
+            {
+              "name": "Internal Links",
+              "score": 100,
+              "level": "green",
+              "value": "40 internal links",
+              "recommendation": null
+            }
+          ]
+        },
+        "technical": {
+          "score": 100,
+          "level": "green",
+          "signals": [
+            {
+              "name": "HTTPS",
+              "score": 100,
+              "level": "green",
+              "value": "Secure (HTTPS)",
+              "recommendation": null
+            },
+            {
+              "name": "Canonical URL",
+              "score": 100,
+              "level": "green",
+              "value": "https://thewinepairpodcast.com/media-kit",
+              "recommendation": null
+            },
+            {
+              "name": "Robots / Indexing",
+              "score": 100,
+              "level": "green",
+              "value": "max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+              "recommendation": null
+            },
+            {
+              "name": "Mobile Viewport",
+              "score": 100,
+              "level": "green",
+              "value": "width=device-width, initial-scale=1.0",
+              "recommendation": null
+            },
+            {
+              "name": "Open Graph Tags",
+              "score": 100,
+              "level": "green",
+              "value": "3/3 tags present (title, description, image)",
+              "recommendation": null
+            },
+            {
+              "name": "Twitter / Social Card",
+              "score": 100,
+              "level": "green",
+              "value": "summary_large_image",
+              "recommendation": null
+            }
+          ]
+        },
+        "schema": {
+          "score": 4,
+          "level": "red",
+          "signals": [
+            {
+              "name": "JSON-LD Present",
+              "score": 0,
+              "level": "red",
+              "value": "(none found)",
+              "recommendation": "Add JSON-LD structured data — critical for rich results and AI citation"
+            },
+            {
+              "name": "Schema Types Used",
+              "score": 0,
+              "level": "red",
+              "value": "(none)",
+              "recommendation": null
+            },
+            {
+              "name": "Podcast Schema",
+              "score": 0,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add PodcastSeries schema to help Google and Apple show rich podcast results"
+            },
+            {
+              "name": "FAQ Schema",
+              "score": 20,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add FAQPage schema to hub/spoke and blog pages for featured snippet eligibility"
+            },
+            {
+              "name": "Schema Completeness",
+              "score": 0,
+              "level": "red",
+              "value": "No schema to evaluate",
+              "recommendation": null
+            }
+          ]
+        },
+        "snippet": {
+          "score": 43,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Question-Style Headings",
+              "score": 10,
+              "level": "red",
+              "value": "0 of 4 headings are question-style",
+              "recommendation": "Rewrite H2/H3 headings as questions (e.g., \"What is Cabernet Sauvignon?\") to target featured snippets"
+            },
+            {
+              "name": "List Formatting",
+              "score": 100,
+              "level": "green",
+              "value": "6 list(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Table Formatting",
+              "score": 40,
+              "level": "yellow",
+              "value": "0 table(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Direct Answer Paragraphs",
+              "score": 20,
+              "level": "red",
+              "value": "0 question heading(s) followed by a direct paragraph answer",
+              "recommendation": null
+            }
+          ]
+        },
+        "conversational": {
+          "score": 48,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Conversational Headings",
+              "score": 10,
+              "level": "red",
+              "value": "0 question-style headings",
+              "recommendation": "Write headings as questions your listeners would actually ask"
+            },
+            {
+              "name": "FAQ Section",
+              "score": 20,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add a FAQ section — \"People also ask\" results drive significant podcast discovery traffic"
+            },
+            {
+              "name": "Conversational Tone",
+              "score": 80,
+              "level": "green",
+              "value": "\"you/your\" density: 2.0% of words",
+              "recommendation": null
+            },
+            {
+              "name": "Answer-First Opening",
+              "score": 80,
+              "level": "green",
+              "value": "\"The Wine Pair Podcast is an independent, husband-and-wife...\"",
+              "recommendation": null
+            }
+          ]
+        },
+        "aiReadiness": {
+          "score": 70,
+          "level": "green",
+          "signals": [
+            {
+              "name": "Author Markup",
+              "score": 30,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add author markup — AI models prioritize content with identifiable, credible authors"
+            },
+            {
+              "name": "Publication Date",
+              "score": 30,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add publication and update dates — AI answer engines prefer fresh, dated content"
+            },
+            {
+              "name": "Content Structure",
+              "score": 90,
+              "level": "green",
+              "value": "4 section headings for 1224 words",
+              "recommendation": null
+            },
+            {
+              "name": "Factual Specificity",
+              "score": 100,
+              "level": "green",
+              "value": "12 specific facts/numbers detected",
+              "recommendation": null
+            },
+            {
+              "name": "Topical Depth",
+              "score": 100,
+              "level": "green",
+              "value": "1224 words across 4 sections",
+              "recommendation": null
+            }
+          ]
+        }
+      },
+      "overallScore": 58,
+      "overallLevel": "yellow"
+    },
+    "lighthouse": null,
+    "finalUrl": "https://thewinepairpodcast.com/media-kit"
+  },
+  {
+    "url": "https://thewinepairpodcast.com/shopwine",
+    "name": "Shop Wine",
+    "category": "core",
+    "timestamp": "2026-05-05T02:36:57.831Z",
+    "scores": {
+      "categories": {
+        "onPage": {
+          "score": 65,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Title Tag",
+              "score": 40,
+              "level": "yellow",
+              "value": "\"Shop Wine | The Wine Pair Podcast - Find Great Wines Without Breaking the Bank\" (78 chars)",
+              "recommendation": "Title is too long — trim to under 60 characters"
+            },
+            {
+              "name": "Meta Description",
+              "score": 60,
+              "level": "yellow",
+              "value": "161 characters",
+              "recommendation": "Meta description is too long — trim to 160 characters"
+            },
+            {
+              "name": "H1 Heading",
+              "score": 100,
+              "level": "green",
+              "value": "\"Shop Wine\"",
+              "recommendation": null
+            },
+            {
+              "name": "Heading Hierarchy",
+              "score": 40,
+              "level": "yellow",
+              "value": "H1: 1, H2: 0, H3: 0",
+              "recommendation": "Add H2 subheadings to break up content and signal topic structure"
+            },
+            {
+              "name": "Content Length",
+              "score": 100,
+              "level": "green",
+              "value": "2,071 words",
+              "recommendation": null
+            },
+            {
+              "name": "Image Alt Text",
+              "score": 12,
+              "level": "red",
+              "value": "17/139 have alt text",
+              "recommendation": "Add descriptive alt text to 122 image(s)"
+            },
+            {
+              "name": "Internal Links",
+              "score": 100,
+              "level": "green",
+              "value": "20 internal links",
+              "recommendation": null
+            }
+          ]
+        },
+        "technical": {
+          "score": 100,
+          "level": "green",
+          "signals": [
+            {
+              "name": "HTTPS",
+              "score": 100,
+              "level": "green",
+              "value": "Secure (HTTPS)",
+              "recommendation": null
+            },
+            {
+              "name": "Canonical URL",
+              "score": 100,
+              "level": "green",
+              "value": "https://thewinepairpodcast.com/shopwine",
+              "recommendation": null
+            },
+            {
+              "name": "Robots / Indexing",
+              "score": 100,
+              "level": "green",
+              "value": "max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+              "recommendation": null
+            },
+            {
+              "name": "Mobile Viewport",
+              "score": 100,
+              "level": "green",
+              "value": "width=device-width, initial-scale=1.0",
+              "recommendation": null
+            },
+            {
+              "name": "Open Graph Tags",
+              "score": 100,
+              "level": "green",
+              "value": "3/3 tags present (title, description, image)",
+              "recommendation": null
+            },
+            {
+              "name": "Twitter / Social Card",
+              "score": 100,
+              "level": "green",
+              "value": "summary_large_image",
+              "recommendation": null
+            }
+          ]
+        },
+        "schema": {
+          "score": 4,
+          "level": "red",
+          "signals": [
+            {
+              "name": "JSON-LD Present",
+              "score": 0,
+              "level": "red",
+              "value": "(none found)",
+              "recommendation": "Add JSON-LD structured data — critical for rich results and AI citation"
+            },
+            {
+              "name": "Schema Types Used",
+              "score": 0,
+              "level": "red",
+              "value": "(none)",
+              "recommendation": null
+            },
+            {
+              "name": "Podcast Schema",
+              "score": 0,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add PodcastSeries schema to help Google and Apple show rich podcast results"
+            },
+            {
+              "name": "FAQ Schema",
+              "score": 20,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add FAQPage schema to hub/spoke and blog pages for featured snippet eligibility"
+            },
+            {
+              "name": "Schema Completeness",
+              "score": 0,
+              "level": "red",
+              "value": "No schema to evaluate",
+              "recommendation": null
+            }
+          ]
+        },
+        "snippet": {
+          "score": 43,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Question-Style Headings",
+              "score": 10,
+              "level": "red",
+              "value": "0 of 0 headings are question-style",
+              "recommendation": "Rewrite H2/H3 headings as questions (e.g., \"What is Cabernet Sauvignon?\") to target featured snippets"
+            },
+            {
+              "name": "List Formatting",
+              "score": 100,
+              "level": "green",
+              "value": "4 list(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Table Formatting",
+              "score": 40,
+              "level": "yellow",
+              "value": "0 table(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Direct Answer Paragraphs",
+              "score": 20,
+              "level": "red",
+              "value": "0 question heading(s) followed by a direct paragraph answer",
+              "recommendation": null
+            }
+          ]
+        },
+        "conversational": {
+          "score": 53,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Conversational Headings",
+              "score": 10,
+              "level": "red",
+              "value": "0 question-style headings",
+              "recommendation": "Write headings as questions your listeners would actually ask"
+            },
+            {
+              "name": "FAQ Section",
+              "score": 20,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add a FAQ section — \"People also ask\" results drive significant podcast discovery traffic"
+            },
+            {
+              "name": "Conversational Tone",
+              "score": 100,
+              "level": "green",
+              "value": "\"you/your\" density: 0.7% of words",
+              "recommendation": null
+            },
+            {
+              "name": "Answer-First Opening",
+              "score": 80,
+              "level": "green",
+              "value": "\"Welcome to The Wine Pair Podcast's Top-Rated Wines...\"",
+              "recommendation": null
+            }
+          ]
+        },
+        "aiReadiness": {
+          "score": 37,
+          "level": "red",
+          "signals": [
+            {
+              "name": "Author Markup",
+              "score": 30,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add author markup — AI models prioritize content with identifiable, credible authors"
+            },
+            {
+              "name": "Publication Date",
+              "score": 30,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add publication and update dates — AI answer engines prefer fresh, dated content"
+            },
+            {
+              "name": "Content Structure",
+              "score": 10,
+              "level": "red",
+              "value": "0 section headings for 2071 words",
+              "recommendation": "Add more H2/H3 section headings — AI models extract from well-structured, scannable content"
+            },
+            {
+              "name": "Factual Specificity",
+              "score": 30,
+              "level": "red",
+              "value": "0 specific facts/numbers detected",
+              "recommendation": "Include specific facts, numbers, and dates — AI models cite specific claims, not vague descriptions"
+            },
+            {
+              "name": "Topical Depth",
+              "score": 85,
+              "level": "green",
+              "value": "2071 words across 0 sections",
+              "recommendation": null
+            }
+          ]
+        }
+      },
+      "overallScore": 52,
+      "overallLevel": "yellow"
+    },
+    "lighthouse": null,
+    "finalUrl": "https://thewinepairpodcast.com/shopwine"
+  },
+  {
+    "url": "https://thewinepairpodcast.com/episode/viura-the-great-white-wine-hiding-in-riojas-red-wine-shadow",
+    "name": "Episode: Viura",
+    "category": "episode",
+    "timestamp": "2026-05-05T02:36:58.417Z",
+    "scores": {
+      "categories": {
+        "onPage": {
+          "score": 77,
+          "level": "green",
+          "signals": [
+            {
+              "name": "Title Tag",
+              "score": 40,
+              "level": "yellow",
+              "value": "\"Viura: The Great White Wine Hiding in Rioja’s Red Wine Shadow! | The Wine Pair Podcast - Find Great Wines Without Breaking the Bank\" (131 chars)",
+              "recommendation": "Title is too long — trim to under 60 characters"
+            },
+            {
+              "name": "Meta Description",
+              "score": 60,
+              "level": "yellow",
+              "value": "163 characters",
+              "recommendation": "Meta description is too long — trim to 160 characters"
+            },
+            {
+              "name": "H1 Heading",
+              "score": 100,
+              "level": "green",
+              "value": "\"Viura: The Great White Wine Hiding in Rioja’s Red Wine Shado\"",
+              "recommendation": null
+            },
+            {
+              "name": "Heading Hierarchy",
+              "score": 40,
+              "level": "yellow",
+              "value": "H1: 1, H2: 0, H3: 0",
+              "recommendation": "Add H2 subheadings to break up content and signal topic structure"
+            },
+            {
+              "name": "Content Length",
+              "score": 100,
+              "level": "green",
+              "value": "11,455 words",
+              "recommendation": null
+            },
+            {
+              "name": "Image Alt Text",
+              "score": 100,
+              "level": "green",
+              "value": "34/34 have alt text",
+              "recommendation": null
+            },
+            {
+              "name": "Internal Links",
+              "score": 100,
+              "level": "green",
+              "value": "25 internal links",
+              "recommendation": null
+            }
+          ]
+        },
+        "technical": {
+          "score": 100,
+          "level": "green",
+          "signals": [
+            {
+              "name": "HTTPS",
+              "score": 100,
+              "level": "green",
+              "value": "Secure (HTTPS)",
+              "recommendation": null
+            },
+            {
+              "name": "Canonical URL",
+              "score": 100,
+              "level": "green",
+              "value": "https://thewinepairpodcast.com/episode/viura-the-great-white-wine-hiding-in-riojas-red-wine-shadow",
+              "recommendation": null
+            },
+            {
+              "name": "Robots / Indexing",
+              "score": 100,
+              "level": "green",
+              "value": "max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+              "recommendation": null
+            },
+            {
+              "name": "Mobile Viewport",
+              "score": 100,
+              "level": "green",
+              "value": "width=device-width, initial-scale=1.0",
+              "recommendation": null
+            },
+            {
+              "name": "Open Graph Tags",
+              "score": 100,
+              "level": "green",
+              "value": "3/3 tags present (title, description, image)",
+              "recommendation": null
+            },
+            {
+              "name": "Twitter / Social Card",
+              "score": 100,
+              "level": "green",
+              "value": "player",
+              "recommendation": null
+            }
+          ]
+        },
+        "schema": {
+          "score": 75,
+          "level": "green",
+          "signals": [
+            {
+              "name": "JSON-LD Present",
+              "score": 100,
+              "level": "green",
+              "value": "1 block(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Schema Types Used",
+              "score": 80,
+              "level": "green",
+              "value": "PodcastEpisode",
+              "recommendation": null
+            },
+            {
+              "name": "Podcast Schema",
+              "score": 100,
+              "level": "green",
+              "value": "PodcastSeries or PodcastEpisode found",
+              "recommendation": null
+            },
+            {
+              "name": "FAQ Schema",
+              "score": 20,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add FAQPage schema to hub/spoke and blog pages for featured snippet eligibility"
+            },
+            {
+              "name": "Schema Completeness",
+              "score": 75,
+              "level": "green",
+              "value": "75% of key properties filled",
+              "recommendation": null
+            }
+          ]
+        },
+        "snippet": {
+          "score": 43,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Question-Style Headings",
+              "score": 10,
+              "level": "red",
+              "value": "0 of 0 headings are question-style",
+              "recommendation": "Rewrite H2/H3 headings as questions (e.g., \"What is Cabernet Sauvignon?\") to target featured snippets"
+            },
+            {
+              "name": "List Formatting",
+              "score": 100,
+              "level": "green",
+              "value": "29 list(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Table Formatting",
+              "score": 40,
+              "level": "yellow",
+              "value": "0 table(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Direct Answer Paragraphs",
+              "score": 20,
+              "level": "red",
+              "value": "0 question heading(s) followed by a direct paragraph answer",
+              "recommendation": null
+            }
+          ]
+        },
+        "conversational": {
+          "score": 35,
+          "level": "red",
+          "signals": [
+            {
+              "name": "Conversational Headings",
+              "score": 10,
+              "level": "red",
+              "value": "0 question-style headings",
+              "recommendation": "Write headings as questions your listeners would actually ask"
+            },
+            {
+              "name": "FAQ Section",
+              "score": 20,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add a FAQ section — \"People also ask\" results drive significant podcast discovery traffic"
+            },
+            {
+              "name": "Conversational Tone",
+              "score": 80,
+              "level": "green",
+              "value": "\"you/your\" density: 2.6% of words",
+              "recommendation": null
+            },
+            {
+              "name": "Answer-First Opening",
+              "score": 30,
+              "level": "red",
+              "value": "(no opening paragraph found)",
+              "recommendation": "Lead with a clear, direct opening paragraph — AI models prefer content that states the main point first"
+            }
+          ]
+        },
+        "aiReadiness": {
+          "score": 65,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Author Markup",
+              "score": 30,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add author markup — AI models prioritize content with identifiable, credible authors"
+            },
+            {
+              "name": "Publication Date",
+              "score": 100,
+              "level": "green",
+              "value": "Date markup found",
+              "recommendation": null
+            },
+            {
+              "name": "Content Structure",
+              "score": 10,
+              "level": "red",
+              "value": "0 section headings for 11455 words",
+              "recommendation": "Add more H2/H3 section headings — AI models extract from well-structured, scannable content"
+            },
+            {
+              "name": "Factual Specificity",
+              "score": 100,
+              "level": "green",
+              "value": "38 specific facts/numbers detected",
+              "recommendation": null
+            },
+            {
+              "name": "Topical Depth",
+              "score": 85,
+              "level": "green",
+              "value": "11455 words across 0 sections",
+              "recommendation": null
+            }
+          ]
+        }
+      },
+      "overallScore": 67,
+      "overallLevel": "yellow"
+    },
+    "lighthouse": null,
+    "finalUrl": "https://thewinepairpodcast.com/episode/viura-the-great-white-wine-hiding-in-riojas-red-wine-shadow"
+  },
+  {
+    "url": "https://thewinepairpodcast.com/blog/wines-similar-to-pinot-noir",
+    "name": "Spoke: Wines Similar to Pinot Noir",
+    "category": "spoke",
+    "timestamp": "2026-05-05T02:36:58.827Z",
+    "scores": {
+      "categories": {
+        "onPage": {
+          "score": 74,
+          "level": "green",
+          "signals": [
+            {
+              "name": "Title Tag",
+              "score": 40,
+              "level": "yellow",
+              "value": "\"Wines Similar to Pinot Noir: 6 Bottles to Try If You Love Pinot Noir | The Wine Pair Podcast - Find Great Wines Without Breaking the Bank\" (137 chars)",
+              "recommendation": "Title is too long — trim to under 60 characters"
+            },
+            {
+              "name": "Meta Description",
+              "score": 100,
+              "level": "green",
+              "value": "141 characters",
+              "recommendation": null
+            },
+            {
+              "name": "H1 Heading",
+              "score": 0,
+              "level": "red",
+              "value": "(missing)",
+              "recommendation": "Add exactly one H1 heading containing your primary keyword"
+            },
+            {
+              "name": "Heading Hierarchy",
+              "score": 80,
+              "level": "green",
+              "value": "H1: 0, H2: 1, H3: 0",
+              "recommendation": null
+            },
+            {
+              "name": "Content Length",
+              "score": 100,
+              "level": "green",
+              "value": "1,902 words",
+              "recommendation": null
+            },
+            {
+              "name": "Image Alt Text",
+              "score": 100,
+              "level": "green",
+              "value": "19/19 have alt text",
+              "recommendation": null
+            },
+            {
+              "name": "Internal Links",
+              "score": 100,
+              "level": "green",
+              "value": "34 internal links",
+              "recommendation": null
+            }
+          ]
+        },
+        "technical": {
+          "score": 100,
+          "level": "green",
+          "signals": [
+            {
+              "name": "HTTPS",
+              "score": 100,
+              "level": "green",
+              "value": "Secure (HTTPS)",
+              "recommendation": null
+            },
+            {
+              "name": "Canonical URL",
+              "score": 100,
+              "level": "green",
+              "value": "https://thewinepairpodcast.com/blog/wines-similar-to-pinot-noir",
+              "recommendation": null
+            },
+            {
+              "name": "Robots / Indexing",
+              "score": 100,
+              "level": "green",
+              "value": "max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+              "recommendation": null
+            },
+            {
+              "name": "Mobile Viewport",
+              "score": 100,
+              "level": "green",
+              "value": "width=device-width, initial-scale=1.0",
+              "recommendation": null
+            },
+            {
+              "name": "Open Graph Tags",
+              "score": 100,
+              "level": "green",
+              "value": "3/3 tags present (title, description, image)",
+              "recommendation": null
+            },
+            {
+              "name": "Twitter / Social Card",
+              "score": 100,
+              "level": "green",
+              "value": "summary_large_image",
+              "recommendation": null
+            }
+          ]
+        },
+        "schema": {
+          "score": 61,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "JSON-LD Present",
+              "score": 100,
+              "level": "green",
+              "value": "1 block(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Schema Types Used",
+              "score": 80,
+              "level": "green",
+              "value": "Article",
+              "recommendation": null
+            },
+            {
+              "name": "Podcast Schema",
+              "score": 30,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add PodcastSeries schema to help Google and Apple show rich podcast results"
+            },
+            {
+              "name": "FAQ Schema",
+              "score": 20,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add FAQPage schema to hub/spoke and blog pages for featured snippet eligibility"
+            },
+            {
+              "name": "Schema Completeness",
+              "score": 75,
+              "level": "green",
+              "value": "75% of key properties filled",
+              "recommendation": null
+            }
+          ]
+        },
+        "snippet": {
+          "score": 43,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Question-Style Headings",
+              "score": 10,
+              "level": "red",
+              "value": "0 of 1 headings are question-style",
+              "recommendation": "Rewrite H2/H3 headings as questions (e.g., \"What is Cabernet Sauvignon?\") to target featured snippets"
+            },
+            {
+              "name": "List Formatting",
+              "score": 100,
+              "level": "green",
+              "value": "5 list(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Table Formatting",
+              "score": 40,
+              "level": "yellow",
+              "value": "0 table(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Direct Answer Paragraphs",
+              "score": 20,
+              "level": "red",
+              "value": "0 question heading(s) followed by a direct paragraph answer",
+              "recommendation": null
+            }
+          ]
+        },
+        "conversational": {
+          "score": 73,
+          "level": "green",
+          "signals": [
+            {
+              "name": "Conversational Headings",
+              "score": 80,
+              "level": "green",
+              "value": "1 question-style headings",
+              "recommendation": "Write headings as questions your listeners would actually ask"
+            },
+            {
+              "name": "FAQ Section",
+              "score": 100,
+              "level": "green",
+              "value": "FAQ section detected",
+              "recommendation": null
+            },
+            {
+              "name": "Conversational Tone",
+              "score": 80,
+              "level": "green",
+              "value": "\"you/your\" density: 1.8% of words",
+              "recommendation": null
+            },
+            {
+              "name": "Answer-First Opening",
+              "score": 30,
+              "level": "red",
+              "value": "(no opening paragraph found)",
+              "recommendation": "Lead with a clear, direct opening paragraph — AI models prefer content that states the main point first"
+            }
+          ]
+        },
+        "aiReadiness": {
+          "score": 45,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Author Markup",
+              "score": 30,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add author markup — AI models prioritize content with identifiable, credible authors"
+            },
+            {
+              "name": "Publication Date",
+              "score": 30,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add publication and update dates — AI answer engines prefer fresh, dated content"
+            },
+            {
+              "name": "Content Structure",
+              "score": 50,
+              "level": "yellow",
+              "value": "1 section headings for 1902 words",
+              "recommendation": "Add more H2/H3 section headings — AI models extract from well-structured, scannable content"
+            },
+            {
+              "name": "Factual Specificity",
+              "score": 30,
+              "level": "red",
+              "value": "1 specific facts/numbers detected",
+              "recommendation": "Include specific facts, numbers, and dates — AI models cite specific claims, not vague descriptions"
+            },
+            {
+              "name": "Topical Depth",
+              "score": 85,
+              "level": "green",
+              "value": "1902 words across 1 sections",
+              "recommendation": null
+            }
+          ]
+        }
+      },
+      "overallScore": 67,
+      "overallLevel": "yellow"
+    },
+    "lighthouse": null,
+    "finalUrl": "https://thewinepairpodcast.com/blog/wines-similar-to-pinot-noir"
+  },
+  {
+    "url": "https://thewinepairpodcast.com/blog/is-bread-butter-wine-good-an-honest-review",
+    "name": "Blog: Bread & Butter Review",
+    "category": "blog",
+    "timestamp": "2026-05-05T02:36:59.109Z",
+    "scores": {
+      "categories": {
+        "onPage": {
+          "score": 62,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Title Tag",
+              "score": 40,
+              "level": "yellow",
+              "value": "\"Bread & Butter Wine Review: Is It Good? | The Wine Pair Podcast - Find Great Wines Without Breaking the Bank\" (108 chars)",
+              "recommendation": "Title is too long — trim to under 60 characters"
+            },
+            {
+              "name": "Meta Description",
+              "score": 100,
+              "level": "green",
+              "value": "128 characters",
+              "recommendation": null
+            },
+            {
+              "name": "H1 Heading",
+              "score": 0,
+              "level": "red",
+              "value": "(missing)",
+              "recommendation": "Add exactly one H1 heading containing your primary keyword"
+            },
+            {
+              "name": "Heading Hierarchy",
+              "score": 10,
+              "level": "red",
+              "value": "H1: 0, H2: 0, H3: 0",
+              "recommendation": "Add H2 subheadings to break up content and signal topic structure"
+            },
+            {
+              "name": "Content Length",
+              "score": 85,
+              "level": "green",
+              "value": "915 words",
+              "recommendation": null
+            },
+            {
+              "name": "Image Alt Text",
+              "score": 100,
+              "level": "green",
+              "value": "19/19 have alt text",
+              "recommendation": null
+            },
+            {
+              "name": "Internal Links",
+              "score": 100,
+              "level": "green",
+              "value": "26 internal links",
+              "recommendation": null
+            }
+          ]
+        },
+        "technical": {
+          "score": 100,
+          "level": "green",
+          "signals": [
+            {
+              "name": "HTTPS",
+              "score": 100,
+              "level": "green",
+              "value": "Secure (HTTPS)",
+              "recommendation": null
+            },
+            {
+              "name": "Canonical URL",
+              "score": 100,
+              "level": "green",
+              "value": "https://thewinepairpodcast.com/blog/is-bread-butter-wine-good-an-honest-review",
+              "recommendation": null
+            },
+            {
+              "name": "Robots / Indexing",
+              "score": 100,
+              "level": "green",
+              "value": "max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+              "recommendation": null
+            },
+            {
+              "name": "Mobile Viewport",
+              "score": 100,
+              "level": "green",
+              "value": "width=device-width, initial-scale=1.0",
+              "recommendation": null
+            },
+            {
+              "name": "Open Graph Tags",
+              "score": 100,
+              "level": "green",
+              "value": "3/3 tags present (title, description, image)",
+              "recommendation": null
+            },
+            {
+              "name": "Twitter / Social Card",
+              "score": 100,
+              "level": "green",
+              "value": "summary_large_image",
+              "recommendation": null
+            }
+          ]
+        },
+        "schema": {
+          "score": 66,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "JSON-LD Present",
+              "score": 100,
+              "level": "green",
+              "value": "4 block(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Schema Types Used",
+              "score": 80,
+              "level": "green",
+              "value": "Review, Review, Review, Article",
+              "recommendation": null
+            },
+            {
+              "name": "Podcast Schema",
+              "score": 30,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add PodcastSeries schema to help Google and Apple show rich podcast results"
+            },
+            {
+              "name": "FAQ Schema",
+              "score": 20,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add FAQPage schema to hub/spoke and blog pages for featured snippet eligibility"
+            },
+            {
+              "name": "Schema Completeness",
+              "score": 100,
+              "level": "green",
+              "value": "100% of key properties filled",
+              "recommendation": null
+            }
+          ]
+        },
+        "snippet": {
+          "score": 43,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Question-Style Headings",
+              "score": 10,
+              "level": "red",
+              "value": "0 of 0 headings are question-style",
+              "recommendation": "Rewrite H2/H3 headings as questions (e.g., \"What is Cabernet Sauvignon?\") to target featured snippets"
+            },
+            {
+              "name": "List Formatting",
+              "score": 100,
+              "level": "green",
+              "value": "12 list(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Table Formatting",
+              "score": 40,
+              "level": "yellow",
+              "value": "0 table(s) found",
+              "recommendation": null
+            },
+            {
+              "name": "Direct Answer Paragraphs",
+              "score": 20,
+              "level": "red",
+              "value": "0 question heading(s) followed by a direct paragraph answer",
+              "recommendation": null
+            }
+          ]
+        },
+        "conversational": {
+          "score": 58,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Conversational Headings",
+              "score": 100,
+              "level": "green",
+              "value": "1 question-style headings",
+              "recommendation": "Write headings as questions your listeners would actually ask"
+            },
+            {
+              "name": "FAQ Section",
+              "score": 20,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add a FAQ section — \"People also ask\" results drive significant podcast discovery traffic"
+            },
+            {
+              "name": "Conversational Tone",
+              "score": 80,
+              "level": "green",
+              "value": "\"you/your\" density: 1.6% of words",
+              "recommendation": null
+            },
+            {
+              "name": "Answer-First Opening",
+              "score": 30,
+              "level": "red",
+              "value": "(no opening paragraph found)",
+              "recommendation": "Lead with a clear, direct opening paragraph — AI models prefer content that states the main point first"
+            }
+          ]
+        },
+        "aiReadiness": {
+          "score": 56,
+          "level": "yellow",
+          "signals": [
+            {
+              "name": "Author Markup",
+              "score": 100,
+              "level": "green",
+              "value": "Author identified (in schema)",
+              "recommendation": null
+            },
+            {
+              "name": "Publication Date",
+              "score": 30,
+              "level": "red",
+              "value": "(not found)",
+              "recommendation": "Add publication and update dates — AI answer engines prefer fresh, dated content"
+            },
+            {
+              "name": "Content Structure",
+              "score": 10,
+              "level": "red",
+              "value": "0 section headings for 915 words",
+              "recommendation": "Add more H2/H3 section headings — AI models extract from well-structured, scannable content"
+            },
+            {
+              "name": "Factual Specificity",
+              "score": 65,
+              "level": "yellow",
+              "value": "4 specific facts/numbers detected",
+              "recommendation": null
+            },
+            {
+              "name": "Topical Depth",
+              "score": 75,
+              "level": "green",
+              "value": "915 words across 0 sections",
+              "recommendation": null
+            }
+          ]
+        }
+      },
+      "overallScore": 64,
+      "overallLevel": "yellow"
+    },
+    "lighthouse": null,
+    "finalUrl": "https://thewinepairpodcast.com/blog/is-bread-butter-wine-good-an-honest-review"
+  }
+]
