@@ -68,6 +68,9 @@ Blog post sprint resumes after all spokes are live.
 | 4 | Best Wines Under $20 hub | — | — | — | — |
 | 5 | Trader Joe's wine guide | — | — | — | — |
 | 6 | Pillar #1 rewrite | — | — | — | — |
+| 7 | Gen Z / anti-condescension post | — | brand-building | — | — |
+
+**#7 — Gen Z / anti-condescension post:** Inspired by "Gen Z to Wine: Please Stop Condescending" (Everyday Drinking, May 2026). Brand-building, not SEO-driven. Angle: the wine world has a condescension problem — here's what we do differently, and how to actually get into wine without feeling stupid. Strong CTA into the show. Write when sprint resumes.
 
 **NOT in queue — Meiomi:** Episode page already converts at 1.18% CTR (241 clicks / 20,494 impressions). No blog post needed.
 
