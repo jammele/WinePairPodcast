@@ -117,6 +117,7 @@ If OAuth is broken: `rm google_token.json` then `node scripts/setup_google_auth.
 | Publishing a page | `docs/publishing-checklist.md` — after Joe publishes: run `/verify-published <url>` to confirm schema, card badges, author byline, and meta description are all rendering correctly. |
 | Cover art image prompts | Run `/generate-cover-art` — mandatory before showing Joe any concepts. After Joe picks a concept, immediately update the Recent Scenes section of `C:\Users\jamme\.claude\projects\C--Users-jamme-podcast-os\memory\feedback_cover_art.md` and commit the work log. |
 | Episode copy, show notes, social copy | `docs/voice-and-format.md` |
+| Wine in the News segment | `docs/wine-in-the-news.md` — read before finding stories or writing the script |
 | SEO strategy and priorities | `docs/seo-geo-strategy.md` |
 | Project context and show identity | `docs/soul-document.md` |
 | Episode title generation | Run `/review-titles` — **mandatory before showing Joe any options.** Sub-agent reads `data/episode-titles.md` (complete archive + series patterns). When a title is confirmed, add it to `data/episode-titles.md` before committing. |

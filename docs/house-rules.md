@@ -148,6 +148,11 @@ When Joe says a page is published — any phrasing ("it's live", "I published it
 
 ---
 
+**HR-32: Read docs/wine-in-the-news.md before writing any Wine in the News content.**
+Applies to both finding story options and drafting the segment script. Do not skip for "quick" story searches.
+
+---
+
 **HR-29: Show notes Q&A section heading.**
 The section heading for the Q&A block in show notes outputs must read "FREQUENTLY ASKED QUESTIONS" — not "FULL Q&A" or any other label.
 
