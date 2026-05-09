@@ -44,7 +44,8 @@ All content should feel:
 - For URLs over 180 characters, use a link card instead of inline text
 - Mix of fact-led, opinion-led, and curiosity-led options
 - Sound like a human, not ad copy
-- **Do NOT include the Wine in the News segment** in Bluesky posts — the segment is for the episode only. The saved blue-sky-prompt says to cover the News angle; ignore that instruction.
+- **Do NOT include the Wine in the News segment** in Bluesky posts — the segment is for the episode only.
+- **URL structure:** Posts 1-3 (teasers) link to thewinepairpodcast.com or the specific episode URL. Posts 4-10 (fact/value posts) must each link to a unique external URL — no podcast domain, no repeated URLs. Use the episode script's research links to assign one unique source per post.
 
 **Instagram:**
 - Readable, natural, not forced
@@ -79,7 +80,7 @@ All content should feel:
 - Timestamps for every section
 - Wine details: Region / Year / Price / Retailer / Alcohol / Grapes / Rating
 - Tasting notes: Color / Nose / Mouth / Food pairings
-- Full Q&A at bottom (6-8 questions, answers 40-60 words each — see SEO/AEO rules below; format as Q. / A. with bold Q. before each question and A. before each answer)
+- Q&A block at bottom headed **"FREQUENTLY ASKED QUESTIONS"** — not "Full Q&A" or any other label (6-8 questions, answers 40-60 words each; format as Q. / A. with bold Q. before each question and A. before each answer)
 - Research links compiled at bottom
 
 **SEO/AEO rules for show notes:**
@@ -88,6 +89,9 @@ All content should feel:
 - Q&A block: 6-8 questions maximum. Focus on queries with real search volume (what is X, what does X taste like, is X worth buying at the category level, what food pairs with X). Do not include questions too specific to earn search traffic (individual product ratings by year won't be searched).
 - Each answer: 40-60 words, front-loaded with the verdict, conversational voice
 - Add FAQ schema markup to every Q&A block (see seo-geo-strategy.md for template)
+
+**Episode output file:**
+All SEO/AEO content for an episode — Key Questions, Frequently Asked Questions, Schema Markup, and Bluesky posts — must be written and saved to the same episode output file (e.g. `outputs/episodes/ep217-frappato.md`) in the same session. Never treat social posts as a separate deliverable.
 
 ---
 
