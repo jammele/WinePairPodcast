@@ -152,48 +152,20 @@ No photorealism. No realistic portrait. No painterly rendering. No soft gradient
 
 *The joke:* Carmela lowers a red wine bottle into an ice bucket with the ceremonial seriousness of someone performing a sacred ritual, while Joe watches with the awestruck reverence of a man witnessing a revelation.
 
-**Scene description (primary approach):**
+**Scene description (primary approach — upload ep216 approved image as style reference):**
 
-Carmela stands center frame, both hands gripping a red wine bottle, lowering it slowly and deliberately into a gleaming ice bucket. Her face is a mask of theatrical seriousness — the expression of someone conducting an important ceremony. Joe leans in from the side with enormous wide eyes and an awed, open-mouthed grin, one oversized hand pressed to his cheek, the other pointing at the ice bucket, like a man witnessing something life-changing. The contrast is the joke: the full solemn ritual of an ice bucket, applied to a red wine. Both characters are completely committed to the bit. The background suggests a warm sun-drenched Sicilian patio.
+Carmela (middle-aged woman, medium-length warm brown hair, gold hoop earrings, dark top) grips a red wine bottle labeled "FRAPPATO" with both hands and lowers it with exaggerated ceremony into a gleaming silver ice bucket — her expression is one of theatrical, delighted authority, like someone performing a sacred ritual she invented. Joe (middle-aged man, salt-and-pepper hair, full salt-and-pepper beard, black rectangular glasses, dark navy pullover) leans in from the side with enormous wide eyes, one oversized hand pressed to his cheek, the other pointing at the ice bucket — awestruck, open-mouthed grin, the face of a man witnessing a revelation. The ice bucket sits prominently between them in the foreground. Background is simple deep burgundy — no outdoor scene, no landscape.
 
-**Full fallback prompt:**
+**ChatGPT prompt (corrected — use this):**
 
 ```
-Create a square editorial cartoon illustration for a wine podcast cover image.
+Bold editorial cartoon illustration. Simple deep burgundy background.
 
-Use this style exactly:
+Center: Carmela (middle-aged woman, medium-length warm brown hair, gold hoop earrings, dark top) grips a red wine bottle labeled "FRAPPATO" with both hands and lowers it into a gleaming silver ice bucket with ceremonial, exaggerated seriousness. Her expression is theatrical authority — delighted by the ritual she is performing, a slow satisfied smile, eyebrows slightly raised. Her body language is reverent and purposeful.
 
-Style name: High-contrast wine-bar editorial cartoon
+Right: Joe (middle-aged man, salt-and-pepper hair, full salt-and-pepper beard, black rectangular glasses, dark navy pullover) leans in from the side with enormous wide eyes and an awestruck open-mouthed grin. One oversized hand is pressed to his cheek in disbelief; the other points directly at the ice bucket. He is witnessing a revelation and cannot contain himself.
 
-A bold, graphic, exaggerated cartoon style with chunky black ink outlines, flat saturated colors, oversized expressive faces and hands, theatrical body language, broad smiles, simple shapes, minimal shading, and a warm burgundy/red wine-bar palette. The image should feel like a magazine cover crossed with a premium adult animated comedy. It should be funny, energetic, and readable at small podcast-thumbnail size.
+The gleaming silver ice bucket sits prominently in the foreground between them, filled with ice, catching the light. The wine bottle label reads "FRAPPATO" clearly.
 
-Important style rules:
-Do not make this realistic.
-Do not make the characters portrait-like.
-Do not add realistic skin texture, realistic facial anatomy, painterly detail, soft lighting, gradients, or 3D effects.
-The people should be affectionate recurring cartoon host characters, not realistic portraits.
-Use simplified, exaggerated animated-comedy proportions.
-The characters should be expressive and specific, but not detailed or lifelike.
-The humor should come from expressions, staging, and visual contrast.
-
-Recurring character bible:
-
-Joe is a middle-aged cartoon man. He has black rectangular glasses, a full salt-and-pepper beard, salt-and-pepper hair, thick expressive eyebrows, and a dark navy pullover. He should have a big friendly grin, curious mischievous energy, and oversized expressive hands. He should look like a recurring animated version of Joe, not a realistic portrait and not a generic cartoon dad.
-
-Carmela is a middle-aged cartoon woman. She has medium-length warm brown hair, gold hoop earrings, expressive eyes, a dark top, and a bright amused smile. She should have theatrical body language and a delighted, sharp, funny reaction. She should look like a recurring animated version of Carmela, not a realistic portrait and not a generic surprised woman.
-
-Scene:
-Carmela stands center frame, both hands gripping a red wine bottle, slowly and deliberately lowering it into a gleaming ice bucket. Her expression is theatrical seriousness — the face of someone conducting an important ceremony. Joe leans in from the side with enormous wide eyes and an awed, open-mouthed grin, one oversized hand pressed to his cheek and the other pointing at the ice bucket, like a man witnessing something life-changing. The contrast is the joke: the full solemn ritual of an ice bucket, applied to a red wine. Both characters are completely committed to the bit.
-
-Composition:
-Tight square crop.
-Characters close to the viewer.
-Carmela lowering the bottle and Joe's awestruck reaction are the main focus. The gleaming ice bucket sits prominently between them.
-A warm sun-drenched Sicilian patio suggestion fills the background but stays simple and uncluttered.
-Clear visual hierarchy.
-One clear joke readable at thumbnail size.
-No text, no labels, no speech bubbles.
-
-Negative prompt:
-No photorealism. No realistic portrait. No painterly rendering. No soft gradients. No 3D gloss. No realistic aging lines. No skin texture. No generic stock-cartoon faces. No tiny expressions. No cluttered background. No text. No wine labels. No speech bubbles. Do not make Joe or Carmela look like real-person portraits. Keep them bold, graphic, exaggerated, and funny.
+Style: Chunky exaggerated editorial cartoon. Thick black ink outlines. Flat bold color areas with minimal shading. Oversized expressive faces and hands. Warm high-contrast palette. Deep burgundy background. Poster-like composition with clear visual hierarchy. New Yorker cover meets modern animated comedy. No photorealism. No gradients. No outdoor scenes. No detailed backgrounds. Characters fill at least 70% of the frame, waist-up, close to the viewer. Square format optimized for podcast thumbnail readability.
 ```
