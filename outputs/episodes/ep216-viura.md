@@ -15,7 +15,7 @@
 
 ---
 
-## FULL Q&A WITH FAQ SCHEMA
+## FREQUENTLY ASKED QUESTIONS
 *(Place at bottom of show notes)*
 
 **Q. What is Viura wine?**
@@ -94,7 +94,7 @@ Two 100% Viura White Riojas. $15 and $25. We rated both as buys and we'd buy the
 thewinepairpodcast.com
 
 **3.**
-This week: a $15 Spanish white that's embarrassingly good, AND two bottles of 1870 Château Lafite found in a Scottish castle — once called "undrinkable," now selling for $50k each.
+This week: a $15 Spanish white that experts compare to White Burgundy. We rated it a buy alongside a $25 bottle. Both worth buying. White Rioja needs way more credit.
 thewinepairpodcast.com
 
 ### VALUE / FACT POSTS
@@ -109,11 +109,11 @@ en.wikipedia.org/wiki/History_of_Rioja_wine
 
 **6.**
 Before phylloxera hit in the 1800s, white grapes may have been the majority in Rioja. Then Bordeaux winemakers showed up looking for red wine, and the whole region shifted. White Rioja never recovered. Until now.
-en.wikipedia.org/wiki/History_of_Rioja_wine
+en.wikipedia.org/wiki/Phylloxera
 
 **7.**
-Viura resists oxidation because of its high resveratrol content — the same antioxidant found in red wine. That's a big reason it outlasted other white grapes in Rioja after the phylloxera replanting.
-en.wikipedia.org/wiki/Macabeo
+Viura resists oxidation because of its high resveratrol content, the same antioxidant found in red wine. That's a big reason it outlasted other white grapes in Rioja after the phylloxera replanting.
+en.wikipedia.org/wiki/Resveratrol
 
 **8.**
 White Rioja plantings in the region have grown 50% since 2015. Collectors and insiders are catching on fast. The rest of the world hasn't noticed yet. That window is closing.
