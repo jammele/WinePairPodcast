@@ -65,7 +65,7 @@ Joe is a middle-aged cartoon man. He has black rectangular glasses, a full salt-
 Carmela is a middle-aged cartoon woman. She has medium-length warm brown hair, gold hoop earrings, expressive eyes, a dark top, and a bright amused smile. She should have theatrical body language and a delighted, sharp, funny reaction. She should look like a recurring animated version of Carmela, not a realistic portrait and not a generic surprised woman.
 
 Scene:
-Joe is caught mid-motion stuffing a red wine bottle labeled "FRAPPATO" into an open refrigerator packed with ordinary food — leftovers, condiments, a jar of olives. His expression is guilty but defiant: eyebrows raised, one oversized hand held up in a "hear me out" gesture. He looks like a man who knows he is technically correct. Carmela leans into frame from the side, arms crossed, wearing a massive satisfied grin — the expression of someone who has been waiting for this moment. The fridge door is open wide, spilling bright warm light across both of their faces. Deep burgundy background beyond the fridge.
+Joe is caught mid-motion stuffing a red wine bottle labeled "FRAPPATO" into an open refrigerator packed with ordinary food — leftovers, condiments, a jar of olives. His expression is guilty but defiant: eyebrows raised, one oversized hand held up in a "hear me out" gesture. He looks like a man who knows he is technically correct. Carmela leans into frame from the side, arms crossed, wearing a massive satisfied grin — the expression of someone who has been waiting for this moment. The fridge door is open wide, spilling bright warm light across both of their faces. Rich warm burgundy background beyond the fridge.
 
 Composition:
 Tight square crop.
@@ -101,7 +101,7 @@ Use this as the style reference, but create a new scene. Do not copy the exact p
 
 > "Use this as the style reference, but create a new scene. Do not copy the exact pose."
 
-Joe and Carmela sit side by side in low beach chairs against a simple deep burgundy background. Both wear sunglasses. Both hold red wine glasses that are visibly dripping with condensation, as if just pulled from a cooler. Joe has one oversized hand behind his head and a massive lazy grin — peak smug relaxation. Carmela raises her glass in a slow "yes, this is happening" toast, eyebrow cocked upward, expression radiating supreme satisfaction.
+Joe and Carmela sit side by side in low beach chairs against a simple rich warm burgundy background. Both wear sunglasses. Both hold red wine glasses that are visibly dripping with condensation, as if just pulled from a cooler. Joe has one oversized hand behind his head and a massive lazy grin — peak smug relaxation. Carmela raises her glass in a slow "yes, this is happening" toast, eyebrow cocked upward, expression radiating supreme satisfaction.
 
 *ChatGPT prompt — upload approved reference image first, then paste this:*
 
@@ -130,13 +130,13 @@ Joe is a middle-aged cartoon man. He has black rectangular glasses, a full salt-
 Carmela is a middle-aged cartoon woman. She has medium-length warm brown hair, gold hoop earrings, expressive eyes, a dark top, and a bright amused smile. She should have theatrical body language and a delighted, sharp, funny reaction. She should look like a recurring animated version of Carmela, not a realistic portrait and not a generic surprised woman.
 
 Scene:
-Joe and Carmela sit side by side in low beach chairs against a deep burgundy background. Both wear sunglasses. Both hold red wine glasses that are visibly dripping with condensation — cold wine in summer heat. One of the glasses has a small label reading "FRAPPATO." Joe has one oversized hand behind his head and a massive lazy grin, the picture of someone who has cracked the code. Carmela raises her glass in a slow triumphant toast, eyebrow cocked upward, expression radiating supreme satisfaction.
+Joe and Carmela sit side by side in low beach chairs against a rich warm burgundy background. Both wear sunglasses. Both hold red wine glasses that are visibly dripping with condensation — cold wine in summer heat. One of the glasses has a small label reading "FRAPPATO." Joe has one oversized hand behind his head and a massive lazy grin, the picture of someone who has cracked the code. Carmela raises her glass in a slow triumphant toast, eyebrow cocked upward, expression radiating supreme satisfaction.
 
 Composition:
 Tight square crop.
 Characters close to the viewer.
 Joe and Carmela in their beach chairs with their dripping red wine glasses are the main focus.
-Deep burgundy background — no outdoor scene, no landscape.
+Rich warm burgundy background — no outdoor scene, no landscape.
 Clear visual hierarchy.
 One clear joke readable at thumbnail size.
 No text, no speech bubbles.
@@ -171,7 +171,7 @@ Carmela (middle-aged woman, medium-length warm brown hair, gold hoop earrings, d
 **(FALLBACK) Full ChatGPT prompt — only use if no approved reference image is available:**
 
 ```
-Bold editorial cartoon illustration. Simple deep burgundy background.
+Bold editorial cartoon illustration. Simple rich warm burgundy background.
 
 Center: Carmela (middle-aged woman, medium-length warm brown hair, gold hoop earrings, dark top) grips a red wine bottle labeled "FRAPPATO" with both hands and lowers it into a gleaming silver ice bucket with ceremonial, exaggerated seriousness. Her expression is theatrical authority — delighted by the ritual she is performing, a slow satisfied smile, eyebrows slightly raised. Her body language is reverent and purposeful.
 
@@ -179,5 +179,5 @@ Right: Joe (middle-aged man, salt-and-pepper hair, full salt-and-pepper beard, b
 
 The gleaming silver ice bucket sits prominently in the foreground between them, filled with ice, catching the light. The wine bottle label reads "FRAPPATO" clearly.
 
-Style: Chunky exaggerated editorial cartoon. Thick black ink outlines. Flat bold color areas with minimal shading. Oversized expressive faces and hands. Warm high-contrast palette. Deep burgundy background. Poster-like composition with clear visual hierarchy. New Yorker cover meets modern animated comedy. No photorealism. No gradients. No outdoor scenes. No detailed backgrounds. Characters fill at least 70% of the frame, waist-up, close to the viewer. Square format optimized for podcast thumbnail readability.
+Style: Chunky exaggerated editorial cartoon. Thick black ink outlines. Flat bold color areas with minimal shading. Oversized expressive faces and hands. Warm high-contrast palette. Rich warm burgundy background. Poster-like composition with clear visual hierarchy. New Yorker cover meets modern animated comedy. No photorealism. No gradients. No outdoor scenes. No detailed backgrounds. Characters fill at least 70% of the frame, waist-up, close to the viewer. Square format optimized for podcast thumbnail readability.
 ```

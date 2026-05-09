@@ -71,8 +71,8 @@ Brief, direct, one paragraph per character, then style block. Do not use a long 
 **HR-10: Wine bottle always has a readable label.**
 The label must show the wine name (e.g., "FRAPPATO", "RIOJA"). Never write "No wine labels" anywhere in a cover art prompt — this removes the essential identifying prop.
 
-**HR-11: Background is always simple and dark.**
-Always "deep burgundy background" or "simplified wine bar setting." Never name a specific outdoor location: no "Sicilian patio", no "outdoor terrace", no "vineyard". Outdoor scenes generate complex landscapes that shrink the characters.
+**HR-11: Background is always simple, dark, and warm — not near-black.**
+Always "rich warm burgundy background" or "simplified wine bar setting." Never "deep burgundy" alone — this tends to go near-black. Never name a specific outdoor location: no "Sicilian patio", no "outdoor terrace", no "vineyard". Outdoor scenes generate complex landscapes that shrink the characters.
 
 **HR-12: Characters fill 70%+ of frame.**
 State explicitly in every prompt: "Characters fill at least 70% of the frame, waist-up, close to the viewer." If not stated, the model will shrink characters.

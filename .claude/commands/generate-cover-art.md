@@ -102,7 +102,7 @@ Use this as the style reference, but create a new scene. Do not copy the exact p
 6. Humor from expressions, staging, and contrast — not props alone.
 7. Joe and Carmela are the central characters.
 8. Wine bottle has a readable label showing the wine name — include this in the Scene section.
-9. Background is simple and dark — always "deep burgundy background" or "simplified wine bar setting." Never name a specific outdoor location.
+9. Background is simple and dark — always "rich warm burgundy background" or "simplified wine bar setting." Never name a specific outdoor location.
 10. Characters fill 70%+ of the frame, waist-up, close to the viewer — state this in the Composition section.
 
 ---
