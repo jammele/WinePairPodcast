@@ -151,8 +151,11 @@ When Joe says a page is published — any phrasing ("it's live", "I published it
 **HR-29: Show notes Q&A section heading.**
 The section heading for the Q&A block in show notes outputs must read "FREQUENTLY ASKED QUESTIONS" — not "FULL Q&A" or any other label.
 
-**HR-30: Bluesky post URLs — teasers link to the podcast, fact posts link to unique external sources.**
-The first 3 posts (teasers) link to thewinepairpodcast.com or the specific episode URL. Posts 4 through 10 (fact/value posts) must each link to a unique external URL — no repeats, and no thewinepairpodcast.com. Use the episode script's research links to assign unique sources. Every fact post must have a different URL.
+**HR-30: All episode social content goes in the same output file as the SEO/AEO content.**
+Bluesky posts are part of the SEO/AEO output and must be written and saved to the same episode file (e.g. `outputs/episodes/ep217-frappato.md`) in the same session. Never treat them as a separate deliverable. The complete output file contains: Key Questions, Frequently Asked Questions, Schema Markup, and Bluesky Posts (10).
+
+**HR-31: Bluesky post URLs — teasers link to the podcast, fact posts link to unique external sources.**
+The first 3 posts (teasers) link to thewinepairpodcast.com or the specific episode URL. Posts 4 through 10 (fact/value posts) must each link to a unique external URL — no repeats, and no thewinepairpodcast.com. Use the episode script's research links to assign one unique source per post. Every fact post must have a different URL.
 
 ---
 
