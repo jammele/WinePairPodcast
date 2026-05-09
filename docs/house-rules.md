@@ -1,0 +1,155 @@
+# House Rules — The Wine Pair Podcast
+
+**This is the only authoritative source for non-negotiable rules.**
+
+When Joe corrects a rule violation: add the rule here, commit, done. No other files need updating. Command files read this file at runtime. CLAUDE.md loads it at session start.
+
+---
+
+## Writing Rules — apply to ALL content without exception
+
+**HR-1: No em-dashes. Ever.**
+Replace — with a period, comma, colon, or restructured sentence. No exceptions in body text, card descriptions, social copy, schema fields, pitches, form submissions, or any other output. Scan every file before saving.
+
+**HR-2: Q. and A. prefix format.**
+Every Q&A pair formatted exactly:
+```
+**Q. What wine is similar to Malbec?**
+A. Answer here.
+```
+Bold on the Q. line only. No other format is acceptable.
+
+**HR-3: No invented facts.**
+Never state ratings, tasting notes, pairings, prices, or episode details that have not been confirmed from the episode script. Read the script first. Use placeholders only if you explicitly say "placeholder — confirm from script."
+
+---
+
+## Spoke Page Rules
+
+**HR-4: Wine card descriptions — exactly 3 fragment sentences.**
+```
+[texture/character]. [flavor notes]. [one-liner with personality.]
+```
+- Sentences 1 and 2: NO grammatical subject. Fragment phrases only. Under 12 words each.
+- Sentence 3: one-liner, can have a subject, must be specific and memorable.
+- No em-dashes anywhere in card descriptions.
+
+Correct (Malbec reference):
+> "Full body, firm tannin, low acidity. Blueberry, chocolate, coffee. The Argentine red that overdelivers at the price, every time."
+
+Wrong (prose with subjects — fail this):
+> "Softer and rounder than Cabernet, with plum and black cherry. Medium-high body with velvety tannins. The friendlier path through the same dark-fruit territory."
+
+**HR-5: No style family subheadings under wine H2s.**
+Structure for each wine section: H2 wine name → [INSERT CARD: X] placeholder → three subsections. No subheading between H2 and card placeholder naming a style family ("Bold and Fruit-Forward", etc.). Style badges appear on the HTML card only.
+
+**HR-6: Syrah leads with spicy / black pepper.**
+Whenever Syrah or Shiraz appears (card, body, Q&A, any section), the first distinguishing characteristic must be spice or black pepper. "Savory" and "meaty" are secondary notes. Never open a Syrah description without naming spice first.
+
+**HR-7: Spoke subtitle must be distinct.**
+Published subtitle patterns — do NOT reuse angle or formula:
+- Pinot Noir: "6 Wines to Try If You Love Pinot Noir" (love/emotion)
+- Malbec: "6 Bold Reds to Try Next" (style descriptor + "to Try Next")
+- Cabernet Sauvignon: "Cabernet Lovers Love These Wines, Too" (audience identity)
+
+**HR-8: Image prompt requirements.**
+Every spoke page and blog post draft must include an image prompt. It must specify:
+- Flat illustration, 16:9
+- Wine names on bottle labels in clean sans-serif text (never unlabeled bottles)
+- Varied bottle silhouettes by wine type: Bordeaux-style (Cab, Malbec), tall narrow (Syrah, Riesling), round-shouldered (Pinot, Grenache), tapered (Zinfandel)
+- Anchor wine center, slightly larger and forward
+- No wine glasses, no people, no table setting
+- Background color must vary from previous post — do not use cream twice in a row
+
+---
+
+## Cover Art Rules
+
+**HR-9: Follow the ep215 prompt structure — always.**
+Brief, direct, one paragraph per character, then style block. Do not use a long multi-section template. The ep215 approved prompt is the reference format.
+
+**HR-10: Wine bottle always has a readable label.**
+The label must show the wine name (e.g., "FRAPPATO", "RIOJA"). Never write "No wine labels" anywhere in a cover art prompt — this removes the essential identifying prop.
+
+**HR-11: Background is always simple and dark.**
+Always "deep burgundy background" or "simplified wine bar setting." Never name a specific outdoor location: no "Sicilian patio", no "outdoor terrace", no "vineyard". Outdoor scenes generate complex landscapes that shrink the characters.
+
+**HR-12: Characters fill 70%+ of frame.**
+State explicitly in every prompt: "Characters fill at least 70% of the frame, waist-up, close to the viewer." If not stated, the model will shrink characters.
+
+**HR-13: Cover art concepts must always be scored before showing Joe.**
+Score all concepts on 5 criteria (10 points each, total out of 50):
+1. Visual Arrest — eye-catching at ~150px thumbnail?
+2. Click Potential — creates curiosity without reading the title?
+3. Brand Consistency — matches ep215 style, not structurally repetitive?
+4. Concept Originality — fresh structural type vs. recent episodes?
+5. Self-Explanatory — joke lands with zero context?
+
+Never present concepts without scores and a confirmation block.
+
+**HR-14: Cover art character bible.**
+Joe: middle-aged man, salt-and-pepper hair, full salt-and-pepper beard, black rectangular glasses, dark navy pullover. Big friendly grin, mischievous curiosity, oversized expressive hands.
+
+Carmela: middle-aged woman, medium-length warm brown hair, gold hoop earrings, dark top. Always theatrical — delighted, sharp, bright amused smile. Never stern or neutral.
+
+---
+
+## Episode Title Rules
+
+**HR-15: Grape or region name must appear in every title.**
+No exceptions. A series prefix alone ("Italian Wine Adventure #24") does not count — the wine name must also be present.
+
+**HR-16: Title length: 60–80 characters.**
+Flag anything outside this range.
+
+**HR-17: First 30 characters: no filler.**
+First 30 characters must contain the series name or the grape/region name. Not filler words like "We tried" or "This week."
+
+**HR-18: No spam words.**
+"amazing", "incredible", "secret", "magic", "you need to try", "right now", "don't miss", "the best" — all banned.
+
+**HR-19: Named series must follow exact format.**
+Check `data/episode-titles.md` Named Series Reference before generating. Match capitalization, spacing, number format, punctuation of last 3 installments exactly.
+
+**HR-20: Run /review-titles before showing Joe any options.**
+No exceptions. Fix all FAILs before presenting.
+
+---
+
+## Beamly Technical Rules
+
+**HR-21: All HTML card embeds must use fully inline styles.**
+Every CSS property goes on the element's `style=""` attribute directly. Never use a `<style>` block inside any Beamly embed — Beamly strips style tags on save.
+
+**HR-22: Author participant required on every page.**
+Every blog post and spoke page draft must include a reminder in the Beamly fields section: "Add Joe Mele as Author participant in Beamly (Authors / Participants → search 'Joe Mele' → role: Author)."
+
+**HR-23: Re-encoding bug — after any Beamly edit.**
+When a published page with wine cards is edited and re-saved in Beamly, `<span>` tags inside code embed blocks get HTML-encoded (badges show as raw text). Fix: delete all card code blocks in Beamly and re-paste from the source file in `outputs/`. Run /verify-published after every edit to catch this.
+
+---
+
+## Process Rules
+
+**HR-24: Pre-write checklist — no exceptions.**
+Before writing any content piece, state out loud: format (A or B), target query, source episode, schema plan. This catches wrong approaches before writing begins. Do not skip for "short" posts.
+
+**HR-25: Read the episode script first.**
+Before writing any episode content (show notes, social, Q&A, blog post), retrieve and read the episode script via `node scripts/read_gdoc.js <docId>`. Ratings, tasting notes, pairings, and finish choice are always in the script. Never leave them as placeholders.
+
+**HR-26: Trim social posts before presenting.**
+Count characters before showing any social post. Bluesky: 300 chars max including any inline URL; keep text under ~240 chars when a URL will be included. Do not present untrimmed posts.
+
+**HR-27: Run /verify-published immediately after any publish.**
+When Joe says a page is published — any phrasing ("it's live", "I published it", "done", "it's up", "I added the code") — run `/verify-published <url>` without being asked. If URL is not stated, ask for it in the same message. Do not skip.
+
+---
+
+## Rule Update Protocol
+
+**When Joe corrects a rule violation:**
+1. Add or update the rule in this file (`docs/house-rules.md`)
+2. Commit and push
+3. Done — no other files need updating
+
+**Never add content rules to memory files.** Memory files are for project context, user profile, and external references. Rules belong here.

@@ -134,7 +134,17 @@ Blog post sprint resumes after all spokes are live.
 
 ---
 
-## System changes made 2026-05-09 (session 2)
+## System changes made 2026-05-09 (session 2 — structural rebuild)
+
+- **Created `docs/house-rules.md`** — single source of truth for all non-negotiable rules. 27 numbered rules (HR-1 through HR-27) covering: writing (no em-dashes, Q./A. format, no invented facts), spoke pages (card format, Syrah, subtitle, image prompts), cover art (ep215 structure, wine labels, dark backgrounds, scoring), episode titles (character count, grape required, no spam), Beamly (inline styles, author participant, re-encoding bug), and process (pre-write checklist, script-first, social limits, auto-verify-published). Rule update protocol documented: update house-rules.md, commit, done.
+- **Rebuilt CLAUDE.md** — house-rules.md added as step 1 of session startup (before scripts, before work log). Correction protocol added: all content rules go to house-rules.md, not memory files. Removed the "command file rules" section (superseded by this architecture). Reference table updated.
+- **Rebuilt all 5 command files** — every sub-agent prompt now opens with "Step 1: Read docs/house-rules.md in its entirety. Apply every rule in it." Removed all embedded rule lists from command files (they were copies that would drift). Commands are now task-specific only; rules come from the shared source.
+- **Cleaned up 6 memory files** — replaced rule content with pointers to house-rules.md. Kept context, style guidance, and reference notes. Memory files are now for context only, not rules.
+- **Root cause fixed:** Rules lived in memory files (outside the repo, inaccessible to sub-agents). Sub-agents ran without the rules established to fix past mistakes. All rules now live in docs/house-rules.md (in the repo, readable by any sub-agent via the Read tool). One file to update. No propagation needed.
+
+---
+
+## System changes made 2026-05-09
 
 - **Rebuilt `/review-spoke.md` — systemic fix.** Previous version checked only judgment and factual quality. The 7 formatting rules documented in `memory/feedback_spoke_pages.md` were not enforced anywhere. New version embeds all rules directly in the sub-agent instructions: F1 no em-dashes, F2 Q./A. prefix format, F3 no style subheadings under H2s, F4 card description fragment format (3 sentences, subjects only in sentence 3, under 12 words in S1/S2), F5 Syrah leads with spicy/black pepper, F6 image prompt requirements (labeled bottles, varied silhouettes, no people), F7 author participant reminder. Sub-agent now returns two separate sections: FORMATTING VIOLATIONS and JUDGMENT/FACTUAL ISSUES.
 - **Fixed CLAUDE.md command file rules.** Added "Command file rules" section documenting the principle: sub-agents can only enforce what is embedded in their prompt, not what is in memory files. When a new rule is established, it must go into the command file first. Corrected cover art row to remove the false claim that the sub-agent reads `memory/feedback_cover_art.md`.

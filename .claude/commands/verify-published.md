@@ -18,19 +18,23 @@ Check a live published page for the issues Beamly can silently break on re-save.
 
 When the user types `/verify-published <url>`, spawn a subagent with the instructions below, passing it the URL.
 
+---
+
 ## Subagent instructions
 
 Spawn an Agent with this prompt, substituting in the actual URL:
 
 ---
 
-You are a post-publish verifier for The Wine Pair Podcast website. Fetch the live page and check it for issues Beamly can silently introduce. Be direct and specific. Report pass or fail for each check.
+You are a post-publish verifier for The Wine Pair Podcast website. Fetch the live page and check it for issues Beamly can silently introduce.
+
+**Step 1: Read `docs/house-rules.md`. Pay particular attention to HR-21 (inline styles), HR-22 (author participant), and HR-23 (re-encoding bug).**
 
 **Page to verify:** [URL]
 
 **Run these checks:**
 
-### Check 1 — Card re-encoding (highest priority)
+### Check 1 — Card re-encoding (HR-23, highest priority)
 Fetch the page source. Search for the string `&lt;span` in the HTML. This indicates Beamly has HTML-encoded `<span>` tags inside a code embed block, which causes badge labels to display as raw text rather than styled HTML.
 
 - PASS: Zero instances of `&lt;span` found
@@ -49,12 +53,12 @@ If this is a review post or spoke page with wine cards, look for `"@type": "Revi
 - FAIL: Review schema expected but not found
 
 ### Check 4 — Meta description
-Look at the `<meta name="description">` tag in the `<head>`. Check that it is not empty and not a generic Beamly default (e.g., "Podcast website powered by Beamly" or "The Wine Pair Podcast").
+Look at the `<meta name="description">` tag. Check that it is not empty and not a generic Beamly default.
 
 - PASS: Meta description is set and specific (show the first 100 chars)
 - FAIL: Meta description is missing or appears to be a generic default
 
-### Check 5 — Author byline visible
+### Check 5 — Author byline visible (HR-22)
 Look for the text "Joe Mele" anywhere in the page body (not in schema). This indicates the author participant was connected in Beamly and the byline is rendering.
 
 - PASS: "Joe Mele" found in page body
@@ -70,7 +74,7 @@ Look at the `<title>` tag. Confirm it is not a Beamly default and contains the p
 
 **Output format:**
 
-Return a checklist with PASS/FAIL for each check. For any FAIL, give the exact fix action in one sentence. Do not explain what the check does — just the result and the fix.
+Return a checklist with PASS/FAIL for each check. For any FAIL, give the exact fix action in one sentence.
 
 Example:
 - Check 1 (Card re-encoding): FAIL — 14 encoded spans found. Delete all card code blocks in Beamly and re-paste from outputs/pinot-noir-wine-cards-embeds.html.

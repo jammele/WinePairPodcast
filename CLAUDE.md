@@ -4,14 +4,16 @@
 
 ## Session startup -- run every time
 
-1. Run these commands silently:
+1. Read `docs/house-rules.md` — non-negotiable rules for all output. Apply them throughout the session.
+
+2. Run these commands silently:
 ```
 node scripts/find_source_files.js --scan
 node scripts/update_episode_titles.js
 node scripts/ingest_prompts.js
 ```
 
-2. Read `docs/work-log.md`.
+3. Read `docs/work-log.md`.
 
 Report in one short summary: "Drive synced: X files indexed, Y titles updated, Z prompts synced. [auth note if needed] Current priorities: 1. [next action] 2. [next action] 3. [next action]"
 
@@ -21,6 +23,16 @@ If any command fails, note it briefly and keep going.
 - The work log is the authority. Do not question or contradict priorities documented there without new data that changes the analysis.
 - Do not propose content that is already published or already deprioritized. Check the work log first.
 - If a session opens with a question about what to do next, report what the work log says — do not brainstorm alternatives.
+
+---
+
+## When Joe corrects a rule violation
+
+1. Add or update the rule in `docs/house-rules.md`
+2. Commit and push
+3. Done — no other files need updating
+
+**Never add content rules to memory files.** Memory files are for project context, user profile, and external references. `docs/house-rules.md` is the only authoritative source for non-negotiable rules.
 
 ---
 
@@ -95,21 +107,6 @@ If OAuth is broken: `rm google_token.json` then `node scripts/setup_google_auth.
 
 ---
 
-## Command file rules (critical — read before adding any new rule)
-
-Sub-agents spawned by `.claude/commands/*.md` can only reliably access what is embedded directly in their prompt. They do not reliably read `memory/` files unless that reading is explicitly part of the command.
-
-**When a new rule is established:**
-1. Add it directly to the relevant command file (the sub-agent's instructions section)
-2. Also add it to the relevant memory file for Claude's own reference
-3. Never put a rule only in a memory file and expect sub-agents to follow it
-
-**The test:** If a sub-agent ran with zero memory file access, would it still enforce this rule? If no, the rule is not in the command file.
-
-This is the root cause of repeated formatting mistakes. Memory files are for Claude's context. Command files are the source of truth for what sub-agents do.
-
----
-
 ## Reference docs (read before relevant work)
 
 | Task | Read first |
@@ -117,8 +114,8 @@ This is the root cause of repeated formatting mistakes. Memory files are for Cla
 | Writing a spoke page | `docs/spoke-page-checklist.md` — run all 3 passes. After writing: `node scripts/validate_spoke.js` then `/review-wine-cards` then `/review-spoke` before showing Joe anything. Draft must include FAQPage schema block at the bottom with COPY START / COPY END markers. |
 | Writing a blog post | `docs/blog-post-guide.md` — draft must include Review Schema, FAQPage schema block, and all Beamly fields at the bottom with COPY START / COPY END markers. |
 | Publishing a page | `docs/publishing-checklist.md` — after Joe publishes: run `/verify-published <url>` to confirm schema, card badges, author byline, and meta description are all rendering correctly. |
-| Cover art image prompts | Run `/generate-cover-art` — mandatory before showing Joe any concepts. All style rules, character bible, and brand rules are embedded in the command file. After Joe picks a concept, update the Recent Scenes section of `memory/feedback_cover_art.md`. |
+| Cover art image prompts | Run `/generate-cover-art` — mandatory before showing Joe any concepts. After Joe picks a concept, update the Recent Scenes section of `memory/feedback_cover_art.md`. |
 | Episode copy, show notes, social copy | `docs/voice-and-format.md` |
 | SEO strategy and priorities | `docs/seo-geo-strategy.md` |
 | Project context and show identity | `docs/soul-document.md` |
-| Episode title generation | `memory/title_writing.md` (read before every title task). Run `/review-titles` — **mandatory before showing Joe any options.** Sub-agent reads `data/episode-titles.md` (complete archive + series patterns). When a title is confirmed, add it to `data/episode-titles.md` before committing. |
+| Episode title generation | Run `/review-titles` — **mandatory before showing Joe any options.** Sub-agent reads `data/episode-titles.md` (complete archive + series patterns). When a title is confirmed, add it to `data/episode-titles.md` before committing. |
