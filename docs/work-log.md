@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-09 (session 2)
+**Last updated:** 2026-05-09 (session 3)
 
 ---
 
@@ -133,6 +133,13 @@ Blog post sprint resumes after all spokes are live.
 - **June 14, 2026:** Check Pillar #2 intent shift; re-run AI discoverability tests
 
 ---
+
+## System changes made 2026-05-09 (session 3 — cover art system fix)
+
+- **Fixed `/generate-cover-art` — four bugs resolved.** (1) Subagent could not read `memory/feedback_cover_art.md` (wrong path — memory files are not in the project directory). Fixed: main agent now reads the file at the correct absolute path and injects recent scenes into the subagent prompt before spawning. (2) Fallback prompts for ep217 Concepts A and B contained "No wine labels." in the negative prompt, violating HR-10. Fixed. (3) Overcorrection in initial fix banned the long multi-section template format — but ep216 confirmed that format + uploaded reference image is the working formula. Reverted; only "No wine labels." is banned. (4) Backgrounds were going near-black. Updated HR-11 and all prompts to use "rich warm burgundy background" instead of "deep burgundy."
+- **Ep216 scene logged** in `memory/feedback_cover_art.md`: Joe pulling white wine bottle from rack of red bottles. Structure: "hidden gem discovery / one thing standing out against many."
+- **Ep217 confirmed:** Concept C (ice bucket ceremony) selected. `memory/feedback_cover_art.md` updated. All three ep217 prompts corrected and pushed.
+- **Key lesson documented:** The reference image IS the style guide. Always upload the most recent approved cover art image to ChatGPT before pasting the prompt. Text prompts for style are lossy without it.
 
 ## System changes made 2026-05-09 (session 2 — structural rebuild)
 
