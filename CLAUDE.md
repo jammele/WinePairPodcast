@@ -95,6 +95,21 @@ If OAuth is broken: `rm google_token.json` then `node scripts/setup_google_auth.
 
 ---
 
+## Command file rules (critical — read before adding any new rule)
+
+Sub-agents spawned by `.claude/commands/*.md` can only reliably access what is embedded directly in their prompt. They do not reliably read `memory/` files unless that reading is explicitly part of the command.
+
+**When a new rule is established:**
+1. Add it directly to the relevant command file (the sub-agent's instructions section)
+2. Also add it to the relevant memory file for Claude's own reference
+3. Never put a rule only in a memory file and expect sub-agents to follow it
+
+**The test:** If a sub-agent ran with zero memory file access, would it still enforce this rule? If no, the rule is not in the command file.
+
+This is the root cause of repeated formatting mistakes. Memory files are for Claude's context. Command files are the source of truth for what sub-agents do.
+
+---
+
 ## Reference docs (read before relevant work)
 
 | Task | Read first |
@@ -102,7 +117,7 @@ If OAuth is broken: `rm google_token.json` then `node scripts/setup_google_auth.
 | Writing a spoke page | `docs/spoke-page-checklist.md` — run all 3 passes. After writing: `node scripts/validate_spoke.js` then `/review-wine-cards` then `/review-spoke` before showing Joe anything. Draft must include FAQPage schema block at the bottom with COPY START / COPY END markers. |
 | Writing a blog post | `docs/blog-post-guide.md` — draft must include Review Schema, FAQPage schema block, and all Beamly fields at the bottom with COPY START / COPY END markers. |
 | Publishing a page | `docs/publishing-checklist.md` — after Joe publishes: run `/verify-published <url>` to confirm schema, card badges, author byline, and meta description are all rendering correctly. |
-| Cover art image prompts | Run `/generate-cover-art` — mandatory before showing Joe any concepts. Sub-agent reads `memory/feedback_cover_art.md` for character bible, style rules, and recent scenes. Update the Recent Scenes section of that memory file with whichever concept Joe picks. |
+| Cover art image prompts | Run `/generate-cover-art` — mandatory before showing Joe any concepts. All style rules, character bible, and brand rules are embedded in the command file. After Joe picks a concept, update the Recent Scenes section of `memory/feedback_cover_art.md`. |
 | Episode copy, show notes, social copy | `docs/voice-and-format.md` |
 | SEO strategy and priorities | `docs/seo-geo-strategy.md` |
 | Project context and show identity | `docs/soul-document.md` |

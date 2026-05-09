@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-09
+**Last updated:** 2026-05-09 (session 2)
 
 ---
 
@@ -131,6 +131,14 @@ Blog post sprint resumes after all spokes are live.
 
 - **May 2-5, 2026:** Check indexing status on all 4 submitted posts
 - **June 14, 2026:** Check Pillar #2 intent shift; re-run AI discoverability tests
+
+---
+
+## System changes made 2026-05-09 (session 2)
+
+- **Rebuilt `/review-spoke.md` — systemic fix.** Previous version checked only judgment and factual quality. The 7 formatting rules documented in `memory/feedback_spoke_pages.md` were not enforced anywhere. New version embeds all rules directly in the sub-agent instructions: F1 no em-dashes, F2 Q./A. prefix format, F3 no style subheadings under H2s, F4 card description fragment format (3 sentences, subjects only in sentence 3, under 12 words in S1/S2), F5 Syrah leads with spicy/black pepper, F6 image prompt requirements (labeled bottles, varied silhouettes, no people), F7 author participant reminder. Sub-agent now returns two separate sections: FORMATTING VIOLATIONS and JUDGMENT/FACTUAL ISSUES.
+- **Fixed CLAUDE.md command file rules.** Added "Command file rules" section documenting the principle: sub-agents can only enforce what is embedded in their prompt, not what is in memory files. When a new rule is established, it must go into the command file first. Corrected cover art row to remove the false claim that the sub-agent reads `memory/feedback_cover_art.md`.
+- **Root cause documented and fixed:** Rules were established → saved only to memory files → sub-agents never read them → mistakes repeated. Fix: all command files are now self-contained. The test: if a sub-agent ran with zero memory file access, would it still enforce every rule? If no, the rule is not in the command file.
 
 ---
 
