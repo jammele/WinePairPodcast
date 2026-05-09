@@ -39,6 +39,8 @@ Must be within the last 14 days. Verify publication dates before presenting. A s
 
 ## Search strategy
 
+Before running any searches, read `data/wine-in-the-news-archive.md`. Do not suggest any story on the same topic, incident, or person as any entry in that archive. A general category (fraud, theft, health study) does not disqualify all stories in that category -- but the same scheme, defendant, event, or study does.
+
 Cast a wide net. The source does not matter — a wine publication can run a funny crime story; a general news site can run a boring industry piece. Filter by story quality, not outlet.
 
 Good search terms:
@@ -94,3 +96,5 @@ Example from EP214: "Carmela, if we ever were on the skids, what would you make 
 ## Saving the output
 
 Save the finished Wine in the News script to the episode output file (`outputs/episodes/ep[N]-[slug].md`) alongside the SEO/AEO and Bluesky content. Do not leave it only in the chat.
+
+Immediately after Joe selects a story, add it to `data/wine-in-the-news-archive.md` -- episode number, approximate date, publication, one-line description, and tags. Commit the archive file along with the episode output. Do not leave this until the next session.
