@@ -1,7 +1,7 @@
 # Show Description Prompt
 
 <!-- Source: Google Doc 17Md_Xt6NS6QATjiWlNGWeCgnnskgx9XiHFrAF1Xyn8E -->
-<!-- Last synced: 2026-05-03T22:02:03.950Z -->
+<!-- Last synced: 2026-05-09T18:19:32.176Z -->
 
 Show Description Prompt
 

@@ -1,7 +1,7 @@
 # Cover Art Prompt Instructions
 
 <!-- Source: Google Doc 1uXgXzVnXXZmDclxQ04pa8WIbtpokHde-GkoDBKlF3Ks -->
-<!-- Last synced: 2026-05-03T22:01:58.395Z -->
+<!-- Last synced: 2026-05-09T18:19:27.676Z -->
 
 Cartoon Style that worked really well for Xinomavro
 
