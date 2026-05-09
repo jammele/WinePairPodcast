@@ -145,6 +145,11 @@ When Joe says a page is published — any phrasing ("it's live", "I published it
 
 ---
 
+**HR-28: Show notes Q&A section heading.**
+The section heading for the Q&A block in show notes outputs must read "FREQUENTLY ASKED QUESTIONS" — not "FULL Q&A" or any other label.
+
+---
+
 ## Rule Update Protocol
 
 **When Joe corrects a rule violation:**

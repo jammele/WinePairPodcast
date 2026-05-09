@@ -201,7 +201,7 @@ Style: Chunky exaggerated editorial cartoon. Thick black ink outlines. Flat bold
 
 ---
 
-### FULL Q&A
+### FREQUENTLY ASKED QUESTIONS
 *(Place at bottom of show notes)*
 
 **Q. What is Frappato wine?**
