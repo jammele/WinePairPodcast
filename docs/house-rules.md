@@ -146,13 +146,6 @@ Never include the Wine in the News segment in any Bluesky post. That segment is 
 **HR-28: Run /verify-published immediately after any publish.**
 When Joe says a page is published — any phrasing ("it's live", "I published it", "done", "it's up", "I added the code") — run `/verify-published <url>` without being asked. If URL is not stated, ask for it in the same message. Do not skip.
 
----
-
-**HR-32: Read docs/wine-in-the-news.md before writing any Wine in the News content.**
-Applies to both finding story options and drafting the segment script. Do not skip for "quick" story searches.
-
----
-
 **HR-29: Show notes Q&A section heading.**
 The section heading for the Q&A block in show notes outputs must read "FREQUENTLY ASKED QUESTIONS" — not "FULL Q&A" or any other label.
 
@@ -161,6 +154,9 @@ Bluesky posts are part of the SEO/AEO output and must be written and saved to th
 
 **HR-31: Bluesky post URLs — teasers link to the podcast, fact posts link to unique external sources.**
 The first 3 posts (teasers) link to thewinepairpodcast.com or the specific episode URL. Posts 4 through 10 (fact/value posts) must each link to a unique external URL — no repeats, and no thewinepairpodcast.com. Use the episode script's research links to assign one unique source per post. Every fact post must have a different URL.
+
+**HR-32: Read docs/wine-in-the-news.md before writing any Wine in the News content.**
+Applies to both finding story options and drafting the segment script. Do not skip for "quick" story searches.
 
 ---
 

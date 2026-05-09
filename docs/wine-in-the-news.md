@@ -75,7 +75,7 @@ Every Wine in the News draft must follow this exact 5-part structure, confirmed 
 **2. Attribution line:**
 "This week our wine in the news comes to us from [Author Name] writing for [Publication] in [City if applicable]. And the article is called '[Exact Article Title].'"
 
-Always fetch the article to get the exact author name and headline. Do not approximate.
+Always fetch the article (use WebFetch on the article URL) to get the exact author name and headline. Do not approximate.
 
 **3. Hook + short version:**
 "Right away, this feels like a [good/great/wild] story, and the short version of the story is this: [1-2 sentence summary]."
@@ -88,3 +88,9 @@ Use "But wait, it gets more interesting." to escalate to the best beats.
 End with a playful, specific question to Carmela that connects to the story. Not generic — make it personal or hypothetical based on the story's details.
 
 Example from EP214: "Carmela, if we ever were on the skids, what would you make sure you took from the house?"
+
+---
+
+## Saving the output
+
+Save the finished Wine in the News script to the episode output file (`outputs/episodes/ep[N]-[slug].md`) alongside the SEO/AEO and Bluesky content. Do not leave it only in the chat.
