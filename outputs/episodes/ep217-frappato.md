@@ -12,6 +12,8 @@
 
 ## COVER ART CONCEPTS (generated 2026-05-09)
 
+**Sub-agent ran. Checked:** character bible (Joe + Carmela descriptions), approved style (high-contrast wine-bar editorial cartoon, chunky outlines, flat color, burgundy palette, confirmed ep215), recent scene structures (ep215: "expert being ignored / Joe and Carmela conspiring behind third character"), brand rules (no anthropomorphized objects, one focal point, no text-dependent jokes, Joe and Carmela as leads). Each concept scored on 5 criteria (Visual Arrest, Click Potential, Brand Consistency, Concept Originality, Self-Explanatory) out of 50. **Recommended: Concept C (46/50).**
+
 **How to use:**
 - **Primary approach:** Open a new ChatGPT chat. Upload the most recent approved cover art image. Paste: *"Use this as the style reference, but create a new scene. Do not copy the exact pose."* followed by the scene description for whichever concept you choose.
 - **Fallback:** Paste the full prompt directly into ChatGPT with no image attachment.
@@ -19,6 +21,14 @@
 ---
 
 ### Concept A: The Refrigerator Confession
+
+**Scores:**
+- Visual Arrest: 8/10 — open fridge spilling warm light is a strong visual anchor; incongruity reads clearly at thumbnail size
+- Click Potential: 8/10 — "why is he putting red wine in the fridge?" is a genuinely compelling implicit question
+- Brand Consistency: 9/10 — two characters, expressive faces, clear staging; does not repeat ep215 structure
+- Concept Originality: 9/10 — "caught doing something transgressive but correct" is a fresh structural type
+- Self-Explanatory: 8/10 — anyone who's been told "don't chill red wine" gets it immediately
+- **Total: 42/50**
 
 *The joke:* Joe is caught red-handed sneaking a bottle of red wine into the fridge — guilty but defiant — while Carmela leans in with a "I told you so" grin.
 
@@ -72,6 +82,14 @@ No photorealism. No realistic portrait. No painterly rendering. No soft gradient
 
 ### Concept B: The Beach Chair Chill
 
+**Scores:**
+- Visual Arrest: 6/10 — "two people in beach chairs" is pleasant but not visually dynamic; condensation detail won't survive thumbnail compression
+- Click Potential: 6/10 — smug relaxation energy is readable but the wine-in-the-sun incongruity requires more cognitive assembly than A or C
+- Brand Consistency: 8/10 — characters and style rules followed; not structurally repetitive with ep215
+- Concept Originality: 7/10 — "two hosts looking smug and satisfied" is a more common podcast thumbnail pattern
+- Self-Explanatory: 5/10 — the key joke detail (condensation on a red wine glass) may disappear at small sizes; the image risks reading as just "two people enjoying wine"
+- **Total: 32/50**
+
 *The joke:* Joe and Carmela in full summer relaxation mode under Sicilian sun, holding chilled red wine glasses dripping with condensation, radiating the smug energy of people who have figured something out that nobody else has.
 
 **Scene description (primary approach):**
@@ -122,7 +140,15 @@ No photorealism. No realistic portrait. No painterly rendering. No soft gradient
 
 ---
 
-### Concept C: The Ice Bucket Ceremony
+### Concept C: The Ice Bucket Ceremony ★ RECOMMENDED
+
+**Scores:**
+- Visual Arrest: 9/10 — gleaming ice bucket + theatrical body language + Joe's awestruck expression creates high visual contrast; extremely dynamic at thumbnail size
+- Click Potential: 9/10 — ice buckets are universally coded as "white wine / Champagne only"; seeing one with red wine and two people treating it like a ceremony creates immediate "wait, what?" curiosity
+- Brand Consistency: 9/10 — strong character differentiation (Carmela leading, Joe reacting), theatrical staging, no structural repetition of ep215
+- Concept Originality: 10/10 — "solemn ritual applied to the wrong thing" has not been used; fresh structural type
+- Self-Explanatory: 9/10 — the joke lands completely without the title; a new listener sees it and wants to know what show does this
+- **Total: 46/50**
 
 *The joke:* Carmela lowers a red wine bottle into an ice bucket with the ceremonial seriousness of someone performing a sacred ritual, while Joe watches with the awestruck reverence of a man witnessing a revelation.
 
