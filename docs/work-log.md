@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-04
+**Last updated:** 2026-05-09
 
 ---
 
@@ -131,6 +131,16 @@ Blog post sprint resumes after all spokes are live.
 
 - **May 2-5, 2026:** Check indexing status on all 4 submitted posts
 - **June 14, 2026:** Check Pillar #2 intent shift; re-run AI discoverability tests
+
+---
+
+## System changes made 2026-05-09
+
+- **Episode 217 — Frappato:** Google Doc found (`1R8HMN-gf8kfT7Dxqvmm8rXC2f4g6wGkT_1h5vQ243yo`). Title confirmed by Joe: "Italian Wine Adventure #24 Frappato! The Chillable Red Wine!" Wines: 2022 Valle Dell'Acate Il Frappato Vittoria ($22.99) — Joe 8, Carmela 8 | 2024 Gurrieri Frappato ($27.97) — Joe 6, Carmela 6. Both chose Valle Dell'Acate to finish.
+- **Created `/review-titles` slash command** at `.claude/commands/review-titles.md` — mandatory internal QA step before showing Joe any episode title suggestions. Subagent pulls last 20 episode titles from database, identifies named series patterns (Italian Wine Adventure, WTF, Bordeaux Bargains), checks every proposed title against all rules (grape/region required, no format repeat, no spam words, character count, first-30-chars rule, series format consistency), and scores each option (AI Discovery + Clickability). Claude must fix all FAILs before presenting to Joe.
+- **Updated CLAUDE.md** — added `/review-titles` requirement to the reference table for episode title generation.
+- **Updated `memory/feedback_title_generation.md`** — added mandatory /review-titles rule, named series format reference.
+- **Google OAuth re-authorized** — token was expired (invalid_grant). Fixed by deleting google_token.json and re-running setup_google_auth.js.
 
 ---
 
