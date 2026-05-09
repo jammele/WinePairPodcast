@@ -38,18 +38,49 @@
 
 Joe stands at an open refrigerator, caught mid-motion pushing a red wine bottle onto a shelf between the leftovers and a jar of olives. His expression is part guilty, part "no, this is correct, actually" — eyebrows raised, one oversized hand held up in a "hear me out" gesture. He looks like a man who knows he is technically right. Carmela leans into frame from the side, arms crossed, wearing a massive satisfied grin — the expression of someone who has been waiting for this moment. The fridge door is open wide, spilling bright warm light across both of their faces. Background is deep burgundy beyond the fridge.
 
-**(FALLBACK) Full ChatGPT prompt — only use if no approved reference image is available:**
+*ChatGPT prompt — upload approved reference image first, then paste this:*
 
 ```
-Bold editorial cartoon illustration. Deep burgundy background.
+Create a square editorial cartoon illustration for a wine podcast cover image.
 
-Left: Joe (middle-aged man, salt-and-pepper hair, full salt-and-pepper beard, black rectangular glasses, dark navy pullover) stands at an open refrigerator, caught mid-motion pushing a red wine bottle onto a shelf between leftovers and a jar of olives. His expression is guilty but defiant — eyebrows raised, one oversized hand held up in a "hear me out" gesture. He looks like a man who knows he is technically correct.
+Use this style exactly:
 
-Right: Carmela (middle-aged woman, medium-length warm brown hair, gold hoop earrings, dark top) leans into frame from the side, arms crossed, wearing a massive satisfied grin — the expression of someone who has been waiting for this moment for years.
+Style name: High-contrast wine-bar editorial cartoon
 
-The fridge door is open wide, spilling bright warm light across both faces. The wine bottle is a red wine bottle with a visible label.
+A bold, graphic, exaggerated cartoon style with chunky black ink outlines, flat saturated colors, oversized expressive faces and hands, theatrical body language, broad smiles, simple shapes, minimal shading, and a warm burgundy/red wine-bar palette. The image should feel like a magazine cover crossed with a premium adult animated comedy. It should be funny, energetic, and readable at small podcast-thumbnail size.
 
-Style: Chunky exaggerated editorial cartoon. Thick black ink outlines. Flat bold color areas with minimal shading. Oversized expressive faces and hands. Warm high-contrast palette. Deep burgundy background. Poster-like composition with clear visual hierarchy. New Yorker cover meets modern animated comedy. No photorealism. No gradients. Square format optimized for podcast thumbnail readability. Characters fill at least 70% of the frame, waist-up, close to the viewer.
+Important style rules:
+Do not make this realistic.
+Do not make the characters portrait-like.
+Do not add realistic skin texture, realistic facial anatomy, painterly detail, soft lighting, gradients, or 3D effects.
+The people should be affectionate recurring cartoon host characters, not realistic portraits.
+Use simplified, exaggerated animated-comedy proportions.
+The characters should be expressive and specific, but not detailed or lifelike.
+The humor should come from expressions, staging, and visual contrast.
+
+Recurring character bible:
+
+Joe is a middle-aged cartoon man. He has black rectangular glasses, a full salt-and-pepper beard, salt-and-pepper hair, thick expressive eyebrows, and a dark navy pullover. He should have a big friendly grin, curious mischievous energy, and oversized expressive hands. He should look like a recurring animated version of Joe, not a realistic portrait and not a generic cartoon dad.
+
+Carmela is a middle-aged cartoon woman. She has medium-length warm brown hair, gold hoop earrings, expressive eyes, a dark top, and a bright amused smile. She should have theatrical body language and a delighted, sharp, funny reaction. She should look like a recurring animated version of Carmela, not a realistic portrait and not a generic surprised woman.
+
+Scene:
+Joe is caught mid-motion stuffing a red wine bottle labeled "FRAPPATO" into an open refrigerator packed with ordinary food — leftovers, condiments, a jar of olives. His expression is guilty but defiant: eyebrows raised, one oversized hand held up in a "hear me out" gesture. He looks like a man who knows he is technically correct. Carmela leans into frame from the side, arms crossed, wearing a massive satisfied grin — the expression of someone who has been waiting for this moment. The fridge door is open wide, spilling bright warm light across both of their faces. Deep burgundy background beyond the fridge.
+
+Composition:
+Tight square crop.
+Characters close to the viewer.
+Joe at the open fridge and Carmela leaning in from the side are the main focus.
+A bright open refrigerator interior with ordinary food items fills the center but stays simple and uncluttered.
+Clear visual hierarchy.
+One clear joke readable at thumbnail size.
+No text, no labels on background elements, no speech bubbles.
+Characters fill at least 70% of the frame, waist-up, close to the viewer.
+
+Negative prompt:
+No photorealism. No realistic portrait. No painterly rendering. No soft gradients. No 3D gloss. No realistic aging lines. No skin texture. No generic stock-cartoon faces. No tiny expressions. No cluttered background. No speech bubbles. Do not make Joe or Carmela look like real-person portraits. Keep them bold, graphic, exaggerated, and funny.
+
+Use this as the style reference, but create a new scene. Do not copy the exact pose.
 ```
 
 ---
@@ -72,18 +103,49 @@ Style: Chunky exaggerated editorial cartoon. Thick black ink outlines. Flat bold
 
 Joe and Carmela sit side by side in low beach chairs against a simple deep burgundy background. Both wear sunglasses. Both hold red wine glasses that are visibly dripping with condensation, as if just pulled from a cooler. Joe has one oversized hand behind his head and a massive lazy grin — peak smug relaxation. Carmela raises her glass in a slow "yes, this is happening" toast, eyebrow cocked upward, expression radiating supreme satisfaction.
 
-**(FALLBACK) Full ChatGPT prompt — only use if no approved reference image is available:**
+*ChatGPT prompt — upload approved reference image first, then paste this:*
 
 ```
-Bold editorial cartoon illustration. Deep burgundy background.
+Create a square editorial cartoon illustration for a wine podcast cover image.
 
-Left: Joe (middle-aged man, salt-and-pepper hair, full salt-and-pepper beard, black rectangular glasses, dark navy pullover) sits in a low beach chair wearing sunglasses. One oversized hand is behind his head. He holds a red wine glass dripping with condensation and wears a massive lazy grin — the picture of someone who has cracked the code.
+Use this style exactly:
 
-Right: Carmela (middle-aged woman, medium-length warm brown hair, gold hoop earrings, dark top) sits beside him, also in sunglasses, raising her condensation-dripping red wine glass in a slow triumphant toast. Her eyebrow is cocked upward, expression radiating supreme satisfaction.
+Style name: High-contrast wine-bar editorial cartoon
 
-The overall energy: they know something you don't, and it is delicious.
+A bold, graphic, exaggerated cartoon style with chunky black ink outlines, flat saturated colors, oversized expressive faces and hands, theatrical body language, broad smiles, simple shapes, minimal shading, and a warm burgundy/red wine-bar palette. The image should feel like a magazine cover crossed with a premium adult animated comedy. It should be funny, energetic, and readable at small podcast-thumbnail size.
 
-Style: Chunky exaggerated editorial cartoon. Thick black ink outlines. Flat bold color areas with minimal shading. Oversized expressive faces and hands. Warm high-contrast palette. Deep burgundy background. Poster-like composition with clear visual hierarchy. New Yorker cover meets modern animated comedy. No photorealism. No gradients. Square format optimized for podcast thumbnail readability. Characters fill at least 70% of the frame, waist-up, close to the viewer.
+Important style rules:
+Do not make this realistic.
+Do not make the characters portrait-like.
+Do not add realistic skin texture, realistic facial anatomy, painterly detail, soft lighting, gradients, or 3D effects.
+The people should be affectionate recurring cartoon host characters, not realistic portraits.
+Use simplified, exaggerated animated-comedy proportions.
+The characters should be expressive and specific, but not detailed or lifelike.
+The humor should come from expressions, staging, and visual contrast.
+
+Recurring character bible:
+
+Joe is a middle-aged cartoon man. He has black rectangular glasses, a full salt-and-pepper beard, salt-and-pepper hair, thick expressive eyebrows, and a dark navy pullover. He should have a big friendly grin, curious mischievous energy, and oversized expressive hands. He should look like a recurring animated version of Joe, not a realistic portrait and not a generic cartoon dad.
+
+Carmela is a middle-aged cartoon woman. She has medium-length warm brown hair, gold hoop earrings, expressive eyes, a dark top, and a bright amused smile. She should have theatrical body language and a delighted, sharp, funny reaction. She should look like a recurring animated version of Carmela, not a realistic portrait and not a generic surprised woman.
+
+Scene:
+Joe and Carmela sit side by side in low beach chairs against a deep burgundy background. Both wear sunglasses. Both hold red wine glasses that are visibly dripping with condensation — cold wine in summer heat. One of the glasses has a small label reading "FRAPPATO." Joe has one oversized hand behind his head and a massive lazy grin, the picture of someone who has cracked the code. Carmela raises her glass in a slow triumphant toast, eyebrow cocked upward, expression radiating supreme satisfaction.
+
+Composition:
+Tight square crop.
+Characters close to the viewer.
+Joe and Carmela in their beach chairs with their dripping red wine glasses are the main focus.
+Deep burgundy background — no outdoor scene, no landscape.
+Clear visual hierarchy.
+One clear joke readable at thumbnail size.
+No text, no speech bubbles.
+Characters fill at least 70% of the frame, waist-up, close to the viewer.
+
+Negative prompt:
+No photorealism. No realistic portrait. No painterly rendering. No soft gradients. No 3D gloss. No realistic aging lines. No skin texture. No generic stock-cartoon faces. No tiny expressions. No cluttered background. No speech bubbles. No outdoor background. Do not make Joe or Carmela look like real-person portraits. Keep them bold, graphic, exaggerated, and funny.
+
+Use this as the style reference, but create a new scene. Do not copy the exact pose.
 ```
 
 ---

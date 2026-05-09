@@ -39,28 +39,56 @@ After reading house-rules.md, proceed with concept generation.
 
 ---
 
-## The approved prompt format — ep215 gold standard
+## The standard prompt format
 
-**This is the only acceptable format for fallback prompts. Read it carefully and match it exactly.**
+The confirmed working approach is: **upload the most recent approved cover art image to ChatGPT as a style reference, then paste the full prompt below.**
 
-> Bold editorial cartoon illustration. Three characters in a simplified wine bar setting. Left and center: Joe (middle-aged man, salt-and-pepper hair, full salt-and-pepper beard, black rectangular glasses, dark navy pullover) and Carmela (middle-aged woman, medium-length warm brown hair, gold hoop earrings, dark top) are turned toward each other, clinking wine glasses and grinning. Their glasses have small "$23" price tags dangling from the stems. Their body language is warm, conspiratorial, triumphant. They are completely ignoring what is happening behind them. Far right: A pompous cartoon sommelier in a black tuxedo, bow tie, and sommelier's chain. He is holding a silver presentation tray with a tall elegant wine bottle labeled "$50" on it, bowing slightly with great ceremony toward Joe and Carmela. He has turned to present the bottle and realized no one is looking at him. His expression is crestfallen, confused, slightly offended. He is being completely ignored. Style: Chunky exaggerated editorial cartoon. Thick black ink outlines. Flat bold color areas with minimal shading. Oversized expressive faces and hands. Warm high-contrast palette. Deep burgundy background. Poster-like composition with clear visual hierarchy. New Yorker cover meets modern animated comedy. No photorealism. No gradients. No text in the image. Square format optimized for podcast thumbnail readability.
+Use this multi-section format for every concept. It is the proven working template (confirmed ep216).
 
-**Structure of this prompt:**
-- One brief opening line: art style + setting
-- One paragraph per character: position, expression, body language, what they are doing
-- One style block at the end
+```
+Create a square editorial cartoon illustration for a wine podcast cover image.
 
-**That is the entire format. Nothing else.**
+Use this style exactly:
 
-**Banned sections — if any of these appear in your fallback prompt, delete them before outputting:**
-- `Style name:`
-- `Important style rules:`
-- `Recurring character bible:`
-- `Composition:`
-- `Negative prompt:`
+Style name: High-contrast wine-bar editorial cartoon
 
-**Banned phrase — must never appear anywhere in your output:**
-- `No wine labels` — this removes the key identifying prop and violates HR-10
+A bold, graphic, exaggerated cartoon style with chunky black ink outlines, flat saturated colors, oversized expressive faces and hands, theatrical body language, broad smiles, simple shapes, minimal shading, and a warm burgundy/red wine-bar palette. The image should feel like a magazine cover crossed with a premium adult animated comedy. It should be funny, energetic, and readable at small podcast-thumbnail size.
+
+Important style rules:
+Do not make this realistic.
+Do not make the characters portrait-like.
+Do not add realistic skin texture, realistic facial anatomy, painterly detail, soft lighting, gradients, or 3D effects.
+The people should be affectionate recurring cartoon host characters, not realistic portraits.
+Use simplified, exaggerated animated-comedy proportions.
+The characters should be expressive and specific, but not detailed or lifelike.
+The humor should come from expressions, staging, and visual contrast.
+
+Recurring character bible:
+
+Joe is a middle-aged cartoon man. He has black rectangular glasses, a full salt-and-pepper beard, salt-and-pepper hair, thick expressive eyebrows, and a dark navy pullover. He should have a big friendly grin, curious mischievous energy, and oversized expressive hands. He should look like a recurring animated version of Joe, not a realistic portrait and not a generic cartoon dad.
+
+Carmela is a middle-aged cartoon woman. She has medium-length warm brown hair, gold hoop earrings, expressive eyes, a dark top, and a bright amused smile. She should have theatrical body language and a delighted, sharp, funny reaction. She should look like a recurring animated version of Carmela, not a realistic portrait and not a generic surprised woman.
+
+Scene:
+[SCENE DESCRIPTION — both characters, expressions, body language, what they are doing, key props, wine bottle label text, background]
+
+Composition:
+Tight square crop.
+Characters close to the viewer.
+[Main focal elements] are the main focus.
+[Background description — deep burgundy, or simple wine bar setting — never an outdoor scene or named location].
+Clear visual hierarchy.
+One clear joke readable at thumbnail size.
+No text, no labels, no speech bubbles.
+
+Negative prompt:
+No photorealism. No realistic portrait. No painterly rendering. No soft gradients. No 3D gloss. No realistic aging lines. No skin texture. No generic stock-cartoon faces. No tiny expressions. No cluttered background. No text. No speech bubbles. Do not make Joe or Carmela look like real-person portraits. Keep them bold, graphic, exaggerated, and funny.
+
+Use this as the style reference, but create a new scene. Do not copy the exact pose.
+```
+
+**One banned phrase — must never appear anywhere in the negative prompt or anywhere else in your output:**
+- `No wine labels` — this removes the key identifying prop and violates HR-10. The wine bottle must have a readable label showing the wine name (e.g., "labeled 'FRAPPATO'"). Include this in the Scene section.
 
 ---
 
@@ -73,9 +101,9 @@ After reading house-rules.md, proceed with concept generation.
 5. One clear visual punchline. No competing focal points.
 6. Humor from expressions, staging, and contrast — not props alone.
 7. Joe and Carmela are the central characters.
-8. Wine bottle has a readable label showing the wine name (e.g., "labeled 'FRAPPATO'").
-9. Background is simple and dark — always "deep burgundy background" or "simplified wine bar setting." Never an outdoor scene, never a named location.
-10. Characters fill 70%+ of the frame, waist-up, close to the viewer — state this explicitly in every prompt.
+8. Wine bottle has a readable label showing the wine name — include this in the Scene section.
+9. Background is simple and dark — always "deep burgundy background" or "simplified wine bar setting." Never name a specific outdoor location.
+10. Characters fill 70%+ of the frame, waist-up, close to the viewer — state this in the Composition section.
 
 ---
 
@@ -83,7 +111,7 @@ After reading house-rules.md, proceed with concept generation.
 
 First, output this confirmation block:
 
-> **Cover art sub-agent ran.** Checked: character bible (Joe + Carmela descriptions from house-rules.md HR-14), approved style (ep215 gold-standard prompt structure — one paragraph per character, one style block, no extra sections), recent scene structures ([list the scenes you were given], all 10 brand rules. Each concept scored on 5 criteria. Recommended: Concept [X] ([N]/50).
+> **Cover art sub-agent ran.** Checked: character bible (Joe + Carmela descriptions from house-rules.md HR-14), approved style (multi-section format — Style name, Important style rules, Recurring character bible, Scene, Composition, Negative prompt), recent scene structures ([list the scenes you were given]), all 10 brand rules. Each concept scored on 5 criteria. Recommended: Concept [X] ([N]/50).
 
 Then present 3 concepts. For each:
 
@@ -103,19 +131,11 @@ Then present 3 concepts. For each:
 - Self-Explanatory: [N]/10 — [one-line reason]
 - **Total: [N]/50**
 
----
+*Scene description (what this looks like in plain English):*
+[2-3 sentences. What Joe and Carmela are doing, their expressions, the visual punchline.]
 
-**(PRIMARY) Scene description — paste this into ChatGPT after uploading the reference image:**
-
-> "Use this as the style reference, but create a new scene. Do not copy the exact pose."
-
-[3-5 sentences. Both characters' expressions, body language, what they are doing. Wine bottle label text. Background: deep burgundy or simple dark wine-bar — never an outdoor scene.]
-
----
-
-**(FALLBACK) Full ChatGPT prompt — only use this if no approved reference image is available:**
-
-[Follow the ep215 structure exactly: brief opening line, one paragraph per Joe, one paragraph per Carmela, props paragraph, style block. No extra sections. No negative prompt. No "No wine labels." Wine bottle label text must appear. Characters fill 70%+ of frame stated explicitly.]
+*ChatGPT prompt — upload approved reference image first, then paste this:*
+[Full multi-section format. Scene section filled in for this concept. Wine bottle label text included. Background is deep burgundy or simple wine bar — no outdoor scene. No "No wine labels" anywhere.]
 
 ---
 
