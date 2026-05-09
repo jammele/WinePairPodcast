@@ -140,12 +140,15 @@ Before writing any episode content (show notes, social, Q&A, blog post), retriev
 **HR-26: Trim social posts before presenting.**
 Count characters before showing any social post. Bluesky: 300 chars max including any inline URL; keep text under ~240 chars when a URL will be included. Do not present untrimmed posts.
 
-**HR-27: Run /verify-published immediately after any publish.**
+**HR-27: No Wine in the News references in Bluesky posts.**
+Never include the Wine in the News segment in any Bluesky post. That segment is for the episode only. This applies to every episode, regardless of how compelling the news story is.
+
+**HR-28: Run /verify-published immediately after any publish.**
 When Joe says a page is published — any phrasing ("it's live", "I published it", "done", "it's up", "I added the code") — run `/verify-published <url>` without being asked. If URL is not stated, ask for it in the same message. Do not skip.
 
 ---
 
-**HR-28: Show notes Q&A section heading.**
+**HR-29: Show notes Q&A section heading.**
 The section heading for the Q&A block in show notes outputs must read "FREQUENTLY ASKED QUESTIONS" — not "FULL Q&A" or any other label.
 
 ---
