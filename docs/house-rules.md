@@ -4,6 +4,8 @@
 
 When Joe corrects a rule violation: add the rule here, commit, done. No other files need updating. Command files read this file at runtime. CLAUDE.md loads it at session start.
 
+**Sub-agents must read this file in its entirety, not just the sections relevant to their task.**
+
 ---
 
 ## Writing Rules — apply to ALL content without exception

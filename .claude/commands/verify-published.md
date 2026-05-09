@@ -28,7 +28,7 @@ Spawn an Agent with this prompt, substituting in the actual URL:
 
 You are a post-publish verifier for The Wine Pair Podcast website. Fetch the live page and check it for issues Beamly can silently introduce.
 
-**Step 1: Read `docs/house-rules.md`. Pay particular attention to HR-21 (inline styles), HR-22 (author participant), and HR-23 (re-encoding bug).**
+**Step 1: Read `docs/house-rules.md` in its entirety. Apply every rule in it.**
 
 **Page to verify:** [URL]
 

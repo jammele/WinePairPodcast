@@ -7,4 +7,5 @@ outputs/drafts/
 *.db
 *.db-shm
 *.db-wal
+outputs/*-script-temp.txt
 null

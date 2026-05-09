@@ -16,7 +16,8 @@ When Joe asks for episode titles:
 4. Generate your initial title options (minimum 3)
 5. Spawn a subagent with the instructions below
 6. Fix every FAIL before presenting titles to Joe. Revise WARNINGs where possible.
-7. Show Joe only titles that passed review.
+7. After fixing any FAILs, spawn the subagent a second time on the revised titles. Do not show Joe any titles until the second run returns no FAILs.
+8. Show Joe only titles that passed the second review.
 
 ---
 

@@ -11,8 +11,7 @@ Any time Joe asks for a cover art image prompt, image concept, or ChatGPT prompt
 When Joe asks for cover art:
 
 1. Confirm episode number, title, featured wine name, key episode facts (ratings, central angle, tone)
-2. Read `C:\Users\jamme\.claude\projects\C--Users-jamme-podcast-os\memory\feedback_cover_art.md` — extract the full "Recent scenes" list verbatim. You will paste this into the subagent prompt below. Do not summarize it. Do not skip this step. Subagents cannot read this file themselves.
-3. Spawn a subagent with the instructions below, substituting actual episode details AND the recent scenes you just extracted.
+2. Spawn a subagent with the instructions below, substituting actual episode details. The sub-agent will read `data/cover-art-scenes.md` directly for the recent scenes list.
 
 ---
 
@@ -22,7 +21,9 @@ You are generating scored cover art concepts and ChatGPT prompts for The Wine Pa
 
 **Step 1: Read `docs/house-rules.md` in its entirety. Apply every rule in it. Pay particular attention to HR-9 through HR-14 (cover art rules) and HR-13 (scoring requirement).**
 
-After reading house-rules.md, proceed with concept generation.
+**Step 2: Read `data/cover-art-scenes.md`. This file contains the recent scene structures you must NOT repeat. Note them before generating any concepts.**
+
+After reading both files, proceed with concept generation.
 
 ---
 
@@ -35,7 +36,7 @@ After reading house-rules.md, proceed with concept generation.
 - Ratings: [JOE AND CARMELA RATINGS]
 
 **Recent scenes — do NOT repeat these structural types:**
-[PASTE THE FULL RECENT SCENES LIST FROM feedback_cover_art.md HERE — main agent extracted this before spawning you]
+(Read from `data/cover-art-scenes.md` in Step 2 above.)
 
 ---
 
@@ -147,4 +148,4 @@ After all 3 concepts:
 ---
 
 **Important reminder for the main agent after Joe picks a concept:**
-Update `C:\Users\jamme\.claude\projects\C--Users-jamme-podcast-os\memory\feedback_cover_art.md` — add the chosen concept's structural type to the Recent Scenes list. Remove oldest entry if list exceeds 4 items.
+Update `data/cover-art-scenes.md` — add the chosen concept's structural type to the Recent Scenes list. Remove oldest entry if the list exceeds 5 items.

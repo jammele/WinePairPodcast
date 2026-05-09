@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-09 (session 3)
+**Last updated:** 2026-05-09 (session 4)
 
 ---
 
@@ -144,6 +144,21 @@ Blog post sprint resumes after all spokes are live.
 - **June 14, 2026:** Check Pillar #2 intent shift; re-run AI discoverability tests
 
 ---
+
+## System changes made 2026-05-09 (session 4 — automation rebuild)
+
+- **Created `/generate-episode-content` slash command** (`.claude/commands/generate-episode-content.md`) — replaces unstructured main-agent improvisation for weekly episode SEO/AEO + social. Sub-agent reads `docs/house-rules.md` and `docs/voice-and-format.md` in full, produces KEY QUESTIONS, FREQUENTLY ASKED QUESTIONS, SCHEMA MARKUP (Review + FAQPage), and 10 BLUESKY POSTS with mandatory self-check before returning.
+- **Created `scripts/validate_episode.js`** — mechanical validator for episode output files, same pattern as `validate_spoke.js`. 12 checks: em-dashes in SEO section, required sections, FAQ heading, Q./A. format, Review Schema, FAQPage schema, Bluesky count = 10, post 1-3 URL structure, post 4-10 unique external URLs, character counts, Wine in the News markers, individual post em-dashes. Exit code 1 on errors.
+- **Created `data/cover-art-scenes.md`** — repo file for recent cover art scene history (ep215, ep216, ep217). Replaces hardcoded Windows path to memory file. Sub-agents can read it directly.
+- **Updated `/generate-cover-art`** — sub-agent now reads `data/cover-art-scenes.md` directly (Step 2) instead of requiring main-agent injection. "Important reminder" updated to point to repo file.
+- **Updated `/verify-published`** — sub-agent now reads house-rules.md in its entirety (was: "pay particular attention to HR-21, HR-22, HR-23").
+- **Updated `/review-titles`** — added mandatory re-run step: after fixing any FAILs, spawn sub-agent a second time on revised titles before showing Joe.
+- **Added header to `docs/house-rules.md`**: "Sub-agents must read this file in its entirety, not just the sections relevant to their task."
+- **Updated `CLAUDE.md` reference table** — added `/generate-episode-content` row; updated cover art row to reference `data/cover-art-scenes.md`; updated Wine in the News row (already present from earlier session).
+- **Consolidated Beamly docs** — `docs/publishing-checklist.md` re-encoding bullet now points to HR-23 instead of repeating the explanation.
+- **Updated `docs/project-brief.md`** — reflects current system state (was stale "v1 outcome").
+- **Deleted `outputs/ep217-script-temp.txt`**, added `outputs/*-script-temp.txt` to `.gitignore`.
+- **Validated ep217** — `validate_episode.js` passes clean on `outputs/episodes/ep217-frappato.md`.
 
 ## System changes made 2026-05-09 (session 3 — cover art system fix)
 

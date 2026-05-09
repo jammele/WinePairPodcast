@@ -104,7 +104,7 @@ If OAuth is broken: `rm google_token.json` then `node scripts/setup_google_auth.
 - **Update it during the task, not at the end of the session.** Every completed task, decision, or status change gets logged and committed before moving on to the next thing. Do not batch updates. Do not wait to be asked.
 - Commit and push after every update — never leave uncommitted work log changes
 - It tracks current state only — remove completed items once they are no longer relevant
-- Memory files that need updating (e.g. `feedback_cover_art.md` after a concept is picked) follow the same rule: update immediately, not at session end
+- Repo data files that need updating (e.g. `data/cover-art-scenes.md` after a concept is picked) follow the same rule: update immediately, not at session end
 
 ---
 
@@ -115,7 +115,8 @@ If OAuth is broken: `rm google_token.json` then `node scripts/setup_google_auth.
 | Writing a spoke page | `docs/spoke-page-checklist.md` — run all 3 passes. After writing: `node scripts/validate_spoke.js` then `/review-wine-cards` then `/review-spoke` before showing Joe anything. Draft must include FAQPage schema block at the bottom with COPY START / COPY END markers. |
 | Writing a blog post | `docs/blog-post-guide.md` — draft must include Review Schema, FAQPage schema block, and all Beamly fields at the bottom with COPY START / COPY END markers. |
 | Publishing a page | `docs/publishing-checklist.md` — after Joe publishes: run `/verify-published <url>` to confirm schema, card badges, author byline, and meta description are all rendering correctly. |
-| Cover art image prompts | Run `/generate-cover-art` — mandatory before showing Joe any concepts. After Joe picks a concept, immediately update the Recent Scenes section of `C:\Users\jamme\.claude\projects\C--Users-jamme-podcast-os\memory\feedback_cover_art.md` and commit the work log. |
+| Cover art image prompts | Run `/generate-cover-art` — mandatory before showing Joe any concepts. After Joe picks a concept, immediately update `data/cover-art-scenes.md` (add chosen concept's structural type, remove oldest if list exceeds 5) and commit. |
+| Episode SEO/AEO content and Bluesky posts | Run `/generate-episode-content` — reads episode script, spawns sub-agent, saves to `outputs/episodes/ep[N]-[slug].md`, runs `node scripts/validate_episode.js`. Fix all errors before showing Joe. |
 | Episode copy, show notes, social copy | `docs/voice-and-format.md` |
 | Wine in the News segment | `docs/wine-in-the-news.md` — read before finding stories or writing the script |
 | SEO strategy and priorities | `docs/seo-geo-strategy.md` |

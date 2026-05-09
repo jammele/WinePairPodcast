@@ -189,7 +189,7 @@ Style: Chunky exaggerated editorial cartoon. Thick black ink outlines. Flat bold
 ---
 
 ### KEY QUESTIONS
-*(Place at top of show notes — questions only, no answers)*
+*(Place at top of show notes. Questions only, no answers.)*
 
 - What is Frappato wine?
 - What does Frappato taste like?
@@ -334,8 +334,6 @@ A. If you like light, fresh, food-friendly reds, yes. We rated the 2022 Valle De
 ### BLUESKY POSTS (10)
 *(Swap thewinepairpodcast.com for specific episode URL when published)*
 
-#### TEASERS
-
 **1.**
 You're not supposed to chill red wine. Except sometimes you are. This week we tried Frappato, Sicily's chillable red that's made to go in the fridge. Two bottles, honest ratings, one clear winner.
 thewinepairpodcast.com
@@ -347,8 +345,6 @@ thewinepairpodcast.com
 **3.**
 We tasted two Frappatos this week. One got an 8 from both of us. The other got a 6. Same grape, same island, very different results. Which is worth buying? New ep.
 thewinepairpodcast.com
-
-#### FACT / VALUE POSTS
 
 **4.**
 Frappato is genetically related to Sangiovese, the grape in Chianti and Brunello. A Sicilian native and a Tuscan icon, connected by DNA. Italian wine is full of surprises.
