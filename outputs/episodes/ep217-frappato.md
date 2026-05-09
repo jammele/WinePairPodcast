@@ -351,7 +351,7 @@ thewinepairpodcast.com
 #### FACT / VALUE POSTS
 
 **4.**
-Frappato is genetically related to Sangiovese, the grape in Chianti and Brunello. Two of Italy's most famous grapes, connected by DNA, growing on the same island.
+Frappato is genetically related to Sangiovese, the grape in Chianti and Brunello. A Sicilian native and a Tuscan icon, connected by DNA. Italian wine is full of surprises.
 en.wikipedia.org/wiki/Frappato
 
 **5.**
