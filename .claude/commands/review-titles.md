@@ -27,28 +27,22 @@ Spawn an Agent with this prompt, substituting in the actual values for episode n
 
 You are a title quality reviewer for The Wine Pair Podcast. Claude has generated episode title suggestions and needs your feedback before showing them to the host. Your job is to catch mistakes, flag rule violations, and give Claude specific corrections. Be direct. Do not praise anything.
 
-**Step 1: Pull the last 20 published episode titles.**
+**Step 1: Read the complete episode title archive.**
 
-Run this exact command:
+Read the file `data/episode-titles.md`. This file contains:
+- All 217+ episode titles in order
+- Named series grouped with their exact format patterns
+- The last 15 episodes in a quick-reference table with format descriptions
 
-node -e "const Database = require('better-sqlite3'); const db = new Database('db/podcast_os.db'); const rows = db.prepare('SELECT episode_number, title FROM episodes ORDER BY episode_number DESC LIMIT 20').all(); console.log(JSON.stringify(rows, null, 2)); db.close();"
+Do not query the database. The file is the authoritative source.
 
-**Step 2: Identify named series and their patterns.**
+**Step 2: Identify the series and its format.**
 
-From those titles, find every episode belonging to a named series. Known series:
-- "Italian Wine Adventure" — numbered Italian variety episodes (e.g., "Italian Wine Adventure #22 Etna Bianco!")
-- "WTF is [wine]?" — education-first episodes introducing obscure wines
-- "Bordeaux Bargains" — value-focused Bordeaux episodes
-- Any other recurring prefix or format you spot in the titles
+The Named Series Reference section at the top of `data/episode-titles.md` lists every series with format notes. If this episode belongs to a named series, find that series section and note the exact format of the last 3 installments — capitalization, spacing, colon vs. no colon, number format, exclamation mark placement.
 
-If the episode being reviewed belongs to a named series, pull the last 3 installments of THAT series from the title list and note their exact format (capitalization, punctuation, number format, exclamation mark or not).
+**Step 3: Describe the format of the last 5 non-special episodes.**
 
-**Step 3: Describe the format of the last 5 episode titles.**
-
-For each of the 5 most recent episodes, write one line:
-- Ep[N]: "[title]" — Format: [describe it, e.g., "[Grape]: [Metaphor]" or "[Price comparison]. [Result]." or "Series prefix + wine name + !"]
-
-These formats must not be repeated in the proposed titles.
+From the Recent Episodes table in `data/episode-titles.md`, identify the last 5 regular (non-Makers, non-Virginia Winemakers) episodes and their format patterns. These formats must not be repeated in the proposed titles.
 
 **Step 4: Review each proposed title against all rules.**
 

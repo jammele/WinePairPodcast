@@ -105,4 +105,4 @@ If OAuth is broken: `rm google_token.json` then `node scripts/setup_google_auth.
 | Episode copy, show notes, social copy | `docs/voice-and-format.md` |
 | SEO strategy and priorities | `docs/seo-geo-strategy.md` |
 | Project context and show identity | `docs/soul-document.md` |
-| Episode title generation | `memory/title_writing.md` (read before every title task; check last 3–5 episode titles first). Then run `/review-titles` — **mandatory before showing Joe any options.** |
+| Episode title generation | `memory/title_writing.md` (read before every title task). Run `/review-titles` — **mandatory before showing Joe any options.** Sub-agent reads `data/episode-titles.md` (complete archive + series patterns). When a title is confirmed, add it to `data/episode-titles.md` before committing. |
