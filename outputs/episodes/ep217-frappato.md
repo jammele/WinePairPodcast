@@ -181,3 +181,199 @@ The gleaming silver ice bucket sits prominently in the foreground between them, 
 
 Style: Chunky exaggerated editorial cartoon. Thick black ink outlines. Flat bold color areas with minimal shading. Oversized expressive faces and hands. Warm high-contrast palette. Rich warm burgundy background. Poster-like composition with clear visual hierarchy. New Yorker cover meets modern animated comedy. No photorealism. No gradients. No outdoor scenes. No detailed backgrounds. Characters fill at least 70% of the frame, waist-up, close to the viewer. Square format optimized for podcast thumbnail readability.
 ```
+
+---
+
+## SEO / AEO + SOCIAL CONTENT
+
+---
+
+### KEY QUESTIONS
+*(Place at top of show notes — questions only, no answers)*
+
+- What is Frappato wine?
+- What does Frappato taste like?
+- Should you chill Frappato?
+- Is Frappato similar to Pinot Noir?
+- How does Frappato compare to Beaujolais?
+- What food pairs with Frappato?
+- Is Frappato a good wine to buy?
+
+---
+
+### FULL Q&A
+*(Place at bottom of show notes)*
+
+**Q. What is Frappato wine?**
+A. Frappato is a light-bodied red wine from Sicily, made from a grape with roots dating to the 1760s and possibly as far back as the 1600s. DNA research links it to Sangiovese, the grape in Chianti and Brunello. It's known for bright red fruit, floral aromas, high acidity, and low tannins. Most people call it a "chillable red" and it earns that reputation.
+
+**Q. What does Frappato taste like?**
+A. Classic Frappato tastes like fresh strawberry, tart cherry, pomegranate, and raspberry, with notes of white pepper, cinnamon, and floral or herbal undertones like rose petal or sage. It's light and bright, not heavy or tannic. We got rose petals, cherry candy, anise, and a steely, refreshing finish on the Valle Dell'Acate we tasted.
+
+**Q. Should you chill Frappato?**
+A. Yes, always. Frappato's recommended serving temperature is 57 to 61 degrees Fahrenheit, which is cellar temperature, not fridge-cold. The easy rule: put it in the fridge 20 to 30 minutes before you pour. Chilling brightens the fruit and sharpens the acidity. It makes a good wine noticeably better.
+
+**Q. Is Frappato similar to Pinot Noir?**
+A. Yes, and wine people make that comparison often. Both are light-bodied, high-acid, low-tannin reds with red fruit flavors and an elegant structure. The difference: Frappato is brighter and fruitier with more floral notes, while Pinot Noir tends toward earthier, more complex territory. If you love one, you'll likely enjoy the other.
+
+**Q. How does Frappato compare to Beaujolais?**
+A. They're closer than most people realize. Both are made from light, high-acid grapes, and some Frappato producers use carbonic maceration, the same technique that defines Beaujolais. The key difference is origin and grape: Frappato is Sicilian, Gamay is French. Both are chillable, food-friendly, and criminally underrated.
+
+**Q. What food pairs with Frappato?**
+A. Frappato is one of the better picnic and cookout wines out there. We paired it with sandwiches and grilled foods: a steak sandwich, meatball sub, cubano, pork cutlet. It also works with charcuterie, grilled pizza, blue cheese burgers, and Cobb salad. Light enough to let the food shine.
+
+**Q. Is Frappato a good wine to buy?**
+A. If you like light, fresh, food-friendly reds, yes. We rated the 2022 Valle Dell'Acate Il Frappato Vittoria an 8 out of 10 and both chose it as the wine we'd finish that night. The 2024 Gurrieri earned a 6 from both of us. Look for the Valle Dell'Acate first.
+
+---
+
+### SCHEMA MARKUP
+*(Add to show notes page code block)*
+
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Product",
+    "name": "2022 Valle Dell'Acate Il Frappato Vittoria",
+    "offers": {"@type": "Offer", "price": "22.99", "priceCurrency": "USD"}
+  },
+  "reviewRating": {"@type": "Rating", "ratingValue": "8", "bestRating": "10", "worstRating": "1"},
+  "author": [{"@type": "Person", "name": "Joe"}, {"@type": "Person", "name": "Carmela"}],
+  "publisher": {"@type": "Organization", "name": "The Wine Pair Podcast"},
+  "reviewBody": "Elegant, aromatic 100% Frappato from Vittoria, Sicily. Rose petals, cherry candy, and anise on the nose. Red licorice, tart cherry, and strawberry bramble in the mouth with a refreshing, steely finish. More structure than expected. Best served lightly chilled. Joe rated 8/10, Carmela rated 8/10. Both chose it as their finish-tonight wine."
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Product",
+    "name": "2024 Gurrieri Frappato",
+    "offers": {"@type": "Offer", "price": "27.97", "priceCurrency": "USD"}
+  },
+  "reviewRating": {"@type": "Rating", "ratingValue": "6", "bestRating": "10", "worstRating": "1"},
+  "author": [{"@type": "Person", "name": "Joe"}, {"@type": "Person", "name": "Carmela"}],
+  "publisher": {"@type": "Organization", "name": "The Wine Pair Podcast"},
+  "reviewBody": "100% Frappato from the Ragusa area, Sicily. Potpourri, dried flowers, and cinnamon candy on the nose. Sticky tannins and fruit tea in the mouth, with some red fruit and a bit of austerity. Interesting but lacks balance. Joe rated 6/10, Carmela rated 6/10."
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Frappato wine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Frappato is a light-bodied red wine from Sicily, made from a grape with roots dating to the 1760s and possibly as far back as the 1600s. DNA research links it to Sangiovese, the grape in Chianti and Brunello. It's known for bright red fruit, floral aromas, high acidity, and low tannins. Most people call it a 'chillable red' and it earns that reputation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does Frappato taste like?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Classic Frappato tastes like fresh strawberry, tart cherry, pomegranate, and raspberry, with notes of white pepper, cinnamon, and floral or herbal undertones like rose petal or sage. It's light and bright, not heavy or tannic. We got rose petals, cherry candy, anise, and a steely, refreshing finish on the Valle Dell'Acate we tasted."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should you chill Frappato?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, always. Frappato's recommended serving temperature is 57 to 61 degrees Fahrenheit, which is cellar temperature, not fridge-cold. The easy rule: put it in the fridge 20 to 30 minutes before you pour. Chilling brightens the fruit and sharpens the acidity. It makes a good wine noticeably better."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Frappato similar to Pinot Noir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and wine people make that comparison often. Both are light-bodied, high-acid, low-tannin reds with red fruit flavors and an elegant structure. The difference: Frappato is brighter and fruitier with more floral notes, while Pinot Noir tends toward earthier, more complex territory. If you love one, you'll likely enjoy the other."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Frappato compare to Beaujolais?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They're closer than most people realize. Both are made from light, high-acid grapes, and some Frappato producers use carbonic maceration, the same technique that defines Beaujolais. The key difference is origin and grape: Frappato is Sicilian, Gamay is French. Both are chillable, food-friendly, and criminally underrated."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What food pairs with Frappato?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Frappato is one of the better picnic and cookout wines out there. We paired it with sandwiches and grilled foods: a steak sandwich, meatball sub, cubano, pork cutlet. It also works with charcuterie, grilled pizza, blue cheese burgers, and Cobb salad. Light enough to let the food shine."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Frappato a good wine to buy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you like light, fresh, food-friendly reds, yes. We rated the 2022 Valle Dell'Acate Il Frappato Vittoria an 8 out of 10 and both chose it as the wine we'd finish that night. The 2024 Gurrieri earned a 6 from both of us. Look for the Valle Dell'Acate first."
+      }
+    }
+  ]
+}
+</script>
+```
+
+---
+
+### BLUESKY POSTS (10)
+*(Swap thewinepairpodcast.com for specific episode URL when published)*
+
+#### TEASERS
+
+**1.**
+You're not supposed to chill red wine. Except sometimes you are. This week we tried Frappato, Sicily's chillable red that's made to go in the fridge. Two bottles, honest ratings, one clear winner.
+thewinepairpodcast.com
+
+**2.**
+Frappato is what happens when Sicily stops trying to impress everyone and just makes a delicious, fun red wine. Light, fruity, food-friendly, best served cold. New ep out now.
+thewinepairpodcast.com
+
+**3.**
+We tasted two Frappatos this week. One got an 8 from both of us. The other got a 6. Same grape, same island, very different results. Which is worth buying? New ep.
+thewinepairpodcast.com
+
+#### FACT / VALUE POSTS
+
+**4.**
+Frappato is genetically related to Sangiovese, the grape in Chianti and Brunello. Two of Italy's most famous grapes, connected by DNA, growing on the same island.
+en.wikipedia.org/wiki/Frappato
+
+**5.**
+The first written record of Frappato is from 1760, noted by a Sicilian botanist. Some regional records place it in the 1600s. This "trendy chillable red" has been around for centuries.
+en.wikipedia.org/wiki/Frappato
+
+**6.**
+Cerasuolo di Vittoria is Sicily's only DOCG, the highest quality designation in Italian wine. It's a blend of Nero d'Avola and Frappato. That's how important this grape actually is.
+en.wikipedia.org/wiki/Cerasuolo_di_Vittoria_DOCG
+
+**7.**
+Frappato is meant to be served at 57 to 61 degrees Fahrenheit. Cellar temp, not fridge-cold. The 20/20 rule: put it in the fridge 20 to 30 minutes before you pour. Better wine, zero effort.
+thewinepairpodcast.com
+
+**8.**
+Some Frappato producers use carbonic maceration, the same technique behind Beaujolais. Grapes ferment inside their own skins. The result: brighter fruit, lower tannins, more candy-like flavors.
+en.wikipedia.org/wiki/Frappato
+
+**9.**
+Frappato is starting to grow in California, including Paso Robles. Sicily's native chillable red is showing up in warm-climate wine regions worldwide. It's early, but worth watching.
+thewinepairpodcast.com
+
+**10.**
+The name "Frappato" comes from the Sicilian word meaning "many clusters." It was named by farmers who identified vines by their physical traits. Peasant wine with a very fancy reputation now.
+en.wikipedia.org/wiki/Frappato

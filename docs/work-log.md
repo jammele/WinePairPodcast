@@ -89,6 +89,17 @@ Blog post sprint resumes after all spokes are live.
 
 ---
 
+### Episode 217 — Frappato
+
+**Status:** SEO/AEO complete. Cover art Concept C (ice bucket ceremony) selected. Ready to publish.
+**Google Doc ID:** 1R8HMN-gf8kfT7Dxqvmm8rXC2f4g6wGkT_1h5vQ243yo
+**Confirmed title:** Italian Wine Adventure #24: Frappato! The Chillable Red Wine!
+**Wines:** 2022 Valle Dell'Acate Il Frappato Vittoria ($22.99) — Joe 8, Carmela 8 | 2024 Gurrieri Frappato ($27.97) — Joe 6, Carmela 6
+**Finish tonight:** Both chose Valle Dell'Acate
+**Outputs:** `outputs/episodes/ep217-frappato.md` — Cover art (3 concepts), Key Questions, Q&A, Schema markup (Review x2 + FAQPage), 10 Bluesky posts
+
+---
+
 ### Episode 215 — Oregon Pinot Noir cheap vs. expensive
 
 **Status:** Recorded. Title and cover art approved. SEO/GEO copy not yet written.
@@ -161,7 +172,7 @@ Blog post sprint resumes after all spokes are live.
 
 ## System changes made 2026-05-09
 
-- **Episode 217 — Frappato:** Google Doc found (`1R8HMN-gf8kfT7Dxqvmm8rXC2f4g6wGkT_1h5vQ243yo`). Title confirmed by Joe: "Italian Wine Adventure #24: Frappato! The Chillable Red Wine!" Wines: 2022 Valle Dell'Acate Il Frappato Vittoria ($22.99) — Joe 8, Carmela 8 | 2024 Gurrieri Frappato ($27.97) — Joe 6, Carmela 6. Both chose Valle Dell'Acate to finish. Cover art: 3 concepts generated (Concept A: fridge confession; Concept B: beach chairs / smug summer energy; Concept C: ice bucket ceremony). Outputs: `outputs/episodes/ep217-frappato.md`. Joe to confirm which concept, then update `memory/feedback_cover_art.md` Recent Scenes section.
+- **Episode 217 — Frappato:** Google Doc found (`1R8HMN-gf8kfT7Dxqvmm8rXC2f4g6wGkT_1h5vQ243yo`). Title confirmed by Joe: "Italian Wine Adventure #24: Frappato! The Chillable Red Wine!" Wines: 2022 Valle Dell'Acate Il Frappato Vittoria ($22.99) — Joe 8, Carmela 8 | 2024 Gurrieri Frappato ($27.97) — Joe 6, Carmela 6. Both chose Valle Dell'Acate to finish. Cover art: 3 concepts generated (Concept A: fridge confession; Concept B: beach chairs / smug summer energy; Concept C: ice bucket ceremony — SELECTED). SEO/AEO: Key Questions (7), Full Q&A (7 questions, 40-60 words each), Review Schema (Valle Dell'Acate 8/10, Gurrieri 6/10), FAQPage schema, and 10 Bluesky posts all written and saved to `outputs/episodes/ep217-frappato.md`. Ready to publish.
 - **Created `/review-titles` slash command** at `.claude/commands/review-titles.md` — mandatory internal QA step before showing Joe any episode title suggestions. Subagent pulls last 20 episode titles from database, identifies named series patterns (Italian Wine Adventure, WTF, Bordeaux Bargains), checks every proposed title against all rules (grape/region required, no format repeat, no spam words, character count, first-30-chars rule, series format consistency), and scores each option (AI Discovery + Clickability). Claude must fix all FAILs before presenting to Joe.
 - **Updated CLAUDE.md** — added `/review-titles` requirement to the reference table for episode title generation.
 - **Updated `memory/feedback_title_generation.md`** — added mandatory /review-titles rule, named series format reference.
