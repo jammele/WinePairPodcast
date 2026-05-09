@@ -151,8 +151,8 @@ When Joe says a page is published — any phrasing ("it's live", "I published it
 **HR-29: Show notes Q&A section heading.**
 The section heading for the Q&A block in show notes outputs must read "FREQUENTLY ASKED QUESTIONS" — not "FULL Q&A" or any other label.
 
-**HR-30: Bluesky post URLs must be unique within the same episode's posts.**
-Each Bluesky post must link to a different URL. Never repeat the same URL across posts in the same episode's set, with the sole exception of thewinepairpodcast.com (or a specific episode URL on that domain), which may appear multiple times. Use the episode script's research links to assign unique sources.
+**HR-30: Bluesky post URLs — teasers link to the podcast, fact posts link to unique external sources.**
+The first 3 posts (teasers) link to thewinepairpodcast.com or the specific episode URL. Posts 4 through 10 (fact/value posts) must each link to a unique external URL — no repeats, and no thewinepairpodcast.com. Use the episode script's research links to assign unique sources. Every fact post must have a different URL.
 
 ---
 

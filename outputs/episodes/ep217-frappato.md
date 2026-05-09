@@ -364,7 +364,7 @@ en.wikipedia.org/wiki/Cerasuolo_di_Vittoria_DOCG
 
 **7.**
 Frappato is meant to be served at 57 to 61 degrees Fahrenheit. Cellar temp, not fridge-cold. The 20/20 rule: put it in the fridge 20 to 30 minutes before you pour. Better wine, zero effort.
-thewinepairpodcast.com
+vinerra.com/education/wines/frappato-an-in-depth-wine-profile
 
 **8.**
 Some Frappato producers use carbonic maceration, the same technique behind Beaujolais. Grapes ferment inside their own skins. The result: brighter fruit, lower tannins, more candy-like flavors.
@@ -372,7 +372,7 @@ everydaydrinking.com/p/frappato-feels-fresh-and-friendly
 
 **9.**
 Frappato is starting to grow in California, including Paso Robles. Sicily's native chillable red is showing up in warm-climate wine regions worldwide. It's early, but worth watching.
-thewinepairpodcast.com
+enobytes.com/2026/01/13/lesser-known-varietals-making-waves/
 
 **10.**
 The name "Frappato" comes from the Sicilian word meaning "many clusters." It was named by farmers who identified vines by their physical traits. Peasant wine with a very fancy reputation now.
