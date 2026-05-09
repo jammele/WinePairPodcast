@@ -356,7 +356,7 @@ en.wikipedia.org/wiki/Frappato
 
 **5.**
 The first written record of Frappato is from 1760, noted by a Sicilian botanist. Some regional records place it in the 1600s. This "trendy chillable red" has been around for centuries.
-en.wikipedia.org/wiki/Frappato
+cellartours.com/blog/italy/a-sicilian-treasure-the-frappato-grape-variety
 
 **6.**
 Cerasuolo di Vittoria is Sicily's only DOCG, the highest quality designation in Italian wine. It's a blend of Nero d'Avola and Frappato. That's how important this grape actually is.
@@ -368,7 +368,7 @@ thewinepairpodcast.com
 
 **8.**
 Some Frappato producers use carbonic maceration, the same technique behind Beaujolais. Grapes ferment inside their own skins. The result: brighter fruit, lower tannins, more candy-like flavors.
-en.wikipedia.org/wiki/Frappato
+everydaydrinking.com/p/frappato-feels-fresh-and-friendly
 
 **9.**
 Frappato is starting to grow in California, including Paso Robles. Sicily's native chillable red is showing up in warm-climate wine regions worldwide. It's early, but worth watching.
@@ -376,4 +376,4 @@ thewinepairpodcast.com
 
 **10.**
 The name "Frappato" comes from the Sicilian word meaning "many clusters." It was named by farmers who identified vines by their physical traits. Peasant wine with a very fancy reputation now.
-en.wikipedia.org/wiki/Frappato
+wine-searcher.com/grape-173-frappato
