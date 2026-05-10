@@ -291,7 +291,7 @@ One code block per page. For each page below:
       "name": "What reds can you serve chilled?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Gamay and Beaujolais are the most common chillable reds. Grignolino, Valpolicella, Blaufränkisch, Zweigelt, Grenache, and lighter Pinot Noirs all do well slightly chilled. Full-bodied, tannic reds like Cabernet Sauvignon and Barolo should be served closer to room temperature."
+        "text": "Gamay and Beaujolais are the most common chillable reds. Grignolino, Frappato, Valpolicella, Blaufränkisch, Zweigelt, Grenache, and lighter Pinot Noirs all do well slightly chilled. Full-bodied, tannic reds like Cabernet Sauvignon and Barolo should be served closer to room temperature."
       }
     },
     {

@@ -163,6 +163,12 @@ Applies to both finding story options and drafting the segment script. Do not sk
 **HR-33: Update the work log and commit immediately after saving any file to outputs/ or data/.**
 Do not wait until the end of the session. Do not wait to be asked. The sequence is: save file → update docs/work-log.md → commit both → then move on. A PostToolUse hook will fire as a mechanical reminder, but the rule applies regardless of the hook.
 
+**HR-34: Read docs/work-log.md before any site performance analysis.**
+Before analyzing GSC data, website traffic, search rankings, or SEO opportunities: read `docs/work-log.md` in full. Never draw conclusions about site status, page existence, hub/spoke state, or project priorities without reading the work log first. The work log is the authority on what pages exist, what's been published, and what's in progress.
+
+**HR-35: Verify all URLs before including them in deliverables.**
+Before putting any URL into an output document, verify it returns a real page using WebFetch or WebSearch. A 404 in a deliverable is worse than no link. Do not construct URLs from episode titles — find them from the live site. If a URL cannot be verified, say so explicitly rather than including an unverified link.
+
 ---
 
 ## Rule Update Protocol

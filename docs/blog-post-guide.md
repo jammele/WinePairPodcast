@@ -86,8 +86,10 @@ Rules:
 - No em dashes. No generic wine language ("earthy undertones," "bright acidity," "silky tannins").
 - Questions should match real search queries.
 
-### 8. Review Schema
-One script block per wine. Added as a code block inside the post body in Beamly — at the very bottom of the page, after the FAQ. Same method as the Buzzsprout embed. Note: blog pages do not have head code injection; the body code block works fine for JSON-LD schema (Google reads it wherever it appears on the page). See template below.
+### 8. FAQPage Schema and Review Schema
+**Check `outputs/seo-aeo/faqpage-schema-blocks.md` first.** If a FAQPage schema block already exists for this post, use it — do not regenerate from the live page. If the schema needs updating (e.g., adding a new example to an answer), update the canonical file and use that version in the deliverable. Only generate a new block from scratch if one does not already exist.
+
+Review Schema: one script block per wine. Added as a code block inside the post body in Beamly — at the very bottom of the page, after the FAQ. Same method as the Buzzsprout embed. Note: blog pages do not have head code injection; the body code block works fine for JSON-LD schema (Google reads it wherever it appears on the page). See template below.
 
 ---
 

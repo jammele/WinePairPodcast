@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-09 (session 5)
+**Last updated:** 2026-05-10 (session 6)
 
 ---
 
@@ -149,6 +149,24 @@ Blog post sprint resumes after all spokes are live.
 
 **Status:** Wine in the News script ready. Episode topic TBD.
 **Wine in the News:** Oregon winery AI fake citations story (Valley View Winery family dispute) — `outputs/episodes/ep218.md`
+
+---
+
+## System changes made 2026-05-10 (session 6 — conversation audit + chillable wine SEO)
+
+### Chillable Red Wine SEO work
+- Analyzed May 10 GSC data. Minisode #19 has 21,923 impressions at position 4.84 with 0.07% CTR — format mismatch (podcast title signal suppressing clicks). Blog post is 11 days old, position 7.75, not yet ranking competitively.
+- Created `outputs/seo-updates-chill-red-wine-2026-05-10.md` — 4-item action list for Joe: blog post meta desc, Minisode #19 meta desc, Frappato body paragraph + FAQ update, FAQPage schema.
+- Updated `outputs/seo-aeo/faqpage-schema-blocks.md` — added Frappato to the "What reds can you serve chilled?" answer in the "Should You Chill Red Wine?" schema block.
+- EP217 (Frappato) confirmed live as of 2026-05-10. Episode URL: `/episode/italian-wine-adventure-24-frappato-the-chillable-red-wine`
+
+### System audit — issues found and fixed
+Root cause: session startup was not run at the start of this conversation. Work log was not read. This caused: (1) hub page misidentification — corrected by Joe; (2) FAQPage schema regenerated from scratch when the canonical version already existed in faqpage-schema-blocks.md.
+
+**Files changed:**
+- `CLAUDE.md` — added blocking startup language ("STOP. Do not respond until startup is complete"); added sub-agent context rule to Core Behaviors
+- `docs/house-rules.md` — added HR-34 (read work-log.md before any site performance analysis) and HR-35 (verify all URLs before including in deliverables)
+- `docs/blog-post-guide.md` — added rule: check faqpage-schema-blocks.md before regenerating FAQPage schema; use canonical file, update it if needed
 
 ---
 

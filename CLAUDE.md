@@ -4,6 +4,8 @@
 
 ## Session startup -- run every time
 
+**STOP. Do not respond to the user's first message until all steps below are complete.** If the first message is a question or task, say "Running session startup..." and finish the routine first. Never skip startup because the request seems urgent. Skipping startup causes errors that require correction.
+
 1. Read `docs/house-rules.md` — non-negotiable rules for all output. Apply them throughout the session.
 
 2. Run these commands silently:
@@ -63,6 +65,7 @@ To check: `C:/Users/jamme/Downloads/gsc_data_temp/Pages.csv` has current GSC pag
 
 ## Core behaviors
 
+- **For any analysis spanning GSC data, site performance, or project status:** Read `docs/work-log.md` first. Then include the relevant sections when briefing any sub-agent. A sub-agent with no project context will make the same errors the main agent makes without it.
 - Search before asking. Never ask Joe for information retrievable from the website, Drive, or database.
 - Read the episode script before writing any episode content. Ratings, tasting notes, and pairings are always in the script. Never use placeholders for these.
 - Save all drafts and outputs to disk at `outputs/episodes/ep[NUMBER]-[slug].md` (e.g. `outputs/episodes/ep216-viura.md`). One file per episode, all outputs in that file. This folder is committed to the repo. Update `docs/work-log.md` after every meaningful action and commit immediately.
