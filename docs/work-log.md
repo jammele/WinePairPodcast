@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-09 (session 4)
+**Last updated:** 2026-05-09 (session 5)
 
 ---
 
@@ -142,6 +142,21 @@ Blog post sprint resumes after all spokes are live.
 
 - **May 2-5, 2026:** Check indexing status on all 4 submitted posts
 - **June 14, 2026:** Check Pillar #2 intent shift; re-run AI discoverability tests
+
+---
+
+## Episode 218 — upcoming
+
+**Status:** Wine in the News script ready. Episode topic TBD.
+**Wine in the News:** Oregon winery AI fake citations story (Valley View Winery family dispute) — `outputs/episodes/ep218.md`
+
+---
+
+## System changes made 2026-05-09 (session 5 — Wine in the News archive)
+
+- **Created `data/wine-in-the-news-archive.md`** — running log of past Wine in the News stories. Claude reads this before searching for new stories to avoid suggesting stories already covered. Seeded with two confirmed entries: Bordeaux Cellars wine fraud (EP unknown) and Oregon winery AI fake citations (EP218). Update after every story selection.
+- **Updated `docs/wine-in-the-news.md`** — added archive read step (before searching) and archive update step (after story is selected and committed).
+- **EP218 Wine in the News script saved** to `outputs/episodes/ep218.md`. Source: Wealth Management, May 6, 2026.
 
 ---
 
