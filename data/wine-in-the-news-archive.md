@@ -11,3 +11,9 @@ British man James Wellesley (aliases Andrew Fuller, Andrew Templar) ran fake win
 Tags: fraud, Ponzi scheme, fake company, wine investment
 
 ---
+
+**EP218 | 2026-05-09 | Wealth Management**
+Sister sued brothers over family winery inheritance (Valley View Winery, Oregon), her lawyers submitted 15 AI-hallucinated court citations and 8 fake quotations to the judge across 3 filings over 5 months -- judge dismissed case and imposed $100K+ sanctions (potentially largest ever for AI misconduct); evidence suggests sister wrote the briefs herself.
+Tags: AI, lawsuit, family business, winery, legal misconduct
+
+---
