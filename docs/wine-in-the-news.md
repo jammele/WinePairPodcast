@@ -67,6 +67,20 @@ If Joe provides a specific article, skip the options step and go straight to the
 
 ---
 
+## Before writing the script
+
+Before writing a single word of the script, fetch the article in full and extract:
+- Every named person (full name and role)
+- Every specific number (people, dollars, counts, dates)
+- The complete sequence of events, including backstory
+- Any detail that makes the story more absurd or human
+
+Cross-check key facts (especially counts and names) against at least one additional source. A WebFetch summary is not sufficient -- summaries drop details. If a fact cannot be confirmed, do not include it.
+
+Do not start writing until this checklist is complete.
+
+---
+
 ## Mandatory segment format
 
 Every Wine in the News draft must follow this exact 5-part structure, confirmed from EP214:

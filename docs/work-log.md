@@ -156,7 +156,7 @@ Blog post sprint resumes after all spokes are live.
 
 - **Created `data/wine-in-the-news-archive.md`** — running log of past Wine in the News stories. Claude reads this before searching for new stories to avoid suggesting stories already covered. Seeded with two confirmed entries: Bordeaux Cellars wine fraud (EP unknown) and Oregon winery AI fake citations (EP218). Update after every story selection.
 - **Updated `docs/wine-in-the-news.md`** — added archive read step (before searching) and archive update step (after story is selected and committed).
-- **EP218 Wine in the News script saved** to `outputs/episodes/ep218.md`. Source: Wealth Management, May 6, 2026.
+- **EP218 Wine in the News script saved** to `outputs/episodes/ep218.md`. Source: Wealth Management, May 6, 2026. Script corrected after initial draft had factual errors (missed fourth sibling Robert, missed will/estate backstory, missed attorney Brigandi's Jack in the Box background and family connection). Root cause: relied on single summarized WebFetch. Fix: added mandatory pre-writing fact-check step to `docs/wine-in-the-news.md` requiring full article fetch plus cross-check before writing.
 
 ---
 
