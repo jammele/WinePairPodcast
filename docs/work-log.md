@@ -152,6 +152,13 @@ Blog post sprint resumes after all spokes are live.
 
 ---
 
+## System changes made 2026-05-09 (session 5 — work log discipline fix)
+
+- **Added PostToolUse hook** (`scripts/hooks/check-worklog.js` + `.claude/settings.json`) — fires after every Write or Edit call on a file in `outputs/` or `data/`, injects a reminder to update the work log and commit before the next action. Does not fire when the work log itself is being written.
+- **Added HR-33** to `docs/house-rules.md` — explicit checkpoint rule: save file → update work log → commit → move on. No batching at session end.
+
+---
+
 ## System changes made 2026-05-09 (session 5 — Wine in the News archive)
 
 - **Created `data/wine-in-the-news-archive.md`** — running log of past Wine in the News stories. Claude reads this before searching for new stories to avoid suggesting stories already covered. Seeded with two confirmed entries: Bordeaux Cellars wine fraud (EP unknown) and Oregon winery AI fake citations (EP218). Update after every story selection.

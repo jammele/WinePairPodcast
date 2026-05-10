@@ -160,6 +160,9 @@ The first 3 posts (teasers) link to thewinepairpodcast.com or the specific episo
 **HR-32: Read docs/wine-in-the-news.md before writing any Wine in the News content.**
 Applies to both finding story options and drafting the segment script. Do not skip for "quick" story searches.
 
+**HR-33: Update the work log and commit immediately after saving any file to outputs/ or data/.**
+Do not wait until the end of the session. Do not wait to be asked. The sequence is: save file → update docs/work-log.md → commit both → then move on. A PostToolUse hook will fire as a mechanical reminder, but the rule applies regardless of the hook.
+
 ---
 
 ## Rule Update Protocol
