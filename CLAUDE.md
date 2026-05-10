@@ -2,28 +2,24 @@
 
 ---
 
-## Session startup -- run every time
+## Session startup -- runs automatically via hook
 
-**STOP. Do not respond to the user's first message until all steps below are complete.** If the first message is a question or task, say "Running session startup..." and finish the routine first. Never skip startup because the request seems urgent. Skipping startup causes errors that require correction.
+A `UserPromptSubmit` hook (`scripts/hooks/session-startup.js`) runs the startup routine automatically on the first message of every session. It:
+1. Runs the three sync scripts
+2. Reads and injects the top 80 lines of `docs/work-log.md`
+3. Instructs Claude to report the startup summary before addressing the user's request
 
-1. Read `docs/house-rules.md` — non-negotiable rules for all output. Apply them throughout the session.
+**If the hook output is present in context:** Report the startup summary as the first thing, then address the user's request.
 
-2. Run these commands silently:
-```
-node scripts/find_source_files.js --scan
-node scripts/update_episode_titles.js
-node scripts/ingest_prompts.js
-```
+**If the hook failed or context is missing startup data:** Run startup manually before responding:
+- Read `docs/house-rules.md`
+- Run: `node scripts/find_source_files.js --scan`, `node scripts/update_episode_titles.js`, `node scripts/ingest_prompts.js`
+- Read `docs/work-log.md`
+- Report summary: "Drive synced: X files indexed, Y titles updated, Z prompts synced. Current priorities: 1. [next] 2. [next] 3. [next]"
 
-3. Read `docs/work-log.md`.
-
-Report in one short summary: "Drive synced: X files indexed, Y titles updated, Z prompts synced. [auth note if needed] Current priorities: 1. [next action] 2. [next action] 3. [next action]"
-
-If any command fails, note it briefly and keep going.
-
-**After reading the work log:**
+**After startup (hook or manual):**
 - The work log is the authority. Do not question or contradict priorities documented there without new data that changes the analysis.
-- Do not propose content that is already published or already deprioritized. Check the work log first.
+- Do not propose content that is already published or already deprioritized.
 - If a session opens with a question about what to do next, report what the work log says — do not brainstorm alternatives.
 
 ---

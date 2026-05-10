@@ -160,6 +160,11 @@ Blog post sprint resumes after all spokes are live.
 - Updated `outputs/seo-aeo/faqpage-schema-blocks.md` — added Frappato to the "What reds can you serve chilled?" answer in the "Should You Chill Red Wine?" schema block.
 - EP217 (Frappato) confirmed live as of 2026-05-10. Episode URL: `/episode/italian-wine-adventure-24-frappato-the-chillable-red-wine`
 
+### UserPromptSubmit hook — session startup enforcement
+- Created `scripts/hooks/session-startup.js` — fires on first message of every session. Runs all 3 startup scripts, reads top 80 lines of work-log.md, injects results as `additionalContext` to Claude before any response. Detects first message by checking if transcript file is empty.
+- Updated `.claude/settings.json` — added UserPromptSubmit hook alongside existing PostToolUse hook.
+- Updated `CLAUDE.md` startup section — now documents the hook as the primary mechanism; manual fallback instructions retained for when hook fails.
+
 ### System audit — issues found and fixed
 Root cause: session startup was not run at the start of this conversation. Work log was not read. This caused: (1) hub page misidentification — corrected by Joe; (2) FAQPage schema regenerated from scratch when the canonical version already existed in faqpage-schema-blocks.md.
 
