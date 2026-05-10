@@ -73,7 +73,11 @@ Long-tail demand that's going unserved:
 - "closest wine to merlot" — 28 impr, 0 clicks
 - "wines similar to chardonnay" — 36 impr, 0 clicks
 
-**Plan:** Add text sections to the existing page for the top alternatives (merlot, malbec, chardonnay, pinot noir). Each section 100–150 words, directly answering the query, linking to relevant episodes where those wines were covered.
+**Plan (evolved):** Create separate spoke pages for each anchor wine — each a full blog post targeting "wines similar to X" long-tail queries. Spoke pages link to a new central hub at `/similar-wines` ("If You Like This Wine, Try That"). Wine card data is sourced from `data/wine_similarity_data.json` (shared with the Winedr app).
+
+The existing chart post is kept as a visual companion, not replaced. Internal link strategy: spoke pages link to hub; chart post links to hub ("For full recommendations, see our complete guide"); hub references chart as a visual companion. This concentrates link equity in the hub while preserving the chart's visual-reference niche.
+
+See `docs/work-log.md` for current spoke status.
 
 ---
 

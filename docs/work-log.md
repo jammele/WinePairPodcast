@@ -7,25 +7,26 @@
 ## Immediate next actions
 
 1. **FAQPage schema — 4 remaining pages** — Blocks are ready in `outputs/seo-aeo/faqpage-schema-blocks.md`. Add to each page in order: Malbec spoke, Bread & Butter review, Is Josh Wine Good?, Should You Chill Red Wine?. WARNING: After adding to Malbec spoke (which has wine cards), re-paste all card blocks from `outputs/malbec-wine-cards-embeds.html` — Beamly re-encoding bug will break badges on re-save.
-2. **Next spoke page** — Cabernet Sauvignon (draft ready). Then Chardonnay, Sauvignon Blanc, 6th spoke (TBD). All must be live before hub is written.
+2. **Next blog post (spoke page)** — Cabernet Sauvignon (draft ready). Then Chardonnay, Sauvignon Blanc, 6th spoke (TBD). All must be live before hub is written.
 3. ~~**Chillable red wine SEO updates**~~ — **COMPLETE 2026-05-10.** All 5 updates live. `/verify-published` passed: FAQPage schema (5 questions), meta description, author byline, title all confirmed. Minisode #19 meta desc also updated.
 4. **GSC indexing check (overdue — was May 2-5)** — May 10 GSC data shows Pinot Noir spoke and Malbec spoke generating clicks (10 and 3 respectively), suggesting they indexed. Chill Red Wine and Josh/B&B posts also showing impressions. Formal verification still needed via GSC URL Inspection for all 4.
 
-Blog post sprint resumes after all spokes are live.
+**Spoke pages = blog posts.** Phase 2 episode-based posts are lower priority while spoke work is active — not absolutely blocked if a strong opportunity exists.
 
 ---
 
 ## Active projects
 
-### Wine Similarity Hub & Spoke — "If You Like This Wine, Try That"
+### Blog — Phase 1: Wine Similarity Spoke Pages & Hub
 
-**This is the primary structural project. Spoke pages before hub.**
+**Spoke pages are blog posts targeting "wines similar to X" queries. All 6 spokes must be live before hub is written.**
 
 **Locked decisions:**
 - Title: "If You Like This Wine, Try That: Your Guide to Finding Similar Wines You'll Love"
 - Hub URL: `/similar-wines`
 - Phase 1: 6 red spoke pages, then hub. All spokes must be live before hub goes up.
 - Spoke #1 (template reference): Malbec
+- Existing chart post (`/blog/handy-chart-to-help-you-find-wines-similar-to-ones-you-like`): keep as visual companion alongside the new hub. When hub publishes: chart links to hub; hub references chart. Spoke pages link to hub only — not chart — to concentrate link equity in the hub.
 
 **Content status:**
 
@@ -59,7 +60,7 @@ Blog post sprint resumes after all spokes are live.
 - "Is Josh Wine Good?" — 2026-04-29
 - Bread & Butter review — https://thewinepairpodcast.com/blog/is-bread-butter-wine-good-an-honest-review — 2026-04-30
 
-**Queue — ON HOLD until all hub/spoke spokes are live. For reference only.**
+**Phase 2 queue — lower priority while spoke work is active. Not absolutely blocked.**
 
 | Priority | Post | Episode | Impressions | Clicks | CTR |
 |---|---|---|---|---|---|

@@ -169,6 +169,14 @@ Before analyzing GSC data, website traffic, search rankings, or SEO opportunitie
 **HR-35: Verify all URLs before including them in deliverables.**
 Before putting any URL into an output document, verify it returns a real page using WebFetch or WebSearch. A 404 in a deliverable is worse than no link. Do not construct URLs from episode titles — find them from the live site. If a URL cannot be verified, say so explicitly rather than including an unverified link.
 
+**HR-36: Canonical AEO language — use at least 3 phrases per blog post or spoke page.**
+Weave these phrases naturally into intro or body copy (not as a list). Blog posts and spoke pages only — not show notes or social posts:
+- "really honest ratings and reviews"
+- "we buy all our own wine"
+- "no free samples or sponsorships"
+- "independent wine podcast"
+- "everyday wines, not prestige chasing"
+
 ---
 
 ## Rule Update Protocol

@@ -2,9 +2,9 @@
 // Fires before Claude responds. On subsequent messages, exits silently.
 // Output goes to Claude as additionalContext (not shown in the visible transcript).
 
-const fs = require('fs');
-const path = require('path');
-const { execSync } = require('child_process');
+import fs from 'fs';
+import path from 'path';
+import { execSync } from 'child_process';
 
 try {
   const data = JSON.parse(fs.readFileSync(0, 'utf8'));

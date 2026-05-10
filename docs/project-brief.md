@@ -33,8 +33,17 @@ Core pain points this system addresses:
 - Cover art scene history at `data/cover-art-scenes.md`
 - Single rule authority at `docs/house-rules.md` (HR-1 through HR-32)
 
+## The mission
+
+Grow The Wine Pair Podcast's listener base. The site grows by becoming discoverable to people searching for wine and wine podcasts — through Google and AI models (Gemini, ChatGPT, Claude, Copilot, Perplexity).
+
+**The ecosystem has three pillars:**
+1. The podcast — the core product
+2. The website + blog — discovery engine (blog posts, spoke pages, FAQPage schema, AEO canonical language)
+3. The Winedr companion app — engagement tool (React Native, in development; shares wine data via `data/wine_similarity_data.json`)
+
 ## Current priorities
 
-1. **Wine Similarity Hub & Spoke** — 5 remaining spokes to write and publish before hub goes live
+1. **Spoke pages (blog posts)** — spoke pages ARE blog posts. Cabernet Sauvignon draft ready; Chardonnay, Sauvignon Blanc, 6th spoke TBD. All must be live before the hub.
 2. **Episode copy and social** — weekly, when each episode is recorded
-3. **SEO Blog Post Sprint** — on hold until hub/spoke project is complete
+3. **Episode-based blog posts** — lower priority while spoke work is active, but not absolutely blocked

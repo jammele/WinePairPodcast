@@ -34,15 +34,33 @@ A `UserPromptSubmit` hook (`scripts/hooks/session-startup.js`) runs the startup 
 
 ---
 
+## The mission — why we do all of this
+
+**Goal: grow podcast listeners.**
+
+We attract listeners by becoming discoverable to people searching for wine and wine podcasts — through Google and AI models (Gemini, ChatGPT, Claude, Copilot, Perplexity). Target audiences include:
+- People searching for specific wines ("is Josh wine good," "wines similar to Malbec")
+- People searching for wine education ("what is Frappato," "should you chill red wine")
+- People searching for wine podcasts ("best wine podcast," "honest wine reviews podcast," "wine podcast for beginners")
+
+**The ecosystem has three pillars:**
+1. The podcast — the core product
+2. The website + blog — discovery engine (blog posts, spoke pages, FAQPage schema, AEO canonical language)
+3. The Winedr companion app — engagement tool (React Native, shares wine data with podcast-os via `data/wine_similarity_data.json`)
+
+Everything we build in podcast-os serves this ecosystem. Blog posts, spoke pages, episode SEO, FAQ schema, and canonical AEO language are all part of one listener-growth strategy — not separate projects.
+
+---
+
 ## Project priority order
 
-Work follows this order unless Joe explicitly changes it:
+Work follows this order unless Joe explicitly changes it. Listener growth always supersedes sequencing.
 
-1. **Wine Similarity Hub & Spoke** — active now. All 5 remaining spokes must be written and published before the hub. This project is not complete until the hub is live.
+1. **Spoke pages (blog posts)** — Spoke pages ARE blog posts. Currently the highest-leverage activity. Cabernet Sauvignon draft ready; then Chardonnay, Sauvignon Blanc, 6th spoke (TBD). All must be live before the hub. When Joe asks "what's next for the blog?" — the current spoke is the answer. Never say "the blog is on hold."
 2. **Episode copy and social** — when a new episode is recorded and ready.
-3. **SEO Blog Post Sprint** — on hold until all hub/spoke spokes are live. Do not propose blog posts while hub/spoke work remains.
+3. **Episode-based blog posts** — Posts for high-impression/low-CTR episode topics. Hub/spoke is the current priority, but these are not absolutely blocked if a compelling data signal exists. Queue is in `docs/work-log.md`.
 
-Do not suggest blog post work while the hub/spoke project has open spokes. The queue exists for reference, not as current work.
+Do not propose episode-based queue posts while spoke work is the priority, unless a clear listener-growth case exists for doing so.
 
 ---
 
