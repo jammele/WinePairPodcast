@@ -75,7 +75,9 @@ Before writing a single word of the script, fetch the article in full and extrac
 - The complete sequence of events, including backstory
 - Any detail that makes the story more absurd or human
 
-Cross-check key facts (especially counts and names) against at least one additional source. A WebFetch summary is not sufficient -- summaries drop details. If a fact cannot be confirmed, do not include it.
+A WebFetch summary is not sufficient -- summaries drop details. Fetch the full article and read it carefully.
+
+If Joe provides a specific article URL, that is the only source for the script. Do not mix in facts from other articles about the same story -- different outlets have different details and mixing them creates errors. Every fact in the script must be traceable to the provided article.
 
 Do not start writing until this checklist is complete.
 
