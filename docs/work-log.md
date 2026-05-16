@@ -147,10 +147,15 @@
 
 ---
 
-## Episode 218 — upcoming
+## Episode 218 — Malvasia
 
-**Status:** Wine in the News script ready. Episode topic TBD.
-**Wine in the News:** Oregon winery AI fake citations story (Valley View Winery family dispute) — `outputs/episodes/ep218.md`
+**Status:** SEO/AEO complete. Ready to publish.
+**Google Doc ID:** 1NdhbEaKiJ_PzbG9l7Q2u0ECZ0o5t1o5k_DKE8-Q_4uc
+**Confirmed title:** WTF is Malvasia?
+**Wines:** 2022 Douloufakis Malvasia Femina, Crete Greece ($19.97) — Joe 8, Carmela 7 | 2024 Rodica Malvasia, Slovenia ($21.97) — Joe 7, Carmela 7
+**Finish tonight:** Joe chose Douloufakis Malvasia Femina; Carmela chose Rodica Malvasia (split)
+**Wine in the News:** Oregon winery AI fake citations story (Valley View Winery family dispute)
+**Outputs:** `outputs/episodes/ep218-malvasia.md` — Wine in the News, Key Questions, Q&A, Schema markup (Review x2 + FAQPage), 10 Bluesky posts
 
 ---
 
