@@ -8,6 +8,8 @@ When Joe asks for: SEO content, AEO content, show notes questions, Bluesky posts
 
 ## How to run
 
+0. **Check for existing work first.** Before reading the script, check whether `outputs/episodes/ep[N]-*.md` already exists. If it does, scan it and list which sections are already present (Wine in the News, Key Questions, FAQ, Schema Markup, Bluesky posts) and which are missing. Only generate the missing sections. If all sections already exist, report that to Joe and ask if he wants anything regenerated.
+
 1. Confirm you have read the episode script via `node scripts/read_gdoc.js <docId>`. Find the docId in `docs/work-log.md`. If not read yet, read it now before proceeding.
 2. From the script, extract:
    - Episode number and confirmed title

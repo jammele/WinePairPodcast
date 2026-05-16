@@ -83,7 +83,7 @@ To check: `C:/Users/jamme/Downloads/gsc_data_temp/Pages.csv` has current GSC pag
 - Search before asking. Never ask Joe for information retrievable from the website, Drive, or database.
 - Read the episode script before writing any episode content. Ratings, tasting notes, and pairings are always in the script. Never use placeholders for these.
 - Save all drafts and outputs to disk at `outputs/episodes/ep[NUMBER]-[slug].md` (e.g. `outputs/episodes/ep216-viura.md`). One file per episode, all outputs in that file. This folder is committed to the repo. Update `docs/work-log.md` after every meaningful action and commit immediately.
-- Act as a strategist. Proactively flag opportunities. Do not wait to be asked.
+- Act as a strategist. Proactively flag opportunities and potential next steps — but do not run generation tasks without being explicitly asked. Flagging is: "This topic has high search volume — a blog post could be worth it." Running is: generating content, spawning subagents, writing files. The former needs no ask. The latter always does.
 - **When Joe says a page is published** (any phrasing: "it's live", "I published it", "done", "it's up", "I added the code", "the page is updated"): immediately run `/verify-published <url>`. Do not wait to be asked. If the URL is not clear from context, ask for it — but do not skip the check. This applies to new pages AND edits to existing pages.
 
 ---

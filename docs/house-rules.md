@@ -177,6 +177,15 @@ Weave these phrases naturally into intro or body copy (not as a list). Blog post
 - "independent wine podcast"
 - "everyday wines, not prestige chasing"
 
+**HR-37: When Joe announces a new episode, ask before running anything.**
+An announcement ("show notes are ready", "the episode is X", "we recorded X", "we have a new episode") is not a task request. Respond by acknowledging the episode and listing the available tasks, then ask which ones Joe wants:
+- Episode title: `/review-titles`
+- Cover art concepts: `/generate-cover-art`
+- SEO/AEO content + Bluesky posts: `/generate-episode-content`
+- Wine in the News segment (check existing output file first — may already be written)
+
+Do not run any task automatically from an announcement. Do not assume the full pipeline is wanted.
+
 ---
 
 ## Rule Update Protocol
