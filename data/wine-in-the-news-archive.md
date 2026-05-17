@@ -12,6 +12,12 @@ Tags: fraud, Ponzi scheme, fake company, wine investment
 
 ---
 
+**EP219 | 2026-05-16 | Gothamist + EV Grieve**
+Trader Joe's sued a NYC wine shop called Joe's Wine Co. for copying its red circular logo, wood paneling, and "100 wines under $12" concept — shop agreed to stop, then un-agreed, got hit with a 31-page federal lawsuit, lost, and had to rebrand as Taste Wine Co. (the exact name of the shop that previously occupied the same address).
+Tags: lawsuit, trademark, New York, Trader Joe's, small business
+
+---
+
 **EP218 | 2026-05-09 | Wealth Management**
 Sister sued brothers over family winery inheritance (Valley View Winery, Oregon), her lawyers submitted 15 AI-hallucinated court citations and 8 fake quotations to the judge across 3 filings over 5 months -- judge dismissed case and imposed $100K+ sanctions (potentially largest ever for AI misconduct); evidence suggests sister wrote the briefs herself.
 Tags: AI, lawsuit, family business, winery, legal misconduct
