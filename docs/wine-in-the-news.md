@@ -83,6 +83,25 @@ Do not start writing until this checklist is complete.
 
 ---
 
+## Fact-check before presenting
+
+After the script is drafted, spawn a sub-agent before showing Joe anything. The sub-agent receives:
+- The full text of every source article (paste the WebFetch output, not a summary)
+- The finished script
+
+The sub-agent checks every factual claim in the script against the source material:
+- Named people and their roles
+- Specific numbers (counts, dollar amounts, dates, addresses, distances)
+- Direct quotes (must match the source word for word)
+- Sequence of events (order, timing, causation)
+- Any claim about what a person said or did
+
+The sub-agent returns a pass/fail report. For each discrepancy: quote the script claim, quote the source text, and state what is wrong.
+
+The main agent fixes all errors before presenting the script to Joe. Do not present a script that has not passed the fact-check.
+
+---
+
 ## Mandatory segment format
 
 Every Wine in the News draft must follow this exact 5-part structure, confirmed from EP214:
