@@ -130,7 +130,7 @@ If OAuth is broken: `rm google_token.json` then `node scripts/setup_google_auth.
 | Task | Read first |
 |---|---|
 | Writing a spoke page | `docs/spoke-page-checklist.md` — run all 3 passes. After writing: `node scripts/validate_spoke.js` then `/review-wine-cards` then `/review-spoke` before showing Joe anything. Draft must include FAQPage schema block at the bottom with COPY START / COPY END markers. |
-| Writing a blog post | `docs/blog-post-guide.md` — draft must include Review Schema, FAQPage schema block, and all Beamly fields at the bottom with COPY START / COPY END markers. |
+| Writing a blog post | `docs/blog-post-guide.md` — draft must include Review Schema, FAQPage schema block, and all Beamly fields at the bottom with COPY START / COPY END markers. After writing: run `/review-blog-post <filepath>` and fix ALL reported issues before showing Joe anything. |
 | Publishing a page | `docs/publishing-checklist.md` — after Joe publishes: run `/verify-published <url>` to confirm schema, card badges, author byline, and meta description are all rendering correctly. |
 | Cover art image prompts | Run `/generate-cover-art` — mandatory before showing Joe any concepts. After Joe picks a concept, immediately update `data/cover-art-scenes.md` (add chosen concept's structural type, remove oldest if list exceeds 5) and commit. |
 | Episode SEO/AEO content and Bluesky posts | Run `/generate-episode-content` — reads episode script, spawns sub-agent, saves to `outputs/episodes/ep[N]-[slug].md`, runs `node scripts/validate_episode.js`. Fix all errors before showing Joe. |
