@@ -5,7 +5,7 @@
 **Source:** Episodes 105, 108, 112, 113, 119, 121, 124, 127, 129, 145, 149, 167, 177, 196, 200, 203, 205, 214
 **Schema:** FAQPage + Review Schema (one block per featured wine)
 
-**NOTE FOR PUBLISH:** Episode URLs marked [VERIFY URL] below need verification in Beamly before going live. All verified URLs are linked.
+All episode URLs verified.
 
 ---
 
@@ -49,7 +49,7 @@ Available on wine.com. Also found at specialty wine shops.
 ---
 
 ### Paula Kornell California Brut, $19.99
-**Joe: 9/10 | Carmela: 8/10 | [Episode 127](VERIFY URL)**
+**Joe: 9/10 | Carmela: 8/10 | [Episode 127](https://thewinepairpodcast.com/episode/great-american-sparklers-2024-edition-california-brut-sparkling-wines-for-the-4th-of-july-or-anytime)**
 
 California traditional-method sparkling at under $20. Joe gave it a 9 — one of the highest sparkling scores outside the Kila Cava. Both chose it as their finish bottle.
 
@@ -62,7 +62,7 @@ Available on wine.com.
 ---
 
 ### Venturini Baldini Montelocco Lambrusco, $17.97
-**Joe: 8/10 | Carmela: 8/10 | [Episode 196](VERIFY URL)**
+**Joe: 8/10 | Carmela: 8/10 | [Episode 196](https://thewinepairpodcast.com/episode/holiday-sparkling-wines-5-lambrusco)**
 
 Lambrusco is red sparkling wine from Emilia-Romagna in northern Italy. This one is dry and gastronomic, not the sweet Lambrusco of the 1970s.
 
@@ -77,7 +77,7 @@ Available on wine.com.
 ---
 
 ### The Chook Sparkling Shiraz, $19.99
-**Joe: 8/10 | Carmela: 8/10 | [Episode 149](VERIFY URL)**
+**Joe: 8/10 | Carmela: 8/10 | [Episode 149](https://thewinepairpodcast.com/episode/holiday-sparkling-wines-4-sparkling-shiraz)**
 
 Australian red sparkling wine — a category Joe and Carmela describe as "super fun and festive." Full red wine flavors with bubbles, and more food-friendly than it looks.
 
@@ -133,7 +133,7 @@ Available at Costco.
 ---
 
 ### Domaine Bousquet Premium Organic Malbec 2022, $9.99
-**Joe: 8/10 | Carmela: 8/10 | [Episode 124](VERIFY URL)**
+**Joe: 8/10 | Carmela: 8/10 | [Episode 124](https://thewinepairpodcast.com/episode/malbec-the-ultimate-summer-cookout-wine-a-lush-fruity-inexpensive-crowd-pleaser)**
 
 Organic Argentine Malbec at under $10. Both chose it as their finish bottle. Episode description: "A definite crowd-pleaser, a great party wine."
 
@@ -159,7 +159,7 @@ Available at QFC (Kroger).
 ---
 
 ### Gaia Monograph Agiorgitiko 2022, $15.99
-**Joe: 8/10 | Carmela: 8/10 | [Episode 129](VERIFY URL)**
+**Joe: 8/10 | Carmela: 8/10 | [Episode 129](https://thewinepairpodcast.com/episode/wtf-is-agiorgitiko-this-greek-red-wine-is-a-hidden-gem-a-must-learn-wine)**
 
 Agiorgitiko is the most widely planted red grape in Greece, and this is the bottle that put it on our radar. Carmela chose it as her finish bottle. Light and fruit-forward enough to serve slightly chilled in summer.
 
@@ -174,7 +174,7 @@ Available on wine.com.
 ## Best White Wines Under $20
 
 ### Murgo Etna Bianco 2023, $19.97
-**Joe: 8/10 | Carmela: 9/10 | [Episode 200](VERIFY URL)**
+**Joe: 8/10 | Carmela: 9/10 | [Episode 200](https://thewinepairpodcast.com/episode/italian-wine-adventure-22-etna-bianco)**
 
 White wine from the volcanic slopes of Mount Etna in Sicily. Carmela gave it a 9. Both chose it as their finish bottle. Professional scores: WS 91, Vinous 90, JS 90. One of the most exciting white wines we have reviewed.
 
@@ -189,7 +189,7 @@ Available on wine.com.
 ---
 
 ### Château La Freynelle Bordeaux Blanc 2024, $18.97
-**Joe: 9/10 | Carmela: 8/10 | [Episode 205](VERIFY URL)**
+**Joe: 9/10 | Carmela: 8/10 | [Episode 205](https://thewinepairpodcast.com/episode/wtf-is-bordeaux-blanc-the-best-french-sauvignon-blanc-value)**
 
 White Bordeaux from Entre-Deux-Mers: 60% Sauvignon Blanc, 30% Sémillon, 10% Muscadelle. Joe gave it a 9 and both hosts chose it as their finish bottle. Available on wine.com, originally priced at $35.
 
@@ -200,7 +200,7 @@ Pairs with: linguine and clams, baked clams, saucy chicken, chicken Kiev, charcu
 ---
 
 ### Weingut Dautel Estate Riesling Trocken 2022, $15.99
-**Joe: 8/10 | Carmela: 8/10 | [Episode 214](VERIFY URL)**
+**Joe: 8/10 | Carmela: 8/10 | [Episode 214](https://thewinepairpodcast.com/episode/german-riesling-smells-like-airplane-glue-and-we-cant-stop-drinking-it)**
 
 German dry Riesling from Baden-Württemberg. Both chose it as their finish bottle. A great entry point into the Riesling category without the sweetness people sometimes fear.
 
@@ -213,7 +213,7 @@ Available on wine.com.
 ---
 
 ### Château Graville-Lacoste Graves Blanc 2024, $19.97
-**Joe: 8/10 | Carmela: 8/10 | [Episode 205](VERIFY URL)**
+**Joe: 8/10 | Carmela: 8/10 | [Episode 205](https://thewinepairpodcast.com/episode/wtf-is-bordeaux-blanc-the-best-french-sauvignon-blanc-value)**
 
 Sauvignon Blanc-dominant white Bordeaux from Graves, a style most wine drinkers have never tried. Both hosts gave it an 8. Episode verdict: "So nice, we are in. A great white wine."
 
@@ -226,7 +226,7 @@ Available on wine.com.
 ---
 
 ### Claudio Quarta Cantina SanPaolo Fiano di Avellino 2020, $19.99
-**Joe: 8/10 | Carmela: 8/10 | [Episode 105](VERIFY URL)**
+**Joe: 8/10 | Carmela: 8/10 | [Episode 105](https://thewinepairpodcast.com/episode/italian-wine-adventure-10-fiano-a-nearly-extinct-ancient-grape-makes-a-comeback-bigger-bodied-white-wine-famous-foods-from-the-campania-area-of-italy-chardonnay-alternative)**
 
 Fiano di Avellino is a white wine from Campania in southern Italy. Rich, complex, and a little unusual for a white under $20. Both chose it as their finish bottle.
 
@@ -256,7 +256,7 @@ Available on wine.com.
 ---
 
 ### Chateau Trinquevedel Tavel Rosé 2022, $19.97
-**Joe: 8/10 | Carmela: 8/10 | [Episode 167](VERIFY URL)**
+**Joe: 8/10 | Carmela: 8/10 | [Episode 167](https://thewinepairpodcast.com/episode/getting-serious-about-rose-3-tavel-the-popes-wine-the-4th-wine)**
 
 Tavel is the only AOC in France dedicated entirely to rosé. This wine is darker, bolder, and more tannic than Provence rosé — a different experience entirely. Both chose it as their finish bottle. Episode verdict: "Cool, beautiful, fun, and worth seeking out. We are in."
 
@@ -282,7 +282,7 @@ Pairs with: turkey, mashed potatoes, stuffing. Widely available at grocery store
 ## Best Dessert and Sweet Wines Under $20
 
 ### Williams & Humbert Dry Sack Medium Sherry, $18.40
-**Joe: 8/10 | Carmela: 8/10 | [Episode 203](VERIFY URL)**
+**Joe: 8/10 | Carmela: 8/10 | [Episode 203](https://thewinepairpodcast.com/episode/forget-chocolate-why-sherry-is-the-ultimate-valentines-day-unlock)**
 
 Medium Sherry from Jerez, Spain. Both chose it as their finish bottle and both rated it 9/10 when paired with vanilla ice cream. Episode quote: "Love it. Why don't we have it more often? We should be doing it more often."
 
@@ -295,7 +295,7 @@ Available at Pete's Supermarket in Seattle and specialty wine shops.
 ---
 
 ### Quady Essensia Orange Muscat 2021, $15.99
-**Joe: 8/10 | Carmela: 8/10 | [Episode 108](VERIFY URL)**
+**Joe: 8/10 | Carmela: 8/10 | [Episode 108](https://thewinepairpodcast.com/episode/sweet-dessert-wines-for-your-sweetheart-wines-for-valentines-day-savoring-a-meal-and-time-with-family-and-friends-wtf-is-fortified-wine)**
 
 California dessert wine from the Central Valley, made from Orange Muscat grapes. Fragrant, orange-forward, and one of the most accessible dessert wines we have reviewed. Both chose it as their finish bottle.
 
