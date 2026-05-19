@@ -19,7 +19,7 @@ Every Q&A pair formatted exactly:
 **Q. What wine is similar to Malbec?**
 A. Answer here.
 ```
-Bold on the Q. line only. No other format is acceptable.
+Bold on the Q. line only. No other format is acceptable. This applies everywhere a question/answer pair appears: episode Key Questions, spoke page FAQ sections, blog post FAQ sections, and any other Q&A output. Never format a FAQ question as a plain bold heading without the Q. prefix.
 
 **HR-3: No invented facts.**
 Never state ratings, tasting notes, pairings, prices, or episode details that have not been confirmed from the episode script. Read the script first. Use placeholders only if you explicitly say "placeholder — confirm from script."

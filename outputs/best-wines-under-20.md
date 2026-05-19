@@ -147,20 +147,20 @@ Every wine on this list was opened, argued about, and rated on the show. The one
 
 ## Frequently Asked Questions
 
-**What is the best wine under $20?**
-For sparkling, the Vins el Cep Kila Cava Brut Organic at $13.99 is one of only a few wines we have ever rated 10/10 — at any price. For red wine, the Kirkland Signature Rioja Reserva at $7.99 is our top pick: a full-bodied, complex Tempranillo that beat wines costing twice as much in a blind tasting. Both are worth seeking out.
+**Q. What is the best wine under $20?**
+A. For sparkling, the Vins el Cep Kila Cava Brut Organic at $13.99 is one of only a few wines we have ever rated 10/10 — at any price. For red wine, the Kirkland Signature Rioja Reserva at $7.99 is our top pick: a full-bodied, complex Tempranillo that beat wines costing twice as much in a blind tasting. Both are worth seeking out.
 
-**Is Costco wine actually good?**
-More often than not, yes. Kirkland Signature wines are made by well-known winemakers under contract, and the quality control is better than most grocery store house brands. The Rioja Reserva at $7.99 and Côtes du Rhône Villages at $7.49 are two of the best value wines we have reviewed across 200+ episodes. The hit rate is not 100%, but it is high enough that Costco is our first stop for everyday wine.
+**Q. Is Costco wine actually good?**
+A. More often than not, yes. Kirkland Signature wines are made by well-known winemakers under contract, and the quality control is better than most grocery store house brands. The Rioja Reserva at $7.99 and Côtes du Rhône Villages at $7.49 are two of the best value wines we have reviewed across 200+ episodes. The hit rate is not 100%, but it is high enough that Costco is our first stop for everyday wine.
 
-**What is the best cheap sparkling wine?**
-Spanish Cava. Made using the exact same method as Champagne — second fermentation in the bottle — at a fraction of the price. The Vins el Cep Kila Cava ($13.99) rated higher on our show than most sparkling wines at $40+. If you cannot find the Kila, any Cava from a quality traditional-method producer will outperform Prosecco at the same price point.
+**Q. What is the best cheap sparkling wine?**
+A. Spanish Cava. Made using the exact same method as Champagne, with second fermentation in the bottle, at a fraction of the price. The Vins el Cep Kila Cava ($13.99) rated higher on our show than most sparkling wines at $40+. If you cannot find the Kila, any Cava from a quality traditional-method producer will outperform Prosecco at the same price point.
 
-**What wine regions deliver the best value under $20?**
-Spain's Rioja (for reds) and Cava region (for sparkling), France's Côtes du Rhône (for easy-drinking reds), and Italy's Abruzzo (Montepulciano d'Abruzzo) are the most consistent overdeliverers we have found. For white wine, white Rioja, Portuguese Vinho Verde, and New Zealand Sauvignon Blanc punch well above their prices. Washington state rosé is a sleeper pick.
+**Q. What wine regions deliver the best value under $20?**
+A. Spain's Rioja (for reds) and Cava region (for sparkling), France's Côtes du Rhône (for easy-drinking reds), and Italy's Abruzzo (Montepulciano d'Abruzzo) are the most consistent overdeliverers we have found. For white wine, white Rioja, Portuguese Vinho Verde, and New Zealand Sauvignon Blanc punch well above their prices. Washington state rosé is a sleeper pick.
 
-**How many wines have you actually tasted on the show?**
-Over 250 wines across 200+ episodes. Joe and Carmela taste blind or near-blind, rate independently on a 10-point scale, and compare notes live on air. Every wine on this list earned an 8/10 or higher from at least one host.
+**Q. How many wines have you actually tasted on the show?**
+A. Over 250 wines across 200+ episodes. Joe and Carmela taste blind or near-blind, rate independently on a 10-point scale, and compare notes live on air. Every wine on this list earned an 8/10 or higher from at least one host.
 
 ---
 
