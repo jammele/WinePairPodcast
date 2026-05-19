@@ -31,7 +31,7 @@ The biggest thing we have learned after 200 episodes? The $20 price point is whe
 
 ## Best Cheap Sparkling Wine Under $20
 
-### 2020 Vins el Cep Kila Cava Brut Organic, $13.99
+### 2021 Vins el Cep Kila Cava Brut Organic, $13.99
 **Joe: 10/10 | Carmela: 9/10 | [Episode 121](https://thewinepairpodcast.com/episode/spains-answer-to-champagne-cava-a-step-up-from-prosecco-at-a-similar-price)**
 
 Made using the exact same traditional method as Champagne (second fermentation in the bottle) from three indigenous Spanish grapes: 50% Xarel·lo, 25% Macabeo, 25% Parellada. Organic. From the Penedès region of Catalonia.
@@ -42,7 +42,7 @@ Joe gave it a 10/10. He has given out three 10s in 200+ episodes. This is one of
 
 It is $13.99. It is better than most sparkling wines we have tasted at $40. If you see it, buy multiple bottles.
 
-Where to find it: wine specialty shops. We found it at Mad Wine Esquin in Seattle. Not widely distributed, but worth hunting for.
+Where to find it: available on wine.com. We also found it at Mad Wine Esquin in Seattle.
 
 ---
 
@@ -194,7 +194,7 @@ Flat illustration, wide 16:9, cream background, clean and simple. Three wine bot
   "@type": "Review",
   "itemReviewed": {
     "@type": "Product",
-    "name": "2020 Vins el Cep Kila Cava Brut Organic",
+    "name": "2021 Vins el Cep Kila Cava Brut Organic",
     "offers": {"@type": "Offer", "price": "13.99", "priceCurrency": "USD"}
   },
   "reviewRating": {"@type": "Rating", "ratingValue": "10", "bestRating": "10", "worstRating": "1"},
