@@ -19,7 +19,7 @@ A note on how we work: Joe and Carmela taste each wine together, rate independen
 
 The $20 price point is where wine quality actually plateaus. Above that, you are mostly paying for reputation and scarcity. Not flavor. Below it, the range is wide, but the bottles below are where we keep ending up.
 
-Want to browse every wine we have reviewed and rated on the show? Visit our [Shop Wine page](https://thewinepairpodcast.com/shopwine) — it includes all of our recommendations organized by rating, with episode links and where to buy.
+Want to browse every wine we have reviewed and rated on the show? Visit our [Shop Wine page](https://thewinepairpodcast.com/shopwine). It includes all of our recommendations organized by rating, with episode links and where to buy.
 
 ---
 
@@ -51,7 +51,7 @@ Available on wine.com. Also found at specialty wine shops.
 ### Paula Kornell California Brut, $19.99
 **Joe: 9/10 | Carmela: 8/10 | [Episode 127](https://thewinepairpodcast.com/episode/great-american-sparklers-2024-edition-california-brut-sparkling-wines-for-the-4th-of-july-or-anytime)**
 
-California traditional-method sparkling at under $20. Joe gave it a 9 — one of the highest sparkling scores outside the Kila Cava. Both chose it as their finish bottle.
+California traditional-method sparkling at under $20. Joe gave it a 9, one of the highest sparkling scores outside the Kila Cava. Both chose it as their finish bottle.
 
 Nose: earthy, peach skin, pear, baking spice, clove, basil. Palate: clove, cinnamon, spiced apple cider, lime, grapefruit, citrusy tartness, refreshing and crisp with good sophistication.
 
@@ -79,7 +79,7 @@ Available on wine.com.
 ### The Chook Sparkling Shiraz, $19.99
 **Joe: 8/10 | Carmela: 8/10 | [Episode 149](https://thewinepairpodcast.com/episode/holiday-sparkling-wines-4-sparkling-shiraz)**
 
-Australian red sparkling wine — a category Joe and Carmela describe as "super fun and festive." Full red wine flavors with bubbles, and more food-friendly than it looks.
+Australian red sparkling wine, a category Joe and Carmela describe as "super fun and festive." Full red wine flavors with bubbles, and more food-friendly than it looks.
 
 Nose: earthy, plum, cherry, menthol, black licorice, anise. Palate: earthy, a hint of sweetness, Campari-like orange rind and cherry, cinnamon stick, fresh rosemary. Feels like a fall wine. Joe chose it as his finish bottle.
 
@@ -258,7 +258,7 @@ Available on wine.com.
 ### Chateau Trinquevedel Tavel Rosé 2022, $19.97
 **Joe: 8/10 | Carmela: 8/10 | [Episode 167](https://thewinepairpodcast.com/episode/getting-serious-about-rose-3-tavel-the-popes-wine-the-4th-wine)**
 
-Tavel is the only AOC in France dedicated entirely to rosé. This wine is darker, bolder, and more tannic than Provence rosé — a different experience entirely. Both chose it as their finish bottle. Episode verdict: "Cool, beautiful, fun, and worth seeking out. We are in."
+Tavel is the only AOC in France dedicated entirely to rosé. This wine is darker, bolder, and more tannic than Provence rosé, a different experience entirely. Both chose it as their finish bottle. Episode verdict: "Cool, beautiful, fun, and worth seeking out. We are in."
 
 Nose: Dr. Pepper, root beer, cherry cola, cherry, spice, raspberry licorice, rose perfume. Palate: cherry, pomegranate, cranberry tea, maraschino cherry, tannic, refreshing.
 
@@ -311,29 +311,29 @@ Available on wine.com.
 
 After close to 500 wines across 200+ episodes, the value is not random. It clusters by region. Here is where we keep finding 8/10 wine under $20.
 
-**Spain — Rioja (La Rioja region):** Tempranillo grown in one of the world's most structured red wine regions, aged in oak, sold at Costco for $7.99. The Kirkland Rioja Reserva on this list is the best $8 you can spend on a red wine. The reason it works: Rioja has centuries of winemaking infrastructure and oversupply relative to its reputation in the US market. That gap is your advantage.
+**Spain: Rioja (La Rioja region):** Tempranillo grown in one of the world's most structured red wine regions, aged in oak, sold at Costco for $7.99. The Kirkland Rioja Reserva on this list is the best $8 you can spend on a red wine. The reason it works: Rioja has centuries of winemaking infrastructure and oversupply relative to its reputation in the US market. That gap is your advantage.
 
-**Spain — Penedès/Cava:** Spanish Cava uses the exact same second-fermentation-in-bottle method as Champagne, grown in Catalonia at a fraction of the cost. The Kila Cava on this list earned a 10/10 from Joe at $13.99. The category is structurally underpriced because Cava does not carry the Champagne name. That will not change. Buy accordingly.
+**Spain: Penedès/Cava:** Spanish Cava uses the exact same second-fermentation-in-bottle method as Champagne, grown in Catalonia at a fraction of the cost. The Kila Cava on this list earned a 10/10 from Joe at $13.99. The category is structurally underpriced because Cava does not carry the Champagne name. That will not change. Buy accordingly.
 
-**Spain — Jerez (Sherry):** Sherry is the most underpriced category in the wine world. Williams & Humbert Dry Sack at $18.40 earned 8/10 standalone and 9/10 over vanilla ice cream. The entire category is overlooked because American wine culture never recovered from the 1970s sweet Sherry era. The modern dry and medium styles are completely different wines.
+**Spain: Jerez (Sherry):** Sherry is the most underpriced category in the wine world. Williams & Humbert Dry Sack at $18.40 earned 8/10 standalone and 9/10 over vanilla ice cream. The entire category is overlooked because American wine culture never recovered from the 1970s sweet Sherry era. The modern dry and medium styles are completely different wines.
 
-**France — Southern Rhône (Côtes du Rhône Villages):** Syrah, Grenache, and Mourvèdre blends from the southern Rhône Valley represent some of the best $8-15 red wine in the world. The Kirkland Côtes du Rhône Villages at $7.49 earned 8/8. The appellation produces millions of bottles; quality producers have to stay competitive on price. The lesson: if you see a Côtes du Rhône Villages from a named winemaker at under $15, buy it.
+**France: Southern Rhône (Côtes du Rhône Villages):** Syrah, Grenache, and Mourvèdre blends from the southern Rhône Valley represent some of the best $8-15 red wine in the world. The Kirkland Côtes du Rhône Villages at $7.49 earned 8/8. The appellation produces millions of bottles; quality producers have to stay competitive on price. The lesson: if you see a Côtes du Rhône Villages from a named winemaker at under $15, buy it.
 
-**France — Bordeaux Blanc (Graves and Entre-Deux-Mers):** White Bordeaux is one of the most underrated wine categories in the world. Sauvignon Blanc and Sémillon blends with more body, minerality, and complexity than most New Zealand Sauvignon Blanc at the same price. Two bottles from Episode 205 made this list: La Freynelle at $18.97 (Joe 9/10) and Graville-Lacoste at $19.97 (both 8/10). Most wine drinkers have never tried white Bordeaux. That is a mistake worth fixing.
+**France: Bordeaux Blanc (Graves and Entre-Deux-Mers):** White Bordeaux is one of the most underrated wine categories in the world. Sauvignon Blanc and Sémillon blends with more body, minerality, and complexity than most New Zealand Sauvignon Blanc at the same price. Two bottles from Episode 205 made this list: La Freynelle at $18.97 (Joe 9/10) and Graville-Lacoste at $19.97 (both 8/10). Most wine drinkers have never tried white Bordeaux. That is a mistake worth fixing.
 
-**France — Tavel (Southern Rhône):** The only AOC in France dedicated entirely to rosé. Tavel is darker, bolder, and more food-friendly than Provence rosé. The Trinquevedel on this list earned 8/8 and works with a full meal. If you are bored with light pink Provence rosé, Tavel is the upgrade.
+**France: Tavel (Southern Rhône):** The only AOC in France dedicated entirely to rosé. Tavel is darker, bolder, and more food-friendly than Provence rosé. The Trinquevedel on this list earned 8/8 and works with a full meal. If you are bored with light pink Provence rosé, Tavel is the upgrade.
 
-**Italy — Abruzzo (Montepulciano d'Abruzzo):** One of the most consistent value red wine categories in Italian wine. Full-bodied, dark fruit, earthy, almost always under $15. La Valentina at $14.99 won a three-bottle head-to-head challenge. The grape is easy to pronounce, easy to find, and easy to drink. It is also not Montepulciano the Tuscan town — that is a different wine. The Abruzzo version is the value one.
+**Italy: Abruzzo (Montepulciano d'Abruzzo):** One of the most consistent value red wine categories in Italian wine. Full-bodied, dark fruit, earthy, almost always under $15. La Valentina at $14.99 won a three-bottle head-to-head challenge. The grape is easy to pronounce, easy to find, and easy to drink. It is also not Montepulciano the Tuscan town. That is a different wine. The Abruzzo version is the value one.
 
-**Italy — Etna Bianco (Sicily):** Volcanic whites from the slopes of Mount Etna. Minerality and citrus character that are genuinely hard to find elsewhere under $20. The Murgo on this list earned 8/9 at $19.97 with a Wine Spectator score of 91. The Etna region is still gaining recognition in the US; prices will rise as it does.
+**Italy: Etna Bianco (Sicily):** Volcanic whites from the slopes of Mount Etna. Minerality and citrus character that are genuinely hard to find elsewhere under $20. The Murgo on this list earned 8/9 at $19.97 with a Wine Spectator score of 91. The Etna region is still gaining recognition in the US; prices will rise as it does.
 
-**Italy — Emilia-Romagna (Lambrusco):** Not the sweet red Lambrusco of the 1970s. Modern dry Lambrusco is red sparkling wine with real tannic structure and food-friendliness. The Venturini Baldini on this list earned 8/8 at $17.97. If you have never tried a dry Lambrusco, this is the category to discover.
+**Italy: Emilia-Romagna (Lambrusco):** Not the sweet red Lambrusco of the 1970s. Modern dry Lambrusco is red sparkling wine with real tannic structure and food-friendliness. The Venturini Baldini on this list earned 8/8 at $17.97. If you have never tried a dry Lambrusco, this is the category to discover.
 
-**Argentina — Mendoza (Malbec):** The most reliable under-$10 red wine region we have found anywhere. Mendoza Malbec grows at high altitude in dry conditions that concentrate flavor naturally. The Bousquet Organic at $9.99 earned 8/8 from both hosts. When producers can grow organically and sell at $10, the math is in your favor.
+**Argentina: Mendoza (Malbec):** The most reliable under-$10 red wine region we have found anywhere. Mendoza Malbec grows at high altitude in dry conditions that concentrate flavor naturally. The Bousquet Organic at $9.99 earned 8/8 from both hosts. When producers can grow organically and sell at $10, the math is in your favor.
 
-**Germany — Baden-Württemberg and Rhine regions (Riesling Trocken):** Dry German Riesling gives minerality, citrus complexity, and food-pairing versatility at prices that Burgundy or Chablis cannot match. The petrol and apple character of a good Riesling Trocken is not reproducible anywhere else. The Dautel Estate at $15.99 earned 8/8. Start with German Riesling before branching into Austrian or Alsatian versions.
+**Germany: Baden-Württemberg and Rhine regions (Riesling Trocken):** Dry German Riesling gives minerality, citrus complexity, and food-pairing versatility at prices that Burgundy or Chablis cannot match. The petrol and apple character of a good Riesling Trocken is not reproducible anywhere else. The Dautel Estate at $15.99 earned 8/8. Start with German Riesling before branching into Austrian or Alsatian versions.
 
-**Greece — Nemea (Peloponnese):** The Nemea region produces Agiorgitiko, the most widely planted red grape in Greece. It is almost unknown outside Greek restaurants in the US, which is why it is still $15.99. The Gaia Monograph on this list earned 8/8 and is a genuine food wine. Greek reds are a category to watch — they have the quality, they just lack the marketing.
+**Greece: Nemea (Peloponnese):** The Nemea region produces Agiorgitiko, the most widely planted red grape in Greece. It is almost unknown outside Greek restaurants in the US, which is why it is still $15.99. The Gaia Monograph on this list earned 8/8 and is a genuine food wine. Greek reds are a category to watch. They have the quality, they just lack the marketing.
 
 ---
 
@@ -351,7 +351,7 @@ Want the full list? Every wine we have ever reviewed and rated is on our [Shop W
 
 The Wine Pair Podcast is an independent wine podcast focused on everyday wines, not prestige chasing. Every bottle on this list has a full episode with ratings, pairings, and honest disagreement. Episode links are in each section above.
 
-[Buzzsprout embed — Joe: recommend adding Episode 121 (Kila Cava) as the featured listen here]
+[Buzzsprout embed. Joe: recommend adding Episode 121 (Kila Cava) as the featured listen here]
 
 ---
 
