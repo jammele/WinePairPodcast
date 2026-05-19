@@ -6,7 +6,7 @@
 
 ## Immediate next actions
 
-1. **Best Wines Under $20 post** — Draft complete at `outputs/best-wines-under-20.md`. **Top blog priority — jumped above Cab Sauv spoke.** Joe to review and publish. After publish: run `/verify-published https://thewinepairpodcast.com/blog/best-wines-under-20`.
+1. **Best Wines Under $20 post** — Draft complete at `outputs/best-wines-under-20.md`. **Top blog priority — jumped above Cab Sauv spoke.** 20 wines (5 sparkling, 5 red, 5 white, 3 rosé, 2 dessert), all rated 8/10+, pulled from 18 episodes. Includes Château La Freynelle Bordeaux Blanc (EP205), rewritten regional bargain section (12 specific regions), shop wine page link, and 12 episode URLs marked [VERIFY URL]. Joe to review and publish. After publish: run `/verify-published https://thewinepairpodcast.com/blog/best-wines-under-20`.
 2. **Next spoke page** — Cabernet Sauvignon (draft ready at `outputs/cabernet-sauvignon-spoke.md`). After Best Wines Under $20 is live. Then Chardonnay, Sauvignon Blanc, 6th spoke (TBD).
 3. **GSC indexing check (overdue — was May 2-5)** — May 10 GSC data shows Pinot Noir spoke and Malbec spoke generating clicks (10 and 3 respectively), suggesting they indexed. Chill Red Wine and Josh/B&B posts also showing impressions. Formal verification still needed via GSC URL Inspection for all 4.
 
