@@ -1,15 +1,18 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-10 (session 6)
+**Last updated:** 2026-05-18 (session 7)
 
 ---
 
 ## Immediate next actions
 
-1. **FAQPage schema — 4 remaining pages** — Blocks are ready in `outputs/seo-aeo/faqpage-schema-blocks.md`. Add to each page in order: Malbec spoke, Bread & Butter review, Is Josh Wine Good?, Should You Chill Red Wine?. WARNING: After adding to Malbec spoke (which has wine cards), re-paste all card blocks from `outputs/malbec-wine-cards-embeds.html` — Beamly re-encoding bug will break badges on re-save.
-2. **Next blog post (spoke page)** — Cabernet Sauvignon (draft ready). Then Chardonnay, Sauvignon Blanc, 6th spoke (TBD). All must be live before hub is written.
-3. ~~**Chillable red wine SEO updates**~~ — **COMPLETE 2026-05-10.** All 5 updates live. `/verify-published` passed: FAQPage schema (5 questions), meta description, author byline, title all confirmed. Minisode #19 meta desc also updated.
-4. **GSC indexing check (overdue — was May 2-5)** — May 10 GSC data shows Pinot Noir spoke and Malbec spoke generating clicks (10 and 3 respectively), suggesting they indexed. Chill Red Wine and Josh/B&B posts also showing impressions. Formal verification still needed via GSC URL Inspection for all 4.
+1. **Best Wines Under $20 post** — Draft complete at `outputs/best-wines-under-20.md`. **Top blog priority — jumped above Cab Sauv spoke.** Joe to review and publish. After publish: run `/verify-published https://thewinepairpodcast.com/blog/best-wines-under-20`.
+2. **Next spoke page** — Cabernet Sauvignon (draft ready at `outputs/cabernet-sauvignon-spoke.md`). After Best Wines Under $20 is live. Then Chardonnay, Sauvignon Blanc, 6th spoke (TBD).
+3. **GSC indexing check (overdue — was May 2-5)** — May 10 GSC data shows Pinot Noir spoke and Malbec spoke generating clicks (10 and 3 respectively), suggesting they indexed. Chill Red Wine and Josh/B&B posts also showing impressions. Formal verification still needed via GSC URL Inspection for all 4.
+
+**FAQPage schema backfill (Malbec, Bread & Butter, Josh) — DEPRIORITIZED 2026-05-18.** Schema already live on all priority pages. Add to new pages going forward; no backfill sprint needed.
+
+**Chill red wine post — NO ACTION NEEDED.** May 18 GSC: 1,635 impressions, 0.12% CTR, position 7.75 — still young. `/verify-published` confirmed all 6 checks passing (FAQPage schema 5 questions, meta desc, author byline, title, no encoded spans). Low CTR explained by early position, not missing content.
 
 **Spoke pages = blog posts.** Phase 2 episode-based posts are lower priority while spoke work is active — not absolutely blocked if a strong opportunity exists.
 
@@ -156,6 +159,31 @@
 **Finish tonight:** Joe chose Douloufakis Malvasia Femina; Carmela chose Rodica Malvasia (split)
 **Wine in the News:** Oregon winery AI fake citations story (Valley View Winery family dispute)
 **Outputs:** `outputs/episodes/ep218-malvasia.md` — Wine in the News, Key Questions, Q&A, Schema markup (Review x2 + FAQPage), 10 Bluesky posts
+
+---
+
+## Session 7 — 2026-05-18
+
+### Authentication fix — Claude Code daily re-login
+Root cause: OAuth access tokens have a ~24-30 hour TTL. Windows auto-refresh is broken (known bug, GitHub issues #34306, #40985, #35221). Fix applied: 3-layer approach.
+
+1. **`C:\Users\jamme\scripts\claude-refresh.ps1`** — standalone PowerShell script. Reads `.claude/.credentials.json`, checks `expiresAt`, POSTs to `https://platform.claude.com/v1/oauth/token` with the refresh token if expiry < 2 hours. Writes updated token back to credentials.json. OAuth client_id `9d1c250a-e61b-44d9-88ed-5944d1962f5e` found by string-searching compiled claude.exe.
+2. **PowerShell profile** at `C:\Users\jamme\OneDrive\Desktop\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1` — calls the refresh script on every terminal open.
+3. **Windows Startup shortcut** at `C:\Users\jamme\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\ClaudeTokenRefresh.lnk` — runs refresh script at every Windows login (used instead of Task Scheduler, which requires admin).
+
+Note: Refresh endpoint returns rate_limit_error when token is not close to expiry — this is expected behavior, confirms endpoint is correct.
+
+### Blog strategy — priorities updated
+- **FAQPage backfill deprioritized.** Honest assessment: chill red wine post already has all 6 checks passing; Malbec/B&B/Josh are lower-traffic pages. Add FAQPage to new posts going forward, no backfill sprint.
+- **Best Wines Under $20 draft complete.** This post jumped above Cab Sauv spoke — "best inexpensive wines" shows 72,330 GSC impressions / 0 clicks at position 1.02 (AI Overview) in May 18 data. Massive missed-click opportunity.
+  - Draft: `outputs/best-wines-under-20.md`
+  - Target query: "best wines under $20" / "best inexpensive wines"
+  - Format B — SEO/AEO Structured, list variant
+  - Slug: `best-wines-under-20`
+  - 8 wines: 2 sparkling, 2 rosé, 2 red, 1 white + 1 bonus (all $20 or under, all 7/10+)
+  - Headline wine: Vins el Cep Kila Cava Brut Organic — Joe 10/10, Carmela 9/10 (EP121, $13.99)
+  - Includes: full body, all Beamly fields, image prompt, 8 Review Schema blocks, FAQPage schema with COPY START/END markers
+  - Data sourced from: `https://thewinepairpodcast.com/shopwine` + episode scripts (EP121, EP145, EP119 via read_gdoc.js)
 
 ---
 
