@@ -24,6 +24,9 @@ Bold on the Q. line only. No other format is acceptable. This applies everywhere
 **HR-3: No invented facts.**
 Never state ratings, tasting notes, pairings, prices, or episode details that have not been confirmed from the episode script. Read the script first. Use placeholders only if you explicitly say "placeholder — confirm from script."
 
+**HR-38: Joe and Carmela do NOT blind taste. They always know the wine and the price.**
+Never write "blind tasting," "taste blind," "without knowing the price," or any variation implying they taste without knowing what they are drinking. The correct description: "Joe and Carmela taste each wine together, rate independently on a 10-point scale, and compare notes live on air." For challenge/comparison episodes, use "head-to-head challenge" not "blind challenge."
+
 ---
 
 ## Spoke Page Rules

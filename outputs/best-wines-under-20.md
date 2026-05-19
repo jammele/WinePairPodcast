@@ -13,7 +13,7 @@
 
 We have tasted and rated over 250 wines on The Wine Pair Podcast. Most of them cost under $20. Here are the ones that actually earned it.
 
-A note on how we work: Joe and Carmela open bottles blind (or at least without knowing the price until after they have tasted) and rate each wine on a 10-point scale. We buy all our own wine — no free samples or sponsorships, ever. This is an independent wine podcast, and these are really honest ratings and reviews. Just bottles that earned 8/10 or higher from at least one of us, all at $20 or less.
+A note on how we work: Joe and Carmela taste each wine together, rate independently on a 10-point scale, and compare notes live on air. We buy all our own wine, no free samples or sponsorships, ever. This is an independent wine podcast, and these are really honest ratings and reviews. Just bottles that earned 8/10 or higher from at least one of us, all at $20 or less.
 
 The biggest thing we have learned after 200 episodes? The $20 price point is where wine quality actually plateaus. Above that, you are mostly paying for reputation and scarcity. Below it, the range is wide: a lot of forgettable wine, but also some genuinely great bottles if you know where to look. This list is where to look.
 
@@ -147,7 +147,7 @@ Every wine on this list was opened, argued about, and rated on the show. The one
 
 ## Hear the Tastings
 
-The Wine Pair Podcast is an independent wine podcast focused on everyday wines, not prestige chasing. Every bottle on this list has a full episode: blind tasting, honest ratings from both Joe and Carmela, food pairings, and a lot of disagreement. Episode links are in each section above.
+The Wine Pair Podcast is an independent wine podcast focused on everyday wines, not prestige chasing. Every bottle on this list has a full episode: honest ratings from both Joe and Carmela, food pairings, and a lot of disagreement. Episode links are in each section above.
 
 [Buzzsprout embed — Joe: add the Episode 121 embed here (Kila Cava episode) as the featured listen]
 
@@ -156,7 +156,7 @@ The Wine Pair Podcast is an independent wine podcast focused on everyday wines, 
 ## Frequently Asked Questions
 
 **Q. What is the best wine under $20?**
-A. For sparkling, the Vins el Cep Kila Cava Brut Organic at $13.99 is one of only a few wines we have ever rated 10/10, at any price. For red wine, the Kirkland Signature Rioja Reserva at $7.99 is our top pick: a full-bodied, complex Tempranillo that beat wines costing twice as much in a blind tasting. Both are worth seeking out.
+A. For sparkling, the Vins el Cep Kila Cava Brut Organic at $13.99 is one of only a few wines we have ever rated 10/10, at any price. For red wine, the Kirkland Signature Rioja Reserva at $7.99 is our top pick: a full-bodied, complex Tempranillo that beat wines costing twice as much in a head-to-head challenge. Both are worth seeking out.
 
 **Q. Is Costco wine actually good?**
 A. More often than not, yes. Kirkland Signature wines are made by well-known winemakers under contract, and the quality control is better than most grocery store house brands. The Rioja Reserva at $7.99 and Côtes du Rhône Villages at $7.49 are two of the best value wines we have reviewed across 200+ episodes. The hit rate is not 100%, but it is high enough that Costco is our first stop for everyday wine.
@@ -168,7 +168,7 @@ A. Spanish Cava. Made using the exact same method as Champagne, with second ferm
 A. Spain's Rioja (for reds) and Cava region (for sparkling), France's Côtes du Rhône (for easy-drinking reds), and Italy's Abruzzo (Montepulciano d'Abruzzo) are the most consistent overdeliverers we have found. For white wine, white Rioja, Portuguese Vinho Verde, and New Zealand Sauvignon Blanc punch well above their prices. Washington state rosé is a sleeper pick.
 
 **Q. How many wines have you actually tasted on the show?**
-A. Over 250 wines across 200+ episodes. Joe and Carmela taste blind or near-blind, rate independently on a 10-point scale, and compare notes live on air. Every wine on this list earned an 8/10 or higher from at least one host.
+A. Over 250 wines across 200+ episodes. Joe and Carmela taste each wine together, rate independently on a 10-point scale, and compare notes live on air. Every wine on this list earned an 8/10 or higher from at least one host.
 
 ---
 
@@ -272,7 +272,7 @@ Flat illustration, wide 16:9, warm ivory background, clean and simple. Three win
   "reviewRating": {"@type": "Rating", "ratingValue": "8", "bestRating": "10", "worstRating": "1"},
   "author": [{"@type": "Person", "name": "Joe"}, {"@type": "Person", "name": "Carmela"}],
   "publisher": {"@type": "Organization", "name": "The Wine Pair Podcast"},
-  "reviewBody": "The best value red wine we have reviewed. 100% Tempranillo oak-aged Reserva at $7.99. Black cherry, black pepper, cinnamon, clove, and roses on the nose. Full-bodied, jammy, blackcurrant jam, dark fruit, and smoke on the finish. Beat wines twice the price in a blind challenge."
+  "reviewBody": "The best value red wine we have reviewed. 100% Tempranillo oak-aged Reserva at $7.99. Black cherry, black pepper, cinnamon, clove, and roses on the nose. Full-bodied, jammy, blackcurrant jam, dark fruit, and smoke on the finish. Beat wines twice the price in a head-to-head challenge."
 }
 </script>
 
@@ -340,7 +340,7 @@ Flat illustration, wide 16:9, warm ivory background, clean and simple. Three win
       "name": "What is the best wine under $20?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For sparkling, the Vins el Cep Kila Cava Brut Organic at $13.99 is one of only a few wines we have ever rated 10/10 in 200+ episodes of The Wine Pair Podcast. For red wine, the Kirkland Signature Rioja Reserva at $7.99 is our top pick: a full-bodied Tempranillo that beat wines costing twice as much in a blind tasting."
+        "text": "For sparkling, the Vins el Cep Kila Cava Brut Organic at $13.99 is one of only a few wines we have ever rated 10/10 in 200+ episodes of The Wine Pair Podcast. For red wine, the Kirkland Signature Rioja Reserva at $7.99 is our top pick: a full-bodied Tempranillo that beat wines costing twice as much in a head-to-head challenge."
       }
     },
     {
@@ -372,7 +372,7 @@ Flat illustration, wide 16:9, warm ivory background, clean and simple. Three win
       "name": "How many wines have you actually tasted on the show?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Over 250 wines across 200+ episodes. Joe and Carmela taste blind or near-blind, rate independently on a 10-point scale, and compare notes live on air. Every wine on this list earned an 8/10 or higher from at least one host."
+        "text": "Over 250 wines across 200+ episodes. Joe and Carmela taste each wine together, rate independently on a 10-point scale, and compare notes live on air. Every wine on this list earned an 8/10 or higher from at least one host."
       }
     }
   ]
