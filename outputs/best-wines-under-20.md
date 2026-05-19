@@ -13,9 +13,9 @@
 
 We have tasted and rated over 250 wines on The Wine Pair Podcast. Most of them cost under $20. Here are the ones that actually earned it.
 
-A note on how we work: Joe and Carmela open bottles blind — or at least without knowing the price until after they have tasted — and rate each wine on a 10-point scale. There are no affiliate deals on this list. No sponsored picks. Just bottles that earned 8/10 or higher from at least one of us, all at $20 or less.
+A note on how we work: Joe and Carmela open bottles blind (or at least without knowing the price until after they have tasted) and rate each wine on a 10-point scale. There are no affiliate deals on this list. No sponsored picks. Just bottles that earned 8/10 or higher from at least one of us, all at $20 or less.
 
-The biggest thing we have learned after 200 episodes? The $20 price point is where wine quality actually plateaus. Above that, you are mostly paying for reputation and scarcity. Below it, the range is wide — a lot of forgettable wine, but also some genuinely great bottles if you know where to look. This list is where to look.
+The biggest thing we have learned after 200 episodes? The $20 price point is where wine quality actually plateaus. Above that, you are mostly paying for reputation and scarcity. Below it, the range is wide: a lot of forgettable wine, but also some genuinely great bottles if you know where to look. This list is where to look.
 
 ---
 
@@ -31,10 +31,10 @@ The biggest thing we have learned after 200 episodes? The $20 price point is whe
 
 ## Best Cheap Sparkling Wine Under $20
 
-### 2020 Vins el Cep Kila Cava Brut Organic — $13.99
+### 2020 Vins el Cep Kila Cava Brut Organic, $13.99
 **Joe: 10/10 | Carmela: 9/10 | [Episode 121](https://thewinepairpodcast.com/episode/spains-answer-to-champagne-cava-a-step-up-from-prosecco-at-a-similar-price)**
 
-Made using the exact same traditional method as Champagne — second fermentation in the bottle — from three indigenous Spanish grapes: 50% Xarel·lo, 25% Macabeo, 25% Parellada. Organic. From the Penedès region of Catalonia.
+Made using the exact same traditional method as Champagne (second fermentation in the bottle) from three indigenous Spanish grapes: 50% Xarel·lo, 25% Macabeo, 25% Parellada. Organic. From the Penedès region of Catalonia.
 
 On the nose: toast, pear, dried apricot, raw almond, citrus, apple, cinnamon, baking spice, and white flower. On the palate: bone dry, fresh, stone fruit, citrus, lime zest, and a clean bitter finish that keeps pulling you back.
 
@@ -46,7 +46,7 @@ Where to find it: wine specialty shops. We found it at Mad Wine Esquin in Seattl
 
 ---
 
-### Trader Joe's Platinum Reserve Sonoma County Brut — $14.99
+### Trader Joe's Platinum Reserve Sonoma County Brut, $14.99
 **Joe: 7/10 | Carmela: 9/10 | [Episode 112](https://thewinepairpodcast.com/episode/how-good-are-trader-joes-platinum-reserve-wines-tjs-is-a-great-inexpensive-place-to-expand-your-wine-horizons-is-high-end-cheap-worth-the-price)**
 
 If the Kila Cava is unavailable, this is the most reliable everyday substitute. Pineapple, pear, smooth and easy to drink. Carmela called it her finish-the-bottle pick. The SF Chronicle called it "crushable," which is exactly right. Keep a few in the fridge. Available at every Trader Joe's.
@@ -55,16 +55,16 @@ If the Kila Cava is unavailable, this is the most reliable everyday substitute. 
 
 ## Best Cheap Rosé Under $20
 
-### 2023 Scaia Rosato — $14.99
+### 2023 Scaia Rosato, $14.99
 **Joe: 9/10 | Carmela: 8/10 | [Episode 145](https://thewinepairpodcast.com/episode/getting-serious-about-rose-4-bandol)**
 
-Italian rosé from the Veneto, made from Rondinella — a grape you almost never see on its own. Very dry and acidic, with grapefruit, lemon, peach, watermelon, and orange zest. On the palate: tart, medium-bodied, nectarine, apricot, and an almost orange-wine quality that makes it feel more serious than a typical summer rosé. Joe called it his finish-the-bottle pick and described it as "tasting like a much more interesting wine than the price suggests."
+Italian rosé from the Veneto, made from Rondinella, a grape you almost never see on its own. Very dry and acidic, with grapefruit, lemon, peach, watermelon, and orange zest. On the palate: tart, medium-bodied, nectarine, apricot, and an almost orange-wine quality that makes it feel more serious than a typical summer rosé. Joe called it his finish-the-bottle pick and described it as "tasting like a much more interesting wine than the price suggests."
 
 Good as an aperitivo, great at Thanksgiving (that is when we tasted it), and an excellent gift bottle. Available at wine.com and specialty wine shops.
 
 ---
 
-### Chateau Ste. Michelle Columbia Valley Rosé — $8.99
+### Chateau Ste. Michelle Columbia Valley Rosé, $8.99
 **Joe: 7/10 | Carmela: 9/10 | [Episode 145](https://thewinepairpodcast.com/episode/getting-serious-about-rose-4-bandol)**
 
 Washington state wine that overperforms at nine dollars. Made from 55% Syrah, 43% Cabernet Sauvignon, and 2% Grenache. Raspberry, pomegranate, lime, grapefruit, apple, pear, and watermelon on the nose. On the palate: starts slightly sweet, dries out beautifully, with tangy raspberry and zippy lemon acidity. Carmela said it was beautiful on the table and a crowd pleaser. She was right.
@@ -75,7 +75,7 @@ If you are hosting a crowd and want something everyone will drink without questi
 
 ## Best Cheap Red Wines Under $20
 
-### Kirkland Signature Rioja Reserva 2019 — $7.99
+### Kirkland Signature Rioja Reserva 2019, $7.99
 **Joe: 8/10 | Carmela: 8/10 | [Episode 119](https://thewinepairpodcast.com/episode/costco-kirkland-signature-2019-rioja-reserva-challenge-a-punch-you-in-the-face-wine-perfect-base-for-sangria-for-cab-sauv-lovers)**
 
 Eight dollars. One hundred percent Tempranillo. Oak-aged Reserva. This is the best value red wine we have reviewed on the show.
@@ -86,16 +86,16 @@ It also makes a fantastic Sangria base if you are into that.
 
 ---
 
-### Kirkland Signature Côtes du Rhône Villages 2023 — $7.49
+### Kirkland Signature Côtes du Rhône Villages 2023, $7.49
 **Joe: 8/10 | Carmela: 8/10 | [Episode 177](https://thewinepairpodcast.com/episode/costco-kirkland-signature-cotes-du-rhone-challenge)**
 
-A Syrah, Grenache, and Mourvèdre blend from the southern Rhône valley of France. Cherry cordial, chocolate, mocha, and plum on the nose — spicy and juicy on the palate with a clean finish. Light enough to drink on its own, complex enough to hold up with food. Winemaker Patrick Lesec knows this region inside and out.
+A Syrah, Grenache, and Mourvèdre blend from the southern Rhône valley of France. Cherry cordial, chocolate, mocha, and plum on the nose, spicy and juicy on the palate with a clean finish. Light enough to drink on its own, complex enough to hold up with food. Winemaker Patrick Lesec knows this region inside and out.
 
 At $7.49, this is the cheapest 8/10 red wine we have ever reviewed.
 
 ---
 
-### La Valentina Montepulciano d'Abruzzo — $14.99
+### La Valentina Montepulciano d'Abruzzo, $14.99
 **Joe: 8/10 | Carmela: 8/10 | [Episode 113](https://thewinepairpodcast.com/episode/italian-wine-adventure-11-montepulciano-dabruzzo-an-underrated-and-underappreciated-italian-beauty-the-ultimate-cookout-wine)**
 
 Montepulciano d'Abruzzo is one of the most reliable value categories in Italian wine: full-bodied, dark, earthy, and almost always under $15. La Valentina's version won our episode head-to-head against two other bottles and is our top pick in the category. Pairs well with pasta, pizza, and grilled meats. Widely available.
@@ -104,10 +104,10 @@ Montepulciano d'Abruzzo is one of the most reliable value categories in Italian 
 
 ## Best Cheap White Wine Under $20
 
-### 2024 CVNE Monopole Blanco Rioja — $14.97
+### 2024 CVNE Monopole Blanco Rioja, $14.97
 **Joe: 7/10 | Carmela: 8/10 | [Episode 216](https://thewinepairpodcast.com/episode/viura-the-great-white-wine-hiding-in-riojas-red-wine-shadow)**
 
-White Rioja made entirely from Viura — a grape that spends most of its life blended into red Rioja but makes a lovely, crisp white on its own. No oak. Fresh and clean: green apple, pear, and white peach on the nose, citrus on the finish. Carmela called it "excellent value." Good with seafood, chicken, lighter pasta. Available at Total Wine and wine shops.
+White Rioja made entirely from Viura, a grape that spends most of its life blended into red Rioja but makes a lovely, crisp white on its own. No oak. Fresh and clean: green apple, pear, and white peach on the nose, citrus on the finish. Carmela called it "excellent value." Good with seafood, chicken, lighter pasta. Available at Total Wine and wine shops.
 
 ---
 
@@ -115,9 +115,9 @@ White Rioja made entirely from Viura — a grape that spends most of its life bl
 
 Three bottles we keep buying:
 
-- **Kirkland Signature Rioja Reserva — $7.99** (see above — the best $8 wine we know)
-- **Kirkland Signature Côtes du Rhône Villages — $7.49** (see above)
-- **Kirkland Signature Ti Point Sauvignon Blanc (New Zealand) — $7.49** — crisp, grassy, citrusy, rated 7.5/10. Not flashy, but never wrong at a party. [Episode 140](https://thewinepairpodcast.com/episode/wallet-friendly-wine-reviews-two-buck-chuck-sauvignon-blanc-challenge).
+- **Kirkland Signature Rioja Reserva, $7.99** (see above, the best $8 wine we know)
+- **Kirkland Signature Côtes du Rhône Villages, $7.49** (see above)
+- **Kirkland Signature Ti Point Sauvignon Blanc (New Zealand), $7.49.** Crisp, grassy, citrusy, rated 7.5/10. Not flashy, but never wrong at a party. [Episode 140](https://thewinepairpodcast.com/episode/wallet-friendly-wine-reviews-two-buck-chuck-sauvignon-blanc-challenge).
 
 ---
 
@@ -125,7 +125,7 @@ Three bottles we keep buying:
 
 After 200+ episodes, some categories reliably punch above their price:
 
-**Costco Kirkland wines** have a higher hit rate than any other house-brand wine we have tested. Not every bottle is great, but the ones that are — especially in French and Spanish categories — are genuinely hard to beat. Start with the Rioja Reserva and the Côtes du Rhône.
+**Costco Kirkland wines** have a higher hit rate than any other house-brand wine we have tested. Not every bottle is great, but the ones that are (especially in French and Spanish categories) are genuinely hard to beat. Start with the Rioja Reserva and the Côtes du Rhône.
 
 **Spanish Cava** is chronically underpriced. Same method as Champagne, fraction of the cost, and the quality ceiling is high. The Kila Cava above is proof. If you find a traditional-method Cava from a quality producer, buy it.
 
@@ -139,16 +139,16 @@ After 200+ episodes, some categories reliably punch above their price:
 
 ## So Is Cheap Wine Worth Drinking?
 
-Yes. The quality curve in wine flattens out dramatically past $20-25. Above that, you are mostly paying for reputation, classification, aging, and scarcity — not flavor. Below it, the range is wide, but the bottles above are where we keep ending up.
+Yes. The quality curve in wine flattens out dramatically past $20-25. Above that, you are mostly paying for reputation, classification, aging, and scarcity. Not flavor. Below it, the range is wide, but the bottles above are where we keep ending up.
 
-Every wine on this list was opened, argued about, and rated on the show. The ones that earned 8/10 or higher are worth your money. The ones that earned a 10 — well, there are not many of those.
+Every wine on this list was opened, argued about, and rated on the show. The ones that earned 8/10 or higher are worth your money. The ones that earned a 10: well, there are not many of those.
 
 ---
 
 ## Frequently Asked Questions
 
 **Q. What is the best wine under $20?**
-A. For sparkling, the Vins el Cep Kila Cava Brut Organic at $13.99 is one of only a few wines we have ever rated 10/10 — at any price. For red wine, the Kirkland Signature Rioja Reserva at $7.99 is our top pick: a full-bodied, complex Tempranillo that beat wines costing twice as much in a blind tasting. Both are worth seeking out.
+A. For sparkling, the Vins el Cep Kila Cava Brut Organic at $13.99 is one of only a few wines we have ever rated 10/10, at any price. For red wine, the Kirkland Signature Rioja Reserva at $7.99 is our top pick: a full-bodied, complex Tempranillo that beat wines costing twice as much in a blind tasting. Both are worth seeking out.
 
 **Q. Is Costco wine actually good?**
 A. More often than not, yes. Kirkland Signature wines are made by well-known winemakers under contract, and the quality control is better than most grocery store house brands. The Rioja Reserva at $7.99 and Côtes du Rhône Villages at $7.49 are two of the best value wines we have reviewed across 200+ episodes. The hit rate is not 100%, but it is high enough that Costco is our first stop for everyday wine.
@@ -168,12 +168,12 @@ A. Over 250 wines across 200+ episodes. Joe and Carmela taste blind or near-blin
 
 **Custom SEO Title:** Best Wines Under $20: Our Top Picks After Tasting 250+ Bottles
 
-**Custom SEO Description:** We've rated over 250 wines on the podcast. These are the best wines under $20 that earned 8/10 or higher — real tasting notes, real prices, and links to the episodes.
+**Custom SEO Description:** We've rated over 250 wines on the podcast. These are the best wines under $20 that earned 8/10 or higher: real tasting notes, real prices, and links to the episodes.
 *(157 characters)*
 
 **URL slug:** best-wines-under-20
 
-**Excerpt:** After 200+ episodes and 250+ bottles, here are the best wines under $20 we actually rated highly — with tasting notes, prices, and episode links.
+**Excerpt:** After 200+ episodes and 250+ bottles, here are the best wines under $20 we actually rated highly, with tasting notes, prices, and episode links.
 
 **Author / Participant:** Joe Mele, role: Author
 
@@ -181,7 +181,7 @@ A. Over 250 wines across 200+ episodes. Joe and Carmela taste blind or near-blin
 
 ## Image Prompt
 
-Flat illustration, wide 16:9, cream background, clean and simple. Three wine bottles side by side at slightly different heights — a sparkling wine bottle, a rosé bottle, and a red wine bottle — each with a small hand-written-style price tag attached ($7.99, $13.99, $14.99). A few scattered coins near the base to suggest affordability. No text in the image.
+Flat illustration, wide 16:9, cream background, clean and simple. Three wine bottles side by side at slightly different heights: a sparkling wine bottle, a rosé bottle, and a red wine bottle, each with a small hand-written-style price tag attached ($7.99, $13.99, $14.99). A few scattered coins near the base to suggest affordability. No text in the image.
 
 ---
 
@@ -296,7 +296,7 @@ Flat illustration, wide 16:9, cream background, clean and simple. Three wine bot
   "reviewRating": {"@type": "Rating", "ratingValue": "8", "bestRating": "10", "worstRating": "1"},
   "author": [{"@type": "Person", "name": "Joe"}, {"@type": "Person", "name": "Carmela"}],
   "publisher": {"@type": "Organization", "name": "The Wine Pair Podcast"},
-  "reviewBody": "Our top pick in the Montepulciano d'Abruzzo category — one of the most reliable value regions in Italian wine. Full-bodied, dark, earthy, and food-friendly. Won the episode head-to-head against two other bottles at $14.99."
+  "reviewBody": "Our top pick in the Montepulciano d'Abruzzo category, one of the most reliable value regions in Italian wine. Full-bodied, dark, earthy, and food-friendly. Won the episode head-to-head against two other bottles at $14.99."
 }
 </script>
 
@@ -348,7 +348,7 @@ Flat illustration, wide 16:9, cream background, clean and simple. Three wine bot
       "name": "What is the best cheap sparkling wine that is not Prosecco?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Spanish Cava. It is made using the exact same traditional method as Champagne — second fermentation in the bottle — at a fraction of the cost. The Vins el Cep Kila Cava at $13.99 rated higher on our show than most sparkling wines at $40. If you cannot find it, Trader Joe's Platinum Reserve Sonoma County Brut at $14.99 is widely available and rated 8/10."
+        "text": "Spanish Cava. It is made using the exact same traditional method as Champagne, with second fermentation in the bottle, at a fraction of the cost. The Vins el Cep Kila Cava at $13.99 rated higher on our show than most sparkling wines at $40. If you cannot find it, Trader Joe's Platinum Reserve Sonoma County Brut at $14.99 is widely available and rated 8/10."
       }
     },
     {
