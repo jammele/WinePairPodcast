@@ -6,11 +6,12 @@
 
 ## Immediate next actions
 
-1. **Best Wines Under $20 — PUBLISHED, schema incomplete.** Live at `https://thewinepairpodcast.com/blog/best-wines-under-20`. Author byline PASS, cards PASS, meta PASS, title PASS. **Two schema blocks were dropped when Joe re-saved to add author byline — must re-paste in Beamly before submitting to GSC:**
+1. **Best Wines Under $20 — PUBLISHED, schema incomplete.** Live at `https://thewinepairpodcast.com/blog/best-wines-under-20`. Author byline PASS, cards PASS, meta PASS, title PASS. GSC indexing already requested (without schemas). **Must re-paste schemas in Beamly, then re-request GSC indexing:**
    - Re-paste all 20 Review Schema blocks (code embed block 1)
    - Re-paste FAQPage Schema — 6 questions (code embed block 2)
    - Both blocks are at the bottom of `outputs/best-wines-under-20.md` between COPY START / COPY END markers
-   - After re-saving: run `/verify-published https://thewinepairpodcast.com/blog/best-wines-under-20` to confirm all 6 checks pass before requesting GSC indexing
+   - After re-saving: run `/verify-published https://thewinepairpodcast.com/blog/best-wines-under-20` to confirm all 6 checks pass
+   - Then: GSC → URL Inspection → Request Indexing again
 2. **Next spoke page** — Cabernet Sauvignon (draft ready at `outputs/cabernet-sauvignon-spoke.md`). After Best Wines Under $20 schemas are confirmed live. Then Chardonnay, Sauvignon Blanc, 6th spoke (TBD).
 3. **GSC indexing check (overdue — was May 2-5)** — May 10 GSC data shows Pinot Noir spoke and Malbec spoke generating clicks (10 and 3 respectively), suggesting they indexed. Chill Red Wine and Josh/B&B posts also showing impressions. Formal verification still needed via GSC URL Inspection for all 4.
 
