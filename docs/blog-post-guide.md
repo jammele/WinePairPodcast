@@ -74,10 +74,10 @@ The Buzzsprout embed code goes here. Joe adds it in Beamly (log into Buzzsprout 
 
 ### 7. Full Q&A
 Title: **Frequently Asked Questions**
-4-5 pairs. Format exactly like this:
+4-5 pairs. Format exactly like this (HR-2):
 
-**Is Bread & Butter wine good?**
-It depends on what you are looking for. We found all three wines to taste stale and artificial compared to other options at the same price. The Sauvignon Blanc was the best of the three; the Chardonnay was the worst.
+**Q. Is Bread & Butter wine good?**
+A. It depends on what you are looking for. We found all three wines to taste stale and artificial compared to other options at the same price. The Sauvignon Blanc was the best of the three; the Chardonnay was the worst.
 
 Rules:
 - Front-load the answer. Never start with "It depends" without immediately following with the actual answer.

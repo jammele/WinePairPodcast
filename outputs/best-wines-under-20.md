@@ -13,7 +13,7 @@
 
 We have tasted and rated over 250 wines on The Wine Pair Podcast. Most of them cost under $20. Here are the ones that actually earned it.
 
-A note on how we work: Joe and Carmela open bottles blind (or at least without knowing the price until after they have tasted) and rate each wine on a 10-point scale. There are no affiliate deals on this list. No sponsored picks. Just bottles that earned 8/10 or higher from at least one of us, all at $20 or less.
+A note on how we work: Joe and Carmela open bottles blind (or at least without knowing the price until after they have tasted) and rate each wine on a 10-point scale. We buy all our own wine — no free samples or sponsorships, ever. This is an independent wine podcast, and these are really honest ratings and reviews. Just bottles that earned 8/10 or higher from at least one of us, all at $20 or less.
 
 The biggest thing we have learned after 200 episodes? The $20 price point is where wine quality actually plateaus. Above that, you are mostly paying for reputation and scarcity. Below it, the range is wide: a lot of forgettable wine, but also some genuinely great bottles if you know where to look. This list is where to look.
 
@@ -145,6 +145,14 @@ Every wine on this list was opened, argued about, and rated on the show. The one
 
 ---
 
+## Hear the Tastings
+
+The Wine Pair Podcast is an independent wine podcast focused on everyday wines, not prestige chasing. Every bottle on this list has a full episode: blind tasting, honest ratings from both Joe and Carmela, food pairings, and a lot of disagreement. Episode links are in each section above.
+
+[Buzzsprout embed — Joe: add the Episode 121 embed here (Kila Cava episode) as the featured listen]
+
+---
+
 ## Frequently Asked Questions
 
 **Q. What is the best wine under $20?**
@@ -181,7 +189,7 @@ A. Over 250 wines across 200+ episodes. Joe and Carmela taste blind or near-blin
 
 ## Image Prompt
 
-Flat illustration, wide 16:9, cream background, clean and simple. Three wine bottles side by side at slightly different heights: a sparkling wine bottle, a rosé bottle, and a red wine bottle, each with a small hand-written-style price tag attached ($7.99, $13.99, $14.99). A few scattered coins near the base to suggest affordability. No text in the image.
+Flat illustration, wide 16:9, warm ivory background, clean and simple. Three wine bottles side by side at slightly different heights: a sparkling wine bottle labeled "KILA CAVA" (center, slightly larger and forward), a rosé bottle labeled "SCAIA ROSATO" (left), and a red wine bottle labeled "RIOJA RESERVA" (right). Varied silhouettes: tapered sparkling bottle, standard Bordeaux-style red, slender Italian rosé. Each bottle has a small hand-written-style price tag attached ($13.99, $14.99, $7.99). A few scattered coins near the base to suggest affordability. No wine glasses, no people, no table setting.
 
 ---
 
