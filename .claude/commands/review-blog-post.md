@@ -12,8 +12,14 @@ Review a blog post draft for formatting violations, AEO/SEO completeness, and fa
 
 When the user types `/review-blog-post <filepath>`:
 
-1. Read the draft file at the given path
-2. Spawn a subagent with the instructions below, passing it the draft content
+1. **FIRST: Run the Node.js em-dash scan before spawning the subagent:**
+   ```
+   node -e "const fs=require('fs');const c=fs.readFileSync('<filepath>','utf8');const lines=c.split('\n');let count=0;lines.forEach((l,i)=>{if(l.includes('—')){count++;console.log('Line '+(i+1)+': '+l.trim());}});console.log('Total em-dashes: '+count);"
+   ```
+   If ANY em-dashes are found, fix them ALL before proceeding. Do not spawn the subagent until this returns "Total em-dashes: 0". The Grep tool cannot reliably detect Unicode em-dashes — always use this Node.js scan.
+
+2. Read the draft file at the given path
+3. Spawn a subagent with the instructions below, passing it the draft content
 
 ---
 
@@ -35,7 +41,7 @@ After reading house-rules.md, run the checks below.
 
 Check every house rule that applies to blog posts. The most common failures:
 
-- **HR-1 (no em-dashes):** Scan the ENTIRE draft: body text, tasting notes, FAQ answers, Beamly fields (title, meta, excerpt), image prompt, and every reviewBody field inside schema blocks. Flag every instance. This is the most common miss.
+- **HR-1 (no em-dashes):** The Node.js scan above already ran before this subagent was spawned, but verify the draft content passed to you contains zero `—` characters. Check body text, tasting notes, FAQ answers, Beamly fields (title, meta, excerpt), image prompt, and every reviewBody field inside schema blocks. **Do not use Grep for this check — Grep silently fails on Unicode em-dashes. Count occurrences of `—` directly in the text passed to you.** If any remain, list every instance with exact quote and required fix.
 - **HR-2 (Q./A. format):** Every FAQ question/answer pair must use bold `**Q. Question?**` / unbolded `A. Answer.` format. A plain bold heading like `**What is the best wine?**` is a violation. Flag any deviation.
 - **HR-8 (image prompt):** Confirm image prompt is present and specifies: flat illustration 16:9, wine names on bottle labels in sans-serif text (never unlabeled bottles), varied silhouettes by bottle type, no people, no wine glasses, no table settings, background color that varies from cream if cream was used on the previous post.
 - **HR-22 (author participant reminder):** Confirm the Beamly fields section includes a reminder to add Joe Mele as Author participant.
