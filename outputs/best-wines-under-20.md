@@ -1,4 +1,4 @@
-# Best Wines Under $20: Our Top Picks After 200+ Episodes
+# The 20 Best Wines Under $20: Our Top Picks After 200+ Episodes
 
 **Format:** B (SEO/AEO Structured, list variant)
 **Target query:** "best wines under $20" / "best inexpensive wine"
@@ -13,7 +13,7 @@ All episode URLs verified.
 
 ---
 
-We have tasted and rated close to 500 wines on The Wine Pair Podcast across 200+ episodes. These are every wine we have rated 8/10 or higher that costs $20 or less, organized by style, with the tasting notes, prices, and episode links to back it up.
+These are the 20 best wines under $20 we have found across 200+ episodes: every one rated 8/10 or higher by both Joe and Carmela, organized by style, with tasting notes, prices, and episode links to back it up. Out of close to 500 wines tasted on The Wine Pair Podcast, these are the ones that cleared the bar at this price.
 
 A note on how we work: Joe and Carmela taste each wine together, rate independently on a 10-point scale, and compare notes live on air. We buy all our own wine, no free samples or sponsorships, ever. This is an independent wine podcast and these are really honest ratings and reviews, no prestige chasing, no incentives to inflate a score.
 
@@ -379,14 +379,14 @@ A. Every wine we have tasted and rated across close to 500 wines and 200+ episod
 
 ## Beamly Fields
 
-**Custom SEO Title:** Best Wines Under $20: Every Wine We've Rated 8/10 or Higher
+**Custom SEO Title:** 20 Best Wines Under $20 Rated 8/10 or Higher
 
 **Custom SEO Description:** Every wine we rated 8/10 or higher for under $20: sparkling, red, white, rosé, and dessert. Tasting notes, prices, and episode links from 200+ episodes.
 *(152 characters)*
 
 **URL slug:** best-wines-under-20
 
-**Excerpt:** After 200+ episodes, here are every wine we have rated 8/10 or higher for under $20 — by category, with tasting notes, prices, and episode links.
+**Excerpt:** The 20 best wines under $20 from 200+ episodes of The Wine Pair Podcast, all rated 8/10 or higher: by category, with tasting notes, prices, and episode links.
 
 **Author / Participant:** Add Joe Mele as Author participant in Beamly (Authors / Participants section, search "Joe Mele," role: Author).
 
