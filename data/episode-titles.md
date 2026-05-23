@@ -1,6 +1,6 @@
 # Episode Title Archive — The Wine Pair Podcast
 
-**Last updated:** 2026-05-09 (through Ep217)
+**Last updated:** 2026-05-22 (through Ep219)
 **Maintained by:** Claude — add each confirmed title here before committing episode work.
 
 ---
@@ -173,7 +173,6 @@ Format: `Special Episode! The Virginia Winemakers Series [#N if >1]: [Name] of [
 
 | Ep | Title | Format pattern |
 |---|---|---|
-| 203 | Forget Chocolate: Why Sherry is the Ultimate Valentine's Day Unlock! | Bold reframe + action verb |
 | 204 | Rosé d'Anjou: Better (and Cheaper) Than Provence Rosé? | [Wine]: [Comparative question] |
 | 205 | WTF is Bordeaux Blanc? The Best French Sauvignon Blanc Value! | Series (WTF) |
 | 206 | Sparkling Riesling (German Sekt): The Fruity Bubbly Under $20 You've Never Tried! | [Wine] ([alias]): [Discovery claim] |
@@ -187,7 +186,8 @@ Format: `Special Episode! The Virginia Winemakers Series [#N if >1]: [Name] of [
 | 214 | German Riesling Smells Like Airplane Glue and We Can't Stop Drinking It! | [Surprising/absurd claim] |
 | 215 | Experts Loved the $50 Oregon Pinot Noir. We Chose the $23 Bottle! | [Bold claim]. [Surprising result]. |
 | 216 | Viura: The Great White Wine Hiding in Rioja's Red Wine Shadow! | [Grape]: [Metaphor-driven discovery] |
-| **217** | **Italian Wine Adventure #24: Frappato! The Chillable Red Wine!** | Series (IWA) + subtitle |
+| 217 | Italian Wine Adventure #24: Frappato! The Chillable Red Wine! | Series (IWA) + subtitle |
+| **219** | **Is Two Buck Chuck Actually Terrible, or Is That Just Wine Snob Talk?** | [Open accusation question] |
 
 ---
 
@@ -409,3 +409,4 @@ Ep214: German Riesling Smells Like Airplane Glue and We Can't Stop Drinking It!
 Ep215: Experts Loved the $50 Oregon Pinot Noir. We Chose the $23 Bottle!
 Ep216: Viura: The Great White Wine Hiding in Rioja's Red Wine Shadow!
 Ep217: Italian Wine Adventure #24: Frappato! The Chillable Red Wine!
+Ep219: Is Two Buck Chuck Actually Terrible, or Is That Just Wine Snob Talk?

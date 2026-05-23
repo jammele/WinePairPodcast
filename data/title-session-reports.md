@@ -13,7 +13,10 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 
 *(Manually maintained. Updated after each session where Joe's selection reveals a pattern. Summarize what Joe consistently picks, angles that get rejected, and controversy framings that work for this show.)*
 
-No patterns recorded yet. First entry is Ep219 below.
+**Ep219 (1 data point — too early to call a pattern):**
+- Joe selected the question-format title with the highest controversy/curiosity gap score (5/5), passing over two declarative alternatives with lower scores
+- The open accusation question ("Is X actually terrible, or is that just snob talk?") framing drove the pick — it positions the show as an honest arbiter vs. received opinion
+- The reviewer's strongest pick matched Joe's selection — worth tracking whether this holds across future runs
 
 ---
 
@@ -52,6 +55,6 @@ No patterns recorded yet. First entry is Ep219 below.
 
 **Research-to-Title Alignment:** All three final options use the wine snob dismissal tension identified as the dominant angle in Step 0. Option 1 most directly fills the content gap — framed as settling a controversy rather than just reviewing. The Chardonnay-outperforms-Cab angle (a gap in competitor content) was intentionally left out of titles to avoid spoiling the episode result.
 
-**Joe's selection:** *(pending)*
+**Joe's selection:** Is Two Buck Chuck Actually Terrible, or Is That Just Wine Snob Talk? (Option 1 — reviewer's strongest, 9/10 Clickability, 5/5 controversy)
 
 ---
