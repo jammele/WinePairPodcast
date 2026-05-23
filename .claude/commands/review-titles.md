@@ -41,6 +41,34 @@ When Joe asks for episode titles:
    Never present titles that scored 6/10 or below on Clickability — a low score means the title is forgettable, not just imperfect.
 7. After fixing any FAILs and culling low-scoring titles, spawn the subagent a second time on the remaining titles. Do not show Joe any titles until the second run returns no FAILs.
 8. Show Joe only titles that passed the second review and cleared the quality gate.
+9. **Generate and show a Session Report** immediately after presenting the final title options. The report must appear in the same response as the titles — do not skip it, do not make Joe ask for it. Format:
+
+```
+---
+## /review-titles Session Report — Ep[N]: [Wine Name]
+
+### Step 0: Web Research Findings
+[3–5 bullets summarizing what the searches found: dominant angles in competitor content, language that drives clicks, gaps/contrarian angles not covered, any existing Wine Pair episodes on this wine]
+
+### Episode Hook
+[One sentence identifying the hook from the script]
+
+### Series
+[Series name and number, or "none"]
+
+### Subagent Round 1 Summary
+[One line per title: title text — PASS/FAIL, Clickability score, key note]
+
+### Quality Gate Decisions
+[Titles dropped and why; or "none dropped"]
+
+### Subagent Round 2 Summary
+[One line per title: title text — PASS/FAIL, Clickability score, key note]
+
+### Research-to-Title Alignment
+[2–3 sentences: do the final options use the strongest angles identified in Step 0? What angle was used? What was left on the table?]
+---
+```
 
 ---
 
