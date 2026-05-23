@@ -131,7 +131,26 @@ function run(filePath) {
     for (const [spokeName, wineList] of Object.entries(EXISTING_SPOKE_WINES)) {
       if (anchorWine.includes(spokeName.toLowerCase())) continue; // skip self
       for (const altWine of alternativeWines) {
-        const match = wineList.find(w => altWine.includes(w) || w.includes(altWine));
+        // Exact match or altWine starts with the known wine name followed by a space/paren.
+        // This prevents "grenache" matching "grenache blanc" and "rioja" matching "white rioja".
+        const match = wineList.find(w => {
+          if (altWine === w) return true;
+          // altWine contains w only if w is a standalone word, not a prefix of a longer term
+          // e.g. "grenache" should not match "grenache blanc"
+          // Strategy: altWine must equal w, or w must equal altWine stripped of a leading
+          // modifier, but NOT when altWine is a more specific compound (e.g. "grenache blanc")
+          // Simplest reliable check: altWine must be exactly w, or altWine must include w
+          // only when the match is not followed by more specific words that differentiate it.
+          // Use: w matches altWine only if they are equal, or altWine contains w as a complete token
+          // meaning not followed by additional descriptive words that make it distinct.
+          const wTokens = w.split(' ');
+          const altTokens = altWine.split(' ');
+          // If altWine has more tokens than w and starts with w's tokens, it's a more specific wine
+          if (altTokens.length > wTokens.length && altWine.startsWith(w + ' ')) return false;
+          // If w is a suffix of altWine (e.g. "rioja" at end of "white rioja"), skip
+          if (altWine.endsWith(' ' + w)) return false;
+          return altWine.includes(w) || w.includes(altWine);
+        });
         if (match) {
           errors.push(`"${altWine}" already appears in the ${spokeName} spoke. Choose a different wine.`);
         }

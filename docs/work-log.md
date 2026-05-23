@@ -1,12 +1,12 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-23 (session 10)
+**Last updated:** 2026-05-23 (session 11)
 
 ---
 
 ## Immediate next actions
 
-1. **Next spoke page — Chardonnay** (not started). Then Sauvignon Blanc, 6th spoke (TBD — confirm with Joe).
+1. **Next spoke page — Chardonnay** (DRAFT READY — review and publish). Then Sauvignon Blanc, 6th spoke (TBD — confirm with Joe).
 2. **Cabernet Sauvignon spoke — COMPLETE.** All 6 checks pass. FAQPage schema (5 questions) live. GSC indexing requested 2026-05-23.
 3. **Best Wines Under $20 — COMPLETE.** All 6 checks pass. GSC indexing already requested.
 
@@ -38,7 +38,7 @@
 | Pinot Noir | LIVE | https://thewinepairpodcast.com/blog/wines-similar-to-pinot-noir |
 | Malbec | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-malbec |
 | Cabernet Sauvignon | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-cabernet-sauvignon — all checks pass, indexing requested 2026-05-23 |
-| Chardonnay | Not started | |
+| Chardonnay | **DRAFT READY** | `outputs/chardonnay-spoke.md` + `outputs/chardonnay-wine-cards-embeds.html` — em-dash scan clean, validator passes |
 | Sauvignon Blanc | Not started | |
 | 6th spoke | Not started | Waiting on Joe to confirm |
 | Hub | Not started | Write after all spokes live |
