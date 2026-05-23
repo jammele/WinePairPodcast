@@ -71,7 +71,8 @@ Pre. **Read `data/cover-art-session-reports.md` before doing anything else.**
    ---
    ```
 
-5. **Ask Joe which concept he wants.** Phrase simply: "Which concept would you like for Ep[N]?" Do not recommend or editorialize — just ask.
+5. **Give a recommendation, then ask Joe which concept he wants.**
+   State which concept you would choose and one sentence explaining why — the reason must be specific to this episode (not generic score-based language like "it scored highest"). Then ask: "Which concept would you like for Ep[N]?"
 
 6. **After Joe confirms his choice — write the ChatGPT prompt.**
    Write the full multi-section ChatGPT prompt (see standard format below) for the selected concept only. Do not write prompts for rejected concepts. Present it ready to paste.
