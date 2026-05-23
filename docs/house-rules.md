@@ -119,6 +119,9 @@ Check `data/episode-titles.md` Named Series Reference before generating. Match c
 **HR-20: Run /review-titles before showing Joe any options.**
 No exceptions. Fix all FAILs before presenting.
 
+**HR-40: Cover art must not reveal the episode verdict.**
+The visual should create the central question from the title, not answer it. Any concept that shows outcome — thumbs up/down on specific wines, one bottle going to the sink, a "winner vs. loser" framing — fails this rule. The test: if someone sees the thumbnail, do they already know what Joe and Carmela concluded? If yes, hard FAIL. Reframe to create the question, not announce the answer.
+
 **HR-39: Episode titles must not spoil the episode verdict.**
 A title should create curiosity about the outcome, not reveal it. Never include ratings, scores, "drinkable", "not a buy", "hit the sink", or any phrasing that tells the listener the key finding before they press play. The test: if a listener reads the title and already knows what the hosts concluded, the title fails. Rewrite to tease the result, not announce it.
 
