@@ -13,7 +13,7 @@ This file is written and read by the `/generate-cover-art` skill. It accumulates
 
 *(Manually maintained. Updated after each session where Joe's selection reveals a pattern. Summarize what structural types Joe consistently picks, what angles he rejects, and what visual framings connect to the show's identity.)*
 
-No patterns recorded yet. First entry is Ep219 below.
+**Ep219 (2026-05-22):** Joe selected Concept B (The Peer Review, 46/50) — structural type: collective deliberation, both characters focused on a single central bottle, neither looking at each other, both locked on the subject mid-process. Joe confirmed the recommended concept without overriding it. Pattern: shared-focus-on-single-prop structure with unresolved tension scores well and aligns with Joe's preference for curiosity-creating framing over verdict framing.
 
 ---
 
@@ -56,7 +56,7 @@ No patterns recorded yet. First entry is Ep219 below.
 2. Concept B: The Peer Review (46/50)
 3. Concept C: The Second Opinion (42/50)
 
-**Joe's selection:** *(pending)*
+**Joe's selection:** Concept B — The Peer Review (46/50)
 
 ---
 

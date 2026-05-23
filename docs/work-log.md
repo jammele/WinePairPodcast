@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-19 (session 8)
+**Last updated:** 2026-05-22 (session 9)
 
 ---
 
@@ -96,6 +96,18 @@
 - Code block at bottom: Buzzsprout embed + Review Schema combined
 
 **Beamly strips `<style>` tags.** All HTML card embeds must use fully inline styles.
+
+---
+
+### Episode 219 — Two Buck Chuck (Charles Shaw Chardonnay + Cabernet Sauvignon)
+
+**Status:** Title confirmed, SEO/AEO complete, cover art selected. Ready to publish.
+**Google Doc ID:** 1bDDjKf3dnWKFR36RO9bL_XFjdsjymDlBhivd4YiP8RM
+**Confirmed title:** Is Two Buck Chuck Actually Terrible, or Is That Just Wine Snob Talk?
+**Wines:** 2023 Charles Shaw Chardonnay ($3.99) — Joe 5, Carmela 6 | 2023 Charles Shaw Cabernet Sauvignon ($3.99) — Joe 4, Carmela 5
+**Finish tonight:** Both chose Chardonnay
+**Cover art:** Concept B — The Peer Review (46/50). ChatGPT prompt ready.
+**Outputs:** `outputs/episodes/ep219-two-buck-chuck.md` — Key Questions, FAQ, Schema markup (Review x2 + FAQPage), 10 Bluesky posts
 
 ---
 
