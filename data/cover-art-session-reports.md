@@ -21,7 +21,44 @@ No patterns recorded yet. First entry is Ep219 below.
 
 ---
 
-### Ep219: Two Buck Chuck (Charles Shaw Chardonnay + Cabernet Sauvignon)
+### Ep219: Two Buck Chuck (Charles Shaw Chardonnay + Cabernet Sauvignon) — Improved Run
+**Date:** 2026-05-22
+**Title:** Is Two Buck Chuck Actually Terrible, or Is That Just Wine Snob Talk?
+**Series:** None
+
+**Title Alignment Analysis:**
+- Title angle: Open question — is Two Buck Chuck's terrible reputation deserved, or is it just wine-snob gatekeeping? Joe and Carmela are positioned as honest arbiters settling a disputed cultural argument.
+- Visual directions that reinforce it: Official evaluation/arbiters pose treating the humble bottle with intense scrutiny; visual contrast between cheap wine and serious examination; curiosity and uncertainty — not disgust or delight
+- Visual directions OFF-LIMITS (HR-40 + title contradiction): thumbs up/down, sink staging, winner/loser framing, any expression that signals the outcome
+
+**Web Research:** "Two Buck Chuck podcast thumbnail" search returned no strong visual conventions — generic episode artwork dominates. Open field for a distinctive concept.
+
+**Concepts Generated:**
+
+| Concept | Score | Result | Notes |
+|---|---|---|---|
+| A: The Witness Stand | 38/50 | DROPPED — quality gate | Below 40/50 threshold |
+| B: The Huddle | 40/50 | PASS | Both heads in serious conference over bottle; deliberation framing |
+| C: The Side-Eye | 40/50 | DROPPED — score reassessment | Second reviewer noted Originality inflated (8→7); adjusted to 39/50 |
+| D: The Interrogation | 43/50 | PASS | Both characters holding bottles to examine like evidence; investigator framing |
+
+**Quality Gate:** A dropped (38/50). C dropped (Originality reassessed to 7/10, total 39/50).
+
+**Second Review Summary:**
+- B: Substantive PASS (spoiler rule clear, title alignment clear). Reviewer flagged HR-12/HR-14 on scene description text — false positives; both requirements present in the full ChatGPT prompt.
+- D: Confirmed PASS by generating subagent on all 12 rules including HR-40 and title alignment.
+
+**Alignment Check:** Both final concepts visually represent the title's open question without answering it. B (The Huddle) stages deliberation mid-process. D (The Interrogation) stages evidence-examination before judgment. Neither reveals whether the reputation is deserved or not. The investigator framing of D is the stronger alignment because it is visually distinctive and captures the "we are going to find out the truth" energy of the episode premise.
+
+**Final Options Presented:**
+1. Concept B: The Huddle (40/50) — heads pressed together in serious conference over the bottle
+2. Concept D: The Interrogation (43/50) — both characters holding bottles up like detectives examining evidence
+
+**Joe's selection:** *(pending)*
+
+---
+
+### Ep219: Two Buck Chuck (Charles Shaw Chardonnay + Cabernet Sauvignon) — Pre-improvement Run (reference only)
 **Date:** 2026-05-22
 **Title:** Is Two Buck Chuck Actually Terrible, or Is That Just Wine Snob Talk?
 **Series:** None
