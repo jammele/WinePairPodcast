@@ -21,6 +21,45 @@ No patterns recorded yet. First entry is Ep219 below.
 
 ---
 
+### Ep219: Two Buck Chuck (Charles Shaw Chardonnay + Cabernet Sauvignon) — Third Run (Post-format fix)
+**Date:** 2026-05-22
+**Title:** Is Two Buck Chuck Actually Terrible, or Is That Just Wine Snob Talk?
+
+**Title Alignment Analysis:**
+- Title angle: The title is an open cultural question — is Two Buck Chuck's terrible reputation deserved, or is it wine-snob gatekeeping? The image must hold that question open, not answer it.
+- Visual directions that reinforce it: Both hosts in a pose of serious scrutinizing evaluation, curious and undecided; comic contrast between the humble grocery-store bottle and extreme seriousness of the examination; "who's right here?" energy that makes you wonder whether Joe and Carmela will call it terrible or surprise you
+- Visual directions OFF-LIMITS: Any expression signaling the outcome (delight, disgust, thumbs up/down); one bottle favored over another; any framing where a verdict is visible before pressing play
+
+**Web Research:** "Two Buck Chuck podcast thumbnail" search returned no distinctive visual conventions — unrelated podcasts, no wine-specific thumbnail patterns to reference or avoid.
+
+**Concepts Generated:**
+
+| Concept | Score | Result | Notes |
+|---|---|---|---|
+| A: Credentials Check | 43/50 | PASS | Both characters scrutinizing labeled bottles, skeptical-but-open expressions |
+| B: Peer Review | 46/50 | PASS | Both leaning over single bottle in shared deliberation; highest scorer |
+| C: Second Opinion | 42/50 | PASS | Joe extends bottle to Carmela, shared skepticism |
+| D: Grocery Store Tribunal | 44/50 | DROPPED — second review FAIL | Rule 2: structural overlap with Ep217 "solemn ritual"; HR-14 expression drift on both characters |
+| E: Moment Before | 41/50 | DROPPED — second review FAIL | Rules 3, 4, 12: visual requires title context; does not engage cultural question; borderline HR-40 |
+
+**Quality Gate:** D and E dropped after second review. A, B, C all 40+ and pass all 12 rules — 3 concepts proceed (meets minimum).
+
+**Second Review Summary:**
+- A: PASS — soft note on Rule 5 (two bottles slight focal split) and HR-14 (Joe's expression could be warmer); no hard fails
+- B: PASS — clean on all 12 rules; single bottle clearest focal structure; recommended
+- C: PASS — soft notes on Rule 12 (narrows cultural question slightly to interpersonal) and HR-14 (Carmela slightly guarded); no hard fails
+
+**Alignment Check:** All three final concepts stage the episode's open question without answering it. None signals whether Two Buck Chuck's reputation is deserved. A and B use single-subject scrutiny (characters focused on one bottle). C uses a hand-off/consult structure. B is the most structurally clean — both characters' attention converges on a single labeled bottle with maximum unresolved tension and the clearest focal point.
+
+**Final Options Presented:**
+1. Concept A: The Credentials Check (43/50)
+2. Concept B: The Peer Review (46/50)
+3. Concept C: The Second Opinion (42/50)
+
+**Joe's selection:** *(pending)*
+
+---
+
 ### Ep219: Two Buck Chuck (Charles Shaw Chardonnay + Cabernet Sauvignon) — Improved Run
 **Date:** 2026-05-22
 **Title:** Is Two Buck Chuck Actually Terrible, or Is That Just Wine Snob Talk?

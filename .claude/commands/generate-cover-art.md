@@ -36,7 +36,7 @@ Pre. **Read `data/cover-art-session-reports.md` before doing anything else.**
    After the first subagent returns, drop any concept that:
    - Scores below 40/50
    - Has a FAIL on brand rule 11 (spoiler) or brand rule 12 (title alignment)
-   If fewer than 2 concepts remain, return to Step 2 and generate replacements before proceeding. Never carry failing or sub-40 concepts into the second review.
+   If fewer than 3 concepts remain, return to Step 2 and generate replacements before proceeding. Joe must always see at least 3 options. Never carry failing or sub-40 concepts into the second review.
 
 3. **Spawn a second review subagent** on the surviving concepts only.
    Prompt: "You are a cover art critic for The Wine Pair Podcast. Read `docs/house-rules.md` in full, paying special attention to HR-40. Then review each concept below for: (1) spoiler rule — does it reveal the episode verdict? (2) title alignment — does it visually reinforce the title's angle? (3) all 12 brand rules. (4) score accuracy. Return PASS or FAIL for each concept with specific reasoning. Fix all FAILs before any concept reaches Joe."
@@ -194,30 +194,19 @@ First, output this confirmation block:
 
 > **Cover art sub-agent ran.** Checked: character bible (HR-14), approved style format, recent scene structures ([list from cover-art-scenes.md]), all 12 brand rules including HR-40 (spoiler) and title alignment. Title angle: [one sentence]. Each concept scored on 5 criteria. Recommended: Concept [X] ([N]/50).
 
-Then present 3 concepts. For each:
+Then present 5 concepts. For each:
 
 ---
 
-**Concept [A/B/C]: [Short title]**
+**Concept [A/B/C/D/E]: [Short title] — [N]/50**
 
 *The joke:* [One sentence]
 
-*Title alignment:* Title angle: [X]. How this concept represents it: [Y].
+*Title alignment:* [One or two sentences — plain statement of how the concept connects to the title's angle.]
 
-*Passes all 12 brand rules:* YES / NO (if NO, state which rule fails — do not include a failing concept)
+*Scene:* [2-3 sentences describing what Joe and Carmela are doing, their expressions, the visual punchline.]
 
-*Scores:*
-- Visual Arrest: [N]/10 — [one-line reason]
-- Click Potential: [N]/10 — [one-line reason]
-- Brand Consistency: [N]/10 — [one-line reason]
-- Concept Originality: [N]/10 — [one-line reason]
-- Self-Explanatory: [N]/10 — [one-line reason]
-- **Total: [N]/50**
-
-*Scene description (what this looks like in plain English):*
-[2-3 sentences. What Joe and Carmela are doing, their expressions, the visual punchline.]
-
-**Do NOT include a ChatGPT prompt here.** The prompt is written only after Joe selects a concept (main agent Step 6).
+**Do NOT include a ChatGPT prompt here. Do NOT include a score breakdown. Do NOT include a brand rules checklist.** The prompt is written only after Joe selects a concept (main agent Step 6). Score each concept internally using the 5 criteria — include scores only in the session report log, never in what Joe reads.
 
 ---
 
