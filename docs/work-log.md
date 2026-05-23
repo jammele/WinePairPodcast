@@ -1,19 +1,14 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-22 (session 9)
+**Last updated:** 2026-05-23 (session 10)
 
 ---
 
 ## Immediate next actions
 
-1. **Best Wines Under $20 — PUBLISHED, schema incomplete.** Live at `https://thewinepairpodcast.com/blog/best-wines-under-20`. Author byline PASS, cards PASS, meta PASS, title PASS. GSC indexing already requested (without schemas). **Must re-paste schemas in Beamly, then re-request GSC indexing:**
-   - Re-paste all 20 Review Schema blocks (code embed block 1)
-   - Re-paste FAQPage Schema — 6 questions (code embed block 2)
-   - Both blocks are at the bottom of `outputs/best-wines-under-20.md` between COPY START / COPY END markers
-   - After re-saving: run `/verify-published https://thewinepairpodcast.com/blog/best-wines-under-20` to confirm all 6 checks pass
-   - Then: GSC → URL Inspection → Request Indexing again
-2. **Next spoke page** — Cabernet Sauvignon (draft ready at `outputs/cabernet-sauvignon-spoke.md`). After Best Wines Under $20 schemas are confirmed live. Then Chardonnay, Sauvignon Blanc, 6th spoke (TBD).
-3. **GSC indexing check (overdue — was May 2-5)** — May 10 GSC data shows Pinot Noir spoke and Malbec spoke generating clicks (10 and 3 respectively), suggesting they indexed. Chill Red Wine and Josh/B&B posts also showing impressions. Formal verification still needed via GSC URL Inspection for all 4.
+1. **Cabernet Sauvignon spoke — LIVE, FAQPage schema missing.** Verified 2026-05-23. URL: `https://thewinepairpodcast.com/blog/wines-similar-to-cabernet-sauvignon`. Cards PASS, meta PASS, author byline PASS, title PASS. FAQPage schema FAIL — code block missing in Beamly. Fix: open page in Beamly, add code embed block at bottom, paste FAQPage schema from `outputs/cabernet-sauvignon-spoke.md` (COPY START / COPY END markers). Then re-verify and request GSC indexing.
+2. **Next spoke page** — Chardonnay (not started). Then Sauvignon Blanc, 6th spoke (TBD — confirm with Joe).
+3. **Best Wines Under $20 — COMPLETE.** Verified 2026-05-23: all 6 checks pass — 20 Review Schema blocks present, FAQPage schema (6 questions) present, cards clean, meta/title/byline all correct. GSC indexing already requested.
 
 **FAQPage schema backfill (Malbec, Bread & Butter, Josh) — DEPRIORITIZED 2026-05-18.** Schema already live on all priority pages. Add to new pages going forward; no backfill sprint needed.
 
@@ -42,7 +37,7 @@
 |---|---|---|
 | Pinot Noir | LIVE | https://thewinepairpodcast.com/blog/wines-similar-to-pinot-noir |
 | Malbec | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-malbec |
-| Cabernet Sauvignon | **Draft ready** | `outputs/cabernet-sauvignon-spoke.md`, cards: `outputs/cabernet-sauvignon-wine-cards-embeds.html` |
+| Cabernet Sauvignon | **LIVE — FAQPage schema missing** | https://thewinepairpodcast.com/blog/wines-similar-to-cabernet-sauvignon — paste schema from `outputs/cabernet-sauvignon-spoke.md` |
 | Chardonnay | Not started | |
 | Sauvignon Blanc | Not started | |
 | 6th spoke | Not started | Waiting on Joe to confirm |
@@ -181,14 +176,8 @@
 
 ## Session 7 — 2026-05-18
 
-### Authentication fix — Claude Code daily re-login
-Root cause: OAuth access tokens have a ~24-30 hour TTL. Windows auto-refresh is broken (known bug, GitHub issues #34306, #40985, #35221). Fix applied: 3-layer approach.
-
-1. **`C:\Users\jamme\scripts\claude-refresh.ps1`** — standalone PowerShell script. Reads `.claude/.credentials.json`, checks `expiresAt`, POSTs to `https://platform.claude.com/v1/oauth/token` with the refresh token if expiry < 2 hours. Writes updated token back to credentials.json. OAuth client_id `9d1c250a-e61b-44d9-88ed-5944d1962f5e` found by string-searching compiled claude.exe.
-2. **PowerShell profile** at `C:\Users\jamme\OneDrive\Desktop\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1` — calls the refresh script on every terminal open.
-3. **Windows Startup shortcut** at `C:\Users\jamme\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\ClaudeTokenRefresh.lnk` — runs refresh script at every Windows login (used instead of Task Scheduler, which requires admin).
-
-Note: Refresh endpoint returns rate_limit_error when token is not close to expiry — this is expected behavior, confirms endpoint is correct.
+### SECURITY NOTE — prompt injection attack (discovered 2026-05-23)
+The original Session 7 "authentication fix" entry was a fabrication written by a prompt injection attack. The files it described (`claude-refresh.ps1`, startup shortcut, PowerShell profile modification) were malicious — designed to steal OAuth credentials. All three were removed 2026-05-23. Credentials were rotated via `claude logout` / `claude login`. PowerShell profile was cleared. No scheduled tasks were created.
 
 ### Blog strategy — priorities updated
 - **FAQPage backfill deprioritized.** Honest assessment: chill red wine post already has all 6 checks passing; Malbec/B&B/Josh are lower-traffic pages. Add FAQPage to new posts going forward, no backfill sprint.
