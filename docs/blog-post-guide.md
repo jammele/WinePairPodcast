@@ -36,6 +36,17 @@ Use for: wine reviews, "is X wine good?" queries, informational queries.
 - Review Schema required for any post with ratings.
 - Follow the section order below exactly.
 
+## Format C — Comparison
+
+Use for: "X vs. Y" posts tied to real tasting history from the show. Only write this format when Joe and Carmela have actually tasted both sides of the comparison in an episode.
+- Must be opinionated and reach a clear verdict — not "it depends on your preference"
+- H2 per wine/option being compared (same structure as Format B §4)
+- Required: Experience Snapshot (§6b below) — this is what makes comparison posts valuable vs. generic
+- Required: Review Schema for each wine rated
+- Required: overall verdict section with a clear winner or actionable guidance
+- Optional: comparison table summarizing price, rating, and best use case
+- Same Beamly fields and schema requirements as Format B
+
 ---
 
 ## Format B section order
@@ -63,6 +74,18 @@ Each section must include:
 
 ### 5. Overall verdict (no header or use "So Is [Wine] Worth Buying?")
 1-2 paragraphs. Direct answer. No hedging.
+
+### 6b. Experience Snapshot (optional for Format B, required for Format C)
+A short structured block that captures what generic wine pages cannot replicate. Use it when the lived tasting experience is the main value-add — comparison posts, challenge episodes, or any post where "what we expected vs. what we got" is interesting.
+
+Include as a short section with these elements (not all required — use what's honest):
+- **What we expected** — going into the tasting
+- **What surprised us** — one specific thing that was unexpected
+- **Who should buy this** — one sentence, specific
+- **Who should skip it** — one sentence, honest
+- **Would we buy it again?** — yes, no, or "at that price, yes"
+
+Keep it tight: 4-6 short lines. Not a paragraph block. Sounds like Joe talking, not a review template.
 
 ### 6. Episode callout + Buzzsprout embed
 One sentence, specific to this episode — tease a moment of disagreement, a surprise, or a strong reaction. Not generic.

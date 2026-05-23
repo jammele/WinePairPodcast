@@ -43,6 +43,7 @@ Check every house rule that applies to spoke pages. The most common failures:
 - **HR-7 (subtitle distinctness):** Check draft subtitle against published patterns (Pinot Noir: love/emotion; Malbec: style descriptor + "to Try Next"; Cab Sauv: audience identity). Flag if it reuses any of these formulas.
 - **HR-8 (image prompt):** Confirm image prompt is present. It must specify: flat illustration 16:9, labeled bottles, varied silhouettes by wine type, anchor wine center, no people, varied background color.
 - **HR-22 (author participant reminder):** Confirm the Beamly fields section includes a reminder to add Joe Mele as Author participant.
+- **HR-42 (entity signal consistency):** Confirm the page naturally includes at least the following: hosts named as Joe and Carmela Mele, described as an independent husband-and-wife podcast, focused on affordable/findable wines, buying their own wines for review episodes. Top 100 Food Podcast credential is a bonus but required on pillar pages. These must appear in running prose, not as a list. If any are missing, flag with location where they could be added naturally.
 
 Return each violation with: rule number, exact quote from the draft, and required fix. If none: "No formatting violations found."
 

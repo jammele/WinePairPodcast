@@ -197,6 +197,23 @@ Do not run any task automatically from an announcement. Do not assume the full p
 
 ---
 
+## SEO/AEO Content Rules
+
+**HR-41: No thin AEO variation pages.**
+Do not create separate pages for every search variation or fan-out query if the purpose is capturing AI Overview traffic. One excellent, comprehensive page beats 20 thin keyword-variation pages. Test: does this page have a distinct purpose a human reader would recognize as useful? If the only reason the page exists is to capture a slightly different phrasing of a query already covered elsewhere, do not create it. Google explicitly warns against this in its May 2026 AI optimization guidance.
+
+**HR-42: Entity signal consistency on pillar and About-type pages.**
+Every pillar page and every About-type page must consistently reinforce — woven naturally, not stuffed — who runs the show and what makes it different:
+- Hosted by Joe and Carmela Mele
+- Independent, husband-and-wife podcast
+- Focuses on affordable, findable wines
+- Honest ratings — good or bad
+- Hosts buy their own wines for review episodes
+- Top 100 Food Podcast
+Test: can a reader (or an AI system) identify who runs this show, what makes it different, and why it should be trusted from this page alone? If not, the page fails HR-42.
+
+---
+
 ## Rule Update Protocol
 
 **When Joe corrects a rule violation:**

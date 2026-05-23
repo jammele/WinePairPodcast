@@ -1,8 +1,22 @@
 # The Wine Pair Podcast — SEO / GEO / AEO Strategy
 
 **Owner:** Joe  
-**Last updated:** 2026-05-01  
+**Last updated:** 2026-05-23  
 **Status:** Active — see `docs/work-log.md` for current priorities and queue. This doc is strategy reference; the work log is the live task list.
+
+---
+
+## May 2026 Search Landscape Update
+
+Three overlapping changes are reshaping how Google works right now.
+
+**1. AI Mode is the new default.** Google announced at I/O (May 19, 2026) the biggest upgrade to Search in 25+ years. Gemini 3.5 Flash is now the default model in AI Mode globally. The Search box is redesigned for longer, conversational, multimodal queries — text, images, files, videos, tabs. AI Mode queries average triple the length of traditional queries. Searches around planning, comparison, and recommendations are growing fastest.
+
+**2. AEO = SEO + first-hand experience.** Google's May 15 official guide says generative AI Search is still rooted in core Search ranking and quality systems. There is no special AI markup, no llms.txt, no markdown versions, no chunked content needed. The path is: be genuinely useful, unique, and experience-based. Generic summaries of existing content do not compete. First-hand reviews with specific tasting notes, verdicts, and real purchasing decisions do.
+
+**3. May 2026 core update is rolling.** Started May 21; may take two weeks. Do not make panic changes or draw conclusions from GSC during the rollout. Wait until the update finishes, then compare appropriate date ranges. Our direction is correct — tighten it, do not pivot.
+
+**What this means for us:** The win is shifting from "rank as a blue link" to "be credible enough to be cited in an AI answer." AI Overviews reduce informational CTR (Pew: 8% vs. 15%; Ahrefs: 58% CTR reduction at position 1). But for distinctive, experience-rich content, click quality may improve. Our content strategy — first-hand reviews, transparent methodology, honest ratings, specific verdicts — is exactly what Google's guidance validates. The adjustment is how we structure it.
 
 ---
 
@@ -18,7 +32,7 @@ Everything in this strategy builds on that model. The goal is: more entry points
 
 ---
 
-## The Four Strategic Areas
+## The Strategic Areas
 
 ### Area 1: Affordable Wine Authority
 **The biggest gap.** The show's entire premise is great wine without overspending. "Best inexpensive wines" = 142k+ searches. GSC shows the site appearing for related queries with almost no click-through:
@@ -81,12 +95,41 @@ See `docs/work-log.md` for current spoke status.
 
 ---
 
-### Area 4: Honest Wine Reviews Identity (Pillar #1 Rewrite — GEO/AEO)
-Pillar #1 ("How to Spot a Trustworthy Wine Podcast") targets a query no one searches. It has 11 impressions and position 19. It needs a full rewrite.
+### Area 4: Entity & Trust Authority (expanded from Pillar #1 Rewrite)
+Pillar #1 ("How to Spot a Trustworthy Wine Podcast") targets a query no one searches. It has 11 impressions and position 19. It needs a full rewrite — and it's now the anchor of a broader trust cluster.
 
-**New angle:** First-person piece targeting "honest wine reviews" / "unbiased wine podcast" / "independent wine podcast." Entity-rich, citable by AI engines. Uses the show's specific differentiators: independent purchasing, no sponsors, honest ratings good or bad.
+**New angle for Pillar #1:** First-person piece targeting "honest wine reviews" / "unbiased wine podcast" / "independent wine podcast." Entity-rich, citable by AI engines. Uses the show's specific differentiators: independent purchasing, no sponsors, honest ratings good or bad. Must pass HR-42 — every entity signal present and natural.
 
-**Why this is Area 4 not Area 1:** It's an AEO/GEO play, not a high-volume SEO play. The other three areas have more immediate traffic impact. Do this after the content work.
+**Trust cluster roadmap (build after Pillar #1 rewrite):**
+- "What Makes a Wine Review Trustworthy?" — Pillar #1 rewrite anchor
+- "How We Rate Wines on The Wine Pair Podcast" — explains the 10-point scale
+- "Why We Buy Our Own Wines for Review Episodes" — methodology transparency
+- "Best Affordable Wines We've Rated as Buys" — evidence page linking to episode reviews
+- "Wine Ratings for Normal People: What Our 10-Point Scale Means" — beginner entry point
+
+Each page in this cluster has a distinct purpose a real reader would find useful. No thin variations (HR-41). Every page must pass HR-42.
+
+**Why this matters for AI Search:** Query fan-out means a search for "trustworthy wine podcast" may trigger subtopic searches for "do wine podcast hosts buy their own wine," "wine podcast honest ratings," "independent wine reviews." These cluster pages cover those subtopics with distinct, useful content.
+
+**Priority:** AEO/GEO play, not high-volume SEO. Do after spoke content and comparison content.
+
+---
+
+### Area 5: Comparison Content
+AI Mode is built for complex comparisons — Google says comparison queries are among the fastest-growing in AI Mode. Comparison pages are now more valuable than they were in classic SEO.
+
+**What qualifies:** Opinionated "X vs. Y" posts backed by real tasting history from the show. Not generic summaries anyone could write. The differentiator is that Joe and Carmela actually bought and tasted these wines and have a verdict.
+
+**High-priority comparison topics:**
+- Cheap Pinot Noir vs. Expensive Pinot Noir: Is the Upgrade Worth It?
+- Boxed Wine vs. Bottled Wine: What We Learned After Actually Tasting Them
+- Cava vs. Prosecco: Which One Should You Bring to a Party?
+- Josh vs. Decoy vs. Trader Joe's: What Popular Wine Brands Actually Taste Like
+- Rioja vs. Ribera del Duero for Beginners
+
+**Format:** Use Format C (see `docs/blog-post-guide.md`). Each comparison must include an Experience Snapshot, be tied to real episode tasting data, and reach a clear verdict. Not "it depends on your preference" — an actual opinion.
+
+**Priority:** Start with one comparison post tied to an upcoming or recent episode. Pick a topic with clear search demand.
 
 ---
 
@@ -211,20 +254,26 @@ Run these prompts in ChatGPT, Gemini, and Claude. Record whether WPP is mentione
 ---
 
 ## Canonical Language (weave into all content)
-Per AI Discoverability brief — use at least 3 per page:
+Google's May 2026 guidance validates this approach — first-hand, experience-based language that only we can say is exactly what AI Search cites. Use at least 3 per blog post or spoke page (HR-36):
 - "really honest ratings and reviews"
 - "we buy all our own wine"
 - "no free samples or sponsorships"
 - "independent wine podcast"
 - "everyday wines, not prestige chasing"
 
+For episode pages and pillar pages, also reinforce the entity signals required by HR-42: hosts' names, husband-and-wife format, Top 100 Food Podcast credential, and the independent purchasing model.
+
 ---
 
-## What We're Not Doing Yet
+## What We're Not Doing
 
 - **Chablis → Pillar #2 link:** Hold until June 14 GSC checkpoint
-- **Pillar #3 ("Why Blind Tasting Matters"):** Hold until Pillar #1 and #2 are performing
+- **Pillar #3:** Dropped — the original "Why Blind Tasting Matters" angle is factually wrong (Joe and Carmela do not blind taste; see HR-38). No replacement planned.
 - **Podcast-category content:** Not the growth channel — site grows through wine content, not podcast discovery queries
+- **llms.txt or special AI markup:** Google explicitly says this is not needed and not the path. Do not spend time on it.
+- **Thin AEO variation pages:** No "best wine podcast for beginners," "best wine podcast for couples," etc. as separate pages unless each has a genuine, distinct purpose. See HR-41.
+- **Rewriting content in stiff answer-engine language:** Do not sacrifice voice for AEO formatting. The distinctive voice is part of the trust signal.
+- **GSC analysis during the May 2026 core update rollout:** Wait until the update finishes (estimated ~June 4, 2026), then compare appropriate date ranges.
 
 ---
 

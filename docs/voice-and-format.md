@@ -66,6 +66,7 @@ All content should feel:
 - A few interesting or surprising facts
 - Misconception clarifications
 - Question prompts for the tasting
+- **Comparison angle flag (optional):** If this episode is a challenge or comparison, note whether the topic has search demand for an "X vs. Y" post (see Area 5 in `docs/seo-geo-strategy.md`) and flag it for follow-up content planning
 
 **After the episode (standard outputs):**
 - Show notes draft
@@ -74,6 +75,7 @@ All content should feel:
 - Instagram captions
 - Chapter marker suggestions
 - Cover art concept brief (optional)
+- Experience Snapshot (optional — include when the tasting surprise, disagreement, or verdict is the main reader value; required for any comparison/challenge episode blog post)
 
 **Show notes structure:**
 - Key Questions at top (questions only — no answers, no Key Insights summary block)
