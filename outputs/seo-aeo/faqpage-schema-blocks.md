@@ -317,3 +317,58 @@ One code block per page. For each page below:
 
 ---
 
+
+## Cabernet Sauvignon spoke
+**URL:** https://thewinepairpodcast.com/blog/wines-similar-to-cabernet-sauvignon
+**Q&A pairs:** 5
+
+============================================================ COPY START ============================================================
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What wine is similar to Cabernet Sauvignon but easier to drink?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The honest answer depends on what's making Cab feel like work. If the tannin is the issue, Merlot solves it: same dark fruit, same Bordeaux family, much softer grip. If the price is the issue, Carménère from Chile gives you similar structure for $12-15. If the food-pairing rigidity is the issue, Rioja has Cab's backbone but pairs with a wider range of dishes because of its higher acidity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a Bordeaux blend the same as Cabernet Sauvignon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Close but not identical. A Left Bank Bordeaux blend is typically Cabernet-dominant, with Merlot and sometimes Cabernet Franc or Petit Verdot blended in to add complexity. Most people who drink Cab regularly don't realize they're already drinking Bordeaux blends whenever they open a California Meritage or a $15 bottle from the Medoc. The formula is the same. The blend just adds nuance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Cabernet Franc the same as Cabernet Sauvignon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, despite the shared name. Cab Franc is one of the two parent grapes of Cabernet Sauvignon (the other is Sauvignon Blanc), but the wines taste quite different. Cab Franc is lighter in body, higher in acidity, and has a distinctive herbal and violet note that Cab Sauv doesn't typically show. If you open a Cab Franc expecting it to drink like Cabernet Sauvignon, you'll be surprised. It's worth trying on its own terms, but it's a different wine."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I try after Cabernet Sauvignon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Two moves, in order. First: Rioja Reserva. It costs the same as a mid-range Cab, it has the same structural commitment, but the fruit profile (cherry, tobacco, vanilla rather than blackberry and cedar) will show you what Cab's backbone feels like in a completely different context. Second: once that clicks, try Barolo. The tannin is familiar, but everything else (the dried cherry, the rose, the truffle) is new. Start with an entry-level bottle from Costco or Trader Joe's so the price doesn't intimidate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there good Cabernet Sauvignon alternatives under $20?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Two wines punch consistently above their price in this range. Carménère from Chile is the best pure value: dark fruit, medium tannin, a green pepper edge that makes it identifiable, and good bottles regularly under $15. Rioja Reserva is the other strong play: look for Reserva on the label specifically, since that guarantees three years of aging before release, which is what gives it the structure that Cab drinkers recognize."
+      }
+    }
+  ]
+}
+</script>
+============================================================ COPY END ============================================================
