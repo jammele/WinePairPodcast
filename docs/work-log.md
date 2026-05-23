@@ -6,9 +6,9 @@
 
 ## Immediate next actions
 
-1. **Cabernet Sauvignon spoke — LIVE, FAQPage schema missing.** Verified 2026-05-23. URL: `https://thewinepairpodcast.com/blog/wines-similar-to-cabernet-sauvignon`. Cards PASS, meta PASS, author byline PASS, title PASS. FAQPage schema FAIL — code block missing in Beamly. Fix: open page in Beamly, add code embed block at bottom, paste FAQPage schema from `outputs/cabernet-sauvignon-spoke.md` (COPY START / COPY END markers). Then re-verify and request GSC indexing.
-2. **Next spoke page** — Chardonnay (not started). Then Sauvignon Blanc, 6th spoke (TBD — confirm with Joe).
-3. **Best Wines Under $20 — COMPLETE.** Verified 2026-05-23: all 6 checks pass — 20 Review Schema blocks present, FAQPage schema (6 questions) present, cards clean, meta/title/byline all correct. GSC indexing already requested.
+1. **Next spoke page — Chardonnay** (not started). Then Sauvignon Blanc, 6th spoke (TBD — confirm with Joe).
+2. **Cabernet Sauvignon spoke — COMPLETE.** All 6 checks pass. FAQPage schema (5 questions) live. GSC indexing requested 2026-05-23.
+3. **Best Wines Under $20 — COMPLETE.** All 6 checks pass. GSC indexing already requested.
 
 **FAQPage schema backfill (Malbec, Bread & Butter, Josh) — DEPRIORITIZED 2026-05-18.** Schema already live on all priority pages. Add to new pages going forward; no backfill sprint needed.
 
@@ -37,7 +37,7 @@
 |---|---|---|
 | Pinot Noir | LIVE | https://thewinepairpodcast.com/blog/wines-similar-to-pinot-noir |
 | Malbec | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-malbec |
-| Cabernet Sauvignon | **LIVE — FAQPage schema missing** | https://thewinepairpodcast.com/blog/wines-similar-to-cabernet-sauvignon — paste schema from `outputs/cabernet-sauvignon-spoke.md` |
+| Cabernet Sauvignon | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-cabernet-sauvignon — all checks pass, indexing requested 2026-05-23 |
 | Chardonnay | Not started | |
 | Sauvignon Blanc | Not started | |
 | 6th spoke | Not started | Waiting on Joe to confirm |
