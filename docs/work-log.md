@@ -1,12 +1,12 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-23 (session 11)
+**Last updated:** 2026-05-23 (session 12)
 
 ---
 
 ## Immediate next actions
 
-1. **Next spoke page — Chardonnay** (DRAFT READY — review and publish). Then Sauvignon Blanc, 6th spoke (TBD — confirm with Joe).
+1. **Next spoke page — Chardonnay** (CARDS REVIEWED + FIXED — /review-spoke still needed, then show Joe). Then Sauvignon Blanc, 6th spoke (TBD — confirm with Joe).
 2. **Cabernet Sauvignon spoke — COMPLETE.** All 6 checks pass. FAQPage schema (5 questions) live. GSC indexing requested 2026-05-23.
 3. **Best Wines Under $20 — COMPLETE.** All 6 checks pass. GSC indexing already requested.
 
@@ -38,7 +38,7 @@
 | Pinot Noir | LIVE | https://thewinepairpodcast.com/blog/wines-similar-to-pinot-noir |
 | Malbec | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-malbec |
 | Cabernet Sauvignon | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-cabernet-sauvignon — all checks pass, indexing requested 2026-05-23 |
-| Chardonnay | **DRAFT READY** | `outputs/chardonnay-spoke.md` + `outputs/chardonnay-wine-cards-embeds.html` — em-dash scan clean, validator passes |
+| Chardonnay | **CARDS FIXED — SPOKE REVIEW PENDING** | Cards: 7 issues found and fixed (S1 predicate clauses, "bitter almond" repeat, "secret" in White Rioja S3, generic S3s). Next: run `/review-spoke outputs/chardonnay-spoke.md`, fix issues, then show Joe. |
 | Sauvignon Blanc | Not started | |
 | 6th spoke | Not started | Waiting on Joe to confirm |
 | Hub | Not started | Write after all spokes live |
