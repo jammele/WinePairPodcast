@@ -73,7 +73,10 @@ Pre. **Read `data/cover-art-session-reports.md` before doing anything else.**
 
 5. **Ask Joe which concept he wants.** Phrase simply: "Which concept would you like for Ep[N]?" Do not recommend or editorialize — just ask.
 
-6. **After Joe confirms his choice:**
+6. **After Joe confirms his choice — write the ChatGPT prompt.**
+   Write the full multi-section ChatGPT prompt (see standard format below) for the selected concept only. Do not write prompts for rejected concepts. Present it ready to paste.
+
+7. **After presenting the prompt:**
    - Update the "Joe's selection" field in the Ep[N] entry in `data/cover-art-session-reports.md`
    - Update Patterns Learned if a new pattern is visible (e.g., Joe consistently picks tension-framing over verdict-framing)
    - Update `data/cover-art-scenes.md` — add the chosen concept's structural type, remove the oldest entry if the list exceeds 5
@@ -214,8 +217,7 @@ Then present 3 concepts. For each:
 *Scene description (what this looks like in plain English):*
 [2-3 sentences. What Joe and Carmela are doing, their expressions, the visual punchline.]
 
-*ChatGPT prompt — upload approved reference image first, then paste this:*
-[Full multi-section format. Scene section filled in for this concept. Wine bottle label text included. Background specified. No "No wine labels" anywhere.]
+**Do NOT include a ChatGPT prompt here.** The prompt is written only after Joe selects a concept (main agent Step 6).
 
 ---
 
