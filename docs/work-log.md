@@ -1,12 +1,12 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-23 (session 12)
+**Last updated:** 2026-05-24 (session 13)
 
 ---
 
 ## Immediate next actions
 
-1. **Next spoke page — Chardonnay** (CARDS REVIEWED + FIXED — /review-spoke still needed, then show Joe). Then Sauvignon Blanc, 6th spoke (TBD — confirm with Joe).
+1. **Next spoke page — Chardonnay** (DRAFT WITH JOE FOR REVIEW — 2026-05-24). /review-spoke complete: 2 body fixes (White Rioja "Moderno" label claim removed; Grenache Blanc broken sentence fixed), Chenin Blanc added to "Also Worth a Look" with both episode links (Ep19, Ep148). Then Sauvignon Blanc, 6th spoke (TBD — confirm with Joe).
 2. **Cabernet Sauvignon spoke — COMPLETE.** All 6 checks pass. FAQPage schema (5 questions) live. GSC indexing requested 2026-05-23.
 3. **Best Wines Under $20 — COMPLETE.** All 6 checks pass. GSC indexing already requested.
 
@@ -38,7 +38,7 @@
 | Pinot Noir | LIVE | https://thewinepairpodcast.com/blog/wines-similar-to-pinot-noir |
 | Malbec | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-malbec |
 | Cabernet Sauvignon | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-cabernet-sauvignon — all checks pass, indexing requested 2026-05-23 |
-| Chardonnay | **CARDS FIXED — SPOKE REVIEW PENDING** | Cards: 7 issues found and fixed (S1 predicate clauses, "bitter almond" repeat, "secret" in White Rioja S3, generic S3s). Next: run `/review-spoke outputs/chardonnay-spoke.md`, fix issues, then show Joe. |
+| Chardonnay | **WITH JOE FOR REVIEW** | /review-spoke complete 2026-05-24. Fixes: White Rioja "Moderno" label claim, Grenache Blanc broken sentence, Chenin Blanc added to Also Worth a Look. |
 | Sauvignon Blanc | Not started | |
 | 6th spoke | Not started | Waiting on Joe to confirm |
 | Hub | Not started | Write after all spokes live |

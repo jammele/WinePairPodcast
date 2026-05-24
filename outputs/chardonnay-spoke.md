@@ -59,7 +59,7 @@ Chardonnay grows almost everywhere, which means prices and styles vary enormousl
 
 **What you'll recognize from Chardonnay:** The oak. White Rioja, made primarily from Viura grapes in Spain's Rioja region, is one of the most oak-forward white wines in the world. Traditional-style White Rioja gets long barrel aging in American oak and comes out with vanilla, toasted almond, and a richness that Chardonnay drinkers recognize immediately. If what you love about Chardonnay is the wood character, White Rioja is your wine.
 
-**What's different:** Viura has naturally high acidity and less body than Chardonnay, so the texture is a little leaner underneath all that oak. The fruit character is different too: more pear and stone fruit than butter and tropical notes. Modern-style White Rioja (look for "Moderno" on the label) is fresher and lighter. Traditional-style is the one that Chardonnay drinkers connect with most.
+**What's different:** Viura has naturally high acidity and less body than Chardonnay, so the texture is a little leaner underneath all that oak. The fruit character is different too: more pear and stone fruit than butter and tropical notes. Modern-style White Rioja, which skips the extended barrel aging, is fresher and lighter. Traditional-style is the one that Chardonnay drinkers connect with most.
 
 **Try this if:** You love the barrel character in oaked Chardonnay and want to see how far that style can go. White Rioja is also an excellent value: traditional-style bottles that deliver real complexity regularly come in under $20. Joe and Carmela covered this wine in a full episode on an independent wine podcast, giving it really honest ratings and reviews, and the verdict was clear.
 
@@ -75,7 +75,7 @@ Chardonnay grows almost everywhere, which means prices and styles vary enormousl
 
 **What's different:** Grenache Blanc is lower in acidity than Chardonnay and typically sees little or no oak, so the richness is all grape. The aromatics run toward white peach, apricot, and almond with a floral edge. It is more herbal and Southern French in character than Chardonnay: warmer, a little earthier, a little wilder. Find it from the Rhone Valley, Roussillon, or the Southern Rhone appellations. Good bottles cost less than comparable Chardonnay.
 
-**Try this if:** You like Chardonnay's texture and stone fruit but want something less oak-driven and more food-versatile. Grenache Blanc pairs well with richer seafood, white bean dishes, and anything from Provencal cuisine. It is one of the wines on this list that everyday wines, not prestige chasing, is most obviously the right approach.
+**Try this if:** You like Chardonnay's texture and stone fruit but want something less oak-driven and more food-versatile. Grenache Blanc pairs well with richer seafood, white bean dishes, and anything from Provencal cuisine. This is exactly what everyday wines, not prestige chasing, looks like in practice.
 
 **Our Grenache Blanc episode:** [WTF Is White Grenache? An Alternative for Chardonnay Lovers](https://thewinepairpodcast.com/episode/wtf-is-white-grenache-aka-garnatxa-blanca-and-grenache-blanc-an-alternative-for-chardonnay-lovers-a-good-summer-wine)
 
@@ -115,6 +115,8 @@ Chardonnay grows almost everywhere, which means prices and styles vary enormousl
 
 **Arneis** is from Piedmont in Northern Italy and has been called a hidden white wine gem for good reason. It is aromatic and dry with a delicate floral note, peach and pear fruit, and a soft, round finish that Chardonnay drinkers tend to like immediately. Lower in acidity than most northern Italian whites, it sits comfortably in the same textural neighborhood as a lighter Chardonnay. The episode covers exactly why this grape nearly disappeared and why that would have been a real loss: [Italian Wine Adventure #13: Arneis, a Hidden White Wine Gem from Piedmont for Chardonnay Lovers](https://thewinepairpodcast.com/episode/italian-wine-adventure-13-arneis-a-hidden-white-wine-gem-from-piedmont-for-chardonnay-lovers).
 
+**Chenin Blanc** is worth adding if you are a Chardonnay drinker who wants something with similar body. South African Chenin Blanc in particular lands in a similar neighborhood to oaked Chardonnay: medium-full body, stone fruit, a slight honeyed character, and enough texture to feel substantial in the glass. South Africa is the world's largest Chenin Blanc producer, making more than half of all the Chenin Blanc produced globally, and they have gotten very good at it. Joe and Carmela have covered it twice on the show: [WTF is Chenin Blanc?](https://thewinepairpodcast.com/episode/wtf-is-chenin-blanc) for the full variety introduction, and [What's All the Fuss About South African Chenin Blanc?](https://thewinepairpodcast.com/episode/whats-all-the-fuss-about-south-african-chenin-blanc) for the South African style that connects most directly to oaked Chardonnay.
+
 ---
 
 ## Food pairings that work across the group
@@ -137,7 +139,7 @@ Pairings that work across the group:
 
 ## Listen to the episodes
 
-We've covered all six wines on the show, plus the two also-worth-a-look additions. Good places to start:
+We've covered all six wines on the show, plus the three also-worth-a-look additions. Good places to start:
 
 - [If You Like Chardonnay, You'll Love Viognier](https://thewinepairpodcast.com/episode/if-you-like-chardonnay-youll-love-viognier-white-wine-alternatives-for-chardonnay-white-wine-for-red-wine-drinkers-the-right-white-wine-temperature)
 - [WTF Is Chablis?](https://thewinepairpodcast.com/episode/wtf-is-chablis)
@@ -147,6 +149,8 @@ We've covered all six wines on the show, plus the two also-worth-a-look addition
 - [Italian Wine Adventure #10: Fiano, a Nearly Extinct Ancient Grape Makes a Comeback](https://thewinepairpodcast.com/episode/italian-wine-adventure-10-fiano-a-nearly-extinct-ancient-grape-makes-a-comeback-bigger-bodied-white-wine-famous-foods-from-the-campania-area-of-italy-chardonnay-alternative)
 - [Italian Wine Adventure #16: Grechetto](https://thewinepairpodcast.com/episode/italian-wine-adventure-16-grechetto)
 - [Italian Wine Adventure #13: Arneis, a Hidden White Wine Gem from Piedmont for Chardonnay Lovers](https://thewinepairpodcast.com/episode/italian-wine-adventure-13-arneis-a-hidden-white-wine-gem-from-piedmont-for-chardonnay-lovers)
+- [WTF is Chenin Blanc?](https://thewinepairpodcast.com/episode/wtf-is-chenin-blanc)
+- [What's All the Fuss About South African Chenin Blanc?](https://thewinepairpodcast.com/episode/whats-all-the-fuss-about-south-african-chenin-blanc)
 
 ---
 
