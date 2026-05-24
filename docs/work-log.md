@@ -6,7 +6,7 @@
 
 ## Immediate next actions
 
-1. **Next spoke page — Chardonnay** (DRAFT WITH JOE FOR REVIEW — 2026-05-24). /review-spoke complete: 2 body fixes (White Rioja "Moderno" label claim removed; Grenache Blanc broken sentence fixed), Chenin Blanc added to "Also Worth a Look" with both episode links (Ep19, Ep148). Then Sauvignon Blanc, 6th spoke (TBD — confirm with Joe).
+1. **Next spoke page — Chardonnay** (JOE'S REWRITE SYNCED — 2026-05-24). Joe rewrote in Beamly; MD updated to match. Key style learnings added to house-rules.md (HR-43: first person voice; HR-44: "relatively easy to find"). 5 typos flagged for Joe to fix in Beamly. Then Sauvignon Blanc, 6th spoke (TBD — confirm with Joe).
 2. **Cabernet Sauvignon spoke — COMPLETE.** All 6 checks pass. FAQPage schema (5 questions) live. GSC indexing requested 2026-05-23.
 3. **Best Wines Under $20 — COMPLETE.** All 6 checks pass. GSC indexing already requested.
 
@@ -38,7 +38,7 @@
 | Pinot Noir | LIVE | https://thewinepairpodcast.com/blog/wines-similar-to-pinot-noir |
 | Malbec | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-malbec |
 | Cabernet Sauvignon | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-cabernet-sauvignon — all checks pass, indexing requested 2026-05-23 |
-| Chardonnay | **WITH JOE FOR REVIEW** | /review-spoke complete 2026-05-24. Fixes: White Rioja "Moderno" label claim, Grenache Blanc broken sentence, Chenin Blanc added to Also Worth a Look. |
+| Chardonnay | **REWRITE SYNCED — PENDING PUBLISH** | Joe rewrote in Beamly 2026-05-24. MD updated to match. 5 typos flagged for Joe to fix in Beamly. |
 | Sauvignon Blanc | Not started | |
 | 6th spoke | Not started | Waiting on Joe to confirm |
 | Hub | Not started | Write after all spokes live |

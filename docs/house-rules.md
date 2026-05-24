@@ -212,6 +212,12 @@ Every pillar page and every About-type page must consistently reinforce — wove
 - Top 100 Food Podcast
 Test: can a reader (or an AI system) identify who runs this show, what makes it different, and why it should be trusted from this page alone? If not, the page fails HR-42.
 
+**HR-43: Blog posts and spoke pages are written in first person ("we"/"us").**
+Write from the podcast's perspective throughout. Use "we", "us", "our" — not "Joe and Carmela covered this wine" or "The Wine Pair Podcast reviewed." Introduce as "us, Joe and Carmela, The Wine Pair Podcast" in the intro, then shift to "we" for the rest of the page.
+
+**HR-44: Use "relatively easy to find" in body copy — not "findable."**
+When describing wine availability in running prose, write "affordable wines that are relatively easy to find." Do not use "findable" in body text. (The shorthand "affordable, findable wines" is acceptable in entity signal contexts such as About pages and meta descriptions where brevity matters.)
+
 ---
 
 ## Rule Update Protocol
