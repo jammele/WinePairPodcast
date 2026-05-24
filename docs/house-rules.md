@@ -212,6 +212,9 @@ Every pillar page and every About-type page must consistently reinforce — wove
 - Top 100 Food Podcast
 Test: can a reader (or an AI system) identify who runs this show, what makes it different, and why it should be trusted from this page alone? If not, the page fails HR-42.
 
+**HR-45: Provide wine card embed code proactively when a spoke page is ready to publish.**
+When a spoke page draft is complete and Joe is about to publish, give him the full card embed code from `outputs/[wine]-wine-cards-embeds.html` without being asked. Each card is a separate code block labeled for Beamly. Do not assume Joe will retrieve this file himself.
+
 **HR-43: Blog posts and spoke pages are written in first person ("we"/"us").**
 Write from the podcast's perspective throughout. Use "we", "us", "our" — not "Joe and Carmela covered this wine" or "The Wine Pair Podcast reviewed." Introduce as "us, Joe and Carmela, The Wine Pair Podcast" in the intro, then shift to "we" for the rest of the page.
 
