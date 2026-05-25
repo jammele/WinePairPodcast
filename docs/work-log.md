@@ -6,8 +6,8 @@
 
 ## Immediate next actions
 
-1. **Next spoke page — Sauvignon Blanc** (IN PROGRESS). Draft written 2026-05-24; all validation + review passes complete; awaiting Joe review and publish.
-2. **6th spoke — Prosecco** (confirmed 2026-05-24). Not started; begins after Sauvignon Blanc is live.
+1. **Next spoke page — Prosecco** (6th spoke, confirmed 2026-05-24). Not started.
+2. **Sauvignon Blanc spoke — COMPLETE.** All 6 checks pass. Live 2026-05-24. GSC indexing to be requested.
 3. **Chardonnay spoke — COMPLETE.** All 6 checks pass. FAQPage schema (6 questions) live. GSC indexing requested 2026-05-24.
 2. **Cabernet Sauvignon spoke — COMPLETE.** All 6 checks pass. FAQPage schema (5 questions) live. GSC indexing requested 2026-05-23.
 3. **Best Wines Under $20 — COMPLETE.** All 6 checks pass. GSC indexing already requested.
@@ -41,7 +41,7 @@
 | Malbec | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-malbec |
 | Cabernet Sauvignon | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-cabernet-sauvignon — all checks pass, indexing requested 2026-05-23 |
 | Chardonnay | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-chardonnay — all checks pass, indexing requested 2026-05-24 |
-| Sauvignon Blanc | IN PROGRESS | Draft + cards written 2026-05-24; validation + review passes complete; awaiting Joe review |
+| Sauvignon Blanc | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-sauvignon-blanc — all 6 checks pass, GSC indexing to be requested |
 | 6th spoke | Not started | Confirmed: Prosecco (2026-05-24) |
 | Hub | Not started | Write after all spokes live |
 
