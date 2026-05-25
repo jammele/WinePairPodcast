@@ -1,13 +1,13 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-24 (session 13)
+**Last updated:** 2026-05-24 (session 14)
 
 ---
 
 ## Immediate next actions
 
-1. **Next spoke page — Sauvignon Blanc** (IN PROGRESS — pre-write checklist complete 2026-05-24). Wine list and subtitle options confirmed with Joe; draft in progress.
-2. **6th spoke — Prosecco** (confirmed 2026-05-24). Not started; begins after Sauvignon Blanc.
+1. **Next spoke page — Sauvignon Blanc** (IN PROGRESS). Draft written 2026-05-24; all validation + review passes complete; awaiting Joe review and publish.
+2. **6th spoke — Prosecco** (confirmed 2026-05-24). Not started; begins after Sauvignon Blanc is live.
 3. **Chardonnay spoke — COMPLETE.** All 6 checks pass. FAQPage schema (6 questions) live. GSC indexing requested 2026-05-24.
 2. **Cabernet Sauvignon spoke — COMPLETE.** All 6 checks pass. FAQPage schema (5 questions) live. GSC indexing requested 2026-05-23.
 3. **Best Wines Under $20 — COMPLETE.** All 6 checks pass. GSC indexing already requested.
@@ -41,8 +41,8 @@
 | Malbec | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-malbec |
 | Cabernet Sauvignon | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-cabernet-sauvignon — all checks pass, indexing requested 2026-05-23 |
 | Chardonnay | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-chardonnay — all checks pass, indexing requested 2026-05-24 |
-| Sauvignon Blanc | Not started | |
-| 6th spoke | Not started | Waiting on Joe to confirm |
+| Sauvignon Blanc | IN PROGRESS | Draft + cards written 2026-05-24; validation + review passes complete; awaiting Joe review |
+| 6th spoke | Not started | Confirmed: Prosecco (2026-05-24) |
 | Hub | Not started | Write after all spokes live |
 
 **Assets:**
@@ -51,7 +51,6 @@
 - Dimension bar card template: `templates/dimension-bar-card.html`
 
 **Open decisions waiting on Joe:**
-- [ ] Confirm 6th spoke wine
 - [ ] Confirm whether Winedr style family names propagate to app UI
 
 ---
