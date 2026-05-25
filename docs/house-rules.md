@@ -11,7 +11,7 @@ When Joe corrects a rule violation: add the rule here, commit, done. No other fi
 ## Writing Rules — apply to ALL content without exception
 
 **HR-1: No em-dashes. Ever.**
-Replace — with a period, comma, colon, or restructured sentence. No exceptions in body text, card descriptions, social copy, schema fields, pitches, form submissions, or any other output. Scan every file before saving.
+Replace — with a period, comma, colon, or restructured sentence. No exceptions in body text, card descriptions, social copy, schema fields, pitches, form submissions, podcast scripts (Wine in the News, intro banter, show notes), or any other output. Scan every file before saving.
 
 **HR-2: Q. and A. prefix format.**
 Every Q&A pair formatted exactly:
