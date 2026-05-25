@@ -7,10 +7,10 @@
 ## Immediate next actions
 
 1. **Next spoke page — Prosecco** (6th spoke, confirmed 2026-05-24). Not started.
-2. **Sauvignon Blanc spoke — COMPLETE.** All 6 checks pass. Live 2026-05-24. GSC indexing to be requested.
+2. **Sauvignon Blanc spoke — COMPLETE.** All 6 checks pass. Live 2026-05-24. GSC indexing requested 2026-05-24.
 3. **Chardonnay spoke — COMPLETE.** All 6 checks pass. FAQPage schema (6 questions) live. GSC indexing requested 2026-05-24.
-2. **Cabernet Sauvignon spoke — COMPLETE.** All 6 checks pass. FAQPage schema (5 questions) live. GSC indexing requested 2026-05-23.
-3. **Best Wines Under $20 — COMPLETE.** All 6 checks pass. GSC indexing already requested.
+4. **Cabernet Sauvignon spoke — COMPLETE.** All 6 checks pass. FAQPage schema (5 questions) live. GSC indexing requested 2026-05-23.
+5. **Best Wines Under $20 — COMPLETE.** All 6 checks pass. GSC indexing already requested.
 
 **FAQPage schema backfill (Malbec, Bread & Butter, Josh) — DEPRIORITIZED 2026-05-18.** Schema already live on all priority pages. Add to new pages going forward; no backfill sprint needed.
 
@@ -41,7 +41,7 @@
 | Malbec | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-malbec |
 | Cabernet Sauvignon | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-cabernet-sauvignon — all checks pass, indexing requested 2026-05-23 |
 | Chardonnay | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-chardonnay — all checks pass, indexing requested 2026-05-24 |
-| Sauvignon Blanc | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-sauvignon-blanc — all 6 checks pass, GSC indexing to be requested |
+| Sauvignon Blanc | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-sauvignon-blanc — all 6 checks pass, GSC indexing requested 2026-05-24 |
 | 6th spoke | Not started | Confirmed: Prosecco (2026-05-24) |
 | Hub | Not started | Write after all spokes live |
 
@@ -150,11 +150,14 @@
 
 **Google validation in progress:** GSC validating "Crawled - currently not indexed" issue affecting 58 pages.
 
-**Posts with indexing requests submitted — check May 2-5:**
-- "Should You Chill Red Wine?"
-- "Is Josh Wine Good?"
-- Pinot Noir spoke (https://thewinepairpodcast.com/blog/wines-similar-to-pinot-noir)
-- Bread & Butter review (https://thewinepairpodcast.com/blog/is-bread-butter-wine-good-an-honest-review)
+**Posts with indexing requests submitted:**
+- "Should You Chill Red Wine?" — 2026-04-29
+- "Is Josh Wine Good?" — 2026-04-29
+- Pinot Noir spoke (https://thewinepairpodcast.com/blog/wines-similar-to-pinot-noir) — 2026-04-29
+- Bread & Butter review (https://thewinepairpodcast.com/blog/is-bread-butter-wine-good-an-honest-review) — 2026-04-30
+- Cabernet Sauvignon spoke (https://thewinepairpodcast.com/blog/wines-similar-to-cabernet-sauvignon) — 2026-05-23
+- Chardonnay spoke (https://thewinepairpodcast.com/blog/wines-similar-to-chardonnay) — 2026-05-24
+- Sauvignon Blanc spoke (https://thewinepairpodcast.com/blog/wines-similar-to-sauvignon-blanc) — 2026-05-24
 
 **Process going forward:** After every publish, submit URL in GSC → URL Inspection → Request Indexing, then resubmit the non-www sitemap. See `docs/publishing-checklist.md`.
 
