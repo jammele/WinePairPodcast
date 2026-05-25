@@ -7,7 +7,7 @@
 ## Immediate next actions
 
 1. **Hub page — ALL 6 SPOKES NOW LIVE. Hub is unblocked.** Title: "If You Like This Wine, Try That: Your Guide to Finding Similar Wines You'll Love." URL: `/similar-wines`. Write after GSC confirms Prosecco spoke indexed.
-2. **Prosecco spoke — GSC indexing.** Submit https://thewinepairpodcast.com/blog/wines-similar-to-prosecco in GSC → URL Inspection → Request Indexing, then resubmit non-www sitemap.
+2. **Prosecco spoke — GSC indexing requested 2026-05-25.** ✓ Done.
 3. **Phase 2 SEO blog post sprint — now active.** All spokes complete. Portuguese wine (#1 priority, 20,154 impressions / 0.09% CTR) is the next blog post.
 
 **FAQPage schema backfill (Malbec, Bread & Butter, Josh) — DEPRIORITIZED 2026-05-18.** Schema already live on all priority pages. Add to new pages going forward; no backfill sprint needed.
@@ -38,7 +38,7 @@
 | Cabernet Sauvignon | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-cabernet-sauvignon — all checks pass, indexing requested 2026-05-23 |
 | Chardonnay | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-chardonnay — all checks pass, indexing requested 2026-05-24 |
 | Sauvignon Blanc | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-sauvignon-blanc — all 6 checks pass, GSC indexing requested 2026-05-24 |
-| Prosecco | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-prosecco — all 6 checks pass, GSC indexing needed |
+| Prosecco | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-prosecco — all 6 checks pass, GSC indexing requested 2026-05-25 |
 | Hub | Not started | All spokes live. Ready to write. |
 
 **Assets:**
@@ -154,6 +154,7 @@
 - Cabernet Sauvignon spoke (https://thewinepairpodcast.com/blog/wines-similar-to-cabernet-sauvignon) — 2026-05-23
 - Chardonnay spoke (https://thewinepairpodcast.com/blog/wines-similar-to-chardonnay) — 2026-05-24
 - Sauvignon Blanc spoke (https://thewinepairpodcast.com/blog/wines-similar-to-sauvignon-blanc) — 2026-05-24
+- Prosecco spoke (https://thewinepairpodcast.com/blog/wines-similar-to-prosecco) — 2026-05-25
 
 **Process going forward:** After every publish, submit URL in GSC → URL Inspection → Request Indexing, then resubmit the non-www sitemap. See `docs/publishing-checklist.md`.
 
