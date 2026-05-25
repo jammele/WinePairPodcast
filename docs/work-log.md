@@ -6,7 +6,8 @@
 
 ## Immediate next actions
 
-1. **Next spoke page — Chardonnay** (JOE'S REWRITE SYNCED — 2026-05-24). Joe rewrote in Beamly; MD updated to match. Key style learnings added to house-rules.md (HR-43: first person voice; HR-44: "relatively easy to find"). 5 typos flagged for Joe to fix in Beamly. Then Sauvignon Blanc, 6th spoke (TBD — confirm with Joe).
+1. **Next spoke page — Sauvignon Blanc** (not started). 6th spoke TBD — confirm with Joe.
+2. **Chardonnay spoke — COMPLETE.** All 6 checks pass. FAQPage schema (6 questions) live. GSC indexing requested 2026-05-24.
 2. **Cabernet Sauvignon spoke — COMPLETE.** All 6 checks pass. FAQPage schema (5 questions) live. GSC indexing requested 2026-05-23.
 3. **Best Wines Under $20 — COMPLETE.** All 6 checks pass. GSC indexing already requested.
 
@@ -38,7 +39,7 @@
 | Pinot Noir | LIVE | https://thewinepairpodcast.com/blog/wines-similar-to-pinot-noir |
 | Malbec | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-malbec |
 | Cabernet Sauvignon | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-cabernet-sauvignon — all checks pass, indexing requested 2026-05-23 |
-| Chardonnay | **REWRITE SYNCED — PENDING PUBLISH** | Joe rewrote in Beamly 2026-05-24. MD updated to match. 5 typos flagged for Joe to fix in Beamly. |
+| Chardonnay | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-chardonnay — all checks pass, indexing requested 2026-05-24 |
 | Sauvignon Blanc | Not started | |
 | 6th spoke | Not started | Waiting on Joe to confirm |
 | Hub | Not started | Write after all spokes live |
