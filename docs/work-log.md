@@ -1,22 +1,18 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-25 (session 15)
+**Last updated:** 2026-05-25 (session 15 closeout)
 
 ---
 
 ## Immediate next actions
 
-1. **Prosecco spoke — DRAFT COMPLETE 2026-05-25.** `outputs/prosecco-spoke.md` + `outputs/prosecco-wine-cards-embeds.html`. Both `/review-wine-cards` and `/review-spoke` passed (4 issues fixed post-review). Awaiting Joe review and publish.
-2. **Sauvignon Blanc spoke — COMPLETE.** All 6 checks pass. Live 2026-05-24. GSC indexing requested 2026-05-24.
-3. **Chardonnay spoke — COMPLETE.** All 6 checks pass. FAQPage schema (6 questions) live. GSC indexing requested 2026-05-24.
-4. **Cabernet Sauvignon spoke — COMPLETE.** All 6 checks pass. FAQPage schema (5 questions) live. GSC indexing requested 2026-05-23.
-5. **Best Wines Under $20 — COMPLETE.** All 6 checks pass. GSC indexing already requested.
+1. **Hub page — ALL 6 SPOKES NOW LIVE. Hub is unblocked.** Title: "If You Like This Wine, Try That: Your Guide to Finding Similar Wines You'll Love." URL: `/similar-wines`. Write after GSC confirms Prosecco spoke indexed.
+2. **Prosecco spoke — GSC indexing.** Submit https://thewinepairpodcast.com/blog/wines-similar-to-prosecco in GSC → URL Inspection → Request Indexing, then resubmit non-www sitemap.
+3. **Phase 2 SEO blog post sprint — now active.** All spokes complete. Portuguese wine (#1 priority, 20,154 impressions / 0.09% CTR) is the next blog post.
 
 **FAQPage schema backfill (Malbec, Bread & Butter, Josh) — DEPRIORITIZED 2026-05-18.** Schema already live on all priority pages. Add to new pages going forward; no backfill sprint needed.
 
-**Chill red wine post — NO ACTION NEEDED.** May 18 GSC: 1,635 impressions, 0.12% CTR, position 7.75 — still young. `/verify-published` confirmed all 6 checks passing (FAQPage schema 5 questions, meta desc, author byline, title, no encoded spans). Low CTR explained by early position, not missing content.
-
-**Spoke pages = blog posts.** Phase 2 episode-based posts are lower priority while spoke work is active — not absolutely blocked if a strong opportunity exists.
+**Chill red wine post — NO ACTION NEEDED.** May 18 GSC: 1,635 impressions, 0.12% CTR, position 7.75 — still young. `/verify-published` confirmed all 6 checks passing. Low CTR explained by early position, not missing content.
 
 ---
 
@@ -24,12 +20,12 @@
 
 ### Blog — Phase 1: Wine Similarity Spoke Pages & Hub
 
-**Spoke pages are blog posts targeting "wines similar to X" queries. All 6 spokes must be live before hub is written.**
+**Spoke pages are blog posts targeting "wines similar to X" queries. All 6 spokes are live. Hub is next.**
 
 **Locked decisions:**
 - Title: "If You Like This Wine, Try That: Your Guide to Finding Similar Wines You'll Love"
 - Hub URL: `/similar-wines`
-- Phase 1: 6 red spoke pages, then hub. All spokes must be live before hub goes up.
+- All 6 spokes live as of 2026-05-25. Hub can be written now.
 - Spoke #1 (template reference): Malbec
 - Existing chart post (`/blog/handy-chart-to-help-you-find-wines-similar-to-ones-you-like`): keep as visual companion alongside the new hub. When hub publishes: chart links to hub; hub references chart. Spoke pages link to hub only — not chart — to concentrate link equity in the hub.
 
@@ -42,8 +38,8 @@
 | Cabernet Sauvignon | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-cabernet-sauvignon — all checks pass, indexing requested 2026-05-23 |
 | Chardonnay | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-chardonnay — all checks pass, indexing requested 2026-05-24 |
 | Sauvignon Blanc | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-sauvignon-blanc — all 6 checks pass, GSC indexing requested 2026-05-24 |
-| 6th spoke (Prosecco) | DRAFT COMPLETE | `outputs/prosecco-spoke.md` + cards embeds. Awaiting Joe review/publish. |
-| Hub | Not started | Write after all spokes live |
+| Prosecco | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-prosecco — all 6 checks pass, GSC indexing needed |
+| Hub | Not started | All spokes live. Ready to write. |
 
 **Assets:**
 - Wine data: `data/wine_similarity_data.json` (86 wines — Sekt and American Sparkling Brut added 2026-05-25)
@@ -179,6 +175,24 @@
 **Finish tonight:** Joe chose Douloufakis Malvasia Femina; Carmela chose Rodica Malvasia (split)
 **Wine in the News:** Oregon winery AI fake citations story (Valley View Winery family dispute)
 **Outputs:** `outputs/episodes/ep218-malvasia.md` — Wine in the News, Key Questions, Q&A, Schema markup (Review x2 + FAQPage), 10 Bluesky posts
+
+---
+
+## Session 15 — 2026-05-25
+
+### Prosecco spoke — completed and published
+
+- **Spoke page:** `outputs/prosecco-spoke.md` — 7 wine sections (6 main + Franciacorta as bonus section above "Also Worth a Look"), 4 "Also Worth a Look" picks, 5 FAQs with FAQPage schema, all Beamly fields. Title: "Wines Similar to Prosecco: 6 Sparkling Wines to Try After You Fall for Prosecco."
+- **Cards:** `outputs/prosecco-wine-cards-embeds.html` — 7 HTML dimension-bar cards with new sparkling badge color system (Fresh and Easy Bubbles #1a7a5a, Classic Bubbles #2a4a6b, Red Bubbles #5c1f7a). All fully inline styles.
+- **Wine data:** `data/wine_similarity_data.json` updated from 84 to 86 wines — Sekt and American Sparkling Brut added with full dimension data.
+- **Reviews passed:** `/review-wine-cards` (9 issues found, all fixed) and `/review-spoke` (4 issues fixed: HR-6 Sparkling Shiraz ordering, HR-43 third-person reference, Lambrusco regional error, unverified Sekt claim).
+- **Joe's edits on publish:** tightened intro opener; added Paula Kornell to American Sparkling Brut producers list.
+- **Franciacorta added** post-draft at Joe's request — H2 section without card, between main 6 and "Also Worth a Look." Episode: "Sorry, Prosecco. Franciacorta is Italy's Answer to Champagne!" Contadi Castaldi 9/10 ($27.99) cited.
+- **`/verify-published` result:** All 6 checks pass. No encoded spans, FAQPage schema (5 questions) live, meta desc correct, Joe Mele byline present (4 instances), title correct.
+- **HR-7 updated** with Prosecco subtitle pattern + added Chardonnay and SB patterns that were missing.
+
+### Milestone: All 6 spokes live
+Phase 1 of the blog hub/spoke project is complete as of 2026-05-25. Hub is now unblocked.
 
 ---
 

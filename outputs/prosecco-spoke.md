@@ -3,7 +3,7 @@
 **Target query:** wines similar to prosecco
 **URL slug:** wines-similar-to-prosecco
 **Format:** Wine similarity spoke page (hub/spoke project)
-**Status:** Draft
+**Status:** Published 2026-05-25
 
 ---
 
@@ -105,7 +105,7 @@ We covered Prosecco on the show: [Holiday Sparkling Wines #3: Brut Prosecco!](ht
 
 **What you'll recognize from Prosecco:** The celebration energy, the approachability, and the price. American sparkling wine made in the traditional method regularly comes in under $20, and it delivers the kind of brioche and apple complexity that makes you feel like you are drinking something special, without the special-occasion price tag.
 
-**What's different:** This is a fundamentally different kind of sparkling wine from Prosecco. While Prosecco uses a single Italian grape (Glera) and the Charmat tank method, American traditional method sparkling wine uses Chardonnay and Pinot Noir, the same grapes as Champagne, fermented in the bottle. That process builds more yeasty complexity, a creamier texture, and a toasty quality that Prosecco simply does not have. It is drier than Prosecco and more structured. The best producers for the money are Gruet from New Mexico, Treveri Cellars from Washington State, and Piper Sonoma from California. These are serious sparkling wines at the kind of price Prosecco is known for.
+**What's different:** This is a fundamentally different kind of sparkling wine from Prosecco. While Prosecco uses a single Italian grape (Glera) and the Charmat tank method, American traditional method sparkling wine uses Chardonnay and Pinot Noir, the same grapes as Champagne, fermented in the bottle. That process builds more yeasty complexity, a creamier texture, and a toasty quality that Prosecco simply does not have. It is drier than Prosecco and more structured. The best producers for the money are Gruet from New Mexico, Treveri Cellars from Washington State, Paula Kornell, and Piper Sonoma from California. These are serious sparkling wines at the kind of price Prosecco is known for.
 
 **Try this if:** You love Prosecco but you want to understand what Champagne-style sparkling wine actually tastes like without the sticker shock. This is your answer. We have covered it twice on the show, and the Piper Sonoma earned a 9/10.
 
