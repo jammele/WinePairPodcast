@@ -23,3 +23,9 @@ Sister sued brothers over family winery inheritance (Valley View Winery, Oregon)
 Tags: AI, lawsuit, family business, winery, legal misconduct
 
 ---
+
+**EP220 or EP221 (unconfirmed) | 2026-05-25 | Vice (Ashley Fike)**
+48-year-old Traverse City, Michigan woman caught drinking alcohol in a liquor store at 9am, sent to hospital, came back the next day, stole a bottle of Chardonnay, hid it in her body cavity -- found at the jail. Charged with retail fraud (x2), trespassing, and smuggling.
+Tags: theft, Michigan, body cavity, smuggling, liquor store
+
+---
