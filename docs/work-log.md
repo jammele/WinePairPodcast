@@ -53,6 +53,10 @@
 **Open decisions waiting on Joe:**
 - [ ] Confirm whether Winedr style family names propagate to app UI
 
+**Future episode candidates (identified 2026-05-24):**
+- Verdejo (Rueda, Spain): top expert-cited SB alternative; missing from SB spoke only because no episode exists
+- Vermentino (Sardinia/Corsica): coastal/saline white, commonly cited alongside SB alternatives
+
 ---
 
 ### SEO Blog Post Sprint

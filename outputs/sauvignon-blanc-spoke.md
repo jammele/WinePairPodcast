@@ -113,6 +113,8 @@ The grape also grows in the Loire Valley in France, where it produces Sancerre a
 
 **Muscadet** is the Loire Valley's leanest, most mineral white wine, made from the Melon de Bourgogne grape. The best examples are made sur lie, meaning the wine rests on its spent yeast after fermentation, which gives it a subtle creaminess underneath the crispness. If you love Sauvignon Blanc for its minerality and precision and want something even more restrained and food-focused, Muscadet is the answer. It pairs perfectly with oysters and shellfish in the same way Picpoul does, and it is typically one of the best values in French white wine. We covered it on the show: [WTF is Muscadet?](https://thewinepairpodcast.com/episode/wtf-is-muscadet-melon-de-bourgogne-the-sur-lie-method-batonnage-the-ultimate-fish-wine-the-best-french-white-wine-under-20)
 
+**Verdejo** is one of the most frequently cited Sauvignon Blanc alternatives among wine experts, and for good reason. Spain's Verdejo, grown primarily in the Rueda DO, shares SB's grapefruit and grassy freshness, high acidity, and bone-dry finish. It is typically very affordable and relatively easy to find in most wine shops, making it a natural everyday swap for anyone who drinks New Zealand Sauvignon Blanc regularly. We have not covered it on the show yet, but it is on the list.
+
 ---
 
 ## Food pairings that work across the group
