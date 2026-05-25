@@ -1,12 +1,12 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-24 (session 14)
+**Last updated:** 2026-05-25 (session 15)
 
 ---
 
 ## Immediate next actions
 
-1. **Next spoke page — Prosecco** (6th spoke, confirmed 2026-05-24). Not started.
+1. **Prosecco spoke — DRAFT COMPLETE 2026-05-25.** `outputs/prosecco-spoke.md` + `outputs/prosecco-wine-cards-embeds.html`. Both `/review-wine-cards` and `/review-spoke` passed (4 issues fixed post-review). Awaiting Joe review and publish.
 2. **Sauvignon Blanc spoke — COMPLETE.** All 6 checks pass. Live 2026-05-24. GSC indexing requested 2026-05-24.
 3. **Chardonnay spoke — COMPLETE.** All 6 checks pass. FAQPage schema (6 questions) live. GSC indexing requested 2026-05-24.
 4. **Cabernet Sauvignon spoke — COMPLETE.** All 6 checks pass. FAQPage schema (5 questions) live. GSC indexing requested 2026-05-23.
@@ -42,11 +42,11 @@
 | Cabernet Sauvignon | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-cabernet-sauvignon — all checks pass, indexing requested 2026-05-23 |
 | Chardonnay | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-chardonnay — all checks pass, indexing requested 2026-05-24 |
 | Sauvignon Blanc | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-sauvignon-blanc — all 6 checks pass, GSC indexing requested 2026-05-24 |
-| 6th spoke | Not started | Confirmed: Prosecco (2026-05-24) |
+| 6th spoke (Prosecco) | DRAFT COMPLETE | `outputs/prosecco-spoke.md` + cards embeds. Awaiting Joe review/publish. |
 | Hub | Not started | Write after all spokes live |
 
 **Assets:**
-- Wine data: `data/wine_similarity_data.json` (84 wines)
+- Wine data: `data/wine_similarity_data.json` (86 wines — Sekt and American Sparkling Brut added 2026-05-25)
 - Card embed template: `outputs/pinot-noir-wine-cards-embeds.html` (use as reference)
 - Dimension bar card template: `templates/dimension-bar-card.html`
 

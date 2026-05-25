@@ -2743,6 +2743,71 @@
         "oak": 1,
         "alcohol": 6.5
       }
+    },
+    {
+      "id": "sekt",
+      "name": "Sekt",
+      "wine_color": "sparkling",
+      "grapes": [
+        "Riesling"
+      ],
+      "region": "Germany",
+      "style_family": "Classic Bubbles",
+      "wine_vector_type": "classic_traditional_sparkling",
+      "pronunciation": "ZEKT",
+      "pairing_note": "Germany's answer to Champagne — aromatic, precise, with baking spice character unique to Riesling",
+      "flavors": [
+        "apple",
+        "baking spice",
+        "citrus"
+      ],
+      "foods": [
+        "Schnitzel",
+        "Asian Cuisine",
+        "Cheese Board"
+      ],
+      "price_range": "$12–20",
+      "dimensions": {
+        "body": 3,
+        "acidity": 8.5,
+        "tannin": 1,
+        "sweetness": 1.5,
+        "oak": 1,
+        "alcohol": 4.5
+      }
+    },
+    {
+      "id": "american_sparkling_brut",
+      "name": "American Sparkling Brut",
+      "wine_color": "sparkling",
+      "grapes": [
+        "Chardonnay",
+        "Pinot Noir"
+      ],
+      "region": "California / New Mexico / Washington",
+      "style_family": "Classic Bubbles",
+      "wine_vector_type": "classic_traditional_sparkling",
+      "pronunciation": "",
+      "pairing_note": "Made like Champagne with the same grapes — apple, citrus, and brioche at a fraction of the price",
+      "flavors": [
+        "apple",
+        "brioche",
+        "citrus"
+      ],
+      "foods": [
+        "Oysters",
+        "Brunch",
+        "Fried Chicken"
+      ],
+      "price_range": "$13–20",
+      "dimensions": {
+        "body": 4,
+        "acidity": 8,
+        "tannin": 1,
+        "sweetness": 1,
+        "oak": 1,
+        "alcohol": 5
+      }
     }
   ]
 }

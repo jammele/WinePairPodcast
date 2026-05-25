@@ -56,6 +56,9 @@ Published subtitle patterns — do NOT reuse angle or formula:
 - Pinot Noir: "6 Wines to Try If You Love Pinot Noir" (love/emotion)
 - Malbec: "6 Bold Reds to Try Next" (style descriptor + "to Try Next")
 - Cabernet Sauvignon: "Cabernet Lovers Love These Wines, Too" (audience identity)
+- Chardonnay: comparison analogy angle (do not reuse)
+- Sauvignon Blanc: decision-moment angle (do not reuse)
+- Prosecco: "6 Sparkling Wines to Try After You Fall for Prosecco" (warmth + journey/gateway)
 
 **HR-8: Image prompt requirements.**
 Every spoke page and blog post draft must include an image prompt. It must specify:
