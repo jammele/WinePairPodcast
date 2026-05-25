@@ -6,8 +6,9 @@
 
 ## Immediate next actions
 
-1. **Next spoke page — Sauvignon Blanc** (not started). 6th spoke TBD — confirm with Joe.
-2. **Chardonnay spoke — COMPLETE.** All 6 checks pass. FAQPage schema (6 questions) live. GSC indexing requested 2026-05-24.
+1. **Next spoke page — Sauvignon Blanc** (IN PROGRESS — pre-write checklist complete 2026-05-24). Wine list and subtitle options confirmed with Joe; draft in progress.
+2. **6th spoke — Prosecco** (confirmed 2026-05-24). Not started; begins after Sauvignon Blanc.
+3. **Chardonnay spoke — COMPLETE.** All 6 checks pass. FAQPage schema (6 questions) live. GSC indexing requested 2026-05-24.
 2. **Cabernet Sauvignon spoke — COMPLETE.** All 6 checks pass. FAQPage schema (5 questions) live. GSC indexing requested 2026-05-23.
 3. **Best Wines Under $20 — COMPLETE.** All 6 checks pass. GSC indexing already requested.
 
