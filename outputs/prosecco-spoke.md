@@ -115,6 +115,20 @@ We covered Prosecco on the show: [Holiday Sparkling Wines #3: Brut Prosecco!](ht
 
 ---
 
+## Franciacorta
+
+If you have worked through Cava, Crémant, and American sparkling and you are ready to understand what Italy can do at the highest level of traditional method, Franciacorta is the answer. It is made in Lombardy using the same bottle-fermentation process as Champagne, from the same grapes (Chardonnay and Pinot Nero), with longer aging requirements, and it shows. This is Italian sparkling wine that sits at a completely different level of complexity from Prosecco.
+
+**What you'll recognize from Prosecco:** The Italian identity and the celebration energy. Franciacorta shares Prosecco's home country and its sense of occasion, and both wines have a finesse and elegance that feels distinctly Italian. If you love Prosecco partly because it feels more interesting than generic supermarket bubbly, Franciacorta takes that feeling considerably further.
+
+**What's different:** Everything about the process. Franciacorta ferments in the bottle, ages on the lees for a minimum of 18 months (or 30 for non-vintage, 60 for vintage), and develops the kind of toasty brioche, citrus, and fine-bubble complexity you find in Champagne. The price reflects this: good Franciacorta runs $25-30, not $12. It is not a casual weeknight bottle. But when you want the Champagne experience and you want it to be Italian, there is nothing else like it.
+
+**Try this if:** You have graduated past Cava and Crémant and you want to understand why some sparkling wines command a premium. Franciacorta is the Italian answer to Champagne, and it earns that comparison honestly. We rated the Contadi Castaldi Franciacorta Brut a 9/10 at $27.99 on the show, which tells you everything you need to know.
+
+**Our Franciacorta episode:** [Sorry, Prosecco. Franciacorta is Italy's Answer to Champagne!](https://thewinepairpodcast.com/episode/sorry-prosecco-franciacorta-is-italys-answer-to-champagne)
+
+---
+
 ## Also Worth a Look for Prosecco Lovers
 
 **Sparkling Rosé** deserves its own category because it has become one of the most popular sparkling wine styles in the world, and Prosecco drinkers tend to love it. It has all the lightness and celebration energy of Prosecco but with more strawberry and red berry character and a beautiful color in the glass. Prosecco Rosé specifically is now enormous, and the sparkling rosé Cavas from Spain offer outstanding value at similar prices. We covered the full world of sparkling rosé on the show: [Holiday Sparkling Wines #2: Sparkling Rosé!](https://thewinepairpodcast.com/episode/holiday-sparkling-wines-2-sparkling-rose-sparkling-rose-wine-demystified-traditional-method-vs-charmat-method-of-making-sparkling-wine-cuve-close-sweet-vs-dry-sparkling-wine)
@@ -148,7 +162,7 @@ Pairings that work across the group:
 
 ## Listen to the episodes
 
-We have covered all six wines on the show, and two of the also-worth-a-look picks as well. There is a lot of sparkling wine content to dig into:
+We have covered all six wines on the show plus Franciacorta, and two of the also-worth-a-look picks as well. There is a lot of sparkling wine content to dig into:
 
 - [Holiday Sparkling Wines #3: Brut Prosecco!](https://thewinepairpodcast.com/episode/holiday-sparkling-wines-3-brut-prosecco-the-most-popular-sparkling-wine-in-the-world-why-brut-rather-than-dry-this-holiday-season-where-the-name-prosecco-came-from)
 - [Spain's Answer to Champagne: Cava!](https://thewinepairpodcast.com/episode/spains-answer-to-champagne-cava-a-step-up-from-prosecco-at-a-similar-price)
@@ -159,6 +173,7 @@ We have covered all six wines on the show, and two of the also-worth-a-look pick
 - [Let's Talk About Sekt! German Sparkling Wine!](https://thewinepairpodcast.com/episode/lets-talk-about-sekt-german-sparkling-wine-lots-of-sekt-jokes-aka-secco)
 - [3 Great, Inexpensive American Sparkling Wines](https://thewinepairpodcast.com/episode/3-great-inexpensive-american-sparkling-wines-4th-of-july-wines-why-all-sparkling-wine-should-not-be-called-champagne-blanc-de-blancs-vs-blanc-de-noir)
 - [Great American Sparklers: 2023 Edition!](https://thewinepairpodcast.com/episode/great-american-sparklers-2023-edition-sparkling-wines-for-the-4th-of-july-sparkling-rose-chardonnay-and-pinot-noir)
+- [Sorry, Prosecco. Franciacorta is Italy's Answer to Champagne!](https://thewinepairpodcast.com/episode/sorry-prosecco-franciacorta-is-italys-answer-to-champagne)
 - Also worth listening: [Holiday Sparkling Wines #2: Sparkling Rosé!](https://thewinepairpodcast.com/episode/holiday-sparkling-wines-2-sparkling-rose-sparkling-rose-wine-demystified-traditional-method-vs-charmat-method-of-making-sparkling-wine-cuve-close-sweet-vs-dry-sparkling-wine) and [Holiday Sparkling Wines #4: Sparkling Shiraz!](https://thewinepairpodcast.com/episode/holiday-sparkling-wines-4-sparkling-shiraz)
 
 ---
