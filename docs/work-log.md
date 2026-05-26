@@ -95,6 +95,18 @@
 
 ---
 
+### Special Episode #23 — Jun Kono (Sohomare) + Leo Lê (Kappo Sono)
+
+**Status:** SEO/AEO complete. Episode number TBD (220 or 221).
+**Google Doc ID:** 1XGNKuR6tLhmJ7PYPQ0eTpDfg_eRhpdsRZTMYzZu71lg
+**Title:** Special Episode! Meet the (Wine) Makers #23: Jun Kono President and Master Sake Brewer at Sohomare and Leo Lê Sommelier of Kappo Sono and Momoya
+**Type:** Interview episode. No wines tasted, no ratings. Joe hosted solo (Carmela absent).
+**Guests:** Jun Kono (5th-gen president, Sohomare Sake Brewery, Tochigi Prefecture, founded 1872, kimoto method) | Leo Lê (sommelier/beverage director, Kappo Sono NYC + Momoya)
+**Outputs:** `outputs/episodes/ep220-221-meet-the-makers-23-sake.md` — Key Questions, FAQ (7), FAQPage schema, 10 Bluesky posts
+**Note:** Validator updated to skip Review Schema check when file metadata contains "interview episode."
+
+---
+
 ### Episode 219 — Two Buck Chuck (Charles Shaw Chardonnay + Cabernet Sauvignon)
 
 **Status:** Title confirmed, SEO/AEO complete, cover art selected. Ready to publish.

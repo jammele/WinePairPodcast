@@ -102,8 +102,9 @@ function run(filePath) {
     }
   }
 
-  // ── 5. Review Schema present ──────────────────────────────────────────────
-  if (!/"@type"\s*:\s*"Review"/.test(content)) {
+  // ── 5. Review Schema present (skip for interview episodes) ───────────────
+  const isInterviewEpisode = /Type:.*interview episode/i.test(content);
+  if (!isInterviewEpisode && !/"@type"\s*:\s*"Review"/.test(content)) {
     errors.push('No Review Schema block found. Add at least one Review schema for each wine reviewed.');
   }
 
