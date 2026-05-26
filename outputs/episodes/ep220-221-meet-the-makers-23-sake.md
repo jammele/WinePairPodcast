@@ -3,8 +3,9 @@
 **Episode number:** TBD (220 or 221)
 **Title:** Special Episode! Meet the (Wine) Makers #23: Jun Kono President and Master Sake Brewer at Sohomare and Leo Lê Sommelier of Kappo Sono and Momoya
 **Google Doc ID:** 1XGNKuR6tLhmJ7PYPQ0eTpDfg_eRhpdsRZTMYzZu71lg
+**Transcript:** transcript-special-episode-meet-the-wine-makers-23-jun-kono-president-and-master-sake-brewer-at-sohomare-and-leo-l-sommelier-of-kappo-sono-and-momoya-0.0.1.txt
 **Type:** Special interview episode. No wines tasted, no ratings.
-**Guests:** Jun Kono (Sohomare), Leo Lê (Kappo Sono, Momoya)
+**Guests:** Jun Kono (5th-gen president, Sohomare Sake Brewery, Tochigi Prefecture, founded 1872) | Leo Lê (sommelier/beverage director, Kappo Sono NYC + Momoya)
 **Status:** SEO/AEO content complete. Episode number TBD.
 
 ---
@@ -17,10 +18,10 @@
 - What is the kimoto method in sake brewing?
 - How is sake different from wine?
 - What food pairs well with sake?
-- What is artisanal sake and how is it made?
-- What is rice wine and is sake actually wine?
+- What is Yamadanishiki rice and why does it matter for sake?
+- Is sake more like wine or beer?
+- What is junmai daiginjo sake?
 - How do you serve sake the right way?
-- Why does high-quality sake taste so different from what most people have tried?
 
 ---
 
@@ -28,25 +29,25 @@
 *(Place at bottom of show notes)*
 
 **Q. What is the kimoto method in sake brewing?**
-A. It's one of the oldest and most labor-intensive ways to make sake, dating back to around 1700. Instead of adding commercial lactic acid, brewers rely on naturally occurring bacteria to build the yeast starter by hand. It takes about a month and produces sake with deeper flavor, more body, and better aging potential than modern shortcuts.
+A. Kimoto is one of the oldest techniques for developing the yeast starter in sake. Instead of adding commercially produced lactic acid, brewers rely on naturally occurring microorganisms in a very clean environment. Jun Kono of Sohomare says that clean-environment kimoto is what gives his sake its clean finish and genuine depth of flavor.
 
 **Q. How is sake different from wine?**
-A. Sake and wine both involve fermentation, but the process is completely different. Wine ferments grape sugar. Sake converts rice starch into sugar and ferments it simultaneously, a dual process that has no equivalent in winemaking. The result is something entirely its own, not really a "rice wine" at all despite the common shorthand.
+A. Wine ferments sugars that already exist in grapes. Sake converts starches in rice into fermentable sugars at the same time fermentation is happening, a process with no real equivalent in winemaking. Jun Kono describes the goal as "deep complexity and depth of finish," achieved through rice selection, brewing method, and blending, not just a single ingredient.
 
 **Q. What food pairs well with sake?**
-A. High-quality sake pairs beautifully with far more than Japanese food. At Kappo Sono, sommelier Leo Le has built a beverage program that treats sake as a pairing tool across a wide range of ingredients. The key is finding sake with enough depth and acidity to stand up to food, which is exactly what the kimoto style delivers.
+A. More than most people think. Leo Le, beverage director at Kappo Sono, has paired Sohomare with vongole pasta, foie gras at a French restaurant in New York, and Italian-American food. His point: sake is made from rice, which is naturally high in umami and acidity, so it does the pairing work itself. You don't need to limit it to Japanese cuisine.
 
-**Q. What is artisanal sake and how is it made?**
-A. Artisanal sake comes from small breweries that use traditional methods instead of industrial shortcuts. Sohomare in Tochigi Prefecture, Japan, is a great example: founded in 1872, still led by the 5th-generation family, and committed to the kimoto method even though most breweries abandoned it long ago. The result is sake built to age and to eat with food.
+**Q. What is Yamadanishiki rice and why does it matter for sake?**
+A. Yamadanishiki is considered the best sake rice variety in Japan, out of over 100 options. Sohomare sources 100% of theirs from the top-graded "A region" in Hyogo Prefecture, specifically the Yokawa area. Sohomare is about 400 miles away from those fields, so Jun Kono travels there every year to drink with farmers and maintain the relationships that keep that access open.
 
-**Q. What is rice wine and is sake actually wine?**
-A. Sake is often called rice wine, but that label is misleading. Wine is made by fermenting fruit sugars. Sake requires converting rice starch into fermentable sugar first, then fermenting, making the process far more complex. The brewing method has more in common with beer production than winemaking, though sake's flavors and pairing flexibility are closer to wine.
+**Q. Is sake more like wine or beer?**
+A. Neither, honestly. The process of converting rice starch to sugar and fermenting it simultaneously has more in common with brewing than winemaking. But in terms of how you drink it and what you pair it with, great sake sits much closer to wine. Leo Le says Sohomare is restrained, elegant, and precise, the way you might describe a really good white Burgundy.
+
+**Q. What is junmai daiginjo sake?**
+A. It's the highest classification tier in Japanese sake. Junmai means no added alcohol, just rice, water, and koji. Daiginjo means at least 50% of each grain of rice is milled away before brewing. Sohomare's flagship is a Kimoto Junmai Daiginjo called Tuxedo, blended from 13 different batches, 3 vintages, and 3 different yeasts, and bottled 7 or 8 times a year.
 
 **Q. How do you serve sake the right way?**
-A. It depends on the style. Many high-quality sakes, especially kimoto styles from breweries like Sohomare, show their best character served slightly chilled or at room temperature rather than hot. Hot serving can mask complexity. The short answer: treat good sake like you'd treat a fine white wine, give it a proper glass and a little attention.
-
-**Q. Why does high-quality sake taste so different from what most people have tried?**
-A. Most sake Americans encounter is designed to be light, fresh, and broadly accessible. Breweries like Sohomare are doing the opposite: making deep, complex, food-forward sake using the kimoto method that takes months and real craft. It's a completely different category of beverage, and most people haven't had the chance to taste what sake can actually be.
+A. For complex, traditional-style sake like Sohomare, slightly chilled or at room temperature is best. Serving it hot can mask the very complexity you paid for. Leo Le treats Sohomare the way a sommelier treats a good white wine: proper glass, real attention, and ideally a long meal alongside it.
 
 ---
 
@@ -64,7 +65,7 @@ A. Most sake Americans encounter is designed to be light, fresh, and broadly acc
       "name": "What is the kimoto method in sake brewing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It's one of the oldest and most labor-intensive ways to make sake, dating back to around 1700. Instead of adding commercial lactic acid, brewers rely on naturally occurring bacteria to build the yeast starter by hand. It takes about a month and produces sake with deeper flavor, more body, and better aging potential than modern shortcuts."
+        "text": "Kimoto is one of the oldest techniques for developing the yeast starter in sake. Instead of adding commercially produced lactic acid, brewers rely on naturally occurring microorganisms in a very clean environment. Jun Kono of Sohomare says that clean-environment kimoto is what gives his sake its clean finish and genuine depth of flavor."
       }
     },
     {
@@ -72,7 +73,7 @@ A. Most sake Americans encounter is designed to be light, fresh, and broadly acc
       "name": "How is sake different from wine?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sake and wine both involve fermentation, but the process is completely different. Wine ferments grape sugar. Sake converts rice starch into sugar and ferments it simultaneously, a dual process that has no equivalent in winemaking. The result is something entirely its own, not really a rice wine at all despite the common shorthand."
+        "text": "Wine ferments sugars that already exist in grapes. Sake converts starches in rice into fermentable sugars at the same time fermentation is happening, a process with no real equivalent in winemaking. Jun Kono describes the goal as deep complexity and depth of finish, achieved through rice selection, brewing method, and blending, not just a single ingredient."
       }
     },
     {
@@ -80,23 +81,31 @@ A. Most sake Americans encounter is designed to be light, fresh, and broadly acc
       "name": "What food pairs well with sake?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "High-quality sake pairs beautifully with far more than Japanese food. At Kappo Sono, sommelier Leo Le has built a beverage program that treats sake as a pairing tool across a wide range of ingredients. The key is finding sake with enough depth and acidity to stand up to food, which is exactly what the kimoto style delivers."
+        "text": "More than most people think. Leo Le, beverage director at Kappo Sono, has paired Sohomare with vongole pasta, foie gras at a French restaurant in New York, and Italian-American food. His point: sake is made from rice, which is naturally high in umami and acidity, so it does the pairing work itself. You don't need to limit it to Japanese cuisine."
       }
     },
     {
       "@type": "Question",
-      "name": "What is artisanal sake and how is it made?",
+      "name": "What is Yamadanishiki rice and why does it matter for sake?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Artisanal sake comes from small breweries that use traditional methods instead of industrial shortcuts. Sohomare in Tochigi Prefecture, Japan, is a great example: founded in 1872, still led by the 5th-generation family, and committed to the kimoto method even though most breweries abandoned it long ago. The result is sake built to age and to eat with food."
+        "text": "Yamadanishiki is considered the best sake rice variety in Japan, out of over 100 options. Sohomare sources 100% of theirs from the top-graded A region in Hyogo Prefecture, specifically the Yokawa area. Sohomare is about 400 miles away from those fields, so Jun Kono travels there every year to drink with farmers and maintain the relationships that keep that access open."
       }
     },
     {
       "@type": "Question",
-      "name": "What is rice wine and is sake actually wine?",
+      "name": "Is sake more like wine or beer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sake is often called rice wine, but that label is misleading. Wine is made by fermenting fruit sugars. Sake requires converting rice starch into fermentable sugar first, then fermenting, making the process far more complex. The brewing method has more in common with beer production than winemaking, though sake's flavors and pairing flexibility are closer to wine."
+        "text": "Neither, honestly. The process of converting rice starch to sugar and fermenting it simultaneously has more in common with brewing than winemaking. But in terms of how you drink it and what you pair it with, great sake sits much closer to wine. Leo Le says Sohomare is restrained, elegant, and precise, the way you might describe a really good white Burgundy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is junmai daiginjo sake?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's the highest classification tier in Japanese sake. Junmai means no added alcohol, just rice, water, and koji. Daiginjo means at least 50% of each grain of rice is milled away before brewing. Sohomare's flagship is a Kimoto Junmai Daiginjo called Tuxedo, blended from 13 different batches, 3 vintages, and 3 different yeasts, and bottled 7 or 8 times a year."
       }
     },
     {
@@ -104,15 +113,7 @@ A. Most sake Americans encounter is designed to be light, fresh, and broadly acc
       "name": "How do you serve sake the right way?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends on the style. Many high-quality sakes, especially kimoto styles from breweries like Sohomare, show their best character served slightly chilled or at room temperature rather than hot. Hot serving can mask complexity. Treat good sake like you'd treat a fine white wine: give it a proper glass and a little attention."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why does high-quality sake taste so different from what most people have tried?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most sake Americans encounter is designed to be light, fresh, and broadly accessible. Breweries like Sohomare are doing the opposite: making deep, complex, food-forward sake using the kimoto method that takes months and real craft. It's a completely different category of beverage, and most people haven't had the chance to taste what sake can actually be."
+        "text": "For complex, traditional-style sake like Sohomare, slightly chilled or at room temperature is best. Serving it hot can mask the very complexity you paid for. Leo Le treats Sohomare the way a sommelier treats a good white wine: proper glass, real attention, and ideally a long meal alongside it."
       }
     }
   ]
@@ -125,41 +126,41 @@ A. Most sake Americans encounter is designed to be light, fresh, and broadly acc
 ### BLUESKY POSTS (10)
 
 **1.**
-We don't cover sake often. But when a 5th-generation master sake brewer and one of NYC's top sommeliers both say yes to sitting down with us, you clear your schedule. New episode at
+We don't cover sake often. But a 5th-generation brewer whose family fled as samurai in the 16th century, and a NYC sommelier who pairs it with foie gras at French restaurants? We made an exception.
 thewinepairpodcast.com
 
 **2.**
-Special Episode #23 is an interview episode. No wines tasted. No ratings. Just a genuine conversation about one of the most misunderstood beverages in the world.
+Special Episode #23: a conversation with the 5th generation of Sohomare and the sommelier at one of NYC's most intimate dining rooms. 12 seats. Omakase. And Sohomare on the list, always.
 thewinepairpodcast.com
 
 **3.**
-Kappo Sono seats 12 people per evening and its sake program is described as a masterclass in pairing. That sommelier, Leo Le, is one of our guests this week. Come for the sake, stay for the story.
+Leo Le brought Sohomare to Nougatin, the French restaurant next to Jean-Georges. Ordered foie gras. Poured sake. Said it went deliciously. That's kind of the whole point of this episode.
 thewinepairpodcast.com
 
 **4.**
-Sohomare has been making sake in Tochigi Prefecture, Japan since 1872. Jun Kono is the 5th generation running it. That's not just a family business, that's an institution.
+The Kono family were samurai in Shikoku in the 16th century. A civil war forced them into hiding under a different name for generations. By 1872 they were in Tochigi Prefecture making sake.
 https://sohomare.co.jp/en_fr/
 
 **5.**
-Most sake you see in the US is built for broad accessibility. Sohomare is built for depth, complexity, and food. Very different goals, very different results.
+Sohomare's Tuxedo sake is blended from 13 different batches, 3 vintages, and 3 different yeasts. They bottle it 7 or 8 times a year. Every bottling is a decision Jun Kono makes by tasting.
 https://worldsake.com/
 
 **6.**
-The kimoto brewing method dates to around 1700. Most breweries abandoned it because it takes a full month and a lot of manual labor. Sohomare never stopped doing it.
+Sohomare's best rice comes from Hyogo Prefecture, about 400 miles away. Jun Kono travels there every year to drink with the farmers. That relationship is how you get access to the best fields.
 https://www.instagram.com/sohomare/
 
 **7.**
-Sake is called rice wine but the fermentation process is nothing like winemaking. Rice starch has to be converted to sugar first, then fermented. It's closer to brewing beer, honestly.
+Leo Le had never had sake before age 18. Needed money as a student, got a job at a busy Japanese restaurant, tried sake for the first time, and never looked back. That was 23 years ago.
 https://www.instagram.com/worldsakeimports/
 
 **8.**
-Leo Le's beverage program at Kappo Sono focuses on rare sake, including unpasteurized and freshly squeezed types. The kind most people have never even heard of, let alone tasted.
+Jun Kono spent 9 months in France in 1982 drinking wine. The friend he traveled with became Japan's ambassador to France. Jun says those experiences, plus his mother's and wife's cooking, shaped his palate.
 https://www.instagram.com/leobaole/
 
 **9.**
-Kimoto sake has deeper umami, higher acidity, and more aging potential than most modern sake. It's a slower, harder process. The results speak for themselves.
+The kimoto method needs a completely clean brewery because it relies on natural microorganisms. Jun Kono says that discipline is exactly what gives Sohomare sake its clean finish and real depth.
 https://en.sake-times.com/learn/sake-101-kimoto-and-yamahai
 
 **10.**
-Great sake doesn't just pair with Japanese food. Find a kimoto style with real depth and acidity and it works across a much wider range of dishes than most people realize.
+Leo Le on Sohomare: restrained, elegant, finesse, precise. Hard to stop sipping. He saves it for long omakase dinners when he wants to stay on one sake for the whole meal.
 https://www.jancisrobinson.com/articles/what-to-drink-with-japanese-food
