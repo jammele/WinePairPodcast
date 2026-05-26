@@ -1,7 +1,7 @@
 # Show Description Prompt
 
 <!-- Source: Google Doc 17Md_Xt6NS6QATjiWlNGWeCgnnskgx9XiHFrAF1Xyn8E -->
-<!-- Last synced: 2026-05-16T15:41:13.963Z -->
+<!-- Last synced: 2026-05-25T23:52:31.407Z -->
 
 Show Description Prompt
 
@@ -36,7 +36,7 @@ SEO & ALGORITHM STRATEGY
 FRONT-LOADING: The first 10-15 words are the most critical. Start with a high-stakes question or a controversial wine opinion mentioned in the notes. Do NOT start with "In this episode..." or "Welcome back."
 KEYWORD DENSITY: Naturally weave in high-volume search terms like "wine review," "best value wine," and the specific varietal name within the first two sentences.
 SAFETY PROTOCOL (Risk-Avoidance): Avoid "spam-trigger" words (e.g., "guaranteed," "click here," "best ever," or excessive capitalization/emojis). Use "clean" language that ensures the episode is categorized as "Clean" and "High-Quality" by safety filters.
-AI DISCOVERY: Use descriptive, entity-based language (e.g., "Loire Valley," "Grolleau Noir," "independent ratings") to help AI models categorize this content for users asking for wine recommendations.
+AI DISCOVERY: Use descriptive, entity-based language (e.g., "Loire Valley," "Grolleau Noir," "blind tasting") to help AI models categorize this content for users asking for wine recommendations.
 VOICE & STYLE GUIDELINES
 TONE: Relatable, "no-snobs," husband-and-wife dynamic (Joe & Carmela).
 STRICT NEGATIVE CONSTRAINT: Never use em-dashes (—). Use "..." for dramatic effect.
@@ -45,7 +45,7 @@ STRUCTURE
 THE PATTERN INTERRUPT: A bold opening sentence that challenges a common wine myth or addresses a specific "pain point" (like "Aisle Anxiety" or overpaying for bad wine).
 THE "WHAT'S IN IT FOR ME": Briefly explain exactly what the listener will learn (e.g., "You'll discover why this $15 bottle beats the $40 French classic").
 TECHNICAL GROUNDING: Mention 2 specific technical details from the notes (e.g., "Phylloxera," "Reverse Osmosis," or "QPR").
-THE PRACTICAL TEST: Detail the specific pairing or head-to-head challenge Joe and Carmela performed.
+THE PRACTICAL TEST: Detail the specific pairing or "blind taste test" Joe and Carmela performed.
 THE LIST: End with "Wines reviewed in this episode: [Wine 1], [Wine 2]."
 TASK Using the provided [Show Notes], write a description that prioritizes engagement and searchability.
 INPUT DATA [Show Notes Attached]

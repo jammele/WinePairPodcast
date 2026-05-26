@@ -1,7 +1,7 @@
 # NotebookLM Prompt
 
 <!-- Source: Google Doc 1M3TGBFbDXBO7iuIUz6dRYDXZjGMaCNmQKaOYTwIhshI -->
-<!-- Last synced: 2026-05-10T21:02:06.256Z -->
+<!-- Last synced: 2026-05-25T23:52:29.251Z -->
 
 NotebookLM Prompt
 

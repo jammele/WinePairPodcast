@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-25 (session 15 closeout)
+**Last updated:** 2026-05-25 (session 16 closeout)
 
 ---
 
@@ -97,13 +97,15 @@
 
 ### Special Episode #23 — Jun Kono (Sohomare) + Leo Lê (Kappo Sono)
 
-**Status:** SEO/AEO complete. Episode number TBD (220 or 221).
+**Status:** SEO/AEO complete. Episode number TBD (220 or 221). Ready to publish.
 **Google Doc ID:** 1XGNKuR6tLhmJ7PYPQ0eTpDfg_eRhpdsRZTMYzZu71lg
+**Transcript:** `C:/Users/jamme/Downloads/transcript-special-episode-meet-the-wine-makers-23-jun-kono-president-and-master-sake-brewer-at-sohomare-and-leo-l-sommelier-of-kappo-sono-and-momoya-0.0.1.txt`
 **Title:** Special Episode! Meet the (Wine) Makers #23: Jun Kono President and Master Sake Brewer at Sohomare and Leo Lê Sommelier of Kappo Sono and Momoya
 **Type:** Interview episode. No wines tasted, no ratings. Joe hosted solo (Carmela absent).
 **Guests:** Jun Kono (5th-gen president, Sohomare Sake Brewery, Tochigi Prefecture, founded 1872, kimoto method) | Leo Lê (sommelier/beverage director, Kappo Sono NYC + Momoya)
-**Outputs:** `outputs/episodes/ep220-221-meet-the-makers-23-sake.md` — Key Questions, FAQ (7), FAQPage schema, 10 Bluesky posts
-**Note:** Validator updated to skip Review Schema check when file metadata contains "interview episode."
+**Outputs:** `outputs/episodes/ep220-221-meet-the-makers-23-sake.md` — 7 Key Questions, 7 FAQ Q&As, FAQPage schema, 10 Bluesky posts. All grounded in the recorded transcript.
+**Next step:** When episode number confirmed (220 or 221), rename output file and update this entry.
+**Validator note:** `scripts/validate_episode.js` updated to skip Review Schema check for files with "interview episode" in metadata.
 
 ---
 
@@ -188,6 +190,18 @@
 **Finish tonight:** Joe chose Douloufakis Malvasia Femina; Carmela chose Rodica Malvasia (split)
 **Wine in the News:** Oregon winery AI fake citations story (Valley View Winery family dispute)
 **Outputs:** `outputs/episodes/ep218-malvasia.md` — Wine in the News, Key Questions, Q&A, Schema markup (Review x2 + FAQPage), 10 Bluesky posts
+
+---
+
+## Session 16 — 2026-05-25
+
+### Special Episode #23 — SEO/AEO content
+
+- Read episode script (Google Doc `1XGNKuR6tLhmJ7PYPQ0eTpDfg_eRhpdsRZTMYzZu71lg`) and transcript from Downloads.
+- Generated 7 Key Questions, 7 FAQ Q&As, FAQPage schema, and 10 Bluesky posts. All content grounded in actual transcript (Kono family samurai history, Leo's Nougatin foie gras pairing, Tuxedo blending process, Yamadanishiki rice sourcing from Yokawa, old school vs. new school sake framing).
+- Iterated twice at Joe's direction: (1) replaced generic questions not covered in the episode with transcript-specific topics; (2) rewrote FAQ answers to stay closer to what Jun and Leo actually said, removing a shiboritate reference that came from the script doc rather than the recorded interview.
+- Output: `outputs/episodes/ep220-221-meet-the-makers-23-sake.md`
+- Validator updated: `scripts/validate_episode.js` now skips Review Schema check for interview episodes (flagged via "interview episode" in file metadata).
 
 ---
 

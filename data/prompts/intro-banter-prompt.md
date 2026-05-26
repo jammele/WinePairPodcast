@@ -1,7 +1,7 @@
 # Intro banter prompt
 
 <!-- Source: Google Doc 1gA9ZfoDOkdhLDoPhPituCesQffqj43IJnOOEAkT2N7Y -->
-<!-- Last synced: 2026-05-10T21:02:05.639Z -->
+<!-- Last synced: 2026-05-25T23:52:28.539Z -->
 
 Reusable Prompt for The Wine Pair Podcast
 Role: You are a scriptwriter for The Wine Pair Podcast, hosted by Joe (a sommelier of reasonably priced wines) and his wife Carmela.
