@@ -29,25 +29,25 @@
 *(Place at bottom of show notes)*
 
 **Q. What is the kimoto method in sake brewing?**
-A. Kimoto is one of the oldest techniques for developing the yeast starter in sake. Instead of adding commercially produced lactic acid, brewers rely on naturally occurring microorganisms, which requires an extremely clean brewery environment. Jun Kono of Sohomare says that discipline is exactly what gives his sake its clean finish and real depth of flavor.
+A. It's the traditional method for developing the yeast starter, and Jun Kono describes it as relying on natural microorganisms rather than commercially produced acids. The catch is that natural processes require an extremely clean brewery. Jun says that discipline is exactly what gives Sohomare's sake its clean finish and real depth of flavor.
 
 **Q. What food pairs well with sake?**
-A. A lot more than just Japanese food. Leo Le, beverage director at Kappo Sono, has paired Sohomare with vongole pasta, foie gras at a French restaurant in New York, and Italian-American cooking. Because sake is made from rice, it's naturally high in umami and acidity, so it tends to do the pairing work itself across a wide range of cuisines.
+A. More than most people assume. Leo Le paired Sohomare with foie gras at Nougatin, a French restaurant next to Jean-Georges in New York, and says it went deliciously. He's also matched it with vongole pasta. His reasoning: sake is made from rice, which is naturally high in umami and acidity, so it pairs broadly across Japanese, French, and Italian cuisines.
 
 **Q. What is Yamadanishiki rice and why does it matter for sake?**
-A. Yamadanishiki is considered the best sake rice in Japan among over 100 varieties. Sohomare sources 100% of theirs from the top-graded fields in Hyogo Prefecture, specifically the Yokawa area. Because Sohomare is about 400 miles away, Jun Kono travels there every year to drink with the farmers and maintain the relationships that keep that access open.
+A. Jun Kono calls it the best sake rice in Japan, out of over 100 varieties. Sohomare sources 100% of theirs from the top-graded Yokawa area in Hyogo Prefecture, about 400 miles from the brewery. Jun travels there every year to drink with the farmers, because maintaining those personal relationships is the only way to keep access to the best fields.
 
 **Q. What is the difference between old school and new school sake?**
-A. New school sake tends to be fresh, aromatic, and instantly accessible, often sweet and wine-like. Leo Le says it can be cloying after a glass or two. Old school sake, like Sohomare, is the opposite: restrained, elegant, and precise, with the kind of depth and finesse you actually want for a long dinner. Leo says with age and experience, he gravitates strongly toward the old school.
+A. Leo Le put it clearly: new school sake is fresh, aromatic, and instantly gratifying, but often cloying. You get a glass and a half and you're done with it. Old school sake, like Sohomare, is restrained, elegant, and precise, hard to put down. Leo says the more experience he gains, the more he gravitates toward the old school, and toward Sohomare specifically.
 
 **Q. How do sake breweries maintain consistency from year to year?**
-A. At Sohomare, through blending. Their flagship sake, Tuxedo, is a blend of 13 different batches across 3 vintages, using 3 different yeasts. They bottle it 7 or 8 times a year, and before each bottling Jun Kono tastes all the batches and decides the ratios. He even orders Sohomare at restaurants and checks the bottling date on the label to compare what he's tasting now to what he decided months ago.
+A. At Sohomare, through blending. Their flagship Tuxedo sake combines 13 different batches across 3 vintages, using 3 different yeasts, bottled 7 or 8 times a year. Before each bottling, Jun Kono tastes all the batches and sets the ratios. He then orders Sohomare at restaurants, checks the bottling date on the back label, and compares what he's drinking to what he decided months ago.
 
 **Q. What is Sohomare sake?**
-A. Sohomare is a sake brewery in Tochigi Prefecture, Japan, founded in 1872 and now in its 5th generation under Jun Kono. It's known for using the traditional kimoto method and premium Yamadanishiki rice sourced from the best-graded fields in Hyogo. Their style is deep, complex, and food-forward, built for a long meal rather than casual sipping.
+A. Sohomare is a sake brewery in Tochigi Prefecture, Japan, founded in 1872. Jun Kono is the 5th generation leading it, already working with his son who will be the 6th. Their style is built on three things: Yamadanishiki rice from top-graded fields, the traditional kimoto method, and careful blending, all aimed at depth and complexity rather than easy freshness.
 
 **Q. What does a sake sommelier do?**
-A. A sake sommelier curates and pairs sake the way a wine sommelier would handle wine, matching it to food, seeking out rare and historically important producers, and building programs around quality rather than just accessibility. Leo Le at Kappo Sono focuses on traditional and unpasteurized styles, including shiboritate (freshly squeezed sake), and treats Sohomare as his go-to for a long omakase dinner.
+A. Leo Le spent 23 years building his expertise in Japanese restaurants, starting at 18 when he took a job at a Japanese restaurant to earn money as a student and tried sake for the first time. He was later mentored by Timothy Sullivan, one of the first non-Western sake sommeliers. Now at Kappo Sono, a 12-seat kaiseki restaurant in New York, he builds the entire beverage program around sake pairing.
 
 ---
 
@@ -65,7 +65,7 @@ A. A sake sommelier curates and pairs sake the way a wine sommelier would handle
       "name": "What is the kimoto method in sake brewing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Kimoto is one of the oldest techniques for developing the yeast starter in sake. Instead of adding commercially produced lactic acid, brewers rely on naturally occurring microorganisms in a very clean environment. Jun Kono of Sohomare says that clean-environment kimoto is what gives his sake its clean finish and genuine depth of flavor."
+        "text": "It's the traditional method for developing the yeast starter, and Jun Kono describes it as relying on natural microorganisms rather than commercially produced acids. The catch is that natural processes require an extremely clean brewery. Jun says that discipline is exactly what gives Sohomare's sake its clean finish and real depth of flavor."
       }
     },
     {
@@ -73,7 +73,7 @@ A. A sake sommelier curates and pairs sake the way a wine sommelier would handle
       "name": "What food pairs well with sake?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A lot more than just Japanese food. Leo Le, beverage director at Kappo Sono, has paired Sohomare with vongole pasta, foie gras at a French restaurant in New York, and Italian-American cooking. Because sake is made from rice, it's naturally high in umami and acidity, so it tends to do the pairing work itself across a wide range of cuisines."
+        "text": "More than most people assume. Leo Le paired Sohomare with foie gras at Nougatin, a French restaurant next to Jean-Georges in New York, and says it went deliciously. He's also matched it with vongole pasta. His reasoning: sake is made from rice, which is naturally high in umami and acidity, so it pairs broadly across Japanese, French, and Italian cuisines."
       }
     },
     {
@@ -81,7 +81,7 @@ A. A sake sommelier curates and pairs sake the way a wine sommelier would handle
       "name": "What is Yamadanishiki rice and why does it matter for sake?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yamadanishiki is considered the best sake rice in Japan among over 100 varieties. Sohomare sources 100% of theirs from the top-graded fields in Hyogo Prefecture, specifically the Yokawa area. Because Sohomare is about 400 miles away, Jun Kono travels there every year to drink with the farmers and maintain the relationships that keep that access open."
+        "text": "Jun Kono calls it the best sake rice in Japan, out of over 100 varieties. Sohomare sources 100% of theirs from the top-graded Yokawa area in Hyogo Prefecture, about 400 miles from the brewery. Jun travels there every year to drink with the farmers, because maintaining those personal relationships is the only way to keep access to the best fields."
       }
     },
     {
@@ -89,7 +89,7 @@ A. A sake sommelier curates and pairs sake the way a wine sommelier would handle
       "name": "What is the difference between old school and new school sake?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "New school sake tends to be fresh, aromatic, and instantly accessible, often sweet and wine-like. Leo Le says it can be cloying after a glass or two. Old school sake, like Sohomare, is the opposite: restrained, elegant, and precise, with the kind of depth and finesse you want for a long dinner. Leo says with age and experience, he gravitates strongly toward the old school."
+        "text": "Leo Le put it clearly: new school sake is fresh, aromatic, and instantly gratifying, but often cloying. You get a glass and a half and you're done with it. Old school sake, like Sohomare, is restrained, elegant, and precise, hard to put down. Leo says the more experience he gains, the more he gravitates toward the old school, and toward Sohomare specifically."
       }
     },
     {
@@ -97,7 +97,7 @@ A. A sake sommelier curates and pairs sake the way a wine sommelier would handle
       "name": "How do sake breweries maintain consistency from year to year?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "At Sohomare, through blending. Their flagship sake, Tuxedo, is a blend of 13 different batches across 3 vintages, using 3 different yeasts. They bottle it 7 or 8 times a year, and before each bottling Jun Kono tastes all the batches and decides the ratios. He even orders Sohomare at restaurants and checks the bottling date on the label to compare what he is tasting to what he decided months ago."
+        "text": "At Sohomare, through blending. Their flagship Tuxedo sake combines 13 different batches across 3 vintages, using 3 different yeasts, bottled 7 or 8 times a year. Before each bottling, Jun Kono tastes all the batches and sets the ratios. He then orders Sohomare at restaurants, checks the bottling date on the back label, and compares what he's drinking to what he decided months ago."
       }
     },
     {
@@ -105,7 +105,7 @@ A. A sake sommelier curates and pairs sake the way a wine sommelier would handle
       "name": "What is Sohomare sake?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sohomare is a sake brewery in Tochigi Prefecture, Japan, founded in 1872 and now in its 5th generation under Jun Kono. It is known for using the traditional kimoto method and premium Yamadanishiki rice sourced from the best-graded fields in Hyogo. Their style is deep, complex, and food-forward, built for a long meal rather than casual sipping."
+        "text": "Sohomare is a sake brewery in Tochigi Prefecture, Japan, founded in 1872. Jun Kono is the 5th generation leading it, already working with his son who will be the 6th. Their style is built on three things: Yamadanishiki rice from top-graded fields, the traditional kimoto method, and careful blending, all aimed at depth and complexity rather than easy freshness."
       }
     },
     {
@@ -113,7 +113,7 @@ A. A sake sommelier curates and pairs sake the way a wine sommelier would handle
       "name": "What does a sake sommelier do?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A sake sommelier curates and pairs sake the way a wine sommelier handles wine, matching it to food, seeking out rare and historically important producers, and building programs around quality rather than accessibility. Leo Le at Kappo Sono focuses on traditional and unpasteurized styles, including shiboritate, and treats Sohomare as his go-to for a long omakase dinner."
+        "text": "Leo Le spent 23 years building his expertise in Japanese restaurants, starting at 18 when he took a job at a Japanese restaurant to earn money as a student and tried sake for the first time. He was later mentored by Timothy Sullivan, one of the first non-Western sake sommeliers. Now at Kappo Sono, a 12-seat kaiseki restaurant in New York, he builds the entire beverage program around sake pairing."
       }
     }
   ]
