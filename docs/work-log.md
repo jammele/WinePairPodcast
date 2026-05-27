@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-25 (session 16 closeout)
+**Last updated:** 2026-05-26 (session 17 — Content Intelligence Engine Phase 0 complete)
 
 ---
 
@@ -151,6 +151,28 @@
 **Finish tonight:** Both chose Sierra de Tolono
 **Outputs:** `outputs/episodes/ep216-viura.md` — Key Questions, Q&A, FAQ schema, 10 Bluesky posts
 **Cover art:** Concept selected. Use image-reference workflow with ep215 approved image. Scene description in `memory/feedback_cover_art.md`.
+
+---
+
+---
+
+## Content Intelligence Engine
+
+**Repo:** https://github.com/jammele/winepair-intelligence  
+**Phase 0:** Complete (2026-05-26). Project scaffold, SQLite schema, GSC/YouTube/RSS/website connectors, GitHub Actions workflow, config, docs.  
+**Phase 1:** Not started. Deliverables: GSC data collection into DB, website content inventory scrape, weekly Markdown + HTML report generator.
+
+**Blockers (Joe action required):**
+1. **Google Cloud service account** — follow SETUP.md Steps 1-2 in the new repo. Takes ~20 min.
+2. **YouTube API key** — SETUP.md Step 3. Takes ~5 min.
+3. **GitHub Actions secrets** — SETUP.md Step 5b. Five secrets to add.
+4. **GitHub Actions write permissions** — repo Settings → Actions → General → Workflow permissions → "Read and write permissions"
+5. **Google Trends API alpha** — apply at https://developers.google.com/search/apis/trends (waitlisted; apply now for Phase 4)
+
+**Architecture decisions locked:**
+- Python (separate from podcast-os Node.js stack)
+- GitHub Actions cron (Mondays 9 AM Pacific) — machine-state independent
+- SQLite committed to repo after each run — trend history accumulates automatically
 
 ---
 
