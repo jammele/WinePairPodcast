@@ -224,6 +224,9 @@ Write from the podcast's perspective throughout. Use "we", "us", "our" — not "
 **HR-44: Use "relatively easy to find" in body copy — not "findable."**
 When describing wine availability in running prose, write "affordable wines that are relatively easy to find." Do not use "findable" in body text. (The shorthand "affordable, findable wines" is acceptable in entity signal contexts such as About pages and meta descriptions where brevity matters.)
 
+**HR-46: NotebookLM source lists must be saved to a file automatically.**
+When generating a list of sources for NotebookLM (any topic), save to `outputs/notebooklm-sources-[slug].md` without being asked. Format: bare URLs only, one per line, under plain-text section headings (no markdown link formatting — NotebookLM needs the raw URL). Verify each URL resolves (per HR-35) before saving. Commit the file after saving.
+
 ---
 
 ## Rule Update Protocol
