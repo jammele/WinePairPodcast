@@ -217,6 +217,33 @@
 
 ---
 
+## Session 18 — 2026-05-30
+
+### Pinot Gris from Alsace — NotebookLM source research
+
+- Upcoming episode on Pinot Gris from Alsace. Episode number not yet confirmed.
+- Compiled and verified 29 sources covering: Alsace region geography/geology/history, the Tokay d'Alsace naming saga (and EU/Hungary ban), why Alsace Pinot Gris is different from other regions, dry/off-dry/sweet style confusion, Pinot Gris vs. Pinot Grigio naming and stylistic differences, Vendange Tardive and Sélection de Grains Nobles, the "thin wine" reputation and whether it's fair, skin contact/orange wine trend, Oregon and Alto Adige comparisons, aging potential, Grand Cru classification.
+- All 29 URLs verified via WebFetch. 1 dead URL (BNN Bloomberg article, moved) replaced with foodie.com equivalent.
+- Output: `outputs/notebooklm-sources-pinot-gris-alsace.md` — flat list of bare URLs, ready to copy-paste into NotebookLM.
+
+### HR-46 — NotebookLM process rule (established and refined this session)
+
+Added HR-46 to `docs/house-rules.md` through 4 iterations:
+1. Auto-save NotebookLM source lists to `outputs/notebooklm-sources-[slug].md` without being asked
+2. Target at least 20 verified sources; continue beyond 20 if good sources exist; no hard cap
+3. Fewer than 20 acceptable only after exhaustive multi-angle research; file must include explanation at top if count falls short
+4. Format: single flat list of bare URLs — no section headers, no markdown links — for easy one-shot copy-paste
+
+### Strategic Intelligence System — created this session
+
+- **New document:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data that inform strategy. Entries are additive; nothing is overwritten. Patterns across entries guide strategy evolution — individual findings do not trigger strategy rewrites.
+- **Entry 001:** Wine Market Council / Quini predictability research (Press Democrat, May 29 2026). Key stat: only 11% of consumers can predict wine flavor before purchase vs. ~50% for beer/spirits. 23% have had a bad experience from a mispredicted purchase. Wine-hesitant consumers average fewer than 10 wines tried per decade.
+- **Entry 002:** Gen Z anti-condescension signal (Everyday Drinking, May 2026). Gen Z actively rejecting wine's gatekeeping culture; want honest approachability.
+- Wired into CLAUDE.md reference table: read `docs/strategic-intelligence.md` when making strategic recommendations, evaluating content direction, or advising on episode topics.
+- **Key direction from Joe (important):** podcast-os should function as a strategic thinking partner / learning system. Research and articles are inputs to an organic, evolving strategy — not triggers for blog posts or document rewrites. Don't make any single finding THE strategy. Let patterns across multiple inputs guide how strategy evolves over time.
+
+---
+
 ## Session 16 — 2026-05-25
 
 ### Special Episode #23 — SEO/AEO content
