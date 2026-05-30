@@ -1,6 +1,6 @@
 # Episode Title Archive — The Wine Pair Podcast
 
-**Last updated:** 2026-05-22 (through Ep219)
+**Last updated:** 2026-05-30 (through Ep221)
 **Maintained by:** Claude — add each confirmed title here before committing episode work.
 
 ---
@@ -410,3 +410,4 @@ Ep215: Experts Loved the $50 Oregon Pinot Noir. We Chose the $23 Bottle!
 Ep216: Viura: The Great White Wine Hiding in Rioja's Red Wine Shadow!
 Ep217: Italian Wine Adventure #24: Frappato! The Chillable Red Wine!
 Ep219: Is Two Buck Chuck Actually Terrible, or Is That Just Wine Snob Talk?
+Ep221: Lebanon's Wine Gave Jesus His First Miracle. Does the Modern Stuff Hold Up?

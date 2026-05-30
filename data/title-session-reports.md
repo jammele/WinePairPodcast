@@ -13,10 +13,11 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 
 *(Manually maintained. Updated after each session where Joe's selection reveals a pattern. Summarize what Joe consistently picks, angles that get rejected, and controversy framings that work for this show.)*
 
-**Ep219 (1 data point — too early to call a pattern):**
-- Joe selected the question-format title with the highest controversy/curiosity gap score (5/5), passing over two declarative alternatives with lower scores
-- The open accusation question ("Is X actually terrible, or is that just snob talk?") framing drove the pick — it positions the show as an honest arbiter vs. received opinion
-- The reviewer's strongest pick matched Joe's selection — worth tracking whether this holds across future runs
+**Ep219 + Ep221 (2 data points — pattern emerging):**
+- Joe has selected the reviewer's strongest pick in both sessions (highest controversy/curiosity gap, question format)
+- Both picks scored 5/5 on the Meiomi benchmark; both passed over lower-controversy declarative alternatives
+- Ep221 confirms a key instinct: Joe leans INTO discomfort rather than away from it. He noted personal unease with the Bible angle, then chose it because he recognized that discomfort as the hook. Titles that make Joe slightly uncomfortable are candidates for his selection, not disqualified by it.
+- Pattern to carry forward: generate the title that makes you hesitate first, then check it against HR-39. If it passes, it likely leads the list.
 
 ---
 
@@ -62,7 +63,7 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 
 **Research-to-Title Alignment:** All four final options use the Phoenician history, 7,000-year legacy, or civil war resilience angles identified in research. The Jesus/Cana hook (biggest content gap vs. competitors) powers Option 1. HR-39 enforcement across 3 rounds revealed a pattern: questions must be fully neutral — any hint of tilt (positive or negative) toward the verdict triggers failure.
 
-**Joe's selection:** *(pending)*
+**Joe's selection:** Lebanon's Wine Gave Jesus His First Miracle. Does the Modern Stuff Hold Up? (Corrected round — reviewer's strongest, 9/10 Clickability, 5/5 controversy. Joe noted personal discomfort with the Bible angle, then chose it anyway because he recognized that discomfort as the hook.)
 
 ---
 
