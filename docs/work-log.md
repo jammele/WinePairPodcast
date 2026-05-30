@@ -97,6 +97,18 @@
 
 ---
 
+### Episode 221 — Lebanese Wine (Massaya Le Colombier Rouge + Chateau Musar Jeune Red)
+
+**Status:** Title confirmed, SEO/AEO complete, cover art selected. Ready to publish.
+**Google Doc ID:** 1VHj5O5teFW3II3rBwxoh-DmwrXpIeOLuTRXZRx8P6vg
+**Confirmed title:** Lebanon's Wine Gave Jesus His First Miracle. Does the Modern Stuff Hold Up?
+**Wines:** 2021 Massaya Le Colombier Rouge ($25.97) — Joe 6, Carmela 6 | 2022 Chateau Musar Lebanon Jeune Red ($25.97) — Joe 5, Carmela 5 (possibly corked)
+**Finish tonight:** Both chose Massaya Le Colombier Rouge
+**Cover art:** Concept B — History Avalanche (43/50). ChatGPT prompt ready. Bottle label: "LEBANESE WINE."
+**Outputs:** `outputs/episodes/ep221-lebanese-wine.md` — Key Questions, FAQ, Schema markup (Review x2 + FAQPage), 10 Bluesky posts
+
+---
+
 ### Special Episode #23 — Jun Kono (Sohomare) + Leo Lê (Kappo Sono)
 
 **Status:** SEO/AEO complete. Episode number TBD (220 or 221). Ready to publish.

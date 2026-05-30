@@ -15,13 +15,53 @@ This file is written and read by the `/generate-cover-art` skill. It accumulates
 
 **Ep219 (2026-05-22):** Joe selected Concept B (The Peer Review, 46/50) — structural type: collective deliberation, both characters focused on a single central bottle, neither looking at each other, both locked on the subject mid-process. Joe confirmed the recommended concept without overriding it. Pattern: shared-focus-on-single-prop structure with unresolved tension scores well and aligns with Joe's preference for curiosity-creating framing over verdict framing.
 
+**Ep221 (2026-05-30):** Joe selected Concept B (History Avalanche, 43/50) — structural type: one character doing something physically precarious while the other reacts with alarm. Joe overrode the recommendation (H: The Jug) and chose B. Explicit reason: G and H were "nearly blasphemy" — religious or sacrilegious staging is off-limits regardless of episode content. Also noted that the first-run concepts (pre-fix) were "very generic" and "checking boxes." Second run (post-fix) with physical situation brainstorm produced genuinely differentiated scenes. Pattern emerging: Joe will reject concepts that feel culturally or religiously provocative, even when they score well and fit the episode hook. Physical comedy with clear cause-and-effect (wobbling tower, imminent collapse) reads as immediately funny without additional context.
+
 ---
 
 ## Episode Entries
 
 ---
 
-### Ep221: Lebanese Wine (Massaya Le Colombier Rouge + Chateau Musar Jeune Red)
+### Ep221: Lebanese Wine — Second Run (Post-fix process) — SELECTED
+**Date:** 2026-05-30
+**Title:** Lebanon's Wine Gave Jesus His First Miracle. Does the Modern Stuff Hold Up?
+
+**Physical Situation Brainstorm (Step 0):**
+- 10 situations generated using new process (active verbs required, form: "Joe is [verb]ing X while Carmela [verb]s Y")
+- 5 passed all three filters (no verdict reveal, no title contradiction, episode-specific)
+- Spoiler-gate directions: any expression of delight or disappointment signaling verdict; one bottle favored over the other
+- Web research: "Lebanese wine podcast thumbnail" returned generic competitor imagery — no editorial cartoon style in use
+
+**Concepts Generated:**
+
+| Concept | Score | Result | Notes |
+|---|---|---|---|
+| A | — | DROPPED — quality gate | Below 40 threshold |
+| B: History Avalanche | 43/50 | PASS | Joe stacking history books while bottle balances on top; Carmela in alarmed anticipation |
+| C | — | DROPPED — quality gate | Below 40 threshold |
+| D | — | DROPPED — quality gate | Below 40 threshold |
+| E: Olympic Carry | 40/50 | FAIL — second review | Joe's "profound solemnity" expression contradicts character bible (mischievous curiosity, not solemn) |
+| F: Listening for the Ancient | 40/50 | PASS | Joe pressing ear to bottle; Carmela watching with raised eyebrow |
+| G: The Offering | 43/50 | PASS | Joe kneeling presenting bottle overhead; Carmela pulling him back |
+| H: The Jug | 43/50 | PASS (recommended) | Joe extending water jug; Carmela pouring wine into it with deadpan composure |
+
+**Quality Gate:** A, C, D dropped (below 40). E failed second review. First batch yielded only 2 passing (B, E) — below minimum 3. Replacement batch added F, G, H.
+
+**Second Review Summary:**
+- B: PASS — clean on all rules; strongest cause-and-effect physical comedy
+- E: FAIL — HR-14 character bible violation (expression too solemn)
+- F: PASS — clean; scroll-stop relies on viewer finding "ear to bottle" sufficiently strange
+- G: PASS — clean; strong character dynamic
+- H: PASS (recommended) — most episode-specific; requires knowing the Cana reference; best character moment
+
+**Scroll-Stop Assessment:** H (The Jug) had the strongest immediate scroll-stop potential — the visual is specific enough to be puzzling before the title is read. B (History Avalanche) has the broadest immediate comedy — the wobbling-tower-about-to-collapse is funny with no context.
+
+**Joe's selection:** Concept B — History Avalanche (43/50). Overrode recommendation. Reason: G and H were "nearly blasphemy" — religious/sacrilegious staging rejected regardless of episode content or score. Bottle label changed from "MASSAYA" to "LEBANESE WINE" at Joe's request.
+
+---
+
+### Ep221: Lebanese Wine — First Run (Pre-fix process — superseded)
 **Date:** 2026-05-30
 **Title:** Lebanon's Wine Gave Jesus His First Miracle. Does the Modern Stuff Hold Up?
 
@@ -65,7 +105,7 @@ This file is written and read by the `/generate-cover-art` skill. It accumulates
 3. Concept I: The Unsolicited Reference Letter (44/50)
 4. Concept J: The Name Drop (47/50)
 
-**Joe's selection:** *(pending)*
+**Joe's selection:** *(superseded — Joe flagged all concepts as too generic before selecting; skill process was rebuilt and cover art was regenerated in a second run above)*
 
 ---
 
