@@ -21,6 +21,54 @@ This file is written and read by the `/generate-cover-art` skill. It accumulates
 
 ---
 
+### Ep221: Lebanese Wine (Massaya Le Colombier Rouge + Chateau Musar Jeune Red)
+**Date:** 2026-05-30
+**Title:** Lebanon's Wine Gave Jesus His First Miracle. Does the Modern Stuff Hold Up?
+
+**Title Alignment Analysis:**
+- Title angle: An ancient legendary claim (7,000-year history, Jesus' first miracle at Cana) set against a modern question — does today's Lebanese wine live up to the mythology?
+- Visual directions that reinforce it: Wonder/reverence meeting scrutiny; visual contrast between mythological scale and an ordinary modern bottle; "is this real?" energy; curiosity and investigation — not conclusion; poses of genuine uncertainty, not judgment
+- Visual directions OFF-LIMITS (contradict title or reveal verdict): Any expression signaling the answer (delight = yes it holds up; disgust = no it doesn't); biblical or historical illustration; thumbs up/down or verdict framing; one bottle favored over another
+
+**Web Research:** "Lebanese wine podcast thumbnail" search returned generic map-based or vineyard photography from competitor podcasts — no editorial cartoon style in use. Open field for a distinctive concept.
+
+**Concepts Generated:**
+
+| Concept | Score | Result | Notes |
+|---|---|---|---|
+| A: Myth vs. Bottle | 37/50 | DROPPED — quality gate | Below 40 threshold |
+| B: Examine the Legend | 40/50 | DROPPED — second review FAIL | HR-14: magnifying glass prop not in character bible; "suspicion" expression edges toward verdict |
+| C: Scroll and the Bottle | 35/50 | DROPPED — quality gate | Below 40 threshold |
+| D: The Double-Take | 36/50 | DROPPED — quality gate | Below 40 threshold |
+| E: Reverence and Side-Eye | 38/50 | DROPPED — quality gate | Below 40 threshold |
+| F: The Credential Check | 44/50 | PASS | Joe presenting bottle for test; Carmela waiting to see if pitch delivers |
+| G: The Inheritance | 44/50 | PASS | Joe gesturing toward bottle's legendary lineage; Carmela evaluating whether bloodline delivers |
+| H: Tour Guide Who Stopped Believing Their Own Brochure | 43/50 | DROPPED — second review FAIL | HR-40: Joe's "not entirely sure it's true" expression answers the episode's central question |
+| I: The Unsolicited Reference Letter | 44/50 | PASS | Both reading label as credential; Carmela's raised finger = unfinished follow-up |
+| J: The Name Drop | 47/50 | PASS | Joe mid-invocation of legend; Carmela holding bottle with "okay but really?" energy |
+
+**Quality Gate:** A, C, D, E dropped (below 40). Six concepts passed to second review.
+
+**Second Review Summary:**
+- B: FAIL — HR-14 (magnifying glass not in character bible; "theatrical suspicion" edges toward verdict signal)
+- F: PASS — clean; generation risk warning on "arms crossed" posture for Carmela
+- G: PASS — clean; generation risk warning on "mild apprehension" potentially dominating over wonder
+- H: FAIL — HR-40 (Joe's "I'm not entirely sure it's true" expression resolves the central question)
+- I: PASS — clean; generation risk warning on Carmela's position (partially behind Joe)
+- J: PASS — strongest; Joe/Carmela in active dynamic interaction; title staged as two-character scene
+
+**Alignment Check:** All four final concepts hold the title's tension open — ancient legendary claim vs. modern examination, verdict withheld. F and I stage the bottle as the object under scrutiny. G frames the bottle as an inheritor being evaluated. J is the most structurally distinct: Joe and Carmela in genuine dynamic interaction where Joe embodies the legend and Carmela embodies the question.
+
+**Final Options Presented:**
+1. Concept F: The Credential Check (44/50)
+2. Concept G: The Inheritance (44/50)
+3. Concept I: The Unsolicited Reference Letter (44/50)
+4. Concept J: The Name Drop (47/50)
+
+**Joe's selection:** *(pending)*
+
+---
+
 ### Ep219: Two Buck Chuck (Charles Shaw Chardonnay + Cabernet Sauvignon) — Third Run (Post-format fix)
 **Date:** 2026-05-22
 **Title:** Is Two Buck Chuck Actually Terrible, or Is That Just Wine Snob Talk?
