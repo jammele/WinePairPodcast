@@ -15,18 +15,24 @@ Pre. **Read `data/cover-art-session-reports.md` before doing anything else.**
    - **Patterns Learned section:** note what structural types and visual angles Joe consistently selects and what he rejects. Let this shape concept generation.
    - **Prior entry for this wine/brand:** if one exists, note what structural types were tried before so concepts are not repeated across sessions.
 
-0. **Title alignment analysis — do this before generating any concepts.**
+0. **Physical situation brainstorm — do this before generating any concepts.**
 
-   The confirmed episode title is the established hook. Cover art must reinforce it, not go off in its own direction.
+   The best cover art starts from a funny physical situation, not from the title's theme. Do NOT ask "what tension does the title create?" — ask "what would be funny to watch happen?"
 
-   Write out explicitly:
-   - **Title angle:** What tension or question does the title create? (one sentence)
-   - **Visual directions that reinforce it:** What structural types or emotional beats would amplify that tension visually? (2-3 bullets)
-   - **Visual directions that contradict it:** What would answer the question instead of asking it? What reveals the verdict instead of creating curiosity? (1-2 bullets — these are off-limits for concept generation)
+   Write 10 specific physical situations in the form: **"Joe is [action verb]ing [something] while Carmela [action verb]s [something]."** Every entry must use physical action verbs. The verbs "holds," "looks at," "examines," "leans toward," and "gestures at" are banned — they describe poses, not actions. Something must be HAPPENING in each situation.
 
-   Then run 1 web search: "[wine/brand name] podcast thumbnail" to see what visual conventions exist for this content type (to avoid or improve on them).
+   Draw from: the episode's central hook, any absurd facts, any funny visual contrasts the episode creates naturally. Then filter the 10 down to the 5 strongest by asking three questions about each:
+   - Does it reveal the episode verdict? (if yes, cut it)
+   - Does it actively contradict the title? (if yes, cut it)
+   - Is it specific enough that it could not be reused for a generic wine episode? (if no, cut it)
 
-   Do not generate concepts until this analysis is complete. Include the full analysis in the subagent prompt so it directly informs concept generation.
+   Then run 1 web search: "[wine/brand name] podcast thumbnail" to see what competitor visual conventions exist (to avoid or improve on them).
+
+   Pass only the 5 filtered situations to the subagent as concept seeds — not thematic directions, not title alignment bullets. Situations.
+
+   Also note for the session report:
+   - **Two spoiler-gate directions (off-limits):** What would reveal the verdict rather than create curiosity? (these are still worth stating so the subagent can gate check)
+   - **Web research finding:** one sentence on what the search returned.
 
 1. Confirm episode number, title, featured wine name, key episode facts (ratings, central angle, tone).
 
@@ -39,7 +45,7 @@ Pre. **Read `data/cover-art-session-reports.md` before doing anything else.**
    If fewer than 3 concepts remain, return to Step 2 and generate replacements before proceeding. Joe must always see at least 3 options. Never carry failing or sub-40 concepts into the second review.
 
 3. **Spawn a second review subagent** on the surviving concepts only.
-   Prompt: "You are a cover art critic for The Wine Pair Podcast. Read `docs/house-rules.md` in full, paying special attention to HR-40. Then review each concept below for: (1) spoiler rule — does it reveal the episode verdict? (2) title alignment — does it visually reinforce the title's angle? (3) all 12 brand rules. (4) score accuracy. Return PASS or FAIL for each concept with specific reasoning. Fix all FAILs before any concept reaches Joe."
+   Prompt: "You are a cover art critic for The Wine Pair Podcast. Read `docs/house-rules.md` in full, paying special attention to HR-40 and HR-14a. Then review each concept below for: (1) spoiler rule (HR-40) — does it reveal the episode verdict? (2) title gate — does it actively contradict the title? (3) HR-14a — does the scene description open with a physical action verb, or is it just a pose? (4) all 11 brand rules. (5) score accuracy — is the Scroll-Stop Power score justified? For each concept, state in one sentence why someone would stop scrolling for this image. If you cannot write a compelling one-sentence answer, flag for regeneration. Return PASS or FAIL for each concept with specific reasoning."
    No concept reaches Joe until the second pass returns no FAILs.
 
 4. **Generate and show a Session Report** in the same response as the final concepts. Do not skip — do not make Joe ask for it. Append the entry to `data/cover-art-session-reports.md` and commit immediately.
@@ -49,10 +55,10 @@ Pre. **Read `data/cover-art-session-reports.md` before doing anything else.**
    ---
    ## /generate-cover-art Session Report — Ep[N]: [Wine Name]
 
-   ### Title Alignment Analysis
-   - Title angle: [one sentence]
-   - Visual directions that reinforce it: [bullets]
-   - Visual directions that contradict it (off-limits): [bullets]
+   ### Physical Situation Brainstorm (Step 0)
+   - 10 situations generated: [one-line list]
+   - 5 passed all three filters (no verdict reveal, no title contradiction, episode-specific): [list the 5]
+   - Spoiler-gate directions (off-limits): [2 bullets]
 
    ### Web Research Finding
    [One sentence on what "[wine] podcast thumbnail" search showed]
@@ -64,10 +70,10 @@ Pre. **Read `data/cover-art-session-reports.md` before doing anything else.**
    [Concepts dropped and why; or "none dropped"]
 
    ### Second Review Summary
-   [One line per surviving concept: PASS/FAIL and key note]
+   [One line per surviving concept: PASS/FAIL, scroll-stop justification, key note]
 
-   ### Alignment Check
-   [2-3 sentences: do the final options visually reinforce the title's angle? What structural type was used? What was ruled out?]
+   ### Scroll-Stop Assessment
+   [1-2 sentences: which concept has the strongest immediate visual reaction, and why? What made others weaker on this dimension?]
    ---
    ```
 
@@ -109,13 +115,14 @@ After reading both files, proceed with concept generation.
 - Tone: [TONE]
 - Ratings: [JOE AND CARMELA RATINGS]
 
-**Title alignment analysis (from main agent Step 0 — use this to guide concept generation):**
-- Title angle: [ONE SENTENCE]
-- Visual directions that reinforce the title: [BULLETS]
-- Visual directions that are OFF-LIMITS (contradict title or reveal verdict): [BULLETS]
+**Concept seeds — physical situations generated in Step 0 (use these as your starting point for each concept):**
+[5 PHYSICAL SITUATIONS FROM STEP 0 — each in the form "Joe is [verb]ing X while Carmela [verb]s Y"]
 
-**Recent scenes — do NOT repeat these structural types:**
-(Read from `data/cover-art-scenes.md` in Step 2 above.)
+**Spoiler gate — these framings are OFF-LIMITS (reveal verdict):**
+[2 DIRECTIONS THAT WOULD REVEAL THE EPISODE'S VERDICT]
+
+**Recent scenes — do NOT repeat these physical actions:**
+(Read from `data/cover-art-scenes.md` in Step 2 above — the specific physical actions described there must not be repeated.)
 
 ---
 
@@ -172,10 +179,10 @@ Use this as the style reference, but create a new scene. Do not copy the exact p
 
 ---
 
-## Brand rules — every concept must pass all 12
+## Brand rules — every concept must pass all 11
 
 1. No anthropomorphized objects. Wine and props do not react or have expressions.
-2. No repeated structural scene type from recent episodes.
+2. No repeated physical action from recent episodes (read `data/cover-art-scenes.md` — the specific actions there are banned, not just the abstract types).
 3. Visual joke lands without reading the title.
 4. No text or captions needed to understand the joke.
 5. One clear visual punchline. No competing focal points.
@@ -185,7 +192,10 @@ Use this as the style reference, but create a new scene. Do not copy the exact p
 9. Background is simple and dark — always "rich warm burgundy background" or "simplified wine bar setting." Never name a specific outdoor location.
 10. Characters fill 70%+ of the frame, waist-up, close to the viewer — state this in the Composition section.
 11. **Spoiler rule — FAIL if violated (HR-40).** The concept must NOT reveal the episode verdict, ratings outcome, or key finding. Test: does the thumbnail tell you what Joe and Carmela concluded before you press play? Thumbs up/down on specific bottles = FAIL. One bottle going to the sink = FAIL. The visual should create curiosity about the outcome, not announce it.
-12. **Title alignment — FAIL if violated.** The concept must visually reinforce the angle in the confirmed episode title. The title's central tension or question should be legible in the image. Include one sentence: "Title angle: [X]. How this concept represents it: [Y]." A concept that depicts a different angle fails even if it's otherwise strong.
+
+**Title alignment is a binary gate, not a brand rule.** After scoring, check: does this concept actively contradict the title OR reveal the verdict? If no to both, it passes the gate. Do not score title alignment — it is not one of the 5 criteria.
+
+**Scene description requirement (HR-14a):** Every scene description must begin with: "Joe is [action verb]ing [something] while Carmela [action verb]s [something]." The verbs "holds," "looks at," "examines," "leans toward," and "gestures at" are banned as the opening action. If the only actions in a scene are from this banned list, revise until something is actually happening.
 
 ---
 
@@ -193,7 +203,7 @@ Use this as the style reference, but create a new scene. Do not copy the exact p
 
 First, output this confirmation block:
 
-> **Cover art sub-agent ran.** Checked: character bible (HR-14), approved style format, recent scene structures ([list from cover-art-scenes.md]), all 12 brand rules including HR-40 (spoiler) and title alignment. Title angle: [one sentence]. Each concept scored on 5 criteria. Recommended: Concept [X] ([N]/50).
+> **Cover art sub-agent ran.** Checked: character bible (HR-14), HR-14a (active verbs), approved style format, recent physical actions from cover-art-scenes.md ([list the specific actions]), all 11 brand rules including HR-40 (spoiler). Title gate applied (binary pass/fail only). Each concept scored on 5 criteria: Visual Arrest, Scroll-Stop Power, Episode Specificity, Concept Originality, Character Expressiveness. Recommended: Concept [X] ([N]/50).
 
 Then present 5 concepts. For each:
 
@@ -201,13 +211,11 @@ Then present 5 concepts. For each:
 
 **Concept [A/B/C/D/E]: [Short title] — [N]/50**
 
-*The joke:* [One sentence]
+*Why you'd stop scrolling:* [One sentence — the immediate visual reaction before reading the title.]
 
-*Title alignment:* [One or two sentences — plain statement of how the concept connects to the title's angle.]
+*Scene:* [2-3 sentences. Must begin: "Joe is [action verb]ing [something] while Carmela [action verb]s [something]." Then describe expressions, body language, key props, wine bottle label, background.]
 
-*Scene:* [2-3 sentences describing what Joe and Carmela are doing, their expressions, the visual punchline.]
-
-**Do NOT include a ChatGPT prompt here. Do NOT include a score breakdown. Do NOT include a brand rules checklist.** The prompt is written only after Joe selects a concept (main agent Step 6). Score each concept internally using the 5 criteria — include scores only in the session report log, never in what Joe reads.
+**Do NOT include a ChatGPT prompt here. Do NOT include a score breakdown. Do NOT include a brand rules checklist. Do NOT include a "title alignment" field — that is an internal gate, not a presented criterion.** The prompt is written only after Joe selects a concept (main agent Step 6). Score each concept internally using the 5 criteria — include scores only in the session report log, never in what Joe reads.
 
 ---
 

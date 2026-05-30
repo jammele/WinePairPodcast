@@ -88,17 +88,22 @@ State explicitly in every prompt: "Characters fill at least 70% of the frame, wa
 **HR-13: Cover art concepts must always be scored before showing Joe.**
 Score all concepts on 5 criteria (10 points each, total out of 50):
 1. Visual Arrest — eye-catching at ~150px thumbnail?
-2. Click Potential — creates curiosity without reading the title?
-3. Brand Consistency — matches ep215 style, not structurally repetitive?
-4. Concept Originality — fresh structural type vs. recent episodes?
-5. Self-Explanatory — joke lands with zero context?
+2. Scroll-Stop Power — would someone stop scrolling in Apple Podcasts or Spotify before reading the title? Requires one sentence explanation from the subagent.
+3. Episode Specificity — is this scene specific enough that it could only work for this episode? "Two people looking at a bottle" scores 1. A scene that couldn't exist without knowing this episode's hook scores 9-10.
+4. Concept Originality — fresh structural type vs. recent episodes AND current session batch?
+5. Character Expressiveness — are Joe and Carmela doing something specific, not just posing?
 
 Never present concepts without scores and a confirmation block.
+
+Title alignment is a binary PASS/FAIL gate — not a scored criterion. Gate test: does the image actively contradict the title OR reveal the verdict? If no to both, it passes. Do not score it.
 
 **HR-14: Cover art character bible.**
 Joe: middle-aged man, salt-and-pepper hair, full salt-and-pepper beard, black rectangular glasses, dark navy pullover. Big friendly grin, mischievous curiosity, oversized expressive hands.
 
 Carmela: middle-aged woman, medium-length warm brown hair, gold hoop earrings, dark top. Always theatrical — delighted, sharp, bright amused smile. Never stern or neutral.
+
+**HR-14a: Cover art scenes must start from a specific physical action — not a pose.**
+Scene descriptions must begin with a sentence in the form: "Joe is [action verb]ing [something] while Carmela [action verb]s [something]." The verbs "holds," "looks at," "examines," "leans toward," and "gestures at" are banned as the opening action — they describe poses, not actions. A concept where the only verbs in the scene are from this banned list is too static and must be revised before it reaches Joe.
 
 ---
 

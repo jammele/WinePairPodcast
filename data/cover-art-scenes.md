@@ -1,19 +1,21 @@
 # Cover Art — Recent Scenes
 
-Sub-agents generating cover art concepts must read this file. Do not repeat any scene structure listed here.
+Sub-agents generating cover art concepts must read this file. Do not repeat any physical action described here.
 
 **Update this file immediately after Joe picks a concept.** Add the new scene at the bottom. Remove the oldest entry if the list exceeds 5 items.
 
+**Format:** Describe the specific physical action happening in the scene — what each character is doing, not an abstract structural label. The ban applies to the specific physical action, not a category name.
+
 ---
 
-## Recent scenes (do not repeat these structural types)
+## Recent scenes (do not repeat these physical actions)
 
-- **Ep215 (approved):** Pompous sommelier presenting $50 wine on a tray; Joe and Carmela clinking $23 glasses behind him, ignoring him. Structure: "expert being ignored / Joe and Carmela conspiring behind a third character."
+- **Ep215 (approved):** Joe is clinking his glass against Carmela's while a pompous sommelier in the foreground presents an expensive wine bottle on a tray, unaware that the two hosts are ignoring him and celebrating behind his back. Do not repeat: two hosts visibly ignoring or conspiring behind an oblivious third character in the foreground.
 
-- **Ep216 (approved):** Joe and Carmela in a wine shop/cellar. Background is a wine rack packed with dark red bottles. Joe leans in and triumphantly pulls out one pale white wine bottle from among all the reds — arm extended, expression: "I found the hidden gem nobody noticed." Carmela beside him, hand raised near her mouth, amused and excited. Structure: "the hidden gem discovery / one thing standing out against many."
+- **Ep216 (approved):** Joe is pulling a single pale white bottle labeled "VIURA" out from a densely packed wall of dark red wine bottles — arm fully extended, triumphant expression. Carmela is reacting beside him with excited surprise, hand raised near her mouth. Do not repeat: a character extracting or discovering one unexpected item from a large collection of uniform items.
 
-- **Ep217 (approved):** Carmela lowers a red wine bottle labeled "FRAPPATO" into a gleaming silver ice bucket with ceremonial, exaggerated seriousness — theatrical authority, slow satisfied smile. Joe leans in from the side with enormous wide eyes, one hand pressed to his cheek, the other pointing at the ice bucket — awestruck open-mouthed grin. Deep burgundy background. Structure: "solemn ritual applied to the wrong thing."
+- **Ep217 (approved):** Carmela is lowering a bottle labeled "FRAPPATO" down into a gleaming silver ice bucket with ceremonial slowness — theatrical authority, satisfied smile. Joe is leaning in from the side, one hand pressed to his cheek, the other pointing at the ice bucket, wide-eyed and awestruck. Do not repeat: one character performing a slow ceremonial lowering or placing action on a wine bottle while the other reacts with exaggerated awe.
 
-- **Ep218 (approved):** Lower third packed with a tumbling crowd of small bottles all labeled "MALVASIA" (most prominent: "MALVASIA FEMINA" and "MALVASIA") spilling toward the viewer. Joe behind them left, both hands thrown up in gleeful overwhelmed surrender, enormous grin, eyes wide with delighted shock. Carmela behind them right, trying to count bottles on her fingers, already out of fingers, laughing, glancing at Joe. Rich warm burgundy background. Structure: "flood of variants / overwhelmed by how many there are."
+- **Ep218 (approved):** Joe is throwing both hands up in gleeful surrender as a tumbling crowd of small bottles labeled "MALVASIA" spills toward the viewer from below. Carmela is trying to count the bottles on her fingers, already out of fingers, laughing and glancing at Joe. Do not repeat: both characters reacting to a flood or overflow of multiple arriving objects from below frame.
 
-- **Ep219 (approved):** Joe on the left, both hands planted flat on either side of a bottle labeled "CHARLES SHAW CHARDONNAY" on a surface between them, leaning forward with exaggerated deliberative weight — brow furrowed, mouth set, intense focus. Carmela on the right, elbow on surface, chin on hand, staring at the bottle with sharp theatrical concentration — lips pursed, eyes narrowed, mid-verdict. Neither looks at the other; both locked on the bottle. Rich warm burgundy background. Structure: "collective deliberation / both characters focused on a single central prop, mid-process, neither having reached a verdict."
+- **Ep219 (approved):** Joe is pressing both hands flat onto a surface on either side of a bottle labeled "CHARLES SHAW CHARDONNAY," leaning forward with intense deliberative weight. Carmela is resting her chin on her hand, staring at the same bottle with sharp theatrical concentration. Neither character looks at the other. Do not repeat: two static characters staring at one central object on a surface between them, both still, neither physically acting on it.
