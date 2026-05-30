@@ -10,7 +10,7 @@
  */
 
 import { google } from 'googleapis';
-import { readFileSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -33,6 +33,12 @@ export function getAuthClient() {
 
   const auth = new google.auth.OAuth2(client_id, client_secret, 'http://localhost:3737');
   auth.setCredentials(tokens);
+
+  auth.on('tokens', (newTokens) => {
+    const current = JSON.parse(readFileSync(TOKEN_PATH, 'utf8'));
+    writeFileSync(TOKEN_PATH, JSON.stringify({ ...current, ...newTokens }, null, 2));
+  });
+
   return auth;
 }
 
@@ -40,7 +46,15 @@ export async function readGoogleDoc(docId) {
   const auth = getAuthClient();
   const docs = google.docs({ version: 'v1', auth });
 
-  const res = await docs.documents.get({ documentId: docId });
+  let res;
+  try {
+    res = await docs.documents.get({ documentId: docId });
+  } catch (err) {
+    if (err.message?.includes('invalid_grant')) {
+      throw new Error('Google authorization expired. Delete google_token.json and run: node scripts/setup_google_auth.js');
+    }
+    throw err;
+  }
   const doc = res.data;
 
   // Extract plain text from the document body
