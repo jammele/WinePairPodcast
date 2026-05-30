@@ -84,6 +84,15 @@ Pre. **Read `data/cover-art-session-reports.md` before doing anything else.**
    Write the full multi-section ChatGPT prompt (see standard format below) for the selected concept only. Do not write prompts for rejected concepts. Present it ready to paste.
 
 7. **After presenting the prompt:**
+   - Append the full ChatGPT prompt to `outputs/episodes/ep[N]-[slug].md` under a `## COVER ART` section (HR-47). Use this format:
+     ```
+     ## COVER ART
+
+     ### Ep[N] — [Concept Name] ([Score]/50)
+
+     [Full ChatGPT prompt — ready to paste]
+     ```
+     If the output file does not exist, create it with just the COVER ART section and note that the rest of the content is pending.
    - Update the "Joe's selection" field in the Ep[N] entry in `data/cover-art-session-reports.md`
    - Update Patterns Learned if a new pattern is visible (e.g., Joe consistently picks tension-framing over verdict-framing)
    - Update `data/cover-art-scenes.md` — add the chosen concept's structural type, remove the oldest entry if the list exceeds 5

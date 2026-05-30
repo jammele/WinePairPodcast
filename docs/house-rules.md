@@ -105,6 +105,9 @@ Carmela: middle-aged woman, medium-length warm brown hair, gold hoop earrings, d
 **HR-14a: Cover art scenes must start from a specific physical action — not a pose.**
 Scene descriptions must begin with a sentence in the form: "Joe is [action verb]ing [something] while Carmela [action verb]s [something]." The verbs "holds," "looks at," "examines," "leans toward," and "gestures at" are banned as the opening action — they describe poses, not actions. A concept where the only verbs in the scene are from this banned list is too static and must be revised before it reaches Joe.
 
+**HR-47: Cover art ChatGPT prompt must be saved to the episode output file.**
+After Joe selects a concept, append the full ChatGPT prompt to `outputs/episodes/ep[N]-[slug].md` under a `## COVER ART` section. Format: concept name and score as a subheading, then the full prompt as a code block. Never leave the prompt only in the conversation. If the output file does not exist yet, create it with just the COVER ART section and note that the rest of the content is pending.
+
 ---
 
 ## Episode Title Rules

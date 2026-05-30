@@ -216,3 +216,51 @@ https://www.decanter.com/features/the-magic-of-musar-248198/
 **10.**
 Lebanese wine beyond Musar is worth exploring. Dozens of small producers in the Bekaa Valley are making interesting, affordable bottles that almost nobody outside Lebanon knows yet.
 https://daily.sevenfifty.com/exploring-the-world-of-lebanese-wine-beyond-chateau-musar/
+
+---
+
+## COVER ART
+
+### Ep221 — History Avalanche (43/50)
+
+```
+Create a square editorial cartoon illustration for a wine podcast cover image.
+
+Use this style exactly:
+
+Style name: High-contrast wine-bar editorial cartoon
+
+A bold, graphic, exaggerated cartoon style with chunky black ink outlines, flat saturated colors, oversized expressive faces and hands, theatrical body language, broad smiles, simple shapes, minimal shading, and a warm burgundy/red wine-bar palette. The image should feel like a magazine cover crossed with a premium adult animated comedy. It should be funny, energetic, and readable at small podcast-thumbnail size.
+
+Important style rules:
+Do not make this realistic.
+Do not make the characters portrait-like.
+Do not add realistic skin texture, realistic facial anatomy, painterly detail, soft lighting, gradients, or 3D effects.
+The people should be affectionate recurring cartoon host characters, not realistic portraits.
+Use simplified, exaggerated animated-comedy proportions.
+The characters should be expressive and specific, but not detailed or lifelike.
+The humor should come from expressions, staging, and visual contrast.
+
+Recurring character bible:
+
+Joe is a middle-aged cartoon man. He has black rectangular glasses, a full salt-and-pepper beard, salt-and-pepper hair, thick expressive eyebrows, and a dark navy pullover. He should have a big friendly grin, curious mischievous energy, and oversized expressive hands. He should look like a recurring animated version of Joe, not a realistic portrait and not a generic cartoon dad.
+
+Carmela is a middle-aged cartoon woman. She has medium-length warm brown hair, gold hoop earrings, expressive eyes, a dark top, and a bright amused smile. She should have theatrical body language and a delighted, sharp, funny reaction. She should look like a recurring animated version of Carmela, not a realistic portrait and not a generic surprised woman.
+
+Scene:
+Joe is stacking enormous oversized history books one-handed into a dangerously top-heavy wobbling tower — book spines read "7,000 YEARS," "PHOENICIA," and "CANA" — while balancing a wine bottle labeled "LEBANESE WINE" on top of the stack, face locked in trembling concentration, tongue slightly out. Carmela is reacting beside him, flinching backward with arms half-raised and wide alarmed eyes, delighted panic on her face — she can see exactly what is about to happen. The tower leans visibly. Rich warm burgundy background.
+
+Composition:
+Tight square crop.
+Characters fill at least 70% of the frame, waist-up, close to the viewer.
+The wobbling tower of books and teetering bottle labeled "LEBANESE WINE" are the main focal point.
+Rich warm burgundy background — no outdoor scene, no named location.
+Clear visual hierarchy.
+One clear joke readable at thumbnail size.
+No speech bubbles. No caption text. No text overlays. Book spine text and bottle label are the only text in the image.
+
+Negative prompt:
+No photorealism. No realistic portrait. No painterly rendering. No soft gradients. No 3D gloss. No realistic aging lines. No skin texture. No generic stock-cartoon faces. No tiny expressions. No cluttered background. No speech bubbles. No caption text. Do not make Joe or Carmela look like real-person portraits. Keep them bold, graphic, exaggerated, and funny.
+
+Use this as the style reference, but create a new scene. Do not copy the exact pose.
+```
