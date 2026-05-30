@@ -1,7 +1,7 @@
 # Cartoon prompt
 
 <!-- Source: Google Doc 1bg6voltfp7QDXGu5pOns4AbR17y7knMl5zYSHVTGaMs -->
-<!-- Last synced: 2026-05-25T23:52:25.788Z -->
+<!-- Last synced: 2026-05-30T17:20:49.640Z -->
 
 AGENT OBJECTIVE
 Every week, produce 5 single-panel cartoon concepts and 3 execution styles for The Wine Pair Podcast.

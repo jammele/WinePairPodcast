@@ -1,8 +1,29 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-30 (session 18 — Strategic Intelligence log created)
+**Last updated:** 2026-05-30 (session 19 — Ep221 Lebanese wine pipeline complete; cover art system rebuilt)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 2 entries (wine predictability research; Gen Z anti-condescension signal).
+
+---
+
+## Session 19 summary (2026-05-30)
+
+**Ep221 Lebanese wine — full episode pipeline complete. Ready to publish.**
+- Title confirmed: "Lebanon's Wine Gave Jesus His First Miracle. Does the Modern Stuff Hold Up?"
+- SEO/AEO content + Bluesky posts: `outputs/episodes/ep221-lebanese-wine.md` (validated PASS)
+- Cover art: Concept B — History Avalanche (43/50) selected. Bottle: "LEBANESE WINE." Prompt saved to output file.
+
+**Cover art system rebuilt (systemic fix):**
+- Root cause: generation started from title theme, not physical situations; static poses instead of actions
+- Step 0 redesigned: 10 physical situations brainstormed first, 5 filtered and passed as seeds to subagent
+- Title alignment demoted from scored criterion to binary pass/fail gate
+- New scoring criteria: Visual Arrest, Scroll-Stop Power, Episode Specificity, Concept Originality, Character Expressiveness
+- HR-13 and HR-14a updated; HR-47 added (save prompt to episode output file)
+- `data/cover-art-scenes.md` rewritten: specific physical actions instead of abstract structural labels
+
+**New rules added:** HR-14a (active physical verb requirement), HR-47 (prompt saved to episode output file)
+
+**Note:** Religious/sacrilegious staging is off-limits for cover art — Joe rejected Concepts G and H ("nearly blasphemy") despite high scores. Saved to memory.
 
 ---
 
