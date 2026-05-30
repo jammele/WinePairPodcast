@@ -1,6 +1,8 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-26 (session 17 — Content Intelligence Engine Phase 0 complete)
+**Last updated:** 2026-05-30 (session 18 — Strategic Intelligence log created)
+
+**Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 2 entries (wine predictability research; Gen Z anti-condescension signal).
 
 ---
 

@@ -138,4 +138,5 @@ If OAuth is broken: `rm google_token.json` then `node scripts/setup_google_auth.
 | Wine in the News segment | `docs/wine-in-the-news.md` — read before finding stories or writing the script |
 | SEO strategy and priorities | `docs/seo-geo-strategy.md` |
 | Project context and show identity | `docs/soul-document.md` |
+| Strategic recommendations, content evaluation, episode direction | `docs/strategic-intelligence.md` — living log of research findings, audience signals, and data points. Read alongside soul doc and SEO strategy. Add an entry whenever Joe shares a relevant article or data point. |
 | Episode title generation | Run `/review-titles` — **mandatory before showing Joe any options.** Sub-agent reads `data/episode-titles.md` (complete archive + series patterns). When a title is confirmed, add it to `data/episode-titles.md` before committing. |
