@@ -24,6 +24,48 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 
 ---
 
+### Ep221: Lebanese Wine (Massaya Le Colombier Rouge + Chateau Musar Jeune Red)
+**Date:** 2026-05-30
+**Series:** None
+
+**Step 0 Research Findings:**
+- "Wine and War" dominates competitor podcast content (Napa Valley Wine Academy, Wine Blast) — used heavily; avoided
+- YouTube Chateau Musar titles focus on "icon", "magic", "resilience" — aspirational framing, not differentiated
+- Gap: no competitor uses the Phoenician/Bible/Cana connection as a title hook — completely uncovered territory
+- Key language driving engagement: "history", "resilience", "civil war" — resilience angle is strong but overused in wine media
+- "They Make Wine in Lebanon" angle undersells the 7,000-year history
+
+**Episode Hook:** Lebanon was the wine capital of the ancient world — the Phoenicians invented the global wine trade, Jesus' first miracle was at a wedding in Cana (Canaanite territory), and winemakers kept producing through a 15-year civil war — and today you can buy a bottle from that same region on wine.com for $26.
+
+**Titles Reviewed (3 rounds — HR-39 flagged neutral vs. tilted questions across rounds 1 and 2):**
+
+| Title | Result | Clickability | Controversy | Notes |
+|---|---|---|---|---|
+| WTF is Lebanese Wine? Phoenicians, the Bible, and Chateau Musar | FAIL R1 HR-19 | 6/10 | 3/5 | Series format deviation |
+| They Make Wine in Lebanon?!? — And Have Been Since Biblical Times | FAIL R1 HR-16/HR-1 | 7/10 | 3/5 | 85 chars, em-dash |
+| Lebanese Wine: Phoenicians Made It Famous. Does It Deserve a Comeback? | FAIL R2 HR-39 | 8/10 | 4/5 | "Comeback" tilts positive |
+| Lebanese Wine Was Once the Greatest in the World. What Happened? | PASS R3 | 8/10 | 4/5 | Reviewer's second pick |
+| Lebanon's Wine Gave Jesus His First Miracle. Does It Still Deliver? | FAIL R2 HR-39 | 9/10 | 5/5 | "Still Deliver" tilts negative |
+| Lebanese Wine Made the Romans Great. Can It Do the Same for You? | FAIL R2 HR-39 | 3/10 | 2/5 | Setup implies deflation |
+| Lebanese Wine Has a 7,000-Year Head Start. So Why Is Nobody Drinking It? | FAIL R2 HR-39 | 4/10 | 3/5 | "Nobody Drinking It" assumes conclusion |
+| Lebanon's Wine Gave Jesus His First Miracle. Should You Try It? | PASS R3 | 9/10 | 5/5 | Reviewer's strongest pick |
+| Lebanese Wine Has a 7,000-Year Head Start. Should You Be Drinking It? | PASS R3 | 8/10 | 4/5 | |
+| Lebanese Wine Kept Flowing Through 15 Years of Civil War. Should You Try It? | PASS R3 | 7/10 | 4/5 | |
+
+**Quality Gate:** No titles dropped (all passing titles 7/10+).
+
+**Final Options Presented:**
+1. Lebanon's Wine Gave Jesus His First Miracle. Should You Try It? (63 chars)
+2. Lebanese Wine Was Once the Greatest in the World. What Happened? (64 chars)
+3. Lebanese Wine Has a 7,000-Year Head Start. Should You Be Drinking It? (69 chars)
+4. Lebanese Wine Kept Flowing Through 15 Years of Civil War. Should You Try It? (76 chars)
+
+**Research-to-Title Alignment:** All four final options use the Phoenician history, 7,000-year legacy, or civil war resilience angles identified in research. The Jesus/Cana hook (biggest content gap vs. competitors) powers Option 1. HR-39 enforcement across 3 rounds revealed a pattern: questions must be fully neutral — any hint of tilt (positive or negative) toward the verdict triggers failure.
+
+**Joe's selection:** *(pending)*
+
+---
+
 ### Ep219: Two Buck Chuck (Charles Shaw Chardonnay + Cabernet Sauvignon)
 **Date:** 2026-05-22
 **Series:** None
