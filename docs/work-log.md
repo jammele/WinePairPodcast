@@ -29,7 +29,7 @@
 
 ## Immediate next actions
 
-1. **Hub page — ALL 6 SPOKES NOW LIVE. Hub is unblocked.** Title: "If You Like This Wine, Try That: Your Guide to Finding Similar Wines You'll Love." URL: `/similar-wines`. Write after GSC confirms Prosecco spoke indexed.
+1. **Hub page — DRAFT COMPLETE. Joe to publish.** Draft: `outputs/hub-similar-wines.md`. URL: `/similar-wines`. After publish: run `/verify-published`, then update chart post to link to hub. SEO Title is 80 chars (flags in Beamly; Joe may want a shorter SEO Title field while keeping H1 as-is).
 2. **Prosecco spoke — GSC indexing requested 2026-05-25.** ✓ Done.
 3. **Phase 2 SEO blog post sprint — now active.** All spokes complete. Portuguese wine (#1 priority, 20,154 impressions / 0.09% CTR) is the next blog post.
 
@@ -62,7 +62,7 @@
 | Chardonnay | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-chardonnay — all checks pass, indexing requested 2026-05-24 |
 | Sauvignon Blanc | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-sauvignon-blanc — all 6 checks pass, GSC indexing requested 2026-05-24 |
 | Prosecco | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-prosecco — all 6 checks pass, GSC indexing requested 2026-05-25 |
-| Hub | Not started | All spokes live. Ready to write. |
+| Hub | DRAFT COMPLETE | `outputs/hub-similar-wines.md` — ready for Joe to publish at `/similar-wines` |
 
 **Assets:**
 - Wine data: `data/wine_similarity_data.json` (86 wines — Sekt and American Sparkling Brut added 2026-05-25)

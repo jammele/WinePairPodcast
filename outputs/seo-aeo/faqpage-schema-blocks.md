@@ -372,3 +372,61 @@ One code block per page. For each page below:
 }
 </script>
 ============================================================ COPY END ============================================================
+
+---
+
+## Wine Similarity Hub
+**URL:** https://thewinepairpodcast.com/blog/similar-wines
+**Q&A pairs:** 5
+
+============================================================ COPY START ============================================================
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do you find wines similar to one you like?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start with structure, not flavor. Figure out what you actually love about your go-to wine. Is it the weight? The tannin? The acidity? The fruit profile? Wines that share those structural elements will feel familiar even if the specific flavors are different. The individual guides above walk through this for the six wines we get asked about most."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes two wines similar to each other?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Structure more than flavor. Two wines can both taste like cherry and still drink completely differently. One might be light and tart, the other heavy and jammy. The characteristics that make wines feel alike are body, tannin level, acidity, and the weight of the fruit. Wines that match on most of those dimensions will feel familiar even if they come from opposite ends of the wine world."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a way to find a cheaper version of an expensive wine I love?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually yes. Most expensive wines are expensive because of one or two specific factors: a famous appellation, a legendary producer, or a low-yield vintage. If you can identify what you love about the expensive bottle (the structure, the fruit style, the mineral character), you can often find that same characteristic in a wine from a less famous region at a fraction of the cost. Our Cabernet and Pinot Noir guides both cover specific cheaper alternatives that deliver comparable structure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I try if I only drink one or two wines and want to branch out?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go one step at a time. Pick the guide above that matches your current go-to and start with the first recommendation on the list. We ordered every guide by similarity to the original, so the first pick is always the closest match. If that wine works for you, the next one on the list is a bit further out."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are the wines in these guides expensive or hard to find?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We focused on everyday wines, not prestige chasing. Most of what we recommend is under $25 and relatively easy to find at a decent wine shop or a well-stocked grocery store. We don't suggest wines we can't actually buy."
+      }
+    }
+  ]
+}
+</script>
+============================================================ COPY END ============================================================
+
