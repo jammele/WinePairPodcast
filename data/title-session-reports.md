@@ -67,6 +67,54 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 
 ---
 
+### Ep221: Lebanese Wine — Session 2 (Replacement Title)
+**Date:** 2026-06-05
+**Series:** None
+
+**Context:** Joe requested a new title to replace the confirmed Ep221 title ("Lebanon's Wine Gave Jesus His First Miracle. Does the Modern Stuff Hold Up?"). Jesus/Bible angle off the table.
+
+**Step 0 Research Findings (incremental — building on Session 1 research):**
+- YouTube: "More than MUSAR???" and "Is Lebanon the Most UNDERRATED...?" signal curiosity about Lebanese wine beyond Chateau Musar — underdog/underrated framing already covered
+- Competitor podcasts lean on "Wine and War," Hochar family legacy, and resilience framing — civil war angle still available but must be freshly executed
+- France-comparison angle ("Lebanon predates France's wine culture") is completely uncovered in competitor content — strongest gap
+- $26 price framing is a trap for this episode: 6/10 non-buy result means any price/value question resolves unfavorably → HR-39 fails throughout
+
+**Episode Hook:** Lebanon built the wine world before France existed — Phoenicians invented the global wine trade, winemakers produced through a 15-year civil war — and today those bottles cost $26. Whether that history shows up in the glass is the open question.
+
+**Titles Reviewed (4 rounds — price/value framing failed HR-39 across all rounds; France-comparison and civil war angles cleanest):**
+
+| Title | Round | Result | Clickability | Controversy | Notes |
+|---|---|---|---|---|---|
+| Lebanese Wine Fueled the Ancient World's Wine Trade. Should You Be Drinking It? | R1 | PASS | 5/10 | 2/5 | Generic closer; dropped at quality gate |
+| Lebanon Has Been Making Wine for 7,000 Years. Is It Worth $26? | R1 | PASS | 8/10 | 4/5 | Format repeat Ep213; dropped R2 (format dupe of T4) |
+| Lebanese Wine Has Been Overlooked for 7,000 Years. Is It Worth Discovering? | R1 | PASS | 4/10 | 2/5 | Factually imprecise; dropped at quality gate |
+| Lebanese Wine Survived Empires, Wars, and Prohibition. Is It Worth Your $26? | R1/R2 | PASS→FAIL | 7→5/10 | 3/5 | $26 value question fails HR-39 on strict re-read |
+| Critics Say Lebanese Wine Punches Above Its Weight. We Put That to the Test. | R1 | PASS | 4/10 | 2/5 | Ep215 format repeat; dropped at quality gate |
+| Lebanese Wine Outlasted Rome, Civil War, and Prohibition. Now It's $26. | R2 | FAIL HR-39 | 4/10 | 2/5 | Declarative form implies wine is a deal; positive spoiler |
+| Lebanon Was Wine Country Before France Was France. Is $26 Too Cheap? | R2 | FAIL HR-39 | 6/10 | 3/5 | "Too cheap?" implies underpriced; positive spoiler |
+| Is Lebanese Wine Worth $26? It Survived 7,000 Years to Answer That. | R2 | PASS | 4/10 | 2/5 | Dropped at quality gate |
+| Lebanese Wine Survived Empires, Wars, and Prohibition. Can Your $26 Keep Up? | R3 | FAIL HR-39 | 3/10 | 2/5 | Positive-lean framing |
+| Lebanon Was Wine Country Before France Was France. Do the Bottles Prove It? | R3/R4 | PASS | 8/10 | 4/5 | **FINAL — confirmed** |
+| Lebanon Was Wine Country Before France Was France. Has That Changed? | R4 | PASS | 5/10 | 3/5 | Too vague; dropped at quality gate |
+| Lebanese Wine Never Stopped During a 15-Year Civil War. Is That in the Glass? | R4 | PASS | 8/10 | 4/5 | **FINAL — confirmed** |
+| Lebanese Wine Outlasted Rome and a 15-Year Civil War. Is It Any Good? | R4 | FAIL HR-39 | — | — | "Is It Any Good?" resolves negative at 6/10 |
+| Lebanese Wine Outlasted Rome and a Civil War. What's Left in the Glass? | — | PASS (projected) | 8/10 | 4/5 | **FINAL — presented** |
+
+**Quality Gate:** Titles below 7/10 Clickability dropped. Price/value framing abandoned entirely after R2.
+
+**Key learning:** For any episode with a 6/10 non-buy verdict, questions framing value, price, buy/drink recommendations, or quality endorsements will fail HR-39. Use only questions about historical continuity, tasting experience, or what the wine reveals — not what the listener should do with it.
+
+**Final Options Presented:**
+1. Lebanon Was Wine Country Before France Was France. Do the Bottles Prove It? (75 chars)
+2. Lebanese Wine Never Stopped During a 15-Year Civil War. Is That in the Glass? (77 chars)
+3. Lebanese Wine Outlasted Rome and a Civil War. What's Left in the Glass? (71 chars)
+
+**Research-to-Title Alignment:** France-comparison angle (biggest content gap from research) powers Options 1. Civil war resilience angle (emotionally resonant, not overused in this format) powers Options 2 and 3. The Phoenician/trade angle was folded into setup but not foregrounded in final titles — left on the table as a future episode hook if Lebanon wine is revisited.
+
+**Joe's selection:** *(pending)*
+
+---
+
 ### Ep219: Two Buck Chuck (Charles Shaw Chardonnay + Cabernet Sauvignon)
 **Date:** 2026-05-22
 **Series:** None
