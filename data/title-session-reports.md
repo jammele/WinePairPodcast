@@ -13,11 +13,12 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 
 *(Manually maintained. Updated after each session where Joe's selection reveals a pattern. Summarize what Joe consistently picks, angles that get rejected, and controversy framings that work for this show.)*
 
-**Ep219 + Ep221 (2 data points — pattern emerging):**
-- Joe has selected the reviewer's strongest pick in both sessions (highest controversy/curiosity gap, question format)
-- Both picks scored 5/5 on the Meiomi benchmark; both passed over lower-controversy declarative alternatives
-- Ep221 confirms a key instinct: Joe leans INTO discomfort rather than away from it. He noted personal unease with the Bible angle, then chose it because he recognized that discomfort as the hook. Titles that make Joe slightly uncomfortable are candidates for his selection, not disqualified by it.
-- Pattern to carry forward: generate the title that makes you hesitate first, then check it against HR-39. If it passes, it likely leads the list.
+**Ep219 + Ep221 (sessions 1–3):**
+- Ep219 and Ep221 S1: Joe selected the reviewer's strongest pick (highest controversy/curiosity gap, question format, 5/5 Meiomi). He leans INTO discomfort rather than away from it.
+- **Ep221 S2 (critical correction):** Joe bypassed all 3 presented titles and wrote his own. Feedback: "These are just not very good. We have to get better." The presented titles were technically correct but clinical — "Do the Bottles Prove It?", "Is That in the Glass?", "What's Left in the Glass?" are SEO-structured question closers that lack the show's voice. Joe's title: "They Make Wine in Lebanon?!? Lebanon Was Wine Country Before France Was France." — conversational surprise opener + declarative punchline. No question mark at the end.
+- **Key pattern correction:** The review process was optimizing for HR-39 compliance (neutral questions) at the expense of voice. Joe's show has a casual, surprised, excited register ("?!?"). Technically neutral questions ("Is That in the Glass?") feel like editorial copy, not podcast titles. The show's voice IS the hook — don't flatten it to pass a rule.
+- **Format to generate going forward:** Lead with a conversational surprise or reaction (especially for unknown/unexpected wines), pair with the strongest factual claim as a second sentence. The fact does not need a question mark. This is a valid and often superior structure.
+- Pattern to carry forward: Generate the title that sounds like Joe talking to Carmela first. Then check rules. Don't let rule-checking drive the creative direction.
 
 ---
 
@@ -111,7 +112,7 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 
 **Research-to-Title Alignment:** France-comparison angle (biggest content gap from research) powers Options 1. Civil war resilience angle (emotionally resonant, not overused in this format) powers Options 2 and 3. The Phoenician/trade angle was folded into setup but not foregrounded in final titles — left on the table as a future episode hook if Lebanon wine is revisited.
 
-**Joe's selection:** *(pending)*
+**Joe's selection:** They Make Wine in Lebanon?!? Lebanon Was Wine Country Before France Was France. (Joe bypassed all 3 presented options. Combined the conversational surprise opener from R1's rejected title with the France-comparison clause from Title C. Feedback: "These are just not very good. We have to get better.")
 
 ---
 
