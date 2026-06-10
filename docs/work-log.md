@@ -1,8 +1,18 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-06-09 (session 21 — hub page LIVE at /blog/similar-wines; all 6 checks pass; GSC indexing pending)
+**Last updated:** 2026-06-09 (session 21 — Phase 1 complete; hub live, chart post updated, GSC submitted; Phase 2 sprint now active)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 2 entries (wine predictability research; Gen Z anti-condescension signal).
+
+---
+
+## Session 21 summary (2026-06-09)
+
+**Phase 1 (Wine Similarity Spoke Pages & Hub) — COMPLETE.**
+- Hub page published at `https://thewinepairpodcast.com/blog/similar-wines`. All 6 verify-published checks pass.
+- GSC indexing submitted 2026-06-09.
+- Chart post (`/blog/handy-chart-to-help-you-find-wines-similar-to-ones-you-like`) updated with link to hub. Link confirmed live via verify-published.
+- Chart post verify-published: 6/7 pass. FAQPage schema missing — expected (pre-schema post, backfill deprioritized, no action needed).
 
 ---
 
@@ -29,9 +39,9 @@
 
 ## Immediate next actions
 
-1. **Hub page — LIVE.** URL: `https://thewinepairpodcast.com/blog/similar-wines`. All 6 verify-published checks pass. GSC indexing: submit now. After indexing confirmed: update chart post (`/blog/handy-chart-to-help-you-find-wines-similar-to-ones-you-like`) to link to hub.
-2. **Prosecco spoke — GSC indexing requested 2026-05-25.** ✓ Done.
-3. **Phase 2 SEO blog post sprint — now active.** All spokes complete. Portuguese wine (#1 priority, 20,154 impressions / 0.09% CTR) is the next blog post.
+1. **Phase 2 SEO blog post sprint — now active.** Phase 1 complete. Portuguese wine (#1 priority, 20,154 impressions / 0.09% CTR) is the next blog post.
+2. **Hub page — LIVE** `https://thewinepairpodcast.com/blog/similar-wines`. GSC indexing submitted 2026-06-09. Chart post linked. ✓ Done.
+3. **Prosecco spoke — GSC indexing requested 2026-05-25.** ✓ Done.
 
 **FAQPage schema backfill (Malbec, Bread & Butter, Josh) — DEPRIORITIZED 2026-05-18.** Schema already live on all priority pages. Add to new pages going forward; no backfill sprint needed.
 
@@ -43,14 +53,13 @@
 
 ### Blog — Phase 1: Wine Similarity Spoke Pages & Hub
 
-**Spoke pages are blog posts targeting "wines similar to X" queries. All 6 spokes are live. Hub is next.**
+**Phase 1 COMPLETE as of 2026-06-09. All 6 spokes live. Hub live. Chart post links to hub.**
 
 **Locked decisions:**
-- Title: "If You Like This Wine, Try That: Your Guide to Finding Similar Wines You'll Love"
-- Hub URL: `/similar-wines`
-- All 6 spokes live as of 2026-05-25. Hub can be written now.
+- Hub title: "Find Wines Similar to Ones You Love: The Complete Guide"
+- Hub URL: `https://thewinepairpodcast.com/blog/similar-wines`
 - Spoke #1 (template reference): Malbec
-- Existing chart post (`/blog/handy-chart-to-help-you-find-wines-similar-to-ones-you-like`): keep as visual companion alongside the new hub. When hub publishes: chart links to hub; hub references chart. Spoke pages link to hub only — not chart — to concentrate link equity in the hub.
+- Chart post (`/blog/handy-chart-to-help-you-find-wines-similar-to-ones-you-like`): visual companion to hub. Link added 2026-06-09. Spoke pages link to hub only to concentrate link equity.
 
 **Content status:**
 
@@ -87,7 +96,7 @@
 - "Is Josh Wine Good?" — 2026-04-29
 - Bread & Butter review — https://thewinepairpodcast.com/blog/is-bread-butter-wine-good-an-honest-review — 2026-04-30
 
-**Phase 2 queue — lower priority while spoke work is active. Not absolutely blocked.**
+**Phase 2 queue — spoke work complete. Sprint now active.**
 
 | Priority | Post | Episode | Impressions | Clicks | CTR |
 |---|---|---|---|---|---|
@@ -226,6 +235,7 @@
 - Chardonnay spoke (https://thewinepairpodcast.com/blog/wines-similar-to-chardonnay) — 2026-05-24
 - Sauvignon Blanc spoke (https://thewinepairpodcast.com/blog/wines-similar-to-sauvignon-blanc) — 2026-05-24
 - Prosecco spoke (https://thewinepairpodcast.com/blog/wines-similar-to-prosecco) — 2026-05-25
+- Hub (https://thewinepairpodcast.com/blog/similar-wines) — 2026-06-09
 
 **Process going forward:** After every publish, submit URL in GSC → URL Inspection → Request Indexing, then resubmit the non-www sitemap. See `docs/publishing-checklist.md`.
 
