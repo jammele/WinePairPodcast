@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-05-31 (session 20 — hub page v3 saved; Joe reviewing)
+**Last updated:** 2026-06-09 (session 21 — hub page LIVE at /blog/similar-wines; all 6 checks pass; GSC indexing pending)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 2 entries (wine predictability research; Gen Z anti-condescension signal).
 
@@ -29,7 +29,7 @@
 
 ## Immediate next actions
 
-1. **Hub page — v3 IN JOE'S HANDS FOR REVIEW.** Draft: `outputs/hub-similar-wines.md`. URL: `/similar-wines`. Joe found v2 quality insufficient (thin writing, fabrications, repetition). Joe did a partial rewrite of the intro and "What Similar" sections; Claude continued and overhauled all six spoke sections and closing. v3 is committed and clean (0 em-dashes, review passed). Joe is now reviewing v3. After Joe edits and publishes: run `/verify-published`, then update chart post to link to hub. SEO Title is 80 chars (Joe may want shorter Custom SEO Title field in Beamly while keeping H1 as-is).
+1. **Hub page — LIVE.** URL: `https://thewinepairpodcast.com/blog/similar-wines`. All 6 verify-published checks pass. GSC indexing: submit now. After indexing confirmed: update chart post (`/blog/handy-chart-to-help-you-find-wines-similar-to-ones-you-like`) to link to hub.
 2. **Prosecco spoke — GSC indexing requested 2026-05-25.** ✓ Done.
 3. **Phase 2 SEO blog post sprint — now active.** All spokes complete. Portuguese wine (#1 priority, 20,154 impressions / 0.09% CTR) is the next blog post.
 
@@ -62,7 +62,7 @@
 | Chardonnay | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-chardonnay — all checks pass, indexing requested 2026-05-24 |
 | Sauvignon Blanc | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-sauvignon-blanc — all 6 checks pass, GSC indexing requested 2026-05-24 |
 | Prosecco | **LIVE** | https://thewinepairpodcast.com/blog/wines-similar-to-prosecco — all 6 checks pass, GSC indexing requested 2026-05-25 |
-| Hub | v3 — JOE REVIEWING | `outputs/hub-similar-wines.md` — Joe doing final edit before publishing at `/similar-wines` |
+| Hub | **LIVE** | https://thewinepairpodcast.com/blog/similar-wines — all 6 checks pass, GSC indexing submitted 2026-06-09 |
 
 **Assets:**
 - Wine data: `data/wine_similarity_data.json` (86 wines — Sekt and American Sparkling Brut added 2026-05-25)
