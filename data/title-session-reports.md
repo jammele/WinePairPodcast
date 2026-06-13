@@ -67,7 +67,7 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 
 **Research-to-Title Alignment:** Option 1 (strongest) uses the boring-reputation flip angle, which while present in written competitor content, has not been used as a bold confrontational two-sentence format in podcast titles — that specific execution is uncovered. Option 2 uses the "white wine closest to red wine" angle, which is completely uncovered in competitor content. Option 3 uses the Tokay name-theft angle, also uncovered. All three final options exploit gaps identified in Step 0.
 
-**Joe's selection:** *(pending)*
+**Joe's selection:** Pinot Grigio Is Boring. Alsace Pinot Gris Is Its Richer, Weirder French Cousin. (Option A — reviewer's strongest, 9/10 Clickability, 5/5 controversy.)
 
 ---
 

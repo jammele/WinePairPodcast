@@ -1,6 +1,6 @@
 # Episode Title Archive — The Wine Pair Podcast
 
-**Last updated:** 2026-06-05 (through Ep221)
+**Last updated:** 2026-06-13 (through Ep222)
 **Maintained by:** Claude — add each confirmed title here before committing episode work.
 
 ---
@@ -411,3 +411,4 @@ Ep216: Viura: The Great White Wine Hiding in Rioja's Red Wine Shadow!
 Ep217: Italian Wine Adventure #24: Frappato! The Chillable Red Wine!
 Ep219: Is Two Buck Chuck Actually Terrible, or Is That Just Wine Snob Talk?
 Ep221: They Make Wine in Lebanon?!? Lebanon Was Wine Country Before France Was France.
+Ep222: Pinot Grigio Is Boring. Alsace Pinot Gris Is Its Richer, Weirder French Cousin.
