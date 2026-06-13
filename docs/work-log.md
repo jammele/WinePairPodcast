@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-06-09 (session 21 — Phase 1 complete; hub live, chart post updated, GSC submitted; Phase 2 sprint now active)
+**Last updated:** 2026-06-13 (session 22 — Ep222 SEO/AEO content + 10 Bluesky posts generated and saved)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 2 entries (wine predictability research; Gen Z anti-condescension signal).
 
@@ -124,6 +124,15 @@
 - Code block at bottom: Buzzsprout embed + Review Schema combined
 
 **Beamly strips `<style>` tags.** All HTML card embeds must use fully inline styles.
+
+---
+
+### Episode 222 — Alsace Pinot Gris (Pierre Sparr + Frey-Sohler Vieilles Vignes)
+
+**Status:** SEO/AEO content + 10 Bluesky posts complete. Ready to publish show notes.
+**Wines:** 2020 Pierre Sparr Grande Reserve Pinot Gris ($22.99) — Joe 6, Carmela 5 | 2020 Frey-Sohler Vieilles Vignes Pinot Gris ($21.99) — Joe 6, Carmela 5
+**Finish tonight:** Both chose Frey-Sohler Vieilles Vignes Pinot Gris
+**Outputs:** `outputs/episodes/ep222-alsace-pinot-gris.md` — Key Questions, FAQ, Schema markup (Review x2 + FAQPage), 10 Bluesky posts
 
 ---
 
