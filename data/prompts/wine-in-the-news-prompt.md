@@ -1,7 +1,7 @@
 # Wine in the News Prompt
 
 <!-- Source: Google Doc 1Dzkx9xt-MERneHQc0mjHNLgGSGqA_DeU-SLm6yA3Ovg -->
-<!-- Last synced: 2026-05-30T17:20:56.807Z -->
+<!-- Last synced: 2026-06-13T16:41:32.218Z -->
 
 Wine in the News Prompt
 

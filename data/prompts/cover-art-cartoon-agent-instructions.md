@@ -1,7 +1,7 @@
 # Instructions for Cover Art & Cartoon Agent
 
 <!-- Source: Google Doc 1cAxZSvd6EHMQuRZR2gCTy16MYzp8y49ZfPy-iAnYNB0 -->
-<!-- Last synced: 2026-05-30T17:20:52.056Z -->
+<!-- Last synced: 2026-06-13T16:41:27.812Z -->
 
 Instructions for Cover Art & Cartoon Agent
 

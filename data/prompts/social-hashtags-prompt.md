@@ -1,7 +1,7 @@
 # Social Hashtags prompt
 
 <!-- Source: Google Doc 1FNmyIpCnQdlUdY6Uek9NKmKCj7PqT-ZyyJUPAaAp5-c -->
-<!-- Last synced: 2026-05-30T17:20:55.543Z -->
+<!-- Last synced: 2026-06-13T16:41:31.200Z -->
 
 Social Hashtags prompt
 

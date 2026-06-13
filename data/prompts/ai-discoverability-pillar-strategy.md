@@ -1,7 +1,7 @@
 # AI Discoverability & Pillar Strategy – Operational Brief (Feb 2026)
 
 <!-- Source: Google Doc 1nMUkukMZuH8GtVTLV_Qc16sCKK3oIC9m3bMnUTykuMI -->
-<!-- Last synced: 2026-05-30T17:20:47.534Z -->
+<!-- Last synced: 2026-06-13T16:41:23.943Z -->
 
 Instructions: Paste this into a new chat: “Current Phase: Crawl propagation after first internal link”
 

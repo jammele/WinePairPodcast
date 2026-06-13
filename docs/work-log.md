@@ -1,8 +1,36 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-06-13 (session 22 — Ep222 SEO/AEO content + 10 Bluesky posts generated and saved)
+**Last updated:** 2026-06-13 (session 22 — Ep222 fully complete: title, SEO/AEO, cover art; cover art process rebuilt; validator fixed; process prevention rules added)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 2 entries (wine predictability research; Gen Z anti-condescension signal).
+
+---
+
+## Session 22 summary (2026-06-13)
+
+**Ep222 — Alsace Pinot Gris — FULLY COMPLETE.**
+- Title: "Pinot Grigio Is Boring. Alsace Pinot Gris Is Its Richer, Weirder French Cousin."
+- SEO/AEO content + Bluesky posts: `outputs/episodes/ep222-alsace-pinot-gris.md` (validated PASS)
+- Cover art: Concept D — Honey Double-Meaning (40/50) selected. Scene: Joe pointing at honey dripping into wine glass while Carmela swoons thinking he called her "honey." Prompt saved to output file.
+- Cover art required 2 sessions: first session rejected entirely (concepts were sensory-property-based, not episode-specific).
+
+**Three issues found and fixed (Ep222 + prevention rules):**
+
+1. **Hallucinated FAQ (HR-3 violation):** "Should you chill Pinot Gris?" appeared in Key Questions, FAQ, and FAQPage schema but was never discussed in the episode. Fixed in `outputs/episodes/ep222-alsace-pinot-gris.md`: replaced with "What other wines are similar to Alsace Pinot Gris?" (Joe explicitly lists Albariño, Chenin Blanc, Pinot Blanc, Sylvaner, unoaked Chardonnay, Grenache Blanc, Muscadet in transcript). Prevention: removed "Should you chill [wine]?" template example from `generate-episode-content.md`; added grounding requirement and self-check item 9 requiring each FAQ answer to cite a specific episode data point.
+
+2. **Wrong cover art heading (HR-47 violation):** `### Ep222 — Honey, I'm Talking About the Wine (40/50)` used internal concept name instead of episode title. Fixed in episode file. HR-47 updated in `docs/house-rules.md`: heading must be `### Ep[N] — [Episode Title]`. `generate-cover-art.md` Step 7 updated to match.
+
+3. **Generic cover art brainstorm:** First session built from wine's sensory properties (color, texture), not episode-specific moments — all 3 concepts rejected. Prevention: Added Pre-0 transcript reading step to `generate-cover-art.md` (mandatory before brainstorm). Added 4th filter question: "Can you name the specific transcript moment this situation comes from? If no, cut it." Second session, sourced from specific transcript moments, produced accepted concepts first batch.
+
+**Post-prompt workflow review (Step 7 in generate-cover-art.md) — 4 issues fixed:**
+- `cover-art-scenes.md` entry format: changed from vague "structural type" to full physical action description matching existing entry format (+ "Do not repeat:" ban sentence)
+- Session report template: added `**Joe's selection:** *(pending)*` as final field (prevents inconsistent ad-hoc appending)
+- Rejection/redo handling: added explicit instructions — rejected batch → "All concepts rejected — redo required"; redo session → "Second Session (Redo)" subsection inside existing entry (not a new entry)
+- Patterns Learned guidance: override decisions now explicitly flagged as most informative data points
+
+**Validator bug fixed (`scripts/validate_episode.js`):**
+- Em-dash check was scanning cover art code block (false positives). Fixed: strip code blocks before em-dash scan; cut off before `## COVER ART` section.
+- Bluesky section extraction grabbed everything to end of file (including cover art — 3806 char false positive on Post 10). Fixed: regex stops at next `##` section.
 
 ---
 
