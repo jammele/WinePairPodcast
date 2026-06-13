@@ -29,3 +29,9 @@ Tags: AI, lawsuit, family business, winery, legal misconduct
 Tags: theft, Michigan, body cavity, smuggling, liquor store
 
 ---
+
+**EP223 | 2026-06-13 | University of York**
+Ancient DNA study sequenced 80 grape seeds (2,000 years old) from wells at Cetamura del Chianti. Finding: the Chianti region cultivated a dominant white-berry grape variety from 300 BCE to 300 CE -- the same land now synonymous with red Sangiovese. One seed genetically linked to the world's oldest living grapevine (400 years old, Maribor, Slovenia).
+Tags: science, ancient DNA, Chianti, Tuscany, Sangiovese, white wine, archaeology
+
+---

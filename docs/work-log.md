@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-06-13 (session 22 — Ep222 fully complete: title, SEO/AEO, cover art; cover art process rebuilt; validator fixed; process prevention rules added)
+**Last updated:** 2026-06-13 (session 23 — Ep223 Sangiovese outside Tuscany: Wine in the News script complete)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 2 entries (wine predictability research; Gen Z anti-condescension signal).
 
@@ -152,6 +152,15 @@
 - Code block at bottom: Buzzsprout embed + Review Schema combined
 
 **Beamly strips `<style>` tags.** All HTML card embeds must use fully inline styles.
+
+---
+
+### Episode 223 — Sangiovese Outside Tuscany
+
+**Status:** Episode in progress (being written). Wine in the News script complete.
+**Wine in the News:** University of York study (published 2026-06-12) — ancient DNA from 2,000-year-old grape seeds at Cetamura del Chianti shows Chianti was a white wine region from 300 BCE to 300 CE, not red. Perfect tie-in: episode is about Sangiovese outside Tuscany.
+**Outputs:** `outputs/episodes/ep223-sangiovese-outside-tuscany.md` — Wine in the News script only so far. Slug is a placeholder until episode title is confirmed.
+**Next steps:** Full episode SEO/AEO content (`/generate-episode-content`) + cover art (`/generate-cover-art`) + episode title (`/review-titles`) once episode script is ready.
 
 ---
 
