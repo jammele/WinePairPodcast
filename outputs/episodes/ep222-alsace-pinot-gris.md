@@ -216,3 +216,51 @@ https://grapecollective.com/articles/alsace-where-french-and-german-cultures-con
 **10.**
 Alsace sits in one of the most geologically diverse wine regions in the world. Its soils include granite, limestone, clay, and volcanic rock. That variety shows up in the wine.
 https://www.mwines.com/the-geology-of-alsace-a-place-of-exceptional-terroirs/
+
+---
+
+## COVER ART
+
+### Ep222 — Honey, I'm Talking About the Wine (40/50)
+
+```
+Create a square editorial cartoon illustration for a wine podcast cover image.
+
+Use this style exactly:
+
+Style name: High-contrast wine-bar editorial cartoon
+
+A bold, graphic, exaggerated cartoon style with chunky black ink outlines, flat saturated colors, oversized expressive faces and hands, theatrical body language, broad smiles, simple shapes, minimal shading, and a warm burgundy/red wine-bar palette. The image should feel like a magazine cover crossed with a premium adult animated comedy. It should be funny, energetic, and readable at small podcast-thumbnail size.
+
+Important style rules:
+Do not make this realistic.
+Do not make the characters portrait-like.
+Do not add realistic skin texture, realistic facial anatomy, painterly detail, soft lighting, gradients, or 3D effects.
+The people should be affectionate recurring cartoon host characters, not realistic portraits.
+Use simplified, exaggerated animated-comedy proportions.
+The characters should be expressive and specific, but not detailed or lifelike.
+The humor should come from expressions, staging, and visual contrast.
+
+Recurring character bible:
+
+Joe is a middle-aged cartoon man. He has black rectangular glasses, a full salt-and-pepper beard, salt-and-pepper hair, thick expressive eyebrows, and a dark navy pullover. He should have a big friendly grin, curious mischievous energy, and oversized expressive hands. He should look like a recurring animated version of Joe, not a realistic portrait and not a generic cartoon dad.
+
+Carmela is a middle-aged cartoon woman. She has medium-length warm brown hair, gold hoop earrings, expressive eyes, a dark top, and a bright amused smile. She should have theatrical body language and a delighted, sharp, funny reaction. She should look like a recurring animated version of Carmela, not a realistic portrait and not a generic surprised woman.
+
+Scene:
+Joe is jabbing his finger emphatically at a honeycomb dripping amber honey directly into a wine glass on the counter between them, mouth wide open mid-word, eyebrows up, face urgent and completely earnest — he is talking about the wine. Carmela is pressing both hands flat over her heart, eyes closed, a full swooning smile spreading across her face — she thinks Joe just called her "honey" and is completely overwhelmed by the compliment. She is not looking at the wine, the glass, or the honeycomb at all. A bottle labeled "ALSACE PINOT GRIS" stands beside the honeycomb. Rich warm burgundy background.
+
+Composition:
+Tight square crop.
+Characters fill at least 70% of the frame, waist-up, close to the viewer.
+Joe's pointing hand and the dripping honeycomb are the main focal anchor on one side; Carmela's hands-over-heart swoon is the payoff on the other.
+Rich warm burgundy background — no outdoor scenes, no named locations.
+Clear visual hierarchy: Joe pointing left, Carmela swooning right, honeycomb and wine glass in the center.
+One clear joke readable at thumbnail size.
+No text, no labels, no speech bubbles.
+
+Negative prompt:
+No photorealism. No realistic portrait. No painterly rendering. No soft gradients. No 3D gloss. No realistic aging lines. No skin texture. No generic stock-cartoon faces. No tiny expressions. No cluttered background. No text. No speech bubbles. Do not make Joe or Carmela look like real-person portraits. Keep them bold, graphic, exaggerated, and funny.
+
+Use this as the style reference, but create a new scene. Do not copy the exact pose.
+```

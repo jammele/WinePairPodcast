@@ -17,6 +17,8 @@ This file is written and read by the `/generate-cover-art` skill. It accumulates
 
 **Ep221 (2026-05-30):** Joe selected Concept B (History Avalanche, 43/50) — structural type: one character doing something physically precarious while the other reacts with alarm. Joe overrode the recommendation (H: The Jug) and chose B. Explicit reason: G and H were "nearly blasphemy" — religious or sacrilegious staging is off-limits regardless of episode content. Also noted that the first-run concepts (pre-fix) were "very generic" and "checking boxes." Second run (post-fix) with physical situation brainstorm produced genuinely differentiated scenes. Pattern emerging: Joe will reject concepts that feel culturally or religiously provocative, even when they score well and fit the episode hook. Physical comedy with clear cause-and-effect (wobbling tower, imminent collapse) reads as immediately funny without additional context.
 
+**Ep222 (2026-06-13):** Joe selected Concept D (Honey Double-Meaning, 40/50) — after rejecting all three first-session concepts. First-session failure: concepts built from wine's sensory properties (color, texture, glass comparison) rather than specific episode moments. Second session fixed this by reading the full transcript first. Key pattern confirmed: concepts must come from specific funny MOMENTS in the episode (dialogue, jokes, character reactions), not from what the wine looks or tastes like abstractly. Joe will immediately recognize when a concept could apply to "any wine episode." The honey double-meaning works because it comes from a specific line in the actual recording.
+
 ---
 
 ## Episode Entries
@@ -66,7 +68,37 @@ This file is written and read by the `/generate-cover-art` skill. It accumulates
 **Scroll-Stop Assessment:**
 Concept I (Color Confrontation) has the strongest immediate scroll-stop — pressing a white wine glass against a red wine glass makes the "white wine closest to red wine" claim legible before the title is read. Concept G is strongest on episode specificity (the oily/waxy texture sensation is unmistakable) but relies on a subtler visual puzzle. Concept C is the most explosive character-expressiveness moment (full-body recoil) but the weakest of the three on episode specificity.
 
-**Joe's selection:** *(pending)*
+**Joe's selection (Session 1):** All three concepts rejected. Explicit feedback: C was "nearly identical to the first one we did" (Ep219 scrutinize-the-object setup); G was "too subtle for anyone to figure out and bordering on gross" (invisible texture sensation); I was "so far off the topic of the episode that it is just plain dumb" (comparing wine glass colors). Core failure: concepts based on wine's sensory properties, not episode-specific funny moments from the transcript.
+
+---
+
+**Second Session (Redo) — 2026-06-13**
+
+**Approach change:** Main agent read full audio transcript before Step 0. New physical situations drawn entirely from specific transcript moments (buttercup butter test, honey double-meaning, Gen Z blank stare, wax candy extraction, French/German flag battle). No sensory-property concepts.
+
+**Concepts Generated (Redo Round 1):**
+
+| Concept | Score | Result | Notes |
+|---|---|---|---|
+| A: Wax Candy Extraction | 37/50 | DROPPED — quality gate | Below 40 |
+| B: Buttercup Butter Test | 42/50 | PASS | Joe pressing buttercup under Carmela's chin; both ignoring the wine |
+| C: Gen Z Blank Stare | 38/50 | DROPPED — quality gate | Below 40 |
+| D: Honey Double-Meaning | 40/50 | PASS | Joe pointing at honey dripping into glass; Carmela swooning thinking he called her "honey" |
+| E: French/German Flag Standoff | 35/50 | DROPPED — quality gate | Below 40 |
+
+**Quality Gate (Redo Round 1):** A, C, E dropped. Only B and D passed — below 3-concept minimum. Replacement batch required.
+
+**Concepts Generated (Redo Replacement Batch):**
+
+| Concept | Score | Result | Notes |
+|---|---|---|---|
+| F: Thick & Spicy | 44/50 | FAIL — second review | HR-14a: Carmela's primary verb "holds" (banned); missing background/fill |
+| G: Celebrity Bottle | 43/50 | FAIL — second review | HR-14: Carmela "arms crossed, quiet mortification" too stern for character bible; missing background/fill |
+| H: Safe Choice | 45/50 | FAIL — second review | HR-14a: both characters static poses; missing background/fill — all fixable |
+
+**Second Review:** B and D passed clean. F, G, H failed on mechanical issues. Applied reviewer's specific fix instructions to H (highest scorer): replaced static poses with active verbs — Joe smoothing collar mid-primp, Carmela leaning past him to reach bottle. Presented B, D, H-revised to Joe.
+
+**Joe's selection:** Concept D — Honey Double-Meaning (40/50). ChatGPT prompt written and saved to outputs/episodes/ep222-alsace-pinot-gris.md.
 
 ---
 
