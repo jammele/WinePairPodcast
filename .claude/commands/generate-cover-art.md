@@ -78,6 +78,8 @@ Pre. **Read `data/cover-art-session-reports.md` before generating any concepts.*
 
    ### Scroll-Stop Assessment
    [1-2 sentences: which concept has the strongest immediate visual reaction, and why? What made others weaker on this dimension?]
+
+   **Joe's selection:** *(pending)*
    ---
    ```
 
@@ -97,9 +99,9 @@ Pre. **Read `data/cover-art-session-reports.md` before generating any concepts.*
      [Full ChatGPT prompt — ready to paste]
      ```
      If the output file does not exist, create it with just the COVER ART section and note that the rest of the content is pending.
-   - Update the "Joe's selection" field in the Ep[N] entry in `data/cover-art-session-reports.md`
-   - Update Patterns Learned if a new pattern is visible (e.g., Joe consistently picks tension-framing over verdict-framing)
-   - Update `data/cover-art-scenes.md` — add the chosen concept's structural type, remove the oldest entry if the list exceeds 5
+   - Update the "Joe's selection" field in the Ep[N] entry in `data/cover-art-session-reports.md` with the confirmed concept name and score. If Joe rejected all concepts in this session, mark it as "All concepts rejected — redo required." For a redo run, do NOT create a new episode entry — instead add a "Second Session (Redo)" subsection inside the existing Ep[N] entry, with its own Concepts Generated table, Second Review Summary, and Joe's selection line.
+   - Update `data/cover-art-scenes.md` — add a full physical action description of the chosen scene, written as a complete sentence matching the format of existing entries: what Joe is doing, what Carmela is doing, the key props, and a "Do not repeat:" ban sentence. Remove the oldest entry if the list exceeds 5.
+   - Update Patterns Learned in `data/cover-art-session-reports.md` when Joe's selection reveals something new or contradicts an existing pattern. If Joe selected the recommended concept without comment, note it briefly as confirmation. If Joe overrode the recommendation or rejected a whole batch, explain what he chose instead and why — those are the most informative data points.
    - Commit all changed files
 
 ---
