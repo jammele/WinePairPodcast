@@ -23,6 +23,53 @@ This file is written and read by the `/generate-cover-art` skill. It accumulates
 
 ---
 
+### Ep222: Alsace Pinot Gris — SELECTED
+**Date:** 2026-06-13
+**Title:** Pinot Grigio Is Boring. Alsace Pinot Gris Is Its Richer, Weirder French Cousin.
+
+**Physical Situation Brainstorm (Step 0):**
+- 10 situations generated: (1) Joe pouring Pinot Grigio down drain while Carmela stops him [CUT — verdict reveal]; (2) Joe burying face in glass sniffing while Carmela waits; (3) Joe pressing two bottles together as matchmaker while Carmela watches skeptically; (4) Joe ripping label off to reveal same grape underneath while Carmela taps temple; (5) Joe spinning bottle while Carmela reads two passports [CUT — too complex, prop not in bible]; (6) Joe tilting glass to stare at amber color while Carmela recoils; (7) Joe scraping wax off tongue while Carmela mirrors same gesture; (8) Joe examining label under loupe while Carmela unrolls scroll [CUT — cluttered]; (9) Joe snapping bottle like business card at Carmela [CUT — not episode-specific]; (10) Joe shuffling two bottles like shell game while Carmela tries to follow
+- 5 passed all three filters: (2) face-in-glass sniff/wait; (3) two-bottle matchmaker introduction; (6) tilting glass at amber color + recoil; (7) matching waxy-tongue gesture; (10) shell-game shuffle
+- Spoiler-gate directions (off-limits): Thumbs-up/satisfied smile suggesting wines delivered; drain/sink staging suggesting wines failed
+
+**Web Research Finding:**
+"Alsace Pinot Gris podcast thumbnail" returned no editorial cartoon thumbnails — only text-based podcast listings. Open field with no visual conventions to reference or avoid.
+
+**Concepts Generated (First Batch):**
+
+| Concept | Score | Result | Notes |
+|---|---|---|---|
+| A: The Formal Introduction | 35/50 | DROPPED — quality gate | Two-bottle handshake abstract at thumbnail size |
+| B: The Reveal | 32/50 | DROPPED — quality gate | Label-peeling paradox too text-dependent |
+| C: The Suspicious Glass | 41/50 | PASS | Joe squinting through tilted glass; Carmela full-body recoil |
+| D: The Mirror Moment | 38/50 | DROPPED — quality gate | Identical gesture concept; less distinctive than G |
+| E: The Shell Game | 36/50 | DROPPED — quality gate | Motion-dependent; reads as generic card-trick at thumbnail size |
+
+**Quality Gate (Round 1):** A, B, D, E dropped. Only C passed — below 3-concept minimum. Replacement batch required.
+
+**Concepts Generated (Replacement Batch):**
+
+| Concept | Score | Result | Notes |
+|---|---|---|---|
+| F: The Taffy Pull | 38/50 | DROPPED — quality gate | Viscous strand may not compress at thumbnail size |
+| G: The Texture Test | 43/50 | PASS | Both staring at invisible waxy sensation between Joe's fingers |
+| H: The Double-Take | 37/50 | DROPPED — quality gate | Too generic; "guy pointing at bottle" is common visual shorthand |
+| I: Color Confrontation | 44/50 | PASS | Joe pressing amber glass against red wine glass; Carmela jaw-drop |
+
+**Quality Gate (Round 2):** F, H dropped. G and I passed. Total passing: C, G, I — meets 3-concept minimum.
+
+**Second Review Summary:**
+- C — PASS (all rules clean; execution warnings: add HR-12 character-fill and HR-14 character descriptions to prompt)
+- G — PASS (all rules clean; same execution warnings; strongest on episode specificity)
+- I — PASS (all rules clean; same execution warnings; strongest scroll-stop: makes episode's central claim visually legible at thumbnail size)
+
+**Scroll-Stop Assessment:**
+Concept I (Color Confrontation) has the strongest immediate scroll-stop — pressing a white wine glass against a red wine glass makes the "white wine closest to red wine" claim legible before the title is read. Concept G is strongest on episode specificity (the oily/waxy texture sensation is unmistakable) but relies on a subtler visual puzzle. Concept C is the most explosive character-expressiveness moment (full-body recoil) but the weakest of the three on episode specificity.
+
+**Joe's selection:** *(pending)*
+
+---
+
 ### Ep221: Lebanese Wine — Second Run (Post-fix process) — SELECTED
 **Date:** 2026-05-30
 **Title:** Lebanon's Wine Gave Jesus His First Miracle. Does the Modern Stuff Hold Up?
