@@ -10,7 +10,10 @@ Any time Joe asks for a cover art image prompt, image concept, or ChatGPT prompt
 
 When Joe asks for cover art:
 
-Pre. **Read `data/cover-art-session-reports.md` before doing anything else.**
+Pre-0. **Read the episode transcript before anything else.**
+   Check `C:\Users\jamme\Downloads\` for a transcript file named `transcript-[slug].txt` or similar. If found, read it. If not found, read the episode script. The physical situation brainstorm in Step 0 MUST be grounded in specific spoken moments from the recording: actual jokes, dialogue exchanges, character reactions, specific comparisons or descriptions used on mic. Do not brainstorm from the episode topic alone.
+
+Pre. **Read `data/cover-art-session-reports.md` before generating any concepts.**
    Extract two things:
    - **Patterns Learned section:** note what structural types and visual angles Joe consistently selects and what he rejects. Let this shape concept generation.
    - **Prior entry for this wine/brand:** if one exists, note what structural types were tried before so concepts are not repeated across sessions.
@@ -21,10 +24,11 @@ Pre. **Read `data/cover-art-session-reports.md` before doing anything else.**
 
    Write 10 specific physical situations in the form: **"Joe is [action verb]ing [something] while Carmela [action verb]s [something]."** Every entry must use physical action verbs. The verbs "holds," "looks at," "examines," "leans toward," and "gestures at" are banned — they describe poses, not actions. Something must be HAPPENING in each situation.
 
-   Draw from: the episode's central hook, any absurd facts, any funny visual contrasts the episode creates naturally. Then filter the 10 down to the 5 strongest by asking three questions about each:
+   Draw from: the episode's central hook, any absurd facts, any funny visual contrasts the episode creates naturally. Draw specifically from spoken moments in the transcript — jokes, dialogue exchanges, specific words or comparisons used on mic. Then filter the 10 down to the 5 strongest by asking four questions about each:
    - Does it reveal the episode verdict? (if yes, cut it)
    - Does it actively contradict the title? (if yes, cut it)
    - Is it specific enough that it could not be reused for a generic wine episode? (if no, cut it)
+   - Can you name the specific transcript moment (a line, a joke, a dialogue exchange, a specific word or comparison) this situation comes from? (if no, cut it)
 
    Then run 1 web search: "[wine/brand name] podcast thumbnail" to see what competitor visual conventions exist (to avoid or improve on them).
 
@@ -88,7 +92,7 @@ Pre. **Read `data/cover-art-session-reports.md` before doing anything else.**
      ```
      ## COVER ART
 
-     ### Ep[N] — [Concept Name] ([Score]/50)
+     ### Ep[N] — [Episode Title]
 
      [Full ChatGPT prompt — ready to paste]
      ```

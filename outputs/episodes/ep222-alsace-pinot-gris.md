@@ -11,7 +11,7 @@
 - Is Pinot Gris dry or sweet?
 - What food pairs with Alsace Pinot Gris?
 - Is Alsace Pinot Gris worth buying?
-- Should you chill Pinot Gris?
+- What other wines are similar to Alsace Pinot Gris?
 
 ---
 
@@ -36,8 +36,8 @@ A. It pairs well with bold, spicy, and rich foods. Think spicy Asian food, Thai 
 **Q. Is Alsace Pinot Gris worth buying?**
 A. If you want more complexity than Pinot Grigio at the same price, yes. Both wines we tasted came in under $23. Joe gave them each a 6/10 and Carmela gave them each a 5/10, and they both chose the Frey-Sohler Vieilles Vignes as their finish wine. The value is real; just know this is a richer, spicier style.
 
-**Q. Should you chill Pinot Gris?**
-A. Yes, but not ice-cold. Serving Alsace Pinot Gris slightly cool rather than refrigerator-cold lets the texture, spice, and aromatics open up properly. Too cold and you lose the complexity that makes it worth drinking in the first place. Think white Burgundy temperature, not poolside Pinot Grigio temperature.
+**Q. What other wines are similar to Alsace Pinot Gris?**
+A. Joe lists several in the episode: Albariño, Chenin Blanc, Pinot Blanc, Sylvaner, unoaked Chardonnay, Grenache Blanc, and Muscadet. The common thread is fuller-bodied whites with texture and aromatic lift. If you like the richness of Alsace Pinot Gris, any of these are worth exploring.
 
 ---
 
@@ -162,10 +162,10 @@ A. Yes, but not ice-cold. Serving Alsace Pinot Gris slightly cool rather than re
     },
     {
       "@type": "Question",
-      "name": "Should you chill Pinot Gris?",
+      "name": "What other wines are similar to Alsace Pinot Gris?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, but not ice-cold. Serving Alsace Pinot Gris slightly cool rather than refrigerator-cold lets the texture, spice, and aromatics open up properly. Too cold and you lose the complexity that makes it worth drinking in the first place. Think white Burgundy temperature, not poolside Pinot Grigio temperature."
+        "text": "Joe lists several in the episode: Albariño, Chenin Blanc, Pinot Blanc, Sylvaner, unoaked Chardonnay, Grenache Blanc, and Muscadet. The common thread is fuller-bodied whites with texture and aromatic lift. If you like the richness of Alsace Pinot Gris, any of these are worth exploring."
       }
     }
   ]
@@ -221,7 +221,7 @@ https://www.mwines.com/the-geology-of-alsace-a-place-of-exceptional-terroirs/
 
 ## COVER ART
 
-### Ep222 — Honey, I'm Talking About the Wine (40/50)
+### Ep222 — Pinot Grigio Is Boring. Alsace Pinot Gris Is Its Richer, Weirder French Cousin.
 
 ```
 Create a square editorial cartoon illustration for a wine podcast cover image.

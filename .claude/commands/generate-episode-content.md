@@ -65,7 +65,7 @@ You are generating SEO/AEO content and social posts for The Wine Pair Podcast. E
 
 ## SECTION 1: KEY QUESTIONS
 
-Write exactly 7 questions. Questions only — no answers. Target real search queries someone would type about this wine: "What is [wine] wine?", "What does [wine] taste like?", "Should you chill [wine]?", "What food pairs with [wine]?", "Is [wine] similar to [comparable wine]?", "Is [wine] worth buying?". Do not write questions about specific vintages or products — these get no search traffic.
+Write exactly 7 questions. Questions only — no answers. Target real search queries someone would type about this wine: "What is [wine] wine?", "What does [wine] taste like?", "What food pairs with [wine]?", "Is [wine] similar to [comparable wine]?", "Is [wine] worth buying?", "What is the difference between [wine] and [similar wine]?". Do not write questions about specific vintages or products — these get no search traffic. Every question must be answerable from the episode data provided — do not include questions that the episode does not address.
 
 Output format:
 ```
@@ -91,6 +91,7 @@ Rules:
 - Weave in specific details from the episode: ratings, tasting notes, which wine they finished
 - No em-dashes anywhere (HR-1)
 - No invented facts (HR-3)
+- Every answer must be traceable to the episode data provided above. Do not draw on general wine knowledge that was not discussed in the episode. If a question cannot be answered from the episode data, replace it with one that can, or write fewer than 7 pairs.
 
 Output format:
 ```
@@ -183,6 +184,7 @@ Before returning your output, run through this checklist and report results:
 6. FAQ heading: confirm it is exactly "FREQUENTLY ASKED QUESTIONS".
 7. Q./A. format: confirm every Q line starts with `**Q.` and every A line starts with `A.` (plain).
 8. Facts: confirm every rating, tasting note, and pairing comes from the episode data provided.
+9. FAQ grounding: for each of the 7 Q&A pairs, name the specific episode data point the answer draws from (a tasting note, a dialogue line, a rating, a research fact from the provided links). If any answer draws only from general wine knowledge not present in the provided episode data, replace that Q&A pair before returning.
 
 Report: "Self-check complete. [N] issues found." then list any issues. Fix all issues before returning.
 

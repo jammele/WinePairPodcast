@@ -14,8 +14,8 @@ const PODCAST_DOMAIN = 'thewinepairpodcast';
 
 // ── Bluesky post extraction ───────────────────────────────────────────────────
 function extractBlueskyPosts(content) {
-  // Find the BLUESKY POSTS section
-  const sectionMatch = content.match(/###\s*BLUESKY POSTS[\s\S]*$/i);
+  // Find the BLUESKY POSTS section — stop at next ## section (e.g. COVER ART) or end of file
+  const sectionMatch = content.match(/###\s*BLUESKY POSTS[\s\S]*?(?=\n##\s|\n---\s*\n##\s|$)/i);
   if (!sectionMatch) return [];
 
   const section = sectionMatch[0];
@@ -58,9 +58,11 @@ function run(filePath) {
   const errors = [];
   const warnings = [];
 
-  // ── 1. Em-dashes (check only the SEO/AEO section, not cover art) ─────────
-  const seoMatch = content.match(/##\s*SEO[\s\S]*$/i);
-  const seoContent = seoMatch ? seoMatch[0] : content;
+  // ── 1. Em-dashes (check SEO/AEO section only; exclude code blocks and COVER ART) ──
+  const seoMatch = content.match(/##\s*SEO[\s\S]*?(?=\n##\s*COVER ART|\n##\s*$|$)/i);
+  // Strip code blocks before checking — em-dash rule applies to prose, not ChatGPT prompts
+  const stripCodeBlocks = (s) => s.replace(/```[\s\S]*?```/g, '');
+  const seoContent = seoMatch ? stripCodeBlocks(seoMatch[0]) : stripCodeBlocks(content.replace(/\n##\s*COVER ART[\s\S]*$/i, ''));
   const emDashCount = (seoContent.match(/—/g) || []).length;
   if (emDashCount > 0) {
     errors.push(`Em-dash (—) found ${emDashCount} time(s) in SEO/AEO section. Remove every one (HR-1).`);
