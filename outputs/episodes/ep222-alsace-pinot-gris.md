@@ -1,9 +1,9 @@
-# Ep222 — Pinot Grigio Is Boring. Alsace Pinot Gris Is Its Richer, Weirder French Cousin.
+# Ep222: Pinot Grigio Is Boring. Alsace Pinot Gris Is Its Richer, Weirder French Cousin.
 
 ---
 
 ## KEY QUESTIONS
-*(Place at top of show notes — questions only, no answers)*
+*(Place at top of show notes, questions only, no answers)*
 
 - What is Alsace Pinot Gris?
 - What does Alsace Pinot Gris taste like?
@@ -175,7 +175,7 @@ A. Yes, but not ice-cold. Serving Alsace Pinot Gris slightly cool rather than re
 
 ---
 
-## BLUESKY POSTS (10)
+### BLUESKY POSTS
 
 **1.**
 Pinot Grigio has a reputation for being boring. Alsace Pinot Gris is the same grape with a completely different personality: rich, oily, spicy. We tried two bottles under $23. Did the reputation hold up?
