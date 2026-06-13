@@ -26,6 +26,51 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 
 ---
 
+### Ep222: Alsace Pinot Gris (Pierre Sparr Grande Reserve + Frey-Sohler Vieilles Vignes)
+**Date:** 2026-06-13
+**Series:** None
+
+**Step 0 Research Findings:**
+- Dominant competitor angle: "Pinot Grigio vs Pinot Gris — Alsace is better" (YouTube: "Do You Love Pinot Grigio? Pinot Gris from Alsace is BETTER") — overused, avoided
+- Podcasts focus on region history or producer interviews — nobody uses a bold quality judgment or sensory surprise as a hook
+- "White wine closest to red wine" structural angle completely uncovered in competitor content
+- Tokay name-theft controversy also uncovered as a title hook
+- "Boring/bland" reputation flip used in written content but not as a strong angle in podcast titles
+- 6/10 non-buy verdict: value/price/buy framing fails HR-39 — questions must be about tasting experience or historical curiosity only
+
+**Episode Hook:** Pinot Grigio has a worldwide boring reputation, but Alsace Pinot Gris is the same grape with a radically different identity — rich, oily, described as the white wine closest to red wine — and its name was stolen by Hungary in a legal battle that lasted decades. Both wines rated 6/10 (drinkable, not buys).
+
+**Titles Reviewed:**
+
+| Title | Round | Result | Clickability | Controversy | Notes |
+|---|---|---|---|---|---|
+| "Everyone Says Pinot Grigio Is Boring. Alsace Pinot Gris Says Hold My Wine." | R1 | PASS | 5/10 | 2/5 | Meme punchline; dropped at quality gate |
+| "Alsace Pinot Gris: The White Wine Closest to Red Wine. Is That Actually True?" | R1 | PASS | 7/10 | 4/5 | [Claim. Question?] echoes Ep213; revised for R2 |
+| "Alsace Pinot Gris Had Its Name Stolen by Hungary. Does the Wine Deserve Better?" | R1 | PASS | 7/10 | 4/5 | Second clause logically disconnected from name-theft; revised for R2 |
+| "Pinot Grigio Is Bland and Boring. France Disagrees. Enter Alsace Pinot Gris." | R1 | PASS | 6/10 | 3/5 | Three-part structure; weak landing; dropped at quality gate |
+| "Alsace Pinot Gris: The Anti-Pinot Grigio. Does It Live Up to the Billing?" | R1 | PASS | 7/10 | 3/5 | Colon-subtitle format echoes Ep204/208/213; revised for R2 |
+| "Alsace Pinot Gris Is a White Wine Doing a Red Wine Impression. No, Really." | R2 | PASS | 8/10 | 4/5 | **FINAL — presented** |
+| "Alsace Pinot Gris Had Its Name Stolen by Hungary. So We Got Two Bottles." | R2 | PASS | 8/10 | 4/5 | **FINAL — presented** |
+| "Alsace Pinot Gris Is the Anti-Pinot Grigio. We Opened a Bottle to Find Out." | R2 | PASS | 5/10 | 3/5 | Second sentence generic to every episode; dropped at quality gate |
+| "Pinot Grigio Is Boring. Alsace Pinot Gris Is Its Richer, Weirder French Cousin." | R2 | PASS | 9/10 | 5/5 | **FINAL — presented** — strongest |
+| "Alsace Changed Hands Four Times. Its Pinot Gris Outlasted Every Country." | R2 | PASS | 4/10 | 2/5 | History trivia hook; fails wine-interest click test; dropped at quality gate |
+
+**Quality Gate R1:** Titles 1 and 4 dropped (5/10 and 6/10 Clickability).
+**Quality Gate R2:** Titles 3 and 5 dropped (5/10 and 4/10 Clickability).
+
+**Key learning:** For this episode, the boring/reputation angle works best when it's punchy and confrontational (Title 4: 9/10) vs. when it's playful (Title 1: 5/10) or theatrical (original Title 4 "Enter Alsace Pinot Gris": 6/10). The name-theft hook is genuinely distinctive but must connect logically to the second clause — "Does the Wine Deserve Better?" disconnects; "So We Got Two Bottles" lands because it's an organic response to the legal drama.
+
+**Final Options Presented:**
+1. Pinot Grigio Is Boring. Alsace Pinot Gris Is Its Richer, Weirder French Cousin. (79 chars)
+2. Alsace Pinot Gris Is a White Wine Doing a Red Wine Impression. No, Really. (74 chars)
+3. Alsace Pinot Gris Had Its Name Stolen by Hungary. So We Got Two Bottles. (72 chars)
+
+**Research-to-Title Alignment:** Option 1 (strongest) uses the boring-reputation flip angle, which while present in written competitor content, has not been used as a bold confrontational two-sentence format in podcast titles — that specific execution is uncovered. Option 2 uses the "white wine closest to red wine" angle, which is completely uncovered in competitor content. Option 3 uses the Tokay name-theft angle, also uncovered. All three final options exploit gaps identified in Step 0.
+
+**Joe's selection:** *(pending)*
+
+---
+
 ### Ep221: Lebanese Wine (Massaya Le Colombier Rouge + Chateau Musar Jeune Red)
 **Date:** 2026-05-30
 **Series:** None
