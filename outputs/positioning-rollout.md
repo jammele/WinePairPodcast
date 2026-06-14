@@ -29,13 +29,9 @@ wine podcast, wine reviews, affordable wine, wine education, wine recommendation
 
 ## 3. YouTube — Channel About
 
-> Joe and Carmela explore wines that are new to them, explain what makes each one interesting, and tell you honestly whether it's worth buying. The Wine Pair Podcast is an independent, husband-and-wife wine podcast: they buy every bottle themselves, don't take free samples for review, and taste two or three bottles (usually under $25) every week.
->
-> New episodes every Sunday. Recommended by Decanter Magazine as "fun, irreverent, chatty, and entertaining," and named a Top 100 Food Podcast on Apple Podcasts.
->
-> Listen and subscribe: https://thewinepairpodcast.com/
-> Contact: joe@thewinepairpodcast.com
-> Instagram: @thewinepairpodcast
+**Status: LIVE 2026-06-14**
+
+Not every wine is worth buying. The Wine Pair Podcast features married couple Joe and Carmela as they try wines they haven't had before, share their brutally honest opinions, and tell you which bottles are worth your money. Each week, they take on a different grape, wine style, or region, taste two or three reasonably priced bottles, usually under $25, and describe what they are tasting in ways that are hilarious and actually make sense. Along the way, they cover food pairings and wines ranging from Chardonnay and Pinot Noir to grapes you may never have heard of. Some bottles are great, some are fine, and some absolutely are not worth buying. They buy every bottle themselves and do not accept free samples, so the opinions and ratings are entirely their own. Recommended by Decanter Magazine, which called the show "fun, irreverent, chatty, and entertaining." A Top 100 Apple Podcasts show in the Food category. New episodes every Sunday.
 
 ---
 
