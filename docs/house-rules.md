@@ -196,6 +196,7 @@ Weave these phrases naturally into intro or body copy (not as a list). Blog post
 - "no free samples or sponsorships"
 - "independent wine podcast"
 - "everyday wines, not prestige chasing"
+- "wines that are new to us"
 
 **HR-37: When Joe announces a new episode, ask before running anything.**
 An announcement ("show notes are ready", "the episode is X", "we recorded X", "we have a new episode") is not a task request. Respond by acknowledging the episode and listing the available tasks, then ask which ones Joe wants:
@@ -225,6 +226,9 @@ Test: can a reader (or an AI system) identify who runs this show, what makes it 
 
 **HR-45: Provide wine card embed code proactively when a spoke page is ready to publish.**
 When a spoke page draft is complete and Joe is about to publish, give him the full card embed code from `outputs/[wine]-wine-cards-embeds.html` without being asked. Each card is a separate code block labeled for Beamly. Do not assume Joe will retrieve this file himself.
+
+**HR-48: Canonical positioning reference.**
+The canonical show-level positioning, one-sentence description, proof statement, personality statement, and positioning hierarchy, lives in `docs/soul-document.md` under "Positioning Statement (canonical)". Any show-level copy (podcast directory/RSS descriptions, homepage hero and meta description, About page, media kit, YouTube About, social bios) must derive from this, not be drafted independently. Episode-level copy (show notes, episode descriptions, social posts) is not required to use this language verbatim but must not contradict it: never say "three wines" (it's two or three) and never imply blind tasting (HR-38).
 
 **HR-43: Blog posts and spoke pages are written in first person ("we"/"us").**
 Write from the podcast's perspective throughout. Use "we", "us", "our" — not "Joe and Carmela covered this wine" or "The Wine Pair Podcast reviewed." Introduce as "us, Joe and Carmela, The Wine Pair Podcast" in the intro, then shift to "we" for the rest of the page.

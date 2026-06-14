@@ -102,8 +102,7 @@ Pillar #1 ("How to Spot a Trustworthy Wine Podcast") targets a query no one sear
 
 **Trust cluster roadmap (build after Pillar #1 rewrite):**
 - "What Makes a Wine Review Trustworthy?" — Pillar #1 rewrite anchor
-- "How We Rate Wines on The Wine Pair Podcast" — explains the 10-point scale
-- "Why We Buy Our Own Wines for Review Episodes" — methodology transparency
+- "How We Choose, Taste, and Rate Wine" — consolidated methodology page: explains the 10-point scale, the purchase-and-tasting process (wines new to us, never blind, per HR-38), and sponsorship independence. Replaces the separate "How We Rate Wines on The Wine Pair Podcast" and "Why We Buy Our Own Wines for Review Episodes" pages from the earlier roadmap — one page, not two, per HR-41. Once published, link from the homepage, About page, media kit, and footer (2026-06-14 positioning review, see `outputs/positioning-rollout.md`).
 - "Best Affordable Wines We've Rated as Buys" — evidence page linking to episode reviews
 - "Wine Ratings for Normal People: What Our 10-Point Scale Means" — beginner entry point
 

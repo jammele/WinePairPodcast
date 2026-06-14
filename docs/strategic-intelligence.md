@@ -39,3 +39,17 @@
 - What share of current listeners are under 35? Would be useful to know whether this is already an audience or an opportunity.
 - Does the show's Apple Podcasts description and Spotify bio reflect the anti-condescension angle prominently, or does it lead with wine education (which can read as gatekeeping)?
 - When the Gen Z cohort searches for wine content, what queries do they use? Likely different from the typical "is X wine good" pattern.
+
+---
+
+## Entry 003 — Show description price-range drift
+**Date:** 2026-06-14
+**Source:** ChatGPT positioning/directory audit, cross-checked against the live Buzzsprout RSS description and recent episode pricing
+**Finding:** The official show description and `docs/soul-document.md` both stated "under $25" as a near-absolute price ceiling ("wines under $25 each... easy to find"). But recent regular review episodes have already exceeded it: Ep217 Frappato was $27.97, Ep221 Lebanese wines were $25.97. "Under $25" is drifting from accurate to aspirational as the show covers more imported and unusual wines.
+**Connects to:**
+- `docs/soul-document.md` Accessibility Focus and "What We DON'T Cover" sections — updated 2026-06-14 from "under $25" to "usually under $25 / occasional bottles run a bit higher"
+- New canonical positioning statement (`docs/soul-document.md` "Positioning Statement (canonical)") — adopts "usually for less than $25 a bottle" as the proof statement, the more honest framing
+- Buzzsprout RSS description rewrite (`outputs/positioning-rollout.md`) — corrected from "under $25 each" to "usually under $25"
+**Open questions:**
+- Should there be an explicit soft ceiling stated anywhere (e.g., "rarely above $30"), or is "usually under $25" sufficient?
+- Track future episode prices. If regular review episodes start regularly landing in the high $20s/low $30s, the soul doc accessibility framing may need a bigger rework, not just wording.

@@ -5,11 +5,29 @@
 
 ## CORE IDENTITY
 
-**The Wine Pair Podcast** is an anti-snob wine education show that focuses on accessible wine reviews for everyday consumers. Hosted by husband-and-wife team Joe and Carmela, the show reviews wines under $25 that are easy to find, giving honest, irreverent, and helpful guidance to people who want to learn about wine without the pretension.
+**The Wine Pair Podcast** is an anti-snob wine education and review show. Hosted by husband-and-wife team Joe and Carmela, the show explores wines that are new to them, usually under $25 and relatively easy to find, and tells listeners honestly whether each one is worth buying. Honest, irreverent, and helpful guidance for people who want to learn about wine without the pretension.
 
 **Tagline:** "Find great wines without breaking the bank"
 
 **Recommended by Decanter Magazine** who call the show "fun, irreverent, chatty, and entertaining."
+
+### Positioning Statement (canonical)
+
+This is the canonical reference for any show-level copy: podcast directory/RSS descriptions, homepage hero and meta description, About page, media kit, YouTube About, social bios. See HR-48. Episode-level copy is not required to use this language verbatim but must not contradict it.
+
+**One-sentence description:** Joe and Carmela explore wines that are new to them, explain what makes them interesting, and tell you honestly whether the bottles are worth buying.
+
+**Proof statement:** They purchase the wines featured in their regular review episodes, usually for less than $25 a bottle, and do not accept free samples for review.
+
+**Personality statement:** Useful wine education, honest opinions, and the natural chemistry of a married couple who don't always agree.
+
+**Positioning hierarchy** (most important first — use this order when space is limited):
+1. Honest buying verdict — every episode ends with a real answer: worth it or not
+2. Wine discovery — wines new to Joe and Carmela, not familiar-grape retreads
+3. Joe and Carmela — the host relationship is part of the product
+4. Affordable bottles — usually under $25, not the whole identity
+5. Independent reviews — no free samples, no sponsor influence on ratings
+6. Plain-language education — expected in the category, not the lead
 
 ---
 
@@ -74,7 +92,7 @@
 
 ### 2. Accessibility Focus
 
-- All wines under $25 (originally under $20, now under $25)
+- Usually under $25 (originally under $20, then under $25; occasional bottles run a bit higher for special finds)
 - Easy to find at common retailers (Costco, Trader Joe's, Total Wine, etc.)
 - QPR obsessed (Quality to Price Ratio)
 - "Regular people" focus - not sommeliers or collectors
@@ -278,7 +296,7 @@ After rating, we ask: Did this wine live up to expectations? Did it deliver on w
 
 ### What We DON'T Cover
 
-- Wines over $25 (except rare special occasions)
+- Wines well over $25 (occasional bottles land in the high $20s; ultra-premium and luxury wines are out of scope)
 - Wines that are impossible to find
 - Ultra-premium/luxury wines
 - Wine as investment/collecting
@@ -568,6 +586,6 @@ We take wine education seriously without taking ourselves seriously. We respect 
 
 ---
 
-**Document Version:** 1.0
-**Last Updated:** February 2026
-**Compiled from:** Conversation analysis, show notes, website content, episode structure, listener feedback, download statistics
+**Document Version:** 1.1
+**Last Updated:** June 2026
+**Compiled from:** Conversation analysis, show notes, website content, episode structure, listener feedback, download statistics, positioning rollout (2026-06-14, see `outputs/positioning-rollout.md`)

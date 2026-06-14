@@ -1,8 +1,21 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-06-13 (session 23 — Ep223 Wine in the News complete; Wine in the News instructions rebuilt)
+**Last updated:** 2026-06-14 (session 24 — Positioning rollout: reviewed ChatGPT's directory/SEO plan, locked canonical positioning, drafted rollout copy)
 
-**Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 2 entries (wine predictability research; Gen Z anti-condescension signal).
+**Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
+
+---
+
+## Session 24 summary (2026-06-14)
+
+**Positioning rollout — reviewed ChatGPT's "Positioning, Podcast Directory, SEO and AEO Action Plan."**
+- Confirmed against the live Buzzsprout RSS description (Joe provided it verbatim): current description opens with the Decanter quote, says "three wines... under $25 each... easy to find," has no buying verdict, no "new to us," and no independence framing. ChatGPT's critiques checked out against the real source.
+- Cut from ChatGPT's plan: Step 11 (topic hubs) and Step 12 (searchable wine-review database) — both already exist (`/blog/similar-wines` hub is live with all 6 spokes; `/shopwine` is already the wine-review database, organized by rating with buy links). No new work needed.
+- New canonical positioning locked in `docs/soul-document.md` under "Positioning Statement (canonical)": one-sentence description, proof statement, personality statement, positioning hierarchy. Referenced by new HR-48.
+- Found and fixed a real accuracy issue: "under $25" is no longer always true (Ep217 Frappato $27.97, Ep221 Lebanese wines $25.97). `docs/soul-document.md` Accessibility Focus and "What We DON'T Cover" updated to "usually under $25." Logged as Strategic Intelligence Entry 003.
+- `docs/seo-geo-strategy.md` Area 4 trust cluster updated: consolidated the two planned methodology pages ("How We Rate Wines" + "Why We Buy Our Own Wines") into one "How We Choose, Taste, and Rate Wine" page, per HR-41.
+- HR-36 canonical AEO phrase list: added "wines that are new to us." Added HR-48.
+- Drafted ready-to-paste copy for every surface in `outputs/positioning-rollout.md`: Buzzsprout description + keywords (6 new keyword slots filled), YouTube About, homepage hero + meta description, media kit opener, social bios. Awaiting Joe's review/edits before anything is pasted.
 
 ---
 
@@ -89,6 +102,7 @@
 1. **Phase 2 SEO blog post sprint — now active.** Phase 1 complete. Portuguese wine (#1 priority, 20,154 impressions / 0.09% CTR) is the next blog post.
 2. **Hub page — LIVE** `https://thewinepairpodcast.com/blog/similar-wines`. GSC indexing submitted 2026-06-09. Chart post linked. ✓ Done.
 3. **Prosecco spoke — GSC indexing requested 2026-05-25.** ✓ Done.
+4. **Positioning rollout (new, 2026-06-14) — awaiting Joe.** `outputs/positioning-rollout.md` has ready-to-paste copy: Buzzsprout description + keywords, YouTube About, homepage hero/meta description, media kit opener, social bios. Joe reviews/edits, then pastes the Buzzsprout description first (RSS source) and lets the feed propagate a few days. After that, run a directory audit (Apple, Spotify, Amazon, iHeart, Podchaser, Goodpods, Rephonic, Feedspot, Google) via WebSearch/WebFetch and produce `outputs/directory-audit.md`. Does not block the SEO sprint — Portuguese wine post stays priority #1.
 
 **FAQPage schema backfill (Malbec, Bread & Butter, Josh) — DEPRIORITIZED 2026-05-18.** Schema already live on all priority pages. Add to new pages going forward; no backfill sprint needed.
 
