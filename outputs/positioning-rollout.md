@@ -19,13 +19,10 @@ Not every wine is worth buying. The Wine Pair Podcast features a married couple 
 
 ## 2. Buzzsprout — Keywords (max 12, currently 6/12 used)
 
-Current: `wine, wine reviews, funny podcast, wine ratings, humor, everyday wines`
+**Status: LIVE 2026-06-14** (full replacement, not additive)
 
-Add these 6 to fill all 12 slots: `affordable wine, wine podcast, wine education, wine tasting, independent wine podcast, husband and wife podcast`
-
-Full proposed list (12, comma-separated for the Buzzsprout field):
 ```
-wine, wine reviews, funny podcast, wine ratings, humor, everyday wines, affordable wine, wine podcast, wine education, wine tasting, independent wine podcast, husband and wife podcast
+wine podcast, wine reviews, affordable wine, wine education, wine recommendations, wine tasting, wine ratings, wine for beginners, wine pairing, wine grapes, wine regions, wine humor
 ```
 
 ---
