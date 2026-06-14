@@ -3,7 +3,7 @@
 **Source:** `docs/soul-document.md` → "Positioning Statement (canonical)" (added 2026-06-14, see HR-48)
 **Context:** Reviewed ChatGPT's positioning/podcast-directory/SEO action plan against the live Buzzsprout RSS description, house rules, and current site state. See `docs/work-log.md` session 24 for the full review and what was cut/changed from ChatGPT's plan.
 
-Joe reviews and edits everything below before pasting anywhere. Nothing here has been published yet.
+**Status: APPROVED by Joe 2026-06-14. Ready to paste into Buzzsprout.**
 
 ---
 
@@ -11,17 +11,9 @@ Joe reviews and edits everything below before pasting anywhere. Nothing here has
 
 Replaces the current description (opens with the Decanter quote, says "three wines... under $25 each... easy to find," no buying verdict, no "new to us," no independence framing, contact info eating space at the bottom). This is the highest-leverage edit — it syndicates to Apple Podcasts, Spotify, Amazon Music, iHeartRadio, and most directories via RSS.
 
-> Joe and Carmela explore wines that are new to them, explain what makes each one interesting, and tell you honestly whether it's worth buying. Each week on The Wine Pair Podcast, this married couple picks a grape, region, style, or wine question, tastes two or three bottles usually under $25, and gives it to you straight: good, bad, or somewhere in between.
->
-> From Chardonnay and Pinot Noir to grapes you've never heard of, they cover wine education, food pairings, and head-to-head challenges between popular bottles. They buy every bottle themselves and don't accept free samples for review, so the opinions are their own.
->
-> Recommended by Decanter Magazine, who called the show "fun, irreverent, chatty, and entertaining." New episodes every Sunday.
->
-> Contact us at joe@thewinepairpodcast.com
-> Instagram: @thewinepairpodcast
-> Website: https://thewinepairpodcast.com/
+Not every wine is worth buying. The Wine Pair Podcast features a married couple as they try wines they haven't had before, share their brutally honest opinions, and tell you which bottles are actually worth your money. Each week, Joe and Carmela take on a different grape, wine style, or region, then taste two or three reasonably priced bottles, usually under $25, and describe what they are tasting in ways that make sense. Some are great, some are fine, and some absolutely are not worth buying. From Chardonnay and Pinot Noir to grapes you may never have heard of, the show combines useful wine education in plain language, food pairings, affordable recommendations, and the natural chemistry of two people who know each other well enough to disagree. A lot. Joe and Carmela purchase the wines featured in their regular review episodes and do not accept free samples for review, so the opinions and ratings are entirely their own. Recommended by Decanter Magazine, which called the show "fun, irreverent, chatty, and entertaining." New episodes every Sunday. Contact: joe@thewinepairpodcast.com. Instagram: @thewinepairpodcast. Website: thewinepairpodcast.com.
 
-**HR-1 check:** no em-dashes. **HR-38 check:** no "blind tasting" language anywhere — "new to them" framing only.
+**HR-1 check:** no em-dashes. **HR-38 check:** no "blind tasting" language anywhere.
 
 ---
 
