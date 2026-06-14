@@ -1,8 +1,27 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-06-13 (session 23 — Ep223 Sangiovese outside Tuscany: Wine in the News script complete)
+**Last updated:** 2026-06-13 (session 23 — Ep223 Wine in the News complete; Wine in the News instructions rebuilt)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 2 entries (wine predictability research; Gen Z anti-condescension signal).
+
+---
+
+## Session 23 summary (2026-06-13)
+
+**Ep223 — Sangiovese Outside Tuscany — Wine in the News complete.**
+- Story: University of York ancient DNA study (published 2026-06-12) — 2,000-year-old grape seeds from Cetamura del Chianti show the Chianti region was a white wine region from 300 BCE to 300 CE. Strong tie-in to Sangiovese outside Tuscany episode.
+- Script: Joe's rewrite saved to `outputs/episodes/ep223-sangiovese-outside-tuscany.md`. Fact-checked clean before presenting.
+- Archive updated: `data/wine-in-the-news-archive.md`
+- Episode number confirmed: Ep223. Slug is placeholder until title confirmed.
+- Remaining work: SEO/AEO content, episode title, cover art — after episode script is ready.
+
+**Wine in the News instructions rebuilt (`docs/wine-in-the-news.md`):**
+- Root cause of poor output identified via diff of AI draft vs Joe's actual rewrite of the Chianti story.
+- 9 specific patterns extracted. Every difference accounted for.
+- "Mandatory segment format" section replaced with flexible "Segment format" + calibration guidance.
+- New "AI writing tells" section: specific phrases never to write ("Here is the overview:", "Now let me back up...", theatrical amplification paragraphs, literary flourishes, etc.).
+- Full AI-vs-Joe diff added as in-file reference example (Ep223 Chianti story).
+- Memory file `feedback_wine_in_the_news_voice.md` updated with all 9 patterns from the Ep223 diff.
 
 ---
 

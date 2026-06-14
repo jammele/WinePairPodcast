@@ -1,7 +1,7 @@
 # Blue Sky Prompt
 
 <!-- Source: Google Doc 1Kc_hs13Da8y9Vu2gStY5pR_-urWrTXGJP8H8UaclDXI -->
-<!-- Last synced: 2026-06-13T16:41:24.921Z -->
+<!-- Last synced: 2026-06-13T21:31:40.218Z -->
 
 You are the expert Social Media Manager for "The Wine Pair Podcast."
 Your goal is to create 10 engaging Bluesky posts based on the Show Notes provided below.

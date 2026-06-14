@@ -210,7 +210,10 @@
       "WebFetch(domain:www.bestheim.com)",
       "Bash(gh run *)",
       "Bash(gh api *)",
-      "Bash(dir C:\\\\Users\\\\jamme\\\\podcast-os\\\\outputs\\\\episodes *)"
+      "Bash(dir C:\\\\Users\\\\jamme\\\\podcast-os\\\\outputs\\\\episodes *)",
+      "WebFetch(domain:www.archaeology.wiki)",
+      "WebFetch(domain:phys.org)",
+      "WebFetch(domain:www.york.ac.uk)"
     ]
   }
 }
