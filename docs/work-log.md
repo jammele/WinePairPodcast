@@ -102,7 +102,7 @@
 1. **Phase 2 SEO blog post sprint — now active.** Phase 1 complete. Portuguese wine (#1 priority, 20,154 impressions / 0.09% CTR) is the next blog post.
 2. **Hub page — LIVE** `https://thewinepairpodcast.com/blog/similar-wines`. GSC indexing submitted 2026-06-09. Chart post linked. ✓ Done.
 3. **Prosecco spoke — GSC indexing requested 2026-05-25.** ✓ Done.
-4. **Positioning rollout (new, 2026-06-14) — awaiting Joe.** `outputs/positioning-rollout.md` has ready-to-paste copy: Buzzsprout description + keywords, YouTube About, homepage hero/meta description, media kit opener, social bios. Joe reviews/edits, then pastes the Buzzsprout description first (RSS source) and lets the feed propagate a few days. After that, run a directory audit (Apple, Spotify, Amazon, iHeart, Podchaser, Goodpods, Rephonic, Feedspot, Google) via WebSearch/WebFetch and produce `outputs/directory-audit.md`. Does not block the SEO sprint — Portuguese wine post stays priority #1.
+4. **Positioning rollout — Buzzsprout description LIVE 2026-06-14.** Keywords next (6 open slots). After keywords: YouTube About, homepage hero/meta, media kit opener, social bios — all drafts in `outputs/positioning-rollout.md`. Directory audit (Apple, Spotify, Amazon, iHeart, Podchaser, Goodpods, Rephonic, Feedspot, Google) after feed has propagated a few days. Does not block the SEO sprint — Portuguese wine post stays priority #1.
 
 **FAQPage schema backfill (Malbec, Bread & Butter, Josh) — DEPRIORITIZED 2026-05-18.** Schema already live on all priority pages. Add to new pages going forward; no backfill sprint needed.
 
