@@ -1,8 +1,34 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-06-14 (session 24 — Positioning rollout: reviewed ChatGPT's directory/SEO plan, locked canonical positioning, drafted rollout copy)
+**Last updated:** 2026-06-16 (session 25 — GSC analysis, Josh Wine prioritization, orphaned April 18 blog post files migrated from Drive to outputs/)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
+
+---
+
+## Session 25 summary (2026-06-16)
+
+**GSC analysis (28-day window ending 2026-06-16) and orphaned file migration.**
+
+- **Josh Wine identified as #1 priority.** Query "josh wine" is at position 3.2 with 6,927 impressions but only 6 clicks (0.09% CTR). Episode page (position 5.18) and blog post (position 7.32) cannibalizing each other. Combined Josh Wine traffic ~24K impressions / 28 days. Fix path: internal linking from episode page → blog post (Beamly has no head code injection, so canonical tags via head are not available).
+- **Portuguese wine validated as Phase 2 #1:** 20,154 impressions (90-day) at 0.09% CTR. Blog post could convert at ~2% based on Chablis blog performance (1.58%).
+- **Spoke pages validated:** Combined 150 clicks / 28 days from Pinot Noir (59), Prosecco (32), Chardonnay (25), and 3 others. Average position improved 9.5 → 7.2 in 28 days.
+- **Strategic plan saved** to `.claude/plans/hello-optimized-kahan.md`, approved.
+
+**Orphaned file migration — April 18, 2026 blog post source files found in Google Drive and migrated to `outputs/`:**
+- `outputs/blog-post-josh-wine-review.md` — Drive id `1hDIpNv6rZHD9JuGQyGNxwPV0DxHSmL-W`. SEO block + full post + FAQ block + Review Schema (3 wines: Chard 6/10, Cab 5/10, Pinot 4-5/10).
+- `outputs/blog-post-should-you-chill-red-wine.md` — Drive id `1nLG9tR1UoEQRymJI_Iqg8h-mDZwVTKSE`. Format A (paragraph form, no headers).
+- `outputs/archive-2026-04-18-blog-post-instructions.md` — Drive id `1dL9CMRrdOlWuC6mXEaIopNEeaxvFpAWM0Dpt8EytBvE`. Historical instructions defining Format A/B blog post types.
+- Root cause of documentation gap: the repo was 9 days old when these were created; outputs/ discipline was established later.
+
+**New memory:** `feedback_beamly_self_serve.md` — don't ask Joe Beamly questions; check `docs/blog-post-guide.md`, `docs/publishing-checklist.md`, `.claude/commands/verify-published.md`, `.claude/commands/review-blog-post.md`, `docs/house-rules.md` first.
+
+**Pending (per plan):**
+- Joe to add internal link from Josh Wine episode page → blog post in Beamly.
+- Ep223 title confirmation (blocks SEO/AEO generation).
+- Portuguese wine blog post (Phase 2 #1).
+- Publish 4 ready episodes: ep217-viura, ep218-malvasia, ep219-two-buck-chuck, ep221-lebanese-wine.
+- Complete positioning rollout: homepage hero + meta, media kit opener, social bios.
 
 ---
 
