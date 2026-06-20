@@ -16,6 +16,19 @@ const PODCAST_DOMAIN = 'thewinepairpodcast';
 const VALID_SECTIONS = new Set(['KEY_QUESTIONS', 'FAQ', 'SCHEMA', 'BLUESKY']);
 const DEFAULT_EXPECTED_KEY_QUESTIONS = 7;
 const DEFAULT_EXPECTED_FAQ_PAIRS = 7;
+const FAQ_BANNED_NARRATIVE_PATTERNS = [
+  /\bin this episode\b/i,
+  /\bon this episode\b/i,
+  /\bjoe says\b/i,
+  /\bjoe points out\b/i,
+  /\bcarmela says\b/i,
+  /\bwe tasted\b/i,
+  /\bwe got\b/i,
+  /\bwe chose\b/i,
+  /\bwhy we did this episode\b/i,
+  /\bon the show\b/i,
+  /\bour episode\b/i,
+];
 
 function parsePositiveIntArg(args, argName, defaultValue) {
   const rawArg = args.find(a => a.startsWith(`${argName}=`));
@@ -79,6 +92,36 @@ function getSectionBlock(content, headingRegex) {
   }
 
   return lines.slice(startIndex, endIndex).join('\n');
+}
+
+function findFaqNarrativeMatch(text) {
+  for (const pattern of FAQ_BANNED_NARRATIVE_PATTERNS) {
+    const match = text.match(pattern);
+    if (match) return match[0];
+  }
+  return null;
+}
+
+function extractFaqSchemaAcceptedAnswers(content) {
+  const regex = /"acceptedAnswer"\s*:\s*\{[\s\S]*?"text"\s*:\s*"((?:\\.|[^"\\])*)"/gi;
+  const matches = [];
+  let match;
+
+  while ((match = regex.exec(content)) !== null) {
+    const raw = match[1];
+    const unescaped = raw
+      .replace(/\\n/g, ' ')
+      .replace(/\\r/g, ' ')
+      .replace(/\\t/g, ' ')
+      .replace(/\\"/g, '"')
+      .replace(/\\\\/g, '\\')
+      .trim();
+    if (unescaped.length > 0) {
+      matches.push(unescaped);
+    }
+  }
+
+  return matches;
 }
 
 // ── Bluesky post extraction ───────────────────────────────────────────────────
@@ -182,6 +225,30 @@ function run(filePath, requestedSections, expectedCounts) {
       const boldA = faqText.split('\n').filter(l => /^\*\*A\./.test(l.trim()));
       if (boldA.length > 0) {
         errors.push(`${boldA.length} FAQ answer line(s) are bolded — A. lines must be plain text, not bold (HR-2).`);
+      }
+
+      // FAQ banned podcast-narrative phrasing (answers only, case-insensitive)
+      const answerLines = faqText
+        .split('\n')
+        .map(l => l.trim())
+        .filter(l => /^A\./i.test(l));
+      for (const line of answerLines) {
+        const answerText = line.replace(/^A\.\s*/i, '');
+        const bannedMatch = findFaqNarrativeMatch(answerText);
+        if (bannedMatch) {
+          errors.push(`FAQ answer contains banned podcast-narrative phrase "${bannedMatch}" (FAQ-only rule). Reframe as standalone consumer guidance.`);
+        }
+      }
+    }
+  }
+
+  // FAQ schema acceptedAnswer.text banned podcast-narrative phrasing (FAQ-only, case-insensitive)
+  if (shouldRun(requestedSections, 'FAQ') || shouldRun(requestedSections, 'SCHEMA')) {
+    const acceptedAnswerTexts = extractFaqSchemaAcceptedAnswers(content);
+    for (const answerText of acceptedAnswerTexts) {
+      const bannedMatch = findFaqNarrativeMatch(answerText);
+      if (bannedMatch) {
+        errors.push(`FAQ schema acceptedAnswer.text contains banned podcast-narrative phrase "${bannedMatch}" (FAQ-only rule). Reframe as standalone consumer guidance.`);
       }
     }
   }

@@ -28,6 +28,8 @@ Before invoking, enforce the confirmed-title gate from house rules: title must b
   - FAQ listener-usefulness gate: answers must help a listener decide whether to listen, buy, understand, or pair.
   - FAQ tone gate: plain-language, front-loaded, conversational.
   - FAQ format and length gate: strict HR-2 Q./A. format and 40 to 60 words per answer.
+  - FAQ standalone-answer gate (FAQ-only scope): for FAQ answers, FAQ schema `acceptedAnswer.text`, and generated FAQ blocks in episode-content/show-notes outputs, every answer must make sense without episode context.
+  - FAQ podcast-narrative gate (FAQ-only scope): remove obvious podcast-internal phrasing in FAQ answers and FAQ schema answers (e.g., "In this episode", "On this episode", "Joe says", "Joe points out", "Carmela says", "we tasted", "we got", "we chose", "why we did this episode", "on the show", "our episode"). Keep consumer recommendation voice, but do not recap the show.
   - Facts gate: no invented facts.
 
 1. Confirm you have read the episode script via `node scripts/read_gdoc.js <docId>`. Find the docId in `docs/work-log.md`. If not read yet, read it now before proceeding.
@@ -73,6 +75,8 @@ Generate only the sections listed under **Requested sections** below. Do not gen
 - FAQ answers must be grounded in episode materials only.
 - FAQ answers must be useful for listen/buy/understand/pair decisions.
 - FAQ answers must be 40 to 60 words, front-loaded, plain-language, conversational.
+- FAQ-only standalone requirement: FAQ answers and FAQ schema `acceptedAnswer.text` must stand on their own in search snippets, AI answers, and podcast app snippets without prior episode context.
+- FAQ-only narrative-ban requirement: strip obvious podcast-recap phrasing from FAQ answers and FAQ schema answers ("In this episode", "On this episode", "Joe says", "Joe points out", "Carmela says", "we tasted", "we got", "we chose", "why we did this episode", "on the show", "our episode").
 - Enforce strict HR-2 Q./A. format.
 - Do not invent facts.
 - Do not output unrequested sections.
@@ -225,6 +229,7 @@ Before returning your output, run through this checklist and report results for 
 7. Q./A. format: confirm every Q line starts with `**Q.` and every A line starts with `A.` (plain).
 8. Facts: confirm every rating, tasting note, and pairing comes from the episode data provided.
 9. FAQ grounding: for each of the 7 Q&A pairs, name the specific episode data point the answer draws from (a tasting note, a dialogue line, a rating, a research fact from the provided links). If any answer draws only from general wine knowledge not present in the provided episode data, replace that Q&A pair before returning.
+10. FAQ narrative gate: confirm FAQ answer lines (`A.`) and FAQ schema `acceptedAnswer.text` contain none of these case-insensitive phrases: "In this episode", "On this episode", "Joe says", "Joe points out", "Carmela says", "we tasted", "we got", "we chose", "why we did this episode", "on the show", "our episode". If any are present, rewrite before returning.
 
 Report: "Self-check complete. [N] issues found." then list any issues. Fix all issues before returning.
 

@@ -240,6 +240,10 @@ Before running `/generate-episode-content`, confirm the episode title is selecte
 - FAQ answers must be grounded in transcript, show notes, tasting notes, ratings, wine details, or the episode topic.
 - FAQ answers must be useful to someone deciding whether to listen, buy, understand, or pair the wine.
 - FAQ answers should be 40 to 60 words, front-loaded, plain-language, and conversational.
+- FAQ-only standalone rule: this applies only to FAQ answers, FAQ schema `acceptedAnswer.text`, and generated FAQ blocks in episode-content/show-notes outputs. It does not apply to titles, Bluesky, show descriptions, captions, title rationales, cover-art prompts, or other sections unless Joe explicitly asks.
+- FAQ-only podcast-narrative ban: do not frame FAQ answers as episode recap. Avoid obvious podcast-internal phrasing such as "In this episode", "On this episode", "Joe says", "Joe points out", "Carmela says", "we tasted", "we got", "we chose", "why we did this episode", "on the show", and "our episode".
+- FAQ-only first-person nuance: first-person should be avoided by default in FAQ answers, but it is allowed when it gives clear consumer recommendation guidance and does not turn the answer into recap.
+- Reframe recap into guidance: keep episode evidence (regions, style details, tasting notes, pairings, price/value signals, rating implications, food-friendliness) but present it as standalone consumer guidance, not as what happened on the podcast.
 - No invented facts.
 
 ---

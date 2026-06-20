@@ -92,6 +92,8 @@ All content should feel:
 - Full transcript on the page is high-value for SEO/AEO — keep it, but formatted with H2/H3 section headers matching the script's chapter markers, not as a raw wall of text
 - Q&A block: focus on queries with real search volume (what is X, what does X taste like, is X worth buying at the category level, what food pairs with X). Do not include questions too specific to earn search traffic (individual product ratings by year won't be searched). Follow house rules for exact count.
 - Each answer: 40-60 words, front-loaded with the verdict, conversational voice
+- FAQ-only standalone guidance: FAQ answers and FAQ schema answers must make sense when extracted into Google results, AI answers, or app snippets without prior episode context.
+- FAQ-only narrative framing rule: avoid podcast-recap phrasing in FAQ answers. Keep recommendation voice, value judgments, style guidance, and pairing guidance, but present them as consumer-facing guidance instead of show-internal narration.
 - Add FAQ schema markup to every Q&A block (see seo-geo-strategy.md for template)
 
 **Episode output file:**
