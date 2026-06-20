@@ -95,6 +95,10 @@ Score all concepts on 5 criteria (10 points each, total out of 50):
 
 Never present concepts without scores and a confirmation block.
 
+Required display contract for any concepts shown to Joe:
+- Concept heading format: **Concept [Letter]: [Name] - [N]/50**
+- Recommendation line format: **Recommended: Concept [X] - [N]/50**
+
 Title alignment is a binary PASS/FAIL gate — not a scored criterion. Gate test: does the image actively contradict the title OR reveal the verdict? If no to both, it passes. Do not score it.
 
 **HR-14: Cover art character bible.**
@@ -134,6 +138,10 @@ For each presented concept, include concise evidence fields:
 - Why it is not portable
 - Thumbnail readability
 Keep detailed reject reasoning internal by default. User-facing output should include only a concise reject summary unless Joe asks for full reject details.
+
+Second-review score-accuracy gate (PASS/FAIL):
+- PASS only if every shown concept has a visible score in the required heading format (Concept [Letter]: [Name] - [N]/50), the score is an integer from 0 to 50, and the score math is correct under HR-13.
+- FAIL if any score is missing, malformed, out of range, or miscalculated. Failing concepts must be blocked from presentation.
 
 **HR-47: Cover art ChatGPT prompt must be saved to the episode output file.**
 After Joe selects a concept, append the full ChatGPT prompt to `outputs/episodes/ep[N]-[slug].md` under a `## COVER ART` section. Format: the confirmed episode title as the subheading (`### Ep[N] — [Episode Title]`), then the full prompt as a code block. Never use the internal concept brainstorm name as the heading — that label is for production tracking only, not the output file. Never leave the prompt only in the conversation. If the output file does not exist yet, create it with just the COVER ART section and note that the rest of the content is pending.

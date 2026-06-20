@@ -68,11 +68,22 @@ Pre-1. **Core thesis and title frame gates (hard reject).**
    - Fails Portability gate
    - Fails Thumbnail Readability gate
    - Has a FAIL on brand rule 11 (spoiler)
+   Before any concept is presented, enforce this output contract:
+   - Heading format must be exactly: **Concept [Letter]: [Short title] - [N]/50**
+   - Recommendation format must be exactly: **Recommended: Concept [X] - [N]/50**
    Aim to present at least 3 passing concepts. If fewer than 3 concepts pass after two regeneration rounds, stop and report the blocker instead of showing weak or failing options. Never carry failing or sub-40 concepts into the second review.
 
 3. **Spawn a second review subagent** on the surviving concepts only.
-   Prompt: "You are a cover art critic for The Wine Pair Podcast. Read `docs/house-rules.md` in full, paying special attention to HR-40 and HR-14a, plus the hard gates HR-53 through HR-60. Then review each concept below for: (1) Core Thesis gate, (2) Title Alignment gate, (3) Side-Banter gate, (4) Misframing gate, (5) Portability gate, (6) Thumbnail Readability gate, (7) spoiler rule (HR-40), (8) HR-14a physical-action opening, (9) all 11 brand rules, and (10) score accuracy. For contrast episodes, enforce visual dominance: the rejected thing may appear only as minor background/corner/pushed-aside detail, and fails if it is the largest, central, brightest, or most memorable element. Return PASS/FAIL for each gate per concept. If any hard gate fails, mark the concept REJECT. Provide a concise reject summary by category and keep detailed reject reasoning in an internal reject log unless requested."
+   Prompt: "You are a cover art critic for The Wine Pair Podcast. Read `docs/house-rules.md` in full, paying special attention to HR-40 and HR-14a, plus the hard gates HR-53 through HR-60. Then review each concept below for: (1) Core Thesis gate, (2) Title Alignment gate, (3) Side-Banter gate, (4) Misframing gate, (5) Portability gate, (6) Thumbnail Readability gate, (7) spoiler rule (HR-40), (8) HR-14a physical-action opening, (9) all 11 brand rules, and (10) score accuracy. Score accuracy is PASS only when every shown concept has a visible heading score in the required format (`Concept [Letter]: [Short title] - [N]/50`), the score is an integer from 0 to 50, and the score math is valid under HR-13. Score accuracy is FAIL if any score is missing, malformed, out of range, or miscalculated. For contrast episodes, enforce visual dominance: the rejected thing may appear only as minor background/corner/pushed-aside detail, and fails if it is the largest, central, brightest, or most memorable element. Return PASS/FAIL for each gate per concept. If any hard gate fails, mark the concept REJECT. Provide a concise reject summary by category and keep detailed reject reasoning in an internal reject log unless requested."
    No concept reaches Joe until the second pass returns no FAILs.
+
+3.5. **Pre-send output compliance check (internal).**
+   Before sending concepts to Joe, verify all of the following:
+   - At least 3 concepts passed all hard gates (or the blocker path is invoked)
+   - Every shown concept heading includes a visible `[N]/50` in the required heading format
+   - A scored recommendation line is present in the exact format `Recommended: Concept [X] - [N]/50`
+   - The second-review output returned score-accuracy PASS for every shown concept
+   If any item fails, do not present concepts. Fix and re-run review, or report blocker.
 
 4. **Generate a Session Report and a reject log.**
    Keep detailed reject reasoning in an internal reject log by default. User-facing output should include only a concise reject summary when useful (for example: "Rejected 4 concepts: 2 side-banter, 1 misframing, 1 portable/generic"). Append the session report entry to `data/cover-art-session-reports.md` during real runs.
@@ -107,7 +118,7 @@ Pre-1. **Core thesis and title frame gates (hard reject).**
    ```
 
 5. **Give a recommendation, then ask Joe which concept he wants.**
-   State which concept you would choose and one sentence explaining why — the reason must be specific to this episode (not generic score-based language like "it scored highest"). Then ask: "Which concept would you like for Ep[N]?"
+   State which concept you would choose and one sentence explaining why — the reason must be specific to this episode (not generic score-based language like "it scored highest"). Include the scored recommendation line in exact format: **Recommended: Concept [X] - [N]/50**. Then ask: "Which concept would you like for Ep[N]?"
 
 5.5. **Stop boundary.** After asking which concept Joe wants, stop. Do not infer or auto-run `/review-titles`, `/generate-episode-content`, or any other command.
 
@@ -245,7 +256,7 @@ Use this as the style reference, but create a new scene. Do not copy the exact p
 
 First, output this confirmation block:
 
-> **Cover art sub-agent ran.** Checked: character bible (HR-14), HR-14a (active verbs), approved style format, recent physical actions from cover-art-scenes.md ([list the specific actions]), all 11 brand rules including HR-40 (spoiler). Title gate applied (binary pass/fail only). Each concept scored on 5 criteria: Visual Arrest, Scroll-Stop Power, Episode Specificity, Concept Originality, Character Expressiveness. Recommended: Concept [X] ([N]/50).
+> **Cover art sub-agent ran.** Checked: character bible (HR-14), HR-14a (active verbs), approved style format, recent physical actions from cover-art-scenes.md ([list the specific actions]), all 11 brand rules including HR-40 (spoiler). Title gate applied (binary pass/fail only). Each concept scored on 5 criteria: Visual Arrest, Scroll-Stop Power, Episode Specificity, Concept Originality, Character Expressiveness. Recommended: Concept [X] - [N]/50.
 
 Then present 5 concepts. For each:
 
@@ -270,5 +281,5 @@ Then present 5 concepts. For each:
 
 After all passing concepts:
 
-**Recommended: Concept [X] — [Total]/50**
+**Recommended: Concept [X] - [N]/50**
 [Two sentences: why this concept wins and why it's right for this episode specifically.]
