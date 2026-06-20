@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-06-20 (session 26 — Ep223 title confirmed + show-note assets drafted)
+**Last updated:** 2026-06-20 (session 26 — Ep223 show-note social content completed)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
 
@@ -79,6 +79,8 @@
   - `## KEY QUESTIONS` (7)
   - `## FREQUENTLY ASKED QUESTIONS` (7, Q./A. format)
   - `## COVER ART` ChatGPT prompt (ready to paste)
+- Added `### BLUESKY POSTS` (10) to `outputs/episodes/ep223-sangiovese-outside-tuscany.md` using transcript-grounded facts and unique external source links for posts 4-10.
+- Validated Episode 223 Bluesky section with `node scripts/validate_episode.js outputs/episodes/ep223-sangiovese-outside-tuscany.md --sections=BLUESKY` (PASS).
 
 **Pending:**
 - If needed: generate alternate cover-art concept prompts before final image generation.
