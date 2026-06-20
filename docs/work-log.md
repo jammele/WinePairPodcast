@@ -83,6 +83,8 @@
 - Validated Episode 223 Bluesky section with `node scripts/validate_episode.js outputs/episodes/ep223-sangiovese-outside-tuscany.md --sections=BLUESKY` (PASS).
 - Regenerated `## KEY QUESTIONS` and `## FREQUENTLY ASKED QUESTIONS` for Episode 223 to replace weak first draft.
 - Revalidated with `node scripts/validate_episode.js outputs/episodes/ep223-sangiovese-outside-tuscany.md --sections=KEY_QUESTIONS,FAQ` (PASS).
+- Cleaned `outputs/episodes/ep223-sangiovese-outside-tuscany.md` to requested scope only by removing `## Wine in the News` and `## COVER ART` sections.
+- Revalidated scoped deliverable with `node scripts/validate_episode.js outputs/episodes/ep223-sangiovese-outside-tuscany.md --sections=KEY_QUESTIONS,FAQ,BLUESKY` (PASS, no warnings).
 
 **Pending:**
 - If needed: generate alternate cover-art concept prompts before final image generation.
