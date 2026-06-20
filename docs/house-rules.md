@@ -135,6 +135,18 @@ Check `data/episode-titles.md` Named Series Reference before generating. Match c
 **HR-20: Run /review-titles before showing Joe any options.**
 No exceptions. Fix all FAILs before presenting.
 
+**HR-49: Episode title reviews must always use the same thorough scored workflow.**
+Every title-generation session must run the full standardized `/review-titles` process with scoring. No ad-hoc, partial, or "quick" title checks.
+
+Minimum required every time:
+- Two review rounds (initial review + post-fix review)
+- PASS/FAIL checks against all title rules
+- Per-title scoring (Clickability and AI Discovery)
+- Explicit quality gate before presentation
+- Show only titles that clear the quality gate
+
+If this full scored process is not completed, titles must not be presented.
+
 **HR-40: Cover art must not reveal the episode verdict.**
 The visual should create the central question from the title, not answer it. Any concept that shows outcome — thumbs up/down on specific wines, one bottle going to the sink, a "winner vs. loser" framing — fails this rule. The test: if someone sees the thumbnail, do they already know what Joe and Carmela concluded? If yes, hard FAIL. Reframe to create the question, not announce the answer.
 
