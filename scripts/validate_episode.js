@@ -2,6 +2,8 @@
 /**
  * Episode output file validator — checks SEO/AEO + social content.
  * Usage: node scripts/validate_episode.js outputs/episodes/ep217-frappato.md
+ * Partial: node scripts/validate_episode.js outputs/episodes/ep217-frappato.md --sections=KEY_QUESTIONS,FAQ
+ * Optional count overrides: --expected-key-questions=7 --expected-faq-pairs=7
  *
  * Checks: required sections, FAQ heading, Q./A. format, Review Schema,
  * FAQPage schema, Bluesky post count, URL structure (posts 1-3 vs 4-10),
@@ -11,6 +13,73 @@
 import { readFileSync, existsSync } from 'fs';
 
 const PODCAST_DOMAIN = 'thewinepairpodcast';
+const VALID_SECTIONS = new Set(['KEY_QUESTIONS', 'FAQ', 'SCHEMA', 'BLUESKY']);
+const DEFAULT_EXPECTED_KEY_QUESTIONS = 7;
+const DEFAULT_EXPECTED_FAQ_PAIRS = 7;
+
+function parsePositiveIntArg(args, argName, defaultValue) {
+  const rawArg = args.find(a => a.startsWith(`${argName}=`));
+  if (!rawArg) return defaultValue;
+  const rawValue = (rawArg.split('=')[1] || '').trim();
+  const parsed = Number.parseInt(rawValue, 10);
+  if (!Number.isInteger(parsed) || parsed <= 0) {
+    throw new Error(`Invalid ${argName} value: "${rawValue}". Use a positive integer.`);
+  }
+  return parsed;
+}
+
+function parseSectionsArg(args) {
+  const sectionsArg = args.find(a => a.startsWith('--sections='));
+  if (!sectionsArg) return null;
+
+  const raw = sectionsArg.split('=')[1] || '';
+  if (!raw.trim()) {
+    throw new Error('Invalid --sections value. Provide a comma-separated list like KEY_QUESTIONS,FAQ or use all.');
+  }
+
+  const parsed = raw
+    .split(',')
+    .map(s => s.trim().toUpperCase())
+    .filter(Boolean);
+
+  if (parsed.includes('ALL')) return null;
+
+  const invalid = parsed.filter(s => !VALID_SECTIONS.has(s));
+  if (invalid.length > 0) {
+    throw new Error(`Invalid section name(s): ${invalid.join(', ')}. Valid: KEY_QUESTIONS, FAQ, SCHEMA, BLUESKY, all.`);
+  }
+
+  return new Set(parsed);
+}
+
+function shouldRun(requestedSections, sectionName) {
+  if (!requestedSections) return true;
+  return requestedSections.has(sectionName);
+}
+
+function getSectionBlock(content, headingRegex) {
+  const lines = content.split('\n');
+  let startIndex = -1;
+
+  for (let i = 0; i < lines.length; i++) {
+    if (headingRegex.test(lines[i])) {
+      startIndex = i;
+      break;
+    }
+  }
+
+  if (startIndex === -1) return null;
+
+  let endIndex = lines.length;
+  for (let i = startIndex + 1; i < lines.length; i++) {
+    if (/^###\s+/.test(lines[i]) || /^##\s+/.test(lines[i])) {
+      endIndex = i;
+      break;
+    }
+  }
+
+  return lines.slice(startIndex, endIndex).join('\n');
+}
 
 // ── Bluesky post extraction ───────────────────────────────────────────────────
 function extractBlueskyPosts(content) {
@@ -48,7 +117,7 @@ function extractBlueskyPosts(content) {
 }
 
 // ── Main validator ────────────────────────────────────────────────────────────
-function run(filePath) {
+function run(filePath, requestedSections, expectedCounts) {
   if (!existsSync(filePath)) {
     console.error(`File not found: ${filePath}`);
     process.exit(1);
@@ -58,70 +127,100 @@ function run(filePath) {
   const errors = [];
   const warnings = [];
 
-  // ── 1. Em-dashes (check SEO/AEO section only; exclude code blocks and COVER ART) ──
-  const seoMatch = content.match(/##\s*SEO[\s\S]*?(?=\n##\s*COVER ART|\n##\s*$|$)/i);
-  // Strip code blocks before checking — em-dash rule applies to prose, not ChatGPT prompts
-  const stripCodeBlocks = (s) => s.replace(/```[\s\S]*?```/g, '');
-  const seoContent = seoMatch ? stripCodeBlocks(seoMatch[0]) : stripCodeBlocks(content.replace(/\n##\s*COVER ART[\s\S]*$/i, ''));
-  const emDashCount = (seoContent.match(/—/g) || []).length;
-  if (emDashCount > 0) {
-    errors.push(`Em-dash (—) found ${emDashCount} time(s) in SEO/AEO section. Remove every one (HR-1).`);
+  // ── 1. Em-dashes (run for prose-bearing sections only) ───────────────────
+  const validateEmDash =
+    shouldRun(requestedSections, 'KEY_QUESTIONS') ||
+    shouldRun(requestedSections, 'FAQ') ||
+    shouldRun(requestedSections, 'BLUESKY') ||
+    !requestedSections;
+
+  if (validateEmDash) {
+    const seoMatch = content.match(/##\s*SEO[\s\S]*?(?=\n##\s*COVER ART|\n##\s*$|$)/i);
+    // Strip code blocks before checking — em-dash rule applies to prose, not ChatGPT prompts
+    const stripCodeBlocks = (s) => s.replace(/```[\s\S]*?```/g, '');
+    const seoContent = seoMatch ? stripCodeBlocks(seoMatch[0]) : stripCodeBlocks(content.replace(/\n##\s*COVER ART[\s\S]*$/i, ''));
+    const emDashCount = (seoContent.match(/—/g) || []).length;
+    if (emDashCount > 0) {
+      errors.push(`Em-dash (—) found ${emDashCount} time(s) in SEO/AEO section. Remove every one (HR-1).`);
+    }
   }
 
   // ── 2. Required sections ──────────────────────────────────────────────────
   const requiredSections = [
-    { pattern: /KEY QUESTIONS/i,              name: 'KEY QUESTIONS' },
-    { pattern: /FREQUENTLY ASKED QUESTIONS/i, name: 'FREQUENTLY ASKED QUESTIONS' },
-    { pattern: /SCHEMA MARKUP/i,              name: 'SCHEMA MARKUP' },
-    { pattern: /BLUESKY POSTS/i,              name: 'BLUESKY POSTS' },
+    { key: 'KEY_QUESTIONS', pattern: /KEY QUESTIONS/i, name: 'KEY QUESTIONS' },
+    { key: 'FAQ', pattern: /FREQUENTLY ASKED QUESTIONS/i, name: 'FREQUENTLY ASKED QUESTIONS' },
+    { key: 'SCHEMA', pattern: /SCHEMA MARKUP/i, name: 'SCHEMA MARKUP' },
+    { key: 'BLUESKY', pattern: /BLUESKY POSTS/i, name: 'BLUESKY POSTS' },
   ];
-  for (const { pattern, name } of requiredSections) {
-    if (!pattern.test(content)) {
+  for (const { key, pattern, name } of requiredSections) {
+    if (shouldRun(requestedSections, key) && !pattern.test(content)) {
       errors.push(`Missing required section: ${name}`);
     }
   }
 
   // ── 3. FAQ heading must not use wrong label ───────────────────────────────
-  if (/FULL Q&A/i.test(content)) {
+  if (shouldRun(requestedSections, 'FAQ') && /FULL Q&A/i.test(content)) {
     errors.push('FAQ heading uses "FULL Q&A" — must be exactly "FREQUENTLY ASKED QUESTIONS" (HR-29).');
   }
 
   // ── 4. Q./A. format ───────────────────────────────────────────────────────
-  const faqBlock = content.match(/FREQUENTLY ASKED QUESTIONS[\s\S]*?(?=###|$)/i);
-  if (faqBlock) {
-    const faqText = faqBlock[0];
-    // Questions must start with **Q.
-    const questionLines = faqText.split('\n').filter(l => /^\*\*Q\./.test(l.trim()) || (/\?$/.test(l.trim()) && l.trim().length > 10));
-    const badQ = questionLines.filter(l => !/^\*\*Q\./.test(l.trim()));
-    if (badQ.length > 0) {
-      errors.push(`${badQ.length} FAQ question line(s) not using **Q. bold format (HR-2).`);
-    }
-    // Answer lines must start with plain A.
-    const answerLines = faqText.split('\n').filter(l => /^A\./.test(l.trim()));
-    const boldA = faqText.split('\n').filter(l => /^\*\*A\./.test(l.trim()));
-    if (boldA.length > 0) {
-      errors.push(`${boldA.length} FAQ answer line(s) are bolded — A. lines must be plain text, not bold (HR-2).`);
+  if (shouldRun(requestedSections, 'FAQ')) {
+    const faqBlock = getSectionBlock(content, /^###\s*FREQUENTLY ASKED QUESTIONS/i);
+    if (faqBlock) {
+      const faqText = faqBlock;
+      // Questions must start with **Q.
+      const questionLines = faqText.split('\n').filter(l => /^\*\*Q\./.test(l.trim()) || (/\?$/.test(l.trim()) && l.trim().length > 10));
+      const badQ = questionLines.filter(l => !/^\*\*Q\./.test(l.trim()));
+      if (badQ.length > 0) {
+        errors.push(`${badQ.length} FAQ question line(s) not using **Q. bold format (HR-2).`);
+      }
+      const faqPairs = faqText.split('\n').filter(l => /^\*\*Q\./.test(l.trim())).length;
+      if (faqPairs !== expectedCounts.faqPairs) {
+        errors.push(`FAQ pair count is ${faqPairs} — must be exactly ${expectedCounts.faqPairs} unless explicitly overridden.`);
+      }
+      // Answer lines must start with plain A.
+      const boldA = faqText.split('\n').filter(l => /^\*\*A\./.test(l.trim()));
+      if (boldA.length > 0) {
+        errors.push(`${boldA.length} FAQ answer line(s) are bolded — A. lines must be plain text, not bold (HR-2).`);
+      }
     }
   }
 
   // ── 5. Review Schema present (skip for interview episodes) ───────────────
   const isInterviewEpisode = /Type:.*interview episode/i.test(content);
-  if (!isInterviewEpisode && !/"@type"\s*:\s*"Review"/.test(content)) {
+  if (shouldRun(requestedSections, 'SCHEMA') && !isInterviewEpisode && !/"@type"\s*:\s*"Review"/.test(content)) {
     errors.push('No Review Schema block found. Add at least one Review schema for each wine reviewed.');
   }
 
+  // ── 6.5 Key Questions count ───────────────────────────────────────────────
+  if (shouldRun(requestedSections, 'KEY_QUESTIONS')) {
+    const keyQuestionsBlock = getSectionBlock(content, /^###\s*KEY QUESTIONS/i);
+    if (keyQuestionsBlock) {
+      const keyQuestionCount = keyQuestionsBlock
+        .split('\n')
+        .map(l => l.trim())
+        .filter(l => /^[-*]\s+/.test(l) && /\?$/.test(l)).length;
+
+      if (keyQuestionCount !== expectedCounts.keyQuestions) {
+        errors.push(`Key Questions count is ${keyQuestionCount} — must be exactly ${expectedCounts.keyQuestions} unless explicitly overridden.`);
+      }
+    }
+  }
+
   // ── 6. FAQPage Schema present ─────────────────────────────────────────────
-  if (!/"@type"\s*:\s*"FAQPage"/.test(content)) {
+  if (shouldRun(requestedSections, 'SCHEMA') && !/"@type"\s*:\s*"FAQPage"/.test(content)) {
     errors.push('No FAQPage schema block found. Add a FAQPage schema covering all Q&A pairs.');
   }
 
   // ── 7. Bluesky posts ──────────────────────────────────────────────────────
-  const posts = extractBlueskyPosts(content);
+  const posts = shouldRun(requestedSections, 'BLUESKY') ? extractBlueskyPosts(content) : [];
 
-  if (posts.length === 0) {
-    errors.push('No Bluesky posts found. Expected 10 posts in "### BLUESKY POSTS" section.');
-  } else if (posts.length !== 10) {
-    errors.push(`Bluesky post count is ${posts.length} — must be exactly 10.`);
+  if (shouldRun(requestedSections, 'BLUESKY')) {
+    if (posts.length === 0) {
+      errors.push('No Bluesky posts found. Expected 10 posts in "### BLUESKY POSTS" section.');
+    } else if (posts.length !== 10) {
+      errors.push(`Bluesky post count is ${posts.length} — must be exactly 10.`);
+    }
   }
 
   if (posts.length > 0) {
@@ -213,13 +312,41 @@ function run(filePath) {
 const args = process.argv.slice(2);
 if (args.length === 0) {
   console.log('Usage: node scripts/validate_episode.js outputs/episodes/ep[N]-[slug].md');
+  console.log('Partial: node scripts/validate_episode.js outputs/episodes/ep[N]-[slug].md --sections=KEY_QUESTIONS,FAQ');
+  console.log('Optional count overrides: --expected-key-questions=7 --expected-faq-pairs=7');
   console.log('Example: node scripts/validate_episode.js outputs/episodes/ep217-frappato.md');
   process.exit(1);
 }
 
+let requestedSections = null;
+let expectedCounts = {
+  keyQuestions: DEFAULT_EXPECTED_KEY_QUESTIONS,
+  faqPairs: DEFAULT_EXPECTED_FAQ_PAIRS,
+};
+try {
+  requestedSections = parseSectionsArg(args);
+  expectedCounts = {
+    keyQuestions: parsePositiveIntArg(args, '--expected-key-questions', DEFAULT_EXPECTED_KEY_QUESTIONS),
+    faqPairs: parsePositiveIntArg(args, '--expected-faq-pairs', DEFAULT_EXPECTED_FAQ_PAIRS),
+  };
+} catch (err) {
+  console.error(err.message);
+  process.exit(1);
+}
+
+const fileArgs = args.filter(a =>
+  !a.startsWith('--sections=') &&
+  !a.startsWith('--expected-key-questions=') &&
+  !a.startsWith('--expected-faq-pairs=')
+);
+if (fileArgs.length === 0) {
+  console.error('No file paths provided.');
+  process.exit(1);
+}
+
 let totalErrors = 0;
-for (const filePath of args) {
-  totalErrors += run(filePath);
+for (const filePath of fileArgs) {
+  totalErrors += run(filePath, requestedSections, expectedCounts);
 }
 
 console.log('');

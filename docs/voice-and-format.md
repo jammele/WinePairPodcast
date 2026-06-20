@@ -2,6 +2,8 @@
 
 Single reference for how all content should sound and be structured. Applies to blog posts, show notes, social copy, and episode support materials.
 
+For non-negotiable process and format constraints, `docs/house-rules.md` is canonical. If this file conflicts with house rules, follow house rules.
+
 ---
 
 ## Core voice
@@ -78,17 +80,17 @@ All content should feel:
 - Experience Snapshot (optional — include when the tasting surprise, disagreement, or verdict is the main reader value; required for any comparison/challenge episode blog post)
 
 **Show notes structure:**
-- Key Questions at top (questions only — no answers, no Key Insights summary block)
+- Key Questions at top (questions only — no answers, no Key Insights summary block). Count is canonical in house rules: exactly 7 unless Joe explicitly requests a different number.
 - Timestamps for every section
 - Wine details: Region / Year / Price / Retailer / Alcohol / Grapes / Rating
 - Tasting notes: Color / Nose / Mouth / Food pairings
-- Q&A block at bottom headed **"FREQUENTLY ASKED QUESTIONS"** — not "Full Q&A" or any other label (6-8 questions, answers 40-60 words each; format as Q. / A. with bold Q. before each question and A. before each answer)
+- Q&A block at bottom headed **"FREQUENTLY ASKED QUESTIONS"** — not "Full Q&A" or any other label. Follow house rules for exact Q./A. formatting. Count is canonical in house rules: exactly 7 pairs unless Joe explicitly requests a different number.
 - Research links compiled at bottom
 
 **SEO/AEO rules for show notes:**
 - Do NOT add a Key Insights block at the top — it duplicates the transcript and hurts UX
 - Full transcript on the page is high-value for SEO/AEO — keep it, but formatted with H2/H3 section headers matching the script's chapter markers, not as a raw wall of text
-- Q&A block: 6-8 questions maximum. Focus on queries with real search volume (what is X, what does X taste like, is X worth buying at the category level, what food pairs with X). Do not include questions too specific to earn search traffic (individual product ratings by year won't be searched).
+- Q&A block: focus on queries with real search volume (what is X, what does X taste like, is X worth buying at the category level, what food pairs with X). Do not include questions too specific to earn search traffic (individual product ratings by year won't be searched). Follow house rules for exact count.
 - Each answer: 40-60 words, front-loaded with the verdict, conversational voice
 - Add FAQ schema markup to every Q&A block (see seo-geo-strategy.md for template)
 

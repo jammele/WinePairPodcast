@@ -1,14 +1,34 @@
 # /generate-episode-content
 
-Generate all SEO/AEO content and 10 Bluesky posts for an episode. Enforces every rule via sub-agent. Saves to the episode output file and validates before showing Joe.
+Generate SEO/AEO content and 10 Bluesky posts for an episode, either full suite or requested subset. Enforces every rule via sub-agent. Saves to the episode output file and validates before showing Joe.
 
 ## When to invoke
 
 When Joe asks for: SEO content, AEO content, show notes questions, Bluesky posts, or "episode content" for a recorded episode.
+Before invoking, enforce the confirmed-title gate from house rules: title must be confirmed unless Joe explicitly overrides.
 
 ## How to run
 
-0. **Check for existing work first.** Before reading the script, check whether `outputs/episodes/ep[N]-*.md` already exists. If it does, scan it and list which sections are already present (Wine in the News, Key Questions, FAQ, Schema Markup, Bluesky posts) and which are missing. Only generate the missing sections. If all sections already exist, report that to Joe and ask if he wants anything regenerated.
+0. **Check for existing work first, within requested scope only.** Before reading the script, check whether `outputs/episodes/ep[N]-*.md` already exists. If it does, scan it and list which requested sections are already present and which requested sections are missing. Only generate missing sections within the requested scope. If all requested sections already exist, report that to Joe and ask if he wants anything regenerated.
+0.5. **Resolve requested scope.** Determine exactly which sections Joe asked for.
+  - Full request terms ("episode content", "SEO/AEO content", "all sections") => generate all four sections: Key Questions, Frequently Asked Questions, Schema Markup, Bluesky Posts.
+  - Partial request => generate only requested sections.
+  - If phrasing is ambiguous, ask one clarifying question and proceed with only the confirmed scope.
+  - Do not infer adjacent tasks. This command does not generate title options, cover art, Wine in the News, or blog post copy unless explicitly requested.
+
+0.6. **Confirmed-title gate.** Verify the episode title is confirmed in `docs/work-log.md` and/or `data/episode-titles.md` before generation. If title is pending or unclear, stop and ask Joe to confirm title selection. Proceed without confirmation only when Joe explicitly overrides.
+
+0.7. **Delivery gates for requested sections (mandatory).**
+  - Scope gate: generate only requested sections. Never add unrequested sections.
+  - Key Questions count gate: exactly 7 unless Joe explicitly requests a different number.
+  - Key Questions intent gate: no trivia-only questions.
+  - FAQ count gate: exactly 7 unless Joe explicitly requests a different number.
+  - FAQ search-intent gate: questions must match real listener/search intent.
+  - FAQ episode-grounding gate: answers must be grounded in the episode materials.
+  - FAQ listener-usefulness gate: answers must help a listener decide whether to listen, buy, understand, or pair.
+  - FAQ tone gate: plain-language, front-loaded, conversational.
+  - FAQ format and length gate: strict HR-2 Q./A. format and 40 to 60 words per answer.
+  - Facts gate: no invented facts.
 
 1. Confirm you have read the episode script via `node scripts/read_gdoc.js <docId>`. Find the docId in `docs/work-log.md`. If not read yet, read it now before proceeding.
 2. From the script, extract:
@@ -20,9 +40,12 @@ When Joe asks for: SEO content, AEO content, show notes questions, Bluesky posts
    - Which wine they chose to finish tonight
    - All research links listed in the script — these become Bluesky post source URLs
    - The episode's key hook or angle (one sentence describing what makes it interesting or surprising)
-3. Spawn a subagent with the instructions below, substituting all extracted episode data.
+3. Spawn a subagent with the instructions below, substituting all extracted episode data and the resolved requested scope.
 4. When the subagent returns output, save it to `outputs/episodes/ep[N]-[slug].md` under the heading `## SEO / AEO + SOCIAL CONTENT`.
-5. Run `node scripts/validate_episode.js outputs/episodes/ep[N]-[slug].md`. Fix every error before showing Joe anything.
+5. Run validator with section scope:
+  - Full suite: `node scripts/validate_episode.js outputs/episodes/ep[N]-[slug].md`
+  - Partial: `node scripts/validate_episode.js outputs/episodes/ep[N]-[slug].md --sections=<comma-separated-sections>` where section names are `KEY_QUESTIONS`, `FAQ`, `SCHEMA`, `BLUESKY`
+  Fix every error before showing Joe anything.
 6. Show Joe the content from the output file.
 
 ---
@@ -39,12 +62,28 @@ You are generating SEO/AEO content and social posts for The Wine Pair Podcast. E
 
 **Step 2: Read `docs/voice-and-format.md` in its entirety.**
 
+**Step 2.5: Respect requested scope exactly.**
+Generate only the sections listed under **Requested sections** below. Do not generate unrequested sections. Do not infer downstream tasks. Do not add Wine in the News, title options, cover art prompts, transcripts, or blog post copy.
+
+**Step 2.6: Apply delivery gates before returning output.**
+- Key Questions: exactly 7 unless the request explicitly asks for a different number.
+- Key Questions must reflect real listener/search intent; no trivia-only questions.
+- FAQ: exactly 7 Q&A pairs unless the request explicitly asks for a different number.
+- FAQ questions must reflect real listener/search intent.
+- FAQ answers must be grounded in episode materials only.
+- FAQ answers must be useful for listen/buy/understand/pair decisions.
+- FAQ answers must be 40 to 60 words, front-loaded, plain-language, conversational.
+- Enforce strict HR-2 Q./A. format.
+- Do not invent facts.
+- Do not output unrequested sections.
+
 ---
 
 **Episode data (provided by main agent — all content must come from here):**
 
 - Episode number: [EPISODE NUMBER]
 - Title: [CONFIRMED TITLE]
+- Requested sections: [KEY_QUESTIONS, FAQ, SCHEMA, BLUESKY]
 - Hook / angle: [ONE SENTENCE — what makes this episode interesting or surprising]
 - Wine 1: [NAME, VINTAGE, PRICE, RETAILER, ALCOHOL %, PRO RATINGS]
   - Joe rating: [N]/10 | Carmela rating: [N]/10
@@ -63,9 +102,9 @@ You are generating SEO/AEO content and social posts for The Wine Pair Podcast. E
 
 ---
 
-## SECTION 1: KEY QUESTIONS
+## SECTION 1: KEY QUESTIONS (generate only if requested)
 
-Write exactly 7 questions. Questions only — no answers. Target real search queries someone would type about this wine: "What is [wine] wine?", "What does [wine] taste like?", "What food pairs with [wine]?", "Is [wine] similar to [comparable wine]?", "Is [wine] worth buying?", "What is the difference between [wine] and [similar wine]?". Do not write questions about specific vintages or products — these get no search traffic. Every question must be answerable from the episode data provided — do not include questions that the episode does not address.
+Write exactly 7 questions unless the request explicitly asks for a different number. Questions only — no answers. Target real search queries someone would type about this wine: "What is [wine] wine?", "What does [wine] taste like?", "What food pairs with [wine]?", "Is [wine] similar to [comparable wine]?", "Is [wine] worth buying?", "What is the difference between [wine] and [similar wine]?". Do not write questions about specific vintages or products — these get no search traffic. Reject trivia-only questions. Every question must be answerable from the episode data provided — do not include questions that the episode does not address.
 
 Output format:
 ```
@@ -79,9 +118,9 @@ Output format:
 
 ---
 
-## SECTION 2: FREQUENTLY ASKED QUESTIONS
+## SECTION 2: FREQUENTLY ASKED QUESTIONS (generate only if requested)
 
-Write exactly 7 Q&A pairs answering the questions from Section 1.
+Write exactly 7 Q&A pairs answering the questions from Section 1, unless the request explicitly asks for a different number.
 
 Rules:
 - Heading must be exactly **FREQUENTLY ASKED QUESTIONS** — no other label is acceptable (HR-29)
@@ -89,9 +128,10 @@ Rules:
 - Every A line: `A. Answer text.` (plain — never bolded)
 - Each answer: 40-60 words, front-loaded with the verdict, Joe's conversational voice (contractions, "we", plain English)
 - Weave in specific details from the episode: ratings, tasting notes, which wine they finished
+- Every answer must be useful to someone deciding whether to listen, buy, understand, or pair the wine
 - No em-dashes anywhere (HR-1)
 - No invented facts (HR-3)
-- Every answer must be traceable to the episode data provided above. Do not draw on general wine knowledge that was not discussed in the episode. If a question cannot be answered from the episode data, replace it with one that can, or write fewer than 7 pairs.
+- Every answer must be traceable to the episode data provided above. Do not draw on general wine knowledge that was not discussed in the episode. If a question cannot be answered from the episode data, replace it with one that can.
 
 Output format:
 ```
@@ -108,7 +148,7 @@ A. [Answer two.]
 
 ---
 
-## SECTION 3: SCHEMA MARKUP
+## SECTION 3: SCHEMA MARKUP (generate only if requested)
 
 Write these blocks in a single code block under `### SCHEMA MARKUP`:
 
@@ -147,7 +187,7 @@ Output format:
 
 ---
 
-## SECTION 4: BLUESKY POSTS (10)
+## SECTION 4: BLUESKY POSTS (10) (generate only if requested)
 
 Write exactly 10 posts. Count characters on every post before including it.
 
@@ -174,7 +214,7 @@ Write exactly 10 posts. Count characters on every post before including it.
 
 ## SELF-CHECK (mandatory before returning output)
 
-Before returning your output, run through this checklist and report results:
+Before returning your output, run through this checklist and report results for requested sections only:
 
 1. Em-dashes: scan every line. How many em-dashes found? (Must be zero.)
 2. Bluesky character counts: list each post number and its total character count. Flag any over 300.

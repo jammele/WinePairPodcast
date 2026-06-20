@@ -224,6 +224,24 @@ An announcement ("show notes are ready", "the episode is X", "we recorded X", "w
 
 Do not run any task automatically from an announcement. Do not assume the full pipeline is wanted.
 
+**HR-50: Weekly workflow is task-isolated. Do not infer next steps.**
+When Joe requests one workflow step, complete only that step. Do not auto-run adjacent steps and do not infer downstream work from context. Example: `/review-titles` does not imply `/generate-episode-content`; `/generate-episode-content` does not imply `/generate-cover-art`.
+
+**HR-51: Confirmed-title gate before SEO/AEO episode content.**
+Before running `/generate-episode-content`, confirm the episode title is selected and recorded in `docs/work-log.md` and/or `data/episode-titles.md`. If title status is pending or unclear, stop and ask for title confirmation. Only proceed without a confirmed title when Joe explicitly overrides this gate.
+
+**HR-52: Episode Key Questions and FAQ canonical requirements.**
+- Key Questions: exactly 7 unless Joe explicitly requests a different number.
+- FAQ pairs: exactly 7 unless Joe explicitly requests a different number.
+- FAQ heading must be exactly "FREQUENTLY ASKED QUESTIONS."
+- FAQ format must follow HR-2 exactly (`**Q. ...**` then plain `A. ...`).
+- FAQ questions must reflect real listener/search intent.
+- Reject trivia-only questions.
+- FAQ answers must be grounded in transcript, show notes, tasting notes, ratings, wine details, or the episode topic.
+- FAQ answers must be useful to someone deciding whether to listen, buy, understand, or pair the wine.
+- FAQ answers should be 40 to 60 words, front-loaded, plain-language, and conversational.
+- No invented facts.
+
 ---
 
 ## SEO/AEO Content Rules

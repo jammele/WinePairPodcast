@@ -5,6 +5,7 @@ Internal quality gate for episode title suggestions. Claude must run this BEFORE
 ## When to invoke
 
 Every time Joe asks for episode title suggestions. Not optional. Do not show Joe any titles until the subagent review is complete and you have addressed every flagged issue.
+This command is title-only. Do not generate SEO/AEO content, cover art prompts, episode descriptions, social copy, or any downstream assets unless Joe explicitly asks in a separate request.
 
 ## How to run
 
@@ -78,6 +79,8 @@ Pre. **Read `data/title-session-reports.md` before doing anything else.**
    After displaying the report: append the full entry to `data/title-session-reports.md` (newest entry at the top, below the Patterns Learned section) and commit the file immediately. Do not wait for Joe's selection — append and commit in the same response as the titles.
 
 10. **Ask Joe which title he wants to use.** Phrase it simply: "Which title would you like for Ep[N]?" Do not suggest one or editorialize — just ask.
+
+10.5. **Stop boundary.** After asking which title Joe wants, stop. Do not infer or auto-run `/generate-episode-content`, `/generate-cover-art`, or any other command.
 
 11. **After Joe confirms his choice:**
     - Update the "Joe's selection" field in the Ep[N] entry in `data/title-session-reports.md`

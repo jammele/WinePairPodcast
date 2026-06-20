@@ -5,13 +5,15 @@ Generate scored cover art concepts and ready-to-paste ChatGPT prompts for the cu
 ## When to invoke
 
 Any time Joe asks for a cover art image prompt, image concept, or ChatGPT prompt for an episode.
+This command is cover-art-only. Do not infer or auto-run title generation, SEO/AEO generation, or other workflow steps.
+Before invoking, verify the episode title is confirmed unless Joe explicitly overrides.
 
 ## How to run
 
 When Joe asks for cover art:
 
 Pre-0. **Read the episode transcript before anything else.**
-   Check `C:\Users\jamme\Downloads\` for a transcript file named `transcript-[slug].txt` or similar. If found, read it. If not found, read the episode script. The physical situation brainstorm in Step 0 MUST be grounded in specific spoken moments from the recording: actual jokes, dialogue exchanges, character reactions, specific comparisons or descriptions used on mic. Do not brainstorm from the episode topic alone.
+   First, get the confirmed episode slug from `docs/work-log.md` (or the current output filename if already confirmed). Check `C:\Users\jamme\Downloads\` for a transcript file named `transcript-[confirmed-slug].txt` or similar. If found, read it. If not found, read the episode script. The physical situation brainstorm in Step 0 MUST be grounded in specific spoken moments from the recording: actual jokes, dialogue exchanges, character reactions, specific comparisons or descriptions used on mic. Do not brainstorm from the episode topic alone.
 
 Pre. **Read `data/cover-art-session-reports.md` before generating any concepts.**
    Extract two things:
@@ -39,6 +41,7 @@ Pre. **Read `data/cover-art-session-reports.md` before generating any concepts.*
    - **Web research finding:** one sentence on what the search returned.
 
 1. Confirm episode number, title, featured wine name, key episode facts (ratings, central angle, tone).
+   - If title is pending or unclear, stop and ask for title confirmation before generating concepts.
 
 2. Spawn a subagent with the instructions below, substituting actual episode details and the full title alignment analysis from Step 0. The sub-agent will read `data/cover-art-scenes.md` directly for the recent scenes list.
 
@@ -86,6 +89,8 @@ Pre. **Read `data/cover-art-session-reports.md` before generating any concepts.*
 5. **Give a recommendation, then ask Joe which concept he wants.**
    State which concept you would choose and one sentence explaining why — the reason must be specific to this episode (not generic score-based language like "it scored highest"). Then ask: "Which concept would you like for Ep[N]?"
 
+5.5. **Stop boundary.** After asking which concept Joe wants, stop. Do not infer or auto-run `/review-titles`, `/generate-episode-content`, or any other command.
+
 6. **After Joe confirms his choice — write the ChatGPT prompt.**
    Write the full multi-section ChatGPT prompt (see standard format below) for the selected concept only. Do not write prompts for rejected concepts. Present it ready to paste.
 
@@ -102,7 +107,9 @@ Pre. **Read `data/cover-art-session-reports.md` before generating any concepts.*
    - Update the "Joe's selection" field in the Ep[N] entry in `data/cover-art-session-reports.md` with the confirmed concept name and score. If Joe rejected all concepts in this session, mark it as "All concepts rejected — redo required." For a redo run, do NOT create a new episode entry — instead add a "Second Session (Redo)" subsection inside the existing Ep[N] entry, with its own Concepts Generated table, Second Review Summary, and Joe's selection line.
    - Update `data/cover-art-scenes.md` — add a full physical action description of the chosen scene, written as a complete sentence matching the format of existing entries: what Joe is doing, what Carmela is doing, the key props, and a "Do not repeat:" ban sentence. Remove the oldest entry if the list exceeds 5.
    - Update Patterns Learned in `data/cover-art-session-reports.md` when Joe's selection reveals something new or contradicts an existing pattern. If Joe selected the recommended concept without comment, note it briefly as confirmation. If Joe overrode the recommendation or rejected a whole batch, explain what he chose instead and why — those are the most informative data points.
-   - Commit all changed files
+   - After showing Joe the diff and receiving approval, commit only files changed by this command.
+
+Do not run any tasks outside this command's scope unless Joe explicitly asks in a separate request.
 
 ---
 
