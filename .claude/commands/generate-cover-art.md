@@ -20,16 +20,29 @@ Pre. **Read `data/cover-art-session-reports.md` before generating any concepts.*
    - **Patterns Learned section:** note what structural types and visual angles Joe consistently selects and what he rejects. Let this shape concept generation.
    - **Prior entry for this wine/brand:** if one exists, note what structural types were tried before so concepts are not repeated across sessions.
 
+Pre-1. **Core thesis and title frame gates (hard reject).**
+   Before brainstorming, write one sentence for the episode thesis and one sentence for title framing.
+   - Core thesis gate: every concept must visibly express the thesis.
+   - Title alignment gate: every concept must reinforce the confirmed title framing.
+   - Side-banter gate: transcript banter can add flavor, but cannot be the main concept unless it directly supports the thesis.
+   - Misframing gate: if the episode framing is contrast-based (for example "not Chianti"), the rejected thing may appear only as a minor background, corner, or pushed-aside element. If it is the largest, central, brightest, or most memorable visual element, reject the concept.
+   Any concept failing one of these gates is rejected before presentation.
+
 0. **Physical situation brainstorm — do this before generating any concepts.**
 
    The best cover art starts from a funny physical situation, not from the title's theme. Do NOT ask "what tension does the title create?" — ask "what would be funny to watch happen?"
 
    Write 10 specific physical situations in the form: **"Joe is [action verb]ing [something] while Carmela [action verb]s [something]."** Every entry must use physical action verbs. The verbs "holds," "looks at," "examines," "leans toward," and "gestures at" are banned — they describe poses, not actions. Something must be HAPPENING in each situation.
 
-   Draw from: the episode's central hook, any absurd facts, any funny visual contrasts the episode creates naturally. Draw specifically from spoken moments in the transcript — jokes, dialogue exchanges, specific words or comparisons used on mic. Then filter the 10 down to the 5 strongest by asking four questions about each:
+   Draw from: the episode's central hook, any absurd facts, any funny visual contrasts the episode creates naturally. Draw specifically from spoken moments in the transcript — jokes, dialogue exchanges, specific words or comparisons used on mic. Then filter the 10 down to the 5 strongest by asking these hard-gate questions about each:
    - Does it reveal the episode verdict? (if yes, cut it)
    - Does it actively contradict the title? (if yes, cut it)
+   - Does it visibly express the one-sentence episode thesis? (if no, cut it)
+   - Is this mainly side-banter instead of episode thesis? (if yes, cut it)
+   - In a contrast episode, is the rejected thing the largest, central, brightest, or most memorable element? (if yes, cut it)
    - Is it specific enough that it could not be reused for a generic wine episode? (if no, cut it)
+   - Could this work for almost any wine episode if labels were changed? (if yes, cut it)
+   - Is the visual joke instantly readable at thumbnail size without relying on tiny labels/maps/cards/text? (if no, cut it)
    - Can you name the specific transcript moment (a line, a joke, a dialogue exchange, a specific word or comparison) this situation comes from? (if no, cut it)
 
    Then run 1 web search: "[wine/brand name] podcast thumbnail" to see what competitor visual conventions exist (to avoid or improve on them).
@@ -48,14 +61,21 @@ Pre. **Read `data/cover-art-session-reports.md` before generating any concepts.*
 2.5 **Quality gate — enforce before second review.**
    After the first subagent returns, drop any concept that:
    - Scores below 40/50
-   - Has a FAIL on brand rule 11 (spoiler) or brand rule 12 (title alignment)
-   If fewer than 3 concepts remain, return to Step 2 and generate replacements before proceeding. Joe must always see at least 3 options. Never carry failing or sub-40 concepts into the second review.
+   - Fails Core Thesis gate
+   - Fails Title Alignment gate
+   - Fails Side-Banter gate
+   - Fails Misframing gate
+   - Fails Portability gate
+   - Fails Thumbnail Readability gate
+   - Has a FAIL on brand rule 11 (spoiler)
+   Aim to present at least 3 passing concepts. If fewer than 3 concepts pass after two regeneration rounds, stop and report the blocker instead of showing weak or failing options. Never carry failing or sub-40 concepts into the second review.
 
 3. **Spawn a second review subagent** on the surviving concepts only.
-   Prompt: "You are a cover art critic for The Wine Pair Podcast. Read `docs/house-rules.md` in full, paying special attention to HR-40 and HR-14a. Then review each concept below for: (1) spoiler rule (HR-40) — does it reveal the episode verdict? (2) title gate — does it actively contradict the title? (3) HR-14a — does the scene description open with a physical action verb, or is it just a pose? (4) all 11 brand rules. (5) score accuracy — is the Scroll-Stop Power score justified? For each concept, state in one sentence why someone would stop scrolling for this image. If you cannot write a compelling one-sentence answer, flag for regeneration. Return PASS or FAIL for each concept with specific reasoning."
+   Prompt: "You are a cover art critic for The Wine Pair Podcast. Read `docs/house-rules.md` in full, paying special attention to HR-40 and HR-14a, plus the hard gates HR-53 through HR-60. Then review each concept below for: (1) Core Thesis gate, (2) Title Alignment gate, (3) Side-Banter gate, (4) Misframing gate, (5) Portability gate, (6) Thumbnail Readability gate, (7) spoiler rule (HR-40), (8) HR-14a physical-action opening, (9) all 11 brand rules, and (10) score accuracy. For contrast episodes, enforce visual dominance: the rejected thing may appear only as minor background/corner/pushed-aside detail, and fails if it is the largest, central, brightest, or most memorable element. Return PASS/FAIL for each gate per concept. If any hard gate fails, mark the concept REJECT. Provide a concise reject summary by category and keep detailed reject reasoning in an internal reject log unless requested."
    No concept reaches Joe until the second pass returns no FAILs.
 
-4. **Generate and show a Session Report** in the same response as the final concepts. Do not skip — do not make Joe ask for it. Append the entry to `data/cover-art-session-reports.md` and commit immediately.
+4. **Generate a Session Report and a reject log.**
+   Keep detailed reject reasoning in an internal reject log by default. User-facing output should include only a concise reject summary when useful (for example: "Rejected 4 concepts: 2 side-banter, 1 misframing, 1 portable/generic"). Append the session report entry to `data/cover-art-session-reports.md` during real runs.
 
    Report format:
    ```
@@ -74,7 +94,7 @@ Pre. **Read `data/cover-art-session-reports.md` before generating any concepts.*
    [One line per concept: concept name — score — PASS/FAIL — key note]
 
    ### Quality Gate Decisions
-   [Concepts dropped and why; or "none dropped"]
+   [Concise reject summary by gate category; detailed reasons stay in internal reject log unless Joe asks]
 
    ### Second Review Summary
    [One line per surviving concept: PASS/FAIL, scroll-stop justification, key note]
@@ -237,7 +257,14 @@ Then present 5 concepts. For each:
 
 *Scene:* [2-3 sentences. Must begin: "Joe is [action verb]ing [something] while Carmela [action verb]s [something]." Then describe expressions, body language, key props, wine bottle label, background.]
 
-**Do NOT include a ChatGPT prompt here. Do NOT include a score breakdown. Do NOT include a brand rules checklist. Do NOT include a "title alignment" field — that is an internal gate, not a presented criterion.** The prompt is written only after Joe selects a concept (main agent Step 6). Score each concept internally using the 5 criteria — include scores only in the session report log, never in what Joe reads.
+**Concise evidence (required):**
+- Thesis match: [one short line]
+- Title alignment: [PASS plus short reason]
+- Transcript/show-note evidence: [one short reference line]
+- Why not portable: [one short line]
+- Thumbnail readability: [one short line]
+
+**Do NOT include a ChatGPT prompt here. Do NOT include a long score breakdown or long audit text.** The prompt is written only after Joe selects a concept (main agent Step 6). Keep evidence concise.
 
 ---
 
