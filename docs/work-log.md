@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-06-20 (session 26 — Ep223 transcript retrieval and title review round)
+**Last updated:** 2026-06-20 (session 26 — title rule update + Ep223 rerun)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
 
@@ -43,6 +43,22 @@
 - Final passing options prepared for Joe selection (pending):
   - `Italian Wine Adventure #25: Sangiovese Beyond Chianti! Missing Half the Story?`
   - `Italian Wine Adventure #25: Sangiovese Outside Tuscany! Better Than Chianti?`
+
+**Title-rules update (requested):**
+- Updated `docs/house-rules.md`:
+  - HR-16 changed from fixed 60-80 chars to cap-only: max 100 chars, no minimum.
+  - Added preferred range guidance (35-75) as non-fail advisory.
+  - HR-17 strengthened to emphasize first-30-character signal and early hook terms.
+- Updated `.claude/commands/review-titles.md` to match new policy (fail only over 100 chars; no lower bound).
+
+**Ep223 title rerun under updated rules (series + non-series mix):**
+- New session entry appended to `data/title-session-reports.md` (Ep223 Session 2).
+- Strongest non-series options:
+  - `This Ain't Chianti: Is Italian Sangiovese Better Outside Tuscany?`
+  - `Chianti Isn't Sangiovese. Is Tuscany Keeping You From Better Bottles?`
+- Strongest series option:
+  - `Italian Wine Adventure #25: Sangiovese Outside Tuscany. Better Than Chianti?`
+- One title rejected as spoiler (HR-39): `If You Think Chianti Is Sangiovese, You're Missing the Good Stuff`.
 
 **Pending:**
 - Joe confirms final Ep223 title.

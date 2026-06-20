@@ -116,8 +116,8 @@ Non-negotiable rules — flag as FAIL if violated (see HR-15 through HR-20 and H
 1. Grape or region name must appear in the title. Series prefix alone does not satisfy this. For brand review episodes (Meiomi, Josh, Two Buck Chuck, etc.) the brand name satisfies this rule — it is the wine identifier.
 2. If this is a named series episode, the series prefix must be present and correctly formatted. Match last 3 installments exactly.
 3. No spam words: "amazing", "incredible", "secret", "magic", "you need to try", "right now", "don't miss", "the best"
-4. Title must be between 60 and 80 characters. Flag anything outside this range.
-5. The first 30 characters must contain either the series name or the grape/region/brand name.
+4. Title must be 100 characters or fewer. There is no minimum length. Flag anything over 100.
+5. The first 30 characters must contain either the series name or the grape/region/brand name, and must avoid filler openers. Prefer at least one information-bearing hook term in that opening segment when possible.
 6. **Spoiler test — FAIL if violated (HR-39).** The title must NOT reveal the episode's verdict, ratings outcome, or key finding. Test: after reading the title, does a listener already know what the hosts concluded? If yes → FAIL. A title that tells you one wine was drinkable and one was bad is a spoiler. A title that makes you wonder what they concluded is a hook. This is a hard FAIL, not a warning.
 
 Quality checks — flag as WARNING if violated:

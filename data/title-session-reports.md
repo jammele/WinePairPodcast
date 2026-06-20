@@ -26,6 +26,53 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 
 ---
 
+### Ep223: Sangiovese Outside Tuscany (Session 2 — post-length-rule update)
+**Date:** 2026-06-20
+**Series:** Mixed test set (series + non-series)
+
+**Rule update context:**
+- HR-16 changed from a 60-80 range to cap-only (max 100 chars, no minimum).
+- HR-17 strengthened around first-30-character signal and early information-bearing hooks.
+
+**Step 0 Research Findings (carried forward + validated):**
+- The strongest click angle remains a direct challenge to the Chianti assumption.
+- Shorter titles can still be high-performing when the first words carry entity + tension.
+- "Better Than Chianti" performs as the highest-energy contrast phrase for this episode.
+
+**Episode Hook:** Two non-Tuscany Sangiovese wines from Umbria and Molise challenge the idea that Sangiovese equals Chianti.
+
+**Titles Reviewed (updated rule set):**
+
+| Title | Result | Clickability | Discovery | Notes |
+|---|---|---|---|---|
+| "Is Sangiovese Outside Tuscany Better Than Chianti?" | PASS | 7/10 | 8/10 | Clear, compact, less personality |
+| "This Ain't Chianti: Is Italian Sangiovese Better Outside Tuscany?" | PASS | 9/10 | 8/10 | Strong hook + clarity |
+| "Better Than Chianti? Italian Sangiovese Beyond Tuscany" | PASS | 8/10 | 8/10 | Strong question-first tension |
+| "Italian Wine Adventure #25: Sangiovese Outside Tuscany. Better Than Chianti?" | PASS | 7/10 | 7/10 | Best series-format option |
+| "Italian Wine Adventure #25: Better Than Chianti? Sangiovese Outside Tuscany" | PASS | 6/10 | 7/10 | Awkward reversed structure |
+| "Italian Wine Adventure #25: Is Sangiovese Outside Tuscany Better Than Chianti?" | PASS | 6/10 | 7/10 | Longer, weaker opening momentum |
+| "Not Chianti, Not Tuscany. Is This Italian Sangiovese Actually Better?" | PASS | 9/10 | 7/10 | High tension; verdict-adjacent phrasing |
+| "Italian Sangiovese Beyond Chianti: Better, or Just Different?" | PASS | 7/10 | 8/10 | Balanced but lower punch |
+| "Chianti Isn't Sangiovese. Is Tuscany Keeping You From Better Bottles?" | PASS | 9/10 | 9/10 | Strongest overall non-series |
+| "If You Think Chianti Is Sangiovese, You're Missing the Good Stuff" | FAIL HR-39 | 9/10 | 7/10 | Spoils likely verdict |
+
+**Quality Gate decisions:**
+- Dropped immediately: "If You Think Chianti Is Sangiovese, You're Missing the Good Stuff" (HR-39 spoiler).
+- De-prioritized: two long-form series questions with weaker first-30 impact (Clickability 6/10).
+
+**Final options presented after rerun:**
+1. This Ain't Chianti: Is Italian Sangiovese Better Outside Tuscany?
+2. Chianti Isn't Sangiovese. Is Tuscany Keeping You From Better Bottles?
+3. Better Than Chianti? Italian Sangiovese Beyond Tuscany
+4. Italian Wine Adventure #25: Sangiovese Outside Tuscany. Better Than Chianti?
+5. Is Sangiovese Outside Tuscany Better Than Chianti?
+
+**Research-to-Title Alignment:** The rerun confirms that first-words clarity + challenge framing beats neutral explanatory phrasing for this episode. Non-series options delivered higher click tension, while the best series option remained viable for continuity.
+
+**Joe's selection:** *(pending)*
+
+---
+
 ### Ep223: Sangiovese Outside Tuscany (Umbria + Molise)
 **Date:** 2026-06-20
 **Series:** Italian Wine Adventure #25

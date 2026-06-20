@@ -115,11 +115,16 @@ After Joe selects a concept, append the full ChatGPT prompt to `outputs/episodes
 **HR-15: Grape or region name must appear in every title.**
 No exceptions. A series prefix alone ("Italian Wine Adventure #24") does not count — the wine name must also be present.
 
-**HR-16: Title length: 60–80 characters.**
-Flag anything outside this range.
+**HR-16: Title length cap: 100 characters maximum.**
+There is no minimum title length. Flag any title over 100 characters.
 
-**HR-17: First 30 characters: no filler.**
-First 30 characters must contain the series name or the grape/region name. Not filler words like "We tried" or "This week."
+**Preferred range (guidance, not a fail condition):** 35-75 characters.
+Use shorter titles when they are clearer and more clickable.
+
+**HR-17: First 30 characters must carry the signal.**
+First 30 characters must contain the series name or the grape/region/brand name, with no filler openers like "We tried" or "This week."
+
+Within the first 30 characters, include at least one information-bearing hook when possible (contrast, tension, or question language such as "vs", "better", "why", "not", "worth", "overrated", "surprised").
 
 **HR-18: No spam words.**
 "amazing", "incredible", "secret", "magic", "you need to try", "right now", "don't miss", "the best" — all banned.
