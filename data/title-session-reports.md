@@ -26,6 +26,48 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 
 ---
 
+### Ep223: Sangiovese Outside Tuscany (Session 3 — simplified rerun)
+**Date:** 2026-06-20
+**Series:** Italian Wine Adventure #25
+
+**Step 0 Research Findings (reused):**
+- The strongest discovery signal remains contrast against Chianti assumptions.
+- First-words clarity outperforms complex phrasing for this episode.
+- Region specificity (Umbria + Molise) improves AI/discovery scoring when paired with a sharp opener.
+
+**Episode Hook:** Two non-Tuscany Sangiovese wines from Umbria and Molise challenge the idea that Sangiovese equals Chianti.
+
+**Subagent Round 1 Summary:**
+- "Italian Wine Adventure #25: Sangiovese Outside Tuscany. Better Than Chianti?" — FAIL (HR-39), Clickability 5/10, verdict-lean framing
+- "Italian Wine Adventure #25: Better Than Chianti? Sangiovese Outside Tuscany" — FAIL (HR-39 + HR-17), Clickability 4/10
+- "Italian Wine Adventure #25: Is Sangiovese Outside Tuscany Better Than Chianti?" — FAIL (HR-39), Clickability 6/10
+- "Italian Wine Adventure #25: Sangiovese Beyond Chianti. Better Than You Think?" — FAIL (HR-39), Clickability 7/10
+- "Italian Wine Adventure #25: Not Chianti. Is Sangiovese Better Outside Tuscany?" — FAIL (HR-39), Clickability 6/10
+
+**Quality Gate Decisions:**
+- Regenerated all options after Round 1 due to hard-rule failures from verdict framing.
+- Round 2 drops (<7 clickability):
+	- "Italian Wine Adventure #25: Sangiovese Outside Tuscany. Same Grape, New Story" (6/10)
+	- "Italian Wine Adventure #25: Sangiovese Outside Tuscany. Umbria and Molise" (6/10)
+
+**Subagent Round 2 Summary:**
+- "Italian Wine Adventure #25: Sangiovese Outside Tuscany. What Changes?" — PASS, Clickability 7/10
+- "Italian Wine Adventure #25: Sangiovese Beyond Chianti. What Changes?" — PASS, Clickability 7.5/10
+- "Italian Wine Adventure #25: Not Chianti. Sangiovese from Umbria and Molise" — PASS, Clickability 8/10
+- "Italian Wine Adventure #25: Sangiovese Outside Tuscany. Same Grape, New Story" — PASS, Clickability 6/10 (dropped)
+- "Italian Wine Adventure #25: Sangiovese Outside Tuscany. Umbria and Molise" — PASS, Clickability 6/10 (dropped)
+
+**Final Options Presented:**
+1. Italian Wine Adventure #25: Not Chianti. Sangiovese from Umbria and Molise
+2. Italian Wine Adventure #25: Sangiovese Beyond Chianti. What Changes?
+3. Italian Wine Adventure #25: Sangiovese Outside Tuscany. What Changes?
+
+**Research-to-Title Alignment:** Final options keep the core "not just Chianti" contrast while avoiding verdict spoilers. Option 1 is the strongest blend of click tension and discovery specificity. Options 2 and 3 retain cleaner question framing with slightly less punch.
+
+**Joe's selection:** *(pending)*
+
+---
+
 ### Ep223: Sangiovese Outside Tuscany (Session 2 — post-length-rule update)
 **Date:** 2026-06-20
 **Series:** Mixed test set (series + non-series)

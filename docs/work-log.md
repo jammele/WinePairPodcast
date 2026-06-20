@@ -60,6 +60,15 @@
   - `Italian Wine Adventure #25: Sangiovese Outside Tuscany. Better Than Chianti?`
 - One title rejected as spoiler (HR-39): `If You Think Chianti Is Sangiovese, You're Missing the Good Stuff`.
 
+**Ep223 title rerun (simplified request):**
+- Ran a clean two-round, scored-only series rerun to reduce complexity while keeping full QA rigor.
+- Round 1 failed due to verdict-leaning "better than" phrasing.
+- Round 2 produced 3 passing, quality-gate-cleared finalists:
+  - `Italian Wine Adventure #25: Not Chianti. Sangiovese from Umbria and Molise`
+  - `Italian Wine Adventure #25: Sangiovese Beyond Chianti. What Changes?`
+  - `Italian Wine Adventure #25: Sangiovese Outside Tuscany. What Changes?`
+- Session 3 entry appended to `data/title-session-reports.md`.
+
 **Pending:**
 - Joe confirms final Ep223 title.
 - After confirmation: update `data/title-session-reports.md` selection field and add Ep223 title to `data/episode-titles.md`.
