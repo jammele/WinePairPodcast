@@ -81,6 +81,8 @@
   - `## COVER ART` ChatGPT prompt (ready to paste)
 - Added `### BLUESKY POSTS` (10) to `outputs/episodes/ep223-sangiovese-outside-tuscany.md` using transcript-grounded facts and unique external source links for posts 4-10.
 - Validated Episode 223 Bluesky section with `node scripts/validate_episode.js outputs/episodes/ep223-sangiovese-outside-tuscany.md --sections=BLUESKY` (PASS).
+- Regenerated `## KEY QUESTIONS` and `## FREQUENTLY ASKED QUESTIONS` for Episode 223 to replace weak first draft.
+- Revalidated with `node scripts/validate_episode.js outputs/episodes/ep223-sangiovese-outside-tuscany.md --sections=KEY_QUESTIONS,FAQ` (PASS).
 
 **Pending:**
 - If needed: generate alternate cover-art concept prompts before final image generation.

@@ -5,13 +5,13 @@
 ## KEY QUESTIONS
 *(Place at top of show notes, questions only, no answers)*
 
-- What is Sangiovese wine?
-- Is Sangiovese the same as Chianti?
+- What is the difference between Sangiovese and Chianti?
+- Does Sangiovese from outside Tuscany taste different from Chianti?
 - What does Sangiovese from Umbria taste like?
 - What does Sangiovese from Molise taste like?
+- Which Sangiovese wine was the better value in Episode 223?
+- What foods pair best with these two Sangiovese styles?
 - Is Sangiovese outside Tuscany worth buying?
-- What food pairs best with Sangiovese?
-- Is Chianti better with food than sipping on its own?
 
 ---
 
@@ -19,25 +19,25 @@
 *(Place at bottom of show notes)*
 
 **Q. What is Sangiovese wine outside Tuscany?**
-A. Sangiovese is Italy's most planted red grape, and this episode shows it is much bigger than just Chianti. We reviewed two 100% Sangiovese wines from Umbria and Molise, both rated 8/10 by Joe and Carmela. Same grape, two distinct styles, and both were clear buys on the show's scale.
+A. Sangiovese is the grape. Chianti is one famous wine style made from it. In this episode, we tasted two 100% Sangiovese bottles from Umbria and Molise, not Tuscany, and both scored 8/10 from both of us. The big takeaway is simple: same grape, very different personalities, both buy-worthy.
 
 **Q. Is Sangiovese the same as Chianti?**
-A. No. Chianti is a wine style and region that is usually built around Sangiovese, but Sangiovese itself is grown all over Italy. In the episode, Joe highlights that roughly half of Italy's Sangiovese is outside Tuscany, then compares two non-Tuscany examples that taste very different from typical Chianti expectations.
+A. No. Chianti is typically a Sangiovese-based wine from Tuscany, while Sangiovese is grown across Italy. Joe points out that about half of Italy's Sangiovese is outside Tuscany. That is exactly why we did this episode, to show how far the grape can stretch beyond the Chianti profile.
 
 **Q. What does Sangiovese from Umbria taste like?**
-A. The 2022 Cantina Roccafiore Melograno from Umbria came across as bright, fresh, and fruit-forward. Joe and Carmela called out cherry, strawberry, herbs, and a tart candy note, with a light, summer-friendly profile that even reminded them of Beaujolais. It felt easy-drinking and energetic rather than heavy or brooding.
+A. Our 2022 Cantina Roccafiore Melograno from Umbria drank bright and fresh, with cherry, strawberry, herbs, and tart candy notes. We described it as Beaujolais-like in feel, light, fruity, and summer-ready. It showed shiny light ruby color, clear freshness, and easy-drinking energy without losing character.
 
 **Q. What does Sangiovese from Molise taste like?**
-A. The 2021 Di Majo Norante Terre degli Osci Sangiovese from Molise was darker and more structured than the Umbria bottle. They noted dark cherry, plum, leather, black licorice, tea-like grip, and firmer tannin. It was rounder and more savory, with a richer, more serious feel than the brighter first wine.
+A. The 2021 Di Majo Norante Terre degli Osci from Molise was darker and more structured than the Umbria wine. We got dark cherry, plum, leather, black licorice, and black tea grip, with grippy tannin and roundness. It felt more savory and serious, especially next to richer food pairings.
 
 **Q. Is Sangiovese outside Tuscany worth buying?**
-A. Based on this episode, yes. Both wines landed at 8/10 from both hosts, which is a buy on their scale. The Umbria bottle was $20.99 and the Molise bottle was $14.99, so this was also a value episode. If Chianti has felt too sharp for you, these are strong alternatives to try.
+A. Yes, based on this tasting. Both wines scored 8/10 from both hosts, which is a clear buy on our scale. At $20.99 for Umbria and $14.99 for Molise, both delivered value. We also chose to keep drinking the Umbria bottle that night, which says a lot about drinkability.
 
 **Q. What food pairs best with Sangiovese?**
-A. The Umbrian wine paired best with grilled and casual comfort foods like chicken, cheeseburgers, barbecue, pizza, pasta, and meatballs. The Molise wine leaned toward richer savory dishes like steak, roasts, lamb chops, ribs, bolognese, meaty pizza, eggplant parmigiana, and lasagna. Both are food wines, just for different menus.
+A. It depends on style. The Umbria wine worked best with grilled chicken, cheeseburgers, barbecue, pizza, pasta, and meatballs. The Molise wine leaned into steak, roasts, lamb chops, ribs, bolognese, meaty pizza, eggplant parmigiana, and lasagna. Both are food-friendly, but they point to different dinner plans.
 
 **Q. Is Chianti better with food than sipping on its own?**
-A. In this episode, Joe says Chianti is often a food-first wine and can feel sharp when you drink it on its own. That framing is exactly why they tested Sangiovese from outside Tuscany. The Umbria and Molise bottles showed styles that can feel more flexible and immediately enjoyable depending on what you are eating.
+A. In this episode, Joe says Chianti can be food-first and feel sharp when sipped alone. That was the reason for testing non-Tuscany Sangiovese. These two bottles showed different, more flexible expressions, with one brighter and one deeper, and both still anchored in classic food-pairing strength.
 
 ---
 
