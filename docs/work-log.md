@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-06-16 (session 25 — GSC analysis, Josh Wine prioritization, orphaned April 18 blog post files migrated from Drive to outputs/)
+**Last updated:** 2026-06-20 (session 26 — Ep223 transcript retrieval and title review round)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
 
@@ -29,6 +29,24 @@
 - Portuguese wine blog post (Phase 2 #1).
 - Publish 4 ready episodes: ep217-viura, ep218-malvasia, ep219-two-buck-chuck, ep221-lebanese-wine.
 - Complete positioning rollout: homepage hero + meta, media kit opener, social bios.
+
+---
+
+## Session 26 summary (2026-06-20)
+
+**Ep223 title workflow started from full Google Doc transcript (`EPISODE #223: Italian Sangiovese not Chianti`).**
+
+- Drive startup sync completed: 4,082 files scanned, 0 title updates needed, 15 prompts synced.
+- Retrieved and reviewed the full Episode 223 show-notes/transcript doc (ID `12o2UK7rae3uaW1qu39KFmYA6bR-RsXw6oZOYMeHJC2I`).
+- Ran `/review-titles` process: read title history and patterns, completed web angle scan, executed two QA rounds.
+- Added Ep223 session entry to `data/title-session-reports.md` with final pass list and rationale.
+- Final passing options prepared for Joe selection (pending):
+  - `Italian Wine Adventure #25: Sangiovese Beyond Chianti! Missing Half the Story?`
+  - `Italian Wine Adventure #25: Sangiovese Outside Tuscany! Better Than Chianti?`
+
+**Pending:**
+- Joe confirms final Ep223 title.
+- After confirmation: update `data/title-session-reports.md` selection field and add Ep223 title to `data/episode-titles.md`.
 
 ---
 

@@ -26,6 +26,45 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 
 ---
 
+### Ep223: Sangiovese Outside Tuscany (Umbria + Molise)
+**Date:** 2026-06-20
+**Series:** Italian Wine Adventure #25
+
+**Step 0 Research Findings:**
+- Most external Sangiovese content is educational and generic: "guide," "explained," "all about," and "best wines" lists.
+- Podcast competitors on Sangiovese lean technical (history, soil, viticulture, winemaking) rather than listener-facing tension.
+- YouTube titles often center Tuscany/Chianti and beginner explainers; "outside Tuscany" and "not Chianti" comparison framing appears underused.
+- Strongest uncovered click angle for this episode: challenge the assumption that Sangiovese equals Chianti while keeping the verdict hidden.
+
+**Episode Hook:** Sangiovese gets reduced to Chianti, but two non-Tuscany bottles from Umbria and Molise showed dramatically different styles and challenged that reputation.
+
+**Titles Reviewed:**
+
+| Title | Round | Result | Clickability | Controversy | Notes |
+|---|---|---|---|---|---|
+| "Italian Wine Adventure #25: Sangiovese Outside Tuscany. Better Than Chianti?" | R1 | PASS | 7/10 | 3/5 | Borderline verdict tilt in wording; revised punctuation |
+| "Italian Wine Adventure #25: Sangiovese Beyond Chianti. What Changes?" | R1 | PASS | 8/10 | 4/5 | Strong neutral curiosity; revised punctuation |
+| "Italian Wine Adventure #25: Umbria and Molise Sangiovese. Same Grape, New Game." | R1 | PASS | 7/10 | 4/5 | Region-specific, but dense |
+| "Italian Wine Adventure #25: Sangiovese Not Chianti. Missing Half the Story?" | R1 | PASS | 8/10 | 4/5 | Strong hook; wording softened in R2 |
+| "Italian Wine Adventure #25: Chianti Isn't the Whole Sangiovese Story." | R1 | FAIL HR-39 | 5/10 | 2/5 | Spoils conclusion; dropped |
+| "Italian Wine Adventure #25: Sangiovese Beyond Chianti! What Changes?" | R2 | PASS | 6/10 | 3/5 | Rule-clean but too generic; dropped at quality gate |
+| "Italian Wine Adventure #25: Sangiovese Outside Tuscany! Better Than Chianti?" | R2 | PASS | 7/10 | 4/5 | **FINAL - presented** |
+| "Italian Wine Adventure #25: Sangiovese Beyond Chianti! Missing Half the Story?" | R2 | PASS | 8/10 | 4/5 | **FINAL - presented** - strongest |
+| "Italian Wine Adventure #25: Umbria and Molise Sangiovese! Same Grape, New Game." | R2 | FAIL HR-16 | 7/10 | 4/5 | Over 80 chars per reviewer; dropped |
+
+**Quality Gate R1:** Title 5 dropped (HR-39 FAIL and 5/10 Clickability).
+**Quality Gate R2:** Title 1 dropped (6/10 Clickability) and Title 4 dropped (HR-16 FAIL).
+
+**Final Options Presented:**
+1. Italian Wine Adventure #25: Sangiovese Beyond Chianti! Missing Half the Story? (80 chars)
+2. Italian Wine Adventure #25: Sangiovese Outside Tuscany! Better Than Chianti? (76 chars)
+
+**Research-to-Title Alignment:** Final options avoid the saturated "Sangiovese explainer" format seen in competitor results and instead use a clear tension frame rooted in this episode's premise. Option 1 uses the strongest mystery gap ("missing half the story"). Option 2 uses a direct Chianti comparison, which is more search-obvious but slightly more verdict-adjacent.
+
+**Joe's selection:** *(pending)*
+
+---
+
 ### Ep222: Alsace Pinot Gris (Pierre Sparr Grande Reserve + Frey-Sohler Vieilles Vignes)
 **Date:** 2026-06-13
 **Series:** None
