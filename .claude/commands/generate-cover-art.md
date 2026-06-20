@@ -22,10 +22,11 @@ Pre. **Read `data/cover-art-session-reports.md` before generating any concepts.*
 
 Pre-1. **Core thesis and title frame gates (hard reject).**
    Before brainstorming, write one sentence for the episode thesis and one sentence for title framing.
+   The thesis sentence must create curiosity and avoid verdict language. Do not use words like "buy-worthy," "worth it," "better than," "winner," or "delicious" in the thesis.
    - Core thesis gate: every concept must visibly express the thesis.
    - Title alignment gate: every concept must reinforce the confirmed title framing.
    - Side-banter gate: transcript banter can add flavor, but cannot be the main concept unless it directly supports the thesis.
-   - Misframing gate: if the episode framing is contrast-based (for example "not Chianti"), the rejected thing may appear only as a minor background, corner, or pushed-aside element. If it is the largest, central, brightest, or most memorable visual element, reject the concept.
+   - Misframing gate: if the episode framing is contrast-based (for example "not Chianti" or "outside Tuscany"), and the rejected or contrast element appears, it may appear only as a minor background, corner, or pushed-aside element. If it is the largest, central, brightest, or most memorable visual element, reject the concept. If the concept omits that rejected or contrast element entirely and still expresses the thesis, this gate does not apply.
    Any concept failing one of these gates is rejected before presentation.
 
 0. **Physical situation brainstorm — do this before generating any concepts.**
@@ -39,10 +40,11 @@ Pre-1. **Core thesis and title frame gates (hard reject).**
    - Does it actively contradict the title? (if yes, cut it)
    - Does it visibly express the one-sentence episode thesis? (if no, cut it)
    - Is this mainly side-banter instead of episode thesis? (if yes, cut it)
-   - In a contrast episode, is the rejected thing the largest, central, brightest, or most memorable element? (if yes, cut it)
+   - In a contrast episode, if a rejected or contrast element appears, is it the largest, central, brightest, or most memorable element? (if yes, cut it)
    - Is it specific enough that it could not be reused for a generic wine episode? (if no, cut it)
-   - Could this work for almost any wine episode if labels were changed? (if yes, cut it)
-   - Is the visual joke instantly readable at thumbnail size without relying on tiny labels/maps/cards/text? (if no, cut it)
+   - Would this concept still make sense without this episode's specific thesis, title frame, and visual contrast? (if yes, cut it)
+   - Does it combine at least two episode-specific anchors supplied for this episode? (if no, cut it)
+   - Is the visual joke instantly readable at thumbnail size without relying on tiny or dense text, packed cards, or map reading? A single large readable bottle label is allowed. (if no, cut it)
    - Can you name the specific transcript moment (a line, a joke, a dialogue exchange, a specific word or comparison) this situation comes from? (if no, cut it)
 
    Then run 1 web search: "[wine/brand name] podcast thumbnail" to see what competitor visual conventions exist (to avoid or improve on them).
@@ -74,7 +76,7 @@ Pre-1. **Core thesis and title frame gates (hard reject).**
    Aim to present at least 3 passing concepts. If fewer than 3 concepts pass after two regeneration rounds, stop and report the blocker instead of showing weak or failing options. Never carry failing or sub-40 concepts into the second review.
 
 3. **Spawn a second review subagent** on the surviving concepts only.
-   Prompt: "You are a cover art critic for The Wine Pair Podcast. Read `docs/house-rules.md` in full, paying special attention to HR-40 and HR-14a, plus the hard gates HR-53 through HR-60. Then review each concept below for: (1) Core Thesis gate, (2) Title Alignment gate, (3) Side-Banter gate, (4) Misframing gate, (5) Portability gate, (6) Thumbnail Readability gate, (7) spoiler rule (HR-40), (8) HR-14a physical-action opening, (9) all 11 brand rules, and (10) score accuracy. Score accuracy is PASS only when every shown concept has a visible heading score in the required format (`Concept [Letter]: [Short title] - [N]/50`), the score is an integer from 0 to 50, and the score math is valid under HR-13. Score accuracy is FAIL if any score is missing, malformed, out of range, or miscalculated. For contrast episodes, enforce visual dominance: the rejected thing may appear only as minor background/corner/pushed-aside detail, and fails if it is the largest, central, brightest, or most memorable element. Return PASS/FAIL for each gate per concept. If any hard gate fails, mark the concept REJECT. Provide a concise reject summary by category and keep detailed reject reasoning in an internal reject log unless requested."
+   Prompt: "You are a cover art critic for The Wine Pair Podcast. Read `docs/house-rules.md` in full, paying special attention to HR-40 and HR-14a, plus the hard gates HR-53 through HR-60. Then review each concept below for: (1) Core Thesis gate, (2) Title Alignment gate, (3) Side-Banter gate, (4) Misframing gate, (5) Portability gate, (6) Thumbnail Readability gate, (7) spoiler rule (HR-40), (8) HR-14a physical-action opening, (9) all 11 brand rules, and (10) score accuracy. Score accuracy is PASS only when every shown concept has a visible heading score in the required format (`Concept [Letter]: [Short title] - [N]/50`), the score is an integer from 0 to 50, and the score math is valid under HR-13. Score accuracy is FAIL if any score is missing, malformed, out of range, or miscalculated. For contrast episodes, enforce visual dominance only when a rejected or contrast element appears: it must stay minor background/corner/pushed-aside detail and fails if it is the largest, central, brightest, or most memorable element. Return PASS/FAIL for each gate per concept. If any hard gate fails, mark the concept REJECT. Provide a concise reject summary by category and keep detailed reject reasoning in an internal reject log unless requested."
    No concept reaches Joe until the second pass returns no FAILs.
 
 3.5. **Pre-send output compliance check (internal).**
@@ -167,6 +169,7 @@ After reading both files, proceed with concept generation.
 - Central angle / visual hook: [WHAT MAKES THIS EPISODE INTERESTING OR FUNNY]
 - Tone: [TONE]
 - Ratings: [JOE AND CARMELA RATINGS]
+- Episode-specific anchors (use for portability and specificity checks): [LIST 4-7 EPISODE-SPECIFIC ANCHORS]
 
 **Concept seeds — physical situations generated in Step 0 (use these as your starting point for each concept):**
 [5 PHYSICAL SITUATIONS FROM STEP 0 — each in the form "Joe is [verb]ing X while Carmela [verb]s Y"]

@@ -111,6 +111,7 @@ Scene descriptions must begin with a sentence in the form: "Joe is [action verb]
 
 **HR-53: Core thesis gate is mandatory before concept generation.**
 Before generating cover-art concepts, write the episode thesis in one sentence. Every concept must visibly express that thesis. If a concept does not express the thesis, reject it before presentation.
+The thesis sentence must create curiosity and must not reveal the verdict. Do not use words like "buy-worthy," "worth it," "better than," "winner," or "delicious" in the thesis.
 
 **HR-54: Title alignment gate is mandatory and binary.**
 Every concept must reinforce the confirmed episode title framing. If the title says the episode is about Sangiovese outside Tuscany, the concept cannot visually recenter Tuscany or Chianti as the main story. Title alignment is PASS/FAIL, not scored.
@@ -119,13 +120,15 @@ Every concept must reinforce the confirmed episode title framing. If the title s
 Transcript banter can add flavor, but it cannot be the main concept unless it directly supports the episode thesis. A funny aside alone is not enough.
 
 **HR-56: Misframing gate for contrast episodes.**
-When the title frame is contrast-based (for example "not Chianti" or "outside Tuscany"), the rejected thing may appear only as a minor background, corner, or pushed-aside element. If it is the largest, central, brightest, or most memorable visual element, reject the concept.
+When the title frame is contrast-based (for example "not Chianti" or "outside Tuscany"), and the rejected or contrast element appears, it may appear only as a minor background, corner, or pushed-aside element. If it is the largest, central, brightest, or most memorable visual element, reject the concept. If the concept omits that rejected or contrast element entirely and still expresses the thesis, this gate does not apply.
 
 **HR-57: Portability gate.**
-Ask: "Could this concept work for almost any wine episode if bottle labels were changed?" If yes, reject it before presentation.
+Ask: "Would this concept still make sense without this episode's specific thesis, title frame, and visual contrast?" If yes, reject it before presentation.
+A concept combining at least two episode-specific anchors is presumed non-portable and qualifies for review, but this is not an automatic pass. It still must pass title alignment, thesis fit, visual coherence, and thumbnail readability.
 
 **HR-58: Thumbnail readability gate.**
-Reject concepts that depend on small labels, dense region cards, maps, or text-heavy interpretation unless the visual joke is instantly readable at podcast-thumbnail size.
+Reject concepts that depend on tiny or dense text, packed region cards, maps, or text-heavy interpretation unless the visual joke is instantly readable at podcast-thumbnail size.
+A single large readable bottle label is allowed and may be required by HR-10.
 
 **HR-59: Hard-reject and regeneration gate.**
 Any concept that fails Core Thesis, Title Alignment, Side-Banter, Misframing, Portability, or Thumbnail Readability must be rejected before presentation. Do not show weak options just to have three choices. Aim to present at least 3 passing concepts. If fewer than 3 concepts pass after two regeneration rounds, stop and report the blocker instead of showing weak or failing options.
@@ -137,6 +140,7 @@ For each presented concept, include concise evidence fields:
 - Transcript/show-note evidence
 - Why it is not portable
 - Thumbnail readability
+A concept that combines at least two episode-specific anchors qualifies as episode-specific and presumed non-portable for review, but it still must pass title alignment, thesis fit, visual coherence, and thumbnail readability.
 Keep detailed reject reasoning internal by default. User-facing output should include only a concise reject summary unless Joe asks for full reject details.
 
 Second-review score-accuracy gate (PASS/FAIL):
