@@ -64,7 +64,7 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 
 **Research-to-Title Alignment:** Final options keep the core "not just Chianti" contrast while avoiding verdict spoilers. Option 1 is the strongest blend of click tension and discovery specificity. Options 2 and 3 retain cleaner question framing with slightly less punch.
 
-**Joe's selection:** *(pending)*
+**Joe's selection:** This Ain't Chianti: Is Italian Sangiovese Better Outside Tuscany? (Selected after final comparative pass. Kept for strongest balance of clickability, discovery, and podcast voice.)
 
 ---
 

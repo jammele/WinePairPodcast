@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-06-20 (session 26 — title rule update + Ep223 rerun)
+**Last updated:** 2026-06-20 (session 26 — Ep223 title confirmed + show-note assets drafted)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
 
@@ -69,9 +69,19 @@
   - `Italian Wine Adventure #25: Sangiovese Outside Tuscany. What Changes?`
 - Session 3 entry appended to `data/title-session-reports.md`.
 
+**Ep223 title confirmation and asset creation:**
+- Joe confirmed title direction and selected: `This Ain't Chianti: Is Italian Sangiovese Better Outside Tuscany?`
+- Updated title trackers:
+  - `data/title-session-reports.md` (selection field updated)
+  - `data/episode-titles.md` (through Ep223)
+- Updated episode output file `outputs/episodes/ep223-sangiovese-outside-tuscany.md` with:
+  - Confirmed title heading
+  - `## KEY QUESTIONS` (7)
+  - `## FREQUENTLY ASKED QUESTIONS` (7, Q./A. format)
+  - `## COVER ART` ChatGPT prompt (ready to paste)
+
 **Pending:**
-- Joe confirms final Ep223 title.
-- After confirmation: update `data/title-session-reports.md` selection field and add Ep223 title to `data/episode-titles.md`.
+- If needed: generate alternate cover-art concept prompts before final image generation.
 
 ---
 

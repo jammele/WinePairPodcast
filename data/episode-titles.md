@@ -1,7 +1,9 @@
 # Episode Title Archive — The Wine Pair Podcast
 
-**Last updated:** 2026-06-13 (through Ep222)
+**Last updated:** 2026-06-20 (through Ep223)
 **Maintained by:** Claude — add each confirmed title here before committing episode work.
+
+**Latest confirmed title:** Ep223 — This Ain't Chianti: Is Italian Sangiovese Better Outside Tuscany?
 
 ---
 
@@ -173,6 +175,7 @@ Format: `Special Episode! The Virginia Winemakers Series [#N if >1]: [Name] of [
 
 | Ep | Title | Format pattern |
 |---|---|---|
+| 223 | This Ain't Chianti: Is Italian Sangiovese Better Outside Tuscany? | [Contrast hook]: [Question] |
 | 204 | Rosé d'Anjou: Better (and Cheaper) Than Provence Rosé? | [Wine]: [Comparative question] |
 | 205 | WTF is Bordeaux Blanc? The Best French Sauvignon Blanc Value! | Series (WTF) |
 | 206 | Sparkling Riesling (German Sekt): The Fruity Bubbly Under $20 You've Never Tried! | [Wine] ([alias]): [Discovery claim] |
