@@ -26,7 +26,7 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 ### Ep224: Moscato d'Asti (Session 1)
 **Date:** 2026-06-27
 **Series:** None — standalone episode
-**Joe's selection:** *(pending)*
+**Joe's selection:** Is Moscato d'Asti the Sweet Wine Serious Wine People Won't Admit They Love? (Option 2)
 
 **Step 0 Research Findings:**
 - Competitor content is dominated by educational "What is Moscato d'Asti?" pieces and generic "Best Moscato d'Asti" listicles — descriptive, verdict-forward, no personality
