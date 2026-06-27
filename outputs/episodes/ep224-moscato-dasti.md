@@ -181,11 +181,11 @@ A. If you like sweet wine, yes, especially for celebrations or dessert parties. 
 ### BLUESKY POSTS
 
 **1.**
-Moscato d'Asti is the kind of wine that can bring floral aromatics, pear, peach, apple-juice energy, and honey notes all at once. We tasted two bottles, and both were very much dessert energy.
+Most people say they don't like sweet wine. The data just doesn't hold that up. Moscato d'Asti is one of the most popular wines in the US, and many popular wines are closer to off-dry than bone dry. Maybe the wine snobs secretly love it but are afraid to admit it?!?
 thewinepairpodcast.com
 
 **2.**
-One bottle was $8.49. One bottle was $16.97. Both were Moscato d'Asti, both were sweet, and both made us rethink what "too sweet" even means.
+One bottle of Moscato d'Asti cost $8.49. The other cost $16.97. We tasted both side by side and rated them honestly. The result was not what we expected.
 thewinepairpodcast.com
 
 **3.**
@@ -194,31 +194,31 @@ thewinepairpodcast.com
 
 **4.**
 Moscato d'Asti is a DOCG wine from Piedmont made from Moscato Bianco. It is lightly sparkling, low alcohol, and one of the most recognizable sweet wines in Italy.
-https://en.wikipedia.org/wiki/Moscato_d%27Asti
+https://winefolly.com/deep-dive/the-magic-of-moscato-dasti/
 
 **5.**
-Moscato Bianco is the grape behind Moscato d'Asti. Same grape, different sparkle, sweetness, and style depending on where and how it is made.
-https://en.wikipedia.org/wiki/Moscato_Bianco
-
-**6.**
-Asti is not the same thing as Moscato d'Asti. The styles are closely related, but Moscato d'Asti is the lighter, softer, lower-alcohol version.
-https://en.wikipedia.org/wiki/Asti_(wine)
-
-**7.**
 The word frizzante matters here. It means lightly sparkling, which is why Moscato d'Asti feels so different from a fully sparkling wine.
 https://en.wikipedia.org/wiki/Frizzante
 
+**6.**
+Sweet wine gets a bad reputation, but if you like dessert wines, Moscato d'Asti has real charm. Serve it ice cold and it behaves a lot better.
+https://www.winespectator.com/articles/i-love-sweet-wines-like-moscato-dasti-does-that-make-me-unsophisticated-49597
+
+**7.**
+A classic pairing for Moscato d'Asti is panettone. In fact, although it is summer, Moscato d'Asti is a fantastic holiday and celebration wine.
+https://www.decanter.com/sponsored/it-wouldnt-be-christmas-without-astis-two-stars-569562/
+
 **8.**
-Piedmont is one of Italy's most important wine regions, and Moscato d'Asti is one of the easiest ways to see the sweeter side of it.
-https://en.wikipedia.org/wiki/Piedmont
+Moscato d'Asti is made in sealed pressurized tanks called autoclaves. Fermentation is temperature-controlled to trap natural aromatics and stop the alcohol before it climbs too high. That is how it stays light and sweet.
+https://www.wine-searcher.com/regions-moscato-dasti
 
 **9.**
-Sweet wine gets a bad reputation, but if you like dessert wines, Moscato d'Asti has real charm. Serve it cold and it behaves a lot better.
-thewinepairpodcast.com
+The method used to make Moscato d'Asti was invented by Italian enologist Federico Martinotti in 1895. It was later patented by Frenchman Eugene Charmat, which is why it now carries his name.
+https://en.wikipedia.org/wiki/Charmat_method
 
 **10.**
-Vanilla ice cream, shortbread, biscotti, and spicy Thai food. Moscato d'Asti sits right on the border between dessert wine and celebration wine.
-thewinepairpodcast.com
+Moscato Bianco is one of the most aromatic grape varieties in the world. The peach, apricot, orange blossom, and honey you smell in Moscato d'Asti come from the grape itself, not from oak or winemaking.
+https://italianwinecentral.com/variety/moscato-bianco/
 
 ---
 
