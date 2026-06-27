@@ -326,6 +326,23 @@ function run(filePath, requestedSections, expectedCounts) {
       }
     }
 
+    // Domain diversity check — warn if more than 2 fact posts share a domain
+    const domainMap = {};
+    for (const { num, url } of factUrls) {
+      try {
+        const domain = new URL(url.startsWith('http') ? url : `https://${url}`).hostname;
+        if (!domainMap[domain]) domainMap[domain] = [];
+        domainMap[domain].push(num);
+      } catch (_) {
+        // unparseable URL — skip domain check for this post
+      }
+    }
+    for (const [domain, nums] of Object.entries(domainMap)) {
+      if (nums.length > 2) {
+        warnings.push(`Posts ${nums.join(', ')} all use domain "${domain}" — no more than 2 fact posts should share a domain (HR-31 quality). Diversify sources.`);
+      }
+    }
+
     // Character count check (text portion must be under ~240 chars for URL posts)
     for (const post of posts) {
       const textLength = post.text.length;

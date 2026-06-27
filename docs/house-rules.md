@@ -236,6 +236,11 @@ Bluesky posts are part of the SEO/AEO output and must be written and saved to th
 **HR-31: Bluesky post URLs — teasers link to the podcast, fact posts link to unique external sources.**
 The first 3 posts (teasers) link to thewinepairpodcast.com or the specific episode URL. Posts 4 through 10 (fact/value posts) must each link to a unique external URL — no repeats, and no thewinepairpodcast.com. Use the episode script's research links to assign one unique source per post. Every fact post must have a different URL.
 
+Additional requirements for posts 4-10:
+- Domain diversity: no more than 2 of the 7 fact posts may share the same domain (e.g. en.wikipedia.org). If more than 2 would be the same domain, find alternatives from Decanter, Wine Enthusiast, Wine Folly, Wine-Searcher, specialized wine blogs, or news sources.
+- Angles coverage: at least one fact post must cover the Nerd angle (fermentation method, soil type, grape clone, or specific production technique from the episode) and at least one must cover the Story angle (historical anecdote, surprising statistic, or weird fact mentioned in the episode).
+- A pre-write plan table (see generate-episode-content.md Section 4) must be completed before any post is written. The plan confirms URL uniqueness, domain diversity, and angles coverage before text is drafted.
+
 **HR-32: Read docs/wine-in-the-news.md before writing any Wine in the News content.**
 Applies to both finding story options and drafting the segment script. Do not skip for "quick" story searches.
 

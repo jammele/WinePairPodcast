@@ -195,6 +195,30 @@ Output format:
 
 Write exactly 10 posts. Count characters on every post before including it.
 
+**MANDATORY STEP — complete this plan before writing any post.**
+
+Fill in this table first. Do not write any post text until the table is complete and all rules below are satisfied.
+
+| Post | Angle | URL |
+|---|---|---|
+| 1 | Teaser — episode hook | thewinepairpodcast.com |
+| 2 | Teaser — value or price story | thewinepairpodcast.com |
+| 3 | Teaser — verdict hint (no spoiler) | thewinepairpodcast.com |
+| 4 | Nerd angle (fermentation, soil, clone, technique) | [unique external URL — source domain] |
+| 5 | Nerd or Story angle | [unique external URL — different domain from post 4] |
+| 6 | Story angle (historical or weird fact) | [unique external URL] |
+| 7 | Fact | [unique external URL] |
+| 8 | Fact | [unique external URL] |
+| 9 | Fact | [unique external URL] |
+| 10 | Fact | [unique external URL] |
+
+Planning rules (verify before proceeding):
+- At least one of posts 4-10 must cover the **Nerd angle**: fermentation method, soil type, grape clone, or production technique discussed in the episode.
+- At least one of posts 4-10 must cover the **Story angle**: a historical anecdote, surprising statistic, or weird fact mentioned in the episode.
+- Post 3 must include a verdict hint (e.g. reaction, rating signal) without spoiling the outcome.
+- Posts 4-10 must not share a domain. No more than 2 posts from the same domain (e.g. en.wikipedia.org) among posts 4-10. If more than 2 planned sources are Wikipedia, find other credible sources: Decanter, Wine Enthusiast, Wine Folly, Wine-Searcher, specialized wine blogs, or news sites.
+- All 7 external URLs must be sourced from the episode research links provided above or from credible external sources — none may be thewinepairpodcast.com.
+
 **URL rules (HR-31):**
 - Posts 1, 2, 3: teasers. Must end with `thewinepairpodcast.com`. No other URLs.
 - Posts 4-10: fact/value posts. Each must end with a unique external URL from the episode's research links. No `thewinepairpodcast.com`. No repeated URLs across posts 4-10.
@@ -223,7 +247,8 @@ Before returning your output, run through this checklist and report results for 
 1. Em-dashes: scan every line. How many em-dashes found? (Must be zero.)
 2. Bluesky character counts: list each post number and its total character count. Flag any over 300.
 3. Posts 1-3 URLs: confirm all three end with `thewinepairpodcast.com`. List them.
-4. Posts 4-10 URLs: list all seven URLs. Confirm zero are `thewinepairpodcast.com`. Confirm all seven are unique (no repeats).
+4. Posts 4-10 URLs: list all seven URLs. Confirm zero are `thewinepairpodcast.com`. Confirm all seven are unique (no repeats). Count how many share the same domain — if more than 2 of the 7 share a single domain (e.g. en.wikipedia.org), flag it as a quality issue and replace the extras with non-duplicate sources.
+4a. Angles coverage: confirm at least one of posts 4-10 covers the Nerd angle (fermentation, soil, clone, or technique) and at least one covers the Story angle (historical anecdote, weird fact, or surprising statistic from the episode). If either is missing, rewrite before returning.
 5. Wine in the News: confirm no post references the news segment.
 6. FAQ heading: confirm it is exactly "FREQUENTLY ASKED QUESTIONS".
 7. Q./A. format: confirm every Q line starts with `**Q.` and every A line starts with `A.` (plain).
