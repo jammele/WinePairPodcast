@@ -1,8 +1,28 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-06-20 (session 26 — Ep223 show-note social content completed)
+**Last updated:** 2026-06-27 (session 27 — Ep224 title, content, and cover-art concept selected)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
+
+---
+
+## Session 27 summary (2026-06-27)
+
+**Ep224 — Moscato d'Asti — title + content + cover-art documentation updated.**
+- Confirmed title selected and archived: `Is Moscato d'Asti the Sweet Wine Serious Wine People Won't Admit They Love?`
+- Updated title trackers:
+  - `data/title-session-reports.md` (Ep224 selection set)
+  - `data/episode-titles.md` (through Ep224)
+- Added episode content file: `outputs/episodes/ep224-moscato-dasti.md` with:
+  - `KEY QUESTIONS` (7)
+  - `FREQUENTLY ASKED QUESTIONS` (7)
+  - FAQ + Review schema markup
+  - `BLUESKY POSTS` (10)
+- Cover art concept finalized: **Concept D — Celebration Confession (46/50)**
+  - Full ChatGPT prompt added to `outputs/episodes/ep224-moscato-dasti.md` under `## COVER ART`
+  - `data/cover-art-session-reports.md` updated with Ep224 entry + selection
+  - `data/cover-art-scenes.md` updated with Ep224 approved scene and oldest entry removed to keep 5-scene cap
+- Session preference captured: avoid random one-off dessert props and candle framing; use proper wine glass shape (small tulip white wine glass, not flute).
 
 ---
 

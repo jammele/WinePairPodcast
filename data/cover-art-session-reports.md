@@ -19,9 +19,35 @@ This file is written and read by the `/generate-cover-art` skill. It accumulates
 
 **Ep222 (2026-06-13):** Joe selected Concept D (Honey Double-Meaning, 40/50) — after rejecting all three first-session concepts. First-session failure: concepts built from wine's sensory properties (color, texture, glass comparison) rather than specific episode moments. Second session fixed this by reading the full transcript first. Key pattern confirmed: concepts must come from specific funny MOMENTS in the episode (dialogue, jokes, character reactions), not from what the wine looks or tastes like abstractly. Joe will immediately recognize when a concept could apply to "any wine episode." The honey double-meaning works because it comes from a specific line in the actual recording.
 
+**Ep224 (2026-06-27):** Joe selected Concept D (Celebration Confession, 46/50). Pattern confirmed: he prefers social-tension comedy ("serious wine behavior" vs. playful confession) over prop-driven dessert gags. Specific exclusions were explicit and should carry forward: avoid one-off transcript props that feel random (panettone, lemon sorbet cup, fruit tarts), avoid candle-comparison framing, and use a proper tasting glass shape (small tulip white wine glass, not a flute).
+
 ---
 
 ## Episode Entries
+
+---
+
+### Ep224: Moscato d'Asti — SELECTED
+**Date:** 2026-06-27
+**Title:** Is Moscato d'Asti the Sweet Wine Serious Wine People Won't Admit They Love?
+
+**Physical Situation Brainstorm (final set after user-guided revisions):**
+- A: The Sugar Receipt (47/50)
+- B: Aroma Receipt (45/50)
+- C: Fridge-Cold Only (43/50)
+- D: Celebration Confession (46/50)
+- E: The Secret Sweet-Wine Drawer (44/50)
+
+**Constraint updates from this session:**
+- Removed random dessert-prop framing tied to single podcast comments (panettone, lemon sorbet cup, fruit tarts)
+- Replaced candle framing with a wine-native aroma direction
+- Corrected glassware direction: no flute, use a small tulip-shaped white wine glass
+
+**Final options considered:**
+1. Concept A: The Sugar Receipt (47/50)
+2. Concept D: Celebration Confession (46/50)
+
+**Joe's selection:** Concept D — Celebration Confession (46/50). ChatGPT prompt written and saved to outputs/episodes/ep224-moscato-dasti.md.
 
 ---
 

@@ -39,7 +39,7 @@ A. Yes, absolutely. This is a wine that wants to be fridge-cold or even colder. 
 A. Moscato d'Asti is usually lower in alcohol and only lightly sparkling, while Asti Spumante is a more fully sparkling, more classic bubbly style. They come from the same broad area and the same grape family, but they do not drink the same. If you want something softer, sweeter, and less aggressively bubbly, Moscato d'Asti is the better match.
 
 **Q. What food pairs well with Moscato d'Asti?**
-A. Think dessert first: panettone, lemon sorbet, fruit tarts, sherbet, and other sweet finish-the-meal foods. It can also work with spicy foods because the sweetness cools the heat, so Thai food or pad Thai are fair game. We liked the idea of using it as the dessert itself, not just a drink beside dessert.
+A. Think simple sweet pairings and spicy contrast. Vanilla ice cream, shortbread, biscotti, and lightly sweet pastries all work, and spicy foods like Thai dishes can also pair well because the sweetness helps cool the heat. This is a wine that can sit at dessert but still play with spicy takeout.
 
 **Q. Is Moscato d'Asti worth buying?**
 A. If you like sweet wine, yes, especially for celebrations or dessert parties. We did not rate either bottle as a buy by our scale, but both were charming, enjoyable, and very much what they were supposed to be. The Kirkland bottle was the better value, while the Saracco showed a little more brightness and complexity. If sweet wine is your thing, this category is worth exploring.
@@ -75,7 +75,7 @@ A. If you like sweet wine, yes, especially for celebrations or dessert parties. 
     "price": "8.49",
     "priceCurrency": "USD"
   },
-  "reviewBody": "Very sweet and lightly sparkling, with peach, pear, apple juice, honey, and citrus on the nose. The palate is dessert-like and low in alcohol, with a fizzy texture that keeps it lively if served cold. Best as a celebration wine or with dessert like panettone or lemon sorbet. Joe rated it 6/10 and Carmela rated it 5/10."
+  "reviewBody": "Very sweet and lightly sparkling, with peach, pear, apple juice, honey, and citrus on the nose. The palate is dessert-like and low in alcohol, with a fizzy texture that keeps it lively if served cold. Best as a celebration wine or with simple dessert-style pairings and spicy food. Joe rated it 6/10 and Carmela rated it 5/10."
 }
 </script>
 
@@ -160,7 +160,7 @@ A. If you like sweet wine, yes, especially for celebrations or dessert parties. 
       "name": "What food pairs well with Moscato d'Asti?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Think dessert first: panettone, lemon sorbet, fruit tarts, sherbet, and other sweet finish-the-meal foods. It can also work with spicy foods because the sweetness cools the heat, so Thai food or pad Thai are fair game. We liked the idea of using it as the dessert itself, not just a drink beside dessert."
+        "text": "Think simple sweet pairings and spicy contrast. Vanilla ice cream, shortbread, biscotti, and lightly sweet pastries all work, and spicy foods like Thai dishes can also pair well because the sweetness helps cool the heat. This is a wine that can sit at dessert but still play with spicy takeout."
       }
     },
     {
@@ -181,7 +181,7 @@ A. If you like sweet wine, yes, especially for celebrations or dessert parties. 
 ### BLUESKY POSTS
 
 **1.**
-Moscato d'Asti is the kind of wine that can smell like a candle and taste like apple juice, pear, peach, and honey all at once. We tasted two bottles, and both were very much dessert energy.
+Moscato d'Asti is the kind of wine that can bring floral aromatics, pear, peach, apple-juice energy, and honey notes all at once. We tasted two bottles, and both were very much dessert energy.
 thewinepairpodcast.com
 
 **2.**
@@ -217,5 +217,65 @@ Sweet wine gets a bad reputation, but if you like dessert wines, Moscato d'Asti 
 thewinepairpodcast.com
 
 **10.**
-Panettone, lemon sorbet, fruit tarts, spicy Thai food. Moscato d'Asti sits right on the border between dessert wine and celebration wine.
+Vanilla ice cream, shortbread, biscotti, and spicy Thai food. Moscato d'Asti sits right on the border between dessert wine and celebration wine.
 thewinepairpodcast.com
+
+---
+
+## COVER ART
+
+### Ep224 - Is Moscato d'Asti the Sweet Wine Serious Wine People Won't Admit They Love?
+
+```text
+Create a square editorial cartoon illustration for a wine podcast cover image.
+
+Use this style exactly:
+
+Style name: High-contrast wine-bar editorial cartoon
+
+A bold, graphic, exaggerated cartoon style with chunky black ink outlines, flat saturated colors, oversized expressive faces and hands, theatrical body language, broad smiles, simple shapes, minimal shading, and a warm burgundy/red wine-bar palette. The image should feel like a magazine cover crossed with a premium adult animated comedy. It should be funny, energetic, and readable at small podcast-thumbnail size.
+
+Important style rules:
+Do not make this realistic.
+Do not make the characters portrait-like.
+Do not add realistic skin texture, realistic facial anatomy, painterly detail, soft lighting, gradients, or 3D effects.
+Use simplified, exaggerated animated-comedy proportions.
+The humor should come from expressions, staging, and visual contrast.
+
+Recurring character bible:
+
+Joe is a middle-aged cartoon man with black rectangular glasses, full salt-and-pepper beard, salt-and-pepper hair, thick expressive eyebrows, and a dark navy pullover. He should feel curious, slightly defensive, and playful.
+
+Carmela is a middle-aged cartoon woman with medium-length warm brown hair, gold hoop earrings, expressive eyes, a dark top, and a bright amused smile. She should feel confident, delighted, and in on the joke.
+
+Scene (Concept D: Celebration Confession):
+Joe is pretending to be very serious, scribbling tasting notes on a clipboard with exaggerated concentration, while trying to keep a straight face.
+Carmela is popping a small burst of confetti over a bottle labeled MOSCATO D'ASTI with a mischievous grin, like she is exposing the "guilty pleasure" moment.
+A proper small tulip-shaped white wine glass (not a flute) sits near the bottle with light sparkle in the wine.
+The visual joke is social tension: "serious wine behavior" on one side, "this is secretly fun and celebratory" on the other.
+Do not depict a verdict (no thumbs up/down, no sink, no winner/loser framing).
+
+Composition:
+Tight square crop.
+Characters fill at least 70% of the frame, waist-up, close to viewer.
+Joe on left, Carmela on right, bottle centered.
+One clear focal point: the MOSCATO D'ASTI bottle under confetti.
+Clean background, minimal clutter.
+No extra text in image besides the bottle label.
+
+Color and mood:
+Warm burgundy background with high contrast highlights.
+Gold and pale straw tones in the wine.
+Confetti should be minimal and controlled, not chaotic.
+Mood should be witty, playful, and premium-cartoon, not childish.
+
+Hard exclusions:
+No panettone.
+No fruit tarts.
+No lemon sorbet cup.
+No candle.
+No wine flute.
+No photorealistic people.
+No cluttered party table.
+No text overlays or typography-heavy layout.
+```
