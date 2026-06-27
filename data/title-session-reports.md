@@ -23,6 +23,43 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 ---
 
 ## Episode Entries
+### Ep224: Moscato d'Asti (Session 1)
+**Date:** 2026-06-27
+**Series:** None — standalone episode
+**Joe's selection:** *(pending)*
+
+**Step 0 Research Findings:**
+- Competitor content is dominated by educational "What is Moscato d'Asti?" pieces and generic "Best Moscato d'Asti" listicles — descriptive, verdict-forward, no personality
+- YouTube runs to "Moscato d'Asti Review — Is It Worth It?" — safe consumer-guide register, no tension
+- Key gap: no competitor content uses the 133g sugar/liter fact, the gummy-bear/apple-juice sensory angle, or the dry-wine-lovers-vs-sweetest-DOCG conflict
+- No prior Wine Pair episode on Moscato d'Asti in archive
+
+**Episode Hook:** Joe and Carmela, dry wine drinkers, taste Kirkland Signature Moscato d'Asti ($8.49) and Saracco Moscato d'Asti ($16.97), find both smell like a Yankee candle and taste like gummy bears/apple juice, and are genuinely charmed but conflicted on rating.
+
+**Subagent Round 1 Summary:**
+- "Moscato d'Asti Smells Like a Yankee Candle. But Should You Buy It?" — PASS ⚠️, Click 7/10, WARNING: format echoes Ep214 "smells like [absurd object]" template
+- "Moscato d'Asti Is Basically a Gummy Bear in a Wine Glass. But Worth It?" — PASS ✓, Click 8/10, cleanest title in set
+- "Moscato d'Asti: Is Italy's Sweetest Wine Worth the Sugar Rush?" — PASS ⚠️, Click 6/10, WARNING: false superlative + Ep216 colon echo
+- "Costco's $8 Moscato d'Asti vs. a $17 Bottle: Which Is Worth It?" — PASS ⚠️, Click 7/10, Meiomi 2/5 flagged for regen
+- "Is Moscato d'Asti the Wine Snob's Secret Guilty Pleasure?" — FAIL HR-18 ("Secret" banned spam word)
+
+**Quality Gate R1:** Only Title 2 cleared. Three revised/replacement titles generated for Round 2.
+
+**Subagent Round 2 Summary:**
+- "Moscato d'Asti Has 133 Grams of Sugar Per Liter. Is That a Problem?" — PASS, Click 9/10, AI Disc 9/10, Meiomi 4/5
+- "Moscato d'Asti Is Basically a Gummy Bear in a Wine Glass. But Worth It?" — PASS, Click 8/10, AI Disc 7/10, Meiomi 3/5
+- "Moscato d'Asti: The Wine You'll Need to Hide From Your Kids" — PASS ⚠️, Click 7/10, WARNING: colon format echoes Ep216
+- "Is Moscato d'Asti the Wine Snob's Forbidden Pleasure?" — PASS ⚠️, Click 7/10, WARNING: "Is X the Wine Snob's…?" echoes Ep219
+- "$8 vs. $17: Does Costco's Moscato d'Asti Have Anything to Prove?" — FAIL HR-17 (grape name not complete in first 30 chars)
+
+**Final presented options:**
+1. `Moscato d'Asti Has 133 Grams of Sugar Per Liter. Is That a Problem?`
+2. `Moscato d'Asti Is Basically a Gummy Bear in a Wine Glass. But Worth It?`
+3. `Moscato d'Asti: The Wine You'll Need to Hide From Your Kids`
+4. `Is Moscato d'Asti the Wine Snob's Forbidden Pleasure?`
+
+---
+
 
 ---
 
