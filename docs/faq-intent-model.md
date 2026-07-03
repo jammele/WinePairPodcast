@@ -4,6 +4,53 @@ This file defines the rules used by the FAQ generation pipeline to select, score
 
 ---
 
+## 0. Evidence types, anti-mislabeling rules, and C1 preflight
+
+### 0.1 — Evidence type definitions
+
+**I (Internal):** Evidence from episode-created materials only. Includes: episode title, hook, script text, transcript, tasting notes, prices, host ratings, verdicts, host preferences, pairings, and central discussion topics. Research links listed in the script are **source pointers only** — they are not I evidence. They become C2 evidence once fetched and read. I evidence requires no fetch or search.
+
+**C2 (Fetched page):** Evidence from fetching a specific URL. The URL may come from search results, episode research links, or other known sources. Requires: URL fetched, page title, key phrases observed, and framing observed. C2 confirms what a page says. It does **not** confirm how real users search or what questions they ask.
+
+**C1 (Search result):** Evidence from a live web search query. Requires all four of: (1) exact query string, (2) observed result titles and snippets, (3) URLs of results, and (4) date observed. C1 is the only valid evidence type for confirming that real users phrase a question in a particular way.
+
+### 0.2 — Anti-mislabeling rules
+
+These rules are non-negotiable:
+
+1. Do not label C2 evidence as C1. Fetching a known URL is C2. Running a query string and observing result titles and snippets is C1.
+2. A scoring cell cannot claim C1 support unless it cites a C1 evidence ID.
+3. On web-triggered episodes: plausibility 3 requires at least one C1 evidence ID. C2 evidence alone caps plausibility at 2. I evidence alone caps plausibility at 1.
+4. Research links listed in the episode script are source pointers only. They are not I evidence. They become C2 when fetched.
+
+### 0.3 — C1 capability preflight
+
+The preflight is **only run when C1 is determined to be required** by trigger rules (Section 5). Do not run it for non-triggered episode types.
+
+Order of operations:
+1. Classify episode type (Step A).
+2. Determine whether C1 is required by trigger rules (Step B.1).
+3. **If C1 is required:** run this preflight — state the specific tool or command that will perform live web searches; confirm it can return (a) exact query string, (b) observable result titles and snippets, (c) URLs of results, and (d) date observed.
+4. **If C1 is required and the tool cannot produce all four outputs:** C1 is unavailable — stop before any candidate generation.
+5. **If C1 is not required:** state "C1 not required for this episode type." Proceed with I and C2 evidence. Do not run the preflight.
+6. **If C1 is optional** (phrasing is uncertain for a non-triggered episode): state "C1 used optionally — [reason]." Run the preflight for that optional use only. If unavailable in the optional case, continue without C1.
+
+URL fetch, reading known links, repo search, file search, and local grep are **not C1** regardless of episode type.
+
+### 0.4 — Labeled-inference rule
+
+Inference is not banned. Unsupported inference is banned.
+
+Inference is allowed only when it is:
+- Explicitly labeled as inference
+- Tied to at least one specific evidence ID
+
+Example of valid inference: `2 — Inference from I-3 and I-4: the episode compares both wines directly, but no C1 evidence confirms this exact search phrasing.`
+
+Inference without evidence IDs cannot justify a score and must be replaced or scored lower.
+
+---
+
 ## 1. Default priority ranking by intent type
 
 When multiple candidates score similarly, prefer questions that serve higher-priority intents.
@@ -274,16 +321,107 @@ When multiple candidates score above 13, use this priority order:
 
 **A score is objective if and only if the evidence note could be handed to another person and they could independently verify it.**
 
-Acceptable evidence notes:
-- "3 — costcowineblog.com review page title uses 'Kirkland Signature Pauillac review'; opening paragraph addresses buying decision directly"
-- "0 — 'négociant' is wine-trade language; web search for 'who makes Kirkland Saint-Julien' returns results that do not use this term"
-- "2 — episode centrality: négociant mention appears only in a research note, not in the main tasting discussion (transcript reference: back-label section)"
+**Evidence IDs are mandatory.** Every row in the evidence ledger must carry an ID: `I-N` for internal evidence, `C1-N` for search-result evidence, `C2-N` for fetched-page evidence. Every scoring cell must cite at least one evidence ID.
+
+**Scoring cell format:** `[score] — [evidence ID(s)]: [one-sentence rationale explaining why the cited evidence supports this score]`
+
+Acceptable scoring cells:
+- `3 — C1-2, C2-1: C1-2 shows result titles using "Kirkland Signature Pauillac review"; C2-1 is a fetched review page with buy/value framing in the opening paragraph.`
+- `0 — C1-4: C1-4 search on "who makes Kirkland Saint-Julien" returns results using plain language like "who makes" and "who bottles" — not "négociant." Vocabulary criterion auto-fails.`
+- `2 — I-3: transcript reference places négociant mention only in a research note, not in the main tasting discussion.`
+- `2 — Inference from I-3 and I-4: episode compares both wines directly, but no C1 evidence confirms this exact search phrasing.` *(labeled inference — allowed)*
 
 Not acceptable:
-- "3 — I believe people would search this"
-- "2 — seems plausible"
-- "1 — probably niche"
+- `3 — C1-2` (score and ID present but no rationale)
+- `3 — I believe people would search this` (no evidence ID, unsupported inference)
+- `2 — seems plausible` (no evidence ID)
+- `1 — probably niche` (no evidence ID)
 
 ---
 
-*Last updated: 2026-07-03 — initial version based on ChatGPT architecture review and session 28 process audit*
+## 9. Required audit template
+
+Every FAQ run must produce an audit file at `outputs/episodes/faq-audits/ep[N]-faq-audit.md`. The file must match the structure below. Do not omit any section.
+
+---
+
+### Audit file header (required)
+
+The file must open with these fields:
+
+    # FAQ Audit — Ep[N]: [Episode Title]
+    
+    Date: [YYYY-MM-DD]
+    Episode type: [per Section 2 of this file]
+    Web search triggered: [Yes — [trigger condition] / No]
+    C1 status (use exactly one):
+      C1 required and completed
+      C1 required but unavailable — scoring blocked
+      C1 not required for this episode type
+      C1 used optionally — [reason]
+
+If C1 status is `C1 required but unavailable — scoring blocked`: stop here. Do not proceed to candidate generation.
+
+---
+
+### Evidence ledger — Section I: Internal evidence
+
+*(Episode-created materials only: title, hook, script, transcript, tasting notes, prices, host ratings, verdicts, pairings, host preferences, central discussion topics. Research links are source pointers only — do not list them here. They become C2 once fetched.)*
+
+| ID | Evidence type | Finding | Source (episode file section) |
+|---|---|---|---|
+| I-1 | ... | ... | ... |
+
+---
+
+### Evidence ledger — Section C1: Search-result evidence
+
+*(Exact query strings and observed results only. URL fetch, reading known links, and local search are not C1.)*
+
+This section must open with one of the four C1 status labels:
+- `C1 not required for this episode type` — section contains only this line; table may be omitted.
+- `C1 used optionally — [reason]` — include results if available; note unavailable if not.
+- `C1 required but unavailable — scoring blocked` — section contains only this line; no table follows; stop here.
+- `C1 required and completed` — proceed with table below.
+
+| ID | Exact query | Result title observed | Snippet/text observed | URL of result | Date observed |
+|---|---|---|---|---|---|
+| C1-1 | ... | ... | ... | ... | ... |
+
+---
+
+### Evidence ledger — Section C2: Fetched-page evidence
+
+*(Records what fetched pages say. Does not confirm search intent.)*
+
+| ID | URL fetched | Page title | Key phrases and framing observed |
+|---|---|---|---|
+| C2-1 | ... | ... | ... |
+
+---
+
+### Candidate scoring table
+
+Each scoring cell format: `[score] — [evidence ID(s)]: [one-sentence rationale]`
+A cell with score and ID but no rationale is not valid.
+
+| Candidate question | Plausibility | Usefulness | Centrality | Specificity | Grounding | Vocabulary | Penalties | Total | Pass? |
+|---|---|---|---|---|---|---|---|---|---|
+
+---
+
+### Rejection log
+
+| Candidate | Score | Specific rule violated |
+|---|---|---|
+
+---
+
+### Final selection log
+
+| Rank | Question | Score | Tie-breaker applied (if any) |
+|---|---|---|---|
+
+---
+
+*Last updated: 2026-07-03 — updated with evidence type definitions (Section 0), evidence ID + rationale scoring format (Section 8), and required audit template (Section 9)*

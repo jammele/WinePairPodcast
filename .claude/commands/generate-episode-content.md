@@ -30,6 +30,11 @@ Before invoking, enforce the confirmed-title gate from house rules: title must b
   - FAQ standalone-answer gate: every answer must make sense without episode context.
   - FAQ podcast-narrative gate: no "In this episode", "Joe says", "Carmela says", "we tasted", "we got", "we chose", "on the show", "our episode" in answers or schema text.
   - Web search gate: if episode type triggers mandatory web search (Costco, Kirkland, private-label, current product, producer identity) and web search is unavailable, stop and report — do not generate questions.
+  - Anti-fabrication gate (four hard rules):
+    1. Do not claim C1 search was performed unless exact query strings and observed result titles/snippets are recorded in the C1 section of the audit file.
+    2. Do not infer search intent from C2 pages alone. C2 confirms what a page says, not how users search.
+    3. If a web-search trigger applies and C1 is unavailable, stop. Do not generate candidates, score candidates, or write FAQ answers.
+    4. Do not say FAQ outcomes are unlikely to change before required evidence steps are complete and candidates have been re-scored.
   - Facts gate: no invented facts.
 
 1. Confirm you have read the episode script via `node scripts/read_gdoc.js <docId>`. Find the docId in `docs/work-log.md`. If not read yet, read it now before proceeding.
@@ -80,7 +85,7 @@ Generate only the sections listed under **Requested sections** below. Do not gen
 - Enforce strict HR-2 Q./A. format.
 - Do not invent facts.
 - Do not output unrequested sections.
-- Save audit file to `outputs/episodes/faq-audits/ep[N]-faq-audit.md` before returning output.
+- Save audit file to `outputs/episodes/faq-audits/ep[N]-faq-audit.md` using the template from Section 9 of `docs/faq-intent-model.md` before returning output.
 
 ---
 
@@ -115,43 +120,62 @@ Key Questions and FAQ must be generated together using the evidence-bound candid
 
 Read `docs/faq-intent-model.md`. Identify the episode type (e.g. Costco/private-label review, standard two-wine review, grape explainer, region explainer). State the episode type explicitly before proceeding.
 
-### Step B — Check web search trigger
+### Step B — Check web search trigger and run C1 preflight if required
 
-Does this episode meet any web search trigger condition from Section 5 of the intent model? (Costco, Kirkland, Trader Joe's, Aldi, private-label, current/recent vintage in a product-review context, producer/bottler identity questions, unfamiliar phrasing.)
+**Step B.1 — Determine whether C1 is required.** Check whether this episode meets any web search trigger condition from Section 5 of the intent model: Costco, Kirkland, Trader Joe's, Aldi, private-label, current or recent vintage in a product-review context, producer/bottler identity questions, or uncertain search phrasing. State your answer explicitly before continuing.
 
-**If YES and web search is available:** proceed to Step C.
-**If YES and web search is unavailable:** stop. Report: "Objective FAQ scoring cannot be completed for this episode type — web search is required but unavailable. Cannot proceed." Do not generate candidates or answers.
-**If NO:** skip Step C and proceed directly to Step D using internal episode evidence only.
+**Step B.2 — If C1 is required:** Run the C1 capability preflight.
+- State the specific tool or command you will use to run live web searches.
+- Confirm it can return all four of: (a) exact query string, (b) observable result titles and snippets, (c) URLs of results, (d) date observed.
+- URL fetch, reading known links, repo search, file search, and local grep are not C1. If the tool cannot produce all four outputs, C1 is unavailable.
+
+**If C1 is required and available:** proceed to Step C.
+**If C1 is required and unavailable:** stop. Set audit C1 status to "C1 required but unavailable — scoring blocked." Report: "C1 search required for this episode type but unavailable — scoring blocked. Cannot proceed." Do not generate candidates or answers.
+
+**Step B.3 — If C1 is not required:** State: "C1 not required for this episode type." Set audit C1 status accordingly. Proceed directly to Step D using I and C2 evidence only. Do not run a preflight. Do not block.
+
+**Step B.4 — If C1 is optional** (search phrasing is uncertain for a non-triggered episode): State: "C1 used optionally — [reason]." Run the preflight for that optional use only. If unavailable in this optional case, note it and continue without C1.
 
 ### Step C — Gather evidence (required for web-triggered episodes)
 
-Produce an evidence table before any candidate generation. The table has two parts:
+Produce an evidence ledger before any candidate generation. The ledger has three sections: I (internal), C1 (search results), and C2 (fetched pages). Assign evidence IDs to every row — I-N, C1-N, C2-N. These IDs will be cited in the scoring table in Step E.
 
-**C1 — Active query-based web search (required first).**
-Run a mandatory search query set using realistic listener/buyer phrasing. For a Costco/private-label episode, the required query set includes:
-- `[wine name] review` for each wine (e.g. "2023 Kirkland Signature Pauillac review")
-- `Kirkland [appellation] Costco` or equivalent retailer + wine phrasing
-- `Costco [wine name] [vintage]`
-- `who makes Kirkland Signature [wine]` or `who bottles [wine]`
-- `[appellation A] vs [appellation B]` if a comparison episode
-- Any product-specific variation implied by the episode title
+**Section I — Internal evidence.**
+Gather episode-created facts: title, hook, script text, transcript, tasting notes, prices, host ratings, verdicts, host preferences, pairings, central discussion topics. Research links listed in the script are **source pointers only** — they are not I evidence. Do not record them here. They become C2 evidence once fetched.
 
-For each query, search the web and record: query string, result titles and snippets observed, repeated phrases across results, source types (review site, forum, retailer page, blog), and what listener intent each result implies.
+| ID | Evidence type | Finding | Source (episode file section) |
+|---|---|---|---|
+| I-1 | ... | ... | ... |
 
-**C2 — Fetch and document relevant pages.**
-Fetch the most relevant pages from the search results and from the existing episode research links. Record page titles, key phrases in headings and opening paragraphs, whether buying/review/comparison/provenance language appears, and how the product names are phrased. Cite with source URLs.
+**Section C1 — Search-result evidence.**
+Run all mandatory queries using realistic listener/buyer phrasing. For a Costco/private-label episode, run all of the following (substitute actual wine names and vintage):
 
-**Evidence table format:**
+1. `2023 [Wine 1 name] review`
+2. `2023 [Wine 2 name] review`
+3. `Kirkland [appellation 1] Costco`
+4. `Kirkland [appellation 2] Costco`
+5. `Costco Kirkland [wine type] [vintage year]`
+6. `Kirkland Signature [wine type] review`
+7. `who makes Kirkland Signature [wine 1]`
+8. `who makes Kirkland Signature [wine 2]`
+9. `who bottles Kirkland Signature [wine 2]`
+10. `[Producer name] Kirkland [wine 2]` (if a bottler name is known or suspected)
+11. `Kirkland [wine 2] negociant`
+12. `[appellation A] vs [appellation B]`
+13. `[appellation] wine under $[relevant price tier]`
 
-| Evidence type | Finding | Source |
-|---|---|---|
-| Episode title/hook | [state it] | Internal episode file |
-| Verdict | [ratings and buy/skip result] | Internal episode file |
-| Listener decision | [what a Costco shopper is likely deciding] | Inferred from product + retailer + review format |
-| Web search: [query] | [result titles/snippets/repeated phrases observed] | Web search |
-| Web search: [query] | [result titles/snippets/repeated phrases observed] | Web search |
-| Fetched page: [URL] | [key phrases, framing, what listener job the page serves] | Fetched page |
-| Vocabulary risk | [note any terms that appear on review pages vs. trade-only terms] | Web search + vocabulary check |
+For each query, record: exact query string, result titles and snippets observed, repeated phrases across results, source types, and what listener intent each result implies.
+
+| ID | Exact query | Result title observed | Snippet/text observed | URL of result | Date observed |
+|---|---|---|---|---|---|
+| C1-1 | ... | ... | ... | ... | ... |
+
+**Section C2 — Fetched-page evidence.**
+Fetch the most relevant pages from the C1 search results, and fetch any episode research links (which become C2 once read). Record page title, key phrases in headings and opening paragraphs, whether buying/review/comparison/provenance language appears, and how product names are phrased.
+
+| ID | URL fetched | Page title | Key phrases and framing observed |
+|---|---|---|---|
+| C2-1 | ... | ... | ... |
 
 ### Step D — Generate 12-15 candidate questions
 
@@ -165,12 +189,18 @@ Produce a score table. For every candidate, provide:
 - Penalty adjustments with reason
 - Adjusted total
 
-**No score is valid without its evidence note. "I believe" or "I think" language in an evidence note means the score is unsupported and must be lowered.**
+**Scoring cell format: `[score] — [evidence ID(s)]: [one-sentence rationale explaining why the cited evidence supports this score]`**
+
+- Valid: `3 — C1-2, C2-1: C1-2 shows result titles using "Kirkland Signature Pauillac review"; C2-1 is a fetched review page with buy/value framing in the opening paragraph.`
+- Not valid: `3 — C1-2` (no rationale)
+- Not valid: `3 — likely buyer intent` (no evidence ID)
+- Valid inference: `2 — Inference from I-3 and I-4: episode compares both wines directly, but no C1 evidence confirms this exact phrasing.` *(labeled inference — allowed)*
+- Not valid: `2 — probably asked by buyers` (unsupported inference — no evidence ID)
 
 | Candidate question | Plausibility (0-3) | Usefulness (0-3) | Centrality (0-3) | Specificity (0-3) | Grounding (0-3) | Vocabulary (0-3) | Penalties | Total | Pass/Fail |
 |---|---|---|---|---|---|---|---|---|---|
 
-Scoring criteria are defined in Section 3 of `docs/faq-intent-model.md`. On web-triggered episode types, a plausibility score of 3 requires external web evidence. Without it, max plausibility is 2 (unless the question is directly stated or obviously implied by the episode title and show format).
+Scoring criteria are defined in Section 3 of `docs/faq-intent-model.md`. On web-triggered episode types, a plausibility score of 3 requires at least one C1 evidence ID. C2 evidence alone caps plausibility at 2. I evidence alone caps plausibility at 1 on web-triggered episodes.
 
 ### Step F — Apply thresholds and auto-fails
 
@@ -218,7 +248,7 @@ A. [Answer one.]
 [5-7 total pairs]
 ```
 
-**Audit file:** Save the complete evidence table and score table to `outputs/episodes/faq-audits/ep[N]-faq-audit.md` before returning output. The public episode file contains only the final Key Questions, FAQ, schema, and Bluesky posts — not the score tables.
+**Audit file:** Save the complete evidence ledger (Sections I, C1, C2), candidate scoring table, rejection log, and final selection log to `outputs/episodes/faq-audits/ep[N]-faq-audit.md` using the template from Section 9 of `docs/faq-intent-model.md`. Save this before returning output. The public episode file contains only the final Key Questions, FAQ, schema, and Bluesky posts — not the score tables.
 
 Output format:
 ```
