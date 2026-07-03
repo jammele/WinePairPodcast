@@ -14,6 +14,8 @@
 - Ratings from script: Saint-Julien 7/10 (both), Pauillac 8/10 (both).
 - Google Doc ID: `148HBLjDZaWnVsZDJCkcCRVVoxhy82MQCKF5PKSU1gv4`
 - Title session report added to `data/title-session-reports.md`; confirmed title added to `data/episode-titles.md`.
+- SEO/AEO content generated: `outputs/episodes/ep225-kirkland-pauillac-saint-julien.md`
+  - KEY QUESTIONS (7), FREQUENTLY ASKED QUESTIONS (7), Review Schema x2, FAQPage Schema, Bluesky Posts (10)
 
 **Process fix — HR-61:**
 - Root cause: the Clickability quality gate incorrectly eliminated a correctly formatted series title by penalizing it for being "expected." The series format is the point, not a weakness.
