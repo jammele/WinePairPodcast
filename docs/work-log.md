@@ -1,8 +1,38 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-07-03 (session 28 — Ep225 title confirmed; process fix HR-61 applied; find_episode.mjs created; FAQ scoring system redesigned)
+**Last updated:** 2026-07-03 (session 28 continued — FAQ evidence system validated end-to-end; Ep225 audit committed; Ep223 regression test passed)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
+
+---
+
+## Session 28 continued (2026-07-03) — FAQ evidence system end-to-end validation
+
+**Ep225 FAQ audit completed and committed (commit ac7be07):**
+- Full Section 9 audit built: 13 C1 queries live-executed via DDG HTML, 4 C2 pages attempted (2 successful, 2 redirected).
+- All 15 candidates scored with evidence IDs + rationale in every cell.
+- Négociant question auto-failed (vocabulary = 0); "Who bottles" question passed (score 16).
+- Episode file updated: 7 changes including price claim correction ($20 threshold from C2-1), new Q6 "Who bottles Kirkland SJ?", Q3/Q4 order swap, Q5 expanded to both wines, Post 10 terminology fix, Post 4 length fix.
+- Validator passed clean. Diff reviewed and approved by Joe before commit.
+- Audit: `outputs/episodes/faq-audits/ep225-faq-audit.md`
+- Episode: `outputs/episodes/ep225-kirkland-pauillac-saint-julien.md`
+
+**Ep223 regression test — non-Costco / C1-not-required (commit 0ba0e0f):**
+- Episode type: standard two-wine review (2022 Cantina Roccafiore Melograno / Umbria, 2021 Di Majo Norante Terre degli Osci / Molise).
+- Step B.1 correctly classified as "C1 not required" — no preflight ran, no blocking occurred.
+- 14 candidates scored (including 2 existing FAQ questions formally scored as Candidates 13 and 14).
+- Key findings: existing Q7 "Is Chianti better with food?" fails at score 7 (question is about Chianti, not the reviewed wines). Existing Q1 "What is Sangiovese wine outside Tuscany?" passes (score 16) but is superseded by Candidate 7 per duplicate-coverage rule.
+- New addition: comparison question "Should you choose the Umbrian or Molise Sangiovese?" (score 17) — justified by hosts' explicit occasion-based choice (equal 8/10 ratings but distinct use cases).
+- Ep223 episode file NOT updated — regression test only.
+- Audit: `outputs/episodes/faq-audits/ep223-faq-audit.md`
+
+**FAQ evidence system status: validated and in production.**
+- C1-required episodes (Costco/private-label): Ep225 proves the gate works.
+- C1-not-required episodes (standard reviews): Ep223 proves the gate does not over-trigger.
+- Evidence IDs (I-N, C1-N, C2-N) required in every scoring cell.
+- C1 search cannot be claimed without actual query/result evidence.
+- System stops when C1 is required but unavailable.
+- Audit files live at `outputs/episodes/faq-audits/ep[N]-faq-audit.md`.
 
 ---
 
