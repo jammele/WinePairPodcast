@@ -23,6 +23,52 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 ---
 
 ## Episode Entries
+### Ep225: Costco Bordeaux — Pauillac and Saint-Julien (Session 1)
+**Date:** 2026-07-03
+**Series:** Costco Kirkland Signature Challenge (not used — episode intro explicitly frames this as a departure from the usual challenge format)
+**Joe's selection:** [pending]
+
+**Step 0 Research Findings:**
+- Competitor content (Reverse Wine Snob, etc.) is 100% utility-first: "Kirkland Signature Saint-Julien Bordeaux Review," "A Bordeaux Bargain From Costco" — descriptive titles, no personality, no tension.
+- Reverse Wine Snob reviewed the exact same Kirkland Saint-Julien (Feb 2026) and Kirkland Margaux (Dec 2025) with dry descriptive titles — no curiosity gap exploited.
+- Zero competitor content uses the 7-years-since-Pauillac angle, the non-Cab-Sav-lovers framing, or the "elite appellation at warehouse prices" tension.
+- YouTube required login; no title data available.
+- Joe's show description confirms the intended angle: "we do not usually love Cabernet Sauvignon, so we were really pleasantly surprised" — verdict in description, not in title.
+
+**Episode Hook:** Two 2023 Kirkland Signature Bordeaux wines from Pauillac (back at Costco for the first time in 7 years, 92 pts, under $25) and Saint-Julien ($18.49, 93 pts) tasted by hosts who openly don't love Cabernet Sauvignon. Joe notes in the intro they are "doing something different" from the usual Kirkland challenge format.
+
+**Subagent Round 1 Summary:**
+- "Costco Kirkland Signature Bordeaux Challenge: Pauillac vs. Saint-Julien!" — FAIL (HR-19 format mismatch), Click 6/10
+- "Costco's Pauillac Is Back After 7 Years. Is It Still the Buy?" — PASS, Click 8/10, WARNING: Saint-Julien absent
+- "They're Selling Pauillac at Costco for $20. How Is That Even Possible?" — FAIL (HR-17 filler opener), Click 7/10
+- "We Don't Like Cabernet Sauvignon. Then We Tried Costco's Bordeaux." — FAIL (HR-39 spoiler: reversal structure implies positive outcome), Click 5/10
+- "Costco Is Selling Bordeaux From Pauillac and Saint-Julien. Should We Be Suspicious?" — PASS, Click 8/10
+
+**Quality Gate Decisions (pre-Round 2):**
+Titles 2 and 5 passed Round 1. Three replacements generated:
+- Fixed T1: "Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux!" (corrected HR-19 format)
+- Fixed T3: "Pauillac at Costco for $20. How Is That Even Possible?" (removed filler opener)
+- New T4: "Costco Has Pauillac and Saint-Julien Bordeaux Under $25. Just for Cab Sav Fans?" (removed spoiler structure; $20 flagged as unverified — corrected to "under $25" after transcript check)
+
+**Subagent Round 2 Summary:**
+- "Costco's Pauillac Is Back After 7 Years. Is It Still the Buy?" — PASS, Click 7/10
+- "Costco Has Bordeaux From Pauillac and Saint-Julien. Should We Be Suspicious?" — PASS, Click 6/10 (dropped post-R2 gate)
+- "Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux!" — PASS, Click 6/10 (dropped post-R2 gate)
+- "Pauillac at Costco for $20. How Is That Even Possible?" — PASS, Click 8/10 (later revised per R3 feedback)
+- "Costco Has Pauillac and Saint-Julien Bordeaux Under $25. Just for Cab Sav Fans?" — PASS, Click 6/10 (dropped post-R2 gate)
+
+**Subagent Round 3 Summary (final 3 candidates):**
+- "Costco's Pauillac Is Back After 7 Years. Is It Still the Buy?" — PASS, Click 8/10, Curiosity 4/5
+- "Pauillac at Costco Under $25. How Is That Even Possible?" — PASS, Click 6/10 — revised to "Pauillac at Costco Under $25. Worth It or a Warning Sign?" per subagent suggestion
+- "Bordeaux From Pauillac and Saint-Julien for Under $25 at Costco. Catch or Con?" — PASS, Click 6/10 — tightened to "Pauillac and Saint-Julien at Costco Under $25. Catch or Con?" per subagent suggestion
+
+**Final presented options:**
+1. `Costco's Pauillac Is Back After 7 Years. Is It Still the Buy?`
+2. `Pauillac at Costco Under $25. Worth It or a Warning Sign?`
+3. `Pauillac and Saint-Julien at Costco Under $25. Catch or Con?`
+
+---
+
 ### Ep224: Moscato d'Asti (Session 1)
 **Date:** 2026-06-27
 **Series:** None — standalone episode
