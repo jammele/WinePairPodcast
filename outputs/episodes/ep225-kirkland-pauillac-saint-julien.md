@@ -12,9 +12,9 @@
 - What is the difference between Pauillac and Saint-Julien Bordeaux?
 - What does the Costco Kirkland Signature Pauillac taste like?
 - What does the Costco Kirkland Signature Saint-Julien taste like?
-- Is the Kirkland Pauillac worth buying at Costco?
+- Is the Kirkland Signature Saint-Julien Bordeaux worth buying at Costco?
 - What food pairs with Pauillac and Saint-Julien Bordeaux?
-- Why is Pauillac wine so expensive?
+- Why are Pauillac and Saint-Julien wines considered prestigious?
 - What is a Bordeaux negotiant and how does it work?
 
 ---
@@ -30,14 +30,14 @@ A. Smooth and juicy, with blueberry, blackcurrant, prune, floral notes, spice, a
 **Q. What does the Kirkland Signature Pauillac taste like?**
 A. Juicy and jammy, with dark cherry, plum, blackcurrant, blackberry, cedar, tobacco, pencil lead, and spice. It's a young wine that benefits from extra time in the glass or decanting. It earned an 8/10 rating and professional scores of 91-92 points.
 
-**Q. Is the Costco Kirkland Signature Pauillac worth buying?**
-A. Yes. It's priced under $25 at Costco and earned an 8/10 rating along with 91-92 points from professional reviewers. Pauillac wines are rarely available at this price. The wine is young and benefits from more time in the bottle, but it's a genuine value for the appellation.
+**Q. Is the Kirkland Signature Saint-Julien Bordeaux worth buying at Costco?**
+A. Yes. It's $18.49 at Costco and rated 7/10 by both hosts, with a 93-point score from Costco Wine Blog, which called it the best vintage ever for this wine. It's a smooth, food-friendly 62% Cabernet Sauvignon blend that over-delivers for the price.
 
 **Q. What food pairs with Pauillac and Saint-Julien Bordeaux?**
 A. Both wines pair well with red meat, steak, steak frites, and filet mignon. The Pauillac also works with cheeseburgers, pork tenderloin, beef stroganoff, and blue cheese sauce. The Saint-Julien pairs well with lasagna, spaghetti and meatballs, and pasta with red sauce. Bold Left Bank Bordeaux needs food with weight and fat.
 
-**Q. Why is Pauillac wine so expensive?**
-A. Pauillac is home to three of Bordeaux's five First Growth estates: Lafite, Latour, and Mouton Rothschild. Those estates built an elite reputation for the entire appellation. Most Pauillac bottles cost far more than $25. Finding one at Costco's price range is genuinely uncommon.
+**Q. Why are Pauillac and Saint-Julien wines considered prestigious?**
+A. Pauillac is home to three of Bordeaux's five First Growth estates: Lafite, Latour, and Mouton Rothschild. Saint-Julien has no First Growths but packs in 11 classified growths in a tiny appellation and is known for its elite "super second" estates. Both were locked into the famous 1855 Classification ordered by Napoleon III.
 
 **Q. What is a Bordeaux negotiant and how does it work?**
 A. A negotiant is a wine merchant that buys grapes or finished wine from multiple chateaus and bottles under its own label. The Kirkland Signature Saint-Julien is bottled by Maison Gineste, a negotiant house founded in 1897 that partners with more than 350 chateaus across Bordeaux.
@@ -157,10 +157,10 @@ A. A negotiant is a wine merchant that buys grapes or finished wine from multipl
     },
     {
       "@type": "Question",
-      "name": "Is the Costco Kirkland Signature Pauillac worth buying?",
+      "name": "Is the Kirkland Signature Saint-Julien Bordeaux worth buying at Costco?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. It's priced under $25 at Costco and earned an 8/10 rating along with 91-92 points from professional reviewers. Pauillac wines are rarely available at this price. The wine is young and benefits from more time in the bottle, but it's a genuine value for the appellation."
+        "text": "Yes. It's $18.49 at Costco and rated 7/10 by both hosts, with a 93-point score from Costco Wine Blog, which called it the best vintage ever for this wine. It's a smooth, food-friendly 62% Cabernet Sauvignon blend that over-delivers for the price."
       }
     },
     {
@@ -173,10 +173,10 @@ A. A negotiant is a wine merchant that buys grapes or finished wine from multipl
     },
     {
       "@type": "Question",
-      "name": "Why is Pauillac wine so expensive?",
+      "name": "Why are Pauillac and Saint-Julien wines considered prestigious?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pauillac is home to three of Bordeaux's five First Growth estates: Lafite, Latour, and Mouton Rothschild. Those estates built an elite reputation for the entire appellation. Most Pauillac bottles cost far more than $25. Finding one at Costco's price range is genuinely uncommon."
+        "text": "Pauillac is home to three of Bordeaux's five First Growth estates: Lafite, Latour, and Mouton Rothschild. Saint-Julien has no First Growths but packs in 11 classified growths in a tiny appellation and is known for its elite super second estates. Both were locked into the famous 1855 Classification ordered by Napoleon III."
       }
     },
     {
