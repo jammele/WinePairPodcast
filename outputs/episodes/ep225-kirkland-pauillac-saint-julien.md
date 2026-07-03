@@ -9,38 +9,38 @@
 
 *(Place at top of show notes - questions only, no answers)*
 
+- Are the 2023 Kirkland Signature Pauillac and Saint-Julien Bordeaux worth buying at Costco?
+- Which is better, the Kirkland Pauillac or the Kirkland Saint-Julien?
+- What does the Kirkland Signature Saint-Julien Bordeaux taste like?
+- What does the Kirkland Signature Pauillac taste like?
+- Should you drink the Kirkland Signature Pauillac now or let it age?
+- What food pairs with Kirkland Signature Pauillac and Saint-Julien Bordeaux?
 - What is the difference between Pauillac and Saint-Julien Bordeaux?
-- What does the Costco Kirkland Signature Pauillac taste like?
-- What does the Costco Kirkland Signature Saint-Julien taste like?
-- Is the Kirkland Signature Saint-Julien Bordeaux worth buying at Costco?
-- What food pairs with Pauillac and Saint-Julien Bordeaux?
-- Why are Pauillac and Saint-Julien wines considered prestigious?
-- What is a Bordeaux negotiant and how does it work?
 
 ---
 
 ## FREQUENTLY ASKED QUESTIONS
 
-**Q. What is the difference between Pauillac and Saint-Julien Bordeaux?**
-A. Both are Medoc appellations in Bordeaux, but they differ in style and prestige. Pauillac is home to three of Bordeaux's five First Growth estates: Lafite, Latour, and Mouton Rothschild, and typically blends 70-80% Cabernet Sauvignon. Saint-Julien is the smallest major Medoc appellation, has 11 classified growths, and uses closer to 60% Cab Sav.
+**Q. Are the 2023 Kirkland Signature Pauillac and Saint-Julien Bordeaux worth buying at Costco?**
+A. Yes to both. The Pauillac earned 8/10 from both hosts; the Saint-Julien earned 7/10. Both are recommended buys. Pauillac wines almost never appear under $25, and this one hadn't been at Costco in 7 years. The Saint-Julien at $18.49 is also a great price for a wine from this prestigious appellation.
+
+**Q. Which is better, the Kirkland Pauillac or the Kirkland Saint-Julien?**
+A. The Pauillac. Both hosts rated it 8/10 and chose it to finish the night over the Saint-Julien (7/10). It's more structured and complex, with dark cherry, cedar, tobacco, and spice. The Saint-Julien is smoother, fruitier, and more approachable right away. Both are worth buying, but the Pauillac delivers more depth.
 
 **Q. What does the Kirkland Signature Saint-Julien Bordeaux taste like?**
-A. Smooth and juicy, with blueberry, blackcurrant, prune, floral notes, spice, and pencil shavings. The nose is very aromatic, with strong plummy and blackberry aromas. It's a 62% Cabernet Sauvignon, 38% Merlot blend with a smooth medium-long finish. It earned a 7/10 rating.
+A. Smooth and juicy, with blueberry, blackcurrant, prune, floral notes, spice, and pencil shavings. The nose is very aromatic with strong dark fruit and baking spice. It's a 62% Cabernet Sauvignon, 38% Merlot blend from Saint-Julien. Approachable right away with nice balance and some aging potential. Rated 7/10.
 
 **Q. What does the Kirkland Signature Pauillac taste like?**
-A. Juicy and jammy, with dark cherry, plum, blackcurrant, blackberry, cedar, tobacco, pencil lead, and spice. It's a young wine that benefits from extra time in the glass or decanting. It earned an 8/10 rating and professional scores of 91-92 points.
+A. Juicy and jammy with dark cherry, plum, blackcurrant, cedar, tobacco, pencil lead, and spice. Very aromatic, it needs air to open up fully. It's young right now but has good depth and structure. Both hosts called it an iron fist in velvet glove style and rated it 8/10.
 
-**Q. Is the Kirkland Signature Saint-Julien Bordeaux worth buying at Costco?**
-A. Yes. It's $18.49 at Costco and rated 7/10 by both hosts, with a 93-point score from Costco Wine Blog, which called it the best vintage ever for this wine. It's a smooth, food-friendly 62% Cabernet Sauvignon blend that over-delivers for the price.
+**Q. Should you drink the Kirkland Signature Pauillac now or let it age?**
+A. You can drink it now with a good decant, but it's best in 3-5 years. It's young and jammy with firm tannins right now. It gets noticeably better with air, and some tobacco notes emerge on day 2. The Saint-Julien is more approachable immediately if you don't want to wait.
 
-**Q. What food pairs with Pauillac and Saint-Julien Bordeaux?**
-A. Both wines pair well with red meat, steak, steak frites, and filet mignon. The Pauillac also works with cheeseburgers, pork tenderloin, beef stroganoff, and blue cheese sauce. The Saint-Julien pairs well with lasagna, spaghetti and meatballs, and pasta with red sauce. Bold Left Bank Bordeaux needs food with weight and fat.
+**Q. What food pairs with Kirkland Signature Pauillac and Saint-Julien Bordeaux?**
+A. Both wines pair well with red meat, steak, steak frites, and filet mignon. The Pauillac also handles richer dishes: cheeseburgers, beef stroganoff, pork tenderloin, and blue cheese sauce. The Saint-Julien works well with lasagna, spaghetti and meatballs, and pasta with red sauce. Both want food with weight and fat.
 
-**Q. Why are Pauillac and Saint-Julien wines considered prestigious?**
-A. Pauillac is home to three of Bordeaux's five First Growth estates: Lafite, Latour, and Mouton Rothschild. Saint-Julien has no First Growths but packs in 11 classified growths in a tiny appellation and is known for its elite "super second" estates. Both were locked into the famous 1855 Classification ordered by Napoleon III.
-
-**Q. What is a Bordeaux negotiant and how does it work?**
-A. A negotiant is a wine merchant that buys grapes or finished wine from multiple chateaus and bottles under its own label. The Kirkland Signature Saint-Julien is bottled by Maison Gineste, a negotiant house founded in 1897 that partners with more than 350 chateaus across Bordeaux.
+**Q. What is the difference between Pauillac and Saint-Julien Bordeaux?**
+A. Both are Left Bank Bordeaux from the Medoc, Cabernet Sauvignon dominant. Pauillac is home to three First Growths (Lafite, Latour, and Mouton Rothschild) and makes powerful, structured wines, using 70-80% Cab Sav. Saint-Julien is the smallest major Medoc appellation, known for elegance and 11 classified growths, using closer to 60% Cab Sav.
 
 ---
 
@@ -133,10 +133,18 @@ A. A negotiant is a wine merchant that buys grapes or finished wine from multipl
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is the difference between Pauillac and Saint-Julien Bordeaux?",
+      "name": "Are the 2023 Kirkland Signature Pauillac and Saint-Julien Bordeaux worth buying at Costco?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Both are Medoc appellations in Bordeaux, but they differ in style and prestige. Pauillac is home to three of Bordeaux's five First Growth estates: Lafite, Latour, and Mouton Rothschild, and typically blends 70-80% Cabernet Sauvignon. Saint-Julien is the smallest major Medoc appellation, has 11 classified growths, and uses closer to 60% Cab Sav."
+        "text": "Yes to both. The Pauillac earned 8/10 from both hosts; the Saint-Julien earned 7/10. Both are recommended buys. Pauillac wines almost never appear under $25, and this one hadn't been at Costco in 7 years. The Saint-Julien at $18.49 is also a great price for a wine from this prestigious appellation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is better, the Kirkland Pauillac or the Kirkland Saint-Julien?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Pauillac. Both hosts rated it 8/10 and chose it to finish the night over the Saint-Julien (7/10). It's more structured and complex, with dark cherry, cedar, tobacco, and spice. The Saint-Julien is smoother, fruitier, and more approachable right away. Both are worth buying, but the Pauillac delivers more depth."
       }
     },
     {
@@ -144,7 +152,7 @@ A. A negotiant is a wine merchant that buys grapes or finished wine from multipl
       "name": "What does the Kirkland Signature Saint-Julien Bordeaux taste like?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Smooth and juicy, with blueberry, blackcurrant, prune, floral notes, spice, and pencil shavings. The nose is very aromatic, with strong plummy and blackberry aromas. It's a 62% Cabernet Sauvignon, 38% Merlot blend with a smooth medium-long finish. It earned a 7/10 rating."
+        "text": "Smooth and juicy, with blueberry, blackcurrant, prune, floral notes, spice, and pencil shavings. The nose is very aromatic with strong dark fruit and baking spice. It's a 62% Cabernet Sauvignon, 38% Merlot blend from Saint-Julien. Approachable right away with nice balance and some aging potential. Rated 7/10."
       }
     },
     {
@@ -152,39 +160,31 @@ A. A negotiant is a wine merchant that buys grapes or finished wine from multipl
       "name": "What does the Kirkland Signature Pauillac taste like?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Juicy and jammy, with dark cherry, plum, blackcurrant, blackberry, cedar, tobacco, pencil lead, and spice. It's a young wine that benefits from extra time in the glass or decanting. It earned an 8/10 rating and professional scores of 91-92 points."
+        "text": "Juicy and jammy with dark cherry, plum, blackcurrant, cedar, tobacco, pencil lead, and spice. Very aromatic, it needs air to open up fully. It's young right now but has good depth and structure. Rated 8/10 with an iron fist in velvet glove style that improves with decanting or a day or two open."
       }
     },
     {
       "@type": "Question",
-      "name": "Is the Kirkland Signature Saint-Julien Bordeaux worth buying at Costco?",
+      "name": "Should you drink the Kirkland Signature Pauillac now or let it age?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. It's $18.49 at Costco and rated 7/10 by both hosts, with a 93-point score from Costco Wine Blog, which called it the best vintage ever for this wine. It's a smooth, food-friendly 62% Cabernet Sauvignon blend that over-delivers for the price."
+        "text": "You can drink it now with a good decant, but it's best in 3-5 years. It's young and jammy with firm tannins right now. It gets noticeably better with air, and some tobacco notes emerge on day 2. The Saint-Julien is more approachable immediately if you don't want to wait."
       }
     },
     {
       "@type": "Question",
-      "name": "What food pairs with Pauillac and Saint-Julien Bordeaux?",
+      "name": "What food pairs with Kirkland Signature Pauillac and Saint-Julien Bordeaux?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Both wines pair well with red meat, steak, steak frites, and filet mignon. The Pauillac also works with cheeseburgers, pork tenderloin, beef stroganoff, and blue cheese sauce. The Saint-Julien pairs well with lasagna, spaghetti and meatballs, and pasta with red sauce. Bold Left Bank Bordeaux needs food with weight and fat."
+        "text": "Both wines pair well with red meat, steak, steak frites, and filet mignon. The Pauillac also handles richer dishes: cheeseburgers, beef stroganoff, pork tenderloin, and blue cheese sauce. The Saint-Julien works well with lasagna, spaghetti and meatballs, and pasta with red sauce. Both want food with weight and fat."
       }
     },
     {
       "@type": "Question",
-      "name": "Why are Pauillac and Saint-Julien wines considered prestigious?",
+      "name": "What is the difference between Pauillac and Saint-Julien Bordeaux?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pauillac is home to three of Bordeaux's five First Growth estates: Lafite, Latour, and Mouton Rothschild. Saint-Julien has no First Growths but packs in 11 classified growths in a tiny appellation and is known for its elite super second estates. Both were locked into the famous 1855 Classification ordered by Napoleon III."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is a Bordeaux negotiant and how does it work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A negotiant is a wine merchant that buys grapes or finished wine from multiple chateaus and bottles under its own label. The Kirkland Signature Saint-Julien is bottled by Maison Gineste, a negotiant house founded in 1897 that partners with more than 350 chateaus across Bordeaux."
+        "text": "Both are Left Bank Bordeaux from the Medoc, Cabernet Sauvignon dominant. Pauillac is home to three First Growths (Lafite, Latour, and Mouton Rothschild) and makes powerful, structured wines, using 70-80% Cab Sav. Saint-Julien is the smallest major Medoc appellation, known for elegance and 11 classified growths, using closer to 60% Cab Sav."
       }
     }
   ]

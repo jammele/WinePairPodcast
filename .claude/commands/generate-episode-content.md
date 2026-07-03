@@ -20,16 +20,16 @@ Before invoking, enforce the confirmed-title gate from house rules: title must b
 
 0.7. **Delivery gates for requested sections (mandatory).**
   - Scope gate: generate only requested sections. Never add unrequested sections.
-  - Key Questions count gate: exactly 7 unless Joe explicitly requests a different number.
-  - Key Questions intent gate: no trivia-only questions.
-  - FAQ count gate: exactly 7 unless Joe explicitly requests a different number.
-  - FAQ search-intent gate: questions must match real listener/search intent.
-  - FAQ episode-grounding gate: answers must be grounded in the episode materials.
+  - FAQ selection gate: questions must be selected via the evidence-bound candidate scoring process in `docs/faq-intent-model.md`. Do not slot-fill. Do not write questions before scoring is complete.
+  - FAQ count gate: 5-7 questions, determined by scoring — not a fixed number. Do not inflate to reach 7 if fewer candidates pass the threshold.
+  - FAQ search-intent gate: every question must score 13+ using the rubric in the intent model, with no 0 in plausibility, grounding, or vocabulary.
+  - FAQ episode-grounding gate: every answer must trace to a specific row in the evidence table.
   - FAQ listener-usefulness gate: answers must help a listener decide whether to listen, buy, understand, or pair.
   - FAQ tone gate: plain-language, front-loaded, conversational.
-  - FAQ format and length gate: strict HR-2 Q./A. format and 40 to 60 words per answer.
-  - FAQ standalone-answer gate (FAQ-only scope): for FAQ answers, FAQ schema `acceptedAnswer.text`, and generated FAQ blocks in episode-content/show-notes outputs, every answer must make sense without episode context.
-  - FAQ podcast-narrative gate (FAQ-only scope): remove obvious podcast-internal phrasing in FAQ answers and FAQ schema answers (e.g., "In this episode", "On this episode", "Joe says", "Joe points out", "Carmela says", "we tasted", "we got", "we chose", "why we did this episode", "on the show", "our episode"). Keep consumer recommendation voice, but do not recap the show.
+  - FAQ format and length gate: strict HR-2 Q./A. format and 40-60 words per answer.
+  - FAQ standalone-answer gate: every answer must make sense without episode context.
+  - FAQ podcast-narrative gate: no "In this episode", "Joe says", "Carmela says", "we tasted", "we got", "we chose", "on the show", "our episode" in answers or schema text.
+  - Web search gate: if episode type triggers mandatory web search (Costco, Kirkland, private-label, current product, producer identity) and web search is unavailable, stop and report — do not generate questions.
   - Facts gate: no invented facts.
 
 1. Confirm you have read the episode script via `node scripts/read_gdoc.js <docId>`. Find the docId in `docs/work-log.md`. If not read yet, read it now before proceeding.
@@ -64,22 +64,23 @@ You are generating SEO/AEO content and social posts for The Wine Pair Podcast. E
 
 **Step 2: Read `docs/voice-and-format.md` in its entirety.**
 
+**Step 2.3: Read `docs/faq-intent-model.md` in its entirety.** This file governs all Key Questions and FAQ generation. The candidate scoring process in that file replaces any prior instruction to "write 7 questions." Questions are selected by scoring, not by slot-filling.
+
 **Step 2.5: Respect requested scope exactly.**
 Generate only the sections listed under **Requested sections** below. Do not generate unrequested sections. Do not infer downstream tasks. Do not add Wine in the News, title options, cover art prompts, transcripts, or blog post copy.
 
 **Step 2.6: Apply delivery gates before returning output.**
-- Key Questions: exactly 7 unless the request explicitly asks for a different number.
-- Key Questions must reflect real listener/search intent; no trivia-only questions.
-- FAQ: exactly 7 Q&A pairs unless the request explicitly asks for a different number.
-- FAQ questions must reflect real listener/search intent.
-- FAQ answers must be grounded in episode materials only.
+- Key Questions and FAQ: follow the evidence-bound candidate scoring process in Sections 1 and 2 of this file (Steps A through I). Do not write questions until scoring is complete.
+- Final question count: 5-7, determined by how many candidates score 13+. Do not inflate to reach 7 if fewer questions pass the threshold.
+- FAQ answers must be grounded in the evidence table only — each answer must trace to a specific evidence row.
 - FAQ answers must be useful for listen/buy/understand/pair decisions.
-- FAQ answers must be 40 to 60 words, front-loaded, plain-language, conversational.
-- FAQ-only standalone requirement: FAQ answers and FAQ schema `acceptedAnswer.text` must stand on their own in search snippets, AI answers, and podcast app snippets without prior episode context.
-- FAQ-only narrative-ban requirement: strip obvious podcast-recap phrasing from FAQ answers and FAQ schema answers ("In this episode", "On this episode", "Joe says", "Joe points out", "Carmela says", "we tasted", "we got", "we chose", "why we did this episode", "on the show", "our episode").
+- FAQ answers must be 40-60 words, front-loaded, plain-language, conversational.
+- FAQ standalone requirement: answers must stand alone without episode context.
+- FAQ narrative ban: no "In this episode", "On this episode", "Joe says", "Joe points out", "Carmela says", "we tasted", "we got", "we chose", "on the show", "our episode".
 - Enforce strict HR-2 Q./A. format.
 - Do not invent facts.
 - Do not output unrequested sections.
+- Save audit file to `outputs/episodes/faq-audits/ep[N]-faq-audit.md` before returning output.
 
 ---
 
@@ -106,36 +107,118 @@ Generate only the sections listed under **Requested sections** below. Do not gen
 
 ---
 
-## SECTION 1: KEY QUESTIONS (generate only if requested)
+## SECTION 1 + 2: KEY QUESTIONS AND FREQUENTLY ASKED QUESTIONS (generate only if requested)
 
-Write exactly 7 questions unless the request explicitly asks for a different number. Questions only — no answers. Target real search queries someone would type about this wine: "What is [wine] wine?", "What does [wine] taste like?", "What food pairs with [wine]?", "Is [wine] similar to [comparable wine]?", "Is [wine] worth buying?", "What is the difference between [wine] and [similar wine]?". Do not write questions about specific vintages or products — these get no search traffic. Reject trivia-only questions. Every question must be answerable from the episode data provided — do not include questions that the episode does not address.
+Key Questions and FAQ must be generated together using the evidence-bound candidate scoring process below. Do not write any questions or answers until Steps A through I are complete.
 
-Output format:
+### Step A — Classify episode type
+
+Read `docs/faq-intent-model.md`. Identify the episode type (e.g. Costco/private-label review, standard two-wine review, grape explainer, region explainer). State the episode type explicitly before proceeding.
+
+### Step B — Check web search trigger
+
+Does this episode meet any web search trigger condition from Section 5 of the intent model? (Costco, Kirkland, Trader Joe's, Aldi, private-label, current/recent vintage in a product-review context, producer/bottler identity questions, unfamiliar phrasing.)
+
+**If YES and web search is available:** proceed to Step C.
+**If YES and web search is unavailable:** stop. Report: "Objective FAQ scoring cannot be completed for this episode type — web search is required but unavailable. Cannot proceed." Do not generate candidates or answers.
+**If NO:** skip Step C and proceed directly to Step D using internal episode evidence only.
+
+### Step C — Gather evidence (required for web-triggered episodes)
+
+Produce an evidence table before any candidate generation. The table has two parts:
+
+**C1 — Active query-based web search (required first).**
+Run a mandatory search query set using realistic listener/buyer phrasing. For a Costco/private-label episode, the required query set includes:
+- `[wine name] review` for each wine (e.g. "2023 Kirkland Signature Pauillac review")
+- `Kirkland [appellation] Costco` or equivalent retailer + wine phrasing
+- `Costco [wine name] [vintage]`
+- `who makes Kirkland Signature [wine]` or `who bottles [wine]`
+- `[appellation A] vs [appellation B]` if a comparison episode
+- Any product-specific variation implied by the episode title
+
+For each query, search the web and record: query string, result titles and snippets observed, repeated phrases across results, source types (review site, forum, retailer page, blog), and what listener intent each result implies.
+
+**C2 — Fetch and document relevant pages.**
+Fetch the most relevant pages from the search results and from the existing episode research links. Record page titles, key phrases in headings and opening paragraphs, whether buying/review/comparison/provenance language appears, and how the product names are phrased. Cite with source URLs.
+
+**Evidence table format:**
+
+| Evidence type | Finding | Source |
+|---|---|---|
+| Episode title/hook | [state it] | Internal episode file |
+| Verdict | [ratings and buy/skip result] | Internal episode file |
+| Listener decision | [what a Costco shopper is likely deciding] | Inferred from product + retailer + review format |
+| Web search: [query] | [result titles/snippets/repeated phrases observed] | Web search |
+| Web search: [query] | [result titles/snippets/repeated phrases observed] | Web search |
+| Fetched page: [URL] | [key phrases, framing, what listener job the page serves] | Fetched page |
+| Vocabulary risk | [note any terms that appear on review pages vs. trade-only terms] | Web search + vocabulary check |
+
+### Step D — Generate 12-15 candidate questions
+
+Using the required and conditional question families from the intent model for this episode type, generate 12-15 candidate questions. Do not pre-select or filter at this stage — generate broadly from all plausible families.
+
+### Step E — Score each candidate
+
+Produce a score table. For every candidate, provide:
+- Question text
+- Six scores (0-3 each), each with a one-line evidence note citing a specific source from the evidence table
+- Penalty adjustments with reason
+- Adjusted total
+
+**No score is valid without its evidence note. "I believe" or "I think" language in an evidence note means the score is unsupported and must be lowered.**
+
+| Candidate question | Plausibility (0-3) | Usefulness (0-3) | Centrality (0-3) | Specificity (0-3) | Grounding (0-3) | Vocabulary (0-3) | Penalties | Total | Pass/Fail |
+|---|---|---|---|---|---|---|---|---|---|
+
+Scoring criteria are defined in Section 3 of `docs/faq-intent-model.md`. On web-triggered episode types, a plausibility score of 3 requires external web evidence. Without it, max plausibility is 2 (unless the question is directly stated or obviously implied by the episode title and show format).
+
+### Step F — Apply thresholds and auto-fails
+
+Reject any candidate scoring below 13. Auto-fail any candidate with a 0 in plausibility, grounding, or vocabulary, regardless of total score. List rejections with the reason.
+
+### Step G — Merge duplicates
+
+If two surviving candidates address the same listener need, merge them into one question using the stronger phrasing. Apply the combined vs. separate vs. comparison buy question rules from Section 6 of the intent model.
+
+### Step H — Check coverage
+
+Are the required question families for this episode type all represented among surviving candidates? If a required family has no surviving candidate, generate a new candidate for it and run it through Steps E and F before continuing.
+
+### Step I — Select and write
+
+Select the top 5-7 questions using the tie-breaker order from Section 7 of the intent model. State final selections with scores. Then write answers.
+
+**Key Questions output format:**
 ```
 ### KEY QUESTIONS
 *(Place at top of show notes — questions only, no answers)*
 
 - [Question 1]?
-- [Question 2]?
-[7 total]
+[5-7 total, matching the FAQ questions below]
 ```
 
----
-
-## SECTION 2: FREQUENTLY ASKED QUESTIONS (generate only if requested)
-
-Write exactly 7 Q&A pairs answering the questions from Section 1, unless the request explicitly asks for a different number.
-
-Rules:
+**FAQ rules (same as before):**
 - Heading must be exactly **FREQUENTLY ASKED QUESTIONS** — no other label is acceptable (HR-29)
 - Every Q line: `**Q. Question text?**` (bold the entire line including Q.)
 - Every A line: `A. Answer text.` (plain — never bolded)
-- Each answer: 40-60 words, front-loaded with the verdict, Joe's conversational voice (contractions, "we", plain English)
-- Weave in specific details from the episode: ratings, tasting notes, which wine they finished
+- Each answer: 40-60 words, front-loaded with the verdict, Joe's conversational voice (contractions, plain English)
+- Weave in specific details: ratings, tasting notes, which wine they finished
 - Every answer must be useful to someone deciding whether to listen, buy, understand, or pair the wine
 - No em-dashes anywhere (HR-1)
 - No invented facts (HR-3)
-- Every answer must be traceable to the episode data provided above. Do not draw on general wine knowledge that was not discussed in the episode. If a question cannot be answered from the episode data, replace it with one that can.
+- Every answer must trace to a specific row in the evidence table
+
+**FAQ output format:**
+```
+### FREQUENTLY ASKED QUESTIONS
+*(Place at bottom of show notes)*
+
+**Q. [Question one]?**
+A. [Answer one.]
+[5-7 total pairs]
+```
+
+**Audit file:** Save the complete evidence table and score table to `outputs/episodes/faq-audits/ep[N]-faq-audit.md` before returning output. The public episode file contains only the final Key Questions, FAQ, schema, and Bluesky posts — not the score tables.
 
 Output format:
 ```

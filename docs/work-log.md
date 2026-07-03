@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-07-03 (session 28 — Ep225 title confirmed; process fix HR-61 applied; find_episode.mjs created)
+**Last updated:** 2026-07-03 (session 28 — Ep225 title confirmed; process fix HR-61 applied; find_episode.mjs created; FAQ scoring system redesigned)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
 
@@ -13,14 +13,24 @@
 - Episode: two 2023 Kirkland Signature Bordeaux wines — Pauillac (92 pts, back at Costco first time in 7 years, under $25) and Saint-Julien ($18.49, 93 pts).
 - Ratings from script: Saint-Julien 7/10 (both), Pauillac 8/10 (both).
 - Google Doc ID: `148HBLjDZaWnVsZDJCkcCRVVoxhy82MQCKF5PKSU1gv4`
-- Title session report added to `data/title-session-reports.md`; confirmed title added to `data/episode-titles.md`.
-- SEO/AEO content generated: `outputs/episodes/ep225-kirkland-pauillac-saint-julien.md`
+- SEO/AEO content generated and validated: `outputs/episodes/ep225-kirkland-pauillac-saint-julien.md`
   - KEY QUESTIONS (7), FREQUENTLY ASKED QUESTIONS (7), Review Schema x2, FAQPage Schema, Bluesky Posts (10)
+  - FAQ regenerated under new evidence-scoring system (session 28 process fix — see below)
+  - FAQ audit file: `outputs/episodes/faq-audits/ep225-faq-audit.md`
 
 **Process fix — HR-61:**
 - Root cause: the Clickability quality gate incorrectly eliminated a correctly formatted series title by penalizing it for being "expected." The series format is the point, not a weakness.
 - Fix: added HR-61 to `docs/house-rules.md` — series titles that pass all hard rules are exempt from the Clickability floor.
 - Updated `.claude/commands/review-titles.md` step 6.5 with the series exception.
+
+**FAQ scoring system redesign:**
+- Root cause: FAQ generation was slot-filling from episode content rather than selecting questions based on verifiable listener/search intent evidence.
+- Fix: complete architecture redesign based on ChatGPT review.
+  - Created `docs/faq-intent-model.md` — defines episode type classifications, explicit 0-3 scoring rubric for 6 criteria, penalty table, tie-breakers, web search trigger rules, and combined vs. separate vs. comparison buy question decision rules.
+  - Updated `.claude/commands/generate-episode-content.md` — replaced "write 7 questions" instruction with a 9-step evidence-bound candidate scoring process (Steps A through I). Web search is a blocking gate for Costco/private-label/current-product episodes.
+  - FAQ count is now 5-7 based on scoring, not a fixed 7.
+  - Audit files saved to `outputs/episodes/faq-audits/ep[N]-faq-audit.md` (separate from public episode file).
+- Ep225 FAQ regenerated under new system: négociant question correctly rejected (score 0 plausibility, 0 vocabulary, auto-fail). New Q7 "drink now or age?" added based on dual external evidence (RWS + Tastings.com both address this directly).
 
 **Drive search script:**
 - Created `scripts/find_episode.mjs` — reusable script accepting any search term as `process.argv[2]`.
