@@ -1,7 +1,7 @@
 # Episode Title Prompt
 
 <!-- Source: Google Doc 1D4klCn2K2p7Y1rl7R_Ay7YQuAZfI1_5oMIDM-rZ2cEY -->
-<!-- Last synced: 2026-06-13T21:31:42.245Z -->
+<!-- Last synced: 2026-06-20T20:02:18.777Z -->
 
 Episode Title Prompt
 

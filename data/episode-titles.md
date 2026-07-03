@@ -1,9 +1,9 @@
 # Episode Title Archive — The Wine Pair Podcast
 
-**Last updated:** 2026-06-27 (through Ep224)
+**Last updated:** 2026-07-03 (through Ep225)
 **Maintained by:** Claude — add each confirmed title here before committing episode work.
 
-**Latest confirmed title:** Ep224 — Is Moscato d'Asti the Sweet Wine Serious Wine People Won't Admit They Love?
+**Latest confirmed title:** Ep225 — Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux!
 
 ---
 
@@ -100,6 +100,7 @@ Format: `Costco Kirkland Signature [Wine] Challenge!` — varies somewhat; check
 - Ep182: Costco Kirkland Signature Challenge: Sonoma County Chardonnay!
 - Ep186: Costco vs. Costco! Kirkland Signature Chianti Classico Riserva Challenge!
 - Ep192: Barolo Battle! Costco Kirkland vs. Trader Joe's Diamond Reserve!
+- Ep225: Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux!
 
 ### Getting Serious About Rosé
 Format: `Getting Serious About Rosé #[N]: [Region/Style]!`
@@ -175,11 +176,9 @@ Format: `Special Episode! The Virginia Winemakers Series [#N if >1]: [Name] of [
 
 | Ep | Title | Format pattern |
 |---|---|---|
+| 225 | Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux! | Series (Costco Kirkland Challenge) |
 | 224 | Is Moscato d'Asti the Sweet Wine Serious Wine People Won't Admit They Love? | [Social-status hook]: [Question] |
 | 223 | This Ain't Chianti: Is Italian Sangiovese Better Outside Tuscany? | [Contrast hook]: [Question] |
-| 204 | Rosé d'Anjou: Better (and Cheaper) Than Provence Rosé? | [Wine]: [Comparative question] |
-| 205 | WTF is Bordeaux Blanc? The Best French Sauvignon Blanc Value! | Series (WTF) |
-| 206 | Sparkling Riesling (German Sekt): The Fruity Bubbly Under $20 You've Never Tried! | [Wine] ([alias]): [Discovery claim] |
 | 207 | Italian Wine Adventure #23: Valpolicella Ripasso — The Best Under-$25 Italian Red You're Not Drinking | Series (IWA) + bold claim |
 | 208 | Portuguese Wine Primer: Douro Branco — Portugal's Best White Under $15? | Series prefix + [Wine] + question |
 | 209 | Why Serious Wine Nerds Love Xinomavro! | [Bold claim about audience] |
@@ -417,3 +416,4 @@ Ep219: Is Two Buck Chuck Actually Terrible, or Is That Just Wine Snob Talk?
 Ep221: They Make Wine in Lebanon?!? Lebanon Was Wine Country Before France Was France.
 Ep222: Pinot Grigio Is Boring. Alsace Pinot Gris Is Its Richer, Weirder French Cousin.
 Ep224: Is Moscato d'Asti the Sweet Wine Serious Wine People Won't Admit They Love?
+Ep225: Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux!

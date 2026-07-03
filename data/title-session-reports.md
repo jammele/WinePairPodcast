@@ -25,8 +25,8 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 ## Episode Entries
 ### Ep225: Costco Bordeaux — Pauillac and Saint-Julien (Session 1)
 **Date:** 2026-07-03
-**Series:** Costco Kirkland Signature Challenge (not used — episode intro explicitly frames this as a departure from the usual challenge format)
-**Joe's selection:** [pending]
+**Series:** Costco Kirkland Signature Challenge
+**Joe's selection:** Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux!
 
 **Step 0 Research Findings:**
 - Competitor content (Reverse Wine Snob, etc.) is 100% utility-first: "Kirkland Signature Saint-Julien Bordeaux Review," "A Bordeaux Bargain From Costco" — descriptive titles, no personality, no tension.

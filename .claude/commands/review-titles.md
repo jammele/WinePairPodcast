@@ -45,6 +45,7 @@ Pre. **Read `data/title-session-reports.md` before doing anything else.**
    Drop any title that scored below 7/10 on Clickability.
    If fewer than 3 titles remain, return to Step 4 and generate replacements.
    Never present titles that scored 6/10 or below on Clickability — a low score means the title is forgettable, not just imperfect.
+   **Exception — named series titles:** Any title that correctly uses an established series prefix and passes all hard rules (HR-15 through HR-20, HR-39) is exempt from the Clickability floor. Series recognition is not captured by the Clickability metric. Include it as a valid option regardless of score (HR-61).
 7. After fixing any FAILs and culling low-scoring titles, spawn the subagent a second time on the remaining titles. Do not show Joe any titles until the second run returns no FAILs.
 8. Show Joe only titles that passed the second review and cleared the quality gate.
 9. **Generate and show a Session Report** immediately after presenting the final title options. The report must appear in the same response as the titles — do not skip it, do not make Joe ask for it. Format:

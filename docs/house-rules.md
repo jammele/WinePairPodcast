@@ -189,6 +189,9 @@ Minimum required every time:
 
 If this full scored process is not completed, titles must not be presented.
 
+**HR-61: Series title quality gate exception.**
+When a title correctly follows an established named series format and passes all hard rules (HR-15 through HR-20, HR-39), the Clickability quality gate does not apply. Series titles earn clicks through audience recognition, not novelty. Do not penalize a series title for being "expected" — that is the point of a series. Include a correctly formatted series title as a valid option regardless of Clickability score.
+
 **HR-40: Cover art must not reveal the episode verdict.**
 The visual should create the central question from the title, not answer it. Any concept that shows outcome — thumbs up/down on specific wines, one bottle going to the sink, a "winner vs. loser" framing — fails this rule. The test: if someone sees the thumbnail, do they already know what Joe and Carmela concluded? If yes, hard FAIL. Reframe to create the question, not announce the answer.
 

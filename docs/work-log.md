@@ -1,8 +1,29 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-06-27 (session 27 — Ep224 title, content, and cover-art concept selected)
+**Last updated:** 2026-07-03 (session 28 — Ep225 title confirmed; process fix HR-61 applied; find_episode.mjs created)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
+
+---
+
+## Session 28 summary (2026-07-03)
+
+**Ep225 — Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux!**
+- Title confirmed: `Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux!`
+- Episode: two 2023 Kirkland Signature Bordeaux wines — Pauillac (92 pts, back at Costco first time in 7 years, under $25) and Saint-Julien ($18.49, 93 pts).
+- Ratings from script: Saint-Julien 7/10 (both), Pauillac 8/10 (both).
+- Google Doc ID: `148HBLjDZaWnVsZDJCkcCRVVoxhy82MQCKF5PKSU1gv4`
+- Title session report added to `data/title-session-reports.md`; confirmed title added to `data/episode-titles.md`.
+
+**Process fix — HR-61:**
+- Root cause: the Clickability quality gate incorrectly eliminated a correctly formatted series title by penalizing it for being "expected." The series format is the point, not a weakness.
+- Fix: added HR-61 to `docs/house-rules.md` — series titles that pass all hard rules are exempt from the Clickability floor.
+- Updated `.claude/commands/review-titles.md` step 6.5 with the series exception.
+
+**Drive search script:**
+- Created `scripts/find_episode.mjs` — reusable script accepting any search term as `process.argv[2]`.
+- Usage: `node scripts/find_episode.mjs "Episode 225"`
+- Updated `CLAUDE.md` Finding files section to reference this script.
 
 ---
 

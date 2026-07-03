@@ -1,7 +1,7 @@
 # Q&A Blocks Prompt for Episodes
 
 <!-- Source: Google Doc 1Muy2_xVVFUOG9FNQqYBhQlZU2Al8ceGcKi8g4i4Ao2Q -->
-<!-- Last synced: 2026-06-13T21:31:44.903Z -->
+<!-- Last synced: 2026-06-20T20:02:21.923Z -->
 
 Q&A Blocks Prompt for Episodes
 
