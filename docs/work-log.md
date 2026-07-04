@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-07-04 (session 29 — GSC analysis; Josh Wine episode → blog post internal link confirmed live)
+**Last updated:** 2026-07-04 (session 29 — GSC analysis; Josh Wine internal link live; Portuguese wine blog post draft written)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
 
@@ -16,6 +16,14 @@
 - Chill Red Wine blog post: same issue — 18,221 impressions, 0.33% CTR, pos 7.75. No easy fix other than time.
 
 **Queue reordered:** Assyrtiko (7,619 imp, 0.24% CTR) and Txakoli (6,570 imp, 0.21% CTR) are new signals not previously on queue. Both jump above Pinotage in 28-day volume. Two Buck Chuck removed (episode at ~1% CTR). See updated Phase 2 queue below.
+
+**Portuguese wine blog post draft complete:**
+- File: `outputs/blog-post-portuguese-wine-douro-branco.md`
+- Format B, target query: "what is Douro Branco" + "Portuguese wine"
+- Episode 208, two wines reviewed: 2023 Quinta Das Carvalhas (6/10 both) and 2024 Symington Rio Belo (7/10 both)
+- All Beamly fields included. Review Schema x2 + FAQPage Schema with COPY START/COPY END markers.
+- Self-review pass: 0 em-dashes, HR-36 phrases present (4/5), all Format B sections present.
+- Status: Ready for Joe to edit and publish.
 
 ---
 
