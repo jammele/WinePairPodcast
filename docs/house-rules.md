@@ -283,6 +283,9 @@ These phrases are the show's positioning and proof library. Use them naturally w
 **HR-64: FAQPage schema — deprecated as of May 7, 2026.**
 Do not generate FAQPage schema for new posts. Google stopped producing FAQPage rich results on May 7, 2026. Existing posts retain their FAQPage blocks — do not remove them proactively. The FAQ section itself (visible Q&A content) is still valuable for readers and AI systems; only the JSON-LD FAQPage schema block is discontinued.
 
+**HR-65: docs/opportunity-briefs/approvals/ is a Joe-only directory.**
+Claude must never create, modify, or delete any file inside `docs/opportunity-briefs/approvals/`. Joe creates `[slug].approved` files in this directory to record his approval of an opportunity brief. The absence of this file is a technical block on blog draft creation enforced by the blog-draft-guard hook — regardless of what the Status field in the brief says. This is a non-negotiable rule. If Claude finds itself about to write to this directory for any reason, that is a rule violation.
+
 **HR-37: When Joe announces a new episode, ask before running anything.**
 An announcement ("show notes are ready", "the episode is X", "we recorded X", "we have a new episode") is not a task request. Respond by acknowledging the episode and listing the available tasks, then ask which ones Joe wants:
 - Episode title: `/review-titles`

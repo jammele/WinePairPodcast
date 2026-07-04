@@ -99,7 +99,9 @@ Full guide: `docs/blog-post-guide.md` — read it every time before writing a po
 Short version:
 - Complete and get Joe's approval on an opportunity brief at `docs/opportunity-briefs/[slug]-brief.md` **before** selecting format, episode, or target query
 - Format, target query, source, and schema are outputs of the approved brief — not independent upfront declarations
-- A `PreToolUse` hook in `.claude/settings.json` blocks draft creation if no valid approved brief exists at the expected path
+- Joe records his approval by creating `docs/opportunity-briefs/approvals/[slug].approved` — Claude never creates or modifies files in that directory (HR-65)
+- A `PreToolUse` hook in `.claude/settings.json` blocks Write, Edit, and common Bash patterns for `outputs/blog-post-*.md` unless: (a) the brief exists, (b) the approval file exists, and (c) the brief passes structural validation
+- **Known limitation:** Bash path detection works only when the file path appears explicitly in the command string. Indirect writes (e.g., a dynamically constructed path in `node -e`) are not catchable without OS-level sandboxing. This is a gap, not a loophole — using a terminal command to bypass the hook is a rule violation.
 - Claude Code writes the full draft. Joe edits and publishes.
 - After publish: follow `docs/publishing-checklist.md`
 
@@ -137,7 +139,7 @@ If OAuth is broken: `rm google_token.json` then `node scripts/setup_google_auth.
 | Task | Read first |
 |---|---|
 | Writing a spoke page | `docs/spoke-page-checklist.md` — run all 3 passes. After writing: `node scripts/validate_spoke.js` then `/review-wine-cards` then `/review-spoke` before showing Joe anything. Draft must include FAQPage schema block at the bottom with COPY START / COPY END markers. |
-| Writing a blog post | Complete opportunity brief first (`docs/opportunity-briefs/template.md`) — get Joe's approval before touching the draft. After approval: read `docs/blog-post-guide.md`. Draft must include Review Schema (see two-reviewer hold note in guide) and all Beamly fields with COPY START / COPY END markers. After writing: run `/review-blog-post <filepath>` and fix ALL reported issues before showing Joe anything. |
+| Writing a blog post | Complete opportunity brief first (`docs/opportunity-briefs/template.md`) — get Joe's approval before touching the draft. Joe records approval by creating `docs/opportunity-briefs/approvals/[slug].approved` (Claude never creates this). After approval: read `docs/blog-post-guide.md`. Draft must include Review Schema (see two-reviewer hold note in guide) and all Beamly fields with COPY START / COPY END markers. After writing: run `/review-blog-post <filepath>` and fix ALL reported issues before showing Joe anything. |
 | Publishing a page | `docs/publishing-checklist.md` — after Joe publishes: run `/verify-published <url>` to confirm schema, card badges, author byline, and meta description are all rendering correctly. |
 | Cover art image prompts | Run `/generate-cover-art` — mandatory before showing Joe any concepts. After Joe picks a concept, immediately update `data/cover-art-scenes.md` (add chosen concept's structural type, remove oldest if list exceeds 5) and commit. |
 | Episode SEO/AEO content and Bluesky posts | Run `/generate-episode-content` — reads episode script, spawns sub-agent, saves to `outputs/episodes/ep[N]-[slug].md`, runs `node scripts/validate_episode.js`. Fix all errors before showing Joe. |

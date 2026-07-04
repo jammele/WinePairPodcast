@@ -136,22 +136,10 @@ export function validateBrief(content) {
     }
   }
 
-  // 10. Approval status must be confirmed
-  const statusMatch = content.match(/\*\*Status:\*\*\s*(.+)/i);
-  if (!statusMatch) {
-    issues.push('Approval: missing **Status:** field in the Approval and scope lock section');
-  } else {
-    const statusLine = statusMatch[1];
-    const isApproved =
-      /\[x\]\s*Approved by Joe/i.test(statusLine) ||
-      /\[X\]\s*Approved by Joe/.test(statusLine) ||
-      /✅\s*Approved by Joe/i.test(statusLine) ||
-      /^Approved by Joe$/i.test(statusLine.trim()) ||
-      /approved:\s*yes/i.test(statusLine);
-    if (!isApproved) {
-      issues.push('Approval: brief has not been approved by Joe — set "[x] Approved by Joe" in the Status field before drafting');
-    }
-  }
+  // Note: Approval is no longer checked via the Status field in validateBrief().
+  // Joe approval is enforced by the existence of docs/opportunity-briefs/approvals/[slug].approved
+  // (a separate file that Claude is prohibited from creating — see HR-65).
+  // The blog-draft-guard hook checks for this file. This function checks structural completeness only.
 
   return issues;
 }
@@ -189,18 +177,30 @@ function main() {
     process.exit(2);
   }
 
+  // Check Joe approval file (separate from brief content — see HR-65)
+  const slug = basename(briefPath, '.md').replace(/-brief$/, '');
+  const projectDir = resolve(__dirname, '../');
+  const approvalPath = join(projectDir, 'docs', 'opportunity-briefs', 'approvals', `${slug}.approved`);
+  if (!existsSync(approvalPath)) {
+    console.log(`FAIL: ${briefPath}`);
+    console.log(`\nNot yet approved by Joe.`);
+    console.log(`Expected approval file: docs/opportunity-briefs/approvals/${slug}.approved`);
+    console.log(`\nJoe creates this file to record his approval. Claude never creates it (HR-65).`);
+    process.exit(1);
+  }
+
   const content = readFileSync(briefPath, 'utf8');
   const issues = validateBrief(content);
 
   if (issues.length === 0) {
     console.log(`PASS: ${briefPath}`);
-    console.log('All required structural fields present. Brief is approved.');
+    console.log('Structural validation passed. Joe approval file confirmed.');
     process.exit(0);
   } else {
     console.log(`FAIL: ${briefPath}`);
     console.log(`\n${issues.length} structural issue(s) found:\n`);
     issues.forEach(i => console.log(`  - ${i}`));
-    console.log('\nComplete all required brief fields and ensure Joe has approved before drafting.');
+    console.log('\nComplete all required brief fields before drafting.');
     process.exit(1);
   }
 }

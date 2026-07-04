@@ -1,8 +1,92 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-07-04 (session 30 — corrective commit: hard enforcement of opportunity brief gate; regression tests A/B pass; schema hold documented)
+**Last updated:** 2026-07-04 (session 31 — enforcement testing complete; two bypasses confirmed; corrective commit adds approval file gate and Bash hook coverage)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
+
+---
+
+## Session 31 summary (2026-07-04) — Enforcement testing + corrective commit
+
+**Objective:** Test whether the session 30 guards are actually hard. Three staged tests requested by Joe before any blog work begins.
+
+### Test 1 — Terminal/subprocess bypass: CONFIRMED (bypass exists)
+
+**What was tested:** Can PowerShell or Node.js write `outputs/blog-post-*.md` without triggering the PreToolUse hook?
+
+**Result:** YES. Both succeeded:
+- `Set-Content outputs/blog-post-guard-bypass-test.md "test"` → file created
+- `node -e "require('fs').writeFileSync('outputs/blog-post-guard-bypass-test.md','test')"` → file created
+
+**Root cause:** The `Write|Edit` matcher only fires on Claude Code's built-in Write and Edit tools. The Bash tool runs shell commands as a subprocess. The hook never saw either write.
+
+**Fix applied:**
+- Extended `blog-draft-guard.js` to handle `Bash` tool calls — parses command string with regex to detect explicit `outputs/blog-post-*.md` path mentions
+- Updated `.claude/settings.json` matcher from `Write|Edit` to `Write|Edit|Bash`
+- Residual gap: indirect writes (e.g. node -e with dynamically constructed path, or shell variable expansion) are not catchable without OS-level sandboxing. Documented honestly in CLAUDE.md and hook comments. Using a terminal command to bypass the hook is a rule violation.
+
+### Test 2 — Approval provenance bypass: CONFIRMED (bypass exists)
+
+**What was tested:** Can Claude self-modify the Status field in a brief to pass the approval check?
+
+**Result:** YES.
+- Valid but unapproved brief → hook denied write ✓
+- Claude used `replace_string_in_file` to change `[ ] Draft — not yet approved` to `[x] Approved by Joe`
+- Same brief, self-modified → hook ALLOWED write (bypass confirmed)
+
+**Root cause:** Approval was checked by pattern-matching text in a Claude-writable file. Claude can edit the brief, so Claude can satisfy its own approval gate.
+
+**Fix applied:**
+- Removed Status field approval check from `validateBrief()` in `validate_blog_opportunity.js`
+- Added separate Joe-only approval file: `docs/opportunity-briefs/approvals/[slug].approved`
+- Hook now requires the approval FILE to exist before allowing any blog draft write
+- Created `docs/opportunity-briefs/approvals/` directory with README explaining the mechanic
+- Added HR-65: this directory is Joe-only. Claude must never create, modify, or delete files here.
+- Residual gap: Claude could still create the approval file if it deliberately violated HR-65. This is instruction-enforced, not technically impossible. Stated honestly in CLAUDE.md and README.
+
+### Test 3 — Regression Test B (full /review-blog-post run): PASS
+
+**What was tested:** Does the current `/review-blog-post` workflow detect the Douro Branco draft as the wrong post for a broad Portuguese wine brief?
+
+**Brief used:** Broad Portuguese wine category guide (all 5 styles, Ep135/150/170/208/212 all Essential). Excluded scope: standalone single-style reviews. Approved for test purposes.
+
+**Result:** 9 strategic failures detected:
+1. SP-1: H1 targets "what is Douro Branco" — the query the brief explicitly excluded
+2. SP-2: Draft covers only Douro Branco — brief required all 5 Portuguese wine styles
+3. SP-3: 4 of 5 essential sources absent (Ep135, Ep150, Ep170, Ep212 missing; only Ep208 present)
+4. SP-4: Wine Pair angle is generic independence statement; brief required 5-style multi-episode proof
+5. SP-5: No multi-episode CTAs; only Ep208 linked (reader interested in Port or Vinho Verde finds nothing)
+6. SP-6: Page type is single-wine review (H2 = wine names); brief required category guide (H2 = style names)
+7. SP-7: Broad discovery need never addressed — reader searching "Portuguese wine" finds a tasting note
+8. SP-8: Image is two Ep208 bottles; brief required regional category guide imagery
+9. SP-9: Two Review Schema blocks present; brief explicitly prohibited Review Schema for a category guide
+
+The review also found 3 formatting violations (HR-8, HR-43, HR-52), 2 missing section counts, and 1 unverified URL flag. Overall verdict: NOT READY FOR JOE.
+
+**Conclusion:** The `/review-blog-post` strategic pass correctly identifies this draft as the wrong post for the approved brief. Test 3 passes.
+
+---
+
+### Enforcement conclusion: **B — bypasses found, corrective commit applied**
+
+**What is now technically enforced:**
+- Write and Edit to `outputs/blog-post-*.md` without a valid brief → hook denies
+- Write and Edit to `outputs/blog-post-*.md` without a Joe approval file → hook denies
+- Write and Edit to `outputs/blog-post-*.md` with a structurally incomplete brief → hook denies
+- Bash commands with explicit blog-post path mentions without a valid brief → hook denies (best-effort)
+
+**What is instruction-enforced (not technically impossible):**
+- Indirect terminal writes with dynamic path construction (OS-level sandboxing required to close this)
+- Claude creating the approval file itself (HR-65 prohibits it; violating HR-65 is a deliberate rule violation, not an accidental bypass)
+
+**Files changed in session 31 corrective commit:**
+- M `scripts/hooks/blog-draft-guard.js` — Bash handling + approval file check
+- M `scripts/validate_blog_opportunity.js` — removed Status field approval check; added approval file check to main()
+- M `.claude/settings.json` — matcher extended to Write|Edit|Bash
+- A `docs/opportunity-briefs/approvals/README.md` — Joe-only directory documentation
+- M `docs/house-rules.md` — added HR-65 (approvals directory is Joe-only)
+- M `CLAUDE.md` — updated approval mechanism description; documented terminal bypass limitation
+- M `docs/work-log.md`
 
 ---
 
