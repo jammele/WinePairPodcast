@@ -1,12 +1,32 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-07-03 (session 28 continued — FAQ evidence system validated end-to-end; Ep225 audit committed; Ep223 regression test passed)
+**Last updated:** 2026-07-03 (session 28 continued — Ep225 cover art committed; anatomy safety system (HR-62) added and committed)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
 
 ---
 
-## Session 28 continued (2026-07-03) — FAQ evidence system end-to-end validation
+## Session 28 continued (2026-07-03) — Ep225 cover art + anatomy safety system
+
+**Ep225 cover art completed (commit f9889ff):**
+- Concept selected: Concept B — The Cross-Court Pass (43/50).
+- First batch rejected by Joe (built around Costco/prestige-label paradox). Second batch reframed around "non-Cab lovers surprised by both wines." Concept B selected from second batch.
+- ChatGPT prompt written and saved to `outputs/episodes/ep225-kirkland-pauillac-saint-julien.md`.
+- `data/cover-art-scenes.md` updated: Ep225 added, Ep218 removed.
+- `data/cover-art-session-reports.md` updated: Ep225 entry added, Patterns Learned updated with key lesson (for challenge/comparison episodes, the emotional tasting experience beats external facts about provenance or branding).
+
+**Anatomy safety system added (commit 37a8443):**
+- Root cause: "Arms crossing at center in a bold X-shape" passed all review gates because no gate checked whether AI image models can render the scene without broken anatomy. Result: floating sleeves, disconnected elbows, phantom hands in the Ep225 ChatGPT render (ChatGPT fixed the image manually; ep225 file was not changed).
+- Fix: HR-62 added to `docs/house-rules.md` — defines the anatomy risk patterns and six safe staging alternatives.
+- Four changes to `.claude/commands/generate-cover-art.md`:
+  1. Step 0 anatomy gate added (filter before passing concepts to subagent).
+  2. Second review subagent prompt updated: HR-62 added to special attention list; item (10) Anatomy Executability added; score accuracy renumbered to (11).
+  3. Arm and Hand Clarity section added to ChatGPT prompt template (between Scene and Composition).
+  4. Both "No text/labels" lines corrected: now use "No text, captions, speech bubbles, or decorative labels except required wine bottle label text."
+
+---
+
+## Session 28 continued (2026-07-03) — FAQ evidence system validated end-to-end; Ep225 audit committed; Ep223 regression test passed
 
 **Ep225 FAQ audit completed and committed (commit ac7be07):**
 - Full Section 9 audit built: 13 C1 queries live-executed via DDG HTML, 4 C2 pages attempted (2 successful, 2 redirected).
