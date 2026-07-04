@@ -15,7 +15,7 @@ When the user types `/review-blog-post <filepath>`:
 0. **FIRST: Retrieve the opportunity brief for this post.**
    - Check `docs/opportunity-briefs/` for a file named `[slug]-brief.md` matching the post slug.
    - If found: read the brief in full. Run the Strategic Pass below before any other checks.
-   - If not found: note "No opportunity brief found for this post. Strategic pass skipped." Then proceed to Step 1.
+   - If not found: **HARD FAIL. STOP.** Do not proceed to mechanical lint. Do not report the draft as review-complete. Report: "FAIL: No opportunity brief found at `docs/opportunity-briefs/[slug]-brief.md`. This draft cannot be reviewed. Complete and approve the opportunity brief before creating or reviewing any draft. The brief must include archive inventory, query cluster evidence, Wine Pair angle, excluded scope, and Joe's approval. See `docs/opportunity-briefs/template.md`."
 
 **Strategic Pass (only if brief exists):**
 

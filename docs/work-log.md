@@ -1,8 +1,59 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-07-04 (session 29 — GSC analysis; Josh Wine internal link live; blog decision methodology repair; queue invalidated)
+**Last updated:** 2026-07-04 (session 30 — corrective commit: hard enforcement of opportunity brief gate; regression tests A/B pass; schema hold documented)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
+
+---
+
+## Session 30 summary (2026-07-04) — Blog methodology enforcement
+
+**Corrective commit on top of 00fb319. Addresses all items identified in ChatGPT's audit response.**
+
+**What was wrong with 00fb319:**
+- CLAUDE.md not updated — old impression-threshold prioritization rule still in place; old "state 4 things first" short version still routed around opportunity brief gate
+- `review-blog-post.md` Step 0: missing brief silently skipped strategic pass instead of failing hard
+- No technical enforcement — every new gate was natural-language-only instruction
+- Two stale FAQPage references in `docs/blog-post-guide.md` (Beamly fields paragraph + checklist numbering)
+- Schema "correct and compliant" claim unsubstantiated — averaged ratingValue not explicitly shown on page
+
+**What this commit adds:**
+
+1. `scripts/validate_blog_opportunity.js` — standalone structural validator for opportunity briefs. Checks: all 9 required section headings, non-stub candidate topic + objective + excluded scope, evidence window present, archive inventory rows present, source classifications present, Wine Pair angle filled, listener path filled, approval status = [x] Approved by Joe. Exit 0 = pass, exit 1 = structural issues (lists them), exit 2 = brief not found.
+
+2. `scripts/hooks/blog-draft-guard.js` — PreToolUse hook. Fires on Write|Edit to `outputs/blog-post-*.md`. If no brief at `docs/opportunity-briefs/[slug]-brief.md`: denies write with clear message. If brief found but fails validation: denies write with list of structural issues. If brief valid and approved: allows write. Fails open on script errors (never locks workspace). Naming convention: draft slug in `blog-post-[slug].md` must exactly match brief slug in `[slug]-brief.md`.
+
+3. `.claude/settings.json` — PreToolUse hook added for Write|Edit, exec form (Node.js on Windows).
+
+4. `CLAUDE.md` — three changes:
+   - Blog post prioritization rule: impression threshold retired, replaced with opportunity brief methodology
+   - "Writing blog posts" short version: "state 4 things first" replaced with opportunity brief → approval → draft sequence
+   - Reference table "Writing a blog post" row: FAQPage schema requirement removed, opportunity brief routing added
+
+5. `.claude/commands/review-blog-post.md` — Step 0: missing brief changed from "strategic pass skipped" to HARD FAIL / STOP.
+
+6. `docs/blog-post-guide.md` — three changes:
+   - Beamly fields paragraph: removed "along with the FAQPage schema block"
+   - Post-publish checklist: renumbered (was 1-2-3-4-6-7-8-9, now 1-2-3-4-5-6-7-8)
+   - Review Schema template: two-reviewer schema hold documented (averaged ratingValue 4.5 not explicitly shown on page; do not generate for new posts until resolved)
+
+**Regression Test A — PASS:**
+Simulated `PreToolUse` Write hook for `outputs/blog-post-portuguese-wine-douro-branco.md` (no brief exists). Hook returned `permissionDecision: "deny"` with specific message including expected brief path. A non-blog-draft file (episode output) passed through with exit 0. The original Portuguese wine failure sequence is now blocked before the draft file can be created.
+
+**Regression Test B — PASS:**
+Stub brief created at matching slug path, run through validator — detected 8 structural issues (stub topic/objective/scope, missing evidence window, no archive rows, stub Wine Pair angle, stub listener path, unapproved status). Hook returned deny with full issue list. When the brief is a stub, the draft cannot be created. When the brief is properly completed but the draft is narrow-scope, the strategic pass in `/review-blog-post` catches the failures — this was demonstrated in the Session 30 audit (9 strategic failures identified against a broad Portuguese wine brief). Naming convention additionally enforces topical consistency: a broad Portuguese wine brief files as `portuguese-wine-brief.md`, incompatible with the `portuguese-wine-douro-branco` slug.
+
+**Schema open investigation:**
+Two-reviewer Review Schema (averaged ratingValue not explicitly shown on page) is an unresolved compliance question. Current B&B and Josh posts have ratingValue 3 and 4.5 respectively in JSON-LD; only individual Joe/Carmela scores are visible. Rich Results Test not yet run. Do not generate new Review Schema for posts with separate visible host scores until this is resolved. Document resolution in work-log when confirmed. Beamly Article markup unaffected.
+
+**Files changed in this corrective commit:**
+- A `scripts/validate_blog_opportunity.js`
+- A `scripts/hooks/blog-draft-guard.js`
+- M `.claude/settings.json`
+- M `CLAUDE.md`
+- M `.claude/commands/review-blog-post.md`
+- M `docs/blog-post-guide.md`
+- M `docs/work-log.md`
 
 ---
 

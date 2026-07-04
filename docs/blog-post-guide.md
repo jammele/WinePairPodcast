@@ -134,8 +134,9 @@ Final schema decision is made after the draft is written and the page is rendere
 
 ## Review Schema template
 
-One block per wine. Never average scores across multiple wines into one block.
-Rating = average of Joe's and Carmela's scores for that wine only (round to nearest whole number).
+**Two-reviewer schema hold (as of 2026-07-04):** The `ratingValue` in the Review Schema block is derived by averaging Joe’s and Carmela’s scores (e.g., 4.5 from Joe 4 + Carmela 5). Google requires that the rating value in markup be explicitly visible on the page. Current posts show individual scores only (“Joe: 4/10, Carmela: 5/10”) and do not explicitly display the averaged value. **Do not generate Review Schema for new posts until this is resolved.** The schema model for two-reviewer posts is an open investigation. Beamly’s auto-generated Article block is unaffected. Log schema work as a separate investigation in `docs/work-log.md`.
+
+When the schema model is resolved and approved, use the template below. One block per wine. Never average scores across multiple wines into one block.
 
 ```html
 <script type="application/ld+json">
@@ -192,7 +193,7 @@ When building the post in Beamly, fill in these fields:
 - **Author / Participant:** In the Authors / Participants section, search "Joe Mele" and add with role "Author". This adds a visible byline (E-E-A-T signal). Note: Beamly does not currently inject this into the Article JSON-LD schema — that is a platform limitation, not a configuration error.
 - **Review Schema:** Added as a code block inside the post body in Beamly, at the very bottom of the page after the FAQ. Same method as the Buzzsprout embed. Blog pages do not have head code injection — body code blocks work for JSON-LD schema. Note: Beamly auto-generates an Article block — our Review Schema blocks are separate objects and do not conflict. FAQPage schema is deprecated (May 7, 2026) — do not add to new posts.
 
-Claude Code includes suggested copy for all of these fields at the bottom of every draft file, along with the FAQPage schema block.
+Claude Code includes suggested copy for all of these fields at the bottom of every draft file.
 
 ---
 
@@ -202,9 +203,9 @@ Claude Code includes suggested copy for all of these fields at the bottom of eve
 2. Add Joe Mele as Author participant (Authors / Participants section → search "Joe Mele" → role: Author)
 3. Add Buzzsprout embed: log into Buzzsprout → find episode → Share → Embed → copy HTML → paste as a code block in Beamly
 4. Add Review Schema code block (copy from draft — everything between COPY START and COPY END lines)
-6. Upload featured image (generated in ChatGPT using the prompt from the draft)
-7. Submit URL in GSC → URL Inspection → Request Indexing
-8. Resubmit sitemap: GSC → Indexing → Sitemaps → Resubmit
-9. Check back in 3-5 days to confirm "URL is on Google"
+5. Upload featured image (generated in ChatGPT using the prompt from the draft)
+6. Submit URL in GSC → URL Inspection → Request Indexing
+7. Resubmit sitemap: GSC → Indexing → Sitemaps → Resubmit
+8. Check back in 3-5 days to confirm “URL is on Google”
 
 Full details in `docs/publishing-checklist.md`.

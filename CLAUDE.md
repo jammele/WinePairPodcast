@@ -66,14 +66,18 @@ Do not propose episode-based queue posts while spoke work is the priority, unles
 
 ## Blog post prioritization rule
 
-Only propose or write a blog post for an episode or topic where ALL of these are true:
-- The episode page (or topic) has **>5,000 impressions** in GSC
-- The episode page CTR is **under 0.5%**
-- There is no existing blog post already published for that wine/topic
+Every blog post candidate must go through the opportunity brief process **before** any episode selection, format selection, or drafting begins. The impression threshold rule is retired — page-level impressions alone do not establish query demand.
 
-If a page already converts at CTR >1%, a blog post is not needed. Do not suggest it.
+**The correct process:**
+1. Identify a candidate topic (question, wine, or category with potential search demand)
+2. Complete an opportunity brief at `docs/opportunity-briefs/[slug]-brief.md` using the template at `docs/opportunity-briefs/template.md`
+3. The brief requires: query-cluster evidence (not page impressions), full archive inventory, Wine Pair angle, excluded scope, and Joe's explicit approval
+4. After Joe approves the brief: select format, episode sources, and target query from the brief's outputs
+5. Only then begin drafting
 
-To check: `C:/Users/jamme/Downloads/gsc_data_temp/Pages.csv` has current GSC page data. `Queries.csv` has query-level data.
+When Joe asks about the next blog post, report what the work log says about the current candidate — do not generate a new candidate queue from impression data alone.
+
+To check performance data: `C:/Users/jamme/Downloads/gsc_data_temp/Pages.csv` has page-level GSC data. `Queries.csv` has query-level data. The opportunity brief requires query-cluster data from the Queries dimension, not page-level aggregates.
 
 ---
 
@@ -93,7 +97,9 @@ To check: `C:/Users/jamme/Downloads/gsc_data_temp/Pages.csv` has current GSC pag
 Full guide: `docs/blog-post-guide.md` — read it every time before writing a post.
 
 Short version:
-- State format, target query, source, and schema before writing anything
+- Complete and get Joe's approval on an opportunity brief at `docs/opportunity-briefs/[slug]-brief.md` **before** selecting format, episode, or target query
+- Format, target query, source, and schema are outputs of the approved brief — not independent upfront declarations
+- A `PreToolUse` hook in `.claude/settings.json` blocks draft creation if no valid approved brief exists at the expected path
 - Claude Code writes the full draft. Joe edits and publishes.
 - After publish: follow `docs/publishing-checklist.md`
 
@@ -131,7 +137,7 @@ If OAuth is broken: `rm google_token.json` then `node scripts/setup_google_auth.
 | Task | Read first |
 |---|---|
 | Writing a spoke page | `docs/spoke-page-checklist.md` — run all 3 passes. After writing: `node scripts/validate_spoke.js` then `/review-wine-cards` then `/review-spoke` before showing Joe anything. Draft must include FAQPage schema block at the bottom with COPY START / COPY END markers. |
-| Writing a blog post | `docs/blog-post-guide.md` — draft must include Review Schema, FAQPage schema block, and all Beamly fields at the bottom with COPY START / COPY END markers. After writing: run `/review-blog-post <filepath>` and fix ALL reported issues before showing Joe anything. |
+| Writing a blog post | Complete opportunity brief first (`docs/opportunity-briefs/template.md`) — get Joe's approval before touching the draft. After approval: read `docs/blog-post-guide.md`. Draft must include Review Schema (see two-reviewer hold note in guide) and all Beamly fields with COPY START / COPY END markers. After writing: run `/review-blog-post <filepath>` and fix ALL reported issues before showing Joe anything. |
 | Publishing a page | `docs/publishing-checklist.md` — after Joe publishes: run `/verify-published <url>` to confirm schema, card badges, author byline, and meta description are all rendering correctly. |
 | Cover art image prompts | Run `/generate-cover-art` — mandatory before showing Joe any concepts. After Joe picks a concept, immediately update `data/cover-art-scenes.md` (add chosen concept's structural type, remove oldest if list exceeds 5) and commit. |
 | Episode SEO/AEO content and Bluesky posts | Run `/generate-episode-content` — reads episode script, spawns sub-agent, saves to `outputs/episodes/ep[N]-[slug].md`, runs `node scripts/validate_episode.js`. Fix all errors before showing Joe. |
