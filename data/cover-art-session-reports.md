@@ -21,9 +21,60 @@ This file is written and read by the `/generate-cover-art` skill. It accumulates
 
 **Ep224 (2026-06-27):** Joe selected Concept D (Celebration Confession, 46/50). Pattern confirmed: he prefers social-tension comedy ("serious wine behavior" vs. playful confession) over prop-driven dessert gags. Specific exclusions were explicit and should carry forward: avoid one-off transcript props that feel random (panettone, lemon sorbet cup, fruit tarts), avoid candle-comparison framing, and use a proper tasting glass shape (small tulip white wine glass, not a flute).
 
+**Ep225 (2026-07-03):** Joe selected Concept B (The Cross-Court Pass, 43/50). Key lesson: the first full batch was rejected because all concepts were built around the Costco/prestige-label paradox rather than the actual emotional arc of the episode -- the fact that Joe and Carmela are NOT generally Cab Sauvignon lovers and were genuinely surprised by how much they liked both wines. Joe's feedback: "I don't get how Concept G fits the episode at all. Why aren't you focusing on the fact that we liked both bottles a lot and we are not generally Cab Sauvignon lovers?" The correct angle was the mutual conversion -- two self-described Cab skeptics being won over simultaneously. After regenerating with that framing, Joe selected the Cross-Court Pass: two people urgently sliding their respective glasses toward each other with crossing arms, both with the same wide-eyed "you have to try this" expression. Pattern: for challenge/comparison episodes, the emotional experience of the tasting beats the external facts about the wine's provenance or branding.
+
 ---
 
 ## Episode Entries
+
+---
+
+### Ep225: Kirkland Pauillac and Saint-Julien -- SELECTED
+**Date:** 2026-07-03
+**Title:** Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux!
+
+**Physical Situation Brainstorm (Step 0 -- first batch, wrong angle):**
+- 5 situations generated from Costco/prestige-label paradox angle
+- All rejected by Joe: "I don't get how Concept G fits the episode at all. Why aren't you focusing on the fact that we liked both the bottles a lot and we are not generally Cabernet Sauvignon lovers?"
+- Spoiler-gate directions (off-limits): elevating Pauillac over SJ visually; one bottle celebrated vs. other neglected
+
+**Physical Situation Brainstorm (Step 0 -- second batch, corrected angle):**
+- 5 situations generated from "Cab-skeptics converted by both wines" angle
+- 2 passed filters: A (crane-and-cross-arms) and B (cross-court glass pass)
+- Spoiler-gate directions (off-limits): same as above
+
+**Web Research Finding:**
+"Kirkland Pauillac podcast thumbnail" returned only wine review blog text pages -- no editorial cartoon thumbnails exist. Open field.
+
+**Concepts Generated (First Batch -- wrong angle, Costco/prestige-label):**
+
+| Concept | Score | Result | Notes |
+|---|---|---|---|
+| A: Gatekeeper Overruled | 41/50 | PASS second review | Prestige-vs-bargain paradox; both bottles thrust forward |
+| B: Baby Bordeaux | 44/50 | REJECT second review | Pauillac swaddled as precious; SJ peripheral -- spoiler gate |
+| C: Iron Fist Velvet Glove | 43/50 | REJECT second review | Pauillac center stage; SJ on ledge -- spoiler gate |
+| F: Contraband Haul | 41/50 | PASS second review | Smuggling Kirkland Bordeaux; both bottles equal |
+| G: The Sticker Job | 46/50 | PASS second review | Pressing Kirkland stickers on both bottles simultaneously |
+
+**Joe's feedback on first batch:** Rejected all. "I don't get how Concept G fits the episode at all. Where is the connection to the content? And why aren't you focusing on the fact that we liked both bottles a lot and we are not generally Cabernet Sauvignon lovers? Feels like you are missing some key things."
+
+**Concepts Generated (Second Batch -- corrected angle):**
+
+| Concept | Score | Result | Notes |
+|---|---|---|---|
+| A: The Simultaneous Crane | 42/50 | PASS second review | Both crossed-arms while craning to drink; Cab-skeptic contradiction |
+| B: The Cross-Court Pass | 43/50 | PASS second review | Both sliding glasses at each other; X-shape crossing arms |
+| C (E): The Erasure | 40/50 | PASS second review (with fixes) | Joe erasing "NOT A CAB PERSON" from chalkboard |
+
+**Second Review Summary:**
+- A: PASS -- clean on all rules; mirror symmetry enforces equal visual weight
+- B: PASS -- clean; strongest thumbnail geometry; X-shape reads at any size
+- C (E): PASS with flags -- chalkboard text must be oversized; Carmela face must be visible (revised before presenting)
+
+**Scroll-Stop Assessment:**
+Concept B has the strongest thumbnail geometry -- the diagonal X-shape of crossing arms creates kinetic energy in a still image and is immediately readable at 150px. Concept A is the most visually paradoxical (arms-crossed while drinking = instant contradiction). Concept C is the most literal thesis expression but depends on text legibility.
+
+**Joe's selection:** Concept B -- The Cross-Court Pass (43/50). ChatGPT prompt written and saved to outputs/episodes/ep225-kirkland-pauillac-saint-julien.md.
 
 ---
 

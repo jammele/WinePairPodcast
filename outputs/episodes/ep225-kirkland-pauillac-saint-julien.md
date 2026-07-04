@@ -274,3 +274,51 @@ https://en.wikipedia.org/wiki/Pauillac_AOC
 A Bordeaux wine merchant buys from partner estates and bottles under its own label. Maison Ginestet, founded in 1897, has 350+ partner estates. That's how the Kirkland Saint-Julien is bottled.
 
 https://www.thewinecellarinsider.com/wine-topics/negociants-courtiers-en-primeur-bordeaux-wine-system/
+
+---
+
+## COVER ART
+
+### Ep225 -- Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux!
+
+```
+Create a square editorial cartoon illustration for a wine podcast cover image.
+
+Use this style exactly:
+
+Style name: High-contrast wine-bar editorial cartoon
+
+A bold, graphic, exaggerated cartoon style with chunky black ink outlines, flat saturated colors, oversized expressive faces and hands, theatrical body language, broad smiles, simple shapes, minimal shading, and a warm burgundy/red wine-bar palette. The image should feel like a magazine cover crossed with a premium adult animated comedy. It should be funny, energetic, and readable at small podcast-thumbnail size.
+
+Important style rules:
+Do not make this realistic.
+Do not make the characters portrait-like.
+Do not add realistic skin texture, realistic facial anatomy, painterly detail, soft lighting, gradients, or 3D effects.
+The people should be affectionate recurring cartoon host characters, not realistic portraits.
+Use simplified, exaggerated animated-comedy proportions.
+The characters should be expressive and specific, but not detailed or lifelike.
+The humor should come from expressions, staging, and visual contrast.
+
+Recurring character bible:
+
+Joe is a middle-aged cartoon man. He has black rectangular glasses, a full salt-and-pepper beard, salt-and-pepper hair, thick expressive eyebrows, and a dark navy pullover. He should have a big friendly grin, curious mischievous energy, and oversized expressive hands. He should look like a recurring animated version of Joe, not a realistic portrait and not a generic cartoon dad.
+
+Carmela is a middle-aged cartoon woman. She has medium-length warm brown hair, gold hoop earrings, expressive eyes, a dark top, and a bright amused smile. She should have theatrical body language and a delighted, sharp, funny reaction. She should look like a recurring animated version of Carmela, not a realistic portrait and not a generic surprised woman.
+
+Scene:
+Joe is sliding his wine glass across the surface toward Carmela while Carmela slides her wine glass back toward Joe from the opposite side -- their arms crossing at the center of the frame in a bold X-shape, both bodies leaning urgently forward. Joe's expression is wide-eyed insistence -- the face of someone who cannot believe what they just tasted and needs Carmela to confirm it right now. Carmela mirrors that exact energy from her side, eyes just as wide, the same helpless urgency. Behind Joe, a wine bottle with the label "KIRKLAND PAUILLAC" is clearly visible. Behind Carmela, a wine bottle with the label "KIRKLAND SAINT-JULIEN" is clearly visible. Both characters look like people who walked in as Cab skeptics and are converting in real time, driven entirely by the wines themselves.
+
+Composition:
+Tight square crop.
+Characters fill at least 70% of the frame, waist-up, close to the viewer.
+The crossing arms and sliding glasses form a bold diagonal X-shape at the center of the image -- this is the dominant visual anchor.
+Rich warm burgundy background.
+Clear visual hierarchy: the X of crossing arms draws the eye immediately to the center.
+One clear joke readable at thumbnail size.
+No text, no labels, no speech bubbles.
+
+Negative prompt:
+No photorealism. No realistic portrait. No painterly rendering. No soft gradients. No 3D gloss. No realistic aging lines. No skin texture. No generic stock-cartoon faces. No tiny expressions. No cluttered background. No text. No speech bubbles. Do not make Joe or Carmela look like real-person portraits. Keep them bold, graphic, exaggerated, and funny.
+
+Use this as the style reference, but create a new scene. Do not copy the exact pose.
+```
