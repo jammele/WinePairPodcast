@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-07-04 (session 31 — enforcement testing complete; two bypasses confirmed; corrective commit adds approval file gate and Bash hook coverage)
+**Last updated:** 2026-07-04 (session 31b — environment clarification: hooks fire in Claude Code CLI only; PowerShell added to matcher; approvals directory mechanically protected; known VS Code Copilot Chat limitation documented)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
 
@@ -86,6 +86,57 @@ The review also found 3 formatting violations (HR-8, HR-43, HR-52), 2 missing se
 - A `docs/opportunity-briefs/approvals/README.md` — Joe-only directory documentation
 - M `docs/house-rules.md` — added HR-65 (approvals directory is Joe-only)
 - M `CLAUDE.md` — updated approval mechanism description; documented terminal bypass limitation
+- M `docs/work-log.md`
+
+---
+
+## Session 31b (2026-07-04) — PowerShell matcher + environment clarification
+
+**Context:** Joe reviewed the session 31 corrective commit and identified a specific technical error: the fix extended the matcher to `Write|Edit|Bash` but never confirmed whether the actual terminal tool name is `Bash` or `PowerShell`. The test was also incomplete — no post-fix bypass retest was run.
+
+### Environment clarification (critical finding)
+
+`CLAUDE_PROJECT_DIR` is not set in this session. This confirms the session is running in **VS Code Copilot Chat** (GitHub Copilot), not Claude Code CLI.
+
+**Claude Code's PreToolUse hooks fire in Claude Code CLI only.** They do not fire for VS Code's `run_in_terminal`, `create_file`, or `replace_string_in_file` tools.
+
+Verified empirically:
+- `Set-Content outputs/blog-post-guard-bypass-test.md "test"` via `run_in_terminal` → file created, diagnostic log NOT written (hook never fired)
+- `create_file` targeting `docs/opportunity-briefs/approvals/hook-test.approved` → file created (then deleted), no hook denial
+
+The original bypass tests in session 31 were conducted in the same VS Code environment. "Hook denials" in Test 2 were from manually piping JSON to the hook script — not actual hook interceptions. "Bypasses" in Test 1 were inherent to VS Code terminal tool not routing through Claude Code hooks.
+
+**What the hooks protect:** Claude Code CLI usage only. In VS Code Copilot Chat, enforcement is instruction-based. In Claude Code CLI, hooks fire mechanically.
+
+### What was fixed in this session (correct for Claude Code CLI)
+
+1. Matcher extended to `Write|Edit|Bash|PowerShell` — covers both possible terminal tool names on Windows
+2. `blog-draft-guard.js` extended to handle `PowerShell` (and `Terminal`, `computer` as fallbacks)
+3. Approvals directory mechanically protected in the script (Write/Edit via file_path check; Bash/PowerShell via command string check)
+4. Diagnostic log added: first Claude Code CLI terminal command writes `tool_name` to `outputs/hook-diagnostic.log` (gitignored) — confirms actual CLI tool name empirically
+
+### Simulation results (script logic — not actual hook firings)
+
+- `tool_name="PowerShell"` + `Set-Content outputs/blog-post-guard-bypass-test.md` → **denied** ✓
+- `tool_name="Bash"` + `node -e writeFileSync(...)` → **denied** ✓
+- `tool_name="Write"` + `file_path: approvals/test.approved` → **denied** ✓
+- `tool_name="PowerShell"` + `Set-Content docs/.../approvals/test.approved` → **denied** ✓
+
+### Enforcement status (honest)
+
+| Route | Status | Notes |
+|---|---|---|
+| Claude Code CLI: Write/Edit to blog-post-*.md | **Mechanically blocked** | Hook fires |
+| Claude Code CLI: Bash/PowerShell explicit-path to blog-post-*.md | **Mechanically blocked** | Both in matcher; regex catches explicit paths |
+| Claude Code CLI: Write/Edit to approvals dir | **Mechanically blocked** | HR-65 deny |
+| Claude Code CLI: PowerShell explicit approvals path mention | **Mechanically blocked** | HR-65 deny |
+| Claude Code CLI: Indirect/dynamic path construction | **Not blocked** | Documented residual — no OS sandbox on native Windows |
+| VS Code Copilot Chat: any write operation | **Not blocked** | Hooks don't fire in this interface — instruction-enforced only |
+
+**Files changed in session 31b corrective commit:**
+- M `scripts/hooks/blog-draft-guard.js`
+- M `.claude/settings.json`
+- M `.gitignore`
 - M `docs/work-log.md`
 
 ---

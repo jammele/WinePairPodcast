@@ -8,4 +8,5 @@ outputs/drafts/
 *.db-shm
 *.db-wal
 outputs/*-script-temp.txt
+outputs/hook-diagnostic.log
 null
