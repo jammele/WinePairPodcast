@@ -1,8 +1,21 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-07-03 (session 28 continued — Ep225 cover art committed; anatomy safety system (HR-62) added and committed)
+**Last updated:** 2026-07-04 (session 29 — GSC analysis; Josh Wine episode → blog post internal link confirmed live)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
+
+---
+
+## Session 29 summary (2026-07-04) — GSC analysis + queue reorder
+
+**GSC data analyzed (28-day window ending 2026-07-04):**
+- Site-wide: ~2,316 clicks, ~470K impressions, 0.47% avg CTR. Daily clicks trending up (65-92 early June → 86-105 late June).
+- Chablis blog post: #2 page on site — 196 clicks, 14,536 impressions, 1.35% CTR, pos 4.25. Proving the comparison/discovery format.
+- Spoke pages compounding: combined ~283 clicks across 6 spokes (up from ~150). Pinot Noir (92) + Prosecco (91) leading.
+- Josh Wine blog post underperforming: 22,149 impressions, 74 clicks, 0.33% CTR (pos 7.14). Primary fix: internal link from episode page — added today, confirmed live 2026-07-04.
+- Chill Red Wine blog post: same issue — 18,221 impressions, 0.33% CTR, pos 7.75. No easy fix other than time.
+
+**Queue reordered:** Assyrtiko (7,619 imp, 0.24% CTR) and Txakoli (6,570 imp, 0.21% CTR) are new signals not previously on queue. Both jump above Pinotage in 28-day volume. Two Buck Chuck removed (episode at ~1% CTR). See updated Phase 2 queue below.
 
 ---
 
@@ -127,7 +140,7 @@
 **New memory:** `feedback_beamly_self_serve.md` — don't ask Joe Beamly questions; check `docs/blog-post-guide.md`, `docs/publishing-checklist.md`, `.claude/commands/verify-published.md`, `.claude/commands/review-blog-post.md`, `docs/house-rules.md` first.
 
 **Pending (per plan):**
-- Joe to add internal link from Josh Wine episode page → blog post in Beamly.
+- ✓ Internal link from Josh Wine episode page → blog post — LIVE 2026-07-04.
 - Ep223 title confirmation (blocks SEO/AEO generation).
 - Portuguese wine blog post (Phase 2 #1).
 - Publish 4 ready episodes: ep217-viura, ep218-malvasia, ep219-two-buck-chuck, ep221-lebanese-wine.
@@ -347,19 +360,25 @@
 
 **Phase 2 queue — spoke work complete. Sprint now active.**
 
-| Priority | Post | Episode | Impressions | Clicks | CTR |
+Queue updated 2026-07-04 based on 28-day GSC data (ending July 4). Impressions/CTR are 28-day figures.
+
+| Priority | Post | Episode | Impressions (28d) | CTR | Notes |
 |---|---|---|---|---|---|
-| 1 | Portuguese wine | episode page | 20,154 | 19 | 0.09% |
-| 2 | Two Buck Chuck | EP116 + EP140 | 5,055 | 13 | 0.26% |
-| 3 | Pinotage | EP111 | 6,011 | 21 | 0.35% |
-| 4 | Best Wines Under $20 hub | — | — | — | — |
-| 5 | Trader Joe's wine guide | — | — | — | — |
-| 6 | Pillar #1 rewrite | — | — | — | — |
-| 7 | Gen Z / anti-condescension post | — | brand-building | — | — |
+| 1 | Portuguese wine | episode page | 5,866 | 0.32% | Highest sustained 90-day volume (~20K). Still #1. |
+| 2 | Assyrtiko | WTF Is Assyrtiko | 7,619 | 0.24% | NEW — beats everything else in 28-day window. Discovery format. |
+| 3 | Txakoli | WTF Is Txakoli | 6,570 | 0.21% | NEW — same profile as Assyrtiko. Strong discovery intent. |
+| 4 | Pinotage | EP111 | 5,770 | 0.35% | Stays on queue. |
+| 5 | Chateauneuf-du-Pape | episode page | 6,530 | 0.35% | NEW — missed previously. Strong branded query. |
+| 6 | Carignan | episode page | 5,019 | 0.14% | NEW — very low CTR = clear opportunity. |
+| 7 | Best Wines Under $20 hub | — | — | — | — |
+| 8 | Trader Joe's wine guide | — | — | — | — |
+| 9 | Gen Z / anti-condescension post | — | brand-building | — | — |
 
-**#7 — Gen Z / anti-condescension post:** Inspired by "Gen Z to Wine: Please Stop Condescending" (Everyday Drinking, May 2026). Brand-building, not SEO-driven. Angle: the wine world has a condescension problem — here's what we do differently, and how to actually get into wine without feeling stupid. Strong CTA into the show. Write when sprint resumes.
+**Two Buck Chuck REMOVED from queue:** Episode page now at 0.98% CTR (borderline threshold). 28-day volume only 2,051 impressions. Not a priority.
 
-**NOT in queue — Meiomi:** Episode page already converts at 1.18% CTR (241 clicks / 20,494 impressions). No blog post needed.
+**#9 — Gen Z / anti-condescension post:** Inspired by "Gen Z to Wine: Please Stop Condescending" (Everyday Drinking, May 2026). Brand-building, not SEO-driven. Angle: the wine world has a condescension problem — here's what we do differently, and how to actually get into wine without feeling stupid. Strong CTA into the show. Write when sprint resumes.
+
+**NOT in queue — Meiomi:** Episode page at 0.97% CTR (208 clicks / 21,343 impressions). No blog post needed.
 
 **How blog posts work (locked 2026-04-30):**
 - Claude Code reads the episode script, writes the full draft, generates Review Schema and all Beamly fields
