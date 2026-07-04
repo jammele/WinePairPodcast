@@ -1,8 +1,8 @@
 # The Wine Pair Podcast — SEO / GEO / AEO Strategy
 
 **Owner:** Joe  
-**Last updated:** 2026-05-23  
-**Status:** Active — see `docs/work-log.md` for current priorities and queue. This doc is strategy reference; the work log is the live task list.
+**Last updated:** 2026-07-04  
+**Status:** Active — see `docs/work-log.md` for current priorities and candidate pool. This doc is strategy reference; the work log is the live task list.
 
 ---
 
@@ -12,9 +12,13 @@ Three overlapping changes are reshaping how Google works right now.
 
 **1. AI Mode is the new default.** Google announced at I/O (May 19, 2026) the biggest upgrade to Search in 25+ years. Gemini 3.5 Flash is now the default model in AI Mode globally. The Search box is redesigned for longer, conversational, multimodal queries — text, images, files, videos, tabs. AI Mode queries average triple the length of traditional queries. Searches around planning, comparison, and recommendations are growing fastest.
 
-**2. AEO = SEO + first-hand experience.** Google's May 15 official guide says generative AI Search is still rooted in core Search ranking and quality systems. There is no special AI markup, no llms.txt, no markdown versions, no chunked content needed. The path is: be genuinely useful, unique, and experience-based. Generic summaries of existing content do not compete. First-hand reviews with specific tasting notes, verdicts, and real purchasing decisions do.
+**2. AEO = SEO + first-hand experience.** Google's official AI optimization guide (last updated 2026-06-29) confirms: generative AI Search is still rooted in core Search ranking and quality systems. There is no special AI markup, no llms.txt, no markdown versions, no chunked content needed. Don't overfocus on structured data. The differentiator is first-hand experience — specific tasting notes, verdicts, and real purchasing decisions that generic summaries cannot replicate.
 
 **3. May 2026 core update is rolling.** Started May 21; may take two weeks. Do not make panic changes or draw conclusions from GSC during the rollout. Wait until the update finishes, then compare appropriate date ranges. Our direction is correct — tighten it, do not pivot.
+
+**4. FAQPage rich results ended May 7, 2026.** Google stopped producing FAQPage rich results on May 7, 2026 (deprecated in changelog; documentation removed June 12, 2026). Do not add FAQPage schema to new posts. Existing posts retain their schema blocks — do not remove proactively. The visible FAQ section (Q&A content) remains valuable for readers and AI systems; only the JSON-LD FAQPage markup is discontinued. See HR-64 in `docs/house-rules.md`.
+
+**5. GSC Generative AI performance reports.** Announced June 3, 2026 for a subset of properties. Check GSC for a "Search appearance" or "AI features" section to see if the property has access. If available, the report covers impressions, pages, countries, devices, and dates — it does NOT include clicks or CTR. This is a visibility signal, not a performance signal.
 
 **What this means for us:** The win is shifting from "rank as a blue link" to "be credible enough to be cited in an AI answer." AI Overviews reduce informational CTR (Pew: 8% vs. 15%; Ahrefs: 58% CTR reduction at position 1). But for distinctive, experience-rich content, click quality may improve. Our content strategy — first-hand reviews, transparent methodology, honest ratings, specific verdicts — is exactly what Google's guidance validates. The adjustment is how we structure it.
 

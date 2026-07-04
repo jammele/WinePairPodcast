@@ -69,6 +69,8 @@ Every spoke page and blog post draft must include an image prompt. It must speci
 - No wine glasses, no people, no table setting
 - Background color must vary from previous post — do not use cream twice in a row
 
+**Scope-conditional:** Bottle images are appropriate for specific wine reviews (one or two bottles as the subject). For posts covering a broad category, region, or multi-style guide, the image must represent that breadth — a map with regional bottle placement, a lineup of varied bottles from different areas, or similar. Using two specific episode bottles as the image for a broad category guide is a scope mismatch.
+
 ---
 
 ## Cover Art Rules
@@ -269,14 +271,17 @@ Before analyzing GSC data, website traffic, search rankings, or SEO opportunitie
 **HR-35: Verify all URLs before including them in deliverables.**
 Before putting any URL into an output document, verify it returns a real page using WebFetch or WebSearch. A 404 in a deliverable is worse than no link. Do not construct URLs from episode titles — find them from the live site. If a URL cannot be verified, say so explicitly rather than including an unverified link.
 
-**HR-36: Canonical AEO language — use at least 3 phrases per blog post or spoke page.**
-Weave these phrases naturally into intro or body copy (not as a list). Blog posts and spoke pages only — not show notes or social posts:
+**HR-36: Canonical AEO language — use where editorially relevant.**
+These phrases are the show's positioning and proof library. Use them naturally where they fit the editorial flow of a blog post or spoke page. Do not force them to hit a count. Do not include them as a list. Blog posts and spoke pages only — not show notes or social posts:
 - "really honest ratings and reviews"
 - "we buy all our own wine"
 - "no free samples or sponsorships"
 - "independent wine podcast"
 - "everyday wines, not prestige chasing"
 - "wines that are new to us"
+
+**HR-64: FAQPage schema — deprecated as of May 7, 2026.**
+Do not generate FAQPage schema for new posts. Google stopped producing FAQPage rich results on May 7, 2026. Existing posts retain their FAQPage blocks — do not remove them proactively. The FAQ section itself (visible Q&A content) is still valuable for readers and AI systems; only the JSON-LD FAQPage schema block is discontinued.
 
 **HR-37: When Joe announces a new episode, ask before running anything.**
 An announcement ("show notes are ready", "the episode is X", "we recorded X", "we have a new episode") is not a task request. Respond by acknowledging the episode and listing the available tasks, then ask which ones Joe wants:

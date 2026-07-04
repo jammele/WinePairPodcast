@@ -1,6 +1,6 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-07-04 (session 29 — GSC analysis; Josh Wine internal link live; Portuguese wine blog post draft written)
+**Last updated:** 2026-07-04 (session 29 — GSC analysis; Josh Wine internal link live; blog decision methodology repair; queue invalidated)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
 
@@ -17,13 +17,24 @@
 
 **Queue reordered:** Assyrtiko (7,619 imp, 0.24% CTR) and Txakoli (6,570 imp, 0.21% CTR) are new signals not previously on queue. Both jump above Pinotage in 28-day volume. Two Buck Chuck removed (episode at ~1% CTR). See updated Phase 2 queue below.
 
-**Portuguese wine blog post draft complete:**
+**Portuguese wine blog post — INVALIDATED. Preserved as regression test.**
 - File: `outputs/blog-post-portuguese-wine-douro-branco.md`
-- Format B, target query: "what is Douro Branco" + "Portuguese wine"
-- Episode 208, two wines reviewed: 2023 Quinta Das Carvalhas (6/10 both) and 2024 Symington Rio Belo (7/10 both)
-- All Beamly fields included. Review Schema x2 + FAQPage Schema with COPY START/COPY END markers.
-- Self-review pass: 0 em-dashes, HR-36 phrases present (4/5), all Format B sections present.
-- Status: Ready for Joe to edit and publish.
+- Root cause: scope narrowed from "Portuguese wine" (broad category, 5 episodes) to "Douro Branco" (one style, 1 episode). Assignment was silently redefined — nobody approved changing the topic.
+- Status: Do NOT publish. File preserved as Regression Test B artifact.
+- Regression Test B definition: compare this draft against an approved broad Portuguese wine opportunity brief. Must fail for: scope narrowing, unjustified one-episode dominance, Wine Pair angle not delivered at category scope, image scope mismatch (two specific bottles vs. regional guide), listener path mismatch.
+
+**Blog decision system repair — session 29 continuation (2026-07-04):**
+- Full methodology audit completed across 3 rounds of independent ChatGPT review.
+- Root cause: no pre-writing opportunity analysis; queue impression numbers misrepresented as search demand; self-review was mechanical lint only (could not catch strategic failures).
+- Five files updated: `docs/blog-post-guide.md`, `.claude/commands/review-blog-post.md`, `docs/house-rules.md`, `docs/seo-geo-strategy.md`, new `docs/opportunity-briefs/template.md`.
+- New decision flow: candidate pool → opportunity brief (evidence-backed) → scope locked → draft → brief comparison → mechanical lint → Joe review.
+- Schema audit completed (2026-07-04): Beamly auto-generates Article block. Our Review Schema blocks are separate — no conflict. FAQPage schema not present in raw HTML of any live blog post. Chablis (best performer, 1.58% CTR) has zero structured data beyond Beamly's auto Article block.
+- BRD retrieved and read: `WinePair_Content_Intelligence_BRD.md` (Drive ID: 1s5NPUo0eumb5skaTH25OXRIyk81Vtj1l). BRD is a spec for a future automated tool; its evidence standards (separate evidence from interpretation; no recommendations without evidence; "what is the Wine Pair angle?") apply to all manual content decisions.
+
+**Josh wine query CTR anomaly (open item):**
+- "josh wine" query: 0.09% CTR at average position 3.2. Prior diagnosis of "likely cannibalization" was retracted — cause unknown.
+- Internal link from episode page to blog post added and confirmed live 2026-07-04.
+- Status: monitor CTR at next GSC checkpoint. If no improvement, run query+page dimension analysis and SERP inspection. Not a current blocker.
 
 ---
 
@@ -366,23 +377,37 @@
 - "Is Josh Wine Good?" — 2026-04-29
 - Bread & Butter review — https://thewinepairpodcast.com/blog/is-bread-butter-wine-good-an-honest-review — 2026-04-30
 
-**Phase 2 queue — spoke work complete. Sprint now active.**
+**Phase 2 candidate pool — queue invalidated (2026-07-04).**
 
-Queue updated 2026-07-04 based on 28-day GSC data (ending July 4). Impressions/CTR are 28-day figures.
+All 6 previously queued blog post items had impression figures misrepresented as "search demand." All numbers were page-level aggregates of unknown provenance, with 28-day and 90-day data mixed without labels. None represent verified query cluster demand for the topic as a search query. The queue is replaced with an unranked candidate pool.
 
-| Priority | Post | Episode | Impressions (28d) | CTR | Notes |
-|---|---|---|---|---|---|
-| 1 | Portuguese wine | episode page | 5,866 | 0.32% | Highest sustained 90-day volume (~20K). Still #1. |
-| 2 | Assyrtiko | WTF Is Assyrtiko | 7,619 | 0.24% | NEW — beats everything else in 28-day window. Discovery format. |
-| 3 | Txakoli | WTF Is Txakoli | 6,570 | 0.21% | NEW — same profile as Assyrtiko. Strong discovery intent. |
-| 4 | Pinotage | EP111 | 5,770 | 0.35% | Stays on queue. |
-| 5 | Chateauneuf-du-Pape | episode page | 6,530 | 0.35% | NEW — missed previously. Strong branded query. |
-| 6 | Carignan | episode page | 5,019 | 0.14% | NEW — very low CTR = clear opportunity. |
-| 7 | Best Wines Under $20 hub | — | — | — | — |
-| 8 | Trader Joe's wine guide | — | — | — | — |
-| 9 | Gen Z / anti-condescension post | — | brand-building | — | — |
+Corrected methodology required before any candidate advances to a post:
+1. Complete an opportunity brief (`docs/opportunity-briefs/template.md`)
+2. Define a GSC query cluster (actual query rows with cluster definition — not page impressions)
+3. Establish the Wine Pair angle for the specific topic
+4. Complete full archive inventory — every episode on this topic
+5. Select page type from the analysis, not upfront
+6. Scope locks when Joe approves the brief — any material change requires a brief amendment
 
-**Two Buck Chuck REMOVED from queue:** Episode page now at 0.98% CTR (borderline threshold). 28-day volume only 2,051 impressions. Not a priority.
+For the first 3 candidates that advance, Joe reviews and approves the opportunity brief before drafting begins.
+
+**Candidate pool (unranked — provenance not yet validated under corrected methodology):**
+
+| Candidate | Episode(s) | Known evidence issue |
+|---|---|---|
+| Portuguese wine | Ep135, Ep150, Ep170, Ep208, Ep212 | 5 episodes; category-level guide required. Page impressions ~5,866 (28d), ~20,154 (90d) — not query-cluster demand. Regression tests A+B defined. |
+| Assyrtiko | Ep — TBD | Page impressions 7,619 (28d); visible query rows ~1,677. Significant gap from page aggregate to query cluster. |
+| Txakoli | Ep120 | Page impressions 6,570 (labeled 28d but page shows 5,155 — likely mixed window). Visible query rows ~115. |
+| Pinotage | Ep111 | Page impressions 5,770; visible query rows ~1,679. |
+| Chateauneuf-du-Pape | Ep — TBD | Page impressions 6,530 (labeled 28d but page shows 7,346 — likely mixed window). Visible query rows ~95. |
+| Carignan | Ep — TBD | Page impressions 5,019 (page shows 3,912 — likely mixed window). Visible query rows ~762. |
+| Best Wines Under $20 hub | multiple | Impression-independent decision — still valid. |
+| Trader Joe's wine guide | multiple | Impression-independent decision — still valid. |
+| Gen Z / anti-condescension post | — | Brand-building — not impression-driven. |
+
+**Two Buck Chuck:** Episode page at 0.98% CTR — not a priority.
+
+**Not in pool — Meiomi:** 0.97% CTR — no blog post needed.
 
 **#9 — Gen Z / anti-condescension post:** Inspired by "Gen Z to Wine: Please Stop Condescending" (Everyday Drinking, May 2026). Brand-building, not SEO-driven. Angle: the wine world has a condescension problem — here's what we do differently, and how to actually get into wine without feeling stupid. Strong CTA into the show. Write when sprint resumes.
 

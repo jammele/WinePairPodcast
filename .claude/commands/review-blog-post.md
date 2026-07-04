@@ -12,7 +12,27 @@ Review a blog post draft for formatting violations, AEO/SEO completeness, and fa
 
 When the user types `/review-blog-post <filepath>`:
 
-1. **FIRST: Run the Node.js em-dash scan before spawning the subagent:**
+0. **FIRST: Retrieve the opportunity brief for this post.**
+   - Check `docs/opportunity-briefs/` for a file named `[slug]-brief.md` matching the post slug.
+   - If found: read the brief in full. Run the Strategic Pass below before any other checks.
+   - If not found: note "No opportunity brief found for this post. Strategic pass skipped." Then proceed to Step 1.
+
+**Strategic Pass (only if brief exists):**
+
+Compare the draft against the approved opportunity brief. This is an editorial check, not a lint check. Flag any of the following:
+- The post's H1 or stated target query does not match the approved brief's primary query or page type
+- The scope has narrowed or expanded relative to the approved brief's topic breadth (e.g., a brief for a broad category guide became a single wine review)
+- The primary reader need is not addressed early and clearly. Substantial delay is a flag for editorial review — this is NOT a paragraph-count cutoff
+- Essential-classified archive sources from the brief are absent from the draft
+- A single source (one episode) dominates a post where the brief specified broad archive coverage, without justification noted in the brief
+- The Wine Pair angle identified in the brief is not visible in the draft
+- The unique contribution identified in the brief (specific Joe/Carmela evidence that materially changes the article's value) is not present
+- The listener path from the brief is absent from the conclusion or CTA
+- The image concept does not match the scope approved in the brief (e.g., two specific episode bottles for a regional category guide)
+
+Report all strategic issues before running mechanical checks. A post that passes all mechanical checks but fails the strategic pass is not ready for Joe.
+
+1. **Run the Node.js em-dash scan before spawning the subagent:**
    ```
    node -e "const fs=require('fs');const c=fs.readFileSync('<filepath>','utf8');const lines=c.split('\n');let count=0;lines.forEach((l,i)=>{if(l.includes('—')){count++;console.log('Line '+(i+1)+': '+l.trim());}});console.log('Total em-dashes: '+count);"
    ```
@@ -45,7 +65,7 @@ Check every house rule that applies to blog posts. The most common failures:
 - **HR-2 (Q./A. format):** Every FAQ question/answer pair must use bold `**Q. Question?**` / unbolded `A. Answer.` format. A plain bold heading like `**What is the best wine?**` is a violation. Flag any deviation.
 - **HR-8 (image prompt):** Confirm image prompt is present and specifies: flat illustration 16:9, wine names on bottle labels in sans-serif text (never unlabeled bottles), varied silhouettes by bottle type, no people, no wine glasses, no table settings, background color that varies from cream if cream was used on the previous post.
 - **HR-22 (author participant reminder):** Confirm the Beamly fields section includes a reminder to add Joe Mele as Author participant.
-- **HR-36 (canonical AEO language):** Count how many of these exact phrases appear naturally in the body copy (not as a list): "really honest ratings and reviews", "we buy all our own wine", "no free samples or sponsorships", "independent wine podcast", "everyday wines, not prestige chasing". Minimum 3 required. Flag if fewer than 3 are present and identify which are missing.
+- **HR-36 (canonical AEO language):** These phrases are the show's positioning library — use where editorially relevant, not to hit a count. Check whether any of these phrases appear naturally in the body copy: "really honest ratings and reviews", "we buy all our own wine", "no free samples or sponsorships", "independent wine podcast", "everyday wines, not prestige chasing", "wines that are new to us". Flag only if NONE appear — absence entirely suggests positioning was ignored. Do not flag for failing to hit a specific count.
 - **HR-42 (entity signal consistency — pillar and About-type pages only):** If this post is a pillar page, About page, or trust/methodology cluster page (not a regular episode review), confirm that the following entity signals appear naturally in the content: hosts named as Joe and Carmela Mele, described as an independent husband-and-wife podcast, focused on affordable/findable wines, buying their own wines for review episodes, Top 100 Food Podcast credential. If any are missing on a pillar/About-type page, flag it. Skip this check for standard wine review posts.
 
 Return each violation with: rule number, exact quote from the draft, and required fix. If none: "No formatting violations found."
@@ -77,7 +97,7 @@ Confirm the draft includes all of the following, clearly labeled:
 - [ ] Excerpt / Short description — 1-2 sentences, conversational
 - [ ] Author participant reminder (Joe Mele, role: Author)
 - [ ] Review Schema block(s) with COPY START / COPY END markers — one block per wine, never averaged across wines
-- [ ] FAQPage Schema block with COPY START / COPY END markers — questions must match the visible FAQ section
+- [ ] FAQPage Schema: **deprecated May 7, 2026. Do not flag as missing.** If present in an older draft, that is acceptable but not required for new posts.
 
 Flag anything missing or mismatched.
 

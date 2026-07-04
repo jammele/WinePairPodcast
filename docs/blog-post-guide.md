@@ -12,14 +12,28 @@ Single source of truth for writing SEO blog posts. Replaces: faq-format-rules.md
 
 ---
 
-## Before writing — state these four things first
+## Before writing — complete an opportunity brief first
 
-1. **Format:** A or B (see below)
-2. **Target query:** the primary search query this post is designed to rank for
-3. **Source:** episode number and URL
-4. **Schema:** which wines get a Review Schema block
+Before selecting a format or target query, complete and save an opportunity brief at `docs/opportunity-briefs/[slug]-brief.md`. The brief template is at `docs/opportunity-briefs/template.md`.
 
-If any of these are wrong, Joe can stop before writing starts.
+The brief establishes: candidate topic, search intent and topic breadth, full archive inventory (every related episode), Wine Pair angle, query cluster with evidence, and excluded scope. Format, target query, source material, and schema type are all OUTPUTS of the brief analysis — not independent upfront declarations.
+
+**Once Joe approves the brief, its scope is locked.** Topic breadth, primary intent, Wine Pair angle, page type, essential sources, excluded scope, and listener path are fixed. If research during drafting suggests a material scope change, stop and amend the brief first. Joe must approve any material amendment during the first three staged posts before drafting continues. See `docs/opportunity-briefs/template.md` for the scope-lock and amendment rule.
+
+**Format selection:** Intent determines format.
+- One specific wine or brand → Format B review
+- Broad category, region, or multi-episode topic → multi-section guide (H2 per style/topic, not per specific wine)
+- We tasted both sides of a comparison → Format C
+- Opinion, history, or show voice → Format A
+
+After completing the brief and confirming Joe has approved it, state these four things:
+
+1. **Format:** A, B, C, or guide (per above)
+2. **Target query:** the primary search query this post is designed to rank for (from the approved brief)
+3. **Source:** episode number(s) and URL(s) (from the approved brief)
+4. **Schema:** which wines get a Review Schema block (preliminary from brief; finalized after draft)
+
+If any of these contradict the approved brief, stop.
 
 ---
 
@@ -109,10 +123,12 @@ Rules:
 - No em dashes. No generic wine language ("earthy undertones," "bright acidity," "silky tannins").
 - Questions should match real search queries.
 
-### 8. FAQPage Schema and Review Schema
-**Check `outputs/seo-aeo/faqpage-schema-blocks.md` first.** If a FAQPage schema block already exists for this post, use it — do not regenerate from the live page. If the schema needs updating (e.g., adding a new example to an answer), update the canonical file and use that version in the deliverable. Only generate a new block from scratch if one does not already exist.
+### 8. Review Schema
+**FAQPage schema was deprecated by Google on May 7, 2026** and no longer produces rich results. Do not generate FAQPage schema for new posts. Existing posts retain their FAQPage blocks — do not remove them proactively.
 
-Review Schema: one script block per wine. Added as a code block inside the post body in Beamly — at the very bottom of the page, after the FAQ. Same method as the Buzzsprout embed. Note: blog pages do not have head code injection; the body code block works fine for JSON-LD schema (Google reads it wherever it appears on the page). See template below.
+Review Schema: one script block per wine. Added as a code block inside the post body in Beamly — at the very bottom of the page, after the FAQ. Same method as the Buzzsprout embed. Note: blog pages do not have head code injection; the body code block works fine for JSON-LD schema (Google reads it wherever it appears on the page).
+
+Final schema decision is made after the draft is written and the page is rendered — not before. Preliminary schema recommendation comes from the opportunity brief.
 
 ---
 
@@ -174,7 +190,7 @@ When building the post in Beamly, fill in these fields:
 - **Custom SEO Description:** 1-2 sentences, 150-160 characters. Lead with the verdict. Example: "We tasted all three Bread & Butter wines and gave them honest ratings. Here is what we found, and whether any of them are worth buying."
 - **URL slug:** Short, keyword-first. Example: `is-bread-and-butter-wine-good`
 - **Author / Participant:** In the Authors / Participants section, search "Joe Mele" and add with role "Author". This adds a visible byline (E-E-A-T signal). Note: Beamly does not currently inject this into the Article JSON-LD schema — that is a platform limitation, not a configuration error.
-- **Review Schema + FAQPage Schema:** Added as code blocks inside the post body in Beamly, at the very bottom of the page after the FAQ. Same method as the Buzzsprout embed. Blog pages do not have head code injection — body code blocks work for JSON-LD schema.
+- **Review Schema:** Added as a code block inside the post body in Beamly, at the very bottom of the page after the FAQ. Same method as the Buzzsprout embed. Blog pages do not have head code injection — body code blocks work for JSON-LD schema. Note: Beamly auto-generates an Article block — our Review Schema blocks are separate objects and do not conflict. FAQPage schema is deprecated (May 7, 2026) — do not add to new posts.
 
 Claude Code includes suggested copy for all of these fields at the bottom of every draft file, along with the FAQPage schema block.
 
@@ -186,7 +202,6 @@ Claude Code includes suggested copy for all of these fields at the bottom of eve
 2. Add Joe Mele as Author participant (Authors / Participants section → search "Joe Mele" → role: Author)
 3. Add Buzzsprout embed: log into Buzzsprout → find episode → Share → Embed → copy HTML → paste as a code block in Beamly
 4. Add Review Schema code block (copy from draft — everything between COPY START and COPY END lines)
-5. Add FAQPage Schema code block (copy from draft — everything between COPY START and COPY END lines). Goes after Review Schema, at the very bottom.
 6. Upload featured image (generated in ChatGPT using the prompt from the draft)
 7. Submit URL in GSC → URL Inspection → Request Indexing
 8. Resubmit sitemap: GSC → Indexing → Sitemaps → Resubmit
