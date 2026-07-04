@@ -103,6 +103,7 @@ Short version:
 
 Search before asking. Never ask Joe for something findable in the Drive, database, or website.
 
+- **Episode transcripts:** Check `C:/Users/jamme/Downloads/` first. Files are named `transcript-[episode-slug]-[version].txt` (e.g., `transcript-costco-kirkland-signature-challenge-2023-pauillac-and-2023-saint-julien-0.0.1.txt`). Slug = episode title lowercased, words hyphenated, special characters stripped, version suffix `0.0.1` or `0.0.2`. These auto-generated transcripts reflect what was actually said on air and are also published in the show notes. Use the transcript (not the script) when finding specific dialogue moments or quotes. Never claim a transcript is unavailable without searching Downloads for `transcript-*.txt`.
 - **Episode scripts:** Check `docs/work-log.md` first — current episode doc IDs are listed there. If not listed, search `db/drivefs_meta_temp.db` → `items` table → `local_title` column. If the episode is too recent to be in the database, use the Drive API to find it by name:
   ```
   node scripts/find_episode.mjs "search term"
