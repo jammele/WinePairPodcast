@@ -46,6 +46,7 @@ Pre-1. **Core thesis and title frame gates (hard reject).**
    - Does it combine at least two episode-specific anchors supplied for this episode? (if no, cut it)
    - Is the visual joke instantly readable at thumbnail size without relying on tiny or dense text, packed cards, or map reading? A single large readable bottle label is allowed. (if no, cut it)
    - Can you name the specific transcript moment (a line, a joke, a dialogue exchange, a specific word or comparison) this situation comes from? (if no, cut it)
+   - Does this scene require complex arm or hand choreography -- including crossed arms, overlapping limbs, multiple hands near the same prop, both characters reaching toward the same center point, or unclear hand ownership? (if yes, simplify before passing to the subagent: make one character active and one reactive, or ensure arm paths are clearly separated into distinct lanes that do not cross)
 
    Then run 1 web search: "[wine/brand name] podcast thumbnail" to see what competitor visual conventions exist (to avoid or improve on them).
 
@@ -76,7 +77,7 @@ Pre-1. **Core thesis and title frame gates (hard reject).**
    Aim to present at least 3 passing concepts. If fewer than 3 concepts pass after two regeneration rounds, stop and report the blocker instead of showing weak or failing options. Never carry failing or sub-40 concepts into the second review.
 
 3. **Spawn a second review subagent** on the surviving concepts only.
-   Prompt: "You are a cover art critic for The Wine Pair Podcast. Read `docs/house-rules.md` in full, paying special attention to HR-40 and HR-14a, plus the hard gates HR-53 through HR-60. Then review each concept below for: (1) Core Thesis gate, (2) Title Alignment gate, (3) Side-Banter gate, (4) Misframing gate, (5) Portability gate, (6) Thumbnail Readability gate, (7) spoiler rule (HR-40), (8) HR-14a physical-action opening, (9) all 11 brand rules, and (10) score accuracy. Score accuracy is PASS only when every shown concept has a visible heading score in the required format (`Concept [Letter]: [Short title] - [N]/50`), the score is an integer from 0 to 50, and the score math is valid under HR-13. Score accuracy is FAIL if any score is missing, malformed, out of range, or miscalculated. For contrast episodes, enforce visual dominance only when a rejected or contrast element appears: it must stay minor background/corner/pushed-aside detail and fails if it is the largest, central, brightest, or most memorable element. Return PASS/FAIL for each gate per concept. If any hard gate fails, mark the concept REJECT. Provide a concise reject summary by category and keep detailed reject reasoning in an internal reject log unless requested."
+   Prompt: "You are a cover art critic for The Wine Pair Podcast. Read `docs/house-rules.md` in full, paying special attention to HR-40, HR-14a, and HR-62, plus the hard gates HR-53 through HR-60. Then review each concept below for: (1) Core Thesis gate, (2) Title Alignment gate, (3) Side-Banter gate, (4) Misframing gate, (5) Portability gate, (6) Thumbnail Readability gate, (7) spoiler rule (HR-40), (8) HR-14a physical-action opening, (9) all 11 brand rules, (10) Anatomy Executability (HR-62): fail any scene where arm paths, hand ownership, prop handling, or body connections may be unclear at thumbnail size -- including crossed arms, overlapping sleeves, multiple hands near one prop, or arms whose path back to the character's shoulder is not visually clear, and (11) score accuracy. Score accuracy is PASS only when every shown concept has a visible heading score in the required format (`Concept [Letter]: [Short title] - [N]/50`), the score is an integer from 0 to 50, and the score math is valid under HR-13. Score accuracy is FAIL if any score is missing, malformed, out of range, or miscalculated. For contrast episodes, enforce visual dominance only when a rejected or contrast element appears: it must stay minor background/corner/pushed-aside detail and fails if it is the largest, central, brightest, or most memorable element. Return PASS/FAIL for each gate per concept. If any hard gate fails, mark the concept REJECT. Provide a concise reject summary by category and keep detailed reject reasoning in an internal reject log unless requested."
    No concept reaches Joe until the second pass returns no FAILs.
 
 3.5. **Pre-send output compliance check (internal).**
@@ -215,6 +216,9 @@ Carmela is a middle-aged cartoon woman. She has medium-length warm brown hair, g
 Scene:
 [SCENE DESCRIPTION — both characters, expressions, body language, what they are doing, key props, wine bottle label text, background]
 
+Arm and hand clarity:
+[Complete this section whenever arms or hands are important to the scene. Specify which character owns each visible active hand using screen position or clear spatial language -- for example: "the hand on screen-left," "Joe's hand closest to center," "Carmela's hand on the right side of frame." Use left/right only when viewpoint and ownership are unmistakable. State what each hand is doing. Default: one active hand per character. Two hands are acceptable only when both clearly belong to the same character handling a single simple prop. Confirm that arm paths do not cross or overlap. Confirm that each arm visibly connects back to its own character's body.]
+
 Composition:
 Tight square crop.
 Characters fill at least 70% of the frame, waist-up, close to the viewer.
@@ -222,10 +226,10 @@ Characters fill at least 70% of the frame, waist-up, close to the viewer.
 [Background description — deep burgundy, or simple wine bar setting — never an outdoor scene or named location].
 Clear visual hierarchy.
 One clear joke readable at thumbnail size.
-No text, no labels, no speech bubbles.
+No text, captions, speech bubbles, or decorative labels except required wine bottle label text.
 
 Negative prompt:
-No photorealism. No realistic portrait. No painterly rendering. No soft gradients. No 3D gloss. No realistic aging lines. No skin texture. No generic stock-cartoon faces. No tiny expressions. No cluttered background. No text. No speech bubbles. Do not make Joe or Carmela look like real-person portraits. Keep them bold, graphic, exaggerated, and funny.
+No photorealism. No realistic portrait. No painterly rendering. No soft gradients. No 3D gloss. No realistic aging lines. No skin texture. No generic stock-cartoon faces. No tiny expressions. No cluttered background. No text, captions, speech bubbles, or decorative labels except required wine bottle label text. Do not make Joe or Carmela look like real-person portraits. Keep them bold, graphic, exaggerated, and funny.
 
 Use this as the style reference, but create a new scene. Do not copy the exact pose.
 ```

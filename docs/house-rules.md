@@ -192,6 +192,19 @@ If this full scored process is not completed, titles must not be presented.
 **HR-61: Series title quality gate exception.**
 When a title correctly follows an established named series format and passes all hard rules (HR-15 through HR-20, HR-39), the Clickability quality gate does not apply. Series titles earn clicks through audience recognition, not novelty. Do not penalize a series title for being "expected" — that is the point of a series. Include a correctly formatted series title as a valid option regardless of Clickability score.
 
+**HR-62: Image model anatomy executability.**
+Before writing the final image prompt for any scene where arms, hands, or props are in motion, check whether the scene requires complex limb choreography: crossed arms, overlapping sleeves, multiple hands near the same prop, both characters reaching into the same small focal area, one prop held by more than one character, unclear hand ownership, or arms whose path back to the character's shoulder is not visually clear.
+
+If any of these risks are present, simplify the staging using one or more of these safe patterns:
+- One character is active (initiates the action); the other is reactive (responds, catches, recoils, watches, laughs).
+- Two separate action lanes: each character's arm path is clearly directed away from the other character's arm path.
+- One visible active hand per character by default. Two hands are acceptable only when both clearly belong to the same character and are handling a single simple prop.
+- Props spaced apart so each belongs unambiguously to one character.
+- Every visible hand has an obvious owner.
+- Each arm visibly connects back to its own character's shoulder or sleeve. No floating limbs.
+
+When writing a ChatGPT prompt: identify each visible hand using screen position or clear spatial language (for example: "the hand on screen-left," "Joe's hand closest to center," "Carmela's hand on the right side of frame"). Use left/right hand designation only when the viewpoint and ownership are unmistakable. Add the Arm and Hand Clarity section to the positive prompt (required whenever arms or hands are important to the scene; see the standard prompt format in the generate-cover-art command).
+
 **HR-40: Cover art must not reveal the episode verdict.**
 The visual should create the central question from the title, not answer it. Any concept that shows outcome — thumbs up/down on specific wines, one bottle going to the sink, a "winner vs. loser" framing — fails this rule. The test: if someone sees the thumbnail, do they already know what Joe and Carmela concluded? If yes, hard FAIL. Reframe to create the question, not announce the answer.
 
