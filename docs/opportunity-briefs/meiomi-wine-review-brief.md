@@ -26,14 +26,14 @@ This brief was built after a fresh reassessment of all candidates using the July
 |---|---|---|---|
 | Josh Wine | ~13,400 | YES | CTR issue — not a new post opportunity |
 | Bread & Butter | ~7,480 | YES | Published April 2026 |
-| Meiomi | ~8,559 | **No** | **→ Strongest untapped candidate** |
+| Meiomi | ~8,559 | **No** | **→ Strongest owned-search visibility signal among candidates analyzed** |
 | Assyrtiko | ~2,742 | No | Second tier; episode page at 7,619 imp, 0.24% CTR |
 | Pinotage | ~2,050 | No | Third tier |
 | Picpoul | ~2,232 | No | Third tier |
 | Graciano | ~1,999 | No | Third tier; already 0.74% CTR at pos 6 — less urgent |
 | Portuguese wine (all styles) | ~214 visible | No (draft invalidated) | Query-level evidence is thin in current window |
 
-**Portuguese wine note:** The session 25-29 analysis identified Portuguese wine as "#1 untapped candidate" based on 20,154 page-level impressions. Under the current methodology (query-cluster evidence required), the Portuguese wine cluster shows only 214 visible query impressions in the July 4 window ("portuguese white wine": 213 imp at position 21). The episode pages for Portuguese Wine Primer #1-3 + Douro Branco generate ~9,120 combined page impressions but the query-cluster evidence does not support a broad "Portuguese wine" blog post ahead of Meiomi under current methodology. This should be re-evaluated when query+page dimension data is available.
+**Portuguese wine note:** The session 25-29 analysis identified Portuguese wine as "#1 untapped candidate" based on 20,154 page-level impressions. Under the current methodology (query-cluster evidence required), the Portuguese wine cluster shows only 214 visible query impressions in the July 4 window ("portuguese white wine": 213 imp at position 21). The visible owned-query signal is too weak in the July 4 export to support prioritization on GSC evidence alone. **Portuguese wine remains in the candidate pool** pending fuller external-demand, archive-leverage, saturation, and Wine Pair angle analysis — the absence of strong owned-query signal does not close the door, it just means GSC alone cannot justify prioritizing it over Meiomi at this time. Re-evaluate when query+page dimension data is available.
 
 **Evidence type:** Owned verified data (GSC Queries.csv, July 4, 2026); Inferred analysis (comparison across candidates)
 
@@ -51,7 +51,7 @@ This brief was built after a fresh reassessment of all candidates using the July
 
 **Primary intent:** Review / verdict — searchers want to know whether Meiomi is worth buying, not background on California wine regions or winemaking history.
 
-**Topic breadth:** Specific wine brand — Meiomi. The post covers the two SKUs reviewed in Ep201 (2022 Cab Sauv, 2023 Pinot Noir). Supporting context includes the brand's reputation, sugar content controversy, and ownership by The Wine Group alongside Franzia.
+**Topic breadth:** Specific wine brand — Meiomi. The post covers the two SKUs reviewed in Ep201 (2022 Cab Sauv, 2023 Pinot Noir). Supporting context includes the brand's reputation, sugar content controversy, and ownership history (Constellation Brands → reportedly acquired by The Wine Group; verify current status before publishing — see ownership note below).
 
 **Excluded scope:**  
 - Deep journalism on the Meiomi sugar scandal lawsuit (this is context for our verdict, not the focus)
@@ -142,21 +142,50 @@ This brief was built after a fresh reassessment of all candidates using the July
 
 ---
 
-## Cluster-ranking URLs
+## Cluster-ranking URLs (query+page dimension)
 
-**Source:** GSC Pages.csv (page-level, July 4 export, "Last 28 days") — not query+page dimension data; see limitation note.
+**STATUS: PENDING — query+page data not yet retrieved. Page-type recommendation below is provisional until this section is complete.**
 
-**Limitation:** The available GSC export is Queries.csv (query dimension) and Pages.csv (page dimension) separately. True query-to-page visibility requires the combined `dimensions: ["query","page"]` API pull, which is not available in this export. The page-level data below is the available approximation. Joe should confirm with GSC UI whether a query+page dimension export is available before drafting begins.
+**Why this gap exists:** The available GSC exports (`gsc_data_2026-07-04/Queries.csv` and `Pages.csv`) are single-dimension — each row contains either a query OR a page URL, not both. True query-to-page visibility requires the combined `dimensions: ["query","page"]` API call. The methodology explicitly requires this data before page-type conclusions can be drawn.
+
+**What has been done:** `scripts/gsc_query_page.js` was written to fill this gap. It uses the existing `googleapis` and `google-auth-library` packages already installed in this project, and will call the Search Console API with `dimensions: ["query","page"]` filtered to the Meiomi cluster for the June 6 – July 4, 2026 window.
+
+**Why it didn't run:** The current `google_token.json` was issued without the `webmasters.readonly` scope (the token only covered `documents` and `drive`). The scope has been added to `scripts/setup_google_auth.js`.
+
+**Joe action required to complete this section:**
+
+```bash
+# Step 1: Delete the existing token (it lacks the webmasters scope)
+rm google_token.json
+
+# Step 2: Re-authorize — this opens a browser window. Click Allow.
+node scripts/setup_google_auth.js
+
+# Step 3: Run the query+page script
+node scripts/gsc_query_page.js "meiomi"
+```
+
+After running, paste the output table here. The table will show: query | page URL | clicks | impressions | CTR | position — for all Meiomi-cluster queries, with the specific URL serving each query.
+
+**Questions this data will answer:**
+- For "meiomi wine" (3,602 imp), is the episode page the only URL appearing — or does another page also rank?
+- For review-intent queries ("meiomi cabernet sauvignon review", "meiomi pinot noir review"), is the episode page serving those queries at all, or is there an uncovered page-type gap?
+- Does any Wine Pair URL appear for "is meiomi wine good" intent queries?
+
+**Page-type conclusion (provisional, pending data above):**
+
+The current evidence suggests the Meiomi episode page is the only Wine Pair URL serving this cluster. The episode page is structurally a podcast listen-driver, not a verdict-first review page. If the query+page data confirms the episode page is the sole URL for review-intent queries, a dedicated blog post addresses a clear page-type gap. If another page already serves review intent, reconsider.
+
+**Evidence type:** Owned verified data (GSC Pages.csv, two windows) — page-level only. Query+page combined dimension: PENDING.
 
 | Page URL | Page Impressions | CTR | Avg Position | Notes |
 |---|---|---|---|---|
-| thewinepairpodcast.com/episode/meiomi-the-worst-wine-weve-ever-tasted | 21,343 | 0.97% | 6.82 | Episode page — the only current page serving this cluster |
+| thewinepairpodcast.com/episode/meiomi-the-worst-wine-weve-ever-tasted | 21,343 | 0.97% | 6.82 | Episode page — only current page with Meiomi impressions |
 | No blog post exists | — | — | — | Confirmed: no meiomi blog post in outputs/ or on site |
 
 **Prior 28-day window (May 19 – June 16) for comparison:**  
 Episode page: 15,979 impressions, 1.03% CTR, position 7.19.  
-**Trend:** Impressions +33% over 6 weeks; position improved 7.19 → 6.82; CTR stable at ~1%.  
-**Evidence type:** Owned verified data (GSC Pages.csv, two windows)
+**Trend:** Impressions +33% over 6 weeks; position improved 7.19 → 6.82; CTR stable at ~1%.
 
 ---
 
@@ -178,7 +207,9 @@ Meiomi cluster total query impressions: 15,553 (all 28-day rates above reflect a
 - Bread & Butter blog post: 6,207 imp, 1.27% CTR (published — converting well)
 - Meiomi episode page: 21,343 imp, 0.97% CTR (no blog post yet)
 
-**Inferred analysis:** The Meiomi episode page performs better than the Josh Wine episode page (9,752 imp, 0.22% CTR) and Bread & Butter episode page (10,871 imp, 0.37% CTR). The episode page title "Meiomi: The Worst Wine We've Ever Tasted?" is clearly driving some click interest. However, the episode page's 0.97% CTR across 21K impressions contrasts sharply with the "meiomi wine" query-specific CTR of 0.61% at position 8.18 — the broad discovery query is NOT well-served by an episode page format. A dedicated review blog post could rank higher for review-intent queries and convert them at higher CTR.
+**Inferred analysis:** The Meiomi episode page performs better than the Josh Wine episode page (9,752 imp, 0.22% CTR) and Bread & Butter episode page (10,871 imp, 0.37% CTR). The episode page title "Meiomi: The Worst Wine We've Ever Tasted?" is clearly driving some click interest. However, the episode page's 0.97% CTR across 21K impressions contrasts sharply with the "meiomi wine" query-specific CTR of 0.61% at position 8.18 — the broad discovery query is NOT well-served by an episode page format. Whether a dedicated review blog post would rank higher for review-intent queries is a separate question that the query+page analysis (section above) should answer before this conclusion is drawn.
+
+**Inferred analysis:** Evidence type — Owned verified data for page-level performance; **Inferred** for the page-type advantage claim (pending query+page data).
 
 ---
 
@@ -193,17 +224,67 @@ Meiomi cluster total query impressions: 15,553 (all 28-day rates above reflect a
 
 ## Saturation
 
-**SERP review date:** Manual check required — not completed as of this brief. GSC data provides the following inferences, labeled as such:
+**STATUS: PROVISIONAL — manual SERP check required. Claude Code cannot perform live Google searches (WebFetch returns 403/errors on SERP result pages). Every line below is inferred from GSC position data and general knowledge of the competitive landscape, not from a live SERP observation. This section must be completed before the brief is approval-ready.**
 
-**Inferred SERP composition for "meiomi wine" (position range 1-7, based on episode page ranking 6.82 average):**
-- Meiomi brand website (meiomi.com) — likely position 1
-- Major wine retailers (Total Wine, Wine.com, Vivino) — positions 2-4
-- Wine Enthusiast or VinePair review — likely positions 3-5
-- Our episode page — averaging position 6-7
+**Inferred SERP composition for "meiomi wine" — ALL LINES [INFERRED, NOT VERIFIED]:**
+- Meiomi brand website (meiomi.com) — [INFERRED] likely position 1
+- Major wine retailers (Total Wine, Wine.com, Vivino) — [INFERRED] positions 2-4
+- Wine Enthusiast or VinePair review — [INFERRED] likely positions 3-5
+- thewinepairpodcast.com episode page — [INFERRED from GSC] averaging position 6-7
 
-**What's likely missing or underserved:** Review content that leads with a direct honest verdict (buy / don't buy). Wine Enthusiast gave the 2023 Pinot Noir 88 points. No major review site appears to prominently say "we bought this, we gave it 1/10, here's specifically why." The sugar content explanation (15g/l residual sugar in a nominally dry wine = off-dry by definition) is not prominently surfaced in any review we're aware of.
+**Inferred gap [NOT VERIFIED]:** Review content that leads with a direct honest verdict (buy / don't buy). Wine Enthusiast gave the 2023 Pinot Noir 88 points. The inferred gap is that no major review site prominently delivers a direct negative verdict with the specific sugar-content explanation. This gap is plausible but not confirmed.
 
-**Evidence type:** Inferred analysis (from GSC position data) + Owned verified data for our own page position. **Joe should perform a manual SERP review before approving this brief to confirm the inferred composition.**
+---
+
+### Joe SERP observation form — ~3 minutes
+
+Query: **"meiomi wine"** in a clean browser (incognito, US location)
+
+```
+1. Does meiomi.com appear in positions 1-3?
+   [ ] Yes  [ ] No
+
+2. Is there a dedicated review/rating page in positions 1-5
+   (Wine Enthusiast, VinePair, Decanter, Vivino, etc.)?
+   [ ] Yes  [ ] No
+   If yes — Title: ________________________________
+   Verdict visible in snippet (buy/don't buy): [ ] Yes  [ ] No
+
+3. Does thewinepairpodcast.com appear anywhere in positions 1-10?
+   [ ] Yes  [ ] No
+   If yes — Which URL: ___________________________  Position: ______
+
+4. Is there ANY result with a direct negative verdict / sub-80-point rating?
+   [ ] Yes  [ ] No
+   If yes — Source: _______________________________
+
+5. Top of page:
+   [ ] AI Overview present  [ ] Featured snippet present  [ ] Neither
+
+Also run "meiomi wine review" and note positions 1-3:
+   1. ____________________________________________
+   2. ____________________________________________
+   3. ____________________________________________
+```
+
+**Return this form before approving the brief.** Once returned, update the inferred lines above with verified observations.
+
+**Evidence type:** Inferred analysis only (from GSC position data). Manual/search check: PENDING.
+
+---
+
+## Ownership verification (Joe action required)
+
+The episode script (Ep201) references Meiomi's sale to The Wine Group alongside Franzia and Cupcake as a context for the brand's perceived quality trajectory. A San Francisco Chronicle article (2025) reported the acquisition was announced and expected to close in Constellation Brands' first fiscal quarter of 2026.
+
+**Current status: unverified.** Fetch attempts on the SF Chronicle article returned a paywall 403; Wikipedia Meiomi page returned 404. The acquisition may have closed by now (today's date: 2026-07-05) but this has not been confirmed from a current primary source.
+
+**Joe action:** Before the post is drafted, confirm whether the acquisition has closed and who currently owns Meiomi. Check:
+- The Wine Group's brand portfolio page (thewinegroupwines.com)
+- Constellation Brands press release archive
+- Any current wine industry news source
+
+Do not state Meiomi's current ownership in present tense in the article until this is confirmed. Use: "Meiomi was acquired by [owner] from Constellation Brands in [year]" once verified, or "then owned by Constellation Brands" if ownership has not changed.
 
 ---
 
@@ -246,7 +327,7 @@ Specific Joe and Carmela evidence from Ep201 script (sourced from Google Doc ID:
 - Joe explicitly identified 15g/l residual sugar = off-dry, not dry wine (by legal classification)
 - Joe noted 14.5% ABV for Pinot Noir is "really high for a Pinot Noir"
 - Episode mentioned the Judgement of BC: Meiomi rated last among 30 wines by wine professionals (cited, not direct firsthand)
-- Joe flagged Meiomi's sale to The Wine Group alongside Franzia and Cupcake as a quality signal
+- Joe flagged Meiomi's pending sale to The Wine Group alongside Franzia and Cupcake as a quality signal (announced 2025; **verify whether the acquisition closed and confirm current owner before stating in the article** — see ownership note below)
 - Joe and Carmela's stance on "California-ized" wine: "big, bold, sweet, and lush wines that are as subtle as a mule kick to the head"
 
 **Non-generic test:** What can this article do that Wine Enthusiast or Wine Folly cannot?  
@@ -270,11 +351,17 @@ Three alternatives considered:
 
 2. **Internal link from episode page to a future blog post:** Already done as a standard practice; the blog post would be the destination. No standalone value without the blog post.
 
-3. **Do nothing and let the episode page rank:** With 21,343 impressions and 0.97% CTR the episode page is performing reasonably — better than Josh Wine's episode page. However, "meiomi wine" (3,602 imp) has only 0.61% CTR and the review-intent queries ("is meiomi wine good" at 50 imp, "meiomi cabernet sauvignon review" at 45 imp / 8.89% CTR, "meiomi pinot noir review" at 145 imp) are better served by a blog post format than an episode page format. The 0.61% CTR on the lead query at position 8 leaves substantial uncaptured traffic.
+3. **Do nothing and let the episode page rank:** With 21,343 impressions and 0.97% CTR the episode page is performing reasonably — better than Josh Wine's episode page. However, "meiomi wine" (3,602 imp) has only 0.61% CTR and the review-intent queries show high CTR when our page does appear:
+
+   - "meiomi cabernet sauvignon review": 4 clicks / 45 imp / **8.89% CTR** / pos 4.6 (small sample)
+   - "meiomi pinot noir 2023 review": 3 clicks / 47 imp / **6.38% CTR** / pos 5.5 (small sample)
+   - "meiomi pinot noir review": 2 clicks / 145 imp / **1.38% CTR** / pos 9.9
+
+   These are promising signals but small samples. The high CTR at positions 4-5 suggests strong click intent when our page appears for review queries — it does not yet confirm that a new blog post will rank higher or serve this intent better than the current episode page (pending query+page analysis).
 
 **Cannibalization risk:** Unlike Josh Wine (where a blog post + episode page both underperform), the Meiomi episode page's 0.97% CTR is driven by strong title appeal ("The Worst Wine We've Ever Tasted?"). A blog post will compete for some of the same queries. Mitigation: the blog post should focus primarily on review intent ("is meiomi wine good", "meiomi cabernet sauvignon review") while the episode page continues to serve discovery and narrative queries. Both pages should link to each other clearly. If post-launch GSC shows cannibalization (episode page impressions dropping without total click growth), the strategy should be revisited.
 
-**Recommendation:** A new blog post is the correct action. The episode page cannot be reformatted to serve review intent without Beamly template changes, and the review-intent queries are high-value (some showing 8-20% CTR, indicating strong conversion intent when our page does appear for them).
+**Recommendation:** A new blog post is the correct action given the available evidence — the episode page cannot be reformatted to serve review intent without Beamly template changes, and the review-intent queries show strong click intent when our page appears for them. **However, this recommendation is provisional until the query+page data (section above) confirms the episode page is not already serving review-intent queries from a position that makes a new post redundant or highly cannibalizing.**
 
 ---
 
@@ -301,8 +388,8 @@ A searcher asking "is meiomi wine good" or "meiomi cabernet sauvignon review" la
 
 ## Preliminary schema
 
-**Review Schema:** Yes — one block per wine (two total: 2022 Cab Sauv, 2023 Pinot Noir). Joe and Carmela review separately per two-reviewer schema format.  
-**Note:** Two-reviewer averaged ratingValue compliance is still an open investigation per Session 30. Do not generate Review Schema blocks until this is resolved in the work log. Flag at draft stage.  
+**Review Schema:** Format B with one block per wine (two total: 2022 Cab Sauv, 2023 Pinot Noir) is the intended end state.  
+**Note:** The two-reviewer averaged ratingValue compliance question is an open investigation per Session 30. **This does not block drafting.** If this brief is approved, the article is written without manual Review Schema blocks. Schema blocks are added once the two-reviewer model is resolved — that investigation is a separate open item.  
 **FAQPage schema:** Deprecated May 7, 2026. Do not add.
 
 ---
@@ -310,6 +397,13 @@ A searcher asking "is meiomi wine good" or "meiomi cabernet sauvignon review" la
 ## Approval and scope lock
 
 **Status:** [ ] Draft — not yet approved &nbsp;&nbsp; [ ] Approved by Joe
+
+**PROVISIONAL — two evidence fields are incomplete. Brief is not approval-ready until:**
+1. Query+page data retrieved (re-auth + run `node scripts/gsc_query_page.js "meiomi"` — see Cluster-ranking URLs section)
+2. Joe completes the SERP observation form (see Saturation section)
+3. Joe confirms current Meiomi ownership (see Ownership verification section)
+
+Once all three are supplied, update this brief and request approval.
 
 **Date approved:** ___
 
@@ -323,6 +417,8 @@ A searcher asking "is meiomi wine good" or "meiomi cabernet sauvignon review" la
 - Listener path: verdict post → Ep201 link → show subscription
 
 **Scope-amendment rule:** If research during drafting reveals that the 2022 Cab Sauv or 2023 Pinot Noir SKU has been reformulated or replaced and the review no longer reflects currently available bottles, stop drafting and amend this brief. Per staged rollout, Joe must approve any material scope amendment before drafting continues.
+
+**Schema note:** If Joe approves this brief and creates the approval file, drafting begins without manual Review Schema blocks. The two-reviewer schema investigation (Session 30) is a separate open item and does not block the article.
 
 ---
 

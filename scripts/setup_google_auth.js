@@ -28,6 +28,7 @@ const TOKEN_PATH  = join(ROOT, 'google_token.json');
 const SCOPES = [
   'https://www.googleapis.com/auth/documents',
   'https://www.googleapis.com/auth/drive',
+  'https://www.googleapis.com/auth/webmasters.readonly',
 ];
 
 if (!existsSync(CREDS_PATH)) {
