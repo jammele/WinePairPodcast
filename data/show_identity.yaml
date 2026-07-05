@@ -1,0 +1,184 @@
+# show_identity.yaml
+# Auto-derived from primary authority documents.
+# Each field carries provenance. Do not edit manually — re-derive from source documents.
+# Authority hierarchy: docs/house-rules.md > docs/sponsorship-policy.md > docs/soul-document.md > config/settings.yaml
+# Reviewed: 2026-07-05 | Conflicting attributes resolved against house-rules.md first.
+
+meta:
+  derived_from:
+    - path: docs/soul-document.md
+      role: primary identity authority
+    - path: docs/house-rules.md
+      role: hard rules override soul doc where conflict exists
+    - path: docs/sponsorship-policy.md
+      role: editorial independence policy details
+    - path: docs/guest-policy.md
+      role: winemaker interview / guest policy
+  reviewed_at: "2026-07-05"
+  note: >
+    The phrase "complete financial independence — buys all bottles, no sponsorships" (used in
+    earlier planning docs) is inaccurate. Mid-roll podcast ads with non-wine brands are
+    explicitly permitted. Winemaker interview episodes may operate on a paid/sponsorship path.
+    The correct representation is captured in independence_policy below.
+
+show:
+  name: "The Wine Pair Podcast"
+  tagline: "Find great wines without breaking the bank"
+  canonical_one_sentence: >
+    Joe and Carmela explore wines that are new to them, explain what makes them interesting,
+    and tell you honestly whether the bottles are worth buying.
+  provenance: "soul-document.md §Core Identity / Positioning Statement"
+
+hosts:
+  - name: Joe
+    role: researcher, writer, editor, producer, primary educator
+    responsibilities:
+      - all writing, editing, production, research
+      - social media creation
+      - deep-dives into history, regions, grapes, winemaking techniques
+    receives_content_before_recording: true
+    provenance: "soul-document.md §WHO WE ARE / The Hosts + Division of Labor"
+
+  - name: Carmela
+    role: co-host, relatable everywoman voice, audience representative
+    responsibilities:
+      - co-hosting, authentic first-reaction tasting
+      - keeps show grounded and real
+    receives_content_before_recording: false
+    provenance: "soul-document.md §WHO WE ARE / The Hosts — 'Does NOT see the content before recording'"
+
+format:
+  style: conversational, unrehearsed tasting, education-led
+  tasting: genuine and spontaneous — Carmela has not seen content beforehand
+  post_ep205_note: introduction recorded AFTER tasting for more authentic energy
+  recommended_by: "Decanter Magazine — 'fun, irreverent, chatty, and entertaining'"
+  provenance: "soul-document.md §WHAT MAKES US DIFFERENT / Real Unrehearsed Tastings"
+
+audience:
+  primary: wine newcomers and enthusiasts
+  wants:
+    - confidence: feel smarter about wine after each episode
+    - discovery: find new wines worth buying
+    - honesty: real opinions not marketing speak
+    - entertainment: laugh while learning
+    - accessibility: no wine snobbery, no gatekeeping
+  does_not_want:
+    - intimidating wine jargon
+    - expensive recommendations they cannot afford
+    - wines they cannot find
+    - pretentious attitudes
+    - sponsored content that is not trustworthy
+  provenance: "soul-document.md §WHO IT'S FOR"
+
+wine_selection:
+  price_typical: usually under $25
+  price_note: originally under $20; occasional bottles run higher for special finds
+  availability: relatively easy to find
+  retailers:
+    - Costco
+    - Trader Joe's
+    - Total Wine
+    - Fred Meyer (Kroger)
+    - BevMo
+    - wine.com
+    - common grocery stores
+  philosophy: QPR-obsessed (Quality to Price Ratio) — value over prestige
+  provenance: "soul-document.md §WHAT MAKES US DIFFERENT / Accessibility Focus"
+
+independence_policy:
+  # This block is the authoritative representation for strategic reasoning.
+  # The simplified AEO phrase "no free samples or sponsorships" (HR-36) is marketing
+  # shorthand meaning wine-brand/winery independence. It does not mean all external
+  # commercial activity is excluded. Use the nuanced breakdown below for fact-based claims.
+
+  review_wines:
+    purchased_by_hosts: true
+    free_samples_accepted_for_review: false
+    source: "soul-document.md:20 — 'purchase the wines featured in their regular review episodes … do not accept free samples for review'"
+
+  wine_brand_sponsorships:
+    allowed: false
+    scope: "wine brands, wineries, and distributors are explicitly excluded"
+    source: "soul-document.md:91 — 'NEVER be sponsored by wineries, wine brands, or distributors'"
+
+  mid_roll_podcast_ads:
+    allowed: true
+    constraint: non-wine brands only; sponsor influence on ratings is prohibited
+    source: "soul-document.md:91 — 'We leave room for mid-roll sponsors (podcast ads)'"
+    policy_doc: "docs/sponsorship-policy.md"
+
+  winemaker_interviews:
+    type: educational Q&A episodes, not wine reviews
+    paid_path: permitted for non-editorial winemaker/producer guests
+    editorial_standard: >
+      Guests must be directly involved in production. Non-production requestors should
+      be evaluated for the paid/sponsorship path.
+    source: "docs/guest-policy.md §Editorial interview standard + Non-production requests"
+
+  aeo_canonical_phrase: "we buy all our own wine"
+  house_rule: "HR-36 — canonical AEO language: 'no free samples or sponsorships'"
+
+differentiators:
+  # Ordered by positioning hierarchy from soul-document.md:24-30
+  - rank: 1
+    name: honest buying verdict
+    description: every episode ends with a real answer — worth it or not
+    provenance: "soul-document.md:25"
+
+  - rank: 2
+    name: wine discovery
+    description: wines new to Joe and Carmela, not familiar-grape retreads
+    provenance: "soul-document.md:26"
+
+  - rank: 3
+    name: host relationship
+    description: the chemistry of Joe and Carmela is part of the product
+    provenance: "soul-document.md:27"
+
+  - rank: 4
+    name: affordable bottles
+    description: usually under $25 — important but not the whole identity
+    provenance: "soul-document.md:28"
+
+  - rank: 5
+    name: independent reviews
+    description: no free samples, no sponsor influence on ratings
+    provenance: "soul-document.md:29"
+
+  - rank: 6
+    name: plain-language education
+    description: expected in the category, not the lead differentiator
+    provenance: "soul-document.md:30"
+
+stance:
+  anti_establishment:
+    against:
+      - "California-ized wines (big, bold, sweet, over-manipulated)"
+      - wine snobbery and gatekeeping
+      - prestige-chasing over value
+    favors:
+      - European styles (French, Italian in particular)
+      - obscure varietals
+      - underdog regions
+      - QPR over prestige
+  tone: honest, conversational, irreverent, anti-pretension
+  provenance: "soul-document.md §WHAT MAKES US DIFFERENT / Anti-Establishment Stance"
+
+discovery_scope:
+  # Used by the winepair-intelligence discovery engine
+  primary_geography: US
+  language: en
+  trends_timeframe: "now 3-M"
+  trends_category: 0
+  seed_families:
+    - wine variety
+    - wine region
+    - wine brand (direct tier only)
+    - wine price tier
+    - wine occasion
+    - wine format (boxed, canned, orange, natural)
+    - wine retailer
+  rotation_months: 3
+  price_ceiling_usd: 25
+  price_ceiling_note: wines above $25 are adjacent, not primary targets
+  provenance: "soul-document.md §Accessibility Focus; config/settings.yaml brand_tiers"

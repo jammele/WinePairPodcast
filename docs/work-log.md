@@ -1,8 +1,19 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-07-04 (session 32 — Claude Code VS Code runtime verified; Meiomi opportunity brief written; candidate pool reassessed under repaired methodology)
+**Last updated:** 2026-07-05 (session 33 — intelligence engine full implementation sprint)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
+
+---
+
+## Session 33 summary (2026-07-05) — Intelligence engine implementation
+
+**podcast-os deliverables this session:**
+- `data/show_identity.yaml` — authoritative show identity for intelligence engine; corrected independence_policy (mid-roll ads allowed, wine brand sponsorships excluded); per-field source provenance
+- `scripts/export_episode_evidence.js` — two-layer episode extractor for winepair-intelligence; Layer 1 = .md files; Layer 2 = Drive via find_episode.mjs (opt-in with `--include-drive` or `--episode N`)
+- `data/exports/episode_evidence.jsonl` — generated JSONL; ep225 records; EP201 Meiomi regression PASSES
+
+**EP201 regression:** PASS — Meiomi Cabernet + Pinot Noir extracted, Joe 1/10, Carmela 2/10, "A shoe." pairing, professional_rating_disagreement confirmed.
 
 ---
 
