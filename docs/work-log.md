@@ -1,8 +1,55 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-07-04 (session 31b — environment clarification: hooks fire in Claude Code CLI only; PowerShell added to matcher; approvals directory mechanically protected; known VS Code Copilot Chat limitation documented)
+**Last updated:** 2026-07-04 (session 32 — Claude Code VS Code runtime verified; Meiomi opportunity brief written; candidate pool reassessed under repaired methodology)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
+
+---
+
+## Session 32 summary (2026-07-04) — Runtime verification + Meiomi opportunity brief
+
+**Objective:** (1) Verify hooks fire in actual Claude Code VS Code extension (not GitHub Copilot Chat). (2) Reassess candidate pool under repaired methodology and write the first real opportunity brief.
+
+### Part 1 — Claude Code VS Code runtime verification: PASS
+
+All four live PreToolUse tests were conducted from the real Claude Code VS Code extension (confirmed via `CLAUDECODE=1` and `CLAUDE_CODE_EXECPATH` pointing to the Anthropic extension binary).
+
+| Test | Result |
+|---|---|
+| Write tool → `outputs/blog-post-*.md` (no brief) | **Denied** ✓ |
+| Bash `node -e` explicit path → `outputs/blog-post-*.md` | **Denied** ✓ |
+| Write tool → `docs/opportunity-briefs/approvals/hook-test.approved` | **Denied** ✓ (HR-65) |
+| Bash explicit path → approvals directory | **Denied** ✓ (HR-65) |
+
+No test artifacts written to disk — every write attempt was denied before reaching disk. `Read` tool confirmed non-existence. Git status clean.
+
+**Session 31b correction:** Session 31b incorrectly concluded hooks don't fire because `CLAUDE_PROJECT_DIR` was unset. That env var is empty in regular Bash tool calls but IS set specifically for hook subprocess invocations (via fallback `resolve(__dirname, '../../')`). The session 31b CLAUDE_PROJECT_DIR reasoning was wrong. This session's empirical evidence (four live denials) confirms hooks fire correctly.
+
+### Part 2 — Candidate pool reassessment + Meiomi opportunity brief
+
+**Methodology:** July 4, 2026 GSC Queries.csv (28-day, ending July 4). Query-cluster impressions only — not page-level aggregates.
+
+**Candidate pool result:**
+
+| Candidate | 28-day query cluster | Published? | Status |
+|---|---|---|---|
+| Josh Wine | ~13,400 | YES | CTR issue — not a new post opportunity |
+| Bread & Butter | ~7,480 | YES | Published April 2026 |
+| **Meiomi** | **~8,559** | **No** | **→ #1 untapped candidate** |
+| Assyrtiko | ~2,742 | No | Second tier |
+| Picpoul | ~2,232 | No | Third tier |
+| Pinotage | ~2,050 | No | Third tier |
+| Portuguese wine | ~214 visible | No | Query-cluster evidence too thin in current window |
+
+**Portuguese wine correction:** The session 25-29 ranking of Portuguese wine as "#1 candidate" was based on 20,154 page-level impressions. Under the current methodology (query-cluster evidence required), Portuguese wine shows only 214 visible query impressions in the July 4 window. That ranking was based on the retired methodology.
+
+**Meiomi note:** The work log previously said "Not in pool — 0.97% CTR, no blog post needed." That assessment was based on the episode page's CTR as a proxy for opportunity. Under the current methodology, the correct signal is the query cluster: 8,559 impressions across review-intent queries where we have no blog post. The episode page CTR is irrelevant to this decision. The "no blog post needed" entries below are superseded.
+
+**Brief written:** `docs/opportunity-briefs/meiomi-wine-review-brief.md` — complete. Includes: candidate pool reassessment, full 40+ row query cluster table, three-window evidence comparison, archive inventory (Ep201 = Essential, all others Excluded), full firsthand evidence from Ep201 script (Google Doc `18AvrEtpnx0W9QR7JmU9ZT7zzT26bi__G8OsGUHHOt6k`), Wine Pair angle (1/10 vs. WE 88 pts + 15g/l residual sugar explanation), no-new-post alternative analysis, Format B recommendation, listener path, preliminary schema note (two-reviewer issue flagged).
+
+**Status:** Brief awaiting Joe's review. Joe must perform manual SERP check for "meiomi wine" (inferred composition flagged in brief). If approved, Joe creates `docs/opportunity-briefs/approvals/meiomi-wine-review.approved`. No drafting until approval file exists.
+
+**Two-reviewer schema:** Open investigation from session 30. Must be resolved before Review Schema blocks can be generated for this post.
 
 ---
 
@@ -505,10 +552,11 @@ Two-reviewer Review Schema (averaged ratingValue not explicitly shown on page) i
 
 ## Immediate next actions
 
-1. **Phase 2 SEO blog post sprint — now active.** Phase 1 complete. Portuguese wine (#1 priority, 20,154 impressions / 0.09% CTR) is the next blog post.
-2. **Hub page — LIVE** `https://thewinepairpodcast.com/blog/similar-wines`. GSC indexing submitted 2026-06-09. Chart post linked. ✓ Done.
-3. **Prosecco spoke — GSC indexing requested 2026-05-25.** ✓ Done.
-4. **Positioning rollout — Buzzsprout description + keywords + YouTube About LIVE 2026-06-14.** Remaining: homepage hero/meta, media kit opener, social bios — drafts in `outputs/positioning-rollout.md`. Directory audit (Apple, Spotify, Amazon, iHeart, Podchaser, Goodpods, Rephonic, Feedspot, Google) after feed has propagated a few days. Does not block the SEO sprint — Portuguese wine post stays priority #1.
+1. **Meiomi opportunity brief — awaiting Joe's review.** Brief at `docs/opportunity-briefs/meiomi-wine-review-brief.md`. Joe should: (a) perform manual SERP check for "meiomi wine" to confirm inferred SERP composition; (b) create `docs/opportunity-briefs/approvals/meiomi-wine-review.approved` if approved. Claude never creates that file (HR-65).
+2. **Two-reviewer Review Schema investigation — open.** Must be resolved before Review Schema blocks can be generated for Meiomi or any future post. Current status in Session 30 entry above.
+3. **Phase 2 SEO blog post sprint — active.** Meiomi is #1 candidate under repaired methodology. Next candidates after Meiomi: Assyrtiko (~2,742 imp), Picpoul (~2,232 imp), Pinotage (~2,050 imp). Each requires its own brief before drafting.
+4. **Hub page — LIVE** `https://thewinepairpodcast.com/blog/similar-wines`. GSC indexing submitted 2026-06-09. Chart post linked. ✓ Done.
+5. **Positioning rollout — Buzzsprout description + keywords + YouTube About LIVE 2026-06-14.** Remaining: homepage hero/meta, media kit opener, social bios — drafts in `outputs/positioning-rollout.md`.
 
 **FAQPage schema backfill (Malbec, Bread & Butter, Josh) — DEPRIORITIZED 2026-05-18.** Schema already live on all priority pages. Add to new pages going forward; no backfill sprint needed.
 
@@ -593,11 +641,11 @@ For the first 3 candidates that advance, Joe reviews and approves the opportunit
 
 **Two Buck Chuck:** Episode page at 0.98% CTR — not a priority.
 
-**Not in pool — Meiomi:** 0.97% CTR — no blog post needed.
+**Meiomi (superseded 2026-07-04):** Previously listed as "not in pool — 0.97% CTR, no blog post needed." Corrected: under the current query-cluster methodology, Meiomi has ~8,559 impressions and no blog post. Brief written at `docs/opportunity-briefs/meiomi-wine-review-brief.md`. Awaiting Joe's review and approval.
 
 **#9 — Gen Z / anti-condescension post:** Inspired by "Gen Z to Wine: Please Stop Condescending" (Everyday Drinking, May 2026). Brand-building, not SEO-driven. Angle: the wine world has a condescension problem — here's what we do differently, and how to actually get into wine without feeling stupid. Strong CTA into the show. Write when sprint resumes.
 
-**NOT in queue — Meiomi:** Episode page at 0.97% CTR (208 clicks / 21,343 impressions). No blog post needed.
+**Meiomi (superseded 2026-07-04):** Previously listed as "not in queue — 0.97% CTR, no blog post needed." Corrected: see session 32 entry above.
 
 **How blog posts work (locked 2026-04-30):**
 - Claude Code reads the episode script, writes the full draft, generates Review Schema and all Beamly fields
