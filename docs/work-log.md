@@ -14,7 +14,7 @@
 
 **Bluesky sourcing:** 7 external URLs for posts 4-10 fetched and verified (vintus.com, jorgeordonezselections.com, thesortingtable.com, en.wikipedia.org x2, foodswinesfromspain.com, vinerra.com). Wine Enthusiast, Wine Folly, and Wine-Searcher returned HTTP 403 on fetch and were substituted with alternate verified sources rather than included unverified.
 
-**Status:** Draft complete, not yet shown to Joe for approval/publish.
+**Status:** Draft complete, validator passes (0 errors). Also updated: validator no longer requires FAQPage schema (HR-64). Ready to show Joe.
 
 ---
 

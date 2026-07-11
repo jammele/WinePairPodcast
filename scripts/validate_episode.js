@@ -274,10 +274,7 @@ function run(filePath, requestedSections, expectedCounts) {
     }
   }
 
-  // ── 6. FAQPage Schema present ─────────────────────────────────────────────
-  if (shouldRun(requestedSections, 'SCHEMA') && !/"@type"\s*:\s*"FAQPage"/.test(content)) {
-    errors.push('No FAQPage schema block found. Add a FAQPage schema covering all Q&A pairs.');
-  }
+  // FAQPage schema check removed — HR-64 (deprecated May 7, 2026)
 
   // ── 7. Bluesky posts ──────────────────────────────────────────────────────
   const posts = shouldRun(requestedSections, 'BLUESKY') ? extractBlueskyPosts(content) : [];
