@@ -20,9 +20,49 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 - **Format to generate going forward:** Lead with a conversational surprise or reaction (especially for unknown/unexpected wines), pair with the strongest factual claim as a second sentence. The fact does not need a question mark. This is a valid and often superior structure.
 - Pattern to carry forward: Generate the title that sounds like Joe talking to Carmela first. Then check rules. Don't let rule-checking drive the creative direction.
 
+**Ep226 (session 1):** When a title belongs to an established named series (here, WTF is [Wine]?), Joe chose the exact bare series format over a stronger-hook option that added a first-ever subtitle to that series. This cuts against the "lean into discomfort/strongest hook" pattern from Ep219/Ep221 — series recognition can outweigh novelty for Joe when the series itself has never used subtitles. Do not assume the highest-clickability option always wins when a clean series-exact alternative is on the table; present both and let him choose, but don't be surprised if he takes the safe one.
+
 ---
 
 ## Episode Entries
+### Ep226: Verdejo (Rueda, Spain)
+**Date:** 2026-07-11
+**Series:** WTF is [Wine]?
+**Joe's selection:** WTF is Verdejo? (Option 1 — kept the exact series format rather than the revised extinction/revival subtitle option offered alongside it.)
+
+**Step 0 Research Findings:**
+- Competitor content is 100% educational/descriptive: "Taster's Guide to Verdejo Wine," "Versatile Verdejo," "Discover Spain's Hidden Gem" — no tension, no personality, no controversy anywhere in the space.
+- YouTube is dominated by pronunciation guides and dry explainer videos; zero click-optimized titles found. "Verdejo" search also collides with boxer Felix Verdejo (noise, not usable).
+- Completely uncovered angles: the phylloxera near-extinction story, the single grower (Ángel Rodríguez Vidal) who saved the grape, and the 1972 Marqués de Riscal/French Bordeaux oenologist (Émile Peynaud) revival built explicitly to compete with New World Sauvignon Blanc.
+- No prior full Wine Pair episode on Verdejo (only tasted once, briefly, as one of three wines back in Ep20).
+
+**Episode Hook:** Verdejo nearly went extinct after phylloxera devastated Rueda, was saved by one grower, then deliberately revived in 1972 when Marqués de Riscal partnered with a French Bordeaux oenologist to build a wine that could compete with New World Sauvignon Blanc — today it's Spain's most popular DO white wine. Both wines tasted rated well by both hosts (7-8 range); no negative surprise.
+
+**Subagent Round 1 Summary:**
+- "WTF is Verdejo?" — PASS, exact series match, Click N/A (HR-61 exempt)
+- "Verdejo Almost Went Extinct. A Local Hero and a French Legend Saved It." — FAIL (HR-19, missing series prefix), Click 7/10
+- "Stuck in a Sauvignon Blanc Rut? Verdejo From Rueda Wants a Word." — FAIL (HR-19 + HR-17, competing grape name opens the title), Click 6/10
+- "Verdejo Nearly Disappeared From Spain. Now It's the Country's Most Popular White." — FAIL (HR-19), curiosity 2/5 (resolution stated, not teased)
+- "Sauvignon Blanc and Pinot Grigio Had a Love Child. It's Called Verdejo." — FAIL (HR-19 + HR-17), Click 6/10, weak originality (stock wine-media trope)
+
+**Quality Gate Decisions (pre-Round 2):**
+Only the series placeholder cleared Round 1 cleanly. Regenerated the two strongest angles (extinction/revival story, Sauvignon Blanc rut callback) with the series prefix restored and hooks front-loaded into the first 30 characters.
+
+**Subagent Round 2 Summary:**
+- "WTF is Verdejo?" — PASS, Click N/A (HR-61 exempt)
+- "WTF is Verdejo? It Nearly Vanished From Spain. How Did It Come Back?" — PASS all hard rules, Click 8/10, curiosity 4/5. Flagged: this is the first-ever subtitle added to a WTF-series title in 17 installments — a format-precedent question for Joe, not a rule violation.
+- "WTF is Verdejo? The Wine That Might Cure Your Sauvignon Blanc Rut." — PASS hard rules but curiosity only 2/5, Click 6/10 (hook falls outside first 30 chars, wastes the episode's strongest material) — dropped at quality gate (below 7/10 floor).
+
+**Quality Gate Decisions (post-Round 2):** Dropped the Sauvignon-Blanc-rut option (6/10 Clickability, below the 7/10 floor). Two options presented.
+
+**Final presented options:**
+1. `WTF is Verdejo?` (15 chars — exact series match, HR-61 exempt)
+2. `WTF is Verdejo? It Nearly Vanished From Spain. How Did It Come Back?` (68 chars — first-ever WTF-series subtitle; format-precedent decision for Joe)
+
+**Research-to-Title Alignment:** Option 2 uses the strongest uncovered angle from Step 0 (near-extinction + deliberate 1972 Bordeaux-partnership revival) as an open question, avoiding the spoiler trap that sank the "Now It's the Country's Most Popular White" variant in Round 1. Option 1 is the safe, unconditionally compliant fallback. The Sauvignon-Blanc-rut cold-open callback was tested but left on the table — it scored weakest on curiosity and didn't use the episode's best material.
+
+---
+
 ### Ep225: Costco Bordeaux — Pauillac and Saint-Julien (Session 1)
 **Date:** 2026-07-03
 **Series:** Costco Kirkland Signature Challenge

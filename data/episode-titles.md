@@ -1,9 +1,9 @@
 # Episode Title Archive — The Wine Pair Podcast
 
-**Last updated:** 2026-07-03 (through Ep225)
+**Last updated:** 2026-07-11 (through Ep226)
 **Maintained by:** Claude — add each confirmed title here before committing episode work.
 
-**Latest confirmed title:** Ep225 — Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux!
+**Latest confirmed title:** Ep226 — WTF is Verdejo?
 
 ---
 
@@ -82,6 +82,7 @@ Format: `WTF is [Wine Name]?` — question mark at end, capitalized WTF, wine na
 - Ep193: WTF is Graciano?
 - Ep197: WTF is Aligoté?
 - Ep205: WTF is Bordeaux Blanc?
+- Ep226: WTF is Verdejo?
 
 ### Costco Kirkland Signature Challenge
 Format: `Costco Kirkland Signature [Wine] Challenge!` — varies somewhat; check recent installments
@@ -176,10 +177,10 @@ Format: `Special Episode! The Virginia Winemakers Series [#N if >1]: [Name] of [
 
 | Ep | Title | Format pattern |
 |---|---|---|
+| 226 | WTF is Verdejo? | Series (WTF is [Wine]?) |
 | 225 | Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux! | Series (Costco Kirkland Challenge) |
 | 224 | Is Moscato d'Asti the Sweet Wine Serious Wine People Won't Admit They Love? | [Social-status hook]: [Question] |
 | 223 | This Ain't Chianti: Is Italian Sangiovese Better Outside Tuscany? | [Contrast hook]: [Question] |
-| 207 | Italian Wine Adventure #23: Valpolicella Ripasso — The Best Under-$25 Italian Red You're Not Drinking | Series (IWA) + bold claim |
 | 208 | Portuguese Wine Primer: Douro Branco — Portugal's Best White Under $15? | Series prefix + [Wine] + question |
 | 209 | Why Serious Wine Nerds Love Xinomavro! | [Bold claim about audience] |
 | 210 | Special Episode! Meet the (Wine) Makers #21: Pascal Marty... | Series (Makers) |
@@ -190,7 +191,7 @@ Format: `Special Episode! The Virginia Winemakers Series [#N if >1]: [Name] of [
 | 215 | Experts Loved the $50 Oregon Pinot Noir. We Chose the $23 Bottle! | [Bold claim]. [Surprising result]. |
 | 216 | Viura: The Great White Wine Hiding in Rioja's Red Wine Shadow! | [Grape]: [Metaphor-driven discovery] |
 | 217 | Italian Wine Adventure #24: Frappato! The Chillable Red Wine! | Series (IWA) + subtitle |
-| **219** | **Is Two Buck Chuck Actually Terrible, or Is That Just Wine Snob Talk?** | [Open accusation question] |
+| 219 | Is Two Buck Chuck Actually Terrible, or Is That Just Wine Snob Talk? | [Open accusation question] |
 
 ---
 
