@@ -1,8 +1,20 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-07-05 (session 33 — intelligence engine full implementation sprint)
+**Last updated:** 2026-07-11 (session 34 — Ep226 Verdejo SEO/AEO + social content)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
+
+---
+
+## Session 34 summary (2026-07-11) — Ep226 "WTF is Verdejo?" SEO/AEO + social
+
+**Deliverable:** `outputs/episodes/ep226-verdejo.md` — Key Questions (7), FAQ (7 pairs), two Review schema blocks (FAQPage schema correctly omitted per HR-64), and 10 Bluesky posts for the two-wine Verdejo review (2024 Marqués de Riscal Rueda Verdejo, 2024 Bodegas Vatán Nisia Old Vines Verdejo).
+
+**FAQ scoring:** Standard two-wine review episode type. C1 web search was required (specific current-vintage commercial products) and completed via 11 WebSearch queries. Full evidence ledger, 13-candidate scoring table, rejection log, and final selection log saved to `outputs/episodes/faq-audits/ep226-faq-audit.md`. 9 of 13 candidates scored 13+; final 7 selected after excluding 2 passing-but-redundant candidates (producer/provenance question, wine-1-specific value question) per Section 6/7 duplicate-coverage rules.
+
+**Bluesky sourcing:** 7 external URLs for posts 4-10 fetched and verified (vintus.com, jorgeordonezselections.com, thesortingtable.com, en.wikipedia.org x2, foodswinesfromspain.com, vinerra.com). Wine Enthusiast, Wine Folly, and Wine-Searcher returned HTTP 403 on fetch and were substituted with alternate verified sources rather than included unverified.
+
+**Status:** Draft complete, not yet shown to Joe for approval/publish.
 
 ---
 
