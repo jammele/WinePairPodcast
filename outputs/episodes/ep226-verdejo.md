@@ -166,3 +166,54 @@ https://www.foodswinesfromspain.com/en/wine/regions/duero-river-valley/rueda-do
 **10.**
 Verdejo is often called Sauvignon Blanc's rounder cousin, but it actually ages better, picking up nutty, mineral notes over time that Sauvignon Blanc rarely gets the chance to develop.
 https://www.vinerra.com/education/wines/verdejo-an-in-depth-wine-profile
+
+---
+
+## COVER ART
+
+### Ep226 — WTF is Verdejo?
+
+```
+Create a square editorial cartoon illustration for a wine podcast cover image.
+
+Use this style exactly:
+
+Style name: High-contrast wine-bar editorial cartoon
+
+A bold, graphic, exaggerated cartoon style with chunky black ink outlines, flat saturated colors, oversized expressive faces and hands, theatrical body language, broad smiles, simple shapes, minimal shading, and a warm burgundy/red wine-bar palette. The image should feel like a magazine cover crossed with a premium adult animated comedy. It should be funny, energetic, and readable at small podcast-thumbnail size.
+
+Important style rules:
+Do not make this realistic.
+Do not make the characters portrait-like.
+Do not add realistic skin texture, realistic facial anatomy, painterly detail, soft lighting, gradients, or 3D effects.
+The people should be affectionate recurring cartoon host characters, not realistic portraits.
+Use simplified, exaggerated animated-comedy proportions.
+The characters should be expressive and specific, but not detailed or lifelike.
+The humor should come from expressions, staging, and visual contrast.
+
+Recurring character bible:
+
+Joe is a middle-aged cartoon man. He has black rectangular glasses, a full salt-and-pepper beard, salt-and-pepper hair, thick expressive eyebrows, and a dark navy pullover. He should have a big friendly grin, curious mischievous energy, and oversized expressive hands. He should look like a recurring animated version of Joe, not a realistic portrait and not a generic cartoon dad.
+
+Carmela is a middle-aged cartoon woman. She has medium-length warm brown hair, gold hoop earrings, expressive eyes, a dark top, and a bright amused smile. She should have theatrical body language and a delighted, sharp, funny reaction. She should look like a recurring animated version of Carmela, not a realistic portrait and not a generic surprised woman.
+
+Scene:
+Joe is leading Carmela by the hand toward a bottle labeled "VERDEJO" on the right side of the frame — leaning forward with a wide conspiratorial grin and one raised eyebrow, completely delighted to be making this introduction. Their fingers are interlaced in a clear, warm hand-hold. Carmela is mid-step going right along with him, free arm swinging, face lit up with a big open laugh — she is having a great time being pulled toward something new. A toppled bottle labeled "SAUVIGNON BLANC" lies on its side in the lower-left corner, the one they just left behind. The mood is playful, warm, and willing — not a drag, a dance.
+
+Arm and hand clarity:
+Joe's arm extends from screen-left (his body) toward the center of the frame, ending in a hand clasped with Carmela's hand at the center-lower area. Carmela's arm extends from screen-right (her body) toward center, meeting Joe's in a clear interlaced hand-hold. Each arm connects visibly back to its own character's shoulder and body. Their clasped hands are the central focal point between the two characters. Arm paths do not cross — Joe's arm goes rightward from his side, Carmela's goes leftward from hers, meeting at center.
+
+Composition:
+Tight square crop.
+Characters fill at least 70% of the frame, waist-up, close to the viewer.
+The clasped hands, the bottle labeled "VERDEJO," and both characters' expressions are the main focus.
+Background: warm, medium-depth wine-bar setting — warm amber and red tones, luminous and inviting, not dark or shadowy. Use warmer, lighter reds rather than deep dark wine tones.
+Clear visual hierarchy.
+One clear joke readable at thumbnail size.
+No text, captions, speech bubbles, or decorative labels except the required wine bottle labels.
+
+Negative prompt:
+No photorealism. No realistic portrait. No painterly rendering. No soft gradients. No 3D gloss. No realistic aging lines. No skin texture. No generic stock-cartoon faces. No tiny expressions. No cluttered background. No text, captions, speech bubbles, or decorative labels except the required wine bottle labels. Do not make Joe or Carmela look like real-person portraits. Keep them bold, graphic, exaggerated, and funny. Do not make the background too dark or shadowy — keep it warm, bright, and luminous.
+
+Use this as the style reference, but create a new scene. Do not copy the exact pose.
+```

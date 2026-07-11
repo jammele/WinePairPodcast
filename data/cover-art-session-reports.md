@@ -23,9 +23,41 @@ This file is written and read by the `/generate-cover-art` skill. It accumulates
 
 **Ep225 (2026-07-03):** Joe selected Concept B (The Cross-Court Pass, 43/50). Key lesson: the first full batch was rejected because all concepts were built around the Costco/prestige-label paradox rather than the actual emotional arc of the episode -- the fact that Joe and Carmela are NOT generally Cab Sauvignon lovers and were genuinely surprised by how much they liked both wines. Joe's feedback: "I don't get how Concept G fits the episode at all. Why aren't you focusing on the fact that we liked both bottles a lot and we are not generally Cab Sauvignon lovers?" The correct angle was the mutual conversion -- two self-described Cab skeptics being won over simultaneously. After regenerating with that framing, Joe selected the Cross-Court Pass: two people urgently sliding their respective glasses toward each other with crossing arms, both with the same wide-eyed "you have to try this" expression. Pattern: for challenge/comparison episodes, the emotional experience of the tasting beats the external facts about the wine's provenance or branding.
 
+**Ep226 (2026-07-11):** Joe selected Concept A (SB Rut Escape, 40/50) with modifications. He immediately changed "Carmela digging her heels in, reaching back" to "Carmela going along joyfully, free arm swinging, big open laugh." Rule confirmed: both characters should be in on the fun together — physical comedy must feel like shared play, not one person forcing the other. A willing follower is funnier than a reluctant one when the show's identity is warm and affectionate. Also: always specify "warm, luminous amber-red tones" in the background, not "deep dark burgundy" — Joe explicitly flagged that burgundy reads as too dark.
+
+**Ep226 (2026-07-11):** Joe selected Concept A (SB Rut Escape, 40/50) with modifications: hand-hold instead of wrist grab, Carmela having fun not being reluctant, warmer/lighter background. Key lesson: physical comedy should feel like shared play — both characters enjoying themselves together. When the original concept had Carmela resisting (heels dug in, reaching back), Joe immediately changed it to willing/joyful. The thesis can still be expressed through movement direction without one character being the reluctant one. Background note: "burgundy can be really dark" — specify warm, luminous, amber-red tones rather than deep wine tones in all future prompts.
+
 ---
 
 ## Episode Entries
+
+---
+
+### Ep226: Verdejo — SELECTED
+**Date:** 2026-07-11
+**Title:** WTF is Verdejo?
+
+**Physical Situation Brainstorm (Step 0):**
+- 10 situations generated from transcript moments: SB rut escape (hauling Carmela), love child presentation, creamsicle press on glass, vine replanting (phylloxera rescue), stainless steel flag-planting, SB wand-snap, birth certificate proclamation, bottle-spinning top, sliding home-plate, fire alarm pull
+- 5 passed all filters: SB Rut Escape, Creamsicle, Vine Rescue, Love Child, Stainless Steel Revolution
+- 3 strongest selected for subagent: SB Rut Escape, Creamsicle, Vine Rescue
+- Spoiler-gate directions (off-limits): toast/cheers over Verdejo; Joe presenting bottle with thumbs-up
+
+**Web Research Finding:**
+"Verdejo podcast thumbnail" returned only generic podcast design tools — no wine-specific visual conventions found.
+
+**Concepts Generated:**
+
+| Concept | Score | Result | Notes |
+|---|---|---|---|
+| A: SB Rut Escape | 40/50 | PASS | Joe leading Carmela by wrist toward VERDEJO; SB tipped in corner |
+| B: Creamsicle | 43/50 | PASS | Joe pressing creamsicle to wine glass; Carmela mind-blown gesture |
+| C: Vine Rescue | 40/50 | PASS | Joe clutching tiny vine in RUEDA pot; Carmela hands over mouth |
+
+**Scroll-Stop Assessment:**
+Concept B has the strongest visual non-sequitur (man pressing creamsicle to wine glass). Concept A has the clearest motion and thesis expression. Concept C is the most emotionally specific but requires reading the episode's historical narrative to fully land.
+
+**Joe's selection:** Concept A — SB Rut Escape (40/50), with modifications: wrist grab changed to warm hand-hold, Carmela changed from resistant to joyfully willing, background changed from dark burgundy to warm/luminous wine-bar amber-reds. Bottle label simplified to just "VERDEJO." ChatGPT prompt written and saved to outputs/episodes/ep226-verdejo.md.
 
 ---
 

@@ -48,9 +48,9 @@ Pre-1. **Core thesis and title frame gates (hard reject).**
    - Can you name the specific transcript moment (a line, a joke, a dialogue exchange, a specific word or comparison) this situation comes from? (if no, cut it)
    - Does this scene require complex arm or hand choreography -- including crossed arms, overlapping limbs, multiple hands near the same prop, both characters reaching toward the same center point, or unclear hand ownership? (if yes, simplify before passing to the subagent: make one character active and one reactive, or ensure arm paths are clearly separated into distinct lanes that do not cross)
 
-   Then run 1 web search: "[wine/brand name] podcast thumbnail" to see what competitor visual conventions exist (to avoid or improve on them).
+   Then run 1 web search **inline in the main agent thread** (a quick single WebFetch call — do not delegate this to a subagent): "[wine/brand name] podcast thumbnail" to see what competitor visual conventions exist (to avoid or improve on them).
 
-   Pass only the 5 filtered situations to the subagent as concept seeds — not thematic directions, not title alignment bullets. Situations.
+   From the 5 filtered situations, **select the 3 strongest** to pass to the subagent. Pass only these 3 situations as concept seeds — not thematic directions, not title alignment bullets. Situations.
 
    Also note for the session report:
    - **Two spoiler-gate directions (off-limits):** What would reveal the verdict rather than create curiosity? (these are still worth stating so the subagent can gate check)
@@ -59,34 +59,13 @@ Pre-1. **Core thesis and title frame gates (hard reject).**
 1. Confirm episode number, title, featured wine name, key episode facts (ratings, central angle, tone).
    - If title is pending or unclear, stop and ask for title confirmation before generating concepts.
 
-2. Spawn a subagent with the instructions below, substituting actual episode details and the full title alignment analysis from Step 0. The sub-agent will read `data/cover-art-scenes.md` directly for the recent scenes list.
+2. **Spawn a single generate-and-validate subagent** using the prompt in `## Subagent prompt` below, substituting actual episode details and the 3 concept seeds from Step 0. This one call replaces the old generate → replacement batch → second review pipeline. The subagent generates 3 concepts from the 3 seeds, scores each against HR-13, self-reviews against all hard gates and brand rules, internally generates a replacement for any concept that fails, and returns only passing concepts. The subagent reads `data/cover-art-scenes.md` directly. **No ChatGPT prompts in subagent output** — the main agent writes the prompt after Joe picks (Step 6).
 
-2.5 **Quality gate — enforce before second review.**
-   After the first subagent returns, drop any concept that:
-   - Scores below 40/50
-   - Fails Core Thesis gate
-   - Fails Title Alignment gate
-   - Fails Side-Banter gate
-   - Fails Misframing gate
-   - Fails Portability gate
-   - Fails Thumbnail Readability gate
-   - Has a FAIL on brand rule 11 (spoiler)
-   Before any concept is presented, enforce this output contract:
-   - Heading format must be exactly: **Concept [Letter]: [Short title] - [N]/50**
-   - Recommendation format must be exactly: **Recommended: Concept [X] - [N]/50**
-   Aim to present at least 3 passing concepts. If fewer than 3 concepts pass after two regeneration rounds, stop and report the blocker instead of showing weak or failing options. Never carry failing or sub-40 concepts into the second review.
-
-3. **Spawn a second review subagent** on the surviving concepts only.
-   Prompt: "You are a cover art critic for The Wine Pair Podcast. Read `docs/house-rules.md` in full, paying special attention to HR-40, HR-14a, and HR-62, plus the hard gates HR-53 through HR-60. Then review each concept below for: (1) Core Thesis gate, (2) Title Alignment gate, (3) Side-Banter gate, (4) Misframing gate, (5) Portability gate, (6) Thumbnail Readability gate, (7) spoiler rule (HR-40), (8) HR-14a physical-action opening, (9) all 11 brand rules, (10) Anatomy Executability (HR-62): fail any scene where arm paths, hand ownership, prop handling, or body connections may be unclear at thumbnail size -- including crossed arms, overlapping sleeves, multiple hands near one prop, or arms whose path back to the character's shoulder is not visually clear, and (11) score accuracy. Score accuracy is PASS only when every shown concept has a visible heading score in the required format (`Concept [Letter]: [Short title] - [N]/50`), the score is an integer from 0 to 50, and the score math is valid under HR-13. Score accuracy is FAIL if any score is missing, malformed, out of range, or miscalculated. For contrast episodes, enforce visual dominance only when a rejected or contrast element appears: it must stay minor background/corner/pushed-aside detail and fails if it is the largest, central, brightest, or most memorable element. Return PASS/FAIL for each gate per concept. If any hard gate fails, mark the concept REJECT. Provide a concise reject summary by category and keep detailed reject reasoning in an internal reject log unless requested."
-   No concept reaches Joe until the second pass returns no FAILs.
-
-3.5. **Pre-send output compliance check (internal).**
-   Before sending concepts to Joe, verify all of the following:
-   - At least 3 concepts passed all hard gates (or the blocker path is invoked)
-   - Every shown concept heading includes a visible `[N]/50` in the required heading format
-   - A scored recommendation line is present in the exact format `Recommended: Concept [X] - [N]/50`
-   - The second-review output returned score-accuracy PASS for every shown concept
-   If any item fails, do not present concepts. Fix and re-run review, or report blocker.
+2.5. **Quick sanity check (main agent).** After the subagent returns, verify:
+   - At least 3 passing concepts are present
+   - Each heading is in format: **Concept [Letter]: [Short title] - [N]/50**
+   - A recommendation line is present: **Recommended: Concept [X] - [N]/50**
+   If any item is missing or malformed, send one follow-up message to fix it — do not spawn a new subagent. If fewer than 3 concepts pass even after the subagent's internal replacement rounds, report the blocker rather than showing failing concepts.
 
 4. **Generate a Session Report and a reject log.**
    Keep detailed reject reasoning in an internal reject log by default. User-facing output should include only a concise reject summary when useful (for example: "Rejected 4 concepts: 2 side-banter, 1 misframing, 1 portable/generic"). Append the session report entry to `data/cover-art-session-reports.md` during real runs.
@@ -98,7 +77,7 @@ Pre-1. **Core thesis and title frame gates (hard reject).**
 
    ### Physical Situation Brainstorm (Step 0)
    - 10 situations generated: [one-line list]
-   - 5 passed all three filters (no verdict reveal, no title contradiction, episode-specific): [list the 5]
+   - 5 passed all filters; 3 strongest selected for subagent: [list the 3]
    - Spoiler-gate directions (off-limits): [2 bullets]
 
    ### Web Research Finding
@@ -147,13 +126,13 @@ Do not run any tasks outside this command's scope unless Joe explicitly asks in 
 
 ---
 
-## Subagent instructions
+## Subagent prompt
 
 Spawn an Agent with this prompt, substituting actual episode data:
 
 ---
 
-You are generating scored cover art concepts and ChatGPT prompts for The Wine Pair Podcast.
+You are generating scored cover art concepts for The Wine Pair Podcast. **Do NOT generate ChatGPT prompts** — those are written by the main agent after Joe selects a concept.
 
 **Step 1: Read `docs/house-rules.md` in its entirety. Apply every rule. Pay particular attention to HR-9 through HR-14 (cover art rules), HR-13 (scoring), and HR-40 (cover art spoiler ban).**
 
@@ -173,7 +152,7 @@ After reading both files, proceed with concept generation.
 - Episode-specific anchors (use for portability and specificity checks): [LIST 4-7 EPISODE-SPECIFIC ANCHORS]
 
 **Concept seeds — physical situations generated in Step 0 (use these as your starting point for each concept):**
-[5 PHYSICAL SITUATIONS FROM STEP 0 — each in the form "Joe is [verb]ing X while Carmela [verb]s Y"]
+[3 PHYSICAL SITUATIONS FROM STEP 0 — each in the form "Joe is [verb]ing X while Carmela [verb]s Y"]
 
 **Spoiler gate — these framings are OFF-LIMITS (reveal verdict):**
 [2 DIRECTIONS THAT WOULD REVEAL THE EPISODE'S VERDICT]
@@ -183,11 +162,84 @@ After reading both files, proceed with concept generation.
 
 ---
 
-## The standard prompt format
+## Brand rules — every concept must pass all 11
+
+1. No anthropomorphized objects. Wine and props do not react or have expressions.
+2. No repeated physical action from recent episodes (read `data/cover-art-scenes.md` — the specific actions there are banned, not just the abstract types).
+3. Visual joke lands without reading the title.
+4. No text or captions needed to understand the joke.
+5. One clear visual punchline. No competing focal points.
+6. Humor from expressions, staging, and contrast — not props alone.
+7. Joe and Carmela are the central characters.
+8. Wine bottle has a readable label showing the wine name — include in the Scene section.
+9. Background is simple and dark — always "rich warm burgundy background" or "simplified wine bar setting." Never name a specific outdoor location.
+10. Characters fill 70%+ of the frame, waist-up, close to the viewer — state this in the Composition section.
+11. **Spoiler rule — FAIL if violated (HR-40).** The concept must NOT reveal the episode verdict, ratings outcome, or key finding. Test: does the thumbnail tell you what Joe and Carmela concluded before you press play? Thumbs up/down on specific bottles = FAIL. One bottle going to the sink = FAIL. The visual should create curiosity about the outcome, not announce it.
+
+**Title alignment is a binary gate, not a brand rule.** After scoring, check: does this concept actively contradict the title OR reveal the verdict? If no to both, it passes the gate. Do not score title alignment — it is not one of the 5 criteria.
+
+**Scene description requirement (HR-14a):** Every scene description must begin with: "Joe is [action verb]ing [something] while Carmela [action verb]s [something]." The verbs "holds," "looks at," "examines," "leans toward," and "gestures at" are banned as the opening action. If the only actions in a scene are from this banned list, revise until something is actually happening.
+
+---
+
+## Self-review (internal — do not show to user)
+
+After generating all 3 concepts, check each against the following before returning results. For any concept that fails, internally generate a replacement before returning. Return only passing concepts. If you cannot get 3 passing after 2 internal replacement rounds, return whatever passed and note how many failed with reasons.
+
+**For each concept, verify:**
+- Score ≥ 40/50 (HR-13 threshold)
+- HR-40 (spoiler ban): does the thumbnail reveal the verdict, ratings, or conclusion? If yes, reject and replace.
+- HR-14a: does the scene description open with a physical action verb? Banned opening verbs: "holds," "looks at," "examines," "leans toward," "gestures at." If yes, revise.
+- HR-62 (anatomy executability): are arm paths clear? Hand ownership unambiguous? No crossed arms, overlapping limbs, or unclear which character owns which hand? If unclear, simplify: one character active, one reactive — arm paths in separate spatial lanes.
+- HR-53 through HR-60 (hard gates): Core Thesis, Title Alignment, Side-Banter, Misframing, Portability, Thumbnail Readability — all must pass.
+- All 11 brand rules — especially rule 11 (spoiler).
+
+**Do NOT show this review to the user.** Return only passing concepts.
+
+---
+
+## Output format
+
+First, output this confirmation block:
+
+> **Cover art sub-agent ran.** Checked: character bible (HR-14), HR-14a (active verbs), approved style format, recent physical actions from cover-art-scenes.md ([list the specific actions]), all 11 brand rules including HR-40 (spoiler). Title gate applied (binary pass/fail only). Each concept scored on 5 criteria: Visual Arrest, Scroll-Stop Power, Episode Specificity, Concept Originality, Character Expressiveness. Recommended: Concept [X] - [N]/50.
+
+Then present 3 passing concepts. For each:
+
+---
+
+**Concept [A/B/C]: [Short title] — [N]/50**
+
+*Why you'd stop scrolling:* [One sentence — the immediate visual reaction before reading the title.]
+
+*Scene:* [2-3 sentences. Must begin: "Joe is [action verb]ing [something] while Carmela [action verb]s [something]." Then describe expressions, body language, key props, wine bottle label, background.]
+
+**Concise evidence (required):**
+- Thesis match: [one short line]
+- Title alignment: [PASS plus short reason]
+- Transcript/show-note evidence: [one short reference line]
+- Why not portable: [one short line]
+- Thumbnail readability: [one short line]
+
+**Do NOT include a ChatGPT prompt here. Do NOT include a long score breakdown or long audit text.** The prompt is written only after Joe selects a concept (main agent Step 6). Keep evidence concise.
+
+---
+
+After all passing concepts:
+
+**Recommended: Concept [X] - [N]/50**
+[Two sentences: why this concept wins and why it's right for this episode specifically.]
+
+---
+
+## ChatGPT prompt format (main agent — Step 6 reference)
 
 The confirmed working approach is: **upload the most recent approved cover art image to ChatGPT as a style reference, then paste the full prompt below.**
 
-Use this multi-section format for every concept. It is the proven working template (confirmed ep216). Do not change this format.
+Use this multi-section format when writing the prompt for the concept Joe picks. It is the proven working template (confirmed ep216). Do not change this format.
+
+**One banned phrase — must never appear anywhere in your prompt output:**
+- `No wine labels` — this removes the key identifying prop and violates HR-10. The wine bottle must have a readable label showing the wine name (e.g., "labeled 'VERDEJO'"). Include this in the Scene section.
 
 ```
 Create a square editorial cartoon illustration for a wine podcast cover image.
@@ -233,60 +285,3 @@ No photorealism. No realistic portrait. No painterly rendering. No soft gradient
 
 Use this as the style reference, but create a new scene. Do not copy the exact pose.
 ```
-
-**One banned phrase — must never appear anywhere in your output:**
-- `No wine labels` — this removes the key identifying prop and violates HR-10. The wine bottle must have a readable label showing the wine name (e.g., "labeled 'FRAPPATO'"). Include this in the Scene section.
-
----
-
-## Brand rules — every concept must pass all 11
-
-1. No anthropomorphized objects. Wine and props do not react or have expressions.
-2. No repeated physical action from recent episodes (read `data/cover-art-scenes.md` — the specific actions there are banned, not just the abstract types).
-3. Visual joke lands without reading the title.
-4. No text or captions needed to understand the joke.
-5. One clear visual punchline. No competing focal points.
-6. Humor from expressions, staging, and contrast — not props alone.
-7. Joe and Carmela are the central characters.
-8. Wine bottle has a readable label showing the wine name — include in the Scene section.
-9. Background is simple and dark — always "rich warm burgundy background" or "simplified wine bar setting." Never name a specific outdoor location.
-10. Characters fill 70%+ of the frame, waist-up, close to the viewer — state this in the Composition section.
-11. **Spoiler rule — FAIL if violated (HR-40).** The concept must NOT reveal the episode verdict, ratings outcome, or key finding. Test: does the thumbnail tell you what Joe and Carmela concluded before you press play? Thumbs up/down on specific bottles = FAIL. One bottle going to the sink = FAIL. The visual should create curiosity about the outcome, not announce it.
-
-**Title alignment is a binary gate, not a brand rule.** After scoring, check: does this concept actively contradict the title OR reveal the verdict? If no to both, it passes the gate. Do not score title alignment — it is not one of the 5 criteria.
-
-**Scene description requirement (HR-14a):** Every scene description must begin with: "Joe is [action verb]ing [something] while Carmela [action verb]s [something]." The verbs "holds," "looks at," "examines," "leans toward," and "gestures at" are banned as the opening action. If the only actions in a scene are from this banned list, revise until something is actually happening.
-
----
-
-## Output format
-
-First, output this confirmation block:
-
-> **Cover art sub-agent ran.** Checked: character bible (HR-14), HR-14a (active verbs), approved style format, recent physical actions from cover-art-scenes.md ([list the specific actions]), all 11 brand rules including HR-40 (spoiler). Title gate applied (binary pass/fail only). Each concept scored on 5 criteria: Visual Arrest, Scroll-Stop Power, Episode Specificity, Concept Originality, Character Expressiveness. Recommended: Concept [X] - [N]/50.
-
-Then present 5 concepts. For each:
-
----
-
-**Concept [A/B/C/D/E]: [Short title] — [N]/50**
-
-*Why you'd stop scrolling:* [One sentence — the immediate visual reaction before reading the title.]
-
-*Scene:* [2-3 sentences. Must begin: "Joe is [action verb]ing [something] while Carmela [action verb]s [something]." Then describe expressions, body language, key props, wine bottle label, background.]
-
-**Concise evidence (required):**
-- Thesis match: [one short line]
-- Title alignment: [PASS plus short reason]
-- Transcript/show-note evidence: [one short reference line]
-- Why not portable: [one short line]
-- Thumbnail readability: [one short line]
-
-**Do NOT include a ChatGPT prompt here. Do NOT include a long score breakdown or long audit text.** The prompt is written only after Joe selects a concept (main agent Step 6). Keep evidence concise.
-
----
-
-After all passing concepts:
-
-**Recommended: Concept [X] - [N]/50**
-[Two sentences: why this concept wins and why it's right for this episode specifically.]
