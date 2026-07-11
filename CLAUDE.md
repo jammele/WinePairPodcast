@@ -24,6 +24,16 @@ A `UserPromptSubmit` hook (`scripts/hooks/session-startup.js`) runs the startup 
 
 ---
 
+## Resuming interrupted tasks
+
+If `docs/work-log.md` (injected at startup) contains a `## PENDING TASK` section:
+1. Report it to Joe before anything else: "There's an unfinished task from a previous session: [task description]."
+2. Complete the pending task immediately — do not address other requests first.
+3. Follow the resume steps listed in the PENDING TASK section exactly.
+4. After completing, remove the entire `## PENDING TASK` section from `docs/work-log.md` and commit.
+
+---
+
 ## When Joe corrects a rule violation
 
 1. Add or update the rule in `docs/house-rules.md`

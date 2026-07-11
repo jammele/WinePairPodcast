@@ -47,13 +47,31 @@ Before invoking, enforce the confirmed-title gate from house rules: title must b
    - Which wine they chose to finish tonight
    - All research links listed in the script — these become Bluesky post source URLs
    - The episode's key hook or angle (one sentence describing what makes it interesting or surprising)
+2.9. **Write PENDING TASK marker to work log before spawning the subagent.** Insert the block below at the very top of `docs/work-log.md` (above the `# Work Log` header line), then commit it immediately. This ensures a fresh session can recover if this session is interrupted.
+
+```
+## PENDING TASK — Complete before other work
+
+Task: /generate-episode-content for Ep[N] — [Title]
+Started: [YYYY-MM-DD]
+Output file: outputs/episodes/ep[N]-[slug].md
+
+On resume:
+1. Check whether `outputs/episodes/ep[N]-[slug].md` exists and contains `## SEO / AEO + SOCIAL CONTENT`.
+   - If yes: go to step 2.
+   - If no: re-invoke /generate-episode-content for this episode from step 3.
+2. Run `node scripts/validate_episode.js outputs/episodes/ep[N]-[slug].md` and fix all errors.
+3. Show Joe the validated content.
+4. Remove this PENDING TASK section from `docs/work-log.md` and commit.
+```
+
 3. Spawn a subagent with the instructions below, substituting all extracted episode data and the resolved requested scope.
-4. When the subagent returns output, save it to `outputs/episodes/ep[N]-[slug].md` under the heading `## SEO / AEO + SOCIAL CONTENT`.
+4. When the subagent returns output, save it to `outputs/episodes/ep[N]-[slug].md` under the heading `## SEO / AEO + SOCIAL CONTENT`. Save only the deliverable sections (KEY QUESTIONS, FREQUENTLY ASKED QUESTIONS, SCHEMA MARKUP, BLUESKY POSTS). Do not save any `### SELF-CHECK` section — it is the subagent's internal verification and does not belong in the output file.
 5. Run validator with section scope:
   - Full suite: `node scripts/validate_episode.js outputs/episodes/ep[N]-[slug].md`
   - Partial: `node scripts/validate_episode.js outputs/episodes/ep[N]-[slug].md --sections=<comma-separated-sections>` where section names are `KEY_QUESTIONS`, `FAQ`, `SCHEMA`, `BLUESKY`
   Fix every error before showing Joe anything.
-6. Show Joe the content from the output file.
+6. Show Joe the content from the output file. Then remove the entire `## PENDING TASK` section from `docs/work-log.md`, update the Last updated line, and commit.
 
 ---
 
@@ -221,7 +239,7 @@ Select the top 5-7 questions using the tie-breaker order from Section 7 of the i
 **Key Questions output format:**
 ```
 ### KEY QUESTIONS
-*(Place at top of show notes — questions only, no answers)*
+*(Place at top of show notes - questions only, no answers)*
 
 - [Question 1]?
 [5-7 total, matching the FAQ questions below]
@@ -314,11 +332,11 @@ Fill in this table first. Do not write any post text until the table is complete
 
 | Post | Angle | URL |
 |---|---|---|
-| 1 | Teaser — episode hook | thewinepairpodcast.com |
-| 2 | Teaser — value or price story | thewinepairpodcast.com |
-| 3 | Teaser — verdict hint (no spoiler) | thewinepairpodcast.com |
-| 4 | Nerd angle (fermentation, soil, clone, technique) | [unique external URL — source domain] |
-| 5 | Nerd or Story angle | [unique external URL — different domain from post 4] |
+| 1 | Teaser - episode hook | thewinepairpodcast.com |
+| 2 | Teaser - value or price story | thewinepairpodcast.com |
+| 3 | Teaser - verdict hint (no spoiler) | thewinepairpodcast.com |
+| 4 | Nerd angle (fermentation, soil, clone, technique) | [unique external URL - source domain] |
+| 5 | Nerd or Story angle | [unique external URL - different domain from post 4] |
 | 6 | Story angle (historical or weird fact) | [unique external URL] |
 | 7 | Fact | [unique external URL] |
 | 8 | Fact | [unique external URL] |
