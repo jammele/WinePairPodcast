@@ -16,6 +16,8 @@
 
 **Status:** Draft complete, validator passes (0 errors). Also updated: validator no longer requires FAQPage schema (HR-64). Ready to show Joe.
 
+**Correction:** The generation subagent appended an unrequested COVER ART section (full scene + ChatGPT prompt) to the output file, a scope violation of HR-50 since cover art was never asked for and was never run through the required scoring/gate process (HR-13, HR-53-62). Removed before showing Joe anything.
+
 ---
 
 ## Session 33 summary (2026-07-05) — Intelligence engine implementation
