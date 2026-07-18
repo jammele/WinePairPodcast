@@ -22,6 +22,8 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 
 **Ep226 (session 1):** When a title belongs to an established named series (here, WTF is [Wine]?), Joe chose the exact bare series format over a stronger-hook option that added a first-ever subtitle to that series. This cuts against the "lean into discomfort/strongest hook" pattern from Ep219/Ep221 — series recognition can outweigh novelty for Joe when the series itself has never used subtitles. Do not assume the highest-clickability option always wins when a clean series-exact alternative is on the table; present both and let him choose, but don't be surprised if he takes the safe one.
 
+**Ep227 (correction, before selection):** Joe rejected a presented title (Carmela reference) on sight and corrected the review process itself, not just this episode's options. Titles exist to attract new listeners, not to reward people who already know the show — any hook requiring a co-host's name, a running bit, or an established show rule to parse should be cut before it's ever shown, not left for Joe to catch. He also required every title to carry a visible score (the HR-61 series exemption is from the quality-gate floor, not from being scored) and required the final recommendation to be grounded in objective third-party research (external CTR/headline studies, or the show's own Meiomi benchmark) rather than the internal reviewer subagent's own scoring alone. Codified as HR-66 and HR-67. Going forward: the Round 2 subagent prompt must explicitly instruct the reviewer to FAIL any title requiring insider/prior-listener context, and the final response to Joe must always include a scored table plus evidence-based reasoning, not just a bulleted list of options.
+
 ---
 
 ## Episode Entries
@@ -61,14 +63,31 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 
 **Quality Gate Decisions (post-Round 2):** None dropped — all 5 cleared with zero FAILs.
 
-**Final presented options:**
+**Round 2 candidates as presented (before Joe's correction):**
 1. `WTF is Gigondas?` (16 chars — exact series match, HR-61 exempt)
 2. `Gigondas Has a Reputation for Punching You in the Face. Does It Live Up to That?` (80 chars)
 3. `Gigondas: The Slimmer, Cheaper Cousin of Châteauneuf-du-Pape. Does It Deliver?` (78 chars)
-4. `Gigondas Is a Big, Bold Red. Could It Win Carmela Over?` (55 chars)
+4. `Gigondas Is a Big, Bold Red. Could It Win Carmela Over?` (55 chars) — **cut post-presentation, see correction below**
 5. `Gigondas Wines Cost More Than We Usually Spend. Are the Critic Scores Worth Believing?` (86 chars)
 
-**Research-to-Title Alignment:** Option 2 uses the episode's own "punch you in the face" framing most directly — the strongest, least-generic hook and the reviewer's top pick. Option 3 exploits the confirmed CdP price-comparison angle and creates an internal-linking opportunity with the existing "WTF is Châteauneuf-du-Pape?" (Ep168) archive entry. Option 4 uses the Carmela-surprise angle (uncovered in competitor content, since it's specific to this show's hosts) without spoiling the outcome. Option 5 pairs the budget-break with critic acclaim for a sharper hook than the dropped Round 1 version. The direct "outscored Châteauneuf" claim seen on YouTube was deliberately avoided as too close to an existing competitor title.
+**Joe's correction (2026-07-18):** Two issues flagged on the initial presentation, both now codified in `docs/house-rules.md` as HR-66 and HR-67:
+1. Option 4 (Carmela reference) should never have been presented — a co-host name means nothing to a prospective new listener, and titles exist to grow the audience, not reward existing fans. Cut entirely; the round-2 reviewer should have flagged this itself rather than passing it clean.
+2. Every title needs a displayed score, including the HR-61-exempt series title — the exemption is from the quality-gate floor, not from being scored. And the final recommendation must be grounded in objective third-party research (external CTR/headline studies, or the show's own internal Meiomi benchmark), not just the internal reviewer subagent's own scoring.
+
+**Corrected final scoring (post-correction, evidence-grounded):**
+
+| Title | Chars | AI Discovery | Clickability | Evidence basis |
+|---|---|---|---|---|
+| WTF is Gigondas? | 16 | 8/10 | 4/10 | Matches "what is Gigondas" search intent directly (strong informational-query alignment), but per the Banerjee/Urminsky meta-analysis of ~9,000 headline experiments (U Chicago), very low-concreteness headlines underperform once a reader has competing, more-informative options in the same feed. Series-brand recognition play, not a curiosity driver. |
+| Gigondas Has a Reputation for Punching You in the Face. Does It Live Up to That? | 80 | 7/10 | 9/10 | Concrete, specific claim + unresolved question — sits in the "optimal concreteness" zone identified by the same meta-analysis (not too vague, not fully resolved). Aggressive/negative-connotation framing ("punching you in the face") echoes Outbrain's 65,000-headline finding that negative-superlative framing out-CTRs positive framing by 63%, and directly parallels this show's own highest-performing internal data point (Meiomi: "Worst Wine We've Ever Tasted," 241 clicks). Fully self-contained — no wine expertise or show history required. |
+| Gigondas: The Slimmer, Cheaper Cousin of Châteauneuf-du-Pape. Does It Deliver? | 78 | 8/10 | 6/10 | Two strong search entities (Gigondas + the much higher-volume Châteauneuf-du-Pape) — good SEO/AEO value and links to the existing Ep168 archive entry. But per curiosity-gap theory (Loewenstein), a gap only registers against what the reader already knows; a new listener with no CdP context gets two unfamiliar terms instead of a felt tension. Real but smaller-scale version of the "requires outside context" problem that killed Option 4 — general wine literacy rather than show-insider knowledge, but still a risk against the stated new-listener goal. |
+| Gigondas Wines Cost More Than We Usually Spend. Are the Critic Scores Worth Believing? | 86 | 7/10 | 6/10 | Concrete stakes (price + critic scores), open question. But "more than we usually spend" presumes the listener already knows this show's normal budget — the same category of flaw that disqualified the Carmela option, just less severe since it's inferable from context. Also the longest of the set at 86 characters, closest to truncation risk on podcast apps per the 60-80-char discoverability guidance found in research. |
+
+**Recommendation:** *Gigondas Has a Reputation for Punching You in the Face. Does It Live Up to That?* — the only option that is fully self-contained for a new listener (zero outside context required), sits in the evidence-backed "optimal concreteness" zone for curiosity-driven headlines, and uses a negative-framing device validated both by external research (Outbrain) and this show's own top-performing internal benchmark (Meiomi).
+
+Sources: [When curiosity gaps backfire — Scientific Reports, 2024](https://www.nature.com/articles/s41598-024-81575-9) · [A Systematic Large-Scale Analysis of Headline Experiments — Banerjee/Urminsky, U Chicago](https://home.uchicago.edu/ourminsky/Banerjee_Urminsky_Headlines.pdf) · [7 Science-Backed Secrets to Improve Your Copywriting (Outbrain 65k-headline study cited)](https://ignitevisibility.com/7-science-backed-secrets-improve-copywriting/)
+
+**Research-to-Title Alignment:** Option 2 uses the episode's own "punch you in the face" framing most directly — the strongest, least-generic hook, the reviewer's top pick, and now the evidence-backed recommendation. Option 3 exploits the confirmed CdP price-comparison angle and creates an internal-linking opportunity with the existing "WTF is Châteauneuf-du-Pape?" (Ep168) archive entry, at the cost of requiring outside wine-culture context. The Carmela angle (Option 4) was cut entirely post-presentation per Joe's correction — never should have cleared review for a title whose job is new-listener acquisition. The direct "outscored Châteauneuf" claim seen on YouTube was deliberately avoided as too close to an existing competitor title.
 
 ---
 

@@ -213,6 +213,12 @@ The visual should create the central question from the title, not answer it. Any
 **HR-39: Episode titles must not spoil the episode verdict.**
 A title should create curiosity about the outcome, not reveal it. Never include ratings, scores, "drinkable", "not a buy", "hit the sink", or any phrasing that tells the listener the key finding before they press play. The test: if a listener reads the title and already knows what the hosts concluded, the title fails. Rewrite to tease the result, not announce it.
 
+**HR-66: Titles must not require insider or prior-listener context to land.**
+The primary audience for a title is a prospective new listener who has never heard the show — not an existing fan. Reject any title option (before it's even shown to Joe) that depends on knowing a co-host's name, a running bit, an established show rule (e.g. the show's usual budget ceiling), or any other fact only an existing listener would have. If a hook only makes sense with context the title itself doesn't supply, drop it or rewrite it so it's self-contained. Flag borderline cases (e.g. a phrase that leans on implied show history without naming it directly) rather than silently including them — let Joe decide, but never present a title requiring host-name recognition to work.
+
+**HR-67: Every presented title needs a real score and an evidence-based recommendation.**
+No title is exempt from being scored and shown a score, including bare series titles (HR-61 exempts a series title from the *quality-gate floor*, not from being scored and displayed). When recommending a specific title, ground the recommendation in objective evidence — external headline/CTR research, published third-party studies, or the show's own internal performance data (e.g. the Meiomi benchmark) — not just the internal reviewer subagent's subjective scores. Always tie the recommendation explicitly back to the stated goal (listener growth, particularly reaching new listeners) rather than presenting scores as a bare table with no synthesis.
+
 ---
 
 ## Beamly Technical Rules
