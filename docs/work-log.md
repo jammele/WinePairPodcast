@@ -1,3 +1,20 @@
+## PENDING TASK — Complete before other work
+
+Task: /generate-episode-content for Ep227 — Gigondas Has a Reputation for Punching You in the Face. Does It Live Up to That?
+Started: 2026-07-18
+Output file: outputs/episodes/ep227-gigondas.md
+Requested scope: KEY_QUESTIONS, FAQ, BLUESKY (not SCHEMA — not requested)
+
+On resume:
+1. Check whether `outputs/episodes/ep227-gigondas.md` exists and contains `## SEO / AEO + SOCIAL CONTENT`.
+   - If yes: go to step 2.
+   - If no: re-invoke /generate-episode-content for this episode from step 3.
+2. Run `node scripts/validate_episode.js outputs/episodes/ep227-gigondas.md --sections=KEY_QUESTIONS,FAQ,BLUESKY` and fix all errors.
+3. Show Joe the validated content.
+4. Remove this PENDING TASK section from `docs/work-log.md` and commit.
+
+---
+
 # Work Log — The Wine Pair Podcast
 
 **Last updated:** 2026-07-11 (session 34 — Ep226 Verdejo SEO/AEO + social content)
