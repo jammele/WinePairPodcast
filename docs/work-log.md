@@ -1,25 +1,20 @@
-## PENDING TASK — Complete before other work
+# Work Log — The Wine Pair Podcast
 
-Task: /generate-episode-content for Ep227 — Gigondas Has a Reputation for Punching You in the Face. Does It Live Up to That?
-Started: 2026-07-18
-Output file: outputs/episodes/ep227-gigondas.md
-Requested scope: KEY_QUESTIONS, FAQ, BLUESKY (not SCHEMA — not requested)
+**Last updated:** 2026-07-18 (session 35 — Ep227 Gigondas title, cover art, SEO/AEO + social content)
 
-On resume:
-1. Check whether `outputs/episodes/ep227-gigondas.md` exists and contains `## SEO / AEO + SOCIAL CONTENT`.
-   - If yes: go to step 2.
-   - If no: re-invoke /generate-episode-content for this episode from step 3.
-2. Run `node scripts/validate_episode.js outputs/episodes/ep227-gigondas.md --sections=KEY_QUESTIONS,FAQ,BLUESKY` and fix all errors.
-3. Show Joe the validated content.
-4. Remove this PENDING TASK section from `docs/work-log.md` and commit.
+**Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
 
 ---
 
-# Work Log — The Wine Pair Podcast
+## Session 35 summary (2026-07-18) — Ep227 Gigondas: title, cover art, SEO/AEO + social
 
-**Last updated:** 2026-07-11 (session 34 — Ep226 Verdejo SEO/AEO + social content)
+**Title:** "Gigondas Has a Reputation for Punching You in the Face. Does It Live Up to That?" — selected via `/review-titles`, two review rounds, evidence-grounded recommendation. Full session in `data/title-session-reports.md`. Corrected mid-session per Joe's feedback (codified as HR-66/HR-67: titles must not require insider/prior-listener context, and every title needs a visible score plus objective third-party evidence, not just internal reviewer scoring).
 
-**Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
+**Cover art:** "The Jab" concept (off-camera arm thrusts a wine glass at Joe's face like a boxing jab; Joe blocks with both gloves; Carmela is an amused bystander, not the attacker). Required 4 render iterations after the initially-selected "Corner Prep" concept kept misreading as a victory pose and, once fixed, still had no visible cause for the gloves. Full iteration log and generalizable prompting lessons (affirmative-only pose language, verify the title's subject is visually assigned correctly, never stage Joe/Carmela as adversaries) in `data/cover-art-session-reports.md`.
+
+**SEO/AEO + social:** `outputs/episodes/ep227-gigondas.md` — Key Questions (7), FAQ (7 pairs), and 10 Bluesky posts for the two-wine Gigondas review (2023 Notre Dame des Pallières Gigondas Les Mourres, 2023 Crous St Martin Gigondas Les Espaliers). Schema Markup not generated, not requested this session. Full evidence ledger and scoring saved to `outputs/episodes/faq-audits/ep227-faq-audit.md`. Validator passed clean on first run.
+
+**Status:** All three deliverables complete and validated. Ready to show Joe.
 
 ---
 
