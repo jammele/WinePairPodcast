@@ -5,37 +5,37 @@
 ### KEY QUESTIONS
 *(Place at top of show notes - questions only, no answers)*
 
-- Are the 2023 Notre Dame des Pallières Gigondas Les Mourres and 2023 Crous St Martin Gigondas Les Espaliers worth buying?
-- Does Gigondas really live up to its "punch you in the face" reputation?
-- Which Gigondas bottle is better, Notre Dame des Pallières or Crous St Martin?
 - What does Gigondas wine taste like?
-- How much should you expect to pay for a good bottle of Gigondas?
-- What food pairs well with Gigondas?
+- Does Gigondas really live up to its "punch you in the face" reputation?
+- What grapes are used to make Gigondas wine?
 - What's the difference between Gigondas and Châteauneuf-du-Pape?
+- What food pairs well with Gigondas wine?
+- How much should you expect to pay for a good bottle of Gigondas?
+- Are the 2023 Notre Dame des Pallières Gigondas Les Mourres and 2023 Crous St Martin Gigondas Les Espaliers worth buying?
 
 ### FREQUENTLY ASKED QUESTIONS
 *(Place at bottom of show notes)*
 
-**Q. Are the Gigondas wines worth buying?**
-A. Yes. The 2023 Notre Dame des Pallières Gigondas Les Mourres ($28.97, Jeb Dunnuck 94) earned host ratings of 9/10 and 7/10, and the 2023 Crous St Martin Gigondas Les Espaliers ($29.97, Wine Enthusiast 95) earned 8/10 and 7/10. Both justify breaking the usual $25 wine budget for a bigger, more polished bottle.
+**Q. What does Gigondas wine taste like?**
+A. Gigondas is a big, structured red built mostly on Grenache, showing ripe red and black fruit like cherry, plum, and blackberry alongside wild herb notes locals call garrigue: thyme, lavender, and white pepper. Tannins run firm and alcohol runs high, but well made bottles balance that power with real fruit and food friendly acidity rather than tasting harsh.
 
 **Q. Does Gigondas really live up to its "punch you in the face" reputation?**
-A. Not really, at least not with well-made bottles. Gigondas is a big, high-alcohol Grenache-based blend (14.5-15% ABV in these examples) that has a reputation for being tannic and aggressive, but both reviewed bottles turned out balanced and elegant, with firm tannins and ripe fruit rather than a punishing, over-extracted style.
+A. Not always. Gigondas has a reputation as a big, tannic, aggressive wine, and it can be intense: high alcohol and firm tannins are typical of the style. But well made examples are more balanced than that reputation suggests, pairing ripe fruit and structure with real elegance instead of pure brute force. Producer and vintage matter.
 
-**Q. Which Gigondas bottle is better, Notre Dame des Pallières or Crous St Martin?**
-A. If you can only buy one, go with the 2023 Notre Dame des Pallières Gigondas Les Mourres. It rated 9/10 against 7/10 for the Crous St Martin, with bigger, more elegant fruit and firmer structure. The Crous St Martin Les Espaliers is a close second and leans more toward a Thanksgiving-style table with turkey and gravy.
-
-**Q. What does Gigondas wine taste like?**
-A. Expect big, ripe red and dark fruit (plum, fig, black cherry, raspberry) layered with spice, licorice, and earthy or herbal notes like fennel and thyme. Tannins are firm but not harsh, and the best bottles feel flavorful start to finish without tasting heavy or overdone, more balanced power than a blunt, tannic punch.
-
-**Q. How much should you expect to pay for a good bottle of Gigondas?**
-A. Plan on spending closer to $30 than $20. Both reviewed bottles, the Notre Dame des Pallières Les Mourres and the Crous St Martin Les Espaliers, ran $28.97 and $29.97 at wine.com, above a typical $25 everyday-wine budget. Gigondas' bigger fruit, structure, and critical acclaim come at a real price premium over cheaper Southern Rhône reds.
-
-**Q. What food pairs well with Gigondas?**
-A. Gigondas is built for hearty, fatty, or rich food. Think steak frites, ribs, burgers, and stews on one end, and Thanksgiving turkey with gravy, fried chicken, and pork ribs on the other. Its big fruit and firm tannins also stand up to spicy dishes and cream-based sauces, and it works fine as a sipper on its own.
+**Q. What grapes are used to make Gigondas wine?**
+A. Red Gigondas is built mainly on Grenache, which must make up at least 50 percent and as much as 80 percent of the blend. Syrah and Mourvèdre together must account for at least 15 percent, and other varieties like Cinsault or Counoise are capped at 10 percent combined. Carignan is not allowed at all.
 
 **Q. What's the difference between Gigondas and Châteauneuf-du-Pape?**
-A. Both are Southern Rhône blends built mainly on Grenache with Syrah and Mourvèdre, and both can be big, high-alcohol wines. The main difference is price and profile: Gigondas is often called Châteauneuf-du-Pape's slimmer cousin, delivering similar power and grape makeup for meaningfully less money, with modern producers leaning toward a more elegant, less punishing style.
+A. Both are Southern Rhône reds built on Grenache with Syrah and Mourvèdre, sharing similar power and grape makeup. The main difference is price and polish: Gigondas is often called Châteauneuf-du-Pape's slimmer cousin, typically costing less while modern producers push toward a more elegant, less aggressive style than Châteauneuf-du-Pape's bigger, more expensive reputation.
+
+**Q. What food pairs well with Gigondas wine?**
+A. Gigondas is a food wine built for rich, hearty dishes. Think steak frites, ribs, burgers, and stews, plus dishes like eggplant parmigiana or stuffed flank steak. Its fruit and firm tannins also stand up to Thanksgiving turkey with gravy, fried chicken, pork ribs, spicy dishes, and creamy sauces, making it a versatile match at the table.
+
+**Q. How much should you expect to pay for a good bottle of Gigondas?**
+A. Plan on spending closer to thirty dollars than twenty. Good Gigondas commonly runs from the high twenties into the thirties and beyond, noticeably more than everyday Côtes du Rhône. The appellation's bigger fruit, structure, and critical acclaim come with a real price premium, so budget past bargain territory if you want a genuine example.
+
+**Q. Are the 2023 Notre Dame des Pallières Gigondas Les Mourres and 2023 Crous St Martin Gigondas Les Espaliers worth buying?**
+A. Yes, both are worth buying. The Notre Dame des Pallières Les Mourres earned host ratings of 9 out of 10 and 7 out of 10 for its firm tannins and balanced red fruit, while the Crous St Martin Les Espaliers scored 8 and 7 for its silky tannins and dark fruit character. Both justify their near thirty dollar price.
 
 ### BLUESKY POSTS
 
