@@ -25,6 +25,53 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 ---
 
 ## Episode Entries
+### Ep227: Gigondas (Notre Dame des Pallières Les Mourres + Crus Saint Martin L'Espalier)
+**Date:** 2026-07-18
+**Series:** WTF is [Wine]? (candidate — Joe explicitly said he's open to reusing the format despite Ep226 using it last week)
+**Joe's selection:** *(pending)*
+
+**Step 0 Research Findings:**
+- Competitor content ("Opening a Bottle," Decanter, Food & Wine) consistently frames Gigondas as a lower-priced alternative to Châteauneuf-du-Pape with more "finesse" than "power" — this angle is well-worn in written content but not in podcast titles specifically.
+- YouTube has a direct-comparison title already in the wild: "These Gigondas Wines Outscored Almost All of Châteauneuf" — confirms outscoring/rivaling CdP is a proven click angle, but it's taken; avoided exact framing.
+- "Underrated," "hidden gem," "little secret" framing is saturated across YouTube and Wine Library TV archives — avoided.
+- The Wine Pair has touched Gigondas once before, briefly, as one of three Kirkland wines in Ep15 ("Costco FTW: Red Wine Time") — this is the first full dedicated episode on the region.
+- Uncovered angles: the show's own "punch you in the face" reputation-vs-reality tension, Carmela's atypical 7/10 rating on a big red (she usually dislikes the style), and the show's explicit on-air budget-rule break (~$29-30 bottles vs. their usual $25 ceiling).
+
+**Episode Hook:** Gigondas has a reputation as a big, high-alcohol, "punch you in the face" GSM blend from the Southern Rhône — often called Châteauneuf-du-Pape's slimmer, cheaper cousin — but the two 94-95-point bottles Joe and Carmela tasted (breaking their usual $25 budget) turned out more balanced and elegant than expected, with Carmela — who typically dislikes big reds — giving both a surprising 7/10. No disappointment angle in this episode; it's a rare across-the-board high-praise result.
+
+**Subagent Round 1 Summary:**
+- "WTF is Gigondas?" — PASS, Click N/A (HR-61 exempt), curiosity 1/5 (expected for bare series format)
+- "WTF is Gigondas? The Wine That Could Change Your Life." — FAIL (HR-19: no WTF installment has ever carried a subtitle) + FAIL (HR-39: spoils a rapturous positive outcome), Click 4/10
+- "Gigondas Has a Reputation for Punching You in the Face. Does It Live Up to That?" — PASS, Click 8/10, curiosity 4/5 — reviewer's strongest pick
+- "Gigondas Broke Our $25 Wine Budget Rule. Was It Worth It?" — PASS hard rules, Click 6/10 (below quality-gate floor) — reviewer called the hook "soft" and "insider-only"
+- "Gigondas: The Slimmer, Cheaper Cousin of Châteauneuf-du-Pape. Does It Deliver?" — PASS with WARNING ("cheaper" flagged as unverified), Click 7/10, curiosity 4/5
+
+**Quality Gate Decisions (pre-Round 2):**
+- Dropped "WTF is Gigondas? The Wine That Could Change Your Life." (double FAIL — series-format violation + spoiler).
+- Dropped "Gigondas Broke Our $25 Wine Budget Rule. Was It Worth It?" (6/10 Clickability, below the 7/10 floor).
+- Verified "cheaper" claim against the transcript: Joe's own closing recommendation says Gigondas offers CdP fans "similar power, similar grapes, but a less heavy price tag" — sourced, not invented. WARNING cleared.
+- Two replacements generated: a Carmela-surprise angle (rewritten as an open question to avoid the spoiler trap that sank the "change your life" title) and a reworked budget/critic-acclaim angle pairing the price break with the 94-95 point scores for higher stakes.
+
+**Subagent Round 2 Summary:**
+- "WTF is Gigondas?" — PASS, Click N/A (HR-61 exempt), 16 chars
+- "Gigondas Has a Reputation for Punching You in the Face. Does It Live Up to That?" — PASS, Click 8/10, curiosity 4/5, 80 chars — reviewer's strongest pick
+- "Gigondas: The Slimmer, Cheaper Cousin of Châteauneuf-du-Pape. Does It Deliver?" — PASS (WARNING cleared), Click 7/10, curiosity 3/5, 78 chars
+- "Gigondas Is a Big, Bold Red. Could It Win Carmela Over?" — PASS, Click 8/10, curiosity 4/5, 55 chars
+- "Gigondas Wines Cost More Than We Usually Spend. Are the Critic Scores Worth Believing?" — PASS, Click 8/10, curiosity 4/5, 86 chars
+
+**Quality Gate Decisions (post-Round 2):** None dropped — all 5 cleared with zero FAILs.
+
+**Final presented options:**
+1. `WTF is Gigondas?` (16 chars — exact series match, HR-61 exempt)
+2. `Gigondas Has a Reputation for Punching You in the Face. Does It Live Up to That?` (80 chars)
+3. `Gigondas: The Slimmer, Cheaper Cousin of Châteauneuf-du-Pape. Does It Deliver?` (78 chars)
+4. `Gigondas Is a Big, Bold Red. Could It Win Carmela Over?` (55 chars)
+5. `Gigondas Wines Cost More Than We Usually Spend. Are the Critic Scores Worth Believing?` (86 chars)
+
+**Research-to-Title Alignment:** Option 2 uses the episode's own "punch you in the face" framing most directly — the strongest, least-generic hook and the reviewer's top pick. Option 3 exploits the confirmed CdP price-comparison angle and creates an internal-linking opportunity with the existing "WTF is Châteauneuf-du-Pape?" (Ep168) archive entry. Option 4 uses the Carmela-surprise angle (uncovered in competitor content, since it's specific to this show's hosts) without spoiling the outcome. Option 5 pairs the budget-break with critic acclaim for a sharper hook than the dropped Round 1 version. The direct "outscored Châteauneuf" claim seen on YouTube was deliberately avoided as too close to an existing competitor title.
+
+---
+
 ### Ep226: Verdejo (Rueda, Spain)
 **Date:** 2026-07-11
 **Series:** WTF is [Wine]?
