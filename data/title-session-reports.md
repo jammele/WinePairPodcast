@@ -30,7 +30,7 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 ### Ep227: Gigondas (Notre Dame des Pallières Les Mourres + Crus Saint Martin L'Espalier)
 **Date:** 2026-07-18
 **Series:** WTF is [Wine]? (candidate — Joe explicitly said he's open to reusing the format despite Ep226 using it last week)
-**Joe's selection:** *(pending)*
+**Joe's selection:** Gigondas Has a Reputation for Punching You in the Face. Does It Live Up to That? (reviewer's top pick and the evidence-grounded recommendation post-correction; Joe separately confirmed the "punch you in the face" phrase is an established wine-tasting descriptor — not obscure jargon — before selecting.)
 
 **Step 0 Research Findings:**
 - Competitor content ("Opening a Bottle," Decanter, Food & Wine) consistently frames Gigondas as a lower-priced alternative to Châteauneuf-du-Pape with more "finesse" than "power" — this angle is well-worn in written content but not in podcast titles specifically.

@@ -1,9 +1,9 @@
 # Episode Title Archive — The Wine Pair Podcast
 
-**Last updated:** 2026-07-11 (through Ep226)
+**Last updated:** 2026-07-18 (through Ep227)
 **Maintained by:** Claude — add each confirmed title here before committing episode work.
 
-**Latest confirmed title:** Ep226 — WTF is Verdejo?
+**Latest confirmed title:** Ep227 — Gigondas Has a Reputation for Punching You in the Face. Does It Live Up to That?
 
 ---
 
@@ -177,6 +177,7 @@ Format: `Special Episode! The Virginia Winemakers Series [#N if >1]: [Name] of [
 
 | Ep | Title | Format pattern |
 |---|---|---|
+| 227 | Gigondas Has a Reputation for Punching You in the Face. Does It Live Up to That? | [Region] Has a Reputation for [Claim]. [Neutral question] |
 | 226 | WTF is Verdejo? | Series (WTF is [Wine]?) |
 | 225 | Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux! | Series (Costco Kirkland Challenge) |
 | 224 | Is Moscato d'Asti the Sweet Wine Serious Wine People Won't Admit They Love? | [Social-status hook]: [Question] |
@@ -418,3 +419,5 @@ Ep221: They Make Wine in Lebanon?!? Lebanon Was Wine Country Before France Was F
 Ep222: Pinot Grigio Is Boring. Alsace Pinot Gris Is Its Richer, Weirder French Cousin.
 Ep224: Is Moscato d'Asti the Sweet Wine Serious Wine People Won't Admit They Love?
 Ep225: Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux!
+Ep226: WTF is Verdejo?
+Ep227: Gigondas Has a Reputation for Punching You in the Face. Does It Live Up to That?
