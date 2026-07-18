@@ -4,6 +4,18 @@ This file defines the rules used by the FAQ generation pipeline to select, score
 
 ---
 
+## Guiding principle — read this before scoring anything
+
+**The purpose of Key Questions and FAQ content is to get discovered by new people searching for wine, on Google and on AI answer engines, not to summarize the episode for people who already found it.** This is the show's stated growth mechanism (see CLAUDE.md): people searching "what does Gigondas taste like" or "Gigondas vs Châteauneuf-du-Pape" are the target audience, not people who already know the exact bottle names.
+
+This has one direct, non-obvious consequence that the scoring rubric below must not obscure: **narrower is not automatically better.** A question specific to the exact bottles reviewed this episode (a boutique, small-production wine almost nobody searches for by name) has far less discovery reach than a question about the grape, region, style, or comparison category the episode covers. The exception is when the reviewed product itself carries independent search demand, most commonly a well-known retail brand (Kirkland Signature, Trader Joe's, Charles Shaw, Josh, etc.) that people genuinely google by name. For a standard review of small-producer or boutique bottles, the reverse is true: broad, topic-level questions are the higher-value FAQ candidates, and questions tied to the literal SKUs reviewed are the ones that need to earn their place, not the default best answer.
+
+Treat the scoring rubric in Section 3 as a **quality floor** (grounding, plausibility, plain language, no fabrication), not a target to hit. After candidates clear that floor, prioritize and order them by actually reasoning about discovery reach for this specific episode's products, using Section 1 as a starting point, not a fixed formula to total up. If a mechanical score total and an honest reach judgment disagree, the reach judgment wins, and the disagreement should be noted in the audit file so it's visible, not smoothed over.
+
+**Anti-slot-filling check:** the final question count is whatever genuinely clears the bar, 4 to 10 is the normal healthy range, but there is no target number. If a session lands on exactly 7 multiple episodes in a row, that is itself a warning sign of drifting back toward slot-filling rather than genuine scoring, flag it in the audit file rather than let it pass silently.
+
+---
+
 ## 0. Evidence types, anti-mislabeling rules, and C1 preflight
 
 ### 0.1 — Evidence type definitions
@@ -53,15 +65,27 @@ Inference without evidence IDs cannot justify a score and must be replaced or sc
 
 ## 1. Default priority ranking by intent type
 
-When multiple candidates score similarly, prefer questions that serve higher-priority intents.
+This ranking is **conditional on whether the reviewed product has independent search demand**, not a fixed universal order. Determine that first:
 
-1. **Buy / skip / is it worth buying** — highest priority; directly serves listener action
+**If the episode features a branded/retail product people search by name** (Kirkland Signature, Costco, Trader Joe's, Charles Shaw, a famous or notorious label, etc.):
+
+1. **Buy / skip / is it worth buying** — the product itself is the search term, this is the highest-reach question
 2. **Comparison / which is better / which should I choose** — serves listener choice when multiple wines are reviewed
-3. **Taste / style / sweetness / body / tannin / acidity** — serves listener expectation-setting
-4. **Food pairing / serving / aging** — practical decision support
-5. **Region / grape / style education** — discovery and context for the episode's main hook
-6. **Producer / retailer / private-label provenance** — relevant when sourcing is a listener trust question (Costco, Trader Joe's, Aldi, mystery bottlers)
-7. **History / trivia / technical production details** — lowest priority; rarely earns a slot unless it is the episode's central hook
+3. **Producer / retailer / private-label provenance** — sourcing is often the actual reason people search for these products
+4. **Taste / style / sweetness / body / tannin / acidity**
+5. **Food pairing / serving / aging**
+6. **Region / grape / style education**
+7. **History / trivia / technical production details** — lowest priority
+
+**If the episode features boutique, small-production, or otherwise not-independently-searched bottles** (the normal case for a standard two-wine review), reach flips:
+
+1. **Region / grape / style education** ("what does Gigondas taste like," "what grapes are in it") — this is what a new listener is actually searching for; leads the list
+2. **Comparison to a better-known reference point** ("Gigondas vs Châteauneuf-du-Pape") — borrows search reach from the more famous term
+3. **Taste / style / expectation-setting at the category level**
+4. **Food pairing / serving** — evergreen, high-reach query pattern on its own
+5. **Price expectation at the category/style level** ("how much should a good bottle of X cost")
+6. **Buy / skip verdict on the specific bottles reviewed** — real listener value, but low independent search reach; cap at one question per episode (see Section 2), and do not lead with it
+7. **Producer / provenance / history / technical production trivia about the specific bottles** — lowest priority unless it is the episode's central hook
 
 ---
 
@@ -70,20 +94,24 @@ When multiple candidates score similarly, prefer questions that serve higher-pri
 ### Standard two-wine review
 
 **Required candidate families:**
-- Taste/style (one candidate may cover both wines)
-- Buy/skip verdict
+- Taste/style at the grape or appellation level (one candidate covering the style broadly, not just the two specific bottles)
+- Region/grape education relevant to the episode's main hook, this is usually the highest-reach candidate for boutique/small-producer episodes and should not be skipped just because it feels "generic"
 - Pairing or serving
 
 **Conditional candidate families:**
-- Comparison/which is better: include only if the wines are meaningfully positioned against each other in the episode (same retailer, appellation pair, style competition, or explicit host choice)
+- Buy/skip verdict on the specific bottles reviewed: include if genuinely useful, but see the SKU-specific cap below
+- Comparison/which is better between the two specific bottles: include only if the wines are meaningfully positioned against each other in the episode (same retailer, appellation pair, style competition, or explicit host choice). If both a buy/skip verdict and a which-is-better comparison would qualify, merge them into a single combined question rather than using two SKU-specific slots (see Section 6).
+- Comparison to a more famous reference point (e.g. a lesser-known appellation vs. a famous one it's compared to in the episode): often higher-reach than a same-episode bottle comparison, since the search volume is borrowed from the famous term
 - Producer/provenance: include only if the wines are private-label, Costco, Trader Joe's, Aldi, a mystery producer, or the bottler is a notable or surprising name
-- Region/grape education: include only if it supports the main episode hook (e.g. "what is this appellation?" is useful if the appellation is unfamiliar; generic wine education is not)
+
+**SKU-specific cap (guardrail, not a formula):** No more than **one** final selected question may be specifically about the exact bottles reviewed this episode (buy verdict, which-is-better comparison, or bottle-specific provenance, combined or separate count as one slot total), unless the episode type is Costco/private-label/branded-product review where the product itself has independent search demand (see Section 1). That one slot, if used, should not be the first Key Question or the first FAQ entry, lead with the broadest-reach question instead.
 
 **Disfavored:**
 - Technical production details not discussed in the episode
 - Historical trivia not central to the episode
-- Generic wine encyclopedia questions applicable to hundreds of episodes
+- Truly generic wine-encyclopedia questions with no connection to this episode's grape, region, or style (e.g. "what is wine")
 - Questions included only to balance wine mentions (artificial symmetry)
+- A second or third question about the specific bottles reviewed, once the one-slot cap is used
 
 ---
 
@@ -193,16 +221,18 @@ How central is this topic to the actual episode?
 
 ---
 
-### Criterion 4: Specificity
+### Criterion 4: Topical relevance (formerly "Specificity")
 
-Is this question specific to this episode, or generic wine content?
+**This criterion does not reward narrowness for its own sake.** It measures whether the question is genuinely tied to this episode's actual subject, at whatever level of scope serves the most listeners. A question about the grape or region this episode covers is not a lesser or "more generic" version of a question about the exact bottles, it is usually the higher-value candidate, because it is what a new listener is actually searching for (see the Guiding principle at the top of this file).
 
 | Score | Criteria |
 |---|---|
-| 0 | Unrelated to the episode, or too broad to be useful. |
-| 1 | Generic wine education question that could apply to hundreds of episodes. |
-| 2 | Specific to the grape, region, retailer, or wine style discussed in this episode. |
-| 3 | Specific to the actual reviewed wines and listener decision in this episode. |
+| 0 | Unrelated to the episode's actual subject, or so broad it has no connection to what this episode covers (e.g. "what is wine"). |
+| 1 | Loosely related but not meaningfully anchored to this episode's grape, region, style, or hook. |
+| 2 | Specific to the exact bottles reviewed in this episode (their producer, price, or provenance), useful for a listener who already found the episode, but with low independent search reach on its own. Subject to the SKU-specific cap in Section 2. |
+| 3 | Specific to the grape, region, appellation, style, or comparison category this episode covers, the level a new listener is actually searching at. This is the default top score for a standard review episode, not a fallback. |
+
+**Exception:** on a Costco/private-label/branded-product episode (Section 2), the reviewed product itself is a high-reach search term, so a question about that specific bottle should score 3, not 2, since it carries independent search demand rather than depending on the episode.
 
 ---
 
@@ -422,6 +452,8 @@ A cell with score and ID but no rationale is not valid.
 | Rank | Question | Score | Tie-breaker applied (if any) |
 |---|---|---|---|
 
+**Count and ordering rationale (required):** State how many candidates scored 13+, how many scored 11-12 (near-miss, for transparency), and why the final count is what it is, not why it was adjusted toward any target number. Confirm the SKU-specific cap from Section 2 was respected (state how many of the final questions are about the exact bottles reviewed, this must be 0 or 1 for a standard review episode) and confirm the list leads with the broadest-reach question, not the SKU-specific one.
+
 ---
 
-*Last updated: 2026-07-03 — updated with evidence type definitions (Section 0), evidence ID + rationale scoring format (Section 8), and required audit template (Section 9)*
+*Last updated: 2026-07-18 — added Guiding principle (reach over narrowness, grounded in FAQPage/AEO research on broad vs. specific query performance), made Section 1 priority ranking conditional on product search demand, fixed Criterion 4 (was inverted: scored SKU-narrow questions higher than topic-level ones), added the SKU-specific one-question cap and lead-ordering rule to Section 2, and added the count/ordering transparency requirement to Section 9. Corrected after Ep227 shipped 2 bottle-specific questions with one leading the list, traced to Criterion 4 rewarding narrowness as the top score.*
