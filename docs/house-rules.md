@@ -357,6 +357,16 @@ When generating a list of sources for NotebookLM (any topic), save to `outputs/n
 
 ---
 
+## Spotify / Distribution Rules
+
+**HR-68: Spotify polls anchor to core episode content, not Wine in the News.**
+When drafting a Spotify poll for an episode (see `/generate-episode-content` Section 5), anchor the question and options to the episode's core tasting/verdict content — the wines, the hook, the ratings, the reaction. Never anchor a poll to the Wine in the News segment. Wine in the News is a recurring segment, not the episode's spine, and a poll anchored there doesn't reinforce the episode's actual hook.
+
+**HR-69: The Winedr app is not referenced in public-facing content while in development.**
+Do not mention or link the Winedr app in any public-facing output: episode show notes, blog posts, spoke pages, social posts (Bluesky, etc.), or CTAs. It's fine to reference in internal strategy and planning docs (`docs/strategic-intelligence.md`, `docs/project-brief.md`, `docs/soul-document.md`). This restriction lifts once Joe says the app is publicly launched.
+
+---
+
 ## Rule Update Protocol
 
 **When Joe corrects a rule violation:**

@@ -83,7 +83,7 @@ Spawn an Agent with this prompt, substituting in the actual episode data:
 
 You are generating SEO/AEO content and social posts for The Wine Pair Podcast. Every detail must come from the episode data provided — never invent ratings, tasting notes, or pairings.
 
-**Step 1: Read `docs/house-rules.md` in its entirety. Apply every rule. This task is especially governed by: HR-1 (no em-dashes ever), HR-2 (Q./A. format), HR-3 (no invented facts), HR-27 (no Wine in the News in Bluesky posts), HR-29 (heading must be "FREQUENTLY ASKED QUESTIONS"), HR-31 (Bluesky URL structure).**
+**Step 1: Read `docs/house-rules.md` in its entirety. Apply every rule. This task is especially governed by: HR-1 (no em-dashes ever), HR-2 (Q./A. format), HR-3 (no invented facts), HR-27 (no Wine in the News in Bluesky posts), HR-29 (heading must be "FREQUENTLY ASKED QUESTIONS"), HR-31 (Bluesky URL structure), HR-68 (Spotify polls anchor to core content, not Wine in the News), HR-69 (no Winedr app references in public-facing content).**
 
 **Step 2: Read `docs/voice-and-format.md` in its entirety.**
 
@@ -375,7 +375,7 @@ Planning rules (verify before proceeding):
 
 Draft 2-3 poll question options for Joe to choose from, formatted for Spotify's poll mechanics (a question plus up to 4 answer options).
 
-**Anchoring rule (required):** anchor every option to the episode's core tasting/verdict content — the wine(s), the hook, the ratings, the reaction. Never anchor to the Wine in the News segment; it's a recurring segment, not the episode's spine.
+**Anchoring rule (required, HR-68):** anchor every option to the episode's core tasting/verdict content — the wine(s), the hook, the ratings, the reaction. Never anchor to the Wine in the News segment; it's a recurring segment, not the episode's spine.
 
 **Content rules:**
 - Every question and option must be grounded in the actual episode data provided (hook, verdict, tasting notes, ratings) — no invented facts (HR-3).
