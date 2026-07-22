@@ -1,17 +1,17 @@
 # /generate-episode-content
 
-Generate SEO/AEO content and 10 Bluesky posts for an episode, either full suite or requested subset. Enforces every rule via sub-agent. Saves to the episode output file and validates before showing Joe.
+Generate SEO/AEO content, 10 Bluesky posts, and Spotify poll ideas for an episode, either full suite or requested subset. Enforces every rule via sub-agent. Saves to the episode output file and validates before showing Joe.
 
 ## When to invoke
 
-When Joe asks for: SEO content, AEO content, show notes questions, Bluesky posts, or "episode content" for a recorded episode.
+When Joe asks for: SEO content, AEO content, show notes questions, Bluesky posts, Spotify poll ideas, or "episode content" for a recorded episode.
 Before invoking, enforce the confirmed-title gate from house rules: title must be confirmed unless Joe explicitly overrides.
 
 ## How to run
 
 0. **Check for existing work first, within requested scope only.** Before reading the script, check whether `outputs/episodes/ep[N]-*.md` already exists. If it does, scan it and list which requested sections are already present and which requested sections are missing. Only generate missing sections within the requested scope. If all requested sections already exist, report that to Joe and ask if he wants anything regenerated.
 0.5. **Resolve requested scope.** Determine exactly which sections Joe asked for.
-  - Full request terms ("episode content", "SEO/AEO content", "all sections") => generate all four sections: Key Questions, Frequently Asked Questions, Schema Markup, Bluesky Posts.
+  - Full request terms ("episode content", "SEO/AEO content", "all sections") => generate the four core sections: Key Questions, Frequently Asked Questions, Schema Markup, Bluesky Posts. Spotify Poll Ideas is opt-in only — generate it only when explicitly requested by name (e.g. "poll ideas", "Spotify poll"), never bundled into a full-suite request.
   - Partial request => generate only requested sections.
   - If phrasing is ambiguous, ask one clarifying question and proceed with only the confirmed scope.
   - Do not infer adjacent tasks. This command does not generate title options, cover art, Wine in the News, or blog post copy unless explicitly requested.
@@ -66,10 +66,10 @@ On resume:
 ```
 
 3. Spawn a subagent with the instructions below, substituting all extracted episode data and the resolved requested scope.
-4. When the subagent returns output, save it to `outputs/episodes/ep[N]-[slug].md` under the heading `## SEO / AEO + SOCIAL CONTENT`. Save only the deliverable sections (KEY QUESTIONS, FREQUENTLY ASKED QUESTIONS, SCHEMA MARKUP, BLUESKY POSTS). Do not save any `### SELF-CHECK` section — it is the subagent's internal verification and does not belong in the output file.
+4. When the subagent returns output, save it to `outputs/episodes/ep[N]-[slug].md` under the heading `## SEO / AEO + SOCIAL CONTENT`. Save only the deliverable sections (KEY QUESTIONS, FREQUENTLY ASKED QUESTIONS, SCHEMA MARKUP, BLUESKY POSTS, SPOTIFY POLL IDEAS). Do not save any `### SELF-CHECK` section — it is the subagent's internal verification and does not belong in the output file.
 5. Run validator with section scope:
   - Full suite: `node scripts/validate_episode.js outputs/episodes/ep[N]-[slug].md`
-  - Partial: `node scripts/validate_episode.js outputs/episodes/ep[N]-[slug].md --sections=<comma-separated-sections>` where section names are `KEY_QUESTIONS`, `FAQ`, `SCHEMA`, `BLUESKY`
+  - Partial: `node scripts/validate_episode.js outputs/episodes/ep[N]-[slug].md --sections=<comma-separated-sections>` where section names are `KEY_QUESTIONS`, `FAQ`, `SCHEMA`, `BLUESKY`, `POLL`
   Fix every error before showing Joe anything.
 6. Show Joe the content from the output file. Then remove the entire `## PENDING TASK` section from `docs/work-log.md`, update the Last updated line, and commit.
 
@@ -111,7 +111,7 @@ Generate only the sections listed under **Requested sections** below. Do not gen
 
 - Episode number: [EPISODE NUMBER]
 - Title: [CONFIRMED TITLE]
-- Requested sections: [KEY_QUESTIONS, FAQ, SCHEMA, BLUESKY]
+- Requested sections: [KEY_QUESTIONS, FAQ, SCHEMA, BLUESKY, POLL]
 - Hook / angle: [ONE SENTENCE — what makes this episode interesting or surprising]
 - Wine 1: [NAME, VINTAGE, PRICE, RETAILER, ALCOHOL %, PRO RATINGS]
   - Joe rating: [N]/10 | Carmela rating: [N]/10
@@ -371,6 +371,36 @@ Planning rules (verify before proceeding):
 
 ---
 
+## SECTION 5: SPOTIFY POLL IDEAS (generate only if requested)
+
+Draft 2-3 poll question options for Joe to choose from, formatted for Spotify's poll mechanics (a question plus up to 4 answer options).
+
+**Anchoring rule (required):** anchor every option to the episode's core tasting/verdict content — the wine(s), the hook, the ratings, the reaction. Never anchor to the Wine in the News segment; it's a recurring segment, not the episode's spine.
+
+**Content rules:**
+- Every question and option must be grounded in the actual episode data provided (hook, verdict, tasting notes, ratings) — no invented facts (HR-3).
+- Options should be genuinely chooseable, not open-ended — a listener taps one in a couple seconds.
+- Favor formats that have worked before: a pre-reveal prediction tied to the episode's own question, an honesty/confession angle (anti-snob brand), or a reaction/verdict-adjacent question.
+- No em-dashes (HR-1).
+- For each option, add a one-line rationale for why it fits this episode.
+
+**Output format:**
+```
+### SPOTIFY POLL IDEAS
+*(Pick one to post at episode launch via Spotify for Creators)*
+
+**Option 1: [Poll question]?**
+- [Answer option 1]
+- [Answer option 2]
+- [Answer option 3 (optional)]
+- [Answer option 4 (optional)]
+Rationale: [one line — why this fits the episode]
+
+[2-3 options total]
+```
+
+---
+
 ## SELF-CHECK (mandatory before returning output)
 
 Before returning your output, run through this checklist and report results for requested sections only:
@@ -386,6 +416,7 @@ Before returning your output, run through this checklist and report results for 
 8. Facts: confirm every rating, tasting note, and pairing comes from the episode data provided.
 9. FAQ grounding: for each of the 7 Q&A pairs, name the specific episode data point the answer draws from (a tasting note, a dialogue line, a rating, a research fact from the provided links). If any answer draws only from general wine knowledge not present in the provided episode data, replace that Q&A pair before returning.
 10. FAQ narrative gate: confirm FAQ answer lines (`A.`) and FAQ schema `acceptedAnswer.text` contain none of these case-insensitive phrases: "In this episode", "On this episode", "Joe says", "Joe points out", "Carmela says", "we tasted", "we got", "we chose", "why we did this episode", "on the show", "our episode". If any are present, rewrite before returning.
+11. If POLL requested: confirm every option is anchored to core tasting/verdict content, not Wine in the News. Confirm each poll has 2-4 answer options. Confirm no em-dashes. Confirm every question/option traces to actual episode data provided (no invented facts).
 
 Report: "Self-check complete. [N] issues found." then list any issues. Fix all issues before returning.
 

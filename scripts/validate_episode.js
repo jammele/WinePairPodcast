@@ -2,18 +2,18 @@
 /**
  * Episode output file validator — checks SEO/AEO + social content.
  * Usage: node scripts/validate_episode.js outputs/episodes/ep217-frappato.md
- * Partial: node scripts/validate_episode.js outputs/episodes/ep217-frappato.md --sections=KEY_QUESTIONS,FAQ
+ * Partial: node scripts/validate_episode.js outputs/episodes/ep217-frappato.md --sections=KEY_QUESTIONS,FAQ,POLL
  * Optional count overrides: --expected-key-questions=7 --expected-faq-pairs=7
  *
  * Checks: required sections, FAQ heading, Q./A. format, Review Schema,
  * FAQPage schema, Bluesky post count, URL structure (posts 1-3 vs 4-10),
- * duplicate URLs, character counts, em-dashes.
+ * duplicate URLs, character counts, em-dashes, Spotify poll section presence.
  */
 
 import { readFileSync, existsSync } from 'fs';
 
 const PODCAST_DOMAIN = 'thewinepairpodcast';
-const VALID_SECTIONS = new Set(['KEY_QUESTIONS', 'FAQ', 'SCHEMA', 'BLUESKY']);
+const VALID_SECTIONS = new Set(['KEY_QUESTIONS', 'FAQ', 'SCHEMA', 'BLUESKY', 'POLL']);
 const DEFAULT_EXPECTED_KEY_QUESTIONS = 7;
 const DEFAULT_EXPECTED_FAQ_PAIRS = 7;
 const FAQ_BANNED_NARRATIVE_PATTERNS = [
@@ -59,7 +59,7 @@ function parseSectionsArg(args) {
 
   const invalid = parsed.filter(s => !VALID_SECTIONS.has(s));
   if (invalid.length > 0) {
-    throw new Error(`Invalid section name(s): ${invalid.join(', ')}. Valid: KEY_QUESTIONS, FAQ, SCHEMA, BLUESKY, all.`);
+    throw new Error(`Invalid section name(s): ${invalid.join(', ')}. Valid: KEY_QUESTIONS, FAQ, SCHEMA, BLUESKY, POLL, all.`);
   }
 
   return new Set(parsed);
@@ -175,6 +175,7 @@ function run(filePath, requestedSections, expectedCounts) {
     shouldRun(requestedSections, 'KEY_QUESTIONS') ||
     shouldRun(requestedSections, 'FAQ') ||
     shouldRun(requestedSections, 'BLUESKY') ||
+    shouldRun(requestedSections, 'POLL') ||
     !requestedSections;
 
   if (validateEmDash) {
@@ -194,6 +195,7 @@ function run(filePath, requestedSections, expectedCounts) {
     { key: 'FAQ', pattern: /FREQUENTLY ASKED QUESTIONS/i, name: 'FREQUENTLY ASKED QUESTIONS' },
     { key: 'SCHEMA', pattern: /SCHEMA MARKUP/i, name: 'SCHEMA MARKUP' },
     { key: 'BLUESKY', pattern: /BLUESKY POSTS/i, name: 'BLUESKY POSTS' },
+    { key: 'POLL', pattern: /SPOTIFY POLL IDEAS/i, name: 'SPOTIFY POLL IDEAS' },
   ];
   for (const { key, pattern, name } of requiredSections) {
     if (shouldRun(requestedSections, key) && !pattern.test(content)) {
@@ -275,6 +277,24 @@ function run(filePath, requestedSections, expectedCounts) {
   }
 
   // FAQPage schema check removed — HR-64 (deprecated May 7, 2026)
+
+  // ── 6.6 Spotify poll ideas ─────────────────────────────────────────────────
+  if (shouldRun(requestedSections, 'POLL')) {
+    const pollBlock = getSectionBlock(content, /^###\s*SPOTIFY POLL IDEAS/i);
+    if (pollBlock) {
+      const newsMarkersPoll = ['wine in the news', 'news desk'];
+      const lowerPollBlock = pollBlock.toLowerCase();
+      for (const marker of newsMarkersPoll) {
+        if (lowerPollBlock.includes(marker)) {
+          errors.push(`Spotify Poll Ideas section references "${marker}" — polls must anchor to core tasting/verdict content, never Wine in the News.`);
+        }
+      }
+      const optionCount = pollBlock.split('\n').filter(l => /^\*\*Option \d+:/.test(l.trim())).length;
+      if (optionCount === 0) {
+        errors.push('No poll options found in Spotify Poll Ideas section. Expected at least one "**Option N: ...**" block.');
+      }
+    }
+  }
 
   // ── 7. Bluesky posts ──────────────────────────────────────────────────────
   const posts = shouldRun(requestedSections, 'BLUESKY') ? extractBlueskyPosts(content) : [];
@@ -393,7 +413,7 @@ function run(filePath, requestedSections, expectedCounts) {
 const args = process.argv.slice(2);
 if (args.length === 0) {
   console.log('Usage: node scripts/validate_episode.js outputs/episodes/ep[N]-[slug].md');
-  console.log('Partial: node scripts/validate_episode.js outputs/episodes/ep[N]-[slug].md --sections=KEY_QUESTIONS,FAQ');
+  console.log('Partial: node scripts/validate_episode.js outputs/episodes/ep[N]-[slug].md --sections=KEY_QUESTIONS,FAQ,POLL');
   console.log('Optional count overrides: --expected-key-questions=7 --expected-faq-pairs=7');
   console.log('Example: node scripts/validate_episode.js outputs/episodes/ep217-frappato.md');
   process.exit(1);

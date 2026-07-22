@@ -1,8 +1,20 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-07-18 (session 35 — Ep227 Gigondas title, cover art, SEO/AEO + social content)
+**Last updated:** 2026-07-21 (session 36 — Spotify poll ideas added to `/generate-episode-content`)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
+
+---
+
+## Session 36 summary (2026-07-21) — Spotify poll ideas added as a post-episode task
+
+Reviewed three docs Joe downloaded from a separate research/strategy session: a NotebookLM research-package spec, its handoff doc, and a Spotify growth-workstream handoff. Joe decided the NotebookLM docs and most Spotify follow-ups need no podcast-os changes yet; the one concrete ask was adding Spotify poll ideas to the set of post-episode content Claude can generate.
+
+**Change:** `/generate-episode-content` (`.claude/commands/generate-episode-content.md`) now supports a fifth, opt-in-only section: **SPOTIFY POLL IDEAS**. It is never bundled into a "full suite" request — Joe must ask for it by name. Drafts 2-3 poll options (question + up to 4 answer choices) grounded only in the episode's actual hook/verdict/tasting notes, explicitly anchored to core tasting content and never to the Wine in the News segment (a lesson carried over from the Spotify handoff: Wine in the News is a recurring segment, not the episode's spine).
+
+**Validator:** `scripts/validate_episode.js` now recognizes `POLL` as a valid `--sections` value, requires the `### SPOTIFY POLL IDEAS` heading when requested, flags any "Wine in the News" reference inside the poll section, and confirms at least one `**Option N:**` block is present. Tested against both a passing and a failing sample file before committing.
+
+**Not actioned (Joe's call, may revisit later):** the NotebookLM research-package spec/handoff (corpus-centering rule, corrected YouTube/Wine Folly source guidance) and the broader Spotify growth handoff (CTAs, clips, comments habit, HR candidates for poll-anchoring and Winedr non-disclosure). Joe is handling the source Google Doc (`data/prompts/notebooklm-prompt.md`'s origin, doc ID `1M3TGBFbDXBO7iuIUz6dRYDXZjGMaCNmQKaOYTwIhshI`) himself. No new house rules were added this session.
 
 ---
 
