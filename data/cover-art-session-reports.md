@@ -35,9 +35,74 @@ This file is written and read by the `/generate-cover-art` skill. It accumulates
 3. **Check who the visual "reputation" belongs to before generating anything.** The title was "Gigondas has a reputation for punching you in the face" — the wine is the puncher. Every concept up through Render 3 put boxing gloves on Joe with no visible cause, which silently made Joe the fighter instead of the wine, missing the episode's actual claim. This should have been caught at the Core Thesis gate (HR-53) during brainstorming, not after three renders. Add to the thesis check going forward: for any title making a claim *about the wine itself* (reputation, behavior, character), verify the concept visually assigns that quality to the wine/bottle/glass, not to a host, before scoring anything.
 4. **Don't stage Joe and Carmela as adversaries.** When a concept needs a source of aggression or threat, introduce a third, minimally-visible off-camera element (an arm, a hand) rather than making one host the aggressor toward the other, even in an obvious joke context. Joe flagged this immediately: "please do not make it look like Carmela and I are having a fight, that would kill the vibe." This is now a standing constraint for any future "attack/threat" bit, not just this episode.
 
+**Ep229 (2026-07-25, whole batch rejected on title alignment):** Joe rejected the entire first batch, recommended concept included: "This should be considered a fail. You are not paying close enough attention to the title of the episode." The title was "...Summer Sipper Contender?" and the recommended concept (a smug restaurant-ordering status gag) never staged the actual comparative claim in the word "Contender" — it was a generic obscure-wine joke that happened to feature Vermentino, not a visualization of Vermentino being measured against an established field. The subagent had marked it PASS on title alignment because its check was "does this contradict the title?" rather than "does this concept require the specific claim in the title to make sense at all?" — a much weaker test that let a portable, generic concept through. **Fix going forward: for any title built around a specific claim word (Contender, Reputation, Hiding, etc.), the title-alignment check must be reframed as "would this concept's joke still work if that word were removed from the title?" — if yes, it fails HR-54/HR-57 regardless of brand-rule compliance, and this must be checked before presenting to Joe, not left for him to catch.**
+
 ---
 
 ## Episode Entries
+
+---
+
+### Ep229: Vermentino
+**Date:** 2026-07-25
+**Title:** Italian Wine Adventure #25: Vermentino! Summer Sipper Contender?
+
+**Physical Situation Brainstorm (Step 0):**
+- 10 situations generated from transcript moments: contender-joins-lineup bottle placement, restaurant "cool kids" ordering bit, sparkling-redirect running gag, gasoline-smell startled reaction, torn-scorecard "no half points" joke, stone-licking tasting note reenactment, Pigato/Favorita sticker-peel identity reveal, green-apple color-match stamp, ampelographer word-fumble with report card, ampelography-school shove toward a bus
+- 5 passed all filters: Contender Joins Lineup, Cool Kids Ordering, Sparkling Redirect, Gasoline Reaction, Torn Scorecard
+- 3 strongest selected for subagent: Contender Joins Lineup, Cool Kids Ordering, Sparkling Redirect (Gasoline Reaction held back as spoiler-adjacent risk — a vivid negative-smell reaction next to a positively-rated wine risked misreading as a soft verdict; Torn Scorecard held back as side-banter, not thesis-expressing)
+- Spoiler-gate directions (off-limits): Vermentino shown literally beating the named competing wines (knocked-over bottles, trophy/medal — this episode doesn't crown a winner over rivals, just reviews Vermentino on its own terms); a clearly negative/disgusted reaction to either wine (both scored 7-8 range, no negative twist)
+
+**Web Research Finding:**
+"Vermentino podcast thumbnail" returned only generic podcast-design-tool results and one unrelated Italian Wine Podcast transcript page — no wine-specific or competitor visual conventions found.
+
+**Concepts Generated:**
+
+| Concept | Score | Result | Notes |
+|---|---|---|---|
+| A: Contender Joins the Lineup | 40/50 | PASS | Joe setting VERMENTINO bottle among blurred rival bottles; Carmela waving it in like a new teammate |
+| B: Ordering Like a Cool Kid | 43/50 | PASS | Joe smugly ordering Vermentino from a waiter; Carmela rolling her eyes behind him |
+| C: No, We're Not Doing Sparkling | 40/50 | PASS | Carmela miming a cork pop; Joe waving it off with a firm "no" |
+
+**Quality Gate Decisions:** All 3 concepts passed the subagent's internal self-review cleanly — no rejects, no replacement round needed. Boxing/combat-sport framing was pre-emptively banned for this round (Ep227 used it immediately prior) even though it wasn't literally in `data/cover-art-scenes.md`.
+
+**Second Review Summary:** Self-reviewed internally by the generate-and-validate subagent against all 11 brand rules, HR-14a, HR-53 through HR-60, and HR-40 (spoiler ban). All 3 concepts PASS with no flags.
+
+**Scroll-Stop Assessment:** Concept B has the strongest immediate read — a smug self-satisfied order next to an eye-roll is instantly relatable status comedy that needs zero wine knowledge to land. Concept A is the most literal expression of "contender" but leans on background bottles that have to stay blurred to avoid text clutter, slightly softening its punch. Concept C is the most purely visual gag (cork-pop mime vetoed) but is the most weakly tied to Vermentino specifically — the joke works almost as well for any non-sparkling summer wine.
+
+**Joe's correction (2026-07-25):** Joe rejected the entire first batch: "This should be considered a fail. You are not paying close enough attention to the title of the episode." The recommended concept (B, "Ordering Like a Cool Kid") was a generic wine-snobbery status gag — smug order, eye-roll — that had nothing to do with "Summer Sipper Contender" specifically; it would work identically for any obscure-varietal episode with the word "Contender" removed from the title. This should have been caught as an HR-54/HR-57 failure (title alignment / portability) before presentation, not left for Joe to catch, even though the subagent marked it PASS on title alignment. Root cause: the subagent's title-alignment check asked "does this contradict the title?" rather than "does this concept require the specific claim in the title to make sense at all?" — a much weaker test. Even Concept A, the one built around the "contender" idea, was too soft (blurred background bottles, no literal comparison happening).
+
+### Second Session (Redo, 2026-07-25)
+
+**Correction applied:** Regenerated with HR-54 (title alignment) as the primary filter, not a binary afterthought. New thesis: "Vermentino steps into the crowded field of go-to summer sippers to see whether it belongs among them." Every concept required to stage a literal comparative/competitive dynamic (measuring, fitting into a row, being inspected against a standard) — the explicit test applied to each: "would this concept's joke work if the title didn't say 'Contender'?" If yes, reject.
+
+**Concepts Generated (redo):**
+
+| Concept | Score | Result | Notes |
+|---|---|---|---|
+| A: The Height Check | 42/50 | PASS | Joe leveling a palm between VERMENTINO and an unlabeled bottle to compare heights; Carmela appraising with a slow nod |
+| B: Making Room in the Lineup | 40/50 | PASS | Joe wedging VERMENTINO into a tight row of varied bottle silhouettes; Carmela holding the gap open |
+| C: The Once-Over | 42/50 | PASS | Joe spinning VERMENTINO label-out in front of a blurred lineup; Carmela circling a "turn it around" inspection gesture |
+
+**Second Review Summary (redo):** Self-reviewed internally against all 11 brand rules, HR-14a, HR-53/54/57, and HR-40. All 3 concepts PASS; all three explicitly fail the "works without the word Contender" portability test in the right direction (i.e., none of them would make sense without it), which is the fix for what broke the first batch.
+
+**Joe's correction (2026-07-25, second rejection):** Joe rejected this entire batch too: "These fails are unacceptable... The 'contender' concept IS NOT the key concept for this week's episode. It is SUMMER SIPPER and I have said that over and over in the chat, and it is talked about THROUGHOUT THE EPISODE... This happens every week." All three redo concepts, having been tightened to require the word "Contender" specifically, ended up leaning entirely on a literal measuring/comparison mechanic (bottle heights, lineup-fitting, spin-inspection) with zero connection to summer, heat, or refreshment — the actual dominant content of the episode's cold open, and something Joe had already told Claude to focus on directly, twice, earlier in this same session during the title work. The redo fixed the "Contender" portability gap but never applied the same test to "Summer Sipper," so it swapped one narrow failure for another. Root cause and permanent fix: `docs/house-rules.md` HR-53/HR-54 amended to require listing every clause of a multi-clause title and weighting each by actual episode content (not by which is easiest to visualize) before writing the thesis — "Contender" is a single word with no dedicated segment; "Summer Sipper" is an entire cold-open block plus 8 named competing wines plus explicit host instruction. `.claude/commands/generate-cover-art.md` and `.claude/commands/review-titles.md` both updated with the same clause-weighting requirement so this class of bug (fixating on the newest/most-visualizable clause of a title while dropping a heavier one) can't recur silently in either skill.
+
+### Third Session (Second Redo, corrected to lead with Summer Sipper, 2026-07-25)
+
+**Correction applied:** Regenerated under the amended HR-53/HR-54 process. Title clause breakdown done explicitly before brainstorming: "Summer Sipper" ranked highest weight (full cold-open segment, 8 named competing wines, Vermentino's real stated heat/acidity-retention differentiator, Carmela's on-mic line "I'm so excited for the summer sipper on a summer day," explicit host instruction), "Contender" ranked lowest weight (single word, no dedicated content). Thesis rewritten to lead with Summer Sipper: "Vermentino, a bright, food-friendly Italian white, proves itself as a genuine warm-weather sipper right alongside the wines people already reach for all summer." Contender allowed only as light secondary texture, never the primary mechanic.
+
+**Concepts Generated (second redo):**
+
+| Concept | Score | Result | Notes |
+|---|---|---|---|
+| A: Cold Glass, Warm Bliss | 41/50 | PASS | Joe presses an ice-cold VERMENTINO glass to his flushed forehead; Carmela sips serenely, unbothered by the heat |
+| B: The Swap | 44/50 | PASS | Carmela pushes her sparkling wine aside and pulls a VERMENTINO glass toward herself with a smirk; Joe fist-pumps in triumph |
+| C: Still Crisp | 41/50 | PASS | Joe wilts in the heat, collar damp; Carmela stays perfectly composed sipping VERMENTINO, dramatizing the wine's real acidity-retention trait through the humans, not the bottle |
+
+**Second Review Summary (second redo):** Self-reviewed against all 11 brand rules, HR-14a, HR-53/54 (clause-weighted, Summer Sipper required as dominant), HR-57, HR-40. All 3 PASS and all three lead with Summer Sipper; Concept B is the only one that also stages a genuine episode-specific decision (the sparkling-vs-Vermentino running gag) rather than a generalized heat reaction.
+
+**Joe's selection:** *(pending)*
 
 ---
 

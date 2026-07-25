@@ -21,10 +21,15 @@ Pre. **Read `data/cover-art-session-reports.md` before generating any concepts.*
    - **Prior entry for this wine/brand:** if one exists, note what structural types were tried before so concepts are not repeated across sessions.
 
 Pre-1. **Core thesis and title frame gates (hard reject).**
-   Before brainstorming, write one sentence for the episode thesis and one sentence for title framing.
+
+   **First, list every substantive clause of the confirmed title separately (HR-53).** Do not treat a multi-clause title as one unit — a series prefix, a grape name, and a two-part subtitle are each their own clause. For each clause, note how much actual episode content supports it (a whole segment, a repeated bit, several named examples vs. a single word choice with nothing else behind it). Also check this conversation for any content-focus instruction Joe has already given for this episode earlier in the session (during title work or otherwise) — weight it at least as heavily as the title itself; it does not expire when work moves to this command.
+
+   **Named failure mode — do not repeat it:** on Ep229 ("...Summer Sipper Contender?"), every concept got built around "Contender" — a one-word clause with no dedicated episode content — while "Summer Sipper" (an entire cold-open segment, 8 named competing wines, and something Joe had already explicitly told Claude to focus on) got dropped, because a competitive/measuring mechanic was easier to visualize than heat or refreshment. A clause being more novel, more concrete, or easier to storyboard is NOT evidence it's the dominant one — go by actual episode content weight and explicit host instruction, not ease of visualization.
+
+   Then write one sentence for the episode thesis, anchored in the clause(s) carrying the most weight (it must still acknowledge the others, just not be built around a low-content one in isolation), and one sentence for title framing.
    The thesis sentence must create curiosity and avoid verdict language. Do not use words like "buy-worthy," "worth it," "better than," "winner," or "delicious" in the thesis.
    - Core thesis gate: every concept must visibly express the thesis.
-   - Title alignment gate: every concept must reinforce the confirmed title framing.
+   - Title alignment gate: every concept must reinforce the confirmed title framing, checked against *every* clause listed above — not just the thesis sentence as a single collapsed unit. A concept that satisfies one clause while ignoring a more heavily-weighted one FAILS this gate.
    - Side-banter gate: transcript banter can add flavor, but cannot be the main concept unless it directly supports the thesis.
    - Misframing gate: if the episode framing is contrast-based (for example "not Chianti" or "outside Tuscany"), and the rejected or contrast element appears, it may appear only as a minor background, corner, or pushed-aside element. If it is the largest, central, brightest, or most memorable visual element, reject the concept. If the concept omits that rejected or contrast element entirely and still expresses the thesis, this gate does not apply.
    Any concept failing one of these gates is rejected before presentation.
@@ -134,9 +139,11 @@ Spawn an Agent with this prompt, substituting actual episode data:
 
 You are generating scored cover art concepts for The Wine Pair Podcast. **Do NOT generate ChatGPT prompts** — those are written by the main agent after Joe selects a concept.
 
-**Step 1: Read `docs/house-rules.md` in its entirety. Apply every rule. Pay particular attention to HR-9 through HR-14 (cover art rules), HR-13 (scoring), and HR-40 (cover art spoiler ban).**
+**Step 1: Read `docs/house-rules.md` in its entirety. Apply every rule. Pay particular attention to HR-9 through HR-14 (cover art rules), HR-13 (scoring), HR-40 (cover art spoiler ban), and HR-53/HR-54 (thesis and title-alignment gates — note the clause-weighting requirement in HR-53, it is not just "write one sentence").**
 
 **Step 2: Read `data/cover-art-scenes.md`. Note the recent scene structures you must NOT repeat.**
+
+**Step 3: Use the title clause breakdown below as the fixed ground truth for thesis and title alignment.** Do not re-derive it, and do not silently favor whichever clause is easiest to storyboard — the weighting has already been done by the main agent based on actual episode content volume and any standing host instruction.
 
 After reading both files, proceed with concept generation.
 
@@ -145,6 +152,7 @@ After reading both files, proceed with concept generation.
 **Episode details:**
 - Episode number: [EP NUMBER]
 - Title: [TITLE]
+- Title clause breakdown, weighted by episode content (main agent's HR-53 analysis — treat as authoritative): [LIST EACH SUBSTANTIVE CLAUSE OF THE TITLE WITH A ONE-LINE NOTE ON HOW MUCH EPISODE CONTENT SUPPORTS IT, ORDERED HIGHEST-WEIGHT FIRST. FLAG ANY CLAUSE BACKED BY AN EXPLICIT STANDING INSTRUCTION FROM JOE EARLIER IN THE SESSION.]
 - Featured wine name (appears on bottle label): [WINE NAME]
 - Central angle / visual hook: [WHAT MAKES THIS EPISODE INTERESTING OR FUNNY]
 - Tone: [TONE]
@@ -191,7 +199,7 @@ After generating all 3 concepts, check each against the following before returni
 - HR-40 (spoiler ban): does the thumbnail reveal the verdict, ratings, or conclusion? If yes, reject and replace.
 - HR-14a: does the scene description open with a physical action verb? Banned opening verbs: "holds," "looks at," "examines," "leans toward," "gestures at." If yes, revise.
 - HR-62 (anatomy executability): are arm paths clear? Hand ownership unambiguous? No crossed arms, overlapping limbs, or unclear which character owns which hand? If unclear, simplify: one character active, one reactive — arm paths in separate spatial lanes.
-- HR-53 through HR-60 (hard gates): Core Thesis, Title Alignment, Side-Banter, Misframing, Portability, Thumbnail Readability — all must pass.
+- HR-53 through HR-60 (hard gates): Core Thesis, Title Alignment, Side-Banter, Misframing, Portability, Thumbnail Readability — all must pass. For HR-53/HR-54 specifically: check the concept against EVERY clause in the title clause breakdown above, not just the single highest-weighted one — a concept must not satisfy one clause while silently ignoring another heavily-weighted clause.
 - All 11 brand rules — especially rule 11 (spoiler).
 
 **Do NOT show this review to the user.** Return only passing concepts.
@@ -216,7 +224,7 @@ Then present 3 passing concepts. For each:
 
 **Concise evidence (required):**
 - Thesis match: [one short line]
-- Title alignment: [PASS plus short reason]
+- Title alignment: [PASS plus which clause(s) this concept expresses — must include the highest-weighted clause, not just any clause]
 - Transcript/show-note evidence: [one short reference line]
 - Why not portable: [one short line]
 - Thumbnail readability: [one short line]
