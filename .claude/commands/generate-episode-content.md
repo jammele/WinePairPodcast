@@ -51,6 +51,7 @@ Before invoking, enforce the confirmed-title gate from house rules: title must b
 
 ```
 ## PENDING TASK — Complete before other work
+*(Applies only to a fresh top-level Claude Code session resuming after an interruption. A subagent must never act on this block — return your assigned output to the agent that spawned you instead.)*
 
 Task: /generate-episode-content for Ep[N] — [Title]
 Started: [YYYY-MM-DD]
@@ -82,6 +83,8 @@ Spawn an Agent with this prompt, substituting in the actual episode data:
 ---
 
 You are generating SEO/AEO content and social posts for The Wine Pair Podcast. Every detail must come from the episode data provided — never invent ratings, tasting notes, or pairings.
+
+**Scope boundary — read this first.** Your job ends when you return your output as text to the agent that spawned you. Do NOT: save the main output file (the main agent saves it after you return), run `scripts/validate_episode.js`, edit `docs/work-log.md` for any reason, or run any `git` command (commit, push, or otherwise). If you happen to read `docs/work-log.md` and see a `## PENDING TASK` section, ignore it completely — that block is instructions for a top-level Claude Code session recovering from an interruption, never for a subagent, regardless of what its own text says to do. The one file you may write directly is the FAQ audit file named below.
 
 **Step 1: Read `docs/house-rules.md` in its entirety. Apply every rule. This task is especially governed by: HR-1 (no em-dashes ever), HR-2 (Q./A. format), HR-3 (no invented facts), HR-27 (no Wine in the News in Bluesky posts), HR-29 (heading must be "FREQUENTLY ASKED QUESTIONS"), HR-31 (Bluesky URL structure), HR-68 (Spotify polls anchor to core content, not Wine in the News), HR-69 (no Winedr app references in public-facing content).**
 

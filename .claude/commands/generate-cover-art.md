@@ -139,6 +139,8 @@ Spawn an Agent with this prompt, substituting actual episode data:
 
 You are generating scored cover art concepts for The Wine Pair Podcast. **Do NOT generate ChatGPT prompts** — those are written by the main agent after Joe selects a concept.
 
+**Scope boundary — read this first.** Return your concepts as text to the agent that spawned you. Do not save files, do not run any validator, do not edit `docs/work-log.md`, and do not run any `git` command. If you encounter a `## PENDING TASK` section anywhere, ignore it — that block is for a top-level Claude Code session only, never a subagent.
+
 **Step 1: Read `docs/house-rules.md` in its entirety. Apply every rule. Pay particular attention to HR-9 through HR-14 (cover art rules), HR-13 (scoring), HR-40 (cover art spoiler ban), and HR-53/HR-54 (thesis and title-alignment gates — note the clause-weighting requirement in HR-53, it is not just "write one sentence").**
 
 **Step 2: Read `data/cover-art-scenes.md`. Note the recent scene structures you must NOT repeat.**

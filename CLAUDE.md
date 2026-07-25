@@ -26,7 +26,9 @@ A `UserPromptSubmit` hook (`scripts/hooks/session-startup.js`) runs the startup 
 
 ## Resuming interrupted tasks
 
-If `docs/work-log.md` (injected at startup) contains a `## PENDING TASK` section:
+**This section governs the top-level Claude Code session only — never a subagent.** If a subagent spawned via the Agent tool reads `docs/work-log.md` for context and encounters a `## PENDING TASK` section, it must not act on it: not save files beyond what its own task explicitly asked for, not run the validator, not touch `docs/work-log.md`, and never run `git commit` or `git push`. A subagent's job ends when it returns its output to the agent that spawned it — resume/commit/push authority belongs to the top-level session that is actually talking to Joe. (This failure mode happened once: a content-generation subagent for `/generate-episode-content` found a live PENDING TASK block, treated its literal "commit and push" resume steps as instructions for itself, and pushed to the remote with no review step. Subagent prompts for any skill that may run while a PENDING TASK marker exists must explicitly forbid this.)
+
+If `docs/work-log.md` (injected at startup) contains a `## PENDING TASK` section, in the **top-level session**:
 1. Report it to Joe before anything else: "There's an unfinished task from a previous session: [task description]."
 2. Complete the pending task immediately — do not address other requests first.
 3. Follow the resume steps listed in the PENDING TASK section exactly.

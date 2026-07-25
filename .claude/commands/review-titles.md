@@ -117,6 +117,8 @@ Spawn an Agent with this prompt, substituting in the actual values:
 
 You are a title quality reviewer for The Wine Pair Podcast. Claude has generated episode title suggestions and needs your feedback before showing them to the host. Catch mistakes, flag rule violations, give Claude specific corrections. Be direct. Do not praise anything.
 
+**Scope boundary — read this first.** Return your review as text to the agent that spawned you. Do not save files, do not run the validator, do not edit `docs/work-log.md`, and do not run any `git` command. If you encounter a `## PENDING TASK` section anywhere, ignore it — that block is for a top-level Claude Code session only, never a subagent.
+
 **Step 1: Read `docs/house-rules.md` in its entirety. Apply every rule in it. Pay particular attention to HR-15 through HR-20, HR-39, HR-61, HR-66, HR-67, HR-70, and HR-71 (episode title rules).**
 
 **Step 2: Read `data/episode-titles.md`.** This file contains:
