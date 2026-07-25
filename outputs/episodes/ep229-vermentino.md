@@ -29,22 +29,22 @@ Joe is a middle-aged cartoon man. He has black rectangular glasses, a full salt-
 Carmela is a middle-aged cartoon woman. She has medium-length warm brown hair, gold hoop earrings, expressive eyes, a dark top, and a bright amused smile. She should have theatrical body language and a delighted, sharp, funny reaction. She should look like a recurring animated version of Carmela, not a realistic portrait and not a generic surprised woman.
 
 Scene:
-Joe is pressing a beaded, ice-cold glass of wine to his own flushed forehead with theatrical relief, eyes rolled back, mouth open in an exaggerated "ahh" of relief. Carmela stands beside him sipping from her own glass, eyes closed, a serene, unbothered smile on her face, completely at ease in the same heat that has Joe visibly wrecked. A bottle labeled "VERMENTINO" stands on the counter between them, label large and clearly legible.
+Joe is dabbing sweat from his brow with the back of one wrist while pressing a beaded, ice-cold glass of wine against his other flushed, reddened cheek, eyes half-shut in exhausted relief, mouth relaxed in a quiet exhale, not laughing or shouting, small visible sweat beads on his forehead and temple. Carmela sits beside him at a sunlit outdoor table, sipping calmly from her own glass, legs comfortably crossed, a relaxed closed-eye smile, completely unbothered by the same summer heat. A light summer dish (grilled shrimp skewers) sits on the table between them. A bottle labeled "VERMENTINO" stands on the table, label large and clearly legible. The setting is a bright, sunny outdoor patio table, blue sky above, greenery softly blurred in the far background, no specific named location.
 
 Arm and hand clarity:
-Joe's hand on screen-left holds his wine glass pressed flat against his own forehead. Joe's other hand, also screen-left, is raised beside his face, fingers spread, fanning himself. Both hands clearly belong to Joe; both arms visibly connect back to his own shoulders, with no overlap into Carmela's space. Carmela's hand on screen-right holds her own wine glass raised to her lips, mid-sip. One active hand for Carmela, holding a single simple prop. No arms cross, no hands share a prop, every hand has an unambiguous owner.
+Joe's hand on screen-left is raised near his own brow, wrist dabbing away sweat. Joe's other hand, also screen-left, presses his wine glass flat against his own cheek. Both hands clearly belong to Joe; both arms visibly connect back to his own shoulders, with no overlap into Carmela's space. Carmela's hand on screen-right holds her own wine glass raised to her lips, mid-sip. One active hand for Carmela, holding a single simple prop. No arms cross, no hands share a prop, every hand has an unambiguous owner.
 
 Composition:
 Tight square crop.
-Characters fill at least 70% of the frame, waist-up, close to the viewer.
-Joe's forehead-press and Carmela's serene sip are the main focus, positioned to read as one contrast at a glance.
-Background is a simplified wine bar setting in warm, luminous amber-red tones, minimal detail, no framed art, no visible shelving, no barrels, no competing furniture.
+Characters fill at least 70% of the frame, waist-up, close to the viewer, kept large and dominant even with an outdoor setting.
+Joe's sweat-and-cold-glass relief and Carmela's calm sip are the main focus, positioned to read as one contrast at a glance.
+Background is a bright, sunny outdoor patio setting, kept soft, minimal, and blurred behind the characters — blue sky, indistinct greenery, no complex landscape detail, no named location, nothing competing with the foreground for attention.
 Clear visual hierarchy.
 One clear joke readable at thumbnail size.
 No text, captions, speech bubbles, or decorative labels except required wine bottle label text.
 
 Negative prompt:
-No photorealism. No realistic portrait. No painterly rendering. No soft gradients. No 3D gloss. No realistic aging lines. No skin texture. No generic stock-cartoon faces. No tiny expressions. No cluttered background. No text, captions, speech bubbles, or decorative labels except required wine bottle label text. Do not make Joe or Carmela look like real-person portraits. Keep them bold, graphic, exaggerated, and funny.
+No photorealism. No realistic portrait. No painterly rendering. No soft gradients. No 3D gloss. No realistic aging lines. No skin texture. No generic stock-cartoon faces. No tiny expressions. No cluttered background. No complex outdoor landscape detail. No maniacal or possessed expression. No wide manic grin, no shouting mouth, no bulging or rolled-back eyes, no thumbs-up gesture — the expression must read as heat-exhausted relief, not excitement or joy. No text, captions, speech bubbles, or decorative labels except required wine bottle label text. Do not make Joe or Carmela look like real-person portraits. Keep them bold, graphic, exaggerated, and funny.
 
 Use this as the style reference, but create a new scene. Do not copy the exact pose.
 ```

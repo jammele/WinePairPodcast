@@ -110,6 +110,11 @@ This file is written and read by the `/generate-cover-art` skill. It accumulates
 
 **Joe's selection:** Concept A, "Cold Glass, Warm Bliss" (41/50). ChatGPT prompt written and saved to `outputs/episodes/ep229-vermentino.md`.
 
+**Post-selection render iteration (2026-07-25):**
+1. **Render 1 (original prompt):** The "eyes rolled back, mouth open in an exaggerated ahh" description rendered as a wide manic grin with a thumbs-up, read as excited/possessed joy rather than heat exhaustion — the pose had no actual heat signifiers (no sweat, no flush) to anchor the read, so the model defaulted to a generic "excited cheers" expression. Carmela's "serene sip" rendered as a romantic nuzzle against the glass with a heart icon, also missing the "unbothered by heat" contrast entirely. Background stayed indoor wine-bar per the original prompt.
+2. **Joe's correction:** "The current version just makes Joe look crazy and possessed and does not pay off the summer sipper concept... We should be outside, maybe eating outside. It needs to show summer." Two distinct fixes needed: (a) the expression needs explicit heat signifiers (sweat, flush, exhausted relief) instead of relying on an ambiguous pose+eye-description that the model reads as excitement, and (b) the setting itself needs to visually show summer rather than implying it only through character reaction — an outdoor eating scene, not an indoor wine bar.
+3. **Fix applied:** Rewrote the scene with explicit sweat beads, a flushed cheek, half-shut "exhausted relief" eyes, and a closed-mouth exhale (not a grin) for Joe; added a light summer dish (grilled shrimp skewers) and a sunny outdoor patio table setting. This is a deliberate, Joe-directed exception to HR-11's indoor/simplified-background default — HR-11 exists because outdoor scenes have previously generated complex landscapes that shrink the characters, so the rewritten prompt keeps the outdoor background explicitly soft, blurred, and secondary (blue sky, indistinct greenery, no named location) to guard against that specific failure mode while still delivering the outdoor "show summer" setting Joe asked for. Negative prompt also now explicitly bans the manic-grin/thumbs-up/bulging-eyes misread. Not yet re-rendered/confirmed.
+
 ---
 
 ### Ep227: Gigondas
