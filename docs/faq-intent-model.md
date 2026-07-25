@@ -281,19 +281,19 @@ Apply penalties after the base score is calculated.
 
 ## 5. Web search trigger rules
 
-Web search is **mandatory** (not optional, not a manual suggestion) when the episode involves any of:
+Web search is **mandatory** (not optional, not a manual suggestion) only when the episode involves a genuinely ambiguous case:
 
 - Costco / Kirkland Signature wines
 - Trader Joe's / Charles Shaw / private-label wines
 - Aldi / private-label wines
-- Any current or recent vintage in a product-review context
 - Producer or bottler identity questions ("who makes this?")
-- A term or phrase where the model is uncertain whether real buyers use that phrasing
-- Any specific commercial product where existing reviews or buyer discussions may exist online
+- A term or phrase where the model is genuinely uncertain whether real buyers use that phrasing
 
-**If web search is triggered and the agent cannot perform web search: stop. Report "Objective FAQ scoring cannot be completed for this episode type — web search is required but unavailable." Do not generate candidates or proceed to scoring.**
+**"Any current or recent vintage in a product-review context" and "any specific commercial product where existing reviews may exist online" are NOT triggers on their own.** Those two conditions describe nearly every episode this show produces (every episode reviews a current-vintage commercial wine that almost certainly has existing online reviews) — treating them as automatic triggers made the full mandatory search-and-verify path the default for routine two-wine reviews instead of the exception it's meant to be. A routine episode with no ambiguity flag above relies primarily on I (episode content) and C2 (fetching the episode's own cited research links, which is already required regardless of C1 status) — C1 web search remains available and should still be used when the model is not confident about real search phrasing, but it is optional in that case, not mandatory, and does not require the full query set below.
 
-### Required web search query set (Costco/private-label review)
+**If web search is triggered (one of the five conditions above applies) and the agent cannot perform web search: stop. Report "Objective FAQ scoring cannot be completed for this episode type — web search is required but unavailable." Do not generate candidates or proceed to scoring.**
+
+### Required web search query set (Costco/private-label review, or other mandatory-trigger episode)
 
 Perform all of the following query types and record results:
 
