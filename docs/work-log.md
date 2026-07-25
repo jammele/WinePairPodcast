@@ -1,24 +1,22 @@
-## PENDING TASK — Complete before other work
+# Work Log — The Wine Pair Podcast
 
-Task: /generate-episode-content for Ep229 — Italian Wine Adventure #25: Vermentino! Summer Sipper Contender?
-Started: 2026-07-25
-Output file: outputs/episodes/ep229-vermentino.md
+**Last updated:** 2026-07-25 (session 37 — Ep229 Vermentino SEO/AEO, FAQ, Bluesky, and poll content)
 
-On resume:
-1. Check whether `outputs/episodes/ep229-vermentino.md` exists and contains `## SEO / AEO + SOCIAL CONTENT`.
-   - If yes: go to step 2.
-   - If no: re-invoke /generate-episode-content for this episode from step 3.
-2. Run `node scripts/validate_episode.js outputs/episodes/ep229-vermentino.md --sections=KEY_QUESTIONS,FAQ,BLUESKY,POLL` and fix all errors.
-3. Show Joe the validated content.
-4. Remove this PENDING TASK section from `docs/work-log.md` and commit.
+**Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
 
 ---
 
-# Work Log — The Wine Pair Podcast
+## Session 37 summary (2026-07-25) — Ep229 Vermentino: Key Questions, FAQ, Bluesky, Spotify poll
 
-**Last updated:** 2026-07-21 (session 36 — Spotify poll ideas added to `/generate-episode-content`)
+**Deliverable:** `outputs/episodes/ep229-vermentino.md` — Key Questions (7), FAQ (7 pairs), 10 Bluesky posts, and Spotify Poll Ideas (3 options) for the two-wine Vermentino review (2024 ColleMassari Melacce, 2022 Tommasi Poggio al Tufo). Schema Markup not generated, not requested this session. Validator passes clean (0 errors, 0 warnings).
 
-**Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
+**FAQ scoring:** Standard two-wine review episode type. C1 web search was mandatory (current-vintage bottles with an existing professional-review footprint) and completed via 8 WebSearch queries plus 13 URL verification fetches (2 excluded: `mdpi.com/2306-5710/11/4/118` could not be confirmed to resolve to the specific article; several others returned HTTP 403 on direct fetch but were independently confirmed real via `site:` search). 8 of 13 candidates scored 13+; final 7 selected after cutting one passing-but-redundant candidate (acidity-in-heat, which duplicated the summer-sipper rubric answer) per the duplicate-coverage tie-breaker. SKU-specific cap respected: 1 of 7 questions is bottle-specific, placed last. Full evidence ledger and scoring at `outputs/episodes/faq-audits/ep229-faq-audit.md`.
+
+**Repeat-7 flag:** This is the second consecutive episode (Ep227, then Ep229) landing at exactly 7 final questions. Noted in the audit per the intent model's own anti-slot-filling transparency requirement — the count is traceable to genuine scoring and an explicit duplicate-coverage cut here, not a target, but worth watching going forward.
+
+**Bug found and fixed:** `scripts/validate_episode.js`'s Bluesky-post extractor only stopped the `### BLUESKY POSTS` section at the next `##` heading, not `###`. Since `### SPOTIFY POLL IDEAS` is a same-level (`###`) heading that directly follows Bluesky posts, the entire poll section was getting swallowed into post 10's text, producing a false "1184 chars" overflow error. Fixed the stop-lookahead to match `#{2,3}` so it correctly halts at the next `###` or `##` heading. This is the first episode file to combine `BLUESKY` and `POLL` sections in the same validator run, so the bug hadn't surfaced before.
+
+**Status:** All four requested deliverables complete and validated. Ready to show Joe.
 
 ---
 

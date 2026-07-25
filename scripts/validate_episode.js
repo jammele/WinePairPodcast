@@ -126,8 +126,9 @@ function extractFaqSchemaAcceptedAnswers(content) {
 
 // ── Bluesky post extraction ───────────────────────────────────────────────────
 function extractBlueskyPosts(content) {
-  // Find the BLUESKY POSTS section — stop at next ## section (e.g. COVER ART) or end of file
-  const sectionMatch = content.match(/###\s*BLUESKY POSTS[\s\S]*?(?=\n##\s|\n---\s*\n##\s|$)/i);
+  // Find the BLUESKY POSTS section — stop at the next ## or ### heading (e.g. COVER ART,
+  // or a same-level SPOTIFY POLL IDEAS section that follows directly) or end of file.
+  const sectionMatch = content.match(/###\s*BLUESKY POSTS[\s\S]*?(?=\n#{2,3}\s|\n---\s*\n#{2,3}\s|$)/i);
   if (!sectionMatch) return [];
 
   const section = sectionMatch[0];
