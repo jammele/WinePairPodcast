@@ -219,6 +219,9 @@ The primary audience for a title is a prospective new listener who has never hea
 **HR-67: Every presented title needs a real score and an evidence-based recommendation.**
 No title is exempt from being scored and shown a score, including bare series titles (HR-61 exempts a series title from the *quality-gate floor*, not from being scored and displayed). When recommending a specific title, ground the recommendation in objective evidence — external headline/CTR research, published third-party studies, or the show's own internal performance data (e.g. the Meiomi benchmark) — not just the internal reviewer subagent's subjective scores. Always tie the recommendation explicitly back to the stated goal (listener growth, particularly reaching new listeners) rather than presenting scores as a bare table with no synthesis.
 
+**HR-70: Recognize an established series title before asking Joe what title he has in mind.**
+Before treating a title as missing or asking Joe to state one, check the episode's source doc name against the Named Series Reference in `data/episode-titles.md`. If the doc name matches an established series format (e.g. "Italian Wine Adventure #[N]: [Wine]!", "WTF is [Wine]?", "Costco Kirkland Signature Challenge: ...") exactly or near-exactly, that IS the title, already selected, not absent — treat it as such rather than asking Joe to supply something already sitting in the source material. This failure mode happened once (Ep229): Claude read the episode doc, saw only the generic doc-name header, and asked Joe for a title he had already given by naming the doc in series format. Cross-check the doc name against the series list before concluding a title is missing.
+
 ---
 
 ## Beamly Technical Rules
