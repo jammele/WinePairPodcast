@@ -24,9 +24,61 @@ This file is written and read by the `/review-titles` skill. It accumulates rese
 
 **Ep227 (correction, before selection):** Joe rejected a presented title (Carmela reference) on sight and corrected the review process itself, not just this episode's options. Titles exist to attract new listeners, not to reward people who already know the show — any hook requiring a co-host's name, a running bit, or an established show rule to parse should be cut before it's ever shown, not left for Joe to catch. He also required every title to carry a visible score (the HR-61 series exemption is from the quality-gate floor, not from being scored) and required the final recommendation to be grounded in objective third-party research (external CTR/headline studies, or the show's own Meiomi benchmark) rather than the internal reviewer subagent's own scoring alone. Codified as HR-66 and HR-67. Going forward: the Round 2 subagent prompt must explicitly instruct the reviewer to FAIL any title requiring insider/prior-listener context, and the final response to Joe must always include a scored table plus evidence-based reasoning, not just a bulleted list of options.
 
+**Ep229 (two corrections in one session, both codified as house rules):** First, Claude failed to recognize the episode doc's own name ("Italian Wine Adventure #25: Vermentino!") as an already-confirmed series title and asked Joe to state a title he had already given — root cause was never cross-checking the doc name against the series list in `data/episode-titles.md` before assuming a title was missing. Fixed via HR-70 and an HR-37 amendment folding the check into the episode-announcement flow itself. Second, when generating a subtitle, Claude's first batch researched generic external Vermentino trivia (climate resilience, DNA-twin grapes, terroir) instead of building on "summer sipper" — the episode's own dominant content and the exact angle Joe explicitly told Claude to focus on. Joe rejected the batch as too long (80-93 chars) and disconnected from the episode. Fixed by reordering `/review-titles` so the episode's own stated content is extracted before external research runs, with a blocking gate if a Joe-named angle isn't reflected in any surviving option (see the command file). Joe also caught that the internal 1-10 AI Discovery/Clickability scores were being presented as if they reflected measured CTR data (an unsupported "60% lift" claim), and that AEO discoverability hadn't been considered at all. Fixed via an HR-67 amendment requiring scores to always be labeled as internal heuristics, an explicit AEO line in every recommendation, and a new standing reference file `docs/title-research-reference.md` so this research is read and reused rather than re-derived (or skipped) each session. Pattern to carry forward: when Joe names a specific content angle to build around, treat it as the primary source of hook material, not one input competing with generic external trivia — check the final option set against it explicitly before presenting.
+
 ---
 
 ## Episode Entries
+### Ep229: Vermentino (ColleMassari Melacce + Tommasi Poggio al Tufo)
+**Date:** 2026-07-25
+**Series:** Italian Wine Adventure #25
+**Joe's selection:** Italian Wine Adventure #25: Vermentino! Summer Sipper Contender? (trimmed from the presented "A Summer Sipper Contender?" — dropped the leading "A")
+
+**Process note:** This session is also the source of the Ep229 correction documented in Patterns Learned above (missed series recognition, off-content first research pass, unlabeled heuristic scores). The record below reflects the corrected process.
+
+**Step 0 Research Findings — first pass (rejected by Joe):**
+- Forbes (Feb 2024): Vermentino is heat-tolerant, drought-resistant, holds acidity in warm climates.
+- DNA research: Vermentino, Pigato, and Favorita are genetically identical, three regional names for one grape.
+- Vermentino di Gallura DOCG (Sardinia, 1996) — real fact, but inapplicable since both reviewed wines are Tuscan, not Sardinian.
+- Joe rejected the resulting titles as too long (80-93 chars) and built on generic Vermentino trivia rather than the episode's actual content.
+
+**Step 0 Research Findings — corrected pass:**
+- The episode's real spine is an extended "what makes a great summer sipper" rubric (acidity, body, oak, flavor, finish, alcohol) followed by a named list of competing summer-sipper wines (Vinho Verde, Albariño, Grüner Veltliner, Picpoul de Pinet, Txakoli, Verdejo, Pinot Grigio, Sauvignon Blanc) before Vermentino is reviewed against that rubric.
+- "Summer sipper" is externally verified as a real term already applied specifically to Vermentino by other outlets (Wine Spectator: "A Great Summer Sipper from Italy"; YouTube: "VERMENTINO is the Perfect AFFORDABLE Summer Sipper!!!"; Fine Wine Concierge: "Summer Sipper: Vermentino").
+- Headline research: question headlines generally outperform statements (BPS/Social Influence, ~137-257% more clicks), but a vague/weak question can underperform a strong statement (CDMG counterpoint) — favors specific, grounded questions over generic ones.
+- AEO discoverability found to be a wash between the finalist options — all shared the same named entity (Vermentino) and topical phrase (summer sipper). Full findings and citations archived in `docs/title-research-reference.md`.
+
+**Episode Hook:** Two well-reviewed Tuscan Vermentinos (2024 ColleMassari Melacce, Joe 8/10 Carmela 8/10; 2022 Tommasi Poggio al Tufo, Joe 7/10 Carmela 8/10) tested against the episode's own "great summer sipper" rubric alongside 8 named competing wines. Straightforwardly positive result, no twist.
+
+**Rejected batch (Round 1 + partial Round 2):**
+- "The White Wine Built for a Hotter World" — PASS, Clickability 7/10, warning: near-verbatim Forbes headline paraphrase
+- "The Summer Sipper That Gets Better as It Gets Hotter" — FAIL (HR-39 spoiler)
+- "One Grape, Three Names, One Perfect Summer Wine" — FAIL (HR-39 spoiler)
+- "Sardinia's Only DOCG White Wine" — FAIL (HR-3, factual mismatch — both wines are Tuscan)
+- "Made for Heat, Built to Keep Its Acidity" — passed Round 1, FAILED Round 2 (HR-3 — implies deliberate breeding intent the research doesn't support)
+- Batch abandoned after Joe's rejection rather than iterated further.
+
+**Corrected batch (Round 1 + Round 2):**
+- "The Summer Sipper Test." — PASS, Clickability 6/10 (below floor, dropped)
+- "Does It Pass the Summer Sipper Test?" — PASS, Clickability 7/10, 76 chars (flagged long)
+- "Certified Summer Sipper?" — FAILED Round 2 (HR-3 — implies a real certifying process that doesn't exist for this show)
+- "Your Next Summer Sipper?" — PASS, Clickability 7/10, flagged as generic/not episode-specific
+- "A Summer Sipper Contender?" — PASS cleanly, Clickability 8/10, AI Discovery 8/10, 66 chars, grounded in the episode's actual rubric + named-competitor structure
+
+**Final presented options:**
+1. `Italian Wine Adventure #25: Vermentino!` (bare, 39 chars, AI Discovery 8/10, Clickability 5/10)
+2. `Italian Wine Adventure #25: Vermentino! A Summer Sipper Contender?` (66 chars, AI Discovery 8/10, Clickability 8/10) — recommended
+3. `Italian Wine Adventure #25: Vermentino! Does It Pass the Summer Sipper Test?` (76 chars, AI Discovery 8/10, Clickability 7/10)
+4. `Italian Wine Adventure #25: Vermentino! Your Next Summer Sipper?` (64 chars, AI Discovery 6/10, Clickability 7/10)
+
+All scores above are the internal 1-10 review-subagent rubric, not measured CTR data.
+
+**Research-to-Title Alignment:** The corrected batch used the episode's actual dominant content (the summer-sipper rubric + named-competitor list) instead of generic external Vermentino trivia — this fix, not additional review rounds, is what produced options Joe accepted. "A Summer Sipper Contender?" scored highest on both metrics with no warnings and is directly evidenced by the episode's structure.
+
+**AEO Discoverability:** Not a differentiator between the finalist options — all shared the same named entity (Vermentino) and topical phrase (summer sipper). Per `docs/title-research-reference.md`, AEO discoverability for this show is driven primarily by show notes/schema structure, not subtitle wording.
+
+---
+
 ### Ep227: Gigondas (Notre Dame des Pallières Les Mourres + Crus Saint Martin L'Espalier)
 **Date:** 2026-07-18
 **Series:** WTF is [Wine]? (candidate — Joe explicitly said he's open to reusing the format despite Ep226 using it last week)

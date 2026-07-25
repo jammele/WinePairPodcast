@@ -1,9 +1,9 @@
 # Episode Title Archive — The Wine Pair Podcast
 
-**Last updated:** 2026-07-18 (through Ep227)
+**Last updated:** 2026-07-25 (through Ep229)
 **Maintained by:** Claude — add each confirmed title here before committing episode work.
 
-**Latest confirmed title:** Ep227 — Gigondas Has a Reputation for Punching You in the Face. Does It Live Up to That?
+**Latest confirmed title:** Ep229 — Italian Wine Adventure #25: Vermentino! Summer Sipper Contender?
 
 ---
 
@@ -38,6 +38,7 @@ Format: `Italian Wine Adventure #[N]: [Wine Name]!` (colon after number in later
 - Ep200: Italian Wine Adventure #22: Etna Bianco!
 - Ep207: Italian Wine Adventure #23: Valpolicella Ripasso — The Best Under-$25 Italian Red You're Not Drinking
 - **Ep217: Italian Wine Adventure #24: Frappato! The Chillable Red Wine!** *(confirmed 2026-05-09)*
+- **Ep229: Italian Wine Adventure #25: Vermentino! Summer Sipper Contender?** *(confirmed 2026-07-25)*
 
 ### WTF is [Wine]?
 Format: `WTF is [Wine Name]?` — question mark at end, capitalized WTF, wine name as proper noun
@@ -177,12 +178,12 @@ Format: `Special Episode! The Virginia Winemakers Series [#N if >1]: [Name] of [
 
 | Ep | Title | Format pattern |
 |---|---|---|
+| 229 | Italian Wine Adventure #25: Vermentino! Summer Sipper Contender? | Series (IWA) + subtitle question |
 | 227 | Gigondas Has a Reputation for Punching You in the Face. Does It Live Up to That? | [Region] Has a Reputation for [Claim]. [Neutral question] |
 | 226 | WTF is Verdejo? | Series (WTF is [Wine]?) |
 | 225 | Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux! | Series (Costco Kirkland Challenge) |
 | 224 | Is Moscato d'Asti the Sweet Wine Serious Wine People Won't Admit They Love? | [Social-status hook]: [Question] |
 | 223 | This Ain't Chianti: Is Italian Sangiovese Better Outside Tuscany? | [Contrast hook]: [Question] |
-| 208 | Portuguese Wine Primer: Douro Branco — Portugal's Best White Under $15? | Series prefix + [Wine] + question |
 | 209 | Why Serious Wine Nerds Love Xinomavro! | [Bold claim about audience] |
 | 210 | Special Episode! Meet the (Wine) Makers #21: Pascal Marty... | Series (Makers) |
 | 211 | Special Episode! Meet the (Wine) Makers #22: Fausto Cellario... | Series (Makers) |
@@ -421,3 +422,4 @@ Ep224: Is Moscato d'Asti the Sweet Wine Serious Wine People Won't Admit They Lov
 Ep225: Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux!
 Ep226: WTF is Verdejo?
 Ep227: Gigondas Has a Reputation for Punching You in the Face. Does It Live Up to That?
+Ep229: Italian Wine Adventure #25: Vermentino! Summer Sipper Contender?
