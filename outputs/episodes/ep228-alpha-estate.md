@@ -47,17 +47,7 @@ https://wineanorak.com/2023/06/21/exploring-greece-3-alpha-estate-amyndeon/
 ### SPOTIFY POLL IDEAS
 *(Pick one to post at episode launch via Spotify for Creators)*
 
-**Option 1: Which trip sounds better to you?**
-- A famous wine region everyone's already been to
-- A high-altitude Greek plateau with under 3,000 people that most wine lovers have never heard of
-Rationale: Binary "this or that" polls get the highest tap-through of any poll format (instant, clear stakes, no expertise needed). The second option is a specific, vivid detail from the episode (Amyndeon's tiny population), not a generic "which region" choice.
-
-**Option 2: When you taste a wine, are you more...**
-- Team Science: precision, technique, control
-- Team Instinct: gut feeling, personal expression
-Rationale: Pulled from Angelos's own extended answer about balancing modern winemaking technology with instinct, a real recurring theme in the episode. Identity-style "which team are you" binaries require zero wine knowledge, just an opinion, which is exactly what drives taps according to poll-engagement research.
-
-**Option 3: This episode's wine can age for decades. Be honest:**
-- I'd actually let it sit for 10+ years
-- I'm drinking it tonight, no question
-Rationale: Grounded in Angelos's answer about Xinomavro's aging potential. Binary, personality-driven, answerable in under a second, the exact format that outperforms multi-option or trivia-style polls.
+**Option 1: This wine can age for decades. Confession time, how long does a bottle actually survive in your house?**
+- Years. I've got the patience for this.
+- Let's be honest, it's not making it past the weekend.
+Rationale: Grounded in Angelos's answer about Xinomavro's aging potential. "Confession time" and "let's be honest" borrow the show's own honesty-branding voice (we buy our own wine, we call out bad wine, no BS) instead of reading like a survey. Binary, no wine knowledge required, answerable in under a second.
