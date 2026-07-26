@@ -47,7 +47,7 @@ https://wineanorak.com/2023/06/21/exploring-greece-3-alpha-estate-amyndeon/
 ### SPOTIFY POLL IDEAS
 *(Pick one to post at episode launch via Spotify for Creators)*
 
-**Option 1: Angelos says a young Xinomavro tastes like red berries, but give it a few decades and it turns into sun-dried tomato and olive paste. Gut reaction:**
-- Sign me up, that sounds incredible.
-- Hard pass, keep my wine tasting like fruit.
-Rationale: Pulled straight from Angelos's own description of Xinomavro's aging arc, the single most specific, memorable thing said about the grape in the episode. Binary, no wine knowledge required, and it's a genuine "does this intrigue or repel you" gut check rather than a generic aging question that could apply to any wine.
+**Option 1: Xinomavro's acidity lets it age for decades, evolving from bright red berries all the way to dried tomato and olive paste. Confession time, how long does a bottle actually survive in your house?**
+- Years. I've got the patience to let it go the distance.
+- Let's be honest, it's not making it past the weekend.
+Rationale: Keeps the aging-patience confession you liked, but the setup is now specifically Xinomavro's own aging story, its acidity and the actual red-berries-to-dried-tomato flavor arc Angelos described, not a generic "this wine can age" premise that could apply to any age-worthy bottle.
