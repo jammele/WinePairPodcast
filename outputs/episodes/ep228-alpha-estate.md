@@ -48,5 +48,5 @@ https://wineanorak.com/2023/06/21/exploring-greece-3-alpha-estate-amyndeon/
 *(Pick one to post at episode launch via Spotify for Creators)*
 
 **Option 1: Xinomavro's can age for decades. How long would a bottle actually survive in your house?**
-- Years. I've got the patience to let it go the distance.
+- Years. I've got patience
 - it's not making it past the weekend.
