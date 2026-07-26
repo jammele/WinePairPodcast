@@ -47,7 +47,7 @@ https://wineanorak.com/2023/06/21/exploring-greece-3-alpha-estate-amyndeon/
 ### SPOTIFY POLL IDEAS
 *(Pick one to post at episode launch via Spotify for Creators)*
 
-**Option 1: This wine can age for decades. Confession time, how long does a bottle actually survive in your house?**
-- Years. I've got the patience for this.
-- Let's be honest, it's not making it past the weekend.
-Rationale: Grounded in Angelos's answer about Xinomavro's aging potential. "Confession time" and "let's be honest" borrow the show's own honesty-branding voice (we buy our own wine, we call out bad wine, no BS) instead of reading like a survey. Binary, no wine knowledge required, answerable in under a second.
+**Option 1: Angelos says a young Xinomavro tastes like red berries, but give it a few decades and it turns into sun-dried tomato and olive paste. Gut reaction:**
+- Sign me up, that sounds incredible.
+- Hard pass, keep my wine tasting like fruit.
+Rationale: Pulled straight from Angelos's own description of Xinomavro's aging arc, the single most specific, memorable thing said about the grape in the episode. Binary, no wine knowledge required, and it's a genuine "does this intrigue or repel you" gut check rather than a generic aging question that could apply to any wine.
