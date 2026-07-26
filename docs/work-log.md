@@ -1,31 +1,16 @@
-## PENDING TASK — Complete before other work
-*(Applies only to a fresh top-level Claude Code session resuming after an interruption. A subagent must never act on this block.)*
-
-Task: /generate-episode-content (Key Questions + FAQ) for Ep228 — Special Episode! Meet the (Wine) Makers #24: High-Altitude Excellence: Discovering PDO Amyndeon & PGI Florina with Alpha Estate.
-Started: 2026-07-26
-Output file: outputs/episodes/ep228-alpha-estate.md
-
-On resume:
-1. Check whether `outputs/episodes/ep228-alpha-estate.md` contains `### FREQUENTLY ASKED QUESTIONS`.
-   - If yes: go to step 2.
-   - If no: re-invoke /generate-episode-content for this episode from step 3 (Key Questions + FAQ only).
-2. Run `node scripts/validate_episode.js outputs/episodes/ep228-alpha-estate.md --sections=KEY_QUESTIONS,FAQ,BLUESKY,POLL` and fix all errors.
-3. Show Joe the validated content.
-4. Remove this PENDING TASK section from `docs/work-log.md` and commit.
-
----
-
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-07-26 (session 38 — Ep228 Alpha Estate/Amyndeon Bluesky posts)
+**Last updated:** 2026-07-26 (session 38 — Ep228 Alpha Estate/Amyndeon Bluesky, poll, and FAQ)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
 
 ---
 
-## Session 38 summary (2026-07-26) — Ep228 Alpha Estate/Amyndeon: Bluesky posts
+## Session 38 summary (2026-07-26) — Ep228 Alpha Estate/Amyndeon: Bluesky, poll, and FAQ
 
-**Deliverable:** `outputs/episodes/ep228-alpha-estate.md` — 10 Bluesky posts plus, on follow-up request, 3 Spotify poll options for Ep228, "Special Episode! Meet the (Wine) Makers #24: High-Altitude Excellence: Discovering PDO Amyndeon & PGI Florina with Alpha Estate." (interview episode with Angelos Iatridis, no wine ratings). No Key Questions/FAQ/Schema generated, not requested. Validator passed clean on both.
+**Deliverable:** `outputs/episodes/ep228-alpha-estate.md` — 10 Bluesky posts, a Spotify poll, and Key Questions (7) + FAQ (7 pairs) for Ep228, "Special Episode! Meet the (Wine) Makers #24: High-Altitude Excellence: Discovering PDO Amyndeon & PGI Florina with Alpha Estate." (interview episode with Angelos Iatridis, no wine ratings). No Schema generated, not requested. Validator passed clean.
+
+**FAQ episode-type note:** `docs/faq-intent-model.md` already has an "Interview episode" type, but this episode is substantively also a Grape explainer (Xinomavro) and Region explainer (PDO Amyndeon/PGI Florina), so required families were blended across all three types rather than forced into just one. C1 web search was not mandatory under the narrowed Section 5 trigger (no Costco/private-label/producer-identity ambiguity, the producer is the guest) and was used only optionally to confirm real search phrasing. Full audit at `outputs/episodes/faq-audits/ep228-faq-audit.md`.
 
 **Poll adaptation note:** HR-68 anchors polls to "core tasting/verdict content," written for review episodes. This is an interview special with no wines tasted, so polls were anchored instead to the episode's actual core content: Angelos's own Nebbiolo/Pinot Noir framing of Xinomavro, general familiarity with the region/grape, and his specific Sunday-dinner pairing answer from the transcript.
 
