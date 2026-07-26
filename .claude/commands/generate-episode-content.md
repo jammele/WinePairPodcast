@@ -382,8 +382,10 @@ Draft 2-3 poll question options for Joe to choose from, formatted for Spotify's 
 
 **Content rules:**
 - Every question and option must be grounded in the actual episode data provided (hook, verdict, tasting notes, ratings) — no invented facts (HR-3).
+- **The question itself must be one short sentence — this is Spotify's actual poll UI, not a scene-setting paragraph.** Do not stack a setup clause plus a question ("X does Y, evolving from A to B. Confession time, how long...?") — state the one grounding fact in as few words as possible, then ask. If it needs a rationale sentence to justify the setup, the setup is too long; cut it. This was corrected once already (Ep228): a two-clause, fact-heavy question was rejected as "WAYYYY" too long even though the underlying content and answer options were right.
 - Options should be genuinely chooseable, not open-ended — a listener taps one in a couple seconds.
 - Favor formats that have worked before: a pre-reveal prediction tied to the episode's own question, an honesty/confession angle (anti-snob brand), or a reaction/verdict-adjacent question.
+- Binary (two-option) polls get the highest engagement of any poll format — default to two options unless a third is genuinely distinct and adds real value, not just more choices.
 - No em-dashes (HR-1).
 - For each option, add a one-line rationale for why it fits this episode.
 
