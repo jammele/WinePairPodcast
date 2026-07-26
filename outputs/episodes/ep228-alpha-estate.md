@@ -43,3 +43,25 @@ https://wineindustryadvisor.com/2021/12/01/history-in-my-glass-pgi-pdo/
 **10.**
 The sandy soil in Amyndeon is so inhospitable to phylloxera that some vines never needed grafting. That's how a single block can still have vines planted in 1919.
 https://wineanorak.com/2023/06/21/exploring-greece-3-alpha-estate-amyndeon/
+
+### SPOTIFY POLL IDEAS
+*(Pick one to post at episode launch via Spotify for Creators)*
+
+**Option 1: What does Xinomavro sound more like to you?**
+- Nebbiolo: high acid, firm tannin, built to age
+- Pinot Noir: elegant, perfumed, red fruit forward
+- Honestly, sounds like its own thing
+Rationale: Angelos himself frames Xinomavro as sitting between Nebbiolo and Pinot Noir stylistically. Lets listeners guess before hearing his actual answer in the episode.
+
+**Option 2: Had you heard of Amyndeon or Xinomavro before this episode?**
+- Yes, I drink it regularly
+- I'd heard of it, never tried it
+- Never heard of it until now
+Rationale: Tests familiarity with a genuinely under-the-radar Greek region and grape, the episode's whole premise is introducing listeners to it.
+
+**Option 3: Angelos would bring 100-year-old-vine Xinomavro to Sunday dinner. What are you pairing it with?**
+- Grilled meats or sausages
+- Rabbit stew
+- Peppers in olive oil
+- A full-bodied cheese
+Rationale: Pulled directly from Angelos's own answer to Joe's Sunday-dinner question, turns a specific episode moment into an easy, low-effort tap for listeners.

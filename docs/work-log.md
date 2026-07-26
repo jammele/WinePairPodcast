@@ -8,7 +8,9 @@
 
 ## Session 38 summary (2026-07-26) — Ep228 Alpha Estate/Amyndeon: Bluesky posts
 
-**Deliverable:** `outputs/episodes/ep228-alpha-estate.md` — 10 Bluesky posts for Ep228, "Special Episode! Meet the (Wine) Makers #24: High-Altitude Excellence: Discovering PDO Amyndeon & PGI Florina with Alpha Estate." (interview episode with Angelos Iatridis, no wine ratings). Only Bluesky was requested; no Key Questions/FAQ/Schema/Poll generated. Validator passed clean.
+**Deliverable:** `outputs/episodes/ep228-alpha-estate.md` — 10 Bluesky posts plus, on follow-up request, 3 Spotify poll options for Ep228, "Special Episode! Meet the (Wine) Makers #24: High-Altitude Excellence: Discovering PDO Amyndeon & PGI Florina with Alpha Estate." (interview episode with Angelos Iatridis, no wine ratings). No Key Questions/FAQ/Schema generated, not requested. Validator passed clean on both.
+
+**Poll adaptation note:** HR-68 anchors polls to "core tasting/verdict content," written for review episodes. This is an interview special with no wines tasted, so polls were anchored instead to the episode's actual core content: Angelos's own Nebbiolo/Pinot Noir framing of Xinomavro, general familiarity with the region/grape, and his specific Sunday-dinner pairing answer from the transcript.
 
 **Title logged retroactively:** Joe confirmed the title and episode number (228) directly; it hadn't gone through `/review-titles` and wasn't yet in `data/episode-titles.md`. Added to the Named Series Reference (Meet the (Wine) Makers #24), the chronological archive, and the Recent Episodes table. Noted a format shift for the series: this installment uses a region/topic subtitle instead of the older bare "[Name] of [Winery]" pattern.
 
