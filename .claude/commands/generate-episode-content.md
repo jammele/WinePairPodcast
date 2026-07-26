@@ -386,6 +386,7 @@ Draft 2-3 poll question options for Joe to choose from, formatted for Spotify's 
 - Options should be genuinely chooseable, not open-ended — a listener taps one in a couple seconds.
 - Favor formats that have worked before: a pre-reveal prediction tied to the episode's own question, an honesty/confession angle (anti-snob brand), or a reaction/verdict-adjacent question.
 - Binary (two-option) polls get the highest engagement of any poll format — default to two options unless a third is genuinely distinct and adds real value, not just more choices.
+- **Answer options must stay under ~49 characters.** Spotify's own documentation does not publish an exact figure, but this was confirmed empirically on Ep228: "Years. I've got the patience to let it go the distance." (55 characters) was rejected by the live poll UI as roughly 6 characters too long, putting the real cap at approximately 49. Target answer options at 45 characters or fewer to stay safely under this. Count every candidate answer before presenting it, the same way Bluesky posts are character-counted (HR-26).
 - No em-dashes (HR-1).
 - For each option, add a one-line rationale for why it fits this episode.
 
