@@ -1,3 +1,20 @@
+## PENDING TASK — Complete before other work
+*(Applies only to a fresh top-level Claude Code session resuming after an interruption. A subagent must never act on this block.)*
+
+Task: /generate-episode-content (Key Questions + FAQ) for Ep228 — Special Episode! Meet the (Wine) Makers #24: High-Altitude Excellence: Discovering PDO Amyndeon & PGI Florina with Alpha Estate.
+Started: 2026-07-26
+Output file: outputs/episodes/ep228-alpha-estate.md
+
+On resume:
+1. Check whether `outputs/episodes/ep228-alpha-estate.md` contains `### FREQUENTLY ASKED QUESTIONS`.
+   - If yes: go to step 2.
+   - If no: re-invoke /generate-episode-content for this episode from step 3 (Key Questions + FAQ only).
+2. Run `node scripts/validate_episode.js outputs/episodes/ep228-alpha-estate.md --sections=KEY_QUESTIONS,FAQ,BLUESKY,POLL` and fix all errors.
+3. Show Joe the validated content.
+4. Remove this PENDING TASK section from `docs/work-log.md` and commit.
+
+---
+
 # Work Log — The Wine Pair Podcast
 
 **Last updated:** 2026-07-26 (session 38 — Ep228 Alpha Estate/Amyndeon Bluesky posts)
