@@ -1,9 +1,9 @@
 # Episode Title Archive — The Wine Pair Podcast
 
-**Last updated:** 2026-07-25 (through Ep229)
+**Last updated:** 2026-07-26 (through Ep229; Ep228 logged retroactively)
 **Maintained by:** Claude — add each confirmed title here before committing episode work.
 
-**Latest confirmed title:** Ep229 — Italian Wine Adventure #25: Vermentino! Summer Sipper Contender?
+**Latest confirmed title:** Ep229 — Italian Wine Adventure #25: Vermentino! Summer Sipper Contender? (Ep228, a Meet the (Wine) Makers special, was confirmed by Joe directly and logged retroactively — released same window, precedes Ep229 numerically but was not run through /review-titles.)
 
 ---
 
@@ -151,6 +151,7 @@ Format: `Holiday Sparkling Wines #[N]: [Wine]!`
 Format: `Special Episode! Meet the (Wine) Makers #[N]: [Name] of [Winery]`
 
 - Ep85 through Ep174, Ep202, Ep210, Ep211 *(multiple installments; always "Special Episode!" prefix)*
+- **Ep228: Special Episode! Meet the (Wine) Makers #24: High-Altitude Excellence: Discovering PDO Amyndeon & PGI Florina with Alpha Estate.** *(confirmed 2026-07-26)* — format shift: region/topic-driven subtitle instead of "[Name] of [Winery]," matching how other series (Italian Wine Adventure) have added subtitles at recent installments. Use this as the new reference point for the next Makers episode's format, not the older bare "[Name] of [Winery]" pattern.
 
 ### They Make Wine in [Place]?!?
 Format: `They Make Wine in [Place]?!?` — double punctuation is the signature
@@ -179,6 +180,7 @@ Format: `Special Episode! The Virginia Winemakers Series [#N if >1]: [Name] of [
 | Ep | Title | Format pattern |
 |---|---|---|
 | 229 | Italian Wine Adventure #25: Vermentino! Summer Sipper Contender? | Series (IWA) + subtitle question |
+| 228 | Special Episode! Meet the (Wine) Makers #24: High-Altitude Excellence: Discovering PDO Amyndeon & PGI Florina with Alpha Estate. | Series (Makers) + region/topic subtitle |
 | 227 | Gigondas Has a Reputation for Punching You in the Face. Does It Live Up to That? | [Region] Has a Reputation for [Claim]. [Neutral question] |
 | 226 | WTF is Verdejo? | Series (WTF is [Wine]?) |
 | 225 | Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux! | Series (Costco Kirkland Challenge) |
@@ -422,4 +424,5 @@ Ep224: Is Moscato d'Asti the Sweet Wine Serious Wine People Won't Admit They Lov
 Ep225: Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux!
 Ep226: WTF is Verdejo?
 Ep227: Gigondas Has a Reputation for Punching You in the Face. Does It Live Up to That?
+Ep228: Special Episode! Meet the (Wine) Makers #24: High-Altitude Excellence: Discovering PDO Amyndeon & PGI Florina with Alpha Estate.
 Ep229: Italian Wine Adventure #25: Vermentino! Summer Sipper Contender?

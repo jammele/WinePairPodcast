@@ -1,8 +1,20 @@
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-07-25 (session 37 — Ep229 Vermentino SEO/AEO, FAQ, Bluesky, and poll content)
+**Last updated:** 2026-07-26 (session 38 — Ep228 Alpha Estate/Amyndeon Bluesky posts)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
+
+---
+
+## Session 38 summary (2026-07-26) — Ep228 Alpha Estate/Amyndeon: Bluesky posts
+
+**Deliverable:** `outputs/episodes/ep228-alpha-estate.md` — 10 Bluesky posts for Ep228, "Special Episode! Meet the (Wine) Makers #24: High-Altitude Excellence: Discovering PDO Amyndeon & PGI Florina with Alpha Estate." (interview episode with Angelos Iatridis, no wine ratings). Only Bluesky was requested; no Key Questions/FAQ/Schema/Poll generated. Validator passed clean.
+
+**Title logged retroactively:** Joe confirmed the title and episode number (228) directly; it hadn't gone through `/review-titles` and wasn't yet in `data/episode-titles.md`. Added to the Named Series Reference (Meet the (Wine) Makers #24), the chronological archive, and the Recent Episodes table. Noted a format shift for the series: this installment uses a region/topic subtitle instead of the older bare "[Name] of [Winery]" pattern.
+
+**Sourcing:** Episode's own live URL wasn't indexed by search yet, found instead by fetching `thewinepairpodcast.com/episodes` directly and verified by fetching the resulting URL. 7 unique external sources for posts 4-10 (alpha-estate.com, novelwines.co.uk, wineenthusiast.com, forbes.com, gilbertgaillard.com, wineindustryadvisor.com, wineanorak.com), all fetch-verified, zero overlap with the prior Xinomavro episode's post set Joe supplied as a do-not-repeat reference. Two candidate sources (mdpi.com, wine-searcher.com) returned HTTP 403 on fetch and were substituted rather than included unverified, per established practice from Ep226.
+
+**Status:** Ready to show Joe.
 
 ---
 
