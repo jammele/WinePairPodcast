@@ -1,3 +1,20 @@
+## PENDING TASK — Complete before other work
+*(Applies only to a fresh top-level Claude Code session resuming after an interruption. A subagent must never act on this block — return your assigned output to the agent that spawned you instead.)*
+
+Task: /generate-episode-content for Ep230 — Special Episode! Meet the (Wine) Makers #25: Brian and Jessica Smith from Wendelin Vines
+Started: 2026-08-08
+Output file: outputs/episodes/ep230-wendelin-vines.md
+
+On resume:
+1. Check whether `outputs/episodes/ep230-wendelin-vines.md` exists and contains `## SEO / AEO + SOCIAL CONTENT`.
+   - If yes: go to step 2.
+   - If no: re-invoke /generate-episode-content for this episode from step 3 (requested sections: KEY_QUESTIONS, FAQ, BLUESKY only — no Schema, no Poll).
+2. Run `node scripts/validate_episode.js outputs/episodes/ep230-wendelin-vines.md --sections=KEY_QUESTIONS,FAQ,BLUESKY` and fix all errors.
+3. Show Joe the validated content.
+4. Remove this PENDING TASK section from `docs/work-log.md` and commit.
+
+---
+
 # Work Log — The Wine Pair Podcast
 
 **Last updated:** 2026-07-26 (session 38 — Ep228 Alpha Estate/Amyndeon Bluesky, poll, and FAQ)
