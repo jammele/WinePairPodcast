@@ -16,6 +16,8 @@
 
 **Bluesky sourcing:** 7 external URLs for posts 4-10, all fetch-verified (en.wikipedia.org x2, enology.umn.edu, kcur.org, winemakermag.com, bellsupwinery.com, whatitmeanstobeamerican.org). Nerd angle covered by grape-science posts (Seyval Blanc, Frontenac Gris breeding), Story angle by Kansas's pre-Prohibition wine history.
 
+**Joe's feedback on this batch:** Confirmed this week's Bluesky posts were an improvement. Also flagged that Spotify polls and short-form video are, in his current assessment, not worth the effort right now. Spotify Poll Ideas were already opt-in-only in `/generate-episode-content` (added session 36, 2026-07-21), so no code change needed — going forward, don't generate or proactively suggest Spotify polls or short-form video unless Joe explicitly asks. This is a reversal of the session 36 rationale for adding polls; noted here in case Joe revisits.
+
 **Status:** Ready to show Joe.
 
 ---
