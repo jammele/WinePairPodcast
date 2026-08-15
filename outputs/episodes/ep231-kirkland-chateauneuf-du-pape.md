@@ -66,13 +66,13 @@ Use this as the style reference, but create a new scene. Do not copy the exact p
 A. At $20.99, it's a solid buy if you're patient. This bottle rates around a 7 out of 10, with real potential but a young, big, grippy tannin structure fresh off the shelf. Give it 5 to 10 years to soften, or serve it now with steak, cheeseburgers, or spicy Chinese food to tame the tannins.
 
 **Q. Why is Kirkland Signature Châteauneuf-du-Pape so much cheaper than other Châteauneuf-du-Pape wines?**
-A. Mostly distribution, not quality. Costco buys directly from the producer, skips middlemen, and caps markup near 15 percent, the model that keeps Kirkland Signature wines priced well below comparable bottles. This one comes from Guillaume Gonnet, a third-generation Châteauneuf-du-Pape winemaker who also bottles wine under his own label.
+A. Châteauneuf-du-Pape is nearly impossible to find under $35, so this $20.99 Kirkland bottle hits a price point the appellation almost never reaches. It's made specifically for Costco by Guillaume Gonnet, a third-generation Châteauneuf-du-Pape winemaker who also makes wine under his own name, so the low price isn't a quality-cutting shortcut, it's coming from a legitimate local producer.
 
 **Q. Should you age Kirkland Signature Châteauneuf-du-Pape before drinking it?**
 A. Yes, if you can wait. Right out of the bottle it's big, hot, and grippy with tannin, almost stingy in the mouth. Cellaring it 5 to 10 years should let the tannins mellow and the fruit open up. Drinking it now works best paired with something rich, like steak or spicy food.
 
 **Q. Who makes Kirkland Signature Châteauneuf-du-Pape?**
-A. Guillaume Gonnet, a third-generation Châteauneuf-du-Pape winemaker who also sells wine under his own label, Guillaume Gonnet, Vigneron. Costco's version was previously produced by Domaine de Nalys before switching to Gonnet in 2018. The current blend is 70 percent Grenache with Syrah, Mourvèdre, and Cinsault rounding it out.
+A. Guillaume Gonnet, a third-generation Châteauneuf-du-Pape winemaker who also makes wine under his own name across the Southern Rhône. Costco's version was previously produced by Domaine de Nalys before switching to Gonnet in 2018. The current blend is 70 percent Grenache with Syrah, Cinsault, and Mourvèdre rounding it out.
 
 **Q. What does Kirkland Signature Châteauneuf-du-Pape taste like?**
 A. Big, young, and a little rough right now. Expect dark cherry, plum, blackberry bramble, and black licorice on the nose, with smoky, earthy, and faintly salty olive notes. On the palate it's hot, tannic, and almost stingy, more like a wine with strong future potential than one that's fully settled today.
