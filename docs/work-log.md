@@ -1,3 +1,20 @@
+## PENDING TASK — Complete before other work
+*(Applies only to a fresh top-level Claude Code session resuming after an interruption. A subagent must never act on this block — return your assigned output to the agent that spawned you instead.)*
+
+Task: /generate-episode-content for Ep231 — Costco Kirkland Signature Châteauneuf-du-Pape Challenge! (Key Questions, FAQ, Bluesky only — not Schema, not Poll)
+Started: 2026-08-15
+Output file: outputs/episodes/ep231-kirkland-chateauneuf-du-pape.md
+
+On resume:
+1. Check whether `outputs/episodes/ep231-kirkland-chateauneuf-du-pape.md` exists and contains `## SEO / AEO + SOCIAL CONTENT`.
+   - If yes: go to step 2.
+   - If no: re-invoke /generate-episode-content for this episode from step 3, requesting only Key Questions, FAQ, and Bluesky.
+2. Run `node scripts/validate_episode.js outputs/episodes/ep231-kirkland-chateauneuf-du-pape.md --sections=KEY_QUESTIONS,FAQ,BLUESKY` and fix all errors.
+3. Show Joe the validated content.
+4. Remove this PENDING TASK section from `docs/work-log.md` and commit.
+
+---
+
 # Work Log — The Wine Pair Podcast
 
 **Last updated:** 2026-08-08 (session 39 — Ep230 Wendelin Vines Key Questions, FAQ, and Bluesky)
