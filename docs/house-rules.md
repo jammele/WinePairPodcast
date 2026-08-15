@@ -123,6 +123,8 @@ Every concept must visibly express the resulting thesis. If a concept does not e
 **HR-54: Title alignment gate is mandatory and binary.**
 Every concept must reinforce the confirmed episode title framing — checked against *every* clause identified in the HR-53 breakdown, not just the thesis sentence as a single collapsed unit. A concept that satisfies one clause while ignoring another clause that HR-53 identified as more heavily-weighted must FAIL this gate, even if it doesn't contradict anything. If the title says the episode is about Sangiovese outside Tuscany, the concept cannot visually recenter Tuscany or Chianti as the main story. Title alignment is PASS/FAIL, not scored.
 
+Passing a clause requires the concept's core visual gag to be *about* that clause's actual content — not merely to include the props or cast associated with it while the joke is built on something unrelated. This applies with the most force to whichever clause(s) HR-53 identified as highest-weighted: if the concept's core gag does not center on the highest-weighted clause's real content, the concept fails this gate even if lower-weighted clauses and all required props are technically present and non-contradictory. Test: strip away the specific supporting detail the joke leans on — does the highest-weighted clause's actual claim remain the thing the visual is legibly about? If the joke would survive but say something about a lower-weighted clause instead, or about neither, it has not passed this gate.
+
 **HR-55: Side-banter gate.**
 Transcript banter can add flavor, but it cannot be the main concept unless it directly supports the episode thesis. A funny aside alone is not enough.
 
