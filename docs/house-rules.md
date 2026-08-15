@@ -86,6 +86,8 @@ A bottle's label may include a specific producer/brand name only if that name is
 **HR-11: Background is always simple, dark, and warm — not near-black.**
 Always "rich warm burgundy background" or "simplified wine bar setting." Never "deep burgundy" alone — this tends to go near-black. Never name a specific outdoor location: no "Sicilian patio", no "outdoor terrace", no "vineyard". Outdoor scenes generate complex landscapes that shrink the characters.
 
+A color/mood descriptor alone (e.g., "warm, luminous amber-red tones") is not a reliable lever against the image model's default toward dim, shadowy backgrounds — confirmed on Ep231, where that exact wording still rendered too dark on the first pass and required a manual "lighten the background" follow-up prompt. Every cover art prompt must include an explicit brightness instruction as its own line, separate from color: in the Composition section, add "Background is brightly and evenly lit — no dim, shadowy, or moody lighting," and in the Negative Prompt, add "No dim lighting. No moody atmosphere. No dark background shadows." Color sets the palette; brightness has to be stated separately or the model defaults dark.
+
 **HR-12: Characters fill 70%+ of frame.**
 State explicitly in every prompt: "Characters fill at least 70% of the frame, waist-up, close to the viewer." If not stated, the model will shrink characters.
 

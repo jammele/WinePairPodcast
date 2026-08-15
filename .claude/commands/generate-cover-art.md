@@ -182,7 +182,7 @@ After reading both files, proceed with concept generation.
 6. Humor from expressions, staging, and contrast — not props alone.
 7. Joe and Carmela are the central characters.
 8. Wine bottle has a readable label showing the wine name — include in the Scene section.
-9. Background is simple and dark — always "rich warm burgundy background" or "simplified wine bar setting." Never name a specific outdoor location.
+9. Background is simple and warm, brightly and evenly lit — always "rich warm burgundy background" or "simplified wine bar setting." Never name a specific outdoor location. Color/mood wording alone is not enough to keep the render from defaulting dim — the prompt must also state brightness explicitly (see the standard prompt format's Composition and Negative prompt sections below, HR-11).
 10. Characters fill 70%+ of the frame, waist-up, close to the viewer — state this in the Composition section.
 11. **Spoiler rule — FAIL if violated (HR-40).** The concept must NOT reveal the episode verdict, ratings outcome, or key finding. Test: does the thumbnail tell you what Joe and Carmela concluded before you press play? Thumbs up/down on specific bottles = FAIL. One bottle going to the sink = FAIL. The visual should create curiosity about the outcome, not announce it.
 
@@ -286,12 +286,13 @@ Tight square crop.
 Characters fill at least 70% of the frame, waist-up, close to the viewer.
 [Main focal elements] are the main focus.
 [Background description — deep burgundy, or simple wine bar setting — never an outdoor scene or named location].
+Background is brightly and evenly lit — no dim, shadowy, or moody lighting.
 Clear visual hierarchy.
 One clear joke readable at thumbnail size.
 No text, captions, speech bubbles, or decorative labels except required wine bottle label text.
 
 Negative prompt:
-No photorealism. No realistic portrait. No painterly rendering. No soft gradients. No 3D gloss. No realistic aging lines. No skin texture. No generic stock-cartoon faces. No tiny expressions. No cluttered background. No text, captions, speech bubbles, or decorative labels except required wine bottle label text. Do not make Joe or Carmela look like real-person portraits. Keep them bold, graphic, exaggerated, and funny.
+No photorealism. No realistic portrait. No painterly rendering. No soft gradients. No 3D gloss. No realistic aging lines. No skin texture. No generic stock-cartoon faces. No tiny expressions. No cluttered background. No dim lighting. No moody atmosphere. No dark background shadows. No text, captions, speech bubbles, or decorative labels except required wine bottle label text. Do not make Joe or Carmela look like real-person portraits. Keep them bold, graphic, exaggerated, and funny.
 
 Use this as the style reference, but create a new scene. Do not copy the exact pose.
 ```
