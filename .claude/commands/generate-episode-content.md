@@ -23,7 +23,7 @@ Before invoking, enforce the confirmed-title gate from house rules: title must b
   - FAQ selection gate: questions must be selected via the evidence-bound candidate scoring process in `docs/faq-intent-model.md`. Do not slot-fill. Do not write questions before scoring is complete.
   - FAQ count gate: 5-7 questions, determined by scoring — not a fixed number. Do not inflate to reach 7 if fewer candidates pass the threshold.
   - FAQ search-intent gate: every question must score 13+ using the rubric in the intent model, with no 0 in plausibility, grounding, or vocabulary.
-  - FAQ episode-grounding gate: every answer must trace to a specific row in the evidence table.
+  - FAQ episode-grounding gate: every answer's substantive content must come from I (episode-internal) evidence — what was actually said in the script/transcript. C1/C2 web-research evidence may be used only to verify or clarify a fact already present in I evidence (e.g. correcting a garbled name, confirming a spelling), never to add explanatory content, context, or claims the episode itself never discussed, even if true and even if it would make a weak answer more complete. If an answer needs C1/C2 material to be substantive, the question is not well-grounded in this episode and should be cut or reworked, not padded with outside research.
   - FAQ listener-usefulness gate: answers must help a listener decide whether to listen, buy, understand, or pair.
   - FAQ tone gate: plain-language, front-loaded, conversational.
   - FAQ format and length gate: strict HR-2 Q./A. format and 40-60 words per answer.
@@ -98,7 +98,7 @@ Generate only the sections listed under **Requested sections** below. Do not gen
 **Step 2.6: Apply delivery gates before returning output.**
 - Key Questions and FAQ: follow the evidence-bound candidate scoring process in Sections 1 and 2 of this file (Steps A through I). Do not write questions until scoring is complete.
 - Final question count: 5-7, determined by how many candidates score 13+. Do not inflate to reach 7 if fewer questions pass the threshold.
-- FAQ answers must be grounded in the evidence table only — each answer must trace to a specific evidence row.
+- FAQ answers must draw their substantive content from I (episode-internal) evidence only — what the episode actually said. C1/C2 evidence may verify or clarify an I fact but must never supply new explanatory content the episode didn't cover. Named failure mode (Ep231): a "why is Kirkland cheaper" answer stated Costco's markup/distribution model as fact, sourced entirely from general web research, never discussed in the episode. Joe: "You need to stick to the content in the episode." If a question can't be answered substantively from I evidence alone, cut or rework it rather than filling the gap with outside research.
 - FAQ answers must be useful for listen/buy/understand/pair decisions.
 - FAQ answers must be 40-60 words, front-loaded, plain-language, conversational.
 - FAQ standalone requirement: answers must stand alone without episode context.
@@ -257,7 +257,7 @@ Select the top 5-7 questions using the tie-breaker order from Section 7 of the i
 - Every answer must be useful to someone deciding whether to listen, buy, understand, or pair the wine
 - No em-dashes anywhere (HR-1)
 - No invented facts (HR-3)
-- Every answer must trace to a specific row in the evidence table
+- Every answer must trace to a specific I (episode-internal) evidence row. C1/C2 evidence may only verify or clarify an I fact (e.g. fixing a garbled name), never introduce new explanatory content the episode never covered — even if factually true. If a question can't be answered substantively from I evidence, cut or rework it instead of filling the gap with outside research.
 
 **FAQ output format:**
 ```

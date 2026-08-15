@@ -247,6 +247,8 @@ Can the answer be directly supported by episode materials or cited external sour
 | 2 | Supported by episode notes, research links, or fetched external sources. |
 | 3 | Directly supported by host ratings, verdicts, tasting notes, prices, episode transcript, or explicitly cited research from the evidence table. |
 
+**This criterion scores whether a candidate question is answerable at all — it governs question selection, not what may go into the written answer.** C1/C2 evidence can make a candidate question score well here (e.g. confirming real search demand or corroborating a detail), but that does not license writing the answer itself from C1/C2 material. When answers are actually written (Step I), substantive content must come from I (episode-internal) evidence only. C1/C2 evidence may verify or clarify a fact the episode already stated (e.g. correcting a garbled transcript name) but must never supply new explanatory content, context, or mechanism the episode never discussed, even if it is true and even if it would make a thin answer more complete. Named failure mode (Ep231): a "why is Kirkland cheaper" answer stated Costco's general markup/distribution model as fact, sourced entirely from web research and never mentioned in the episode. If a question can't be answered substantively from I evidence alone, cut it or rework it rather than padding the answer with outside research.
+
 ---
 
 ### Criterion 6: Audience vocabulary
