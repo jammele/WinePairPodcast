@@ -1,25 +1,18 @@
-## PENDING TASK — Complete before other work
-*(Applies only to a fresh top-level Claude Code session resuming after an interruption. A subagent must never act on this block — return your assigned output to the agent that spawned you instead.)*
+# Work Log — The Wine Pair Podcast
 
-Task: /generate-episode-content for Ep231 — Costco Kirkland Signature Châteauneuf-du-Pape Challenge! (Key Questions, FAQ, Bluesky only — not Schema, not Poll)
-Started: 2026-08-15
-Output file: outputs/episodes/ep231-kirkland-chateauneuf-du-pape.md
+**Last updated:** 2026-08-15 (session 40 — Ep231 Costco Kirkland Châteauneuf-du-Pape: cover art + Key Questions, FAQ, Bluesky)
 
-On resume:
-1. Check whether `outputs/episodes/ep231-kirkland-chateauneuf-du-pape.md` exists and contains `## SEO / AEO + SOCIAL CONTENT`.
-   - If yes: go to step 2.
-   - If no: re-invoke /generate-episode-content for this episode from step 3, requesting only Key Questions, FAQ, and Bluesky.
-2. Run `node scripts/validate_episode.js outputs/episodes/ep231-kirkland-chateauneuf-du-pape.md --sections=KEY_QUESTIONS,FAQ,BLUESKY` and fix all errors.
-3. Show Joe the validated content.
-4. Remove this PENDING TASK section from `docs/work-log.md` and commit.
+**Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
 
 ---
 
-# Work Log — The Wine Pair Podcast
+## Session 40 summary (2026-08-15) — Ep231 Costco Kirkland Châteauneuf-du-Pape: cover art + Key Questions, FAQ, Bluesky
 
-**Last updated:** 2026-08-08 (session 39 — Ep230 Wendelin Vines Key Questions, FAQ, and Bluesky)
+**Deliverable:** `outputs/episodes/ep231-kirkland-chateauneuf-du-pape.md` — cover art ChatGPT prompt (Concept A, "Twin Swirl Judgment"), Key Questions (7), FAQ (7 pairs), and 10 Bluesky posts for "Costco Kirkland Signature Châteauneuf-du-Pape Challenge!" (Kirkland Signature CDP $20.99 vs. Domaine du Vieux Lazaret CDP $36.97, near-identical scores). Schema and Spotify Poll not requested this session. Validator passed clean after one fix (duplicate Wikipedia URL across two Bluesky posts, swapped one to a fetch-verified VinePair article).
 
-**Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
+**Cover art took three rounds** before Joe approved a concept — see the Ep231 entry in `data/cover-art-session-reports.md` for full detail. Rounds 1-2 passed every gate on paper but built the joke around the wrong content (an incidental transcript detail, then bottle packaging instead of taste). Fixed via amendments to HR-54 (title alignment must judge the joke's actual subject, not prop presence), HR-10 (bottle labels only carry a producer name when that producer is named in the title), and HR-53 (a clause's "real content" must be grounded in how the show's format actually resolves it). A meta-correction also landed mid-session: Joe rejected an early narrow, episode-specific rule draft in favor of fixing the general mechanism — see `feedback_general_principle_rules.md` in memory. Separately, HR-11 was amended to require an explicit brightness instruction (not just color wording) after the approved render still needed a manual "lighten the background" fix.
+
+**Status:** Ready to show Joe.
 
 ---
 
