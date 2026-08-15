@@ -53,7 +53,6 @@ Use this as the style reference, but create a new scene. Do not copy the exact p
 *(Place at top of show notes - questions only, no answers)*
 
 - Is the Kirkland Signature Châteauneuf-du-Pape worth buying?
-- Which Châteauneuf-du-Pape should you buy, the Kirkland Signature or the pricier Domaine du Vieux Lazaret?
 - Why is Kirkland Signature Châteauneuf-du-Pape so much cheaper than other Châteauneuf-du-Pape wines?
 - Should you age Kirkland Signature Châteauneuf-du-Pape before drinking it?
 - Who makes Kirkland Signature Châteauneuf-du-Pape?
@@ -65,9 +64,6 @@ Use this as the style reference, but create a new scene. Do not copy the exact p
 
 **Q. Is the Kirkland Signature Châteauneuf-du-Pape worth buying?**
 A. At $20.99, it's a solid buy if you're patient. This bottle rates around a 7 out of 10, with real potential but a young, big, grippy tannin structure fresh off the shelf. Give it 5 to 10 years to soften, or serve it now with steak, cheeseburgers, or spicy Chinese food to tame the tannins.
-
-**Q. Which Châteauneuf-du-Pape should you buy, the Kirkland Signature or the pricier Domaine du Vieux Lazaret?**
-A. It's close enough to be a genuine toss-up. Both wines land at nearly identical ratings, one big and tannic with dark fruit and licorice, the other tart and herby with tomato, rosemary, and cracked pepper. The $20.99 Kirkland leans toward red meat and burgers; the $36.97 Vieux Lazaret leans toward chicken, pork, and fried food.
 
 **Q. Why is Kirkland Signature Châteauneuf-du-Pape so much cheaper than other Châteauneuf-du-Pape wines?**
 A. Mostly distribution, not quality. Costco buys directly from the producer, skips middlemen, and caps markup near 15 percent, the model that keeps Kirkland Signature wines priced well below comparable bottles. This one comes from Guillaume Gonnet, a third-generation Châteauneuf-du-Pape winemaker who also bottles wine under his own label.
