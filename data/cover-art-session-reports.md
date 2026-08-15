@@ -41,9 +41,53 @@ This file is written and read by the `/generate-cover-art` skill. It accumulates
 
 **Ep229 (2026-07-25, third round — specificity overcorrected for thematic weight):** After the fix above, the regenerated batch correctly led with "Summer Sipper," but the recommended concept (B, "The Swap," built on a real 3-line running joke about sparkling wine) was rejected again: "You took one small aspect of the episode and made a big deal of it." The concept was genuinely episode-specific per HR-57, but the specificity came from a minor aside, not the sensory core of what "summer sipper" actually means (heat, refreshment, cold-drink relief) — which the two non-recommended concepts (A and C) captured more directly. Joe selected Concept A. **New pattern: when multiple concepts already clear the clause-weighted title-alignment gate, do not let HR-57 specificity act as an automatic tiebreaker — recommend whichever concept most viscerally stages the dominant clause's actual sensory/emotional content, even if a narrower, more "unique" concept is available.** Codified as an addition to HR-53.
 
+**Ep231 (2026-08-15, three rounds — prop presence vs. actual joke subject, and a meta-lesson on rule scoping):** Round 1 (Heavy Metal, Big Aroma Reveal, Staking Their Claim) was rejected: all three included both labeled bottles in a comparison structure, but each joke was actually built on an incidental transcript detail (bottle weight, an aroma reaction, a personal bottle preference) rather than the title itself. Joe: "You keep going back to random parts of the episode... when you should be focusing more heavily on the title." Round 2 (Boosted to Size, Nose-to-Nose Face-Off, Size It Up) tried to fix this by centering concepts on the budget-vs-prestige gap, but treated that gap as a *bottle-packaging* comparison (height, a face-off staging, a measuring-tape gag) and also put a competing producer's name ("Domaine du Vieux Lazaret") on the non-Kirkland label. Joe rejected it: "Those have nothing to do with the concept of the episode or podcast which is all about tasting. The challenge is all about taste." Round 3 (Twin Swirl Judgment, Poker-Face Sip-Off, Nose Deep), grounded in the actual tasting act (swirling, sipping, nosing) with corrected labeling (Kirkland bottle full name; comparison bottle labeled only "CHÂTEAUNEUF-DU-PAPE," no producer name), was accepted starting-point: Joe picked Concept A (Twin Swirl Judgment) over the recommended B (Poker-Face Sip-Off), specifically because B's mirrored deadpan expressions didn't telegraph a legible joke on their own ("I don't understand how B pays off a joke when the faces are deadpan... you are trying to make the observer do a lot of work"), while A's competitive side-eye during a shared ritual is instantly readable without extra inference. **Pattern: a concept can pass every gate (thesis, title alignment, spoiler ban) and still fail if the payoff requires the viewer to reconstruct *why* an expression means what it's supposed to mean — the joke has to be legible from the pose/expression alone, not just "technically non-contradictory."**
+
+**Meta-lesson on rule-writing (same session):** Mid-session, Claude's first fix attempt (a new rule, HR-70, scoped narrowly to "Kirkland Challenge" titles and this specific failure) was rejected by Joe before being written: "The reason the pendulum swings on your decisions so hard is because you focus too much on a specific issue and not the general reason. You are not truly learning. You are trying to create hard and fast rules." The corrected approach was to identify that this was the *same underlying gap* as the Ep229 HR-53/54 failure (a title-alignment check that verifies prop/element presence but not whether the joke's actual subject matches the claim) and amend the existing HR-54 gate instead of adding a parallel narrow rule. A second correction followed the same session (bottle labeling and "ground clause content in the show's own mechanism, not an arbitrary visual proxy") and was folded into HR-10 and HR-53 the same way — general principle, named example, not a rule scoped to this one episode. Codified via amendments to HR-54, HR-10, and HR-53 in `docs/house-rules.md` (2026-08-15).
+
 ---
 
 ## Episode Entries
+
+---
+
+### Ep231: Costco Kirkland Signature Châteauneuf-du-Pape — SELECTED
+**Date:** 2026-08-15
+**Title:** Costco Kirkland Signature Châteauneuf-du-Pape Challenge!
+
+**Title clause breakdown (HR-53):** "Challenge" and "Châteauneuf-du-Pape" tied highest-weight (full head-to-head tasting structure; full history + WTF-is-CDP segment; both featured wines are CDP); "Costco Kirkland Signature" moderate weight (series-format prefix, supported by the Kirkland label). Per host instruction: do not recreate Ep168's papal-tiara/crossed-keys/castle visual treatment; per later host correction: the "Challenge" clause's real content is TASTING (the show's actual resolution mechanism), not bottle packaging/size/weight.
+
+**Web Research Finding:**
+"Châteauneuf-du-Pape podcast thumbnail" returned only text-based podcast listing/blog pages (including the show's own Ep168) — no distinct competitor visual convention found. Open field.
+
+**Round 1 — rejected (built on incidental transcript detail, not the title):**
+| Concept | Score | Note |
+|---|---|---|
+| Heavy Metal | 45/50 | Joe straining to lift the heavier bottle like a barbell; joke was about bottle weight |
+| Big Aroma Reveal | 42/50 | Carmela coughing at the wine's aroma; joke was about smell intensity |
+| Staking Their Claim | 40/50 | Each hugging their personal-favorite bottle; joke was about preference, not the challenge |
+
+Joe: "You keep going back to random parts of the episode to come up with ideas when you should be focusing more heavily on the title."
+
+**Round 2 — rejected (staged bottle packaging instead of the show's taste-based challenge mechanism; also mislabeled the comparison bottle):**
+| Concept | Score | Note |
+|---|---|---|
+| Boosted to Size | 42/50 | Kirkland bottle raised on a crate to match the taller bottle's height |
+| Nose-to-Nose Face-Off | 42/50 | Bottles planted across from each other like opponents |
+| Size It Up | 47/50 (recommended) | Tailor's measuring tape stretched against the bottle |
+
+All three labeled the comparison bottle "DOMAINE DU VIEUX LAZARET CHÂTEAUNEUF-DU-PAPE" — a producer name never mentioned in the title. Joe: "Those have nothing to do with the concept of the episode or podcast which is all about tasting. The challenge is all about taste." Also flagged the label issue directly.
+
+**Round 3 — accepted starting point (grounded in the actual tasting act; corrected labeling):**
+| Concept | Score | Note |
+|---|---|---|
+| Twin Swirl Judgment | 42/50 | **SELECTED.** Both swirling their own glass, sneaking a competitive side-eye at the other's glass instead |
+| Poker-Face Sip-Off | 44/50 (recommended, not chosen) | Both sipping in unison with an identical deadpan "judge" expression |
+| Nose Deep | 40/50 | Both burying their faces in their glass for a deep, theatrical inhale |
+
+Joe overrode the recommended Poker-Face Sip-Off in favor of Twin Swirl Judgment: "I don't understand how B pays off a joke when the faces are deadpan. Seems like you are trying to make the observer do a lot of work." **New pattern: passing every gate is not sufficient if the payoff requires the viewer to reconstruct why an expression means what it's supposed to mean. The joke must be legible from the pose/expression alone.**
+
+**Joe's selection:** Concept A — Twin Swirl Judgment (42/50). ChatGPT prompt written and saved to `outputs/episodes/ep231-kirkland-chateauneuf-du-pape.md`.
 
 ---
 
