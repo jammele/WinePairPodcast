@@ -286,6 +286,14 @@ Additional requirements for posts 4-10:
 - Angles coverage: at least one fact post must cover the Nerd angle (fermentation method, soil type, grape clone, or specific production technique from the episode) and at least one must cover the Story angle (historical anecdote, surprising statistic, or weird fact mentioned in the episode).
 - A pre-write plan table (see generate-episode-content.md Section 4) must be completed before any post is written. The plan confirms URL uniqueness, domain diversity, and angles coverage before text is drafted.
 
+**HR-71: Bluesky posts must sound like Joe, not AI, and must not over-index on price/producer specifics.**
+Confirmed on Ep231, where Joe rewrote 6 of the generated posts and flagged the batch quality as "not very good." Named differences between the generated version and Joe's edited version:
+1. **Voice: first-person and plain, not a constructed description.** "We put the $20 bottle head-to-head with..." not "A $20.99 bottle just went head-to-head with...". Avoid reaching for cute/relatable slang ("can hang") — plain, direct phrasing reads as a person, not an AI trying to sound casual.
+2. **State the specific fact directly. Do not build a generic comparison setup first.** Cut sentences like "Most reds max out at 5 or 6 grape varieties" before getting to the actual Châteauneuf-du-Pape fact — that kind of unverifiable, generic contrast-building sentence is a tell of AI-written copy. Lead with the specific, real fact.
+3. **Round price references casually ($20, $35+), don't state exact decimal figures ($20.99, $36.97).** Say it the way a person would say it out loud, not like a spec sheet.
+4. **Do not center a post on a specific competing producer's name or backstory, and do not label a comparison bottle "name-brand."** Costco/Kirkland is the standing exception since it's the show's own recurring format. A post built around a competing producer's specific history (e.g. "Domaine du Vieux Lazaret's plague-hospital name origin") reads as promoting a competitor rather than serving the show's own content, and violates HR-10's spirit even outside cover art.
+5. **Don't over-index the whole batch on price/value comparison as the angle.** One price-contrast teaser is enough. The rest of the batch should focus on the episode's main tension, major facts, and wine-nerd content (history, science, production technique) — not repeated price/selection framing across multiple posts.
+
 **HR-32: Read docs/wine-in-the-news.md before writing any Wine in the News content.**
 Applies to both finding story options and drafting the segment script. Do not skip for "quick" story searches.
 

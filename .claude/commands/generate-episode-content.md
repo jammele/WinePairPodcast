@@ -358,11 +358,11 @@ Planning rules (verify before proceeding):
 - Posts 4-10: fact/value posts. Each must end with a unique external URL from the episode's research links. No `thewinepairpodcast.com`. No repeated URLs across posts 4-10.
 
 **Content rules:**
-- Posts 1-3: mix of angles — the episode hook, the value story, the ratings surprise
+- Posts 1-3: mix of angles — the episode hook, the value story, the ratings surprise. Only ONE of the three should carry the price/value angle — do not let the whole teaser set become a price comparison. The other two should focus on the main tension/hook and the ratings/verdict tease.
 - Posts 4-10: interesting facts from the episode research (history, science, geography, production method, comparisons)
 - No Wine in the News references anywhere (HR-27)
 - No em-dashes anywhere (HR-1)
-- Sound like a person, not ad copy
+- Sound like a person, not ad copy. See HR-71 in full: write in first person ("we put X against Y," not "X went head-to-head with Y"); state specific facts directly instead of building a generic comparison setup first; use rounded, casual price references ($20, $35+) instead of exact decimals; do not center a post on a specific competing producer's name/backstory or call a comparison bottle "name-brand" (Costco/Kirkland is the standing exception).
 - Maximum 300 characters total per post (text + newline + URL). Keep text alone under ~240 chars when URL is included. (HR-26)
 
 **Post format:**
