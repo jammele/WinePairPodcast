@@ -192,20 +192,23 @@ Check `data/episode-titles.md` Named Series Reference before generating. Match c
 **HR-20: Run /review-titles before showing Joe any options.**
 No exceptions. Fix all FAILs before presenting.
 
-**HR-49: Episode title reviews must always use the same thorough scored workflow.**
-Every title-generation session must run the full standardized `/review-titles` process with scoring. No ad-hoc, partial, or "quick" title checks.
+**HR-49: Episode title reviews must always use the same thorough review workflow.**
+Every title-generation session must run the full standardized `/review-titles` process. No ad-hoc, partial, or "quick" title checks.
 
 Minimum required every time:
 - Two review rounds (initial review + post-fix review)
-- PASS/FAIL checks against all title rules
-- Per-title scoring (Clickability and AI Discovery)
-- Explicit quality gate before presentation
-- Show only titles that clear the quality gate
+- Candidate-level hard-rule PASS/FAIL checks: HR-15, HR-16, HR-17, HR-18, HR-19, HR-39, and clear HR-66 violations. Borderline HR-66 cases get a warning for Joe, not an automatic FAIL.
+- HR-71 checked as guidance, not a hard rule: a warning plus a required one-line justification when a series-subtitle title needs it — never a FAIL on its own.
+- Process requirements followed: HR-20 (running this command itself), HR-70 (recognize an already-confirmed series title before asking Joe for one), and HR-72 (a required, unscored Voice Fit note on every title)
+- A Clickability Score per title, shown as a labeled internal heuristic used for comparative ordering only — never a pass/fail gate (see HR-61, HR-67)
+- Every title with no hard-rule FAIL remains visible to Joe in the final presented set — none are dropped, hidden, or excluded for a low Clickability score
 
-If this full scored process is not completed, titles must not be presented.
+There is no numerical "AI Discovery Score" and no Clickability elimination gate — HR-15 and HR-17 already cover discovery signal as binary hard-rule checks (see HR-67).
 
-**HR-61: Series title quality gate exception.**
-When a title correctly follows an established named series format and passes all hard rules (HR-15 through HR-20, HR-39), the Clickability quality gate does not apply. Series titles earn clicks through audience recognition, not novelty. Do not penalize a series title for being "expected" — that is the point of a series. Include a correctly formatted series title as a valid option regardless of Clickability score.
+If this full process is not completed, titles must not be presented.
+
+**HR-61: Named-series titles are evaluated for recognition and consistency, not novelty.**
+A title that correctly follows an established named series format and passes all hard rules (HR-15 through HR-20, HR-39) is a valid option and stays visible to Joe like any other rule-compliant title — it is never hidden or eliminated. Series titles earn clicks through audience recognition and consistency, not novelty: familiarity or "expectedness" must not itself be treated as a mark against a series title's Clickability score — do not lower a series title's score merely for being expected, since recognition is the point of a series, not a weakness. A series title may still land anywhere in the comparative order HR-67's Clickability sort produces — landing lower in that order because of an honestly-assessed hook strength is not the same as being penalized for expectedness, and neither outcome ever removes the title from the visible set. This principle is retained from the workflow's original quality-gate exemption; the exemption mechanic itself is obsolete now that Clickability is no longer a pass/fail gate (see HR-67) and no rule-compliant title is withheld from Joe for scoring reasons.
 
 **HR-62: Image model anatomy executability.**
 Before writing the final image prompt for any scene where arms, hands, or props are in motion, check whether the scene requires complex limb choreography: crossed arms, overlapping sleeves, multiple hands near the same prop, both characters reaching into the same small focal area, one prop held by more than one character, unclear hand ownership, or arms whose path back to the character's shoulder is not visually clear.
@@ -229,16 +232,25 @@ A title should create curiosity about the outcome, not reveal it. Never include 
 **HR-66: Titles must not require insider or prior-listener context to land.**
 The primary audience for a title is a prospective new listener who has never heard the show — not an existing fan. Reject any title option (before it's even shown to Joe) that depends on knowing a co-host's name, a running bit, an established show rule (e.g. the show's usual budget ceiling), or any other fact only an existing listener would have. If a hook only makes sense with context the title itself doesn't supply, drop it or rewrite it so it's self-contained. Flag borderline cases (e.g. a phrase that leans on implied show history without naming it directly) rather than silently including them — let Joe decide, but never present a title requiring host-name recognition to work.
 
-**HR-67: Every presented title needs a real score and an evidence-based recommendation.**
-No title is exempt from being scored and shown a score, including bare series titles (HR-61 exempts a series title from the *quality-gate floor*, not from being scored and displayed). When recommending a specific title, ground the recommendation in objective evidence — external headline/CTR research, published third-party studies, or the show's own internal performance data (e.g. the Meiomi benchmark) — not just the internal reviewer subagent's subjective scores. Always tie the recommendation explicitly back to the stated goal (listener growth, particularly reaching new listeners) rather than presenting scores as a bare table with no synthesis.
+**HR-67: Every rule-compliant title stays visible to Joe, ordered with evidence-based reasoning.**
+Clickability is an internal 1-10 heuristic used only to order options for Joe's convenience — it is never a pass/fail gate, and no rule-compliant title is hidden from Joe because of a low Clickability score (see HR-61 for the named-series case). Every title also gets a required, unscored Voice Fit note (does the wording resemble language Joe or the episode actually uses; is it specific to this episode; does the structure suit it — see the Episode Title Rules section for the full definition). When recommending a specific title, ground the recommendation in evidence — external headline/AEO research, or documented internal evidence (a corpus-level pattern, a structurally-relevant example, or Joe's own prior selections/overrides) per the corpus methodology in `docs/title-research-reference.md` — not just the internal reviewer subagent's own scores, and never a single named episode treated as the standard. Always tie the recommendation explicitly back to the stated goal (listener growth, particularly reaching new listeners) rather than presenting scores as a bare table with no synthesis.
 
-Read `docs/title-research-reference.md` first and use it as the default evidence base — do not launch fresh ad hoc web searches for headline/CTR/AEO research each session unless the reference file is stale or doesn't cover the angle needed (check its "last reviewed" date and note any gap explicitly if you go outside it). Every time the internal AI Discovery / Clickability scores are shown to Joe, label them explicitly as an internal 1-10 heuristic rubric, not measured click-through data — do not imply a scored difference (e.g. "5 vs 8") represents a measured percentage lift unless it is backed by an actual cited study. Every title recommendation must also include an explicit AEO-discoverability line, even when the honest finding is that the options don't differentiate on that dimension.
+Read `docs/title-research-reference.md` first and use it as the default evidence base — do not launch fresh ad hoc web searches for headline/CTR/AEO research each session unless the reference file is stale or doesn't cover the angle needed (check its "last reviewed" date and note any gap explicitly if you go outside it). Every time the internal Clickability score is shown to Joe, label it explicitly as an internal 1-10 heuristic for comparative sorting only, not measured click-through data — do not imply a scored difference (e.g. "5 vs 8") represents a measured percentage lift or download-count equivalent unless it is backed by an actual cited study. Every title recommendation must also include an explicit AEO-discoverability line, even when the honest finding is that the options don't differentiate on that dimension.
 
 **HR-70: Recognize an established series title before asking Joe what title he has in mind.**
 Before treating a title as missing or asking Joe to state one, check the episode's source doc name against the Named Series Reference in `data/episode-titles.md`. If the doc name matches an established series format (e.g. "Italian Wine Adventure #[N]: [Wine]!", "WTF is [Wine]?", "Costco Kirkland Signature Challenge: ...") exactly or near-exactly, that IS the title, already selected, not absent — treat it as such rather than asking Joe to supply something already sitting in the source material. This failure mode happened once (Ep229): Claude read the episode doc, saw only the generic doc-name header, and asked Joe for a title he had already given by naming the doc in series format. Cross-check the doc name against the series list before concluding a title is missing. This check is also folded into the episode-announcement flow itself — see HR-37.
 
 **HR-71: Series-title subtitles default short, matched to real precedent.**
 When appending a subtitle to an already-confirmed series prefix (e.g. adding "The Chillable Red Wine!" after "Italian Wine Adventure #24: Frappato!"), default the new subtitle's length to roughly the shortest of the last 3 series subtitle precedents, not the general 35-75 character preferred range for full titles. If a candidate pushes total title length past ~75 characters, it needs a one-line stated justification when presented to Joe ("longer because X") — a silent WARNING in a scoring table is not enough, since HR-16's preferred range is non-blocking and long options have slipped through on that basis before (Ep229).
+
+**HR-72: Voice Fit is a required, unscored field on every presented title.**
+Every title shown to Joe — round 1, round 2, and the final presented set — must carry a Voice Fit note, assessed qualitatively, never numerically scored. The note addresses:
+- whether the wording resembles language Joe or the episode itself actually uses, versus an invented "hooky" phrase with no on-air or transcript precedent;
+- whether the title is specific to this episode, not interchangeable with another episode's title;
+- whether its structure (declarative opener, question, statement, multi-clause) suits this particular episode;
+- whether it reads as clinical, templated, or artificially "hooky" rather than something Joe would actually say.
+
+Voice Fit is advisory, not a hard gate — it must never eliminate a rule-compliant title, and it must never be used to penalize a question-format title. Several of Joe's own selected titles (e.g. Ep224, Ep227) are questions; a strong question can still be the strongest option. Do not treat any single structural pattern (e.g. a declarative-opener-plus-punchline format, as in Ep221) as a universal preferred formula — assess each title's fit to its own episode.
 
 ---
 

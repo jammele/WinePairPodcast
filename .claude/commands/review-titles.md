@@ -16,26 +16,33 @@ Pre. **Read `data/title-session-reports.md` before doing anything else.**
    - **Patterns Learned section:** note what Joe consistently selects and what angles he has rejected. Let this shape generation in Step 4.
    - **Prior entry for this wine/brand:** if one exists, use those research findings as a starting point in Step 0 and focus the searches on new angles only.
 
+   **Operational precedence:** `data/title-session-reports.md`'s Patterns Learned section carries its own operational-precedence note (dated 2026-08-21) — read it. Dated entries throughout that file, and any dated entry in any prior session report, are editorial and process history only. If a dated entry references the Meiomi benchmark, a numerical AI Discovery score, a Clickability elimination gate, a series-title gate exemption, a specific score presented as measured listener performance, or a "going forward" universal title formula, treat that as a record of the old process, not a current instruction. The current authority for process is this command file and `docs/house-rules.md` (HR-49, HR-61, HR-67, HR-72) — follow those, not language in a dated entry that conflicts with them.
+
 0. **Extract the episode's own framing FIRST — before any external research.**
    Read the episode script and show description. Pull out, in 2-3 bullets:
    - What the episode itself actually spends its time on and treats as the main content (not just the wine name — the actual segment structure, e.g. a rubric, a comparison, a running bit).
    - Anything Joe has explicitly told Claude to focus on or build the title around, in this session or a prior one.
    This is the primary source of hook material, not a fallback. External research (next step) fills gaps around this — it does not override or crowd it out. If Joe has named a specific angle, no surviving title option may ignore it (see the gate in Step 4).
 
-0.5. **Web research — fills gaps around the episode's own framing, does not replace it.**
-   Run these three searches IN PARALLEL (single message, multiple WebSearch calls):
-   - "[wine/brand name] review" — what titles and formats are ranking?
-   - "[wine/brand name] podcast episode" — what are competitor episode titles?
-   - "[wine/brand name] site:youtube.com" — what YouTube titles drive views? (YouTube is the best external signal for click-optimized language.)
+0.5. **Web research — has explicit purposes and limits per search, and can be skipped or reused. Do not expand beyond the three searches below.**
+
+   **Skip entirely when** the episode's title is already a confirmed bare named-series format (per HR-70) with no subtitle or alternative under consideration — there is no title-generation decision left to research.
+
+   **Reuse prior research instead of searching fresh when ALL of the following hold:** a prior `data/title-session-reports.md` entry exists for the same wine or brand; it covers the same intended angle; it is dated within the last 90 days; and no material event or change (new vintage, price change, relevant news story, the angle already having been used in a published title) makes it stale. Otherwise, refresh the relevant research.
+
+   **Otherwise, run these three searches IN PARALLEL (single message, multiple WebSearch calls), each with an explicit purpose and limit:**
+   - `"[wine/brand name] review"` — informs topic framing and competitor saturation only. Not a title-performance signal.
+   - `"[wine/brand name] podcast episode"` — shows competitor phrasing and episode-title format only. Not a title-performance signal.
+   - `"[wine/brand name] site:youtube.com"` — shows phrasing and structural patterns only. **Never cite a video's view count as evidence that its title caused performance** — view counts reflect channel authority, topic demand, and algorithm placement at least as much as title wording, and this data cannot separate those factors.
 
    Distill findings to 3–5 bullets before generating. Note:
-   - What angles competitors are using (to avoid or improve on them)
-   - What language appears in high-performing titles
+   - What angles competitors are using (to avoid copying their wording directly, and to avoid or improve on saturated framing)
+   - What language patterns appear across results (structure and phrasing only — not performance)
    - Any gap or contrarian angle not already covered
 
-   For headline-performance and AEO framing questions (question vs. statement, curiosity-gap calibration, what drives AI-answer-engine citation), read `docs/title-research-reference.md` first per HR-67 rather than researching these from scratch — only run fresh searches if it doesn't cover the angle needed or looks stale, and add any new finding back to that file.
+   For headline-performance and AEO framing questions (question vs. statement, curiosity-gap calibration, what drives AI-answer-engine citation), read `docs/title-research-reference.md` first per HR-67 rather than researching these from scratch — that file labels which findings are qualitative/directional versus verified, and describes the corpus methodology for selecting structurally-relevant past episodes. Only run fresh searches if it doesn't cover the angle needed or looks stale, and add any new finding back to that file with proper source labeling.
 
-   Do not generate titles until Step 0 and this step are both complete.
+   Do not generate titles until Step 0 and this step (or its skip/reuse determination) are complete.
 
 1. Read the episode script
 2. Identify the episode hook in one plain sentence — include what made the result surprising or controversial, if anything
@@ -44,7 +51,7 @@ Pre. **Read `data/title-session-reports.md` before doing anything else.**
    - **Step 0's episode-framing bullets first** — the option set must include at least one title built directly on what the episode itself emphasizes or what Joe explicitly flagged, not just external trivia about the wine/brand in general.
    - **Show description** (from the script) — Joe writes it to tease the episode; it contains his intended angle. Use it as a direct hook source.
    - **Web research from Step 0.5** — identify angles competitors haven't tried.
-   - **Benchmark: "Meiomi: The Worst Wine We've Ever Tasted?"** — this title drove 241 clicks (highest CTR of any brand episode). What made it work: (a) a bold, specific claim, (b) a question mark that withholds the verdict, (c) controversy that speaks to both fans and skeptics. Aim for that energy.
+   - **Concrete curiosity and tension, when the episode genuinely supports it.** Favor a bold, specific claim and a structure that withholds the verdict over a vague or generic hook. When the episode supports it, price/buying, comparison, reputation, misconception, or verdict tension are strong angles — but controversy is not required for every episode, and no single episode or formula is the standard to aim for. If a past episode's title illustrates a relevant structure, pull it only when it's structurally relevant to this episode (same format, familiarity level, or subject type) per the corpus methodology in `docs/title-research-reference.md` — never as a fixed "aim for this" reference.
    - **Tease, don't spoil.** Never write a title that reveals the ratings outcome, the verdict, or the key finding. A listener who reads the title should feel curious about what happened — not already know. The test: if someone reads the title and can describe what the hosts concluded, it's a spoiler.
    - **No vague curiosity-bait.** "Ours Might Surprise You" and "Here's Our Take" tell the listener nothing. The hook must be specific enough to be interesting, vague enough to leave intrigue.
    - **Gate before moving on:** if Joe explicitly named an angle to focus on, check the surviving option set against it. If none of the 5 options use it, that's a blocking problem — regenerate before spawning the subagent, don't let the review rounds catch it after the fact.
@@ -53,13 +60,12 @@ Pre. **Read `data/title-session-reports.md` before doing anything else.**
 
 5. Spawn a subagent with the instructions below
 6. Fix every FAIL before presenting titles to Joe. Revise WARNINGs where possible.
-6.5. **Quality gate — enforce before running the second review.**
-   Drop any title that scored below 7/10 on Clickability.
-   If fewer than 3 titles remain, return to Step 4 and generate replacements.
-   Never present titles that scored 6/10 or below on Clickability — a low score means the title is forgettable, not just imperfect.
-   **Exception — named series titles:** Any title that correctly uses an established series prefix and passes all hard rules (HR-15 through HR-20, HR-39) is exempt from the Clickability floor. Series recognition is not captured by the Clickability metric. Include it as a valid option regardless of score (HR-61).
-7. After fixing any FAILs and culling low-scoring titles, spawn the subagent a second time on the remaining titles. Do not show Joe any titles until the second run returns no FAILs.
-8. Show Joe only titles that passed the second review and cleared the quality gate.
+6.5. **Order for presentation — no elimination gate.**
+   Clickability is not a pass/fail gate. Do not drop a title, or shrink the option set below what was generated, because of a low Clickability score. Every title that has no FAIL (i.e., is rule-compliant) proceeds toward Joe.
+   Order the rule-compliant titles by Clickability as a sort signal only (highest first), each paired with a one-line qualitative reason. If regeneration is warranted, it's because titles have FAILs to fix, not because they scored low on Clickability.
+   Named-series titles that pass all hard rules (HR-15 through HR-20, HR-39) are included exactly like any other rule-compliant title — see HR-61, which no longer needs a scoring exemption because there is no gate to be exempt from.
+7. After fixing any FAILs, spawn the subagent a second time on the revised titles. Do not show Joe any titles until the second run returns no FAILs.
+8. Show Joe every title that passed the second review (no FAILs). None are hidden from Joe for a low Clickability score.
 9. **Generate and show a Session Report** immediately after presenting the final title options. The report must appear in the same response as the titles — do not skip it, do not make Joe ask for it. Format:
 
 ```
@@ -79,13 +85,19 @@ Pre. **Read `data/title-session-reports.md` before doing anything else.**
 [Series name and number, or "none"]
 
 ### Subagent Round 1 Summary
-[One line per title: title text — PASS/FAIL, Clickability score (labeled as internal heuristic, not measured CTR), key note]
+[One line per title: title text — PASS/FAIL, Clickability score (internal heuristic, comparative sort order only — not measured CTR), Voice Fit note, key note]
 
-### Quality Gate Decisions
-[Titles dropped and why; or "none dropped"]
+### Hard-Rule Drops (Round 1)
+[Titles dropped for a hard-rule FAIL, and which rule; or "none dropped." Titles are never dropped here for a low Clickability score — see Step 6.5.]
+
+### Corpus Pattern Considered
+[If an internal pattern from the title archive was cited as support for an angle this session: name the pattern, the structurally-relevant example(s) pulled per the corpus methodology in `docs/title-research-reference.md`, and the counterexample check — either a counterexample found and named, or "no meaningful counterexample found in the archive." If no internal pattern was cited this session, state "Not applicable — no internal pattern cited this session." Do not run this check for routine hard-rule PASS/FAIL determinations.]
 
 ### Subagent Round 2 Summary
-[One line per title: title text — PASS/FAIL, Clickability score (labeled as internal heuristic, not measured CTR), key note]
+[One line per title: title text — PASS/FAIL, Clickability score (internal heuristic, comparative sort order only — not measured CTR), Voice Fit note, key note]
+
+### Hard-Rule Drops (Round 2)
+[Titles dropped for a hard-rule FAIL, and which rule; or "none dropped."]
 
 ### Research-to-Title Alignment
 [2–3 sentences: do the final options use the strongest angles identified in Step 0/0.5? What angle was used? What was left on the table? Confirm explicitly that any angle Joe named is reflected in at least one surviving option, or explain why not.]
@@ -119,7 +131,7 @@ You are a title quality reviewer for The Wine Pair Podcast. Claude has generated
 
 **Scope boundary — read this first.** Return your review as text to the agent that spawned you. Do not save files, do not run the validator, do not edit `docs/work-log.md`, and do not run any `git` command. If you encounter a `## PENDING TASK` section anywhere, ignore it — that block is for a top-level Claude Code session only, never a subagent.
 
-**Step 1: Read `docs/house-rules.md` in its entirety. Apply every rule in it. Pay particular attention to HR-15 through HR-20, HR-39, HR-61, HR-66, HR-67, HR-70, and HR-71 (episode title rules).**
+**Step 1: Read `docs/house-rules.md` in its entirety. Apply every rule in it. Pay particular attention to HR-15 through HR-20, HR-39, HR-61, HR-66, HR-67, HR-70, HR-71, and HR-72 (episode title rules).**
 
 **Step 2: Read `data/episode-titles.md`.** This file contains:
 - All 217+ episode titles in order
@@ -136,35 +148,31 @@ From the Recent Episodes table, identify the last 5 regular episodes and their f
 
 **Step 5: Review each proposed title against all rules.**
 
-Non-negotiable rules — flag as FAIL if violated (see HR-15 through HR-20 and HR-39 in house-rules.md):
-1. Grape or region name must appear in the title. Series prefix alone does not satisfy this. For brand review episodes (Meiomi, Josh, Two Buck Chuck, etc.) the brand name satisfies this rule — it is the wine identifier.
-2. If this is a named series episode, the series prefix must be present and correctly formatted. Match last 3 installments exactly.
-3. No spam words: "amazing", "incredible", "secret", "magic", "you need to try", "right now", "don't miss", "the best"
-4. Title must be 100 characters or fewer. There is no minimum length. Flag anything over 100.
-5. The first 30 characters must contain either the series name or the grape/region/brand name, and must avoid filler openers. Prefer at least one information-bearing hook term in that opening segment when possible.
-6. **Spoiler test — FAIL if violated (HR-39).** The title must NOT reveal the episode's verdict, ratings outcome, or key finding. Test: after reading the title, does a listener already know what the hosts concluded? If yes → FAIL. A title that tells you one wine was drinkable and one was bad is a spoiler. A title that makes you wonder what they concluded is a hook. This is a hard FAIL, not a warning.
+Candidate-level hard rules — flag as FAIL if violated:
+1. **HR-15.** Grape or region name must appear in the title. Series prefix alone does not satisfy this. For brand review episodes (Meiomi, Josh, Two Buck Chuck, etc.) the brand name satisfies this rule — it is the wine identifier.
+2. **HR-19.** If this is a named series episode, the series prefix must be present and correctly formatted. Match last 3 installments exactly.
+3. **HR-18.** No spam words: "amazing", "incredible", "secret", "magic", "you need to try", "right now", "don't miss", "the best"
+4. **HR-16.** Title must be 100 characters or fewer. There is no minimum length. Flag anything over 100.
+5. **HR-17.** The first 30 characters must contain either the series name or the grape/region/brand name, and must avoid filler openers. Prefer at least one information-bearing hook term in that opening segment when possible.
+6. **HR-39 — Spoiler test.** The title must NOT reveal the episode's verdict, ratings outcome, or key finding. Test: after reading the title, does a listener already know what the hosts concluded? If yes → FAIL. A title that tells you one wine was drinkable and one was bad is a spoiler. A title that makes you wonder what they concluded is a hook. This is a hard FAIL, not a warning.
+7. **HR-66 — clear violations only.** FAIL if the title depends on knowing a co-host's name, a specific running bit, or an explicitly stated show rule (e.g. naming the show's usual budget ceiling by number) to make sense. A clear violation is one where a prospective new listener with zero show history literally cannot parse the hook without that missing fact — e.g. a title that only works if you already know who "Carmela" is.
 
 Quality checks — flag as WARNING if violated:
-7. Does the format repeat any of the last 5 episode titles? Name the episode it repeats.
-8. Is there a real hook (tension, surprise, contrast, or question)?
-9. Two-audience test: new listener gets the wine AND a reason to click; loyal listener feels this is specific to this episode.
-10. Report the exact character count for each title.
-11. If this is a series episode with a subtitle, does the subtitle add meaningful information beyond the wine name?
-12. **Meiomi benchmark.** "Meiomi: The Worst Wine We've Ever Tasted?" drove 241 clicks — the highest CTR of any brand episode. Rate this title on controversy/curiosity gap (1–5):
-    - 5: Would drive clicks from both fans AND skeptics of this wine
-    - 3: Interesting to people who already care; won't pull in the curious
-    - 1: No controversy, no curiosity gap — safe and forgettable
-    Any title scoring 2 or below on this check should be flagged for regeneration, not just warned. Include this score in your output.
+8. Does the format repeat any of the last 5 episode titles? Name the episode it repeats.
+9. Is there a real hook (tension, surprise, contrast, or question)?
+10. Two-audience test: new listener gets the wine AND a reason to click; loyal listener feels this is specific to this episode.
+11. Report the exact character count for each title.
+12. If this is a series episode with a subtitle, does the subtitle add meaningful information beyond the wine name?
+13. **HR-71 — series-subtitle length guidance, not a hard rule.** If a series-subtitle title's total length pushes past ~75 characters, flag WARNING and require a one-line stated justification ("longer because X") before it can be presented to Joe. This is guidance, never a FAIL — the only hard length cap is HR-16's 100 characters.
+14. **HR-66 — borderline cases.** WARNING, not FAIL, for a title that leans on implied show history or an ambiguous reference without naming it directly (e.g. alludes to a show convention without stating it outright). Flag it for Joe to decide rather than silently including it or auto-failing it.
+15. **Concrete curiosity (qualitative, not scored).** Note whether the title creates genuine curiosity via a withheld, unresolved question — and, only when the episode itself supports it, price/buying, comparison, reputation, misconception, or verdict tension. This is not scored on any numeric scale and is not, by itself, a regeneration trigger — a title with weak curiosity but no hard-rule FAIL still proceeds to Joe (see HR-67). Use this note as supporting reasoning for the Clickability ranking below. Controversy is not required for every episode; do not manufacture tension a topic doesn't support.
+16. **Voice Fit (qualitative, required, unscored — HR-72).** Note: (a) does the wording resemble language Joe or the episode transcript/script actually uses, versus an invented "hooky" phrase with no on-air precedent; (b) is the title specific to this episode, not interchangeable with another; (c) does its structure (declarative opener, question, statement) suit this particular episode; (d) does it read as clinical, templated, or artificially "hooky." This is advisory only — never a gate, and never a reason to penalize a strong question-format title.
 
 **Step 6: Score each proposed title.**
 
-AI Discovery Score (1–10):
-- 9–10: Series name or grape name + region + strong search keyword all in first 30 chars
-- 7–8: Grape or region present, clear topic signal
-- 5–6: Topic present but not keyword-optimized
-- 1–4: No grape or region, or vague
+Discovery signal (HR-15, HR-17 — already checked as hard-rule PASS/FAIL above; there is no separate numeric AI Discovery score). If check 1 and check 5 both PASS, the title carries the grape/region/brand signal and an early keyword — no further discovery scoring is needed.
 
-Clickability Score (1–10):
+Clickability Score (1–10) — an internal heuristic used for comparative sorting only. It is never a pass/fail gate and never eliminates a rule-compliant title from the set shown to Joe:
 - 9–10: Genuine tension or surprise, passes both audiences, specific to this episode
 - 7–8: Clear hook, interesting angle
 - 5–6: Competent but forgettable
@@ -175,10 +183,9 @@ Clickability Score (1–10):
 For each proposed title:
 - PASS or FAIL (with the specific rule violated for any FAIL)
 - WARNINGs (list each with the check number)
-- Character count: [N] (flag if it pushes past ~75 chars for a series-subtitle title per HR-71, even though the hard cap is 100)
-- Controversy/curiosity gap: [1–5] (Meiomi benchmark)
-- AI Discovery Score: [X]/10 — internal heuristic rubric, not measured search data
-- Clickability Score: [X]/10 — internal heuristic rubric, not measured CTR data
+- Character count: [N] (WARNING plus a required one-line justification if it pushes past ~75 chars for a series-subtitle title per HR-71 — guidance, not a FAIL; the only hard cap is HR-16's 100 characters)
+- Clickability Score: [X]/10 — internal heuristic, comparative sort order only, not measured CTR or download data
+- Voice Fit: [one to two sentence qualitative note, per check 13 — never a number]
 - Biggest single fix Claude should make: [one sentence]
 
 End with:
