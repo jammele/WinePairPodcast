@@ -48,6 +48,52 @@ All dated entries below are preserved unchanged as the historical record of the 
 ---
 
 ## Episode Entries
+### Ep232: Schiava (Alois Lageder + Elena Walch)
+**Date:** 2026-08-22
+**Series:** Italian Wine Adventure #26
+**Joe's selection:** Italian Wine Adventure #26: Schiava! Sommeliers Love This Chillable Red! (Joe's own reworked phrasing of his working title, submitted after Claude flagged that the original — "The Chillable Red Sommeliers Love!" — repeated "Chillable Red" almost verbatim from Ep217's Frappato subtitle. Joe confirmed he's fine with the residual echo: "I am ok with it. I think it is different enough that it doesn't feel like a total repeat, and the emphasis on Sommeliers plus Chillable Red I think will attract listeners.")
+
+**Step 0 Research Findings:**
+- Episode frames Schiava as wine's next "it" wine — trendy, buzzing, becoming a sommelier favorite ("the white wine drinker's red wine," compared to Pinot Noir/Gamay) — within the broader chillable-red-wine trend (alongside Gamay, Frappato, Grignolino, Sangiovese, Zweigelt, Pinot Noir).
+- Episode's own dominant content is a dramatic reputation arc: ~70% of Alto Adige plantings pre-1970s → dubbed a "garbage grape" during a cheap mass-production era for the German market → collapsed to ~10% → now revived by quality-focused growers. The name also literally translates to "slave," tied to pergola vine-training history.
+- Elena Walch's daughter Karoline is quoted calling it "a very honest wine," "a social wine," summed up as "Schiava is what it is" — Joe/Carmela riff on this as "it's not that deep."
+- No twist in the tasting: 2024 Alois Lageder Schiava (Joe 7/10, Carmela 8/10) and 2022 Elena Walch Schiava (Joe 7/10, Carmela 8/10) — both straightforwardly positive.
+
+**Step 0.5 Web Research Findings:**
+- Competitor content (Sip with Nik newsletter) already uses a direct comparison framing: "Schiava > Beaujolais or Pinot Noir."
+- "Chillable"/"alpine red"/"elegant" wording is common across wine media (Wine Folly's "cotton candy wine" piece, a YouTube video titled "Schiava: The Discreet Elegance of Alpine Red Wine") — generic externally, and also already used internally for Frappato (Ep217).
+- The 1970s-decline-then-renaissance narrative is a widely repeated industry story externally, but it's also the episode's own emphasized content; no competitor title found built around the literal "garbage grape" phrase or the grape name's translation ("slave"). No competitor title found using "not that deep" framing either.
+
+**Episode Hook:** A once-dominant Alto Adige grape that got dubbed a "garbage grape" during a mass-production collapse is now being revived and embraced by sommeliers as the trendy "it" chillable red — both bottles tasted lived up to it with no drama (Joe 7/7, Carmela 8/8).
+
+**Subagent Round 1 Summary (5 candidates):**
+- `Italian Wine Adventure #26: Schiava!` (bare) — PASS, Clickability 3/10, no hook
+- `...The Chillable Red Sommeliers Love!` (Joe's original working title) — PASS, Clickability 7/10, WARNING: repeats "Chillable Red" from Ep217's Frappato subtitle almost verbatim, two IWA installments back
+- `...Sommeliers' New Favorite 'It' Wine` — PASS, Clickability 7/10, WARNING: reads as trade-press copy, not grounded in episode's own language
+- `...The 'Garbage Grape' Making a Comeback` — PASS cleanly, Clickability 8/10, no warnings, strongest of the round
+- `...It's Not That Deep` — PASS, Clickability 6/10, WARNING: misread risk (could read as a knock on the wine's quality/complexity rather than the intended "no drama" meaning)
+
+**Revisions before Round 2:** Replaced the generic "it wine" candidate with `...The White Wine Drinker's Red Wine` (a phrase spoken verbatim in Joe's own script) and softened the "not that deep" candidate to `...Turns Out It's Not That Deep` to reduce misread risk. Joe's own working title was carried forward unchanged into Round 2 with the repeat-angle flag noted, since it's his draft to revise or keep.
+
+**Subagent Round 2 Summary:** All 5 candidates (including the two revised ones) passed clean with no FAILs. `...The White Wine Drinker's Red Wine` Clickability rose to 7/10 (fixed the "clinical" flag — grounded in verbatim episode language). `...Turns Out It's Not That Deep` Clickability held at 6/10 (misread risk softened, not fully closed — reviewer's optional suggestion was to swap "Deep" for non-tasting-vocabulary wording, not required). `...The 'Garbage Grape' Making a Comeback` held at 8/10, strongest option both rounds.
+
+**Final presented options (Clickability order):**
+1. `Italian Wine Adventure #26: Schiava! The 'Garbage Grape' Making a Comeback` (74 chars, Clickability 8/10) — reviewer's top pick
+2. `Italian Wine Adventure #26: Schiava! The White Wine Drinker's Red Wine` (70 chars, Clickability 7/10)
+3. `Italian Wine Adventure #26: Schiava! The Chillable Red Sommeliers Love!` (71 chars, Clickability 6/10) — Joe's original working title
+4. `Italian Wine Adventure #26: Schiava! Turns Out It's Not That Deep` (65 chars, Clickability 6/10)
+5. `Italian Wine Adventure #26: Schiava!` (36 chars, Clickability 5/10, bare)
+
+All scores above are the internal review-subagent heuristic, not measured CTR data.
+
+**Joe's correction (2026-08-22):** Rather than picking from the 5 presented, Joe submitted his own reworked phrasing of his original working title (option 3) — "Sommeliers Love This Chillable Red!" instead of "The Chillable Red Sommeliers Love!" — after Claude flagged the Frappato-subtitle repeat. Claude re-checked the new phrasing against hard rules (clean PASS — HR-15/16/17/18/39/66 all clear, 72 chars) and flagged plainly that the reordering doesn't remove the "Chillable Red" repeat, just changes the sentence shape. Joe confirmed he's comfortable with the residual echo and prefers the "Sommeliers... Chillable Red" emphasis for listener appeal. Pattern to note: Joe will sometimes keep a flagged repeat deliberately rather than switch to an unflagged option, when he judges the phrase itself (not its novelty) is what will attract listeners — don't assume a flagged repeat is automatically disqualifying from his perspective once he's seen the concern named.
+
+**Research-to-Title Alignment:** The two reviewer-favored options (Garbage Grape Comeback, White Wine Drinker's Red Wine) used the episode's own most-emphasized content and verbatim script language, avoiding both the internal Frappato repeat and generic external trend-framing. Joe ultimately chose to keep his own angle (sommeliers + chillable red) with the repeat concern disclosed and accepted, not the reviewer's top-scored pick — consistent with the Ep226/Ep229 pattern of Joe sometimes preferring his own voice/angle over the highest-scored option.
+
+**AEO Discoverability:** No evidence-based differentiation among the candidates — all identically carry "Italian Wine Adventure #26: Schiava" in the first 30 characters; subtitle wording doesn't add distinct query-matching terms beyond the grape name itself.
+
+---
+
 ### Ep229: Vermentino (ColleMassari Melacce + Tommasi Poggio al Tufo)
 **Date:** 2026-07-25
 **Series:** Italian Wine Adventure #25

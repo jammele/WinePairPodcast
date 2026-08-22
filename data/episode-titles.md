@@ -1,9 +1,9 @@
 # Episode Title Archive — The Wine Pair Podcast
 
-**Last updated:** 2026-08-21 (through Ep231; Ep218, Ep223, Ep230, and Ep231 added from confirmed repository evidence; Ep228 previously logged retroactively)
+**Last updated:** 2026-08-22 (through Ep232, confirmed via `/review-titles`)
 **Maintained by:** Claude — add each confirmed title here before committing episode work.
 
-**Latest confirmed title:** Ep231: Costco Kirkland Signature Châteauneuf-du-Pape Challenge! (Ep230, a Meet the (Wine) Makers special, precedes it numerically and was confirmed directly from `outputs/episodes/ep230-wendelin-vines.md`.)
+**Latest confirmed title:** Ep232: Italian Wine Adventure #26: Schiava! Sommeliers Love This Chillable Red! (confirmed via `/review-titles`, 2026-08-22.)
 
 **Unresolved archive gap:** Ep220's episode number is not confirmed. `outputs/episodes/ep220-221-meet-the-makers-23-sake.md` (Special Episode! Meet the (Wine) Makers #23: Jun Kono and Leo Lê) is labeled "TBD (220 or 221)" in its own file. Ep221 is already confirmed as a different episode below (They Make Wine in Lebanon...). Do not infer or assign this episode's number; it requires Joe's confirmation.
 
@@ -41,6 +41,7 @@ Format: `Italian Wine Adventure #[N]: [Wine Name]!` (colon after number in later
 - Ep207: Italian Wine Adventure #23: Valpolicella Ripasso — The Best Under-$25 Italian Red You're Not Drinking
 - **Ep217: Italian Wine Adventure #24: Frappato! The Chillable Red Wine!** *(confirmed 2026-05-09)*
 - **Ep229: Italian Wine Adventure #25: Vermentino! Summer Sipper Contender?** *(confirmed 2026-07-25)*
+- **Ep232: Italian Wine Adventure #26: Schiava! Sommeliers Love This Chillable Red!** *(confirmed 2026-08-22)*
 
 ### WTF is [Wine]?
 Format: `WTF is [Wine Name]?` — question mark at end, capitalized WTF, wine name as proper noun
@@ -186,6 +187,7 @@ Ep220 is excluded: its episode number is unresolved (see the archive-gap note ab
 
 | Ep | Title | Format pattern |
 |---|---|---|
+| 232 | Italian Wine Adventure #26: Schiava! Sommeliers Love This Chillable Red! | Series (IWA) + subtitle statement |
 | 231 | Costco Kirkland Signature Châteauneuf-du-Pape Challenge! | Series (Costco Kirkland Challenge) |
 | 230 | Special Episode! Meet the (Wine) Makers #25: Brian and Jessica Smith from Wendelin Vines | Series (Makers) + people/winery subtitle |
 | 229 | Italian Wine Adventure #25: Vermentino! Summer Sipper Contender? | Series (IWA) + subtitle question |
@@ -200,7 +202,6 @@ Ep220 is excluded: its episode number is unresolved (see the archive-gap note ab
 | 219 | Is Two Buck Chuck Actually Terrible, or Is That Just Wine Snob Talk? | [Open accusation question] |
 | 218 | WTF is Malvasia? | Series (WTF is [Wine]?) |
 | 217 | Italian Wine Adventure #24: Frappato! The Chillable Red Wine! | Series (IWA) + subtitle |
-| 216 | Viura: The Great White Wine Hiding in Rioja's Red Wine Shadow! | [Grape]: [Metaphor-driven discovery] |
 
 ---
 
@@ -435,3 +436,4 @@ Ep228: Special Episode! Meet the (Wine) Makers #24: High-Altitude Excellence: Di
 Ep229: Italian Wine Adventure #25: Vermentino! Summer Sipper Contender?
 Ep230: Special Episode! Meet the (Wine) Makers #25: Brian and Jessica Smith from Wendelin Vines
 Ep231: Costco Kirkland Signature Châteauneuf-du-Pape Challenge!
+Ep232: Italian Wine Adventure #26: Schiava! Sommeliers Love This Chillable Red!
