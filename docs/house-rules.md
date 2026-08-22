@@ -75,95 +75,89 @@ Every spoke page and blog post draft must include an image prompt. It must speci
 
 ## Cover Art Rules
 
-**HR-9: Follow the ep215 prompt structure — always.**
-Brief, direct, one paragraph per character, then style block. Do not use a long multi-section template. The ep215 approved prompt is the reference format.
+**Governing principle (applies throughout this section):** The confirmed episode title and central episode content define what the artwork is about. Visual appeal, humor, emotion, and cleverness determine how powerfully that idea is expressed. Production simplicity is a preference when creative options are otherwise comparable, not the primary creative objective. The artwork does not have to illustrate every word of the title literally, but its relationship to the title's central promise, question, comparison, contrast, or tension must be immediate and defensible. An attractive concept cannot compensate for title drift; a title-faithful concept still needs a compelling visual idea. The documented problem is title drift, not excessive literalism. Do not overcorrect toward forcing every title word into the image.
+
+**HR-9: Cover art ChatGPT prompts use four required sections plus one optional section, with no repeated instructions.**
+The four required sections are: (1) style and recurring character identity, (2) scene, (3) composition and lighting, (4) negative constraints. A fifth section, hand and anatomy instructions, is optional and included only when hands, arms, or limb choreography materially affect the scene. See the standard format in `.claude/commands/generate-cover-art.md`. This replaces two prior, conflicting instructions: a "brief, one paragraph per character" rule that was never actually followed in practice, and a long multi-section template that repeated the same instruction (brightness, realism bans, for example) in multiple places. The concise structured format is the single standard going forward. Do not revert to either prior version.
 
 **HR-10: Wine bottle always has a readable label.**
 The label must show the wine name (e.g., "FRAPPATO", "RIOJA"). Never write "No wine labels" anywhere in a cover art prompt — this removes the essential identifying prop.
 
 A bottle's label may include a specific producer/brand name only if that name is itself named in the confirmed episode title (e.g., "Kirkland" in a Costco Kirkland Signature Challenge episode). Otherwise, label the bottle with the general wine name/type only — not a competing producer's name that never appears in the title. Named example: Ep231 — the budget bottle is labeled "KIRKLAND SIGNATURE CHÂTEAUNEUF-DU-PAPE" because Kirkland is in the title; the comparison bottle is labeled just "CHÂTEAUNEUF-DU-PAPE," not "DOMAINE DU VIEUX LAZARET CHÂTEAUNEUF-DU-PAPE," because that producer is never named in the title.
 
-**HR-11: Background is always simple, dark, and warm — not near-black.**
-Always "rich warm burgundy background" or "simplified wine bar setting." Never "deep burgundy" alone — this tends to go near-black. Never name a specific outdoor location: no "Sicilian patio", no "outdoor terrace", no "vineyard". Outdoor scenes generate complex landscapes that shrink the characters.
+**HR-11: Background supports the concept: simple by default, controlled always, never dim.**
+Simplicity is the default. The background exists to support the title and the selected concept, not to compete with it. It must stay controlled and subordinate to the focal idea. Indoor and outdoor settings are both allowed. A contextual setting (heat, refreshment, dining, shopping, travel, celebration, season, or another setting central to the title) may be proposed directly, without needing Joe's pre-authorization, when that context is central to what the title is about. Confirmed useful on Ep229, where an outdoor summer setting was needed to actually deliver "summer sipper": a default indoor scene would have undercut the title's own point.
 
-A color/mood descriptor alone (e.g., "warm, luminous amber-red tones") is not a reliable lever against the image model's default toward dim, shadowy backgrounds — confirmed on Ep231, where that exact wording still rendered too dark on the first pass and required a manual "lighten the background" follow-up prompt. Every cover art prompt must include an explicit brightness instruction as its own line, separate from color: in the Composition section, add "Background is brightly and evenly lit — no dim, shadowy, or moody lighting," and in the Negative Prompt, add "No dim lighting. No moody atmosphere. No dark background shadows." Color sets the palette; brightness has to be stated separately or the model defaults dark.
+Whatever the setting, it must remain brightly and evenly lit. Dim, muddy, shadowy, moody, or near-black rendering is prohibited regardless of setting. Both indoor and outdoor scenes have hit this failure mode before (Ep231's indoor render defaulted dark on the first pass; earlier outdoor attempts generated complex landscapes that shrank the characters). State brightness explicitly in the prompt as its own line: a color/mood descriptor alone (e.g. "warm, luminous amber-red tones") is not a reliable lever against the model's default toward dim backgrounds. When an outdoor or more detailed setting is used, keep it simple and secondary (soft, blurred, unnamed location) so it can't shrink or upstage the characters.
+
+Consistency across episodes comes primarily from the recurring characters, the cartoon style, visual quality, and the show's warm, approachable tone, not from a fixed background. This rule is not a license for more elaborate backgrounds; a controlled, simple background stays the default whenever the concept doesn't specifically need more.
 
 **HR-12: Characters fill 70%+ of frame.**
 State explicitly in every prompt: "Characters fill at least 70% of the frame, waist-up, close to the viewer." If not stated, the model will shrink characters.
 
-**HR-13: Cover art concepts must always be scored before showing Joe.**
-Score all concepts on 5 criteria (10 points each, total out of 50):
-1. Visual Arrest — eye-catching at ~150px thumbnail?
-2. Scroll-Stop Power — would someone stop scrolling in Apple Podcasts or Spotify before reading the title? Requires one sentence explanation from the subagent.
-3. Episode Specificity — is this scene specific enough that it could only work for this episode? "Two people looking at a bottle" scores 1. A scene that couldn't exist without knowing this episode's hook scores 9-10.
-4. Concept Originality — fresh structural type vs. recent episodes AND current session batch?
-5. Character Expressiveness — are Joe and Carmela doing something specific, not just posing?
+**HR-13: Cover art concepts pass four hard gates, then get a concise comparative judgment. No numerical score.**
+Every concept must pass all four gates before it can be presented to Joe:
+1. **Title Connection** (HR-54).
+2. **Episode-Content Fidelity** (HR-54).
+3. **Spoiler Protection** (HR-40).
+4. **Thumbnail Comprehension.** The central visual idea, action, and emotion are understandable at ~150px; no tiny text, no subtle inference required, no competing focal points.
 
-Never present concepts without scores and a confirmation block.
+Genericness (a concept that could fit almost any wine episode) is not a fifth gate. It is a signal to recheck gates 1 and 2, per HR-54.
 
-Required display contract for any concepts shown to Joe:
-- Concept heading format: **Concept [Letter]: [Name] - [N]/50**
-- Recommendation line format: **Recommended: Concept [X] - [N]/50**
+For concepts that pass all four, compare qualitatively. No score, no numerical title-fidelity threshold:
+- **Visual Appeal:** attractive, funny, pleasurable, appetizing, surprising, emotionally engaging, aspirational, or playfully tense?
+- **Thumbnail Clarity:** how quickly does the focal idea register?
+- **Production Risk:** likely to render cleanly, or does it involve fragile anatomy, overlapping actions, excessive props, or background complexity? Production risk is normally a tiebreaker between otherwise-close concepts. It should not defeat a substantially stronger creative idea unless the rendering risk is serious.
 
-Title alignment is a binary PASS/FAIL gate — not a scored criterion. Gate test: does the image actively contradict the title OR reveal the verdict? If no to both, it passes. Do not score it.
+**This comparison is a judgment aid, not a validated predictor of listener behavior.** No concept-comparison method used here, scored or not, has been shown to predict how listeners respond to published artwork. It exists to help Joe choose quickly among concepts that already passed the hard gates.
+
+Display contract: **Concept [Letter]: [Name]** heading, no score attached. Recommendation line: **Recommended: Concept [Letter]**, followed by one concise, episode-specific reason.
 
 **HR-14: Cover art character bible.**
 Joe: middle-aged man, salt-and-pepper hair, full salt-and-pepper beard, black rectangular glasses, dark navy pullover. Big friendly grin, mischievous curiosity, oversized expressive hands.
 
 Carmela: middle-aged woman, medium-length warm brown hair, gold hoop earrings, dark top. Always theatrical — delighted, sharp, bright amused smile. Never stern or neutral.
 
-**HR-14a: Cover art scenes must start from a specific physical action — not a pose.**
-Scene descriptions must begin with a sentence in the form: "Joe is [action verb]ing [something] while Carmela [action verb]s [something]." The verbs "holds," "looks at," "examines," "leans toward," and "gestures at" are banned as the opening action — they describe poses, not actions. A concept where the only verbs in the scene are from this banned list is too static and must be revised before it reaches Joe.
+**Joe and Carmela should normally read as sharing the joke, the discovery, the surprise, or the wine experience together.** Never stage them as hostile adversaries, and never stage one attacking, humiliating, or coercing the other. Playful comparison or disagreement is allowed when the warmth of their relationship stays clear (confirmed on Ep227, where Joe rejected a concept that read as Carmela attacking him: "please do not make it look like Carmela and I are having a fight, that would kill the vibe"). When an external force or third party is central to the title's metaphor, its ownership and direction must be visually unambiguous, so any aggression or tension reads as coming from outside the couple, not between them.
 
-**HR-53: Core thesis gate is mandatory before concept generation.**
-Before writing the thesis sentence, list every substantive clause of the confirmed title separately — do not treat a multi-clause title (e.g. a series prefix plus a two-part subtitle) as a single unit. For each clause, note how much actual episode content supports it: a clause backed by a whole segment, a repeated bit, or several named examples outweighs a clause that exists only as a single word choice in the title. Also check this conversation for any content-focus instruction Joe has already given for this episode, in any earlier step this session (title work, script notes, etc.) — weight it at least as heavily as the title itself, and do not let it lapse just because work has moved to a different command.
+**HR-14a: Cover art scenes favor active visual situations over static posing.**
+Prefer a concept where something is visibly happening over one that's just a pose. The verbs "holds," "looks at," "examines," "leans toward," and "gestures at" describe poses, not actions, and a concept built entirely from them is usually too static. This is a preference to weigh when comparing concepts (see HR-13), not a mandatory sentence formula every scene must open with. Do not force elaborate physical comedy onto a concept where a quieter, more static moment is genuinely the strongest idea for that title.
 
-The thesis sentence must be anchored in the clause(s) with the most supporting content — it may not be built around a single low-content clause in isolation just because that clause is more concrete or easier to storyboard than the others. This is a named failure mode, not a hypothetical: on Ep229 ("...Summer Sipper Contender?"), Claude built every concept around "Contender" (a one-word clause with no dedicated episode content) while dropping "Summer Sipper" (the episode's entire cold-open segment, reinforced by 8 named wines, and something Joe had already told Claude directly to focus on earlier in the same session) — because a competitive/measuring mechanic was easier to visualize than heat or refreshment. Do not repeat this: when one clause is more novel or more visualizable than another, that is not evidence it's the dominant one.
+**HR-53: The visual target is the source of concept generation, not a filter applied afterward.**
+Before generating any concept, write a compact visual target (see Step 2 of `.claude/commands/generate-cover-art.md`): the confirmed title, the central title promise, how the episode explores it, the desired visual response, the spoiler boundary, and up to 3 essential visual anchors. Every concept must be generated from this target directly.
 
-Every concept must visibly express the resulting thesis. If a concept does not express it, reject it before presentation. The thesis sentence must create curiosity and must not reveal the verdict. Do not use words like "buy-worthy," "worth it," "better than," "winner," or "delicious" in the thesis.
+For an ambiguous or multi-clause title, identify the dominant promise first. Do not build every concept around whichever clause is easiest to visualize just because it's more concrete or novel than the others. Ease of visualization is not evidence of dominance.
 
-**Ground a clause's "real content" in how the show's own format actually resolves or explores it — not in an arbitrary visual proxy for the general idea.** For a "Challenge" or head-to-head clause specifically, the show resolves that comparison through tasting and rating, not through comparing the wines' physical packaging (bottle size, weight, ornateness, or a literal "measuring" sight gag). Named example: Ep231 — concepts built around bottle height, bottle weight, or a measuring-tape gag were rejected because they substituted a packaging comparison for the show's actual mechanism, which is a side-by-side taste comparison. When a clause names a comparison or contest, ask what specifically the show does to resolve it, and stage that.
+**Ground a promise's "real content" in how the show's own format actually resolves or explores it, not in an arbitrary visual proxy for the general idea.** For a "Challenge" or head-to-head promise specifically, the show resolves that comparison through tasting and rating, not through comparing the wines' physical packaging (bottle size, weight, ornateness, a measuring-tape gag). Named example: Ep231. Concepts built around bottle height, weight, or a measuring tape were rejected because they substituted a packaging comparison for the show's actual mechanism, a side-by-side taste comparison. When a promise names a comparison or contest, ask what specifically the show does to resolve it, and stage that.
 
-**When recommending among concepts that all pass the clause-weighted gate above, specificity is a floor, not a tiebreaker that overrides thematic weight.** A concept tied to a narrow, minor transcript aside (a few lines of banter) is not automatically the strongest choice just because it's harder to reuse for another episode. Prefer the concept that most directly and viscerally visualizes the dominant clause's actual sensory/emotional content (e.g., for "summer sipper": heat, refreshment, cold-drink relief) over one that is technically specific but doesn't capture the core feeling of the dominant theme. This happened on Ep229: the recommended concept ("The Swap," built on a 3-line running joke about sparkling wine) was more narrowly specific than the alternatives, but Joe rejected it as "one small aspect of the episode... made a big deal of," in favor of concepts that directly staged heat and refreshment — the actual substance of "summer sipper."
+**Specificity is a floor, not a tiebreaker that overrides thematic weight.** A concept tied to a narrow, minor transcript aside is not automatically the strongest choice just because it's harder to reuse for another episode. Prefer the concept that most directly and viscerally visualizes the dominant promise's actual sensory/emotional content over one that is technically specific but doesn't capture the core feeling.
 
-**HR-54: Title alignment gate is mandatory and binary.**
-Every concept must reinforce the confirmed episode title framing — checked against *every* clause identified in the HR-53 breakdown, not just the thesis sentence as a single collapsed unit. A concept that satisfies one clause while ignoring another clause that HR-53 identified as more heavily-weighted must FAIL this gate, even if it doesn't contradict anything. If the title says the episode is about Sangiovese outside Tuscany, the concept cannot visually recenter Tuscany or Chianti as the main story. Title alignment is PASS/FAIL, not scored.
+**HR-54: Title Connection and Episode-Content Fidelity are mandatory, binary gates.**
+**Title Connection:** the concept's main visual idea must actually be about the title's central promise, not merely include props or cast associated with it while the joke is built on something unrelated, and not merely avoid contradicting the title. Test: strip away the specific supporting detail the joke leans on. Does the title's actual claim remain the thing the visual is legibly about? If the joke would survive with the title's key word or promise removed, it has not passed this gate.
 
-Passing a clause requires the concept's core visual gag to be *about* that clause's actual content — not merely to include the props or cast associated with it while the joke is built on something unrelated. This applies with the most force to whichever clause(s) HR-53 identified as highest-weighted: if the concept's core gag does not center on the highest-weighted clause's real content, the concept fails this gate even if lower-weighted clauses and all required props are technically present and non-contradictory. Test: strip away the specific supporting detail the joke leans on — does the highest-weighted clause's actual claim remain the thing the visual is legibly about? If the joke would survive but say something about a lower-weighted clause instead, or about neither, it has not passed this gate.
+**Episode-Content Fidelity:** the concept accurately reflects the episode's central content. Incidental banter or a minor detail can add flavor but cannot be the main concept unless it directly supports the central promise (this gate subsumes the former separate side-banter gate, HR-55). A funny aside alone is not enough, and the concept must not promise something the episode doesn't deliver.
 
-**HR-55: Side-banter gate.**
-Transcript banter can add flavor, but it cannot be the main concept unless it directly supports the episode thesis. A funny aside alone is not enough.
+**A concept that could fit almost any wine episode is a diagnostic signal, not an automatic rejection.** Retest it against Title Connection and Episode-Content Fidelity above (the former HR-57 Portability gate is retired as a separate hard rule; see HR-57). If the concept is otherwise clearly title-centered, content-faithful, appealing, and comprehensible, genericness alone does not disqualify it. A concept combining at least two episode-specific anchors is a useful sign it is title-centered, but is not by itself proof of that; it must still pass the actual test above.
 
-**HR-56: Misframing gate for contrast episodes.**
-When the title frame is contrast-based (for example "not Chianti" or "outside Tuscany"), and the rejected or contrast element appears, it may appear only as a minor background, corner, or pushed-aside element. If it is the largest, central, brightest, or most memorable visual element, reject the concept. If the concept omits that rejected or contrast element entirely and still expresses the thesis, this gate does not apply.
+**Illustrative example (historical) — not a benchmark.** Ep229 ("...Summer Sipper Contender?") documents one session where these lessons were learned the hard way: concepts were first built entirely around the easier-to-visualize "Contender" clause while the dominant "Summer Sipper" clause (an entire cold-open segment, 8 named competing wines, and something Joe had explicitly flagged) was dropped; a corrected batch then overcorrected toward a narrowly specific but thematically minor concept ("The Swap," built on a 3-line running joke) that Joe rejected as "one small aspect of the episode... made a big deal of"; and an earlier presented concept had passed a title-connection check that only asked whether it contradicted the title, rather than whether the title's actual claim was what the visual was about. This single episode documents a failure mode, not a benchmark or a validated predictor of what will work for a different title. When a recommendation needs support beyond the episode at hand, use aggregate selection, rejection, and override patterns across multiple entries in `data/cover-art-session-reports.md`, not any one episode or piece of artwork.
 
-**HR-57: Portability gate.**
-Ask: "Would this concept still make sense without this episode's specific thesis, title frame, and visual contrast?" If yes, reject it before presentation.
-A concept combining at least two episode-specific anchors is presumed non-portable and qualifies for review, but this is not an automatic pass. It still must pass title alignment, thesis fit, visual coherence, and thumbnail readability.
+**HR-55: Retired. Merged into HR-54's Episode-Content Fidelity gate.** Side-banter must not displace the main focus; see HR-54.
 
-**HR-58: Thumbnail readability gate.**
-Reject concepts that depend on tiny or dense text, packed region cards, maps, or text-heavy interpretation unless the visual joke is instantly readable at podcast-thumbnail size.
-A single large readable bottle label is allowed and may be required by HR-10.
+**HR-56: Misframing is a specific application of Title Connection (HR-54), not an additional gate.**
+When the title frame is contrast-based (for example "not Chianti" or "outside Tuscany") and the rejected or contrast element appears, it may appear only as a minor background, corner, or pushed-aside element. If it is the largest, central, brightest, or most memorable visual element, the concept fails Title Connection. If the concept omits that rejected or contrast element entirely and still expresses the promise, this does not apply.
 
-**HR-59: Hard-reject and regeneration gate.**
-Any concept that fails Core Thesis, Title Alignment, Side-Banter, Misframing, Portability, or Thumbnail Readability must be rejected before presentation. Do not show weak options just to have three choices. Aim to present at least 3 passing concepts. If fewer than 3 concepts pass after two regeneration rounds, stop and report the blocker instead of showing weak or failing options.
+**HR-57: Retired as an independent hard gate.** Its concern (avoiding a concept generic enough to fit any episode) is now a diagnostic question under Title Connection and Episode-Content Fidelity, not an automatic rejection; see HR-54.
 
-**HR-60: Concept evidence requirement (concise).**
-For each presented concept, include concise evidence fields:
-- Thesis match
-- Title alignment
-- Transcript/show-note evidence
-- Why it is not portable
-- Thumbnail readability
-A concept that combines at least two episode-specific anchors qualifies as episode-specific and presumed non-portable for review, but it still must pass title alignment, thesis fit, visual coherence, and thumbnail readability.
-Keep detailed reject reasoning internal by default. User-facing output should include only a concise reject summary unless Joe asks for full reject details.
+**HR-58: Retired. Merged into HR-13's Thumbnail Comprehension gate.** No tiny or dense text, no text-heavy interpretation required; a single large readable bottle label is allowed and required by HR-10.
 
-Second-review score-accuracy gate (PASS/FAIL):
-- PASS only if every shown concept has a visible score in the required heading format (Concept [Letter]: [Name] - [N]/50), the score is an integer from 0 to 50, and the score math is correct under HR-13.
-- FAIL if any score is missing, malformed, out of range, or miscalculated. Failing concepts must be blocked from presentation.
+**HR-59: Replacement and correction, not automatic full-batch regeneration.**
+If one concept fails a gate, replace that concept once. Do not restart the whole batch. If every concept in a batch misses the title, stop, correct the visual target (HR-53), and produce a corrected batch from it. Do not show a weak or failing concept just to reach a quota: present 2 concepts rather than padding to 3 if a genuinely strong third one isn't there.
+
+**HR-60: Concept presentation is concise. No evidence blocks, no second-review pass.**
+Show only what Step 6 of `.claude/commands/generate-cover-art.md` specifies: scene, title connection, visual appeal, and a production note when a meaningful risk exists (one sentence each). No separate evidence-field blocks, no detailed reject log shown to Joe by default (keep it internal; summarize only if he asks), and no separate second-review or score-accuracy pass: there is one concept-development pass, not two.
 
 **HR-47: Cover art ChatGPT prompt must be saved to the episode output file.**
-After Joe selects a concept, append the full ChatGPT prompt to `outputs/episodes/ep[N]-[slug].md` under a `## COVER ART` section. Format: the confirmed episode title as the subheading (`### Ep[N] — [Episode Title]`), then the full prompt as a code block. Never use the internal concept brainstorm name as the heading — that label is for production tracking only, not the output file. Never leave the prompt only in the conversation. If the output file does not exist yet, create it with just the COVER ART section and note that the rest of the content is pending.
+After Joe selects a concept, append the full ChatGPT prompt to `outputs/episodes/ep[N]-[slug].md` under a `## COVER ART` section. Format: the confirmed episode title as the subheading (`### Ep[N]: [Episode Title]`), then the full prompt as a code block. Never use the internal concept brainstorm name as the heading — that label is for production tracking only, not the output file. Never leave the prompt only in the conversation. If the output file does not exist yet, create it with just the COVER ART section and note that the rest of the content is pending.
 
 ---
 
@@ -222,6 +216,8 @@ If any of these risks are present, simplify the staging using one or more of the
 - Each arm visibly connects back to its own character's shoulder or sleeve. No floating limbs.
 
 When writing a ChatGPT prompt: identify each visible hand using screen position or clear spatial language (for example: "the hand on screen-left," "Joe's hand closest to center," "Carmela's hand on the right side of frame"). Use left/right hand designation only when the viewpoint and ownership are unmistakable. Add the Arm and Hand Clarity section to the positive prompt (required whenever arms or hands are important to the scene; see the standard prompt format in the generate-cover-art command).
+
+**Not every anatomy consideration is a concept-level hard fail.** If a prompt-level clarification (explicit hand ownership by screen position, a stated arm path) can resolve the ambiguity without changing the underlying concept, fix it at the prompt-writing stage rather than rejecting the concept. Reject or simplify the concept itself only when the required choreography genuinely can't be made unambiguous by clarification alone: for example, both characters' hands must occupy the same small area no matter how it's described.
 
 **HR-40: Cover art must not reveal the episode verdict.**
 The visual should create the central question from the title, not answer it. Any concept that shows outcome — thumbs up/down on specific wines, one bottle going to the sink, a "winner vs. loser" framing — fails this rule. The test: if someone sees the thumbnail, do they already know what Joe and Carmela concluded? If yes, hard FAIL. Reframe to create the question, not announce the answer.

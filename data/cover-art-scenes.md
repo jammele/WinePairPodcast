@@ -1,8 +1,8 @@
 # Cover Art — Recent Scenes
 
-Sub-agents generating cover art concepts must read this file. Do not repeat any physical action described here.
+The cover-art workflow must read this file before generating concepts. Do not repeat any physical action described here.
 
-**Update this file immediately after Joe picks a concept.** Add the new scene at the bottom. Remove the oldest entry if the list exceeds 5 items.
+**Do not update this file after concept selection alone.** Update it only after Joe approves the final generated image. Add the approved scene at the bottom. Remove the oldest entry if the list exceeds 5 items.
 
 **Format:** Describe the specific physical action happening in the scene — what each character is doing, not an abstract structural label. The ban applies to the specific physical action, not a category name.
 

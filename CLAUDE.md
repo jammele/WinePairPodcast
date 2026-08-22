@@ -142,7 +142,7 @@ If OAuth is broken: `rm google_token.json` then `node scripts/setup_google_auth.
 - **Update it during the task, not at the end of the session.** Every completed task, decision, or status change gets logged and committed before moving on to the next thing. Do not batch updates. Do not wait to be asked.
 - Commit and push after every update — never leave uncommitted work log changes
 - It tracks current state only — remove completed items once they are no longer relevant
-- Repo data files that need updating (e.g. `data/cover-art-scenes.md` after a concept is picked) follow the same rule: update immediately, not at session end
+- Repo data files that need updating follow the same rule: update immediately when the triggering event happens, not at session end. `data/cover-art-scenes.md` is a partial exception: it updates only after Joe approves the final generated image, not at concept selection; see the cover art row below for the full sequence.
 
 ---
 
@@ -153,7 +153,7 @@ If OAuth is broken: `rm google_token.json` then `node scripts/setup_google_auth.
 | Writing a spoke page | `docs/spoke-page-checklist.md` — run all 3 passes. After writing: `node scripts/validate_spoke.js` then `/review-wine-cards` then `/review-spoke` before showing Joe anything. Draft must include FAQPage schema block at the bottom with COPY START / COPY END markers. |
 | Writing a blog post | Complete opportunity brief first (`docs/opportunity-briefs/template.md`) — get Joe's approval before touching the draft. Joe records approval by creating `docs/opportunity-briefs/approvals/[slug].approved` (Claude never creates this). After approval: read `docs/blog-post-guide.md`. Draft must include Review Schema (see two-reviewer hold note in guide) and all Beamly fields with COPY START / COPY END markers. After writing: run `/review-blog-post <filepath>` and fix ALL reported issues before showing Joe anything. |
 | Publishing a page | `docs/publishing-checklist.md` — after Joe publishes: run `/verify-published <url>` to confirm schema, card badges, author byline, and meta description are all rendering correctly. |
-| Cover art image prompts | Run `/generate-cover-art` — mandatory before showing Joe any concepts. After Joe picks a concept, immediately update `data/cover-art-scenes.md` (add chosen concept's structural type, remove oldest if list exceeds 5) and commit. |
+| Cover art image prompts | Run `/generate-cover-art` before showing Joe any concepts. After Joe selects a concept, save the exact production prompt immediately; Joe then creates the artwork in ChatGPT. Concept selection and prompt creation are not final-image approval. Only after Joe approves the final generated image, update `data/cover-art-scenes.md` and the applicable session report. Show Joe the complete diff and verification results, and do not commit or push until Joe explicitly approves. |
 | Episode SEO/AEO content and Bluesky posts | Run `/generate-episode-content` — reads episode script, spawns sub-agent, saves to `outputs/episodes/ep[N]-[slug].md`, runs `node scripts/validate_episode.js`. Fix all errors before showing Joe. |
 | Episode copy, show notes, social copy | `docs/voice-and-format.md` |
 | Wine in the News segment | `docs/wine-in-the-news.md` — read before finding stories or writing the script |

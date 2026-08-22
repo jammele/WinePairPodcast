@@ -18,7 +18,7 @@ Core pain points this system addresses:
 **Weekly episode workflow (fully automated):**
 - `/generate-episode-content` — reads script, generates Key Questions, FAQ, Review Schema, FAQPage schema, and 10 Bluesky posts; validates with `validate_episode.js` before showing Joe
 - `/review-titles` — reviews title options against 5 non-negotiable rules + archive; re-runs after fixes to confirm clean pass
-- `/generate-cover-art` — generates 3 scored concepts with ChatGPT-ready prompts; reads recent scene history from `data/cover-art-scenes.md` to prevent repetition
+- `/generate-cover-art`: generates 2-3 title-centered concepts, applies title/content/spoiler/thumbnail gates, and creates the selected ChatGPT prompt; reads recent scene history from `data/cover-art-scenes.md` to prevent repetition
 - `/verify-published` — checks live page for card re-encoding, schema, author byline, meta description after every Beamly publish
 
 **Content pipeline (spoke pages and blog posts):**
