@@ -37,11 +37,11 @@ Create a new scene for this concept. Do not copy a previous image's pose, palett
 
 - What is Schiava wine?
 - What does Schiava wine taste like?
+- Why do sommeliers love Schiava?
+- How cold should you serve Schiava?
 - Is Schiava similar to Pinot Noir?
 - What food pairs well with Schiava?
-- Where does the Schiava grape grow?
 - Is Schiava wine worth trying?
-- Are the Alois Lageder and Elena Walch Schiava wines worth buying?
 
 ### FREQUENTLY ASKED QUESTIONS
 *(Place at bottom of show notes)*
@@ -50,7 +50,13 @@ Create a new scene for this concept. Do not copy a previous image's pose, palett
 A. Schiava is a light-bodied red wine grape from Italy's Alto Adige region, also known as Vernatsch in German-speaking areas and Trollinger in Germany. It's actually a group of genetically distinct clones rather than one single variety, with written records dating to the 13th century and roots believed to reach back to Roman times.
 
 **Q. What does Schiava wine taste like?**
-A. Schiava is a light, tart red wine with bright cranberry, tart cherry, and pomegranate flavors, plus a touch of flinty, mineral character on the finish. It has low tannin and medium acidity, making it refreshing and easy to drink, especially served fully chilled like a white wine rather than at typical red wine temperature.
+A. Schiava is a light, tart red wine with bright cranberry, tart cherry, and pomegranate flavors, plus a touch of flinty, mineral character on the finish. It has low tannin, medium acidity, and a crisp, refreshing quality that makes it easy to drink on its own or alongside food.
+
+**Q. Why do sommeliers love Schiava?**
+A. Sommeliers have started calling Schiava the white wine drinker's red wine because it's light, low in tannin, and best served fully chilled. It works as a lighter appetizer pour before heavier reds and pairs well even with richer fish, which most red wines can't do. That versatility is exactly why it's become a current favorite among wine pros.
+
+**Q. How cold should you serve Schiava?**
+A. Schiava should be served fully chilled, more like a white wine than a typical red. That's different from the usual rule of just a quick 20 minutes in the fridge before pouring reds. Getting it properly cold brings out its crisp, refreshing character, and it's part of why lighter reds like this one are becoming so popular right now.
 
 **Q. Is Schiava similar to Pinot Noir?**
 A. Yes, Schiava is often compared to Pinot Noir or Gamay because of its light body, low tannin, and bright red fruit character. It's sometimes called the white wine drinker's red wine, since it can be chilled and works well as a lighter alternative before moving on to heavier reds.
@@ -58,14 +64,8 @@ A. Yes, Schiava is often compared to Pinot Noir or Gamay because of its light bo
 **Q. What food pairs well with Schiava?**
 A. Schiava pairs well with a wide range of foods thanks to its light body and bright acidity. It works with charcuterie boards, fried fish, and sushi, but also holds up to richer dishes like stuffed chicken, creamy Alfredo pasta, and even sweet, smoky barbecue. It's versatile enough for a picnic or a holiday table.
 
-**Q. Where does the Schiava grape grow?**
-A. Schiava grows mainly in Italy's Alto Adige region, where it remains the most-planted red grape despite a decline in total acreage. It's also grown in Württemberg, Germany, where it's called Trollinger and is that region's most widely planted red grape, though it's rarely exported outside Germany. It thrives in cool, high-altitude alpine vineyards.
-
 **Q. Is Schiava wine worth trying?**
 A. Yes. Schiava has become a favorite among sommeliers as a light, chillable red, especially for drinkers who usually stick to whites. It fits the broader shift toward lighter, lower-alcohol reds, currently one of the few growth areas in the wine market. Two Alto Adige bottles scored 7 and 8 out of 10, with no letdowns.
-
-**Q. Are the Alois Lageder and Elena Walch Schiava wines worth buying?**
-A. Both are excellent, affordable entry points into Schiava. The 2024 Alois Lageder ($22) is organic and biodynamic, light and gulpable with cranberry and mineral notes. The 2022 Elena Walch ($24) is tangier with cherry and red plum character. Ratings landed at 7 and 8 out of 10 for both, so either is a safe buy.
 
 ### BLUESKY POSTS
 *(10 posts for episode launch)*
