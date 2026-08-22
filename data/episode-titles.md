@@ -1,9 +1,11 @@
 # Episode Title Archive — The Wine Pair Podcast
 
-**Last updated:** 2026-07-26 (through Ep229; Ep228 logged retroactively)
+**Last updated:** 2026-08-21 (through Ep231; Ep218, Ep223, Ep230, and Ep231 added from confirmed repository evidence; Ep228 previously logged retroactively)
 **Maintained by:** Claude — add each confirmed title here before committing episode work.
 
-**Latest confirmed title:** Ep229 — Italian Wine Adventure #25: Vermentino! Summer Sipper Contender? (Ep228, a Meet the (Wine) Makers special, was confirmed by Joe directly and logged retroactively — released same window, precedes Ep229 numerically but was not run through /review-titles.)
+**Latest confirmed title:** Ep231: Costco Kirkland Signature Châteauneuf-du-Pape Challenge! (Ep230, a Meet the (Wine) Makers special, precedes it numerically and was confirmed directly from `outputs/episodes/ep230-wendelin-vines.md`.)
+
+**Unresolved archive gap:** Ep220's episode number is not confirmed. `outputs/episodes/ep220-221-meet-the-makers-23-sake.md` (Special Episode! Meet the (Wine) Makers #23: Jun Kono and Leo Lê) is labeled "TBD (220 or 221)" in its own file. Ep221 is already confirmed as a different episode below (They Make Wine in Lebanon...). Do not infer or assign this episode's number; it requires Joe's confirmation.
 
 ---
 
@@ -83,6 +85,7 @@ Format: `WTF is [Wine Name]?` — question mark at end, capitalized WTF, wine na
 - Ep193: WTF is Graciano?
 - Ep197: WTF is Aligoté?
 - Ep205: WTF is Bordeaux Blanc?
+- Ep218: WTF is Malvasia?
 - Ep226: WTF is Verdejo?
 
 ### Costco Kirkland Signature Challenge
@@ -103,6 +106,7 @@ Format: `Costco Kirkland Signature [Wine] Challenge!` — varies somewhat; check
 - Ep186: Costco vs. Costco! Kirkland Signature Chianti Classico Riserva Challenge!
 - Ep192: Barolo Battle! Costco Kirkland vs. Trader Joe's Diamond Reserve!
 - Ep225: Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux!
+- Ep231: Costco Kirkland Signature Châteauneuf-du-Pape Challenge!
 
 ### Getting Serious About Rosé
 Format: `Getting Serious About Rosé #[N]: [Region/Style]!`
@@ -148,10 +152,11 @@ Format: `Holiday Sparkling Wines #[N]: [Wine]!`
 - Ep196: Holiday Sparkling Wines #5: Lambrusco!
 
 ### Meet the (Wine) Makers
-Format: `Special Episode! Meet the (Wine) Makers #[N]: [Name] of [Winery]`
+Format: `Special Episode! Meet the (Wine) Makers #[N]: [subtitle]`. Only the `Special Episode! Meet the (Wine) Makers #[N]:` prefix is fixed. The subtitle's content and structure vary by installment: guest name(s) and winery ("[Name] of [Winery]," "from [Winery]"), or a region/topic frame. Check the last 3 installments for tone, but do not assume the immediately preceding installment's subtitle structure is now the required pattern.
 
 - Ep85 through Ep174, Ep202, Ep210, Ep211 *(multiple installments; always "Special Episode!" prefix)*
-- **Ep228: Special Episode! Meet the (Wine) Makers #24: High-Altitude Excellence: Discovering PDO Amyndeon & PGI Florina with Alpha Estate.** *(confirmed 2026-07-26)* — format shift: region/topic-driven subtitle instead of "[Name] of [Winery]," matching how other series (Italian Wine Adventure) have added subtitles at recent installments. Use this as the new reference point for the next Makers episode's format, not the older bare "[Name] of [Winery]" pattern.
+- **Ep228: Special Episode! Meet the (Wine) Makers #24: High-Altitude Excellence: Discovering PDO Amyndeon & PGI Florina with Alpha Estate.** *(confirmed 2026-07-26)*, used a region/topic-driven subtitle rather than the older bare "[Name] of [Winery]" pattern.
+- **Ep230: Special Episode! Meet the (Wine) Makers #25: Brian and Jessica Smith from Wendelin Vines** *(confirmed; see `outputs/episodes/ep230-wendelin-vines.md`)*, returned to a people-and-winery subtitle ("from [Winery]"), confirming the subtitle format varies by installment rather than following one fixed pattern set by the previous episode.
 
 ### They Make Wine in [Place]?!?
 Format: `They Make Wine in [Place]?!?` — double punctuation is the signature
@@ -177,8 +182,12 @@ Format: `Special Episode! The Virginia Winemakers Series [#N if >1]: [Name] of [
 
 ## Recent Episodes (last 15)
 
+Ep220 is excluded: its episode number is unresolved (see the archive-gap note above), so it is not a confirmed entry in this archive.
+
 | Ep | Title | Format pattern |
 |---|---|---|
+| 231 | Costco Kirkland Signature Châteauneuf-du-Pape Challenge! | Series (Costco Kirkland Challenge) |
+| 230 | Special Episode! Meet the (Wine) Makers #25: Brian and Jessica Smith from Wendelin Vines | Series (Makers) + people/winery subtitle |
 | 229 | Italian Wine Adventure #25: Vermentino! Summer Sipper Contender? | Series (IWA) + subtitle question |
 | 228 | Special Episode! Meet the (Wine) Makers #24: High-Altitude Excellence: Discovering PDO Amyndeon & PGI Florina with Alpha Estate. | Series (Makers) + region/topic subtitle |
 | 227 | Gigondas Has a Reputation for Punching You in the Face. Does It Live Up to That? | [Region] Has a Reputation for [Claim]. [Neutral question] |
@@ -186,16 +195,12 @@ Format: `Special Episode! The Virginia Winemakers Series [#N if >1]: [Name] of [
 | 225 | Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux! | Series (Costco Kirkland Challenge) |
 | 224 | Is Moscato d'Asti the Sweet Wine Serious Wine People Won't Admit They Love? | [Social-status hook]: [Question] |
 | 223 | This Ain't Chianti: Is Italian Sangiovese Better Outside Tuscany? | [Contrast hook]: [Question] |
-| 209 | Why Serious Wine Nerds Love Xinomavro! | [Bold claim about audience] |
-| 210 | Special Episode! Meet the (Wine) Makers #21: Pascal Marty... | Series (Makers) |
-| 211 | Special Episode! Meet the (Wine) Makers #22: Fausto Cellario... | Series (Makers) |
-| 212 | Portugal's Ancient Clay-Pot Reds in Alentejo Are Back. Worth the Hype? | [Bold claim]. [Question]. |
-| 213 | Pét-Nat Is Older Than Champagne. Is It Better? | [Surprising fact] + [Question] |
-| 214 | German Riesling Smells Like Airplane Glue and We Can't Stop Drinking It! | [Surprising/absurd claim] |
-| 215 | Experts Loved the $50 Oregon Pinot Noir. We Chose the $23 Bottle! | [Bold claim]. [Surprising result]. |
-| 216 | Viura: The Great White Wine Hiding in Rioja's Red Wine Shadow! | [Grape]: [Metaphor-driven discovery] |
-| 217 | Italian Wine Adventure #24: Frappato! The Chillable Red Wine! | Series (IWA) + subtitle |
+| 222 | Pinot Grigio Is Boring. Alsace Pinot Gris Is Its Richer, Weirder French Cousin. | [Dismissive claim]. [Contrasting discovery]. |
+| 221 | They Make Wine in Lebanon?!? Lebanon Was Wine Country Before France Was France. | Series (They Make Wine in [Place]?!?) + bold historical claim |
 | 219 | Is Two Buck Chuck Actually Terrible, or Is That Just Wine Snob Talk? | [Open accusation question] |
+| 218 | WTF is Malvasia? | Series (WTF is [Wine]?) |
+| 217 | Italian Wine Adventure #24: Frappato! The Chillable Red Wine! | Series (IWA) + subtitle |
+| 216 | Viura: The Great White Wine Hiding in Rioja's Red Wine Shadow! | [Grape]: [Metaphor-driven discovery] |
 
 ---
 
@@ -417,12 +422,16 @@ Ep214: German Riesling Smells Like Airplane Glue and We Can't Stop Drinking It!
 Ep215: Experts Loved the $50 Oregon Pinot Noir. We Chose the $23 Bottle!
 Ep216: Viura: The Great White Wine Hiding in Rioja's Red Wine Shadow!
 Ep217: Italian Wine Adventure #24: Frappato! The Chillable Red Wine!
+Ep218: WTF is Malvasia?
 Ep219: Is Two Buck Chuck Actually Terrible, or Is That Just Wine Snob Talk?
 Ep221: They Make Wine in Lebanon?!? Lebanon Was Wine Country Before France Was France.
 Ep222: Pinot Grigio Is Boring. Alsace Pinot Gris Is Its Richer, Weirder French Cousin.
+Ep223: This Ain't Chianti: Is Italian Sangiovese Better Outside Tuscany?
 Ep224: Is Moscato d'Asti the Sweet Wine Serious Wine People Won't Admit They Love?
 Ep225: Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux!
 Ep226: WTF is Verdejo?
 Ep227: Gigondas Has a Reputation for Punching You in the Face. Does It Live Up to That?
 Ep228: Special Episode! Meet the (Wine) Makers #24: High-Altitude Excellence: Discovering PDO Amyndeon & PGI Florina with Alpha Estate.
 Ep229: Italian Wine Adventure #25: Vermentino! Summer Sipper Contender?
+Ep230: Special Episode! Meet the (Wine) Makers #25: Brian and Jessica Smith from Wendelin Vines
+Ep231: Costco Kirkland Signature Châteauneuf-du-Pape Challenge!

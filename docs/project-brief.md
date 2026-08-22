@@ -15,9 +15,9 @@ Core pain points this system addresses:
 
 ## What the system does today
 
-**Weekly episode workflow (fully automated):**
+**Weekly episode workflow:**
 - `/generate-episode-content` — reads script, generates Key Questions, FAQ, Review Schema, FAQPage schema, and 10 Bluesky posts; validates with `validate_episode.js` before showing Joe
-- `/review-titles` — reviews title options against 5 non-negotiable rules + archive; re-runs after fixes to confirm clean pass
+- `/review-titles` — checks candidate-level hard rules and advisory guidance against the complete title archive and evidence reference, performs the required second review, presents every rule-compliant title to Joe, and does not commit title records until Joe selects a title and approves the resulting diff
 - `/generate-cover-art`: generates 2-3 title-centered concepts, applies title/content/spoiler/thumbnail gates, and creates the selected ChatGPT prompt; reads recent scene history from `data/cover-art-scenes.md` to prevent repetition
 - `/verify-published` — checks live page for card re-encoding, schema, author byline, meta description after every Beamly publish
 

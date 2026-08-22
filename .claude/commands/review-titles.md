@@ -76,7 +76,7 @@ Pre. **Read `data/title-session-reports.md` before doing anything else.**
 [2-3 bullets: what the episode itself actually spends time on, and anything Joe explicitly flagged to focus on]
 
 ### Step 0.5: Web Research Findings
-[3–5 bullets summarizing what the searches found: dominant angles in competitor content, language that drives clicks, gaps/contrarian angles not covered, any existing Wine Pair episodes on this wine. Note whether `docs/title-research-reference.md` was used as-is or supplemented with fresh research, and why.]
+[3–5 bullets summarizing what the searches found: dominant angles in competitor content, recurring language and structural patterns appearing across competitor results (search results show phrasing and format only; they do not establish click performance or causation), gaps/contrarian angles not covered, any existing Wine Pair episodes on this wine. Note whether `docs/title-research-reference.md` was used as-is or supplemented with fresh research, and why.]
 
 ### Episode Hook
 [One sentence identifying the hook from the script]
@@ -107,17 +107,19 @@ Pre. **Read `data/title-session-reports.md` before doing anything else.**
 ---
 ```
 
-   After displaying the report: append the full entry to `data/title-session-reports.md` (newest entry at the top, below the Patterns Learned section) and commit the file immediately. Do not wait for Joe's selection — append and commit in the same response as the titles.
+   Display the report as part of this response. **Do not write or commit `data/title-session-reports.md` at this point.** The report shown here is presented as text only; the file is written for the first time after Joe confirms a title (Step 11).
 
-10. **Ask Joe which title he wants to use.** Phrase it simply: "Which title would you like for Ep[N]?" Do not suggest one or editorialize — just ask.
+10. **Ask Joe which title he wants to use.** Phrase it simply: "Which title would you like for Ep[N]?" Do not suggest one or editorialize, just ask.
 
-10.5. **Stop boundary.** After asking which title Joe wants, stop. Do not infer or auto-run `/generate-episode-content`, `/generate-cover-art`, or any other command.
+10.5. **Stop boundary.** After asking which title Joe wants, stop. Do not write, commit, or push any repository file at this point. Do not infer or auto-run `/generate-episode-content`, `/generate-cover-art`, or any other command. Generating and presenting title options authorizes exactly that; it does not authorize writing or committing repository files.
 
 11. **After Joe confirms his choice:**
-    - Update the "Joe's selection" field in the Ep[N] entry in `data/title-session-reports.md`
-    - If a new pattern is visible (e.g., Joe consistently picks question-format titles, Joe rejects snob-angle hooks), update the Patterns Learned section at the top of the file
-    - Add the confirmed title to `data/episode-titles.md` following the existing format
-    - Commit both files with message: "Add Ep[N] title: [confirmed title]"
+    - Write the full Ep[N] entry to `data/title-session-reports.md` (newest entry at the top, below the Patterns Learned section), including the "Joe's selection" field.
+    - Update the Patterns Learned section only when Joe's selection or an override genuinely reveals something new or contradicts an existing pattern (e.g., Joe consistently picks question-format titles, Joe rejects snob-angle hooks), not as a routine addition every session.
+    - Add the confirmed title to `data/episode-titles.md` following the existing format.
+    - **Show Joe the exact diff for both files and the verification results.** Do not commit yet.
+    - **Wait for Joe's explicit approval.**
+    - After Joe approves, commit and push only the specifically approved files, with commit message: "Add Ep[N] title: [confirmed title]".
 
 ---
 

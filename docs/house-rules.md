@@ -186,6 +186,8 @@ Check `data/episode-titles.md` Named Series Reference before generating. Match c
 **HR-20: Run /review-titles before showing Joe any options.**
 No exceptions. Fix all FAILs before presenting.
 
+Generating and presenting title options never authorizes writing or committing repository files. `data/title-session-reports.md` and `data/episode-titles.md` are written only after Joe confirms a title, and are committed only after Joe has reviewed the exact diff and given explicit approval. See the full write and commit sequence in `.claude/commands/review-titles.md`.
+
 **HR-49: Episode title reviews must always use the same thorough review workflow.**
 Every title-generation session must run the full standardized `/review-titles` process. No ad-hoc, partial, or "quick" title checks.
 
