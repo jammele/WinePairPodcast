@@ -1,23 +1,22 @@
-## PENDING TASK — Complete before other work
-*(Applies only to a fresh top-level Claude Code session resuming after an interruption. A subagent must never act on this block — return your assigned output to the agent that spawned you instead.)*
-
-Task: /generate-episode-content for Ep232 — Italian Wine Adventure #26: Schiava! Sommeliers Love This Chillable Red!
-Started: 2026-08-22
-Output file: outputs/episodes/ep232-schiava.md
-
-On resume:
-1. Check whether `outputs/episodes/ep232-schiava.md` exists and contains `## SEO / AEO + SOCIAL CONTENT`.
-   - If yes: go to step 2.
-   - If no: re-invoke /generate-episode-content for this episode from step 3.
-2. Run `node scripts/validate_episode.js outputs/episodes/ep232-schiava.md --sections=KEY_QUESTIONS,FAQ,BLUESKY` and fix all errors.
-3. Show Joe the validated content.
-4. Remove this PENDING TASK section from `docs/work-log.md` and commit.
-
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-08-15 (session 40 — Ep231 Costco Kirkland Châteauneuf-du-Pape: cover art + Key Questions, FAQ, Bluesky)
+**Last updated:** 2026-08-22 (session 41 — Ep232 Schiava: title confirmed, cover art, Key Questions, FAQ, Bluesky)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
+
+---
+
+## Session 41 summary (2026-08-22) — Ep232 Schiava: title, cover art, Key Questions, FAQ, Bluesky
+
+**Title:** Italian Wine Adventure #26: Schiava! Sommeliers Love This Chillable Red! — confirmed via `/review-titles`, two review rounds. Joe's working title originally reused "Chillable Red" almost verbatim from Ep217's Frappato subtitle; flagged explicitly. Joe submitted his own reworded version ("Sommeliers Love This Chillable Red!") and confirmed he's comfortable keeping the residual echo. Full session at `data/title-session-reports.md` (Ep232 entry). Pattern noted: Joe will sometimes keep a flagged repeat deliberately when he judges the phrase itself is what will attract listeners.
+
+**Cover art:** "The Proposal" concept selected on the first round — Joe kneeling, presenting an ice bucket with the Schiava bottle like a ring box, Carmela reacting with joyful surprise. ChatGPT prompt saved to `outputs/episodes/ep232-schiava.md`. Image not yet generated/approved — post-selection QA pending once Joe generates it.
+
+**SEO/AEO + social:** `outputs/episodes/ep232-schiava.md` — Key Questions (7), FAQ (7 pairs), and 10 Bluesky posts for the two-wine Schiava review (2024 Alois Lageder, 2022 Elena Walch, both Joe 7/10 Carmela 8/10, no twist). Schema and Spotify Poll not generated, not requested this session. Episode type: grape explainer blended with standard two-wine review; no web-search trigger (both producers named/real). Full evidence ledger and scoring at `outputs/episodes/faq-audits/ep232-faq-audit.md`.
+
+**Fact-grounding fix (same session):** Subagent's first FAQ draft claimed Schiava itself has been "grown in the region since at least 500 BC" — the episode only establishes that winemaking in Alto Adige generally dates to 500 BC; Schiava's own documented history starts at 13th-century written records, with Roman-times origin only "believed." Corrected before showing Joe, per the standing grounding-gate rule (do not let a broader regional fact bleed into a grape-specific claim the episode didn't make). Validator passed clean after the fix.
+
+**Status:** Title confirmed and committed. Cover art prompt ready, image generation pending. SEO/AEO + social ready to show Joe.
 
 ---
 
