@@ -1,3 +1,18 @@
+## PENDING TASK — Complete before other work
+*(Applies only to a fresh top-level Claude Code session resuming after an interruption. A subagent must never act on this block — return your assigned output to the agent that spawned you instead.)*
+
+Task: /generate-episode-content for Ep232 — Italian Wine Adventure #26: Schiava! Sommeliers Love This Chillable Red!
+Started: 2026-08-22
+Output file: outputs/episodes/ep232-schiava.md
+
+On resume:
+1. Check whether `outputs/episodes/ep232-schiava.md` exists and contains `## SEO / AEO + SOCIAL CONTENT`.
+   - If yes: go to step 2.
+   - If no: re-invoke /generate-episode-content for this episode from step 3.
+2. Run `node scripts/validate_episode.js outputs/episodes/ep232-schiava.md --sections=KEY_QUESTIONS,FAQ,BLUESKY` and fix all errors.
+3. Show Joe the validated content.
+4. Remove this PENDING TASK section from `docs/work-log.md` and commit.
+
 # Work Log — The Wine Pair Podcast
 
 **Last updated:** 2026-08-15 (session 40 — Ep231 Costco Kirkland Châteauneuf-du-Pape: cover art + Key Questions, FAQ, Bluesky)
