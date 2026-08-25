@@ -51,6 +51,25 @@ This file is written and read by the `/generate-cover-art` skill. It accumulates
 
 ---
 
+### Ep232: Schiava — SELECTED
+**Date:** 2026-08-22
+**Title:** Italian Wine Adventure #26: Schiava! Sommeliers Love This Chillable Red!
+
+**Visual target:** Central promise = sommeliers have fallen for this chillable red, a red wine getting the white-wine cold treatment. Anchors: ice bucket/chilling setup, bottle labeled "SCHIAVA," unmistakable adoration/swooning body language.
+
+**Concepts presented:**
+- Double Devotion — both hosts embracing the ice bucket together, cheeks near the bottle, mutual swoon
+- Sommelier's Verdict — Joe doing an expert swirl-and-sniff approval gesture while Carmela pours ice into her glass
+- The Proposal — Joe kneeling, presenting the ice bucket like a ring box; Carmela reacting with joyful surprise — **RECOMMENDED and SELECTED**
+
+Joe confirmed the recommended concept on the first round, no override.
+
+**Post-selection QA:** Passed clean — title connection, concept fidelity, thumbnail comprehension, brightness/warm background, character consistency, hand ownership, and "SCHIAVA" label accuracy all confirmed. Minor note only: Joe's kneeling foot runs close to the bottom frame edge, not touching focal content.
+
+**Joe's selection:** Concept C — The Proposal. ChatGPT prompt saved to `outputs/episodes/ep232-schiava.md`; final image approved same session.
+
+---
+
 ### Ep231: Costco Kirkland Signature Châteauneuf-du-Pape — SELECTED
 **Date:** 2026-08-15
 **Title:** Costco Kirkland Signature Châteauneuf-du-Pape Challenge!

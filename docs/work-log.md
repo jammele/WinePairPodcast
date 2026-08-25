@@ -10,13 +10,13 @@
 
 **Title:** Italian Wine Adventure #26: Schiava! Sommeliers Love This Chillable Red! — confirmed via `/review-titles`, two review rounds. Joe's working title originally reused "Chillable Red" almost verbatim from Ep217's Frappato subtitle; flagged explicitly. Joe submitted his own reworded version ("Sommeliers Love This Chillable Red!") and confirmed he's comfortable keeping the residual echo. Full session at `data/title-session-reports.md` (Ep232 entry). Pattern noted: Joe will sometimes keep a flagged repeat deliberately when he judges the phrase itself is what will attract listeners.
 
-**Cover art:** "The Proposal" concept selected on the first round — Joe kneeling, presenting an ice bucket with the Schiava bottle like a ring box, Carmela reacting with joyful surprise. ChatGPT prompt saved to `outputs/episodes/ep232-schiava.md`. Image not yet generated/approved — post-selection QA pending once Joe generates it.
+**Cover art:** "The Proposal" concept selected on the first round — Joe kneeling, presenting an ice bucket with the Schiava bottle like a ring box, Carmela reacting with joyful surprise. ChatGPT prompt saved to `outputs/episodes/ep232-schiava.md`. Image generated and approved same session; post-selection QA passed clean. Logged in `data/cover-art-session-reports.md` and `data/cover-art-scenes.md`.
 
 **SEO/AEO + social:** `outputs/episodes/ep232-schiava.md` — Key Questions (7), FAQ (7 pairs), and 10 Bluesky posts for the two-wine Schiava review (2024 Alois Lageder, 2022 Elena Walch, both Joe 7/10 Carmela 8/10, no twist). Schema and Spotify Poll not generated, not requested this session. Episode type: grape explainer blended with standard two-wine review; no web-search trigger (both producers named/real). Full evidence ledger and scoring at `outputs/episodes/faq-audits/ep232-faq-audit.md`.
 
 **Fact-grounding fix (same session):** Subagent's first FAQ draft claimed Schiava itself has been "grown in the region since at least 500 BC" — the episode only establishes that winemaking in Alto Adige generally dates to 500 BC; Schiava's own documented history starts at 13th-century written records, with Roman-times origin only "believed." Corrected before showing Joe, per the standing grounding-gate rule (do not let a broader regional fact bleed into a grape-specific claim the episode didn't make). Validator passed clean after the fix.
 
-**Status:** Title confirmed and committed. Cover art prompt ready, image generation pending. SEO/AEO + social ready to show Joe.
+**Status:** Title and cover art complete and approved. Key Questions, FAQ, and Bluesky outputs were generated for Ep232, but later review identified workflow-quality issues that remain under review.
 
 ---
 
