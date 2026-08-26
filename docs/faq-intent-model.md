@@ -1,461 +1,286 @@
 # FAQ Intent Model
 
-This file defines the rules used by the FAQ generation pipeline to select, score, and finalize candidate questions. It must be read before any FAQ generation run. It replaces ad-hoc judgment about which questions to include.
+This file defines the rules used by the FAQ generation pipeline to select and finalize candidate Key Questions and FAQ answers. It must be read before any FAQ generation run. It replaces ad-hoc judgment about which questions to include, and it replaces the prior six-criterion numerical scoring system entirely — no replacement numerical score is used.
 
 ---
 
-## Guiding principle — read this before scoring anything
+## Guiding principle — read this before generating anything
 
-**The purpose of Key Questions and FAQ content is to get discovered by new people searching for wine, on Google and on AI answer engines, not to summarize the episode for people who already found it.** This is the show's stated growth mechanism (see CLAUDE.md): people searching "what does Gigondas taste like" or "Gigondas vs Châteauneuf-du-Pape" are the target audience, not people who already know the exact bottle names.
+The purpose of Key Questions and FAQ content is to help the episode become discoverable and persuasive to new listeners across web search, AI-assisted discovery, and listener usefulness and conversion, not to summarize the episode for people who already found it.
 
-This has one direct, non-obvious consequence that the scoring rubric below must not obscure: **narrower is not automatically better.** A question specific to the exact bottles reviewed this episode (a boutique, small-production wine almost nobody searches for by name) has far less discovery reach than a question about the grape, region, style, or comparison category the episode covers. The exception is when the reviewed product itself carries independent search demand, most commonly a well-known retail brand (Kirkland Signature, Trader Joe's, Charles Shaw, Josh, etc.) that people genuinely google by name. For a standard review of small-producer or boutique bottles, the reverse is true: broad, topic-level questions are the higher-value FAQ candidates, and questions tied to the literal SKUs reviewed are the ones that need to earn their place, not the default best answer.
+**Neither broad nor narrow scope wins automatically.** Scope strength is topic-specific, decided from evidence, not from a fixed rule:
+- A broad category question (grape, region, style, comparison) may be the stronger entry point for an obscure product with no independent search demand.
+- A recognized brand or retailer (Kirkland Signature, Costco, Trader Joe's, a well-known label) can carry substantial independent demand on its own — a question about the specific product is not automatically weaker than a category question in that case.
+- Where no topic-specific evidence exists either way, say so. Do not default to "broad is safer" or "narrow is more specific" as a substitute for evidence.
 
-Treat the scoring rubric in Section 3 as a **quality floor** (grounding, plausibility, plain language, no fabrication), not a target to hit. After candidates clear that floor, prioritize and order them by actually reasoning about discovery reach for this specific episode's products, using Section 1 as a starting point, not a fixed formula to total up. If a mechanical score total and an honest reach judgment disagree, the reach judgment wins, and the disagreement should be noted in the audit file so it's visible, not smoothed over.
+**Do not claim that FAQ formatting, question wording, named entities, or any particular answer structure guarantees search ranking, AI retrieval, citation, or listener growth.** Every discovery-purpose label used below is a reasoned classification, not a performance promise, unless `docs/faq-research-reference.md` documents measured evidence for that specific claim.
 
-**Anti-slot-filling check:** the final question count is whatever genuinely clears the bar, 4 to 10 is the normal healthy range, but there is no target number. If a session lands on exactly 7 multiple episodes in a row, that is itself a warning sign of drifting back toward slot-filling rather than genuine scoring, flag it in the audit file rather than let it pass silently.
-
----
-
-## 0. Evidence types, anti-mislabeling rules, and C1 preflight
-
-### 0.1 — Evidence type definitions
-
-**I (Internal):** Evidence from episode-created materials only. Includes: episode title, hook, script text, transcript, tasting notes, prices, host ratings, verdicts, host preferences, pairings, and central discussion topics. Research links listed in the script are **source pointers only** — they are not I evidence. They become C2 evidence once fetched and read. I evidence requires no fetch or search.
-
-**C2 (Fetched page):** Evidence from fetching a specific URL. The URL may come from search results, episode research links, or other known sources. Requires: URL fetched, page title, key phrases observed, and framing observed. C2 confirms what a page says. It does **not** confirm how real users search or what questions they ask.
-
-**C1 (Search result):** Evidence from a live web search query. Requires all four of: (1) exact query string, (2) observed result titles and snippets, (3) URLs of results, and (4) date observed. C1 is the only valid evidence type for confirming that real users phrase a question in a particular way.
-
-### 0.2 — Anti-mislabeling rules
-
-These rules are non-negotiable:
-
-1. Do not label C2 evidence as C1. Fetching a known URL is C2. Running a query string and observing result titles and snippets is C1.
-2. A scoring cell cannot claim C1 support unless it cites a C1 evidence ID.
-3. On web-triggered episodes: plausibility 3 requires at least one C1 evidence ID. C2 evidence alone caps plausibility at 2. I evidence alone caps plausibility at 1.
-4. Research links listed in the episode script are source pointers only. They are not I evidence. They become C2 when fetched.
-
-### 0.3 — C1 capability preflight
-
-The preflight is **only run when C1 is determined to be required** by trigger rules (Section 5). Do not run it for non-triggered episode types.
-
-Order of operations:
-1. Classify episode type (Step A).
-2. Determine whether C1 is required by trigger rules (Step B.1).
-3. **If C1 is required:** run this preflight — state the specific tool or command that will perform live web searches; confirm it can return (a) exact query string, (b) observable result titles and snippets, (c) URLs of results, and (d) date observed.
-4. **If C1 is required and the tool cannot produce all four outputs:** C1 is unavailable — stop before any candidate generation.
-5. **If C1 is not required:** state "C1 not required for this episode type." Proceed with I and C2 evidence. Do not run the preflight.
-6. **If C1 is optional** (phrasing is uncertain for a non-triggered episode): state "C1 used optionally — [reason]." Run the preflight for that optional use only. If unavailable in the optional case, continue without C1.
-
-URL fetch, reading known links, repo search, file search, and local grep are **not C1** regardless of episode type.
-
-### 0.4 — Labeled-inference rule
-
-Inference is not banned. Unsupported inference is banned.
-
-Inference is allowed only when it is:
-- Explicitly labeled as inference
-- Tied to at least one specific evidence ID
-
-Example of valid inference: `2 — Inference from I-3 and I-4: the episode compares both wines directly, but no C1 evidence confirms this exact search phrasing.`
-
-Inference without evidence IDs cannot justify a score and must be replaced or scored lower.
+**Anti-slot-filling standing note:** the final question count is whatever genuinely clears the bar. If a session lands on the same count repeatedly, or a family is included only because the episode type "usually has one," that is a warning sign worth flagging in the audit, not a pattern to protect silently.
 
 ---
 
-## 1. Default priority ranking by intent type
+## 0. Evidence categories — keep these distinct, never collapse them
 
-This ranking is **conditional on whether the reviewed product has independent search demand**, not a fixed universal order. Determine that first:
+Every piece of evidence used in a FAQ run belongs to exactly one of these categories. A candidate's record and the audit must label each cited fact with its category.
 
-**If the episode features a branded/retail product people search by name** (Kirkland Signature, Costco, Trader Joe's, Charles Shaw, a famous or notorious label, etc.):
+| Category | Definition | What it can establish | What it cannot establish |
+|---|---|---|---|
+| **Owned evidence** | Topic-specific Google Search Console queries/pages for this wine, grape, region, or brand; relevant prior-episode evidence; the site-wide GSC intent-cluster priors in `docs/faq-research-reference.md` | That people have already searched and reached Wine Pair content on a related topic | Universal demand; that any specific FAQ question caused those impressions or clicks; that a click became a podcast play |
+| **Observed current-search evidence** | Results from a live search run this session (baseline or extended discovery research) — result titles, snippets, URLs, retrieval date | Current content supply, plausible vocabulary, comparison frames, and topics worth investigating | Search volume, exact user phrasing, real listener demand, AI-retrieval likelihood, or conversion |
+| **Episode evidence** | Script/transcript content: facts discussed, tasting observations, comparisons, explanations, serving/pairing advice, host opinions and disagreements, ratings, preferences, buying verdicts | Answer substance — this is the only category that may supply factual substance for a public FAQ answer | Whether the claim is true outside the episode, or whether it has any search/discovery value on its own |
+| **External corroborating evidence** | A current, claim-specific fetched source supporting a particular externally verifiable statement already made in the episode (a spelling, a date, a technical term, a geographic fact, a producer identity) | That an episode-covered claim is independently confirmed | New explanatory content — corroboration never supplies substance the episode didn't already state |
+| **Proposed discovery purpose** | An assigned label (web-search / AI-assisted / conversion) explaining why a candidate might work | A reasoned hypothesis for why the question was generated | Nothing on its own — must be marked as interpretation unless `docs/faq-research-reference.md` documents measured support |
+| **Interpretation or hypothesis** | Reasoning that connects evidence to a conclusion without being evidence itself | A stated judgment call, visible for review | Should never be presented as if it were evidence |
+| **Evidence gap** | An explicit statement that no evidence of a given type was found or collected | That the absence was checked for and is being reported honestly | Should never be silently omitted or converted into "no demand exists" |
 
-1. **Buy / skip / is it worth buying** — the product itself is the search term, this is the highest-reach question
-2. **Comparison / which is better / which should I choose** — serves listener choice when multiple wines are reviewed
-3. **Producer / retailer / private-label provenance** — sourcing is often the actual reason people search for these products
-4. **Taste / style / sweetness / body / tannin / acidity**
-5. **Food pairing / serving / aging**
-6. **Region / grape / style education**
-7. **History / trivia / technical production details** — lowest priority
-
-**If the episode features boutique, small-production, or otherwise not-independently-searched bottles** (the normal case for a standard two-wine review), reach flips:
-
-1. **Region / grape / style education** ("what does Gigondas taste like," "what grapes are in it") — this is what a new listener is actually searching for; leads the list
-2. **Comparison to a better-known reference point** ("Gigondas vs Châteauneuf-du-Pape") — borrows search reach from the more famous term
-3. **Taste / style / expectation-setting at the category level**
-4. **Food pairing / serving** — evergreen, high-reach query pattern on its own
-5. **Price expectation at the category/style level** ("how much should a good bottle of X cost")
-6. **Buy / skip verdict on the specific bottles reviewed** — real listener value, but low independent search reach; cap at one question per episode (see Section 2), and do not lead with it
-7. **Producer / provenance / history / technical production trivia about the specific bottles** — lowest priority unless it is the episode's central hook
+**Anti-mislabeling rules (non-negotiable):**
+1. A live search this session is Observed current-search evidence. Reading a known URL is External corroborating evidence. Never label one as the other.
+2. Owned evidence (GSC priors, topic-specific query data) is stronger than Observed current-search evidence for demand — cite it first when it exists, and say explicitly when it doesn't.
+3. A Proposed discovery purpose is never itself evidence of anything. It must be traceable to Owned, Observed, or Episode evidence, or explicitly marked as unsupported interpretation.
+4. Absence of evidence is recorded as an Evidence gap, never restated as "no demand exists" or "this producer lacks search demand."
 
 ---
 
-## 2. Episode type rules
+## 0-bis. Freshness check — before owned-evidence and candidate work, every run
 
-### Standard two-wine review
+Before the owned-evidence check (§1) or any candidate generation:
+1. Read `Last substantively verified` at the top of `docs/faq-research-reference.md`.
+2. Determine its age in days from today.
+3. If older than 30 days: stop before proceeding, unless Joe explicitly approves a one-run waiver for this specific episode. A waiver covers this run only — it does not extend the reference's own freshness for future runs.
+4. Record the freshness check (the date checked, the age found, and any waiver granted) in this episode's FAQ audit. Do not silently update `docs/faq-research-reference.md` itself during an episode run — that file is only ever updated by an explicit substantive-review pass (see its own "What updates this file" note).
+5. If, in the course of this run's own research, a material Google, Bing, search-behavior, or AI-discovery change is found that the reference doesn't yet reflect, stop and propose the finding to Joe and local ChatGPT before changing any production rule on the strength of it. Note the finding in the audit; do not act on it unilaterally.
 
-**Required candidate families:**
-- Taste/style at the grape or appellation level (one candidate covering the style broadly, not just the two specific bottles)
-- Region/grape education relevant to the episode's main hook, this is usually the highest-reach candidate for boutique/small-producer episodes and should not be skipped just because it feels "generic"
-- Pairing or serving
+## 1. Owned-evidence check — before any external research
 
-**Conditional candidate families:**
-- Buy/skip verdict on the specific bottles reviewed: include if genuinely useful, but see the SKU-specific cap below
-- Comparison/which is better between the two specific bottles: include only if the wines are meaningfully positioned against each other in the episode (same retailer, appellation pair, style competition, or explicit host choice). If both a buy/skip verdict and a which-is-better comparison would qualify, merge them into a single combined question rather than using two SKU-specific slots (see Section 6).
-- Comparison to a more famous reference point (e.g. a lesser-known appellation vs. a famous one it's compared to in the episode): often higher-reach than a same-episode bottle comparison, since the search volume is borrowed from the famous term
-- Producer/provenance: include only if the wines are private-label, Costco, Trader Joe's, Aldi, a mystery producer, or the bottler is a notable or surprising name
+Before running any live search, check what's already owned, in this order:
 
-**SKU-specific cap (guardrail, not a formula):** No more than **one** final selected question may be specifically about the exact bottles reviewed this episode (buy verdict, which-is-better comparison, or bottle-specific provenance, combined or separate count as one slot total), unless the episode type is Costco/private-label/branded-product review where the product itself has independent search demand (see Section 1). That one slot, if used, should not be the first Key Question or the first FAQ entry, lead with the broadest-reach question instead.
+1. **Topic-specific owned query data.** The current owned query export is `C:\Users\jamme\Downloads\gsc_data_temp\Queries.csv` (columns: Top queries, Clicks, Impressions, CTR, Position; the file's own `Filters.csv` states the dataset's search type and date window — record that window when citing it). Search the `Top queries` column for reasonable variations of this episode's wine, grape, region, brand, retailer, and central comparison terms. For every match, record: the matching query text, clicks, impressions, CTR, position, and the dataset's scope/window. Distinguish an **exact-topic match** (the query names this episode's actual wine/grape/region/brand) from an **adjacent-topic match** (related but not the same subject) — label which one it is. If no topic-specific match exists, record "no topic-specific owned query found" explicitly rather than substituting the site-wide priors as if they were topic-specific. Do not ask Joe for this data when the file is accessible — check it directly. If the file is unavailable, record that access gap explicitly and proceed using only the properly labeled site-wide priors and Observed current-search evidence; never fabricate a topic-specific result.
+2. Relevant prior episode evidence — has Wine Pair covered this or an adjacent topic before, and what was learned.
+3. The site-wide GSC intent-cluster priors in `docs/faq-research-reference.md` (Serving/chilling, Comparisons, Verdict/worth/buying, Identity/origin, Price/value, Taste/style, Pairing) — **background priors only**, used only when no topic-specific match exists.
 
-**Disfavored:**
-- Technical production details not discussed in the episode
-- Historical trivia not central to the episode
-- Truly generic wine-encyclopedia questions with no connection to this episode's grape, region, or style (e.g. "what is wine")
-- Questions included only to balance wine mentions (artificial symmetry)
-- A second or third question about the specific bottles reviewed, once the one-slot cap is used
+Topic-specific owned evidence always outranks the site-wide priors when both exist. The site-wide priors are a background signal about what the site's existing coverage already draws search traffic for — not proof of universal demand, not proof that FAQ content caused any impression or click, and not proof that a click became a play. Do not infer universal demand or FAQ causation from either the topic-specific query data or the site-wide priors.
+
+Do not treat a past episode's performance as proof that a particular question or FAQ answer caused that performance.
 
 ---
 
-### Costco / private-label review (Kirkland Signature, Trader Joe's, Aldi, etc.)
+## 2. Research depths — baseline (every episode) and extended (conditional)
 
-This episode type has boosted and downgraded families.
+Live search-result evidence is real evidence (Observed current-search evidence, §0), so "not required" never means "no research was performed." Two depths:
 
-**Boosted families (score these first):**
-- Is it worth buying?
-- Which bottle should I buy? / Which one is better?
-- What does it taste like?
-- Who makes it / who bottles it?
-- Is it a good value?
-- Why is it cheaper than comparable wines from this appellation?
+### Baseline discovery research — required every episode, no exceptions
 
-**Downgraded families:**
-- Broad appellation history not directly relevant to the buying decision
-- Technical trade-system explanations (négociant, en primeur, courtier) unless the whole episode is about how Costco sources wine
-- Appellation trivia that does not explain value or help the buying decision
+Run 2-4 searches chosen from *this episode's actual listener opportunities* — not a fixed weekly formula of "review / taste / comparison / buy" repeated identically every week.
 
-**Web search is mandatory for this episode type** (see Section 5).
+Record for each query:
+- **Topic opportunity investigated** — the specific episode-relevant subject the query targets (e.g. "whether this grape's taste profile is already well-covered online").
+- **Reason the query was selected** — one line, tied to this episode's actual content, not a template.
+- **Observed current-search evidence** — exact query string, retrieval date, representative result titles/snippets, URLs.
+- **Limitation** — what this observation does not establish (see the standing caution below).
 
----
+Keep this separate from **Proposed discovery purpose**, assigned later per candidate (§5): web-search discovery, AI-assisted discovery, or listener usefulness/conversion. A live search investigates a topic opportunity and observes current content supply — it is never itself a test of AI retrieval, listener conversion, or search volume, and must never be described as one. The discovery-purpose label is interpretation unless `docs/faq-research-reference.md` documents measured evidence for that specific claim.
 
-### Grape explainer
+**Standing caution:** search results show current content supply, vocabulary, and comparison framing. They do not prove search volume, exact user phrasing, actual listener demand, AI-retrieval likelihood, conversion, or performance.
 
-**Required families:** What is this grape? What does it taste like? What food pairs with it? Where does it grow? Is it worth trying?
+### Extended discovery research — conditional
 
-**Disfavored:** Product-specific buy questions (no specific wine reviewed), private-label provenance.
+Run a deeper query and source review when justified by one or more of:
+- a recognized brand or retailer
+- a buying, value, or provenance question
+- ambiguous product or producer identity
+- uncertain terminology
+- a contested, technical, or changing claim
+- another documented, episode-specific reason
 
----
+Record the trigger and the additional evidence collected. If extended research is triggered but unavailable, stop — do not generate or score candidates that depend on it.
 
-### Region explainer
+### Audit status line (replaces the old four-value "C1 status")
 
-**Required families:** What is this region? What are the wines like? What are the best producers or values? What food pairs with them?
-
-**Disfavored:** Same as grape explainer.
-
----
-
-### Comparison episode (explicit A vs. B format)
-
-**Required families:** Which is better? How do they differ in taste? Which is the better value? What food pairs with both?
-
-**Conditional:** Buy verdict for each wine separately only if the verdicts differ sharply.
+Use exactly one:
+```
+Baseline discovery research completed — extended research not triggered
+Baseline and extended discovery research completed
+Baseline research unavailable — FAQ selection blocked
+Extended research required but unavailable — FAQ selection blocked
+```
 
 ---
 
-### Interview episode
+## 3. Episode type families are candidate prompts, not reserved slots
 
-**Required families:** Who is the guest and why do they matter? What is their main insight or recommendation? What wine did they discuss?
+The lists below (grape explainer, region explainer, Costco/private-label, comparison, interview, standard two-wine review) are starting points for candidate generation, never a guaranteed final slot. A guest-identity question is not automatically included because the episode is an interview; a taste question is not automatically included because the episode is a review. Every family-prompted candidate must still clear the eligibility gates (§4) and the qualitative assessment (§5) on its own merits.
 
-**Disfavored:** All standard review families (no wines are rated).
+### Standard two-wine review — candidate prompts
+Taste/style at the grape or appellation level; region/grape education tied to the episode's hook; pairing or serving; buy/skip or which-is-better on the specific bottles (capped, see below); comparison to a more famous reference point; producer/provenance when the wines are private-label or a notable/surprising name.
 
----
+### Costco / private-label review — candidate prompts (branded/retail exception)
+Is it worth buying; which one is better; what does it taste like; who makes/bottles it; is it a good value; why is it priced the way it is (episode-covered price facts only — never an externally-sourced business-model explanation the episode didn't state). Extended research is required for this episode type (§2).
 
-### Minisode / bonus episode
+### Grape explainer / region explainer — candidate prompts
+What is it; what does it taste like; what food pairs with it; where does it grow/what's the region like; is it worth trying.
 
-No standard FAQ required unless the episode reviews a wine. Apply the review rules if wines are discussed; otherwise apply the episode-specific topic rules.
+### Comparison episode (explicit A vs. B) — candidate prompts
+Which is better; how do they differ in taste; which is the better value; what pairs with both; separate buy verdicts only if verdicts differ sharply.
 
----
+### Interview episode — candidate prompts
+Who is the guest and why they matter; their main insight or recommendation; what wine they discussed. None of these are guaranteed a slot — each competes with every other candidate on the same terms.
 
-## 3. Scoring rubric
+**SKU-specific guardrail (not a formula):** for a standard boutique-bottle review with no independent product demand, no more than one final selected question may be specifically about the exact bottles reviewed, and it should not lead the list. This cap does not apply to a Costco/private-label/branded-product episode, where the product itself is the search term.
 
-Each candidate question is scored on six criteria, 0-3 each. Maximum score: 18. Threshold to qualify: **13 or higher**. A score of **0 in any of these three dimensions auto-fails the candidate:** listener/search plausibility, answer grounding, audience vocabulary.
-
-Every score must include a one-line evidence note citing a specific, observable source. Scores without evidence notes are not valid.
-
----
-
-### Criterion 1: Listener / search plausibility
-
-Does a real buyer, listener, or wine-searcher actually phrase a question this way?
-
-| Score | Criteria |
-|---|---|
-| 0 | No normal buyer or listener would phrase this question. Jargon or insider framing. No clear search behavior exists for this phrasing. |
-| 1 | Plausible only for a niche wine-expert or trade audience. Side curiosity at best. |
-| 2 | Plausible long-tail question in plain language, but not obviously central to search demand. No external validation available. |
-| 3 | Highly natural buyer/listener/search question tied to product review, buying decision, comparison, taste, pairing, or producer identity. **On web-triggered episode types, a score of 3 requires external web evidence** — a search result title, snippet, repeated phrase from a review page, or forum language confirming real users frame the question this way. Without web evidence on a triggered episode type, the maximum score for this criterion is 2, unless the question is directly stated or obviously implied by the episode title and show format. |
+**Duplicate listener jobs:** "Is this category worth trying?" and "Are these exact bottles worth buying?" can substantially overlap. Prefer the version with greater plausible reach unless the specific product has independent demand evidence.
 
 ---
 
-### Criterion 2: Listener usefulness
+## 4. Eligibility gates (pass/fail, not scored)
 
-Does the answer help the listener take an action or make a decision?
+A candidate must pass all of the following before it can be assessed for selection. No numeric score is attached to this step.
 
-| Score | Criteria |
-|---|---|
-| 0 | Does not help the listener do anything. |
-| 1 | Interesting background only. No decision value. |
-| 2 | Helps the listener understand the wine, region, label, or episode topic. |
-| 3 | Directly helps the listener buy, skip, choose between wines, pair, serve, age, or decide whether they will enjoy the wine. |
+1. **Episode grounding.** Answerable substantively from Episode evidence.
+2. **Plausible listener usefulness.** A real person could plausibly ask this and get something useful from the answer.
+3. **Understandable language.** No unexplained jargon a normal listener wouldn't recognize.
+4. **Non-fabrication.** No invented facts.
+5. **Not a duplicate listener job.** Does not perform the same job as another already-eligible candidate with different wording.
 
----
-
-### Criterion 3: Episode centrality
-
-How central is this topic to the actual episode?
-
-| Score | Criteria |
-|---|---|
-| 0 | Not actually part of the episode. |
-| 1 | Mentioned briefly or appears only in research background notes, not in the main discussion. |
-| 2 | Meaningful supporting topic discussed in the episode. |
-| 3 | Central to the episode title, hook, tasting verdict, host ratings, main discussion, or explicit conclusion. |
+A candidate failing any gate is out, with a one-line reason logged in the audit's rejection notes.
 
 ---
 
-### Criterion 4: Topical relevance (formerly "Specificity")
+## 5. Qualitative assessment (replaces the six-criterion score, the 18-point total, the 13-point threshold, and the penalty table)
 
-**This criterion does not reward narrowness for its own sake.** It measures whether the question is genuinely tied to this episode's actual subject, at whatever level of scope serves the most listeners. A question about the grape or region this episode covers is not a lesser or "more generic" version of a question about the exact bottles, it is usually the higher-value candidate, because it is what a new listener is actually searching for (see the Guiding principle at the top of this file).
+For each eligible candidate, record — qualitatively, no numeric total:
 
-| Score | Criteria |
-|---|---|
-| 0 | Unrelated to the episode's actual subject, or so broad it has no connection to what this episode covers (e.g. "what is wine"). |
-| 1 | Loosely related but not meaningfully anchored to this episode's grape, region, style, or hook. |
-| 2 | Specific to the exact bottles reviewed in this episode (their producer, price, or provenance), useful for a listener who already found the episode, but with low independent search reach on its own. Subject to the SKU-specific cap in Section 2. |
-| 3 | Specific to the grape, region, appellation, style, or comparison category this episode covers, the level a new listener is actually searching at. This is the default top score for a standard review episode, not a fallback. |
+- **Demand and web-search opportunity.** Owned evidence, Observed current-search evidence, or an explicit Evidence gap. Cite specifically; never infer volume from a single search.
+- **Listener usefulness and conversion.** How it ties to the confirmed title, the episode hook, a comparison, tension, or recognizable context. The title and hook are conversion *evidence* here, not a requirement that every title phrase become a question.
+- **Distinctive episode-grounded answer.** What Joe/Carmela can say from Episode evidence that a generic source can't, naming which evidence it draws from.
+- **Proposed discovery purpose(s):** web-search / AI-assisted discovery / listener conversion (one or more), labeled as interpretation unless `docs/faq-research-reference.md` documents measured support for that specific mechanism.
 
-**Exception:** on a Costco/private-label/branded-product episode (Section 2), the reviewed product itself is a high-reach search term, so a question about that specific bottle should score 3, not 2, since it carries independent search demand rather than depending on the episode.
-
----
-
-### Criterion 5: Answer grounding
-
-Can the answer be directly supported by episode materials or cited external sources?
-
-| Score | Criteria |
-|---|---|
-| 0 | Cannot be answered from episode notes, transcript, ratings, or reliable external sources. |
-| 1 | Weakly supported or inferential. |
-| 2 | Supported by episode notes, research links, or fetched external sources. |
-| 3 | Directly supported by host ratings, verdicts, tasting notes, prices, episode transcript, or explicitly cited research from the evidence table. |
-
-**This criterion scores whether a candidate question is answerable at all — it governs question selection, not what may go into the written answer.** C1/C2 evidence can make a candidate question score well here (e.g. confirming real search demand or corroborating a detail), but that does not license writing the answer itself from C1/C2 material. When answers are actually written (Step I), substantive content must come from I (episode-internal) evidence only. C1/C2 evidence may verify or clarify a fact the episode already stated (e.g. correcting a garbled transcript name) but must never supply new explanatory content, context, or mechanism the episode never discussed, even if it is true and even if it would make a thin answer more complete. Named failure mode (Ep231): a "why is Kirkland cheaper" answer stated Costco's general markup/distribution model as fact, sourced entirely from web research and never mentioned in the episode. If a question can't be answered substantively from I evidence alone, cut it or rework it rather than padding the answer with outside research.
-
----
-
-### Criterion 6: Audience vocabulary
-
-Does the question use language a normal listener or buyer would actually use?
-
-| Score | Criteria |
-|---|---|
-| 0 | Uses wine-trade or technical jargon the audience is unlikely to search. Examples: "négociant," "en primeur," "terroir" (as a standalone topic), "assemblage," "élevage." |
-| 1 | Uses technical language without plain-language framing. May confuse a normal listener. |
-| 2 | Mostly plain language with one unavoidable wine term that is explained in the answer. |
-| 3 | Entirely natural listener/search language. A person who knows nothing about wine would understand the question and recognize it as their own. |
-
----
-
-## 4. Penalty table
-
-Apply penalties after the base score is calculated.
-
-| Penalty | When to apply |
-|---|---|
-| -3 | Minor trivia masquerading as a FAQ (back-label detail, production footnote, historical sidebar) |
-| -3 | Uses wine-industry language instead of listener language |
-| -3 | Duplicates another candidate (same listener need, different wording) |
-| -2 | Included only to balance wine mentions (artificial symmetry) |
-| -2 | Included only to reach the 7-question count (slot-filling) |
-| -2 | Generic wine encyclopedia content with no episode-specific hook |
-| -2 | Not aligned with the episode's show promise or main listener job |
-| -1 | Interesting but not decision-useful |
-
----
-
-## 5. Web search trigger rules
-
-Web search is **mandatory** (not optional, not a manual suggestion) only when the episode involves a genuinely ambiguous case:
-
-- Costco / Kirkland Signature wines
-- Trader Joe's / Charles Shaw / private-label wines
-- Aldi / private-label wines
-- Producer or bottler identity questions ("who makes this?")
-- A term or phrase where the model is genuinely uncertain whether real buyers use that phrasing
-
-**"Any current or recent vintage in a product-review context" and "any specific commercial product where existing reviews may exist online" are NOT triggers on their own.** Those two conditions describe nearly every episode this show produces (every episode reviews a current-vintage commercial wine that almost certainly has existing online reviews) — treating them as automatic triggers made the full mandatory search-and-verify path the default for routine two-wine reviews instead of the exception it's meant to be. A routine episode with no ambiguity flag above relies primarily on I (episode content) and C2 (fetching the episode's own cited research links, which is already required regardless of C1 status) — C1 web search remains available and should still be used when the model is not confident about real search phrasing, but it is optional in that case, not mandatory, and does not require the full query set below.
-
-**If web search is triggered (one of the five conditions above applies) and the agent cannot perform web search: stop. Report "Objective FAQ scoring cannot be completed for this episode type — web search is required but unavailable." Do not generate candidates or proceed to scoring.**
-
-### Required web search query set (Costco/private-label review, or other mandatory-trigger episode)
-
-Perform all of the following query types and record results:
-
-1. `[wine name] review` (e.g. "2023 Kirkland Signature Pauillac review")
-2. `Kirkland [appellation] Costco` or equivalent retailer + wine phrasing
-3. `Costco [wine name] [vintage year]`
-4. `who makes Kirkland Signature [wine]` or `who bottles Kirkland [wine]`
-5. `[appellation A] vs [appellation B]` (for comparison episodes)
-6. Any product-specific variation implied by the episode title
-
-For each query, record: query string, result titles and snippets observed, repeated phrases across results, source types (review site, forum, retailer page, blog), and what listener intent each result implies.
+A selected question should normally be strong in at least two of the three jobs (demand, conversion, distinctive answer). This is a qualitative judgment call, recorded with reasoning and evidence citations — not a number, and not a replacement scoring system.
 
 ---
 
 ## 6. Combined vs. separate vs. comparison buy question rules
 
-**Use a combined buy question** ("Are both wines worth buying?" or "Are the Kirkland Pauillac and Saint-Julien worth buying?") when:
-- The episode title or hook presents the wines as a group
-- The wines share a retailer, category, or theme
-- Both verdicts are similar (within 1 point)
-- Separate buy questions would produce repetitive answers
-- Searchers are likely to phrase the question around the group ("Costco Bordeaux," "Kirkland Bordeaux")
+**Use a combined buy question** when the episode presents the wines as a group, they share a retailer/category/theme, verdicts are similar (within 1 point), separate questions would be repetitive, or searchers are likely to phrase the question around the group.
 
-**Use separate buy questions** when:
-- One wine has significantly higher individual search demand
-- Verdicts differ sharply (2+ points apart, or one is a skip)
-- The wines are unrelated except for appearing in the same episode
-- The answers would be materially different and a combined answer would mislead
+**Use separate buy questions** when one wine has significantly higher individual demand, verdicts differ sharply (2+ points, or one is a skip), the wines are otherwise unrelated, or a combined answer would mislead.
 
-**Use a comparison / which is better question** when:
-- The episode creates a real, explicit choice between the wines
-- The wines share a category, retailer, grape, region, price point, or theme
-- The hosts explicitly compared and chose between them
-- A combined answer helps someone choose
+**Use a comparison/which-is-better question** when the episode creates a real, explicit choice between the wines, they share a category/retailer/grape/region/price point/theme, the hosts explicitly compared and chose, or a combined answer helps someone choose.
 
-**Do not use any of these as a mechanical rule based on wine count alone.** The decision must follow from the listener job and the episode structure.
+Do not apply any of these mechanically based on wine count alone — follow the listener job and the episode's actual structure.
 
 ---
 
-## 7. Tie-breaker order
+## 7. Selection, ordering, and count
 
-When multiple candidates score above 13, use this priority order:
-
-1. Higher listener usefulness wins
-2. Higher listener/search plausibility wins
-3. Higher episode centrality wins
-4. Better alignment with episode title and hook wins
-5. Better answer specificity wins
-6. Avoid duplicate answer coverage
-7. Prefer buyer/listener language over wine-school language
+- Generate no more than 8-12 genuinely distinct candidates. Stop sooner once the plausible space for this episode is represented. Do not generate multiple candidates that perform the same listener job with different wording.
+- Normally select 5-7 questions. No target within that range. Never pad the set to reach 5 or 7.
+- If fewer than 5 candidates genuinely clear the eligibility gates and perform well on at least two of the three jobs, stop and present the smaller set to Joe with a concise explanation, rather than lowering the standard. Joe may explicitly approve an exception outside 5-7.
+- **Order by the strongest combined listener-growth opportunity for this specific episode** — considering topic-specific demand evidence, the title/hook as conversion evidence, conversion potential generally, and the distinctiveness/usefulness of the grounded answer. This is not an automatic "broadest reach leads" rule; a narrower, title-aligned question can legitimately lead if its combined case is genuinely stronger for this episode.
+- Key Questions and FAQ questions must match exactly in wording and order.
 
 ---
 
-## 8. Evidence requirement
+## 8. Corroboration sequence — episode coverage controls answer substance
 
-**A score is objective if and only if the evidence note could be handed to another person and they could independently verify it.**
+Every substantive statement in a public FAQ answer (facts, explanations, comparisons, tasting observations, serving/pairing advice, opinions, ratings, disagreements, verdicts) must come from Episode evidence. External research must never introduce a factual explanation, context, claim, or conclusion the episode didn't cover, even when true and relevant.
 
-**Evidence IDs are mandatory.** Every row in the evidence ledger must carry an ID: `I-N` for internal evidence, `C1-N` for search-result evidence, `C2-N` for fetched-page evidence. Every scoring cell must cite at least one evidence ID.
+For provisional finalist questions, before finalizing:
+1. Draft the material claims each answer would contain, from Episode evidence only.
+2. Identify which of those claims are externally verifiable.
+3. Fetch current, claim-specific corroborating sources for each — a general page about the wine/grape/region/producer is not sufficient unless it actually substantiates the particular statement made. One authoritative source may support multiple related claims.
+4. Mark each externally verifiable claim: Supported / Contradicted / Qualified / Not found.
+5. If research contradicts, qualifies, or fails to support an episode-covered claim: do not silently publish it, do not silently replace it with the external version, do not blend in additional external material. Flag the discrepancy for Joe.
+6. Finalize the question and answer only after this review.
 
-**Scoring cell format:** `[score] — [evidence ID(s)]: [one-sentence rationale explaining why the cited evidence supports this score]`
+**Source priority for corroboration:**
+1. Primary and official sources
+2. Authoritative institutional, academic, industry, or producer sources
+3. Reputable specialist publications
+4. Lower-authority sources only when necessary, explicitly labeled as such
 
-Acceptable scoring cells:
-- `3 — C1-2, C2-1: C1-2 shows result titles using "Kirkland Signature Pauillac review"; C2-1 is a fetched review page with buy/value framing in the opening paragraph.`
-- `0 — C1-4: C1-4 search on "who makes Kirkland Saint-Julien" returns results using plain language like "who makes" and "who bottles" — not "négociant." Vocabulary criterion auto-fails.`
-- `2 — I-3: transcript reference places négociant mention only in a research note, not in the main tasting discussion.`
-- `2 — Inference from I-3 and I-4: episode compares both wines directly, but no C1 evidence confirms this exact search phrasing.` *(labeled inference — allowed)*
-
-Not acceptable:
-- `3 — C1-2` (score and ID present but no rationale)
-- `3 — I believe people would search this` (no evidence ID, unsupported inference)
-- `2 — seems plausible` (no evidence ID)
-- `1 — probably niche` (no evidence ID)
-
----
-
-## 9. Required audit template
-
-Every FAQ run must produce an audit file at `outputs/episodes/faq-audits/ep[N]-faq-audit.md`. The file must match the structure below. Do not omit any section.
+Host tasting observations, preferences, ratings, disagreements, and verdicts require Episode evidence only — no external corroboration.
 
 ---
 
-### Audit file header (required)
+## 9. Answer requirements
 
-The file must open with these fields:
+- Front-load the direct answer in the opening sentence.
+- Usually 25-50 words; 60-word maximum unless Joe explicitly approves an exception; no minimum; never pad to hit a length target.
+- Make sense without surrounding episode context (standalone).
+- Identify the subject clearly and unambiguously when necessary — this serves both a human skimming a search result and an AI system retrieving the answer without missing context.
+- Preserve Joe and Carmela's actual observations, comparisons, disagreements, recommendations, and verdicts — this is what differentiates the answer from generic reference content.
+- Avoid unsupported generic encyclopedia content with no episode-specific hook.
+- Avoid podcast-recap framing ("In this episode," "we tasted," "Joe says," etc. — full list in `docs/house-rules.md` HR and the validator's banned-phrase check).
+- No em-dashes (HR-1). No invented facts (HR-3).
 
-    # FAQ Audit — Ep[N]: [Episode Title]
-    
-    Date: [YYYY-MM-DD]
-    Episode type: [per Section 2 of this file]
-    Web search triggered: [Yes — [trigger condition] / No]
-    C1 status (use exactly one):
-      C1 required and completed
-      C1 required but unavailable — scoring blocked
-      C1 not required for this episode type
-      C1 used optionally — [reason]
-
-If C1 status is `C1 required but unavailable — scoring blocked`: stop here. Do not proceed to candidate generation.
+Distinctive firsthand content is supported by current Google guidance as useful, original, first-hand content (`docs/faq-research-reference.md`). This is not a claim that it guarantees AI citation or retrieval — see that file's explicit classification of each finding.
 
 ---
 
-### Evidence ledger — Section I: Internal evidence
+## 10. Required audit template (condensed)
 
-*(Episode-created materials only: title, hook, script, transcript, tasting notes, prices, host ratings, verdicts, pairings, host preferences, central discussion topics. Research links are source pointers only — do not list them here. They become C2 once fetched.)*
+Every FAQ run produces an audit file at `outputs/episodes/faq-audits/ep[N]-faq-audit.md`. **Use these exact section headings, verbatim, as shown** — the validator checks for these exact headings, not a paraphrase. Each heading may be any markdown level (`###` is the default), and content may follow the heading text on the same line (e.g. a colon and episode name), but the required phrase itself must appear at the start of the heading line unchanged.
 
-| ID | Evidence type | Finding | Source (episode file section) |
-|---|---|---|---|
-| I-1 | ... | ... | ... |
+```markdown
+### Episode Opportunity Frame
+[episode type, hook, one-paragraph statement of the dominant listener opportunity]
+
+### Owned-Evidence Check
+[topic-specific findings per §1, or an explicit gap statement, plus the relevant site-wide priors if cited]
+
+### Baseline Discovery Research
+[queries, topic opportunity investigated, reason selected, observed current-search evidence, limitation — per §2]
+
+Research reference checked: YYYY-MM-DD
+Reference age: N days
+Freshness status: Current
+Material guidance change found: No
+
+These four fields are required, exact format, every run (per §0-bis). If a one-run waiver was granted, replace the third line with `Freshness status: Joe-approved one-run waiver` and add a fourth line `Freshness waiver approved by Joe: YYYY-MM-DD` immediately after it. If this run's research surfaced a material guidance change not yet reflected in `docs/faq-research-reference.md`, replace the fourth (standard) line with `Material guidance change found: Yes — production review blocked` — this blocks production use of this run's FAQ content until Joe and local ChatGPT review the finding.
+
+### Extended Discovery Research
+[if triggered: trigger reason and findings. If not triggered, this heading must still be present — write: "Not triggered for this episode."]
+
+### Episode-Evidence Ledger
+[I-numbered rows: evidence type, finding, source location]
+
+### Candidate Comparison
+[for each of the 8-12 candidates: eligibility gate result; if eligible, the qualitative record from §5 (demand, conversion, distinctive answer, proposed discovery purpose); if rejected, a one-line reason]
+
+### Provisional Claim / Corroboration Table
+[table columns, exact labels: Episode evidence | Corroborating Source | Support Status | Conflict or Qualification. If no externally verifiable claims exist among the finalists, this heading must still be present — write: "No external corroboration was required; all finalist claims are episode-internal or host judgment."]
+
+### Final Selection
+[ranked list with the ordering rationale from §7]
+
+<!-- FINAL_QUESTIONS_START -->
+1. Exact first question?
+2. Exact second question?
+<!-- FINAL_QUESTIONS_END -->
+
+### Rejection / Correction Notes
+[concise notes — not a full re-derivation; a short note is sufficient for a narrow, Joe-directed correction after the fact]
+
+### Approved Exceptions
+None.
+```
+
+**Approved Exceptions is always present, even when nothing was approved.** Default content is exactly `None.` when no override was used. When Joe approves an exception, add the matching entry instead — do not infer approval merely because a command-line override flag was supplied; the flag and the audit entry are two separate, cross-checked things, and a run using an override without the matching entry here fails validation. Exact required formats, one line per approved exception in effect:
+
+```text
+Count exception approved by Joe: [N] questions — YYYY-MM-DD
+Answer-length exception approved by Joe: [N] words — YYYY-MM-DD
+Research-freshness waiver approved by Joe: YYYY-MM-DD
+```
+
+A count exception requires both `--expected-key-questions` and `--expected-faq-pairs` to be passed with the same value, matching this entry's number. An answer-length exception is only needed when `--expected-max-words` exceeds 60. A research-freshness waiver entry here is required whenever Baseline Discovery Research declares `Freshness status: Joe-approved one-run waiver` — it is a separate, additional record from the `Freshness waiver approved by Joe` line in that section, not a duplicate to skip.
+
+**Numbering requirement:** the `FINAL_QUESTIONS` block must number sequentially starting at 1 (1, 2, 3, ...), with no gaps, repeats, or out-of-order entries. This is validated mechanically.
+
+**"Not triggered" and "not required" are not omissions.** Extended Discovery Research and the Provisional Claim / Corroboration Table headings are always present, even when the honest content is "nothing happened here" — omitting the heading itself is a validator error, not a stylistic choice.
+
+When Joe changes, removes, or replaces a question after the fact, update the episode output and the `FINAL_QUESTIONS` block together in the same pass. A concise note in Rejection / Correction Notes is sufficient; the full audit is not re-derived from scratch for a narrow correction.
 
 ---
 
-### Evidence ledger — Section C1: Search-result evidence
-
-*(Exact query strings and observed results only. URL fetch, reading known links, and local search are not C1.)*
-
-This section must open with one of the four C1 status labels:
-- `C1 not required for this episode type` — section contains only this line; table may be omitted.
-- `C1 used optionally — [reason]` — include results if available; note unavailable if not.
-- `C1 required but unavailable — scoring blocked` — section contains only this line; no table follows; stop here.
-- `C1 required and completed` — proceed with table below.
-
-| ID | Exact query | Result title observed | Snippet/text observed | URL of result | Date observed |
-|---|---|---|---|---|---|
-| C1-1 | ... | ... | ... | ... | ... |
-
----
-
-### Evidence ledger — Section C2: Fetched-page evidence
-
-*(Records what fetched pages say. Does not confirm search intent.)*
-
-| ID | URL fetched | Page title | Key phrases and framing observed |
-|---|---|---|---|
-| C2-1 | ... | ... | ... |
-
----
-
-### Candidate scoring table
-
-Each scoring cell format: `[score] — [evidence ID(s)]: [one-sentence rationale]`
-A cell with score and ID but no rationale is not valid.
-
-| Candidate question | Plausibility | Usefulness | Centrality | Specificity | Grounding | Vocabulary | Penalties | Total | Pass? |
-|---|---|---|---|---|---|---|---|---|---|
-
----
-
-### Rejection log
-
-| Candidate | Score | Specific rule violated |
-|---|---|---|
-
----
-
-### Final selection log
-
-| Rank | Question | Score | Tie-breaker applied (if any) |
-|---|---|---|---|
-
-**Count and ordering rationale (required):** State how many candidates scored 13+, how many scored 11-12 (near-miss, for transparency), and why the final count is what it is, not why it was adjusted toward any target number. Confirm the SKU-specific cap from Section 2 was respected (state how many of the final questions are about the exact bottles reviewed, this must be 0 or 1 for a standard review episode) and confirm the list leads with the broadest-reach question, not the SKU-specific one.
-
----
-
-*Last updated: 2026-07-18 — added Guiding principle (reach over narrowness, grounded in FAQPage/AEO research on broad vs. specific query performance), made Section 1 priority ranking conditional on product search demand, fixed Criterion 4 (was inverted: scored SKU-narrow questions higher than topic-level ones), added the SKU-specific one-question cap and lead-ordering rule to Section 2, and added the count/ordering transparency requirement to Section 9. Corrected after Ep227 shipped 2 bottle-specific questions with one leading the list, traced to Criterion 4 rewarding narrowness as the top score.*
+*This file replaces the six-criterion 0-3 scoring rubric, the 18-point total, the 13-point pass threshold, and the itemized penalty table previously used in this model. See `docs/faq-research-reference.md` for the current first-party and empirical evidence base referenced throughout.*

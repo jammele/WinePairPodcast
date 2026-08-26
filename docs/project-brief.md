@@ -16,7 +16,7 @@ Core pain points this system addresses:
 ## What the system does today
 
 **Weekly episode workflow:**
-- `/generate-episode-content` — reads script, generates Key Questions, FAQ, Review Schema, FAQPage schema, and 10 Bluesky posts; validates with `validate_episode.js` before showing Joe
+- `/generate-episode-content` — reads script, generates Key Questions, FAQ, Review Schema, and 10 Bluesky posts; validates with `validate_episode.js` before showing Joe
 - `/review-titles` — checks candidate-level hard rules and advisory guidance against the complete title archive and evidence reference, performs the required second review, presents every rule-compliant title to Joe, and does not commit title records until Joe selects a title and approves the resulting diff
 - `/generate-cover-art`: generates 2-3 title-centered concepts, applies title/content/spoiler/thumbnail gates, and creates the selected ChatGPT prompt; reads recent scene history from `data/cover-art-scenes.md` to prevent repetition
 - `/verify-published` — checks live page for card re-encoding, schema, author byline, meta description after every Beamly publish
@@ -39,7 +39,7 @@ Grow The Wine Pair Podcast's listener base. The site grows by becoming discovera
 
 **The ecosystem has three pillars:**
 1. The podcast — the core product
-2. The website + blog — discovery engine (blog posts, spoke pages, FAQPage schema, AEO canonical language)
+2. The website + blog — discovery engine (blog posts, spoke pages, AEO canonical language)
 3. The Winedr companion app — engagement tool (React Native, in development; shares wine data via `data/wine_similarity_data.json`)
 
 ## Current priorities

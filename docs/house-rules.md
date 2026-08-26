@@ -349,15 +349,16 @@ When Joe requests one workflow step, complete only that step. Do not auto-run ad
 Before running `/generate-episode-content`, confirm the episode title is selected and recorded in `docs/work-log.md` and/or `data/episode-titles.md`. If title status is pending or unclear, stop and ask for title confirmation. Only proceed without a confirmed title when Joe explicitly overrides this gate.
 
 **HR-52: Episode Key Questions and FAQ canonical requirements.**
-- Key Questions: exactly 7 unless Joe explicitly requests a different number.
-- FAQ pairs: exactly 7 unless Joe explicitly requests a different number.
+- Normal range: 5-7 questions. There is no target within that range, and the set is never padded to reach 5 or 7. If fewer than 5 candidates genuinely clear the selection standard, stop and show Joe the smaller set with a concise explanation rather than lowering the standard. Joe may explicitly approve an exception outside the 5-7 range. This is an operational policy, not a claim that 5-7 has been shown to improve growth.
+- Key Questions and FAQ questions must match exactly in wording and order.
 - FAQ heading must be exactly "FREQUENTLY ASKED QUESTIONS."
 - FAQ format must follow HR-2 exactly (`**Q. ...**` then plain `A. ...`).
-- FAQ questions must reflect real listener/search intent.
-- Reject trivia-only questions.
-- FAQ answers must be grounded in transcript, show notes, tasting notes, ratings, wine details, or the episode topic.
+- Every substantive statement in an FAQ answer (facts, explanations, comparisons, tasting observations, serving/pairing advice, opinions, ratings, disagreements, verdicts) must be grounded in something actually covered in the episode script or transcript. External research may corroborate an episode-covered fact; it must never introduce a claim, explanation, or conclusion the episode didn't cover.
+- Every externally verifiable factual claim used in an answer requires a current, claim-specific corroborating source, recorded in the FAQ audit. Personal tasting observations, ratings, preferences, disagreements, and verdicts require episode evidence only, not external corroboration.
 - FAQ answers must be useful to someone deciding whether to listen, buy, understand, or pair the wine.
-- FAQ answers should be 40 to 60 words, front-loaded, plain-language, and conversational.
+- Answers front-load the direct answer, usually 25-50 words, 60-word maximum unless Joe explicitly approves an exception, no minimum, never padded.
+- Reject trivia-only or fabricated content.
+- Detailed candidate generation, eligibility gates, and selection logic are governed by `docs/faq-intent-model.md`; this rule states the canonical requirements, not the full process.
 - FAQ-only standalone rule: this applies only to FAQ answers, FAQ schema `acceptedAnswer.text`, and generated FAQ blocks in episode-content/show-notes outputs. It does not apply to titles, Bluesky, show descriptions, captions, title rationales, cover-art prompts, or other sections unless Joe explicitly asks.
 - FAQ-only podcast-narrative ban: do not frame FAQ answers as episode recap. Avoid obvious podcast-internal phrasing such as "In this episode", "On this episode", "Joe says", "Joe points out", "Carmela says", "we tasted", "we got", "we chose", "why we did this episode", "on the show", and "our episode".
 - FAQ-only first-person nuance: first-person should be avoided by default in FAQ answers, but it is allowed when it gives clear consumer recommendation guidance and does not turn the answer into recap.
