@@ -1,23 +1,22 @@
-## PENDING TASK — Complete before other work
-*(Applies only to a fresh top-level Claude Code session resuming after an interruption. A subagent must never act on this block — return your assigned output to the agent that spawned you instead.)*
-
-Task: /generate-episode-content for Ep233 — Aglianico Rosato: If You Love a Bold Red Wine, Try Its Rosé
-Started: 2026-08-29
-Output file: outputs/episodes/ep233-aglianico-rosato.md
-
-On resume:
-1. Check whether `outputs/episodes/ep233-aglianico-rosato.md` exists and contains `## SEO / AEO + SOCIAL CONTENT`.
-   - If yes: go to step 2.
-   - If no: re-invoke /generate-episode-content for this episode from step 3.
-2. Run `node scripts/validate_episode.js outputs/episodes/ep233-aglianico-rosato.md --sections=KEY_QUESTIONS,FAQ,BLUESKY` and fix all errors.
-3. Show Joe the validated content.
-4. Remove this PENDING TASK section from `docs/work-log.md` and commit.
-
 # Work Log — The Wine Pair Podcast
 
-**Last updated:** 2026-08-22 (session 41 — Ep232 Schiava: title confirmed, cover art, Key Questions, FAQ, Bluesky)
+**Last updated:** 2026-08-29 (session 42 — Ep233 Aglianico Rosato: title confirmed, title-review workflow corrections, cover art approved, Key Questions, FAQ, Bluesky)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
+
+---
+
+## Session 42 summary (2026-08-29) — Ep233 Aglianico Rosato: title, title-workflow corrections, cover art, Key Questions, FAQ, Bluesky
+
+**Title:** Aglianico Rosato: If You Love a Bold Red Wine, Try Its Rosé — confirmed via `/review-titles`, two full rounds plus Joe's own final one-word precision edit (added "a" before "Bold Red Wine," dropped the trailing period). Joe explicitly ruled out an Italian Wine Adventure title for this episode and asked for a "Getting Serious About Rosé #5" option to be included; it was offered but not chosen. Full session at `data/title-session-reports.md` (Ep233 entry).
+
+**Title-workflow process corrections (same session):** A multi-round audit of the `/review-titles` process itself found and fixed six issues: (1) a session-specific instruction was incorrectly reported as an HR-17 hard-rule FAIL — HR-17 and ad hoc session constraints are now tracked and reported separately (`Session constraint: PASS/NEEDS REVISION`), with NEEDS REVISION still binding before presentation; (2) a "Clickability order" list wasn't actually sorted — added a final-order verification step; (3) the AEO line claimed an unsupported "strongest positioning" — now required to defer to `docs/title-research-reference.md`'s current wording; (4) a compound title (question + statement) was mis-described as "just a question" — added a structural-accuracy check; (5) a qualitative Voice Fit check was added for meaning-changing wording (article/pronoun/tense changes that alter the episode's actual claim); (6) a regenerated batch after a full rejection must be meaningfully distinct, not padded to a quota or thinned to near-paraphrases. Implemented as amendments to `.claude/commands/review-titles.md` and `docs/house-rules.md` (HR-17, HR-67, HR-72); `docs/title-research-reference.md` was not touched. Committed and pushed (`c3a76fb`).
+
+**Cover art:** Two full concept batches were rejected before landing on "The Matching Pair Reveal" — Joe's corrections: (1) the title is an invitation ("if you love X, try Y"), not a contest, so competitive/strength-metaphor framing (arm-wrestling, an "upset") was wrong; (2) two differently-colored wine glasses don't visually communicate "same grape" without relying on the caption — two bottles with large, visually matched label typography ("AGLIANICO" and "AGLIANICO ROSATO") do. Final image approved same session. Both corrections logged as new patterns in `data/cover-art-session-reports.md` for future sessions. ChatGPT prompt saved to `outputs/episodes/ep233-aglianico-rosato.md`.
+
+**SEO/AEO + social:** `outputs/episodes/ep233-aglianico-rosato.md` — Key Questions (6), FAQ (6 pairs), and 10 Bluesky posts for the two-wine Aglianico Rosato review (2024 San Salvatore Vetere Rosato, Joe 7/Carmela 8; 2025 Feudi di San Gregorio San Greg Rosato, Joe 5/Carmela 6; both finished the San Salvatore). Schema and Spotify Poll not generated, not requested this session. One claim ("Italy exports roughly half of what it makes") could not be independently corroborated and was excluded from all content rather than published unverified. Full evidence ledger at `outputs/episodes/faq-audits/ep233-faq-audit.md`. Validator passed clean.
+
+**Status:** Title, cover art, and SEO/AEO + social content all complete and approved. Cover art record files (`data/cover-art-scenes.md`, `data/cover-art-session-reports.md`) and the episode content are staged for Joe's review before commit.
 
 ---
 
