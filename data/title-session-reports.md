@@ -48,6 +48,66 @@ All dated entries below are preserved unchanged as the historical record of the 
 ---
 
 ## Episode Entries
+### Ep233: Aglianico Rosato (San Salvatore Vetere + Feudi di San Gregorio)
+**Date:** 2026-08-29
+**Series:** None (Joe explicitly ruled out "Italian Wine Adventure" for this episode; "Getting Serious About Rosé #5" was offered as an option but not chosen)
+**Joe's selection:** Aglianico Rosato: If You Love a Bold Red Wine, Try Its Rosé (Joe's own revision of the presented "Aglianico Rosato: If You Love Bold Red Wine, Try Its Rosé." — added the article "a" before "Bold Red Wine" and dropped the trailing period)
+
+**Step 0 Research Findings:**
+- Episode is a mea culpa: Joe and Carmela previously dismissed rosé as unserious/gendered/an "old aunt" wine and state on air that they were wrong. Repeated PSA, twice in the script: "if you like a red wine, try that red wine's rosé. Just do it" and "if you want to find a rosé you like, find a red wine you like and then buy the rose of it."
+- Aglianico is framed as one of Italy's great, high-tannin red grapes (second only to Nebbiolo per the script); the episode's case is that a rosé made from a serious red grape is itself structured and serious, unlike the Provence-style stereotype.
+- Two wines diverged: 2024 San Salvatore Vetere Rosato (Campania/Paestum IGT, Joe 7/10, Carmela 8/10) vs. 2025 Feudi di San Gregorio San Greg Rosato (Campania IGT, Joe 5/10, Carmela 6/10).
+
+**Step 0.5 Web Research Findings:**
+- No competitor podcast episode specifically about Aglianico rosé was found in the searches run for this session.
+- Wine-media reviews (Wine Enthusiast, Decanter, Vivino) independently describe Aglianico rosato as more texture/structure-driven than typical rosé, corroborating the episode's "serious rosé" framing rather than it being only the hosts' spin.
+- YouTube/press coverage of Aglianico skews almost entirely to the red wine (Taurasi, Aglianico del Vulture); rosato-specific content is thin.
+
+**Episode Hook:** A rosé made from one of Italy's boldest, highest-tannin red grapes turns out to be genuinely structured and serious — illustrating the episode's core advice that a red wine you already love may have a rosé counterpart worth trying.
+
+**Round 1 (rejected by Joe in full except the series option):**
+- `Getting Serious About Rosé #5: Aglianico Rosato!` — PASS, Clickability 6/10
+- `Aglianico Made Us Finally Love Rosé.` — PASS with warning, Clickability 7/10 — **Joe rejected:** asserts a personal-conversion narrative ("made us finally love rosé") not supported by the episode or the show's history
+- `Aglianico Is One of Italy's Boldest Reds. Does Its Rosé Hold Up?` — internal Round 1 candidate only, not shown to Joe in this form. PASS with WARNING (near-template match to Ep227's "[claim]. Does it hold up?" structure), Clickability 6/10. Revised before presentation to: `Why Does Aglianico, One of Italy's Boldest Reds, Make Such a Different Rosé?` (76 chars) — this revised version passed the internal check cleanly and is the one actually presented to Joe as Title 3. **Joe rejected the presented version:** too long, takes too long to reach "Rosé"/"Rosato," and "such a different rosé" is unclear because the title never establishes what it is different from. The "too long"/"unclear comparison" feedback applies to this presented wording, not to the original "Does Its Rosé Hold Up?" candidate above.
+- `Aglianico Rosato: Love Bold Red? This Might Change Your Mind.` — PASS with warning, Clickability 6/10 — **Joe rejected:** "this might change your mind" is a generic, vague closer; the underlying idea (bridge from a familiar red-wine preference to this specific rosé) was directionally right but underdeveloped
+- `Two Aglianico Rosés, One Grape: How Different Can Rosé Get?` — PASS after an HR-1 em-dash fix, Clickability 7/10 — **Joe rejected:** the two-bottle score divergence is not the intended listener-facing idea for this title; instructed not to generate further variants of this concept
+
+**Joe's Round 1 feedback, verbatim direction carried into Round 2:** Keep the series option available without treating it as the benchmark. Build new options strictly on the episode's actual stated idea — if a listener already loves a particular red grape/wine, they may like the rosé made from it, with Aglianico as this episode's example. Keep Aglianico and Rosé/Rosato visible early so the subject is immediately clear. No unsupported claims, no invented conversion narrative, no generic "might change your mind" phrasing.
+
+**Round 2 (revised batch):**
+- `Getting Serious About Rosé #5: Aglianico Rosato!` — carried forward unchanged, PASS, Clickability 6/10
+- `Aglianico Rosato: If You Love Bold Red Wine, Try Its Rosé.` — PASS, Clickability 8/10, closest match to the episode's own advice
+- `Love Aglianico the Red? Meet Its Rosé.` — set aside during this session's drafting, not on account of a genuine HR-17 hard-rule failure. HR-17 requires the series name or the grape/region/brand name within the first ~30 characters, and "Aglianico" appeared at characters 6-14 here — HR-17 itself was satisfied. The title was reworked because Joe's own session-specific instruction (above) additionally asked that "Rosé"/"Rosato" itself also be visible early, which is a valid drafting preference for this session but is not a codified hard rule today. An earlier pass through this session mischaracterized that as an HR-17 FAIL; that characterization was incorrect and is not carried forward as precedent. See the workflow-correction proposal delivered alongside this entry.
+- `Aglianico Rosato: Made From a Red Grape You Might Already Love.` — PASS, Clickability 7.5/10
+- `Aglianico: The Same Bold Red Grape, Now in Rosé Form.` — set aside for the same reason as above (HR-17-compliant via "Aglianico" at characters 1-9; reworked only per Joe's session-specific early-visibility preference, not a hard-rule FAIL)
+
+**Titles reworked to front-load "Aglianico Rosato" per Joe's session preference, then confirmed clean:**
+- `Aglianico Rosato: Loved the Red? Time to Try the Rosé.` — PASS, Clickability 7.5/10, substantial thematic overlap with the "If You Love Bold Red Wine" option (flagged, not disqualifying)
+- `Aglianico Rosato: The Same Grape, Made a Different Way.` — PASS, Clickability 6.5/10, most distinct of the batch (production/process angle rather than a recommendation)
+
+**Final options as presented (the displayed order contained a Clickability-sorting error — item 4, 6/10, was listed above item 5, 6.5/10; the order below is preserved exactly as presented to Joe, not corrected retroactively):**
+1. `Aglianico Rosato: If You Love Bold Red Wine, Try Its Rosé.` (58 chars, Clickability 8/10)
+2. `Aglianico Rosato: Made From a Red Grape You Might Already Love.` (65 chars, Clickability 7.5/10)
+3. `Aglianico Rosato: Loved the Red? Time to Try the Rosé.` (54 chars, Clickability 7.5/10)
+4. `Getting Serious About Rosé #5: Aglianico Rosato!` (48 chars, Clickability 6/10)
+5. `Aglianico Rosato: The Same Grape, Made a Different Way.` (55 chars, Clickability 6.5/10)
+
+All scores above are the internal review-subagent heuristic, not measured CTR or download data.
+
+**Joe's final revision (2026-08-29):** Joe selected option 1's underlying idea but revised the wording himself: "Aglianico Rosato: If You Love a Bold Red Wine, Try Its Rosé" — added the article "a" before "Bold Red Wine" and removed the trailing period. Joe's stated reasoning, recorded as his editorial judgment (not a measured listener-response finding):
+- Aglianico is unfamiliar to many prospective listeners, so the title needs a bridge to make a new listener care before the grape name alone can carry the hook.
+- The familiar "bold red wine" framing supplies that bridge, giving new listeners a reason to care about Aglianico Rosato specifically.
+- Adding "a" changes the meaning from liking a broad category ("bold red wine" in general) to having a particular red wine someone loves and trying the corresponding rosé — which matches the episode's actual advice more precisely ("if you like a red wine, try that red wine's rosé").
+- Joe preferred this accessible-bridge framing over the "Loved the Red?" option (title 3) because "the red" assumes the listener already knows Aglianico is primarily known as a red wine — a piece of prior knowledge a new listener doesn't yet have.
+
+**Final title verified against hard rules post-revision:** HR-1 (no em-dash) clear, HR-15 (Aglianico present) clear, HR-16 (59 chars, under 100) clear, HR-17 ("Aglianico Rosato" occupies characters 1-16) clear, HR-18 (no spam words) clear, HR-39 (no verdict/score spoiler) clear, HR-66 (no insider/co-host context required) clear. Clickability reassessed at 8/10 for the final wording — the article "a" is a precision fix, not a click-appeal change, so the heuristic score is unchanged from the pre-revision candidate; labeled as an internal comparative heuristic, not measured performance data.
+
+**Research-to-Title Alignment:** The confirmed title uses the episode's actual, stated advice (try the rosé of a red grape you already love) rather than an invented hook, a conversion narrative, or the two-bottle score divergence — all three were explicitly ruled out by Joe during this session. The series option remained available throughout but was not chosen.
+
+**AEO Discoverability:** No verified evidence of a material AEO/AI-citation difference among the candidates that shared the entity "Aglianico Rosato" placed early in the title. Several candidates contain the same named entity and topic language; no measurable discoverability benefit is established for one placement over another. This is a correction to language used earlier in this same session, which described early entity placement as "the strongest possible positioning" — that claim overstated what the current research reference supports and is not carried forward as precedent (see the workflow-correction proposal delivered alongside this entry).
+
+---
+
 ### Ep232: Schiava (Alois Lageder + Elena Walch)
 **Date:** 2026-08-22
 **Series:** Italian Wine Adventure #26
