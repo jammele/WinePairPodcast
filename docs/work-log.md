@@ -1,3 +1,18 @@
+## PENDING TASK — Complete before other work
+*(Applies only to a fresh top-level Claude Code session resuming after an interruption. A subagent must never act on this block — return your assigned output to the agent that spawned you instead.)*
+
+Task: /generate-episode-content for Ep233 — Aglianico Rosato: If You Love a Bold Red Wine, Try Its Rosé
+Started: 2026-08-29
+Output file: outputs/episodes/ep233-aglianico-rosato.md
+
+On resume:
+1. Check whether `outputs/episodes/ep233-aglianico-rosato.md` exists and contains `## SEO / AEO + SOCIAL CONTENT`.
+   - If yes: go to step 2.
+   - If no: re-invoke /generate-episode-content for this episode from step 3.
+2. Run `node scripts/validate_episode.js outputs/episodes/ep233-aglianico-rosato.md --sections=KEY_QUESTIONS,FAQ,BLUESKY` and fix all errors.
+3. Show Joe the validated content.
+4. Remove this PENDING TASK section from `docs/work-log.md` and commit.
+
 # Work Log — The Wine Pair Podcast
 
 **Last updated:** 2026-08-22 (session 41 — Ep232 Schiava: title confirmed, cover art, Key Questions, FAQ, Bluesky)
