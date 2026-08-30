@@ -323,6 +323,18 @@ Confirmed on Ep231, where Joe rewrote 6 of the generated posts and flagged the b
 10. **A factual post must be interesting on its own terms:** a concrete standalone fact, a surprising contrast, a useful explanation, or a memorable episode-supported idea. "Another publication made a list" is not sufficient by itself — name what's actually in it, or don't use it.
 11. **Nerd, story, history, production, geography, and misconception angles are useful only when the episode actually covered that content.** Do not force an angle to fill a predefined slot; there is no required minimum count of any one angle type.
 
+**HR-73: Codex approval of Claude Code work requires an independent substantive review.**
+When Joe asks local ChatGPT/Codex to review Claude Code's output, Codex must inspect the actual files and evidence itself. Claude's report, evidence ledger, validator result, or claim that a source was checked is an input to audit, never evidence that the work is correct. Codex may approve only after independently checking all of the following:
+
+1. **Episode truth:** Compare every material claim with the script or transcript. Check subject, scope, timing, and causality, including whether an episode caused a reaction, demonstrated an existing belief, or merely discussed it. Label a fact supplied directly by Joe as host-confirmed rather than pretending it was inferred from the episode or established externally.
+2. **Joe's directions:** Reconstruct the applicable standing rules, session instructions, rejected angles, and prior corrections before evaluating the candidate. A technically valid item still fails review if it repeats something Joe already excluded.
+3. **Strategic centrality:** Distinguish core episode ideas, genuinely useful supporting ideas, and incidental mentions. Presence in the transcript plus a valid source does not establish listener value, discovery value, or editorial relevance.
+4. **Batch quality:** Review the complete set for duplication, padding, repeated secondary subjects, excessive self-reference, exact-product or producer overconcentration, disconnected trivia, weak filler, and failure to represent the central listener-facing promise. Item-by-item source checking is not a substitute for batch-level editorial judgment.
+5. **Source and platform fit:** Open the cited source and verify the precise externally verifiable claims. Independently check character limits, required fields, URLs, and other platform constraints. A passing validator does not establish factual or editorial quality.
+6. **Joe's rewrites:** Treat Joe's submitted copy as the baseline. Preserve his meaning, structure, and voice unless a specific factual error, source mismatch, platform constraint, contradiction, or ambiguity requires a change. State the exact defect and make the smallest necessary edit. Do not rewrite merely because Codex prefers different phrasing.
+
+If any check is incomplete, Codex must identify what remains unverified and withhold approval. Codex must never tell Joe that Claude's work has been thoroughly checked when it has only reviewed Claude's report or repeated Claude's own verification.
+
 **HR-32: Read docs/wine-in-the-news.md before writing any Wine in the News content.**
 Applies to both finding story options and drafting the segment script. Do not skip for "quick" story searches.
 
