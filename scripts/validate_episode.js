@@ -416,6 +416,10 @@ function validateApprovedExceptions(auditContent, auditPath, overrides, waiverAc
 }
 
 // ── Bluesky post extraction ───────────────────────────────────────────────────
+function isUrlLike(line) {
+  return /^https?:\/\//i.test(line) || line.includes(PODCAST_DOMAIN);
+}
+
 function extractBlueskyPosts(content) {
   const sectionMatch = content.match(/###\s*BLUESKY POSTS[\s\S]*?(?=\n#{2,3}\s|\n---\s*\n#{2,3}\s|$)/i);
   if (!sectionMatch) return [];
@@ -434,9 +438,21 @@ function extractBlueskyPosts(content) {
 
     if (lines.length === 0) continue;
 
-    const url = lines[lines.length - 1];
-    const textLines = lines.slice(0, -1);
-    const text = textLines.join('\n');
+    // The last non-empty line is only treated as the URL if it's actually
+    // recognizable as one (http/https, or a bare thewinepairpodcast.com
+    // link). Otherwise it's ordinary prose: url is empty and the full body
+    // is preserved as text, so a post missing its URL line surfaces as a
+    // missing-URL error rather than having its last sentence silently
+    // reclassified as a link.
+    const lastLine = lines[lines.length - 1];
+    let url, text;
+    if (isUrlLike(lastLine)) {
+      url = lastLine;
+      text = lines.slice(0, -1).join('\n');
+    } else {
+      url = '';
+      text = lines.join('\n');
+    }
     const full = text + '\n' + url;
 
     posts.push({ num, text, url, full });
@@ -708,23 +724,30 @@ function run(filePath, requestedSections, overrides) {
   }
 
   if (posts.length > 0) {
-    const teasers = posts.filter(p => p.num <= 3);
-    for (const post of teasers) {
-      if (!post.url.includes(PODCAST_DOMAIN)) {
-        errors.push(`Post ${post.num} (teaser) must link to thewinepairpodcast.com. Got: "${post.url}" (HR-31).`);
+    // Structural rule (HR-31): a batch may contain zero, one, or two
+    // podcast-link posts — never a fixed count, never more than two.
+    // Every post that does NOT link to the podcast is a factual/external
+    // post and must carry a unique external URL. Podcast-link posts are
+    // conventionally placed first, but that placement is not required —
+    // classification is by URL, not by position.
+    const podcastLinkPosts = posts.filter(p => p.url && p.url.includes(PODCAST_DOMAIN));
+    if (podcastLinkPosts.length > 2) {
+      errors.push(`${podcastLinkPosts.length} posts link to thewinepairpodcast.com (posts ${podcastLinkPosts.map(p => p.num).join(', ')}) — no more than 2 podcast-link posts are allowed per batch (HR-31).`);
+    }
+
+    for (const post of posts) {
+      if (!post.text || post.text.trim() === '') {
+        errors.push(`Post ${post.num} has no post text separate from its URL (HR-31).`);
       }
     }
 
-    const factPosts = posts.filter(p => p.num >= 4 && p.num <= 10);
+    const factPosts = posts.filter(p => !p.url || !p.url.includes(PODCAST_DOMAIN));
     const factUrls = [];
 
     for (const post of factPosts) {
       if (!post.url || post.url.trim() === '') {
-        errors.push(`Post ${post.num} is missing a URL (HR-31).`);
+        errors.push(`Post ${post.num} is missing a URL — every non-podcast-link post is a factual post and needs a unique external URL (HR-31).`);
         continue;
-      }
-      if (post.url.includes(PODCAST_DOMAIN)) {
-        errors.push(`Post ${post.num} (fact post) must not link to thewinepairpodcast.com — use a unique external source URL (HR-31).`);
       }
       factUrls.push({ num: post.num, url: post.url });
     }

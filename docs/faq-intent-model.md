@@ -125,7 +125,21 @@ Which is better; how do they differ in taste; which is the better value; what pa
 ### Interview episode — candidate prompts
 Who is the guest and why they matter; their main insight or recommendation; what wine they discussed. None of these are guaranteed a slot — each competes with every other candidate on the same terms.
 
-**SKU-specific guardrail (not a formula):** for a standard boutique-bottle review with no independent product demand, no more than one final selected question may be specifically about the exact bottles reviewed, and it should not lead the list. This cap does not apply to a Costco/private-label/branded-product episode, where the product itself is the search term.
+**SKU-specific guardrail — a ceiling, never a reserved allowance.** For a standard boutique-bottle review, an exact-bottle or exact-SKU question is not entitled to a final slot merely because the episode compares, rates, or reaches a verdict on those bottles. "No more than one" is a maximum, not an instruction to include one — it caps how many such questions can appear if one qualifies; it does not mean one is owed a slot.
+
+An exact-bottle question may reach the final set only when the products have documented independent audience/discovery relevance:
+- topic-specific owned query evidence for the product, producer, or exact comparison; or
+- a genuinely recognized brand, retailer, or product whose independent relevance is supported and documented (the Costco/private-label/branded-product case below is one instance of this, not the only one).
+
+The following do **not** establish independent product demand and must not be used to fill this evidence gap:
+- site-wide or adjacent comparison-intent priors;
+- adjacent-category queries;
+- the general popularity of comparison content as a format;
+- the existence of current search results about the wine/grape/style generally;
+- the fact that the episode offers a distinctive verdict;
+- the fact that an exact-bottle answer may help someone who already found the episode.
+
+When exact-product demand is genuinely absent, prefer the broader grape, style, region, serving, pairing, misconception, or episode-hook question that can reach people who don't already know the product. This is not a blanket ban on product-specific questions — a Costco/Kirkland/Trader Joe's episode, or any product with actual topic-specific evidence, can still justify one.
 
 **Duplicate listener jobs:** "Is this category worth trying?" and "Are these exact bottles worth buying?" can substantially overlap. Prefer the version with greater plausible reach unless the specific product has independent demand evidence.
 
@@ -149,7 +163,7 @@ A candidate failing any gate is out, with a one-line reason logged in the audit'
 
 For each eligible candidate, record — qualitatively, no numeric total:
 
-- **Demand and web-search opportunity.** Owned evidence, Observed current-search evidence, or an explicit Evidence gap. Cite specifically; never infer volume from a single search.
+- **Demand and web-search opportunity.** Owned evidence, Observed current-search evidence, or an explicit Evidence gap. Cite specifically; never infer volume from a single search. A site-wide or adjacent-category prior does not establish demand for a narrower subject than the prior itself measures (an exact product, an exact comparison, a specific SKU) — when topic-specific evidence for that narrower subject doesn't exist, record an Evidence gap for it; do not treat the broader prior as having closed the gap.
 - **Listener usefulness and conversion.** How it ties to the confirmed title, the episode hook, a comparison, tension, or recognizable context. The title and hook are conversion *evidence* here, not a requirement that every title phrase become a question.
 - **Distinctive episode-grounded answer.** What Joe/Carmela can say from Episode evidence that a generic source can't, naming which evidence it draws from.
 - **Proposed discovery purpose(s):** web-search / AI-assisted discovery / listener conversion (one or more), labeled as interpretation unless `docs/faq-research-reference.md` documents measured support for that specific mechanism.

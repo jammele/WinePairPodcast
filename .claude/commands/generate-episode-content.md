@@ -187,6 +187,8 @@ For each candidate, check `docs/faq-intent-model.md` §4: episode grounding, pla
 
 For each candidate that passes the eligibility gates, record the qualitative assessment from `docs/faq-intent-model.md` §5: Demand and web-search opportunity, Listener usefulness and conversion, Distinctive episode-grounded answer, and Proposed discovery purpose(s) (labeled as interpretation unless the research reference documents measured support). No numeric total. A selected question should normally be strong in at least two of the three jobs.
 
+**Exact-bottle/SKU candidates get no shortcut on Demand.** A distinctive verdict, a head-to-head comparison, or the fact that the episode reaches a conclusion on the specific bottles does not by itself satisfy Demand and web-search opportunity for an exact-bottle question — that still requires topic-specific owned evidence or a documented, independently recognized brand/retailer/product (`docs/faq-intent-model.md` §3). A site-wide or adjacent-category prior (e.g. "comparisons perform well generally") does not close a missing exact-product evidence gap. The SKU cap is a ceiling: no more than one exact-bottle question in the final set for a standard boutique-bottle review, and only if it independently earns that slot — never "since only one is allowed, include one."
+
 ### Step G — Merge duplicates
 
 If two eligible candidates address the same listener need, merge them into one question using the stronger phrasing, applying the combined/separate/comparison rules in `docs/faq-intent-model.md` §6.
@@ -279,40 +281,49 @@ Output format:
 
 Write exactly 10 posts. Count characters on every post before including it.
 
+**Governing principle (Joe's standing direction):** no more than two posts in a batch may link to or promote the podcast — this is a ceiling, not a target. A batch may use zero, one, or two podcast-link posts. Factual posts make up most of the batch and should not read like ten advertisements for the show. Every factual post must be interesting and grounded in something the episode actually covered — a source's existence is not sufficient on its own.
+
 **MANDATORY STEP — complete this plan before writing any post.**
 
-Fill in this table first. Do not write any post text until the table is complete and all rules below are satisfied.
+Fill in this table first. Do not write any post text until the table is complete and all rules below are satisfied. A post is a podcast-link post or a factual post based on its URL, not its position — podcast-link posts are conventionally placed first as a presentation convention, but nothing requires that placement or requires using two (or any) of them.
 
 | Post | Angle | URL |
 |---|---|---|
-| 1 | Teaser - episode hook | thewinepairpodcast.com |
-| 2 | Teaser - value or price story | thewinepairpodcast.com |
-| 3 | Teaser - verdict hint (no spoiler) | thewinepairpodcast.com |
-| 4 | Nerd angle (fermentation, soil, clone, technique) | [unique external URL - source domain] |
-| 5 | Nerd or Story angle | [unique external URL - different domain from post 4] |
-| 6 | Story angle (historical or weird fact) | [unique external URL] |
-| 7 | Fact | [unique external URL] |
-| 8 | Fact | [unique external URL] |
-| 9 | Fact | [unique external URL] |
-| 10 | Fact | [unique external URL] |
+| 1 | Podcast-link post (optional) - episode hook | thewinepairpodcast.com |
+| 2 | Podcast-link post (optional) - value, price, or other distinct angle | thewinepairpodcast.com |
+| 3 | Fact, grounded in something the episode covered | [unique external URL] |
+| 4 | Fact, grounded in something the episode covered | [unique external URL - different domain from post 3] |
+| 5 | Fact, grounded in something the episode covered | [unique external URL] |
+| 6 | Fact, grounded in something the episode covered | [unique external URL] |
+| 7 | Fact, grounded in something the episode covered | [unique external URL] |
+| 8 | Fact, grounded in something the episode covered | [unique external URL] |
+| 9 | Fact, grounded in something the episode covered | [unique external URL] |
+| 10 | Fact, grounded in something the episode covered | [unique external URL] |
+
+Adjust the table's row count of podcast-link vs. factual posts to whatever count (0, 1, or 2) is being used this week; the table above shows the two-post convention as an example, not a requirement.
 
 Planning rules (verify before proceeding):
-- At least one of posts 4-10 must cover the **Nerd angle**: fermentation method, soil type, grape clone, or production technique discussed in the episode.
-- At least one of posts 4-10 must cover the **Story angle**: a historical anecdote, surprising statistic, or weird fact mentioned in the episode.
-- Post 3 must include a verdict hint (e.g. reaction, rating signal) without spoiling the outcome.
-- Posts 4-10 must not share a domain. No more than 2 posts from the same domain (e.g. en.wikipedia.org) among posts 4-10. If more than 2 planned sources are Wikipedia, find other credible sources: Decanter, Wine Enthusiast, Wine Folly, Wine-Searcher, specialized wine blogs, or news sites.
-- All 7 external URLs must be sourced from the episode research links provided above or from credible external sources — none may be thewinepairpodcast.com.
+- At most two podcast-link posts, never three or more. Zero or one is also valid — do not treat two as a quota to fill. Do not add a third podcast-link post as a "verdict hint" or any other teaser — HR-31 caps the batch at two, and the validator rejects more than two.
+- Every post that is not a podcast-link post is a factual post and must have a unique external URL — the validator rejects a factual post with no URL.
+- Factual posts must not share a domain beyond 2 posts. No more than 2 factual posts may share the same domain (e.g. en.wikipedia.org). If more than 2 planned sources are Wikipedia, find other credible sources: Decanter, Wine Enthusiast, Wine Folly, Wine-Searcher, specialized wine blogs, or news sites.
+- All factual-post URLs must be unique and sourced from the episode research links provided above or from credible external sources — none may be thewinepairpodcast.com.
+- The batch is still exactly 10 posts total, regardless of how many are podcast-link posts.
+- Nerd, story, history, production, geography, and misconception angles are useful only when the episode actually covered that content — do not force one of these labels onto a post merely to fill a slot. There is no required minimum count of any particular angle.
+- Before drafting: for each planned factual post, name the specific episode-covered claim or idea it starts from, and the source that will corroborate that specific claim (not just the general topic, wine, grape, producer, or region).
 
 **URL rules (HR-31):**
-- Posts 1, 2, 3: teasers. Must end with `thewinepairpodcast.com`. No other URLs.
-- Posts 4-10: fact/value posts. Each must end with a unique external URL from the episode's research links. No `thewinepairpodcast.com`. No repeated URLs across posts 4-10.
+- Podcast-link posts (0, 1, or 2 of them, conventionally first): must end with `thewinepairpodcast.com`. No other URLs. Never more than 2 in the batch.
+- Every other post is a factual post: each must end with a unique external URL. No `thewinepairpodcast.com` on any factual post. No repeated URLs across factual posts.
+- The validator rejects any batch where more than 2 posts (in any position) link to thewinepairpodcast.com, where a factual post has no URL, or where two factual posts share a URL.
 
 **Content rules:**
-- Posts 1-3: mix of angles — the episode hook, the value story, the ratings surprise. Only ONE of the three should carry the price/value angle — do not let the whole teaser set become a price comparison. The other two should focus on the main tension/hook and the ratings/verdict tease.
-- Posts 4-10: interesting facts from the episode research (history, science, geography, production method, comparisons)
+- Podcast-link posts, when used: distinct angles from each other — e.g. the episode hook and a value/price or other genuinely different angle. Do not make two podcast-link posts carry the same angle.
+- Factual posts: each starting from a specific claim or idea actually discussed in the episode. The linked external source must corroborate that specific claim, not just be a page that happens to mention the same wine, grape, producer, or region. Compare the post's precise wording against what the source actually says before finalizing — a source's existence does not make the drafted wording accurate. Do not introduce a fact the episode never covered merely because a source made it available or it seemed interesting.
+- Avoid in factual posts: "we talked about" or "in this episode" framing; repeated ratings/verdict hints across multiple posts; finishing-wine updates; generic promotion of another publication's article or list with no concrete fact attached; vague claims like "the wines argue otherwise"; constructed ad-copy phrasing; unsupported generalizations; presenting an unranked list as if it were a ranking; and misidentifying a retailer, marketplace, or commercial site as an official regulatory or consortium body.
+- A factual post should stand on its own as interesting: a concrete standalone fact, a surprising contrast, a useful explanation, or a memorable episode-supported idea. "Another publication made a list" is not sufficient by itself — name what's actually in it or skip the post.
 - No Wine in the News references anywhere (HR-27)
 - No em-dashes anywhere (HR-1)
-- Sound like a person, not ad copy. See HR-71 in full: write in first person ("we put X against Y," not "X went head-to-head with Y"); state specific facts directly instead of building a generic comparison setup first; use rounded, casual price references ($20, $35+) instead of exact decimals; do not center a post on a specific competing producer's name/backstory or call a comparison bottle "name-brand" (Costco/Kirkland is the standing exception).
+- Sound like a person, not ad copy. See HR-71 in full: write in first person ("we put X against Y," not "X went head-to-head with Y"); state specific facts directly instead of building a generic comparison setup first; use rounded, casual price references ($20, $35+) instead of exact decimals; do not center a post on a specific competing producer's name/backstory or call a comparison bottle "name-brand" (Costco/Kirkland is the standing exception); minimize routine self-reference (which wine they finished, internal process, repeated verdict teases) outside any podcast-link posts.
 - Maximum 300 characters total per post (text + newline + URL). Keep text alone under ~240 chars when URL is included. (HR-26)
 
 **Post format:**
@@ -363,9 +374,10 @@ Before returning your output, run through this checklist and report results for 
 
 1. Em-dashes: scan every line. How many em-dashes found? (Must be zero.)
 2. Bluesky character counts: list each post number and its total character count. Flag any over 300.
-3. Posts 1-3 URLs: confirm all three end with `thewinepairpodcast.com`. List them.
-4. Posts 4-10 URLs: list all seven URLs. Confirm zero are `thewinepairpodcast.com`. Confirm all seven are unique (no repeats). Count how many share the same domain — if more than 2 of the 7 share a single domain (e.g. en.wikipedia.org), flag it as a quality issue and replace the extras with non-duplicate sources.
-4a. Angles coverage: confirm at least one of posts 4-10 covers the Nerd angle (fermentation, soil, clone, or technique) and at least one covers the Story angle (historical anecdote, weird fact, or surprising statistic from the episode). If either is missing, rewrite before returning.
+3. Podcast-link posts: list every post whose URL includes thewinepairpodcast.com, by number. Confirm the total count is 0, 1, or 2 — never 3 or more. Do not assume posts 1-2 are the podcast-link posts; classify by URL.
+4. Factual-post URLs: list the URL for every post that is NOT a podcast-link post. Confirm none are `thewinepairpodcast.com`, confirm every one has a non-empty URL, and confirm all are unique (no repeats). Count how many share the same domain — if more than 2 share a single domain (e.g. en.wikipedia.org), flag it as a quality issue and replace the extras with non-duplicate sources.
+4a. Grounding and source-match check: for each factual post, name the specific episode-covered claim it starts from and confirm the linked source actually supports that precise claim (not just the general topic). Replace any post where the source doesn't match the drafted wording, or where the claim wasn't actually covered in the episode.
+4b. Banned-framing check: confirm no factual post uses "we talked about"/"in this episode" framing, repeats a ratings/verdict hint already used elsewhere in the batch, gives a finishing-wine update, promotes another publication's list with no concrete fact attached, uses a vague claim like "the wines argue otherwise," reads as constructed ad copy, states an unsupported generalization, presents an unranked list as a ranking, or identifies a retailer/marketplace/commercial site as an official regulatory or consortium body. Rewrite any post that does.
 5. Wine in the News: confirm no post references the news segment.
 6. FAQ heading: confirm it is exactly "FREQUENTLY ASKED QUESTIONS".
 7. Q./A. format: confirm every Q line starts with `**Q.` and every A line starts with `A.` (plain).

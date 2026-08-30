@@ -47,7 +47,9 @@ All content should feel:
 - Mix of fact-led, opinion-led, and curiosity-led options
 - Sound like a human, not ad copy
 - **Do NOT include the Wine in the News segment** in Bluesky posts — the segment is for the episode only.
-- **URL structure:** Posts 1-3 (teasers) link to thewinepairpodcast.com or the specific episode URL. Posts 4-10 (fact/value posts) must each link to a unique external URL — no podcast domain, no repeated URLs. Use the episode script's research links to assign one unique source per post.
+- **At most two posts per batch may link to or promote the podcast — this is a ceiling, not a target.** A batch can use zero, one, or two podcast-link posts; three or more fails validation. Factual posts make up most of the batch — it should not read like ten advertisements for the show.
+- **URL structure:** Any post linking to thewinepairpodcast.com or the specific episode URL is a podcast-link post (conventionally placed first, but not required to be). Every other post is a factual post and must link to a unique external URL — no podcast domain, no repeated URLs. Use the episode script's research links, or other credible external sources, to assign one unique source per factual post.
+- **Every factual post starts from something the episode actually covered**, and its linked source must corroborate that specific claim, not just the general topic. Avoid "in this episode"/"we talked about" framing, repeated verdict hints, finishing-wine updates, and generic promotion of another publication's list with no concrete fact attached.
 
 **Instagram:**
 - Readable, natural, not forced
