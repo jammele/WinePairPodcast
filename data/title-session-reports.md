@@ -43,11 +43,74 @@ All dated entries below are preserved unchanged as the historical record of the 
 
 **Ep227 (correction, before selection):** Joe rejected a presented title (Carmela reference) on sight and corrected the review process itself, not just this episode's options. Titles exist to attract new listeners, not to reward people who already know the show — any hook requiring a co-host's name, a running bit, or an established show rule to parse should be cut before it's ever shown, not left for Joe to catch. He also required every title to carry a visible score (the HR-61 series exemption is from the quality-gate floor, not from being scored) and required the final recommendation to be grounded in objective third-party research (external CTR/headline studies, or the show's own Meiomi benchmark) rather than the internal reviewer subagent's own scoring alone. Codified as HR-66 and HR-67. Going forward: the Round 2 subagent prompt must explicitly instruct the reviewer to FAIL any title requiring insider/prior-listener context, and the final response to Joe must always include a scored table plus evidence-based reasoning, not just a bulleted list of options.
 
+**Ep234 (2026-09-06): A rule-compliance fix must be re-checked against Step 0's episode framing, not treated as finished once the flagged rule passes.** Round 1 flagged three presented titles for HR-19 (they used "Bubbly" instead of the "They Make Wine in [Place]?!?" series' locked noun, "Wine"). The fix (swapping "Bubbly" back to "Wine") cleared the rule but silently discarded the episode's actual defining subject: this episode is specifically about *sparkling* wine, not English wine generally, which Step 0 had already correctly identified. As a result, 3 of the 4 presented options lost the episode's real topic as a side effect of a hard-rule fix. Joe rejected the full batch and supplied his own title, "They Make Sparkling Wine in England?!?" — the first installment of this series to insert a style-specifying modifier before "Wine," which no prior installment needed since none of them were about a specific wine style. Going forward: any title revised solely to fix a hard-rule FAIL must be re-checked against Step 0's episode-framing bullets before being treated as clean — passing the flagged rule is not the same as still being accurate to the episode.
+
 **Ep229 (two corrections in one session, both codified as house rules):** First, Claude failed to recognize the episode doc's own name ("Italian Wine Adventure #25: Vermentino!") as an already-confirmed series title and asked Joe to state a title he had already given — root cause was never cross-checking the doc name against the series list in `data/episode-titles.md` before assuming a title was missing. Fixed via HR-70 and an HR-37 amendment folding the check into the episode-announcement flow itself. Second, when generating a subtitle, Claude's first batch researched generic external Vermentino trivia (climate resilience, DNA-twin grapes, terroir) instead of building on "summer sipper" — the episode's own dominant content and the exact angle Joe explicitly told Claude to focus on. Joe rejected the batch as too long (80-93 chars) and disconnected from the episode. Fixed by reordering `/review-titles` so the episode's own stated content is extracted before external research runs, with a blocking gate if a Joe-named angle isn't reflected in any surviving option (see the command file). Joe also caught that the internal 1-10 AI Discovery/Clickability scores were being presented as if they reflected measured CTR data (an unsupported "60% lift" claim), and that AEO discoverability hadn't been considered at all. Fixed via an HR-67 amendment requiring scores to always be labeled as internal heuristics, an explicit AEO line in every recommendation, and a new standing reference file `docs/title-research-reference.md` so this research is read and reused rather than re-derived (or skipped) each session. Pattern to carry forward: when Joe names a specific content angle to build around, treat it as the primary source of hook material, not one input competing with generic external trivia — check the final option set against it explicitly before presenting.
 
 ---
 
 ## Episode Entries
+### Ep234: British Bubbly (Henners 2018 Vintage Sparkling Blend)
+**Date:** 2026-09-06
+**Series:** They Make Wine in [Place]?!? (Ep91 New York, Ep106 Michigan, Ep142 Armenia, Ep162 Croatia) — first installment to insert a style-specifying modifier ("Sparkling") before "Wine"; a deliberate extension by Joe, not a pre-existing format requirement, since no prior installment needed to disambiguate a wine style.
+**Joe's selection:** They Make Sparkling Wine in England?!? (Joe's own title, submitted after rejecting the full presented batch)
+
+**Step 0 Research Findings:**
+- Episode explicitly frames itself as breaking three of the show's own standing rules: price over $25 (paid "just over $43"), one bottle instead of two, and a wine that's hard to find in the US.
+- Core content is a history deep-dive distinguishing English still wine's rocky history (near-death by the 1800s, only 8 active vineyards) from the sparkling-specific revival: Dr. Christopher Merrett documented the technique for making wine "brisk and sparkling" in 1662, decades before Dom Pérignon documented similar techniques in Champagne; the same chalk formation underlies both southern England and Champagne (script hedges "isn't identical, but structurally, it's the same formation").
+- The episode's own script header used a working title, "They Make Bubbly in England?!?" — a riff on the established series, substituting the series' required noun.
+- Wine reviewed: Henners 2018 Vintage Sparkling Blend (70% Chardonnay/30% Pinot Noir), Joe 8/10, Carmela 8/10, no twist, both positive ("we will be drinking more").
+
+**Step 0.5 Web Research Findings:**
+- Competitor content is heavily saturated with an "England vs. Champagne" contest framing (YouTube: "A NEW KING?!", "Can England beat Champagne?", "Champagne Vs English Sparkling Wine") — avoided that framing directly.
+- No competitor title found using the 1662 Christopher Merrett/Dom Pérignon documentation-primacy angle or the shared-chalk-geology angle as a headline hook.
+- Competitor podcast episodes on English sparkling wine use producer-interview or general-education framing, not a surprise-reveal structure.
+- No prior Wine Pair episode has covered English/British sparkling wine.
+
+**Episode Hook:** A wine the hosts broke three of their own rules to review turns out to have deep, surprising roots: the English may have documented the sparkling winemaking technique before the French did, and the same chalk formation underlying Champagne runs beneath southern England.
+
+**Round 1 (3 of 5 dropped for HR-19):**
+- `They Make Wine in England?!?` — PASS, Clickability 6/10, bare series entry.
+- `They Make Bubbly in England?!?` — **FAIL (HR-19):** substitutes the series' required noun.
+- `They Make Bubbly in England?!? The Brits May Have Documented Sparkling Wine First.` — **FAIL (HR-19)**, plus WARNING: "First" overclaimed global primacy the script doesn't support.
+- `English Bubbly Broke Our $25 Rule. Worth the $43?` — PASS, Clickability 8/10, WARNING: borderline HR-66 ("Our $25 Rule" leans on show context, though self-contained).
+- `They Make Bubbly in England?!? Same Chalk Ridge as Champagne.` — **FAIL (HR-19)**, plus WARNING: "Ridge" slightly overstated vs. the script's own hedge.
+
+**Round 2 (revised batch, all cleared):**
+- `They Make Wine in England?!?` — PASS, Clickability 6/10.
+- `They Make Wine in England?!? They Documented It Before the French Did.` — PASS, Clickability 7.5/10.
+- `English Bubbly Broke Our $25 Rule. Worth the $43?` — PASS, Clickability 8/10 (HR-66 borderline flag carried forward).
+- `They Make Wine in England?!? Same Chalk Formation as Champagne.` — PASS, Clickability 7/10.
+
+**Joe's rejection and correction:** Joe rejected the full Round 2 batch: 3 of the 4 options used the series' generic "Wine" noun, which lost the episode's actual defining subject (sparkling wine specifically, not English wine generally, which the episode explicitly contrasts). This was a direct, unintended side effect of the Round 1 HR-19 fix (swapping "Bubbly" back to "Wine" to match series format) not being re-checked against Step 0's own topic-accuracy framing. Joe's own title, "They Make Sparkling Wine in England?!?", fixes this directly by inserting the missing style-specifying word. See the new Patterns Learned entry above.
+
+**Final title verified against hard rules post-revision:** HR-1 (no em-dash) clear. HR-15 (England present) clear. HR-16 (38 chars, under 100) clear. HR-17: minor nuance, not treated as blocking — inserting "Sparkling" delays full completion of "England" to character 35, versus the series precedent's ~25-28; "Sparkling Wine" itself functions as an early information-bearing hook within the first 30 characters. HR-18 (no spam words) clear. HR-19: deviates from the four confirmed bare installments by adding a style-specifying modifier before "Wine" — none of those episodes needed to disambiguate a wine style, so this is a deliberate, justified first-time extension of the series rather than a violation of existing precedent. HR-39 (no verdict/score spoiler) clear. HR-66 (fully self-contained, no insider context required) clear. HR-72 Voice Fit: strong — uses the precise wine term rather than the show notes' more casual "Bubbly," while keeping the series' recognizable "?!?" signature.
+
+**Research-to-Title Alignment:** The confirmed title correctly foregrounds the episode's actual, defining subject (sparkling wine) within the established series format, correcting a drift introduced during rule-compliance fixing rather than during initial generation.
+
+**AEO Discoverability:** No verified evidence of a material AEO/AI-citation difference between this title and the other candidates that shared the entity "England" — all shared the same named entity and topic language before this correction; no measurable discoverability benefit is established for one noun choice over another.
+
+---
+
+### Minisode #21: Sugar-Free Wine
+**Date:** 2026-09-05
+**Series:** Minisode (not a numbered-episode named series; see the new Minisode section in `data/episode-titles.md`)
+**Joe's selection:** Minisode #21: Is "Sugar-Free Wine" Even a Real Thing?" (Joe's own title, written in his shownotes doc before this review; confirmed as-is with quotation marks kept deliberately)
+
+**Format-pattern research (new for this session):** No minisode had previously gone through `/review-titles`, and `data/episode-titles.md` had no Minisode entry at all. Read the actual Google Docs for Minisodes 16-22 (not production/audio filenames, which strip special characters) to establish the real pattern: `Minisode #[N]: [Topic]`, "#" always present, colon after the number, topic phrased as either a question or a declarative "How ___" statement, no grape/region/brand name in any prior installment. An initial review pass incorrectly used mp3 filenames as the source of truth and recommended dropping the "#" — corrected after Joe asked to see the actual title pattern; the source-of-truth error is not carried forward as precedent.
+
+**Episode content:** Solo episode (Joe only, Carmela off this week). Topic: whether "sugar-free"/"zero sugar"/"clean" wine marketing claims mean anything. Core content: residual sugar/fermentation basics, EU's legal <4g/L dry-wine definition vs. no US equivalent, brands' "no sugar" (~0.5g/L) and "low sugar" (~1-2g/L) thresholds overlapping with where ordinary wine already sits, two industry estimates putting 68-82% of wine already dry/low-sugar, the TTB's 2022 bulletin finding "clean" undefined and potentially misleading, and the practical takeaway to check ABV instead of trusting sugar-free labeling.
+
+**Rule check:** HR-16 (53 chars, well under cap) clear. HR-18 (no spam words) clear. HR-39 (no spoiler — poses the question without revealing the "it's mostly marketing" conclusion) clear. HR-66 (no insider/Carmela-reference context needed) clear. HR-72 Voice Fit: strong — "is that a real thing?" is a near-verbatim line from Joe's own transcript, and "Even" fits the episode's skeptical on-air tone ("don't buy the hype," "that don't mean sheet"). HR-15 (grape/region/brand) does not apply — confirmed by precedent, no prior minisode names one either; this is now documented in `data/episode-titles.md` rather than re-litigated each session.
+
+**Deviation from precedent, kept deliberately:** No prior minisode title uses quotation marks around a key phrase. Joe chose to keep the quotes around "Sugar-Free Wine" this time: "I think it will drive interest." Recorded as a one-time deliberate choice, not a new pattern to apply automatically to future minisodes.
+
+**Numbering collision found and resolved:** A separate, previously-drafted minisode ("Why Do I Get a Headache From Wine? (Hint: It's Probably Not the Sulfites)") was also numbered "Minisode #21" in Drive. Joe confirmed it's a forgotten earlier draft, not this week's episode, and is removing its number for now — it will need a new number when actually produced. See the numbering note in `data/episode-titles.md`.
+
+**AEO Discoverability:** Not separately assessed this session — this was a review-and-confirm of Joe's own existing title, not a generated multi-option batch, so no comparative AEO differentiation question arose.
+
+---
+
 ### Ep233: Aglianico Rosato (San Salvatore Vetere + Feudi di San Gregorio)
 **Date:** 2026-08-29
 **Series:** None (Joe explicitly ruled out "Italian Wine Adventure" for this episode; "Getting Serious About Rosé #5" was offered as an option but not chosen)

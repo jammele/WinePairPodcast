@@ -1,9 +1,9 @@
 # Episode Title Archive — The Wine Pair Podcast
 
-**Last updated:** 2026-08-29 (through Ep233, confirmed via `/review-titles`)
+**Last updated:** 2026-09-06 (through Ep234, confirmed via `/review-titles`)
 **Maintained by:** Claude — add each confirmed title here before committing episode work.
 
-**Latest confirmed title:** Ep233: Aglianico Rosato: If You Love a Bold Red Wine, Try Its Rosé (confirmed via `/review-titles`, 2026-08-29.)
+**Latest confirmed title:** Ep234: They Make Sparkling Wine in England?!? (confirmed via `/review-titles`, 2026-09-06 — Joe's own title, submitted after rejecting the presented batch. See `data/title-session-reports.md` Ep234 entry and Patterns Learned.)
 
 **Unresolved archive gap:** Ep220's episode number is not confirmed. `outputs/episodes/ep220-221-meet-the-makers-23-sake.md` (Special Episode! Meet the (Wine) Makers #23: Jun Kono and Leo Lê) is labeled "TBD (220 or 221)" in its own file. Ep221 is already confirmed as a different episode below (They Make Wine in Lebanon...). Do not infer or assign this episode's number; it requires Joe's confirmation.
 
@@ -160,12 +160,13 @@ Format: `Special Episode! Meet the (Wine) Makers #[N]: [subtitle]`. Only the `Sp
 - **Ep230: Special Episode! Meet the (Wine) Makers #25: Brian and Jessica Smith from Wendelin Vines** *(confirmed; see `outputs/episodes/ep230-wendelin-vines.md`)*, returned to a people-and-winery subtitle ("from [Winery]"), confirming the subtitle format varies by installment rather than following one fixed pattern set by the previous episode.
 
 ### They Make Wine in [Place]?!?
-Format: `They Make Wine in [Place]?!?` — double punctuation is the signature
+Format: `They Make Wine in [Place]?!?` — double punctuation is the signature. A style-specifying modifier before "Wine" (e.g. "Sparkling") is a valid one-off extension when the episode is about a specific wine style rather than wine from that place generally — see Ep234; not required for future installments unless the same situation applies.
 
 - Ep91: They Make Wine in New York?!?
 - Ep106: They Make Wine in Michigan?!?
 - Ep142: They Make Wine in Armenia?!?
 - Ep162: They Make Wine in Croatia?!?
+- **Ep234: They Make Sparkling Wine in England?!?** *(confirmed 2026-09-06; first installment to insert a style modifier, since this episode is specifically about English sparkling wine, not English wine generally)*
 
 ### Virginia Winemakers Series
 Format: `Special Episode! The Virginia Winemakers Series [#N if >1]: [Name] of [Winery]`
@@ -179,6 +180,19 @@ Format: `Special Episode! The Virginia Winemakers Series [#N if >1]: [Name] of [
 - Ep8: F That Wine: Merlot
 - Ep14: F that Wine: Rosé
 
+### Minisode
+Format: `Minisode #[N]: [Topic]`. Colon after the number; "#" always present (confirmed from the actual Google Docs, not from production/audio filenames, which strip "#" for filesystem safety). Topic is phrased either as a direct question ending in "?" or a declarative "How ___" statement with no question mark. A short parenthetical hint/scope-clarifier is sometimes appended after the main title. **No grape/region/brand name is required** — minisodes are wine tips/etiquette/education topics, not wine reviews, so HR-15 does not apply to this format. Minisodes are numbered on their own separate sequence, not part of the main numbered episode archive below.
+
+- Minisode #16: What is minerality in Wine, and why is it controversial?
+- Minisode #17: Why Are Wines Sometimes Named After a Place Rather than the Grape?
+- Minisode #18: How Alcohol Content Impacts Wine
+- Minisode #19: Can You Chill a Red Wine? (The 20/20 rule, chillable red wines)
+- Minisode #20: WTF Does Body in Wine Mean?
+- **Minisode #21: Is "Sugar-Free Wine" Even a Real Thing?"** *(confirmed via `/review-titles`, 2026-09-05 — quotation marks around "Sugar-Free Wine" kept deliberately per Joe: "I think it will drive interest," a one-time deviation from the no-quotation-marks precedent above)*
+- Minisode #22: How to Order Wine at a Restaurant Without Panicking
+
+**Numbering note (2026-09-05):** A separate draft, "Why Do I Get a Headache From Wine? (Hint: It's Probably Not the Sulfites)," was also found numbered "Minisode #21" in Drive. Joe confirmed it's a previously-forgotten draft, not this week's episode, and is removing the number from it for now — it needs a new number when it's actually produced. Do not assign it #21 or #23 without Joe's confirmation at that time.
+
 ---
 
 ## Recent Episodes (last 15)
@@ -187,6 +201,7 @@ Ep220 is excluded: its episode number is unresolved (see the archive-gap note ab
 
 | Ep | Title | Format pattern |
 |---|---|---|
+| 234 | They Make Sparkling Wine in England?!? | Series (They Make Wine in [Place]?!?) + style modifier |
 | 233 | Aglianico Rosato: If You Love a Bold Red Wine, Try Its Rosé | [Wine]: [Conditional recommendation] |
 | 232 | Italian Wine Adventure #26: Schiava! Sommeliers Love This Chillable Red! | Series (IWA) + subtitle statement |
 | 231 | Costco Kirkland Signature Châteauneuf-du-Pape Challenge! | Series (Costco Kirkland Challenge) |
@@ -201,7 +216,6 @@ Ep220 is excluded: its episode number is unresolved (see the archive-gap note ab
 | 222 | Pinot Grigio Is Boring. Alsace Pinot Gris Is Its Richer, Weirder French Cousin. | [Dismissive claim]. [Contrasting discovery]. |
 | 221 | They Make Wine in Lebanon?!? Lebanon Was Wine Country Before France Was France. | Series (They Make Wine in [Place]?!?) + bold historical claim |
 | 219 | Is Two Buck Chuck Actually Terrible, or Is That Just Wine Snob Talk? | [Open accusation question] |
-| 218 | WTF is Malvasia? | Series (WTF is [Wine]?) |
 
 ---
 
@@ -438,3 +452,4 @@ Ep230: Special Episode! Meet the (Wine) Makers #25: Brian and Jessica Smith from
 Ep231: Costco Kirkland Signature Châteauneuf-du-Pape Challenge!
 Ep232: Italian Wine Adventure #26: Schiava! Sommeliers Love This Chillable Red!
 Ep233: Aglianico Rosato: If You Love a Bold Red Wine, Try Its Rosé
+Ep234: They Make Sparkling Wine in England?!?
