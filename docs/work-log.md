@@ -6,6 +6,12 @@
 
 ---
 
+## Session 43 summary (2026-09-12) — Ep234 British Bubbly: Key Questions, FAQ, Bluesky closeout
+
+Ep234 title (`They Make Sparkling Wine in England?!?`) and cover art remain confirmed and unchanged from prior sessions. The generated Key Questions/FAQ/Bluesky content went through several independent-review correction rounds (including an external review by Codex) before Joe closed it out. Final published set: **5 FAQs** and **7 Bluesky posts**. "Why is English sparkling wine so expensive?" was held, not published — the episode's own export-cost explanation was never independently corroborated with a matching external source, and Joe's standing correction is that a host-stated causal explanation is not automatically exempt from verification just because a host said it on air. Full detail and disposition history in `outputs/episodes/faq-audits/ep234-faq-audit.md`. Publication has not been confirmed.
+
+---
+
 ## Session 42 summary (2026-08-29) — Ep233 Aglianico Rosato: title, title-workflow corrections, cover art, Key Questions, FAQ, Bluesky
 
 **Title:** Aglianico Rosato: If You Love a Bold Red Wine, Try Its Rosé — confirmed via `/review-titles`, two full rounds plus Joe's own final one-word precision edit (added "a" before "Bold Red Wine," dropped the trailing period). Joe explicitly ruled out an Italian Wine Adventure title for this episode and asked for a "Getting Serious About Rosé #5" option to be included; it was offered but not chosen. Full session at `data/title-session-reports.md` (Ep233 entry).
