@@ -1,18 +1,3 @@
-## PENDING TASK — Complete before other work
-*(Applies only to a fresh top-level Claude Code session resuming after an interruption. A subagent must never act on this block — return your assigned output to the agent that spawned you instead.)*
-
-Task: /generate-episode-content for Ep235 — Cru Beaujolais: A Far Cry from Beaujolais Nouveau
-Started: 2026-09-19
-Output file: outputs/episodes/ep235-cru-beaujolais.md
-Requested sections: KEY_QUESTIONS,FAQ,BLUESKY
-
-On resume, in a fresh top-level session that encounters this marker:
-0. **Confirm ownership before touching anything**, per `docs/agent-operating-instructions.md`'s "Resuming interrupted tasks" policy — that policy, not the marker's age, decides whether this session may proceed. Do not go past this step without that confirmation.
-1. **Determine the actual current state — a heading is not evidence of complete content.** For each name in Requested sections above, check whether that section's actual content already exists, well-formed, in `outputs/episodes/ep235-cru-beaujolais.md` (the same per-section scan as Step 0 of this command). The presence of the parent `## SEO / AEO + SOCIAL CONTENT` heading proves nothing about any individual requested section. Separately, check for a partial audit checkpoint at `outputs/episodes/faq-audits/ep235-faq-audit.md` (Step 2.9a); if one exists, read it and reuse its recorded findings and source locations after checking they're still applicable and current — a source fetched shortly before the interruption is almost certainly still good; re-verify only if something about the claim or elapsed time makes staleness plausible. Do not blindly re-fetch everything from scratch, and do not adopt the checkpoint's conclusions unchecked — the independent review in step 3 still applies in full regardless of what's reused.
-2. For any Requested section not yet actually present, resume generation for that section only: re-enter this command's normal sequence at Step 3, using the Requested sections recorded above, and the checkpoint from step 1.
-3. **Run the same validation/review sequence as an uninterrupted run (Steps 4.4-6), in order, using the Requested sections recorded above throughout** — first mechanical validation (Step 4.4), then the mandatory independent review (Step 4.5), then the final mechanical validation (Step 5), then delivery (Step 6). **A section already existing, or having validated in a prior session, is not evidence that its review already happened — Step 4.5 must run now, in this resumed session, before proceeding.** Resolve every actionable defect it finds, or report a genuine named blocker per the same rules as an uninterrupted run. Do not validate sections beyond what was originally requested.
-4. Remove this PENDING TASK section from `docs/work-log.md`. Commit per HR-33's default unless a more specific gate governs this deliverable.
-
 # Work Log — The Wine Pair Podcast
 
 ## Active planning: consolidated podcast-os cleanup
@@ -21,9 +6,19 @@ On resume, in a fresh top-level session that encounters this marker:
 
 Joe requested that minisode #21 review findings be retained for one comprehensive future Claude Code update, together with additional issues still to come. See `docs/podcast-os-cleanup-brief.md` for the original evidence, affected files, and acceptance checks that seeded this cleanup — that brief and the earlier `docs/podcast-os-cleanup-plan-request.md` and `docs/podcast-os-consolidated-redesign-request.md` are historical planning context for this cleanup, not active operating instructions in their own right; `docs/agent-operating-instructions.md` and `docs/house-rules.md` remain the only current operating sources.
 
-**Last updated:** 2026-09-13 (podcast-os cleanup fourth pass; Ep234 accepted-not-published per Session 43 below)
+**Last updated:** 2026-09-19 (Ep235 title confirmed but not yet recorded to `data/episode-titles.md`/`data/title-session-reports.md` — see Session 44 below; cover art concept selected, prompt saved, image not yet generated; Key Questions/FAQ/Bluesky content generated and independently reviewed)
 
 **Strategic intelligence:** `docs/strategic-intelligence.md` — living log of research, audience signals, and data. Currently 3 entries (wine predictability research; Gen Z anti-condescension signal; show description price-range drift).
+
+---
+
+## Session 44 summary (2026-09-19) — Ep235 Cru Beaujolais: title, cover art, Key Questions, FAQ, Bluesky
+
+**Title confirmed but NOT YET RECORDED — flagged as a process gap, needs follow-up.** Joe confirmed "Cru Beaujolais: A Far Cry from Beaujolais Nouveau" directly in conversation, overriding the `/review-titles` batch presented earlier that session (none of which he selected). Because the title arrived as a direct confirmation rather than through a `/review-titles` Step 11 close-out, it was never run through the HR-15/16/17/18/19/39/66 hard-rule checks, and it was never written to `data/episode-titles.md` or `data/title-session-reports.md`. Confirmed via direct grep: the title does not appear in either file as of this entry. Cover art and episode content generation proceeded using Joe's direct confirmation as the override (permitted by both commands' confirmed-title gates), but the title archive itself is now out of sync with the confirmed title. **Next session: run the title through the standard hard-rule check and record it properly, or get Joe's explicit sign-off to record it as-is without the check.**
+
+**Cover art:** Concept "Describing the Layers" (Carmela animatedly gesturing to describe the wine's structure, Joe leaning in listening) selected after one revision round — an initial batch was rejected in full for including a subordinate Beaujolais Nouveau bottle (Joe: Cru Beaujolais must be the only wine depicted) and for repeating a prior astonished-reaction/hand-to-chest pose pattern. ChatGPT prompt saved to `outputs/episodes/ep235-cru-beaujolais.md`. Image not yet generated/approved — no scene record or session report entry yet per the cover-art workflow's own "after final image approved" gate.
+
+**Key Questions, FAQ, Bluesky:** Generated via `/generate-episode-content` (KEY_QUESTIONS, FAQ, BLUESKY only — SCHEMA and POLL not requested). Independent review (Step 4.5) caught two real defects before anything was shown to Joe: (1) the serving-temperature FAQ answer originally denied Cru Beaujolais is served chilled, contradicting the episode's own explicit instruction to serve the Morgon chilled at 59°F/15°C — corrected to state both styles are chilled, Cru just less cold (15°C vs. Nouveau's 12°C, per beaujolais.com); (2) one Bluesky post misattributed a quote ("one wine buyer") and stated the wrong decade ("1990s" vs. the source's 1980s) — corrected to name Holly Berrigan of MYSA Natural Wine and the 1980s. Both fixes independently re-verified by the same reviewer before acceptance. Final set: **7 Key Questions/FAQ pairs, 7 Bluesky posts** (1 podcast-link, 6 factual, all unique domains). Full audit and corroboration table in `outputs/episodes/faq-audits/ep235-faq-audit.md`. **Status: content generated and reviewed, not yet shown to Joe for acceptance, not committed.**
 
 ---
 
