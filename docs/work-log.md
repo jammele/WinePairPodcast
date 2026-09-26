@@ -1,3 +1,19 @@
+## PENDING TASK — Complete before other work
+*(Applies only to a fresh top-level Claude Code session resuming after an interruption. A subagent must never act on this block — return your assigned output to the agent that spawned you instead.)*
+
+Task: /generate-episode-content for Ep236 — Decoy Wine: Should You Buy It, or Duck It?
+Started: 2026-09-25
+Output file: outputs/episodes/ep236-decoy.md
+Requested sections: KEY_QUESTIONS,FAQ
+Note: a separate Codex comparison draft for the same task lives under outputs/episodes/codex/ (see the Codex PENDING TASK marker). It is not this task; do not read, overwrite, merge, or commit it.
+
+On resume, in a fresh top-level session that encounters this marker:
+0. **Confirm ownership before touching anything**, per `docs/agent-operating-instructions.md`'s "Resuming interrupted tasks" policy — that policy, not the marker's age, decides whether this session may proceed. Do not go past this step without that confirmation.
+1. **Determine the actual current state — a heading is not evidence of complete content.** For each name in Requested sections above, check whether that section's actual content already exists, well-formed, in `outputs/episodes/ep236-decoy.md` (the same per-section scan as Step 0 of this command). The presence of the parent `## SEO / AEO + SOCIAL CONTENT` heading proves nothing about any individual requested section. Separately, check for a partial audit checkpoint at `outputs/episodes/faq-audits/ep236-faq-audit.md` (Step 2.9a); if one exists, read it and reuse its recorded findings and source locations after checking they're still applicable and current — a source fetched shortly before the interruption is almost certainly still good; re-verify only if something about the claim or elapsed time makes staleness plausible. Do not blindly re-fetch everything from scratch, and do not adopt the checkpoint's conclusions unchecked — the independent review in step 3 still applies in full regardless of what's reused.
+2. For any Requested section not yet actually present, resume generation for that section only: re-enter this command's normal sequence at Step 3, using the Requested sections and Approved overrides recorded above, and the checkpoint from step 1.
+3. **Run the same validation/review sequence as an uninterrupted run (Steps 4.4-6 below), in order, using the Requested sections and Approved overrides recorded above throughout** — first mechanical validation (Step 4.4, with those same overrides), then the mandatory independent review (Step 4.5), then the final mechanical validation (Step 5), then delivery (Step 6). **A section already existing, or having validated in a prior session, is not evidence that its review already happened — Step 4.5 must run now, in this resumed session, before proceeding.** Resolve every actionable defect it finds, or report a genuine named blocker per the same rules as an uninterrupted run. Do not validate sections beyond what was originally requested, and do not apply any override not explicitly recorded on this block — an unrecorded override is never authorized on resume.
+4. Remove this PENDING TASK section from `docs/work-log.md`. Commit per HR-33's default unless a more specific gate governs this deliverable.
+
 # Work Log — The Wine Pair Podcast
 
 ## Active planning: consolidated podcast-os cleanup
