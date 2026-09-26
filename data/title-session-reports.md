@@ -50,6 +50,39 @@ All dated entries below are preserved unchanged as the historical record of the 
 ---
 
 ## Episode Entries
+### Ep236: Decoy (2023 California Cabernet Sauvignon, 2025 Sauvignon Blanc)
+**Date:** 2026-09-25
+**Series:** none (general episode / mass-market brand review, alongside Meiomi, Layer Cake, Two Buck Chuck)
+**Joe's selection:** Decoy Wine: Should You Buy It, or Duck It? (chosen from the presented batch; Joe's own placeholder "How Good (or Bad) Is Decoy Wine?" was included in the batch and assessed on equal terms, and he chose a different option)
+
+**Step 0 Research Findings:**
+- Episode covers Duckhorn as the parent company (Decoy created 1985 as the accessible label; Duckhorn Vineyards $60-$100+, Decoy $15-25), the Butterfly Equity acquisition of The Duckhorn Portfolio ($1.95B, late 2024), then a tasting of a 2023 California Cabernet Sauvignon and a 2025 Sauvignon Blanc. Also a Chef Paul tribe-name interview and an AI-apocalypse/fine-wine segment.
+- Show description leans hard on duck puns ("get your ducks in a row", "put down your ducking phone", "what the duck to do"); transcript uses "what the duck," "for duck's sake," "gateway duck."
+- Ratings: Cabernet Joe 6 / Carmela 6; Sauvignon Blanc Joe 6 / Carmela 6 (drink it, wouldn't buy). No title may reveal or hint at this (HR-39).
+
+**Step 0.5 Web Research Findings:**
+- Competitor content is mostly straight "Decoy Cabernet review" and value/second-label framing; one podcast used "A Familiar Duck or a Feathery Miss?".
+- No competitor found leading on the Duckhorn price ladder or the parent-company sale.
+- Phrasing/format only; not performance evidence. No prior Decoy session report existed; `docs/title-research-reference.md` has no Decoy-specific content.
+
+**Episode Hook:** Decoy is everywhere with a duck on the label, but is it worth buying, coming from a parent company that makes $100 wines?
+
+**Round 1 (5 titles, no hard-rule FAIL):** near-paraphrases flagged (corporate-fact + "Is It Any Good?" pair); decision hook late in "Everybody Sees Decoy Wine on the Shelf..."; "Duckhorn's $20 Wine" too loose.
+**Round 2 (revised batch, no hard-rule FAIL; Clickability is an internal comparative heuristic only):**
+- `Decoy Wine Is Everywhere. Should You Actually Buy It?` — PASS, 7 (revised from "on Every Shelf" for accuracy)
+- `Decoy's Parent Company Sold for $1.95 Billion. Is the Wine Any Good?` — PASS, 7
+- `Duckhorn Makes $100 Wines. Decoy Is Its $20 Duck.` — PASS, 7
+- `How Good (or Bad) Is Decoy Wine?` — PASS, 6 (Joe's placeholder; Session constraint PASS)
+- `Decoy Wine: Should You Buy It, or Duck It?` — PASS, 5, WARNING: borderline HR-66 (pun leans on the label), near-paraphrase of the "should you buy" promise, mild partial repeat of Ep233's "[Wine]: [subtitle]" colon shape.
+
+**Outcome:** Joe selected this title. It had been presented last because the batch was ordered by reviewer Clickability, and the identical title scored 8 in Round 1 and 5 in Round 2 from different reviewer runs; the reviewers' reasons for the two scores should have been compared instead of sorting on either number. Joe's selection, and an outside analysis Joe supplied that also preferred this title, are editorial judgments and not listener-performance evidence. The workflow correction is recorded in `docs/work-log.md` (Session 45).
+
+**Final title:** 42 characters; HR-15 (Decoy), HR-16, HR-17 ("Decoy" at char 1), HR-18, HR-39 all clear.
+
+**AEO Discoverability:** All candidates shared the named entity "Decoy"; no evidence-based differentiation per `docs/title-research-reference.md` (last reviewed 2026-08-21).
+
+---
+
 ### Ep234: British Bubbly (Henners 2018 Vintage Sparkling Blend)
 **Date:** 2026-09-06
 **Series:** They Make Wine in [Place]?!? (Ep91 New York, Ep106 Michigan, Ep142 Armenia, Ep162 Croatia) — first installment to insert a style-specifying modifier ("Sparkling") before "Wine"; a deliberate extension by Joe, not a pre-existing format requirement, since no prior installment needed to disambiguate a wine style.

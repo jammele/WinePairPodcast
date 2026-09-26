@@ -1,9 +1,9 @@
 # Episode Title Archive — The Wine Pair Podcast
 
-**Last updated:** 2026-09-06 (through Ep234, confirmed via `/review-titles`)
+**Last updated:** 2026-09-25 (through Ep236, confirmed via `/review-titles`; Ep235 not yet recorded here, see work-log Session 44)
 **Maintained by:** Claude — add each confirmed title here before committing episode work.
 
-**Latest confirmed title:** Ep234: They Make Sparkling Wine in England?!? (confirmed via `/review-titles`, 2026-09-06 — Joe's own title, submitted after rejecting the presented batch. See `data/title-session-reports.md` Ep234 entry and Patterns Learned.)
+**Latest confirmed title:** Ep236: Decoy Wine: Should You Buy It, or Duck It? (confirmed via `/review-titles`, 2026-09-25 — Joe chose this option from the presented batch, over his own placeholder "How Good (or Bad) Is Decoy Wine?". See `data/title-session-reports.md` Ep236 entry.)
 
 **Unresolved archive gap:** Ep220's episode number is not confirmed. `outputs/episodes/ep220-221-meet-the-makers-23-sake.md` (Special Episode! Meet the (Wine) Makers #23: Jun Kono and Leo Lê) is labeled "TBD (220 or 221)" in its own file. Ep221 is already confirmed as a different episode below (They Make Wine in Lebanon...). Do not infer or assign this episode's number; it requires Joe's confirmation.
 
@@ -201,6 +201,7 @@ Ep220 is excluded: its episode number is unresolved (see the archive-gap note ab
 
 | Ep | Title | Format pattern |
 |---|---|---|
+| 236 | Decoy Wine: Should You Buy It, or Duck It? | [Brand]: [Buy-or-skip question with duck pun] |
 | 234 | They Make Sparkling Wine in England?!? | Series (They Make Wine in [Place]?!?) + style modifier |
 | 233 | Aglianico Rosato: If You Love a Bold Red Wine, Try Its Rosé | [Wine]: [Conditional recommendation] |
 | 232 | Italian Wine Adventure #26: Schiava! Sommeliers Love This Chillable Red! | Series (IWA) + subtitle statement |
@@ -215,7 +216,6 @@ Ep220 is excluded: its episode number is unresolved (see the archive-gap note ab
 | 223 | This Ain't Chianti: Is Italian Sangiovese Better Outside Tuscany? | [Contrast hook]: [Question] |
 | 222 | Pinot Grigio Is Boring. Alsace Pinot Gris Is Its Richer, Weirder French Cousin. | [Dismissive claim]. [Contrasting discovery]. |
 | 221 | They Make Wine in Lebanon?!? Lebanon Was Wine Country Before France Was France. | Series (They Make Wine in [Place]?!?) + bold historical claim |
-| 219 | Is Two Buck Chuck Actually Terrible, or Is That Just Wine Snob Talk? | [Open accusation question] |
 
 ---
 
@@ -453,3 +453,4 @@ Ep231: Costco Kirkland Signature Châteauneuf-du-Pape Challenge!
 Ep232: Italian Wine Adventure #26: Schiava! Sommeliers Love This Chillable Red!
 Ep233: Aglianico Rosato: If You Love a Bold Red Wine, Try Its Rosé
 Ep234: They Make Sparkling Wine in England?!?
+Ep236: Decoy Wine: Should You Buy It, or Duck It?
