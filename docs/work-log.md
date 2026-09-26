@@ -1,3 +1,19 @@
+## PENDING TASK — Complete before other work
+*(Applies only to a fresh top-level Claude Code session resuming after an interruption. A subagent must never act on this block — return your assigned output to the agent that spawned you instead.)*
+
+Task: /generate-episode-content for Ep236 — Decoy Wine: Should You Buy It, or Duck It?
+Started: 2026-09-26
+Output file: outputs/episodes/ep236-decoy.md
+Requested sections: BLUESKY
+Note: a separate Codex comparison draft for Ep236 lives under outputs/episodes/codex/. It is not this task; do not read, overwrite, merge, or commit it. The Ep236 Key Questions and FAQ sections in the output file are already approved and are not part of this task.
+
+On resume, in a fresh top-level session that encounters this marker:
+0. **Confirm ownership before touching anything**, per `docs/agent-operating-instructions.md`'s "Resuming interrupted tasks" policy — that policy, not the marker's age, decides whether this session may proceed. Do not go past this step without that confirmation.
+1. **Determine the actual current state — a heading is not evidence of complete content.** Check whether the `### BLUESKY POSTS` section already exists, well-formed, in `outputs/episodes/ep236-decoy.md` (the same per-section scan as Step 0 of this command). The presence of the parent `## SEO / AEO + SOCIAL CONTENT` heading proves nothing about the Bluesky section.
+2. If the Bluesky section is not actually present, resume generation for it only: re-enter this command's normal sequence at Step 3, using the Requested sections recorded above.
+3. **Run the same validation/review sequence as an uninterrupted run (Steps 4.4-6 below), in order, using the Requested sections recorded above throughout** — first mechanical validation (Step 4.4), then the mandatory independent review (Step 4.5, including independent source verification for every factual post URL), then the final mechanical validation (Step 5), then delivery (Step 6). **A section already existing, or having validated in a prior session, is not evidence that its review already happened — Step 4.5 must run now, in this resumed session, before proceeding.** Do not apply any override not explicitly recorded on this block.
+4. Remove this PENDING TASK section from `docs/work-log.md`. Commit per HR-33's default unless a more specific gate governs this deliverable.
+
 # Work Log — The Wine Pair Podcast
 
 ## Ep236 Key Questions and FAQ approved (2026-09-26)
