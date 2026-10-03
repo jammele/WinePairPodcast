@@ -1,35 +1,8 @@
-## PENDING TASK — Complete before other work
-*(Applies only to a fresh top-level Claude Code session resuming after an interruption. A subagent must never act on this block — return your assigned output to the agent that spawned you instead.)*
-
-Task: /generate-episode-content for Ep237 — WTF is Sylvaner? Your Oktoberfest Wine?
-Started: 2026-10-03
-Output file: outputs/episodes/ep237-sylvaner.md
-Requested sections: KEY_QUESTIONS,FAQ,BLUESKY
-
-On resume, in a fresh top-level session that encounters this marker:
-0. **Confirm ownership before touching anything**, per `docs/agent-operating-instructions.md`'s "Resuming interrupted tasks" policy — that policy, not the marker's age, decides whether this session may proceed. Do not go past this step without that confirmation.
-1. **Determine the actual current state — a heading is not evidence of complete content.** For each name in Requested sections above, check whether that section's actual content already exists, well-formed, in `outputs/episodes/ep237-sylvaner.md` (the same per-section scan as Step 0 of this command). The presence of the parent `## SEO / AEO + SOCIAL CONTENT` heading proves nothing about any individual requested section. Separately, check for a partial audit checkpoint at `outputs/episodes/faq-audits/ep237-faq-audit.md` (Step 2.9a); if one exists, read it and reuse its recorded findings and source locations after checking they're still applicable and current — a source fetched shortly before the interruption is almost certainly still good; re-verify only if something about the claim or elapsed time makes staleness plausible. Do not blindly re-fetch everything from scratch, and do not adopt the checkpoint's conclusions unchecked — the independent review in step 3 still applies in full regardless of what's reused.
-2. For any Requested section not yet actually present, resume generation for that section only: re-enter this command's normal sequence at Step 3, using the Requested sections and Approved overrides recorded above, and the checkpoint from step 1.
-3. **Run the same validation/review sequence as an uninterrupted run (Steps 4.4-6 below), in order, using the Requested sections and Approved overrides recorded above throughout** — first mechanical validation (Step 4.4, with those same overrides), then the mandatory independent review (Step 4.5), then the final mechanical validation (Step 5), then delivery (Step 6). **A section already existing, or having validated in a prior session, is not evidence that its review already happened — Step 4.5 must run now, in this resumed session, before proceeding.** Resolve every actionable defect it finds, or report a genuine named blocker per the same rules as an uninterrupted run. Do not validate sections beyond what was originally requested, and do not apply any override not explicitly recorded on this block — an unrecorded override is never authorized on resume.
-4. Remove this PENDING TASK section from `docs/work-log.md`. Commit per HR-33's default unless a more specific gate governs this deliverable.
-
-## PENDING TASK — Complete before other work
-*(Applies only to a fresh top-level Claude Code session resuming after an interruption. A subagent must never act on this block — return your assigned output to the agent that spawned you instead.)*
-
-Task: /generate-episode-content for Ep236 — Decoy Wine: Should You Buy It, or Duck It?
-Started: 2026-09-26
-Output file: outputs/episodes/ep236-decoy.md
-Requested sections: BLUESKY
-Note: a separate Codex comparison draft for Ep236 lives under outputs/episodes/codex/. It is not this task; do not read, overwrite, merge, or commit it. The Ep236 Key Questions and FAQ sections in the output file are already approved and are not part of this task.
-
-On resume, in a fresh top-level session that encounters this marker:
-0. **Confirm ownership before touching anything**, per `docs/agent-operating-instructions.md`'s "Resuming interrupted tasks" policy — that policy, not the marker's age, decides whether this session may proceed. Do not go past this step without that confirmation.
-1. **Determine the actual current state — a heading is not evidence of complete content.** Check whether the `### BLUESKY POSTS` section already exists, well-formed, in `outputs/episodes/ep236-decoy.md` (the same per-section scan as Step 0 of this command). The presence of the parent `## SEO / AEO + SOCIAL CONTENT` heading proves nothing about the Bluesky section.
-2. If the Bluesky section is not actually present, resume generation for it only: re-enter this command's normal sequence at Step 3, using the Requested sections recorded above.
-3. **Run the same validation/review sequence as an uninterrupted run (Steps 4.4-6 below), in order, using the Requested sections recorded above throughout** — first mechanical validation (Step 4.4), then the mandatory independent review (Step 4.5, including independent source verification for every factual post URL), then the final mechanical validation (Step 5), then delivery (Step 6). **A section already existing, or having validated in a prior session, is not evidence that its review already happened — Step 4.5 must run now, in this resumed session, before proceeding.** Do not apply any override not explicitly recorded on this block.
-4. Remove this PENDING TASK section from `docs/work-log.md`. Commit per HR-33's default unless a more specific gate governs this deliverable.
-
 # Work Log — The Wine Pair Podcast
+
+## Ep237 Key Questions, FAQ and Bluesky posts generated (2026-10-03, uncommitted, awaiting Joe's review)
+
+Title confirmed and committed earlier this session (`8679567`): "WTF is Sylvaner? Your Oktoberfest Wine?" (Joe's own working title; first WTF installment with a subtitle). Script doc ID: `1M0nZg7DRyn0kso_2wZhjvsmVgdT8dvvyfhBpxzgEKpo`. Ran `/generate-episode-content` for KEY_QUESTIONS, FAQ and BLUESKY. Saved to `outputs/episodes/ep237-sylvaner.md`; audit at `outputs/episodes/faq-audits/ep237-faq-audit.md`. Six Key Questions/FAQ pairs: what Sylvaner is; whether it's a good Oktoberfest wine; German Silvaner vs Alsace Sylvaner; why the two spellings; food pairings; why the flat, round (Bocksbeutel) bottle. Six Bluesky posts: one podcast-link post (homepage; episode URL not yet published) and five factual posts (spelling change after WWI, Franken vs Alsace style tendency, Bocksbeutel EU protection and name theories, Silvaner's decline and Franken's dry-style comeback, Oktoberfest pairing with fuller, earthier Silvaners). Independent Step 4.5 review failed four material defects in the first draft, all fixed and re-reviewed to PASS: an overstated Alsace style claim ("broader and riper," lower-authority source, conflicts with the official Vins d'Alsace description) narrowed to The Grape Grind's hedged wording; a hearty-food pairing claim that dropped its source's "powerful or earthy" qualifier (removed from FAQ Q2, scoped in post 6); Q1 said nothing about what the wine is like (now "usually dry, not especially aromatic"); a "same grape" refrain repeated across three posts. Open item for Joe: the episode's on-air claim that Alsace Sylvaner is richer because of extended lees contact, skin maceration and sometimes oak was not corroborated by any source and is left out of all published content. Mechanical validation passes. Nothing published; content not committed. The PENDING TASK marker for this task (committed as `578582f`) is removed.
 
 ## Ep236 Key Questions and FAQ approved (2026-09-26)
 
