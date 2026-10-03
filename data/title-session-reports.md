@@ -43,6 +43,8 @@ All dated entries below are preserved unchanged as the historical record of the 
 
 **Ep227 (correction, before selection):** Joe rejected a presented title (Carmela reference) on sight and corrected the review process itself, not just this episode's options. Titles exist to attract new listeners, not to reward people who already know the show — any hook requiring a co-host's name, a running bit, or an established show rule to parse should be cut before it's ever shown, not left for Joe to catch. He also required every title to carry a visible score (the HR-61 series exemption is from the quality-gate floor, not from being scored) and required the final recommendation to be grounded in objective third-party research (external CTR/headline studies, or the show's own Meiomi benchmark) rather than the internal reviewer subagent's own scoring alone. Codified as HR-66 and HR-67. Going forward: the Round 2 subagent prompt must explicitly instruct the reviewer to FAIL any title requiring insider/prior-listener context, and the final response to Joe must always include a scored table plus evidence-based reasoning, not just a bulleted list of options.
 
+**Ep237 (2026-10-03): A Joe-written subtitle on the WTF series was kept over the bare format.** Unlike Ep226 (where Joe picked bare `WTF is Verdejo?` over a subtitled option), Joe wrote and kept "WTF is Sylvaner? Your Oktoberfest Wine?" — the first WTF installment with a subtitle. Series recognition does not always outweigh a subtitle for Joe; when the subtitle comes from his own on-air pitch (here, Sylvaner as an Oktoberfest wine for non-beer drinkers), he keeps it. When Joe arrives with a working title he likes and asks only for genuinely better alternatives, presenting none is a valid outcome — don't pad the set.
+
 **Ep234 (2026-09-06): A rule-compliance fix must be re-checked against Step 0's episode framing, not treated as finished once the flagged rule passes.** Round 1 flagged three presented titles for HR-19 (they used "Bubbly" instead of the "They Make Wine in [Place]?!?" series' locked noun, "Wine"). The fix (swapping "Bubbly" back to "Wine") cleared the rule but silently discarded the episode's actual defining subject: this episode is specifically about *sparkling* wine, not English wine generally, which Step 0 had already correctly identified. As a result, 3 of the 4 presented options lost the episode's real topic as a side effect of a hard-rule fix. Joe rejected the full batch and supplied his own title, "They Make Sparkling Wine in England?!?" — the first installment of this series to insert a style-specifying modifier before "Wine," which no prior installment needed since none of them were about a specific wine style. Going forward: any title revised solely to fix a hard-rule FAIL must be re-checked against Step 0's episode-framing bullets before being treated as clean — passing the flagged rule is not the same as still being accurate to the episode.
 
 **Ep229 (two corrections in one session, both codified as house rules):** First, Claude failed to recognize the episode doc's own name ("Italian Wine Adventure #25: Vermentino!") as an already-confirmed series title and asked Joe to state a title he had already given — root cause was never cross-checking the doc name against the series list in `data/episode-titles.md` before assuming a title was missing. Fixed via HR-70 and an HR-37 amendment folding the check into the episode-announcement flow itself. Second, when generating a subtitle, Claude's first batch researched generic external Vermentino trivia (climate resilience, DNA-twin grapes, terroir) instead of building on "summer sipper" — the episode's own dominant content and the exact angle Joe explicitly told Claude to focus on. Joe rejected the batch as too long (80-93 chars) and disconnected from the episode. Fixed by reordering `/review-titles` so the episode's own stated content is extracted before external research runs, with a blocking gate if a Joe-named angle isn't reflected in any surviving option (see the command file). Joe also caught that the internal 1-10 AI Discovery/Clickability scores were being presented as if they reflected measured CTR data (an unsupported "60% lift" claim), and that AEO discoverability hadn't been considered at all. Fixed via an HR-67 amendment requiring scores to always be labeled as internal heuristics, an explicit AEO line in every recommendation, and a new standing reference file `docs/title-research-reference.md` so this research is read and reused rather than re-derived (or skipped) each session. Pattern to carry forward: when Joe names a specific content angle to build around, treat it as the primary source of hook material, not one input competing with generic external trivia — check the final option set against it explicitly before presenting.
@@ -50,6 +52,37 @@ All dated entries below are preserved unchanged as the historical record of the 
 ---
 
 ## Episode Entries
+### Ep237: Sylvaner (2022 Mouton Bleu Sylvaner, Alsace + 2023 Hans Wirsching Iphöfer Silvaner, Franken)
+**Date:** 2026-10-03
+**Series:** WTF is [Wine]? (first installment with a subtitle; prefix unchanged per HR-19)
+**Joe's selection:** WTF is Sylvaner? Your Oktoberfest Wine? (Joe's own working title; he asked only for a check and for alternatives genuinely better than it. None were, so only his title was presented.)
+
+**Step 0 Episode Framing:**
+- Episode covers the I vs. Y spelling (Germany vs. Alsace/international) and the matching style split, the grape's history (Cistercian monks, 1970s overproduction slump, 1985 Austrian antifreeze scandal, Franken's dry-style comeback, Zotzenberg Grand Cru), and the Bocksbeutel bottle (name possibly from "ram scrotum", which Joe hedges with "some people say").
+- Joe pitches Sylvaner on air as an Oktoberfest wine for people who'd rather not drink beer; Carmela echoes it. This was Joe's chosen angle.
+- Ratings (not to be revealed): Alsace Joe 5 / Carmela 5; Franken Joe 7 / Carmela 7; verdict "want to try more, not yet a go-to, lean German."
+
+**Step 0.5 Web Research Findings:**
+- Competitor content frames Sylvaner as "underrated white gem," "Wine Queen of Franconia," Alsace Grand Cru; YouTube is mostly "What is Silvaner?" explainers and producer videos.
+- No wine-podcast episode surfaced for the grape; no competitor uses the Oktoberfest angle.
+- Phrasing/format only; not performance evidence. No prior Sylvaner session report existed.
+
+**Episode Hook:** An obscure German/Alsace white pitched as your Oktoberfest wine, tasted in a Y version and an I version (one in the scrotum-named bottle).
+
+**Round 1 (4 titles, no hard-rule FAIL; Clickability is an unverified internal annotation):**
+- `WTF is Sylvaner? Your Oktoberfest Wine?` — PASS, 39 chars, 7; Session constraint: baseline. Reviewer's strongest option. Minor warnings: seasonal hook (Munich Oktoberfest ends Oct 4, 2026), subtitle omits the "if beer isn't your jam" reason.
+- `WTF is Sylvaner? The Oktoberfest Wine in a Ram Scrotum Bottle?!` — PASS, 63 chars, 8; Session constraint NEEDS REVISION: states a hedged etymology as fact, "The" overclaims vs. "Your", crude term becomes the headline.
+- `WTF is Sylvaner? Your Oktoberfest Wine in a Weird Bottle?` — PASS, 57 chars, 6; NEEDS REVISION: vague, and only the Franken wine has the odd bottle.
+- `WTF is Sylvaner? Your Oktoberfest Wine? (Wait Till You See the Bottle)` — PASS, 70 chars, 6; NEEDS REVISION: promises something visual to an audio audience.
+
+**Round 2:** Not run — nothing was revised; the alternatives were dropped under Joe's "only better" instruction and only his unchanged title was presented.
+
+**Format note:** HR-19 judged the subtitle a format-precedent question, not a FAIL (the Ep227 FAIL treatment predates the Ep234 HR-19 revision).
+
+**AEO Discoverability:** All candidates shared "Sylvaner" and "Oktoberfest wine"; no evidence-based differentiation per `docs/title-research-reference.md`.
+
+---
+
 ### Ep236: Decoy (2023 California Cabernet Sauvignon, 2025 Sauvignon Blanc)
 **Date:** 2026-09-25
 **Series:** none (general episode / mass-market brand review, alongside Meiomi, Layer Cake, Two Buck Chuck)
