@@ -1,9 +1,9 @@
 # Episode Title Archive — The Wine Pair Podcast
 
-**Last updated:** 2026-10-03 (through Ep237, confirmed via `/review-titles`; Ep235 not yet recorded here, see work-log Session 44)
+**Last updated:** 2026-10-10 (through Ep238, confirmed via `/review-titles`; Ep235 not yet recorded here, see work-log Session 44)
 **Maintained by:** Claude — add each confirmed title here before committing episode work.
 
-**Latest confirmed title:** Ep237: WTF is Sylvaner? Your Oktoberfest Wine? (confirmed via `/review-titles`, 2026-10-03 — Joe's own working title; no presented alternative beat it. First WTF installment with a subtitle. See `data/title-session-reports.md` Ep237 entry.)
+**Latest confirmed title:** Ep238: Crémant de Loire: Champagne Taste on a Beer Budget! (confirmed via `/review-titles`, 2026-10-10 — Joe's own working title; ranked first by Claude and both reviewer rounds against four alternatives. See `data/title-session-reports.md` Ep238 entry.)
 
 **Unresolved archive gap:** Ep220's episode number is not confirmed. `outputs/episodes/ep220-221-meet-the-makers-23-sake.md` (Special Episode! Meet the (Wine) Makers #23: Jun Kono and Leo Lê) is labeled "TBD (220 or 221)" in its own file. Ep221 is already confirmed as a different episode below (They Make Wine in Lebanon...). Do not infer or assign this episode's number; it requires Joe's confirmation.
 
@@ -202,6 +202,7 @@ Ep220 is excluded: its episode number is unresolved (see the archive-gap note ab
 
 | Ep | Title | Format pattern |
 |---|---|---|
+| 238 | Crémant de Loire: Champagne Taste on a Beer Budget! | [Wine]: [Idiom exclamation] |
 | 237 | WTF is Sylvaner? Your Oktoberfest Wine? | Series (WTF is [Wine]?) + subtitle question |
 | 236 | Decoy Wine: Should You Buy It, or Duck It? | [Brand]: [Buy-or-skip question with duck pun] |
 | 234 | They Make Sparkling Wine in England?!? | Series (They Make Wine in [Place]?!?) + style modifier |
@@ -216,7 +217,6 @@ Ep220 is excluded: its episode number is unresolved (see the archive-gap note ab
 | 225 | Costco Kirkland Signature Challenge: Pauillac vs. Saint-Julien Bordeaux! | Series (Costco Kirkland Challenge) |
 | 224 | Is Moscato d'Asti the Sweet Wine Serious Wine People Won't Admit They Love? | [Social-status hook]: [Question] |
 | 223 | This Ain't Chianti: Is Italian Sangiovese Better Outside Tuscany? | [Contrast hook]: [Question] |
-| 222 | Pinot Grigio Is Boring. Alsace Pinot Gris Is Its Richer, Weirder French Cousin. | [Dismissive claim]. [Contrasting discovery]. |
 
 ---
 
@@ -456,3 +456,4 @@ Ep233: Aglianico Rosato: If You Love a Bold Red Wine, Try Its Rosé
 Ep234: They Make Sparkling Wine in England?!?
 Ep236: Decoy Wine: Should You Buy It, or Duck It?
 Ep237: WTF is Sylvaner? Your Oktoberfest Wine?
+Ep238: Crémant de Loire: Champagne Taste on a Beer Budget!

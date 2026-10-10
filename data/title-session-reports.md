@@ -52,6 +52,44 @@ All dated entries below are preserved unchanged as the historical record of the 
 ---
 
 ## Episode Entries
+### Ep238: Crémant de Loire (Gratien & Meyer Crémant de Loire Brut NV, Langlois Crémant de Loire Brut Rosé NV)
+**Date:** 2026-10-10
+**Series:** none (Ep54 "Holiday Sparkling Wines #1: Crémant!" is a different series). On air Joe plans more Crémant regions over the coming months (Limoux and Bourgogne already listed); asked whether to set a shared "Crémant de [Region]: [subtitle]" pattern, Joe declined to decide on one.
+**Joe's selection:** Crémant de Loire: Champagne Taste on a Beer Budget! (Joe's own working title from the show notes; he asked for it to be treated as the leading candidate and scored on equal terms with alternatives. Claude and both reviewer rounds ranked it first.)
+
+**Step 0 Episode Framing:**
+- Episode spine is Crémant vs. Champagne: same traditional method, 9 vs. 12 months on lees, fruitier, far cheaper ("hard to find Champagne under like 40 bucks"; good Crémant "in the $20 range"). Also a tour of all ten Crémant appellations; Loire history (Ackerman 1811/1834, "Saumur Champagne" banned 1892 after Champagne producers sued, Bollinger and Taittinger buying Loire houses in the 1970s, AOC 1975); Chenin Blanc and Cabernet Franc as hero grapes; "flutes are over."
+- Joe's angle: "Champagne taste but a beer budget," said three times on air (cold open, recommend-us segment, before the tasting) and echoed in the show description.
+- Ratings (not to be revealed): Brut Joe 7 / Carmela 7 ("a generous seven"); Rosé Joe 7 / Carmela 8.
+
+**Step 0.5 Web Research Findings:**
+- Reviews (Drinkhacker, Decanter, Jancis Robinson) are straight tasting notes with value-for-money framing.
+- Podcasts use "Champagne vs. Crémant" (Eat Sleep Wine Repeat), puns ("Crème de la Crémant"), and a "match Champagne without breaking the budget" angle (Cheers! Der Weinpodcast), so the value angle is not novel; its strength here is Joe's voice.
+- YouTube search returned no videos. No competitor led with the lawsuit-then-buyout story.
+- Phrasing/format only; not performance evidence. No prior Crémant session report existed. `docs/title-research-reference.md` used as-is for AEO.
+
+**Episode Hook:** Champagne is expensive; Crémant de Loire is made the same way from Chenin Blanc and Cabernet Franc for about $20. Are these two bottles worth it?
+
+**Round 1 (5 titles; Clickability is an unverified internal annotation):**
+- `Crémant de Loire: Champagne Taste on a Beer Budget!` — PASS, 51 chars, 7. Strongest voice fit; soft colon-shape repeat of Ep233/Ep236.
+- `Crémant de Loire: Champagne Sued It, Then Wanted In` — **FAIL (HR-3 accuracy):** the 1892 suit predated the Crémant de Loire name (1975). Revised.
+- `Crémant de Loire: Can $20 Bubbly Pass for Champagne?` — PASS, 7; implied a Champagne comparison the episode doesn't stage. Replaced.
+- `Sparkling Chenin Blanc? Meet Crémant de Loire!` — PASS, 6; scope warning (Brut is 40% Chenin, Rosé has none).
+- `Crémant de Loire: Why Pay Champagne Prices?` — PASS, 6; near-paraphrase of Joe's title.
+
+**Round 2 (all PASS, fresh reviewer):**
+- `Crémant de Loire: Champagne Taste on a Beer Budget!` — 7.
+- `Crémant de Loire: Champagne Sued the Loire, Then Bought In` — 7; history/feud segment is ~3.5 minutes, so it oversells a secondary segment.
+- `Crémant de Loire Is Made Like Champagne for About $20. Is It Any Good?` — 6; "for About $20" can parse as production cost; most clinical.
+- `Sparkling Chenin Blanc? Meet Crémant de Loire!` — 5.
+- `Crémant de Loire: Why Pay Champagne Prices?` — 5; presented as an alternate phrasing of the first title, not a distinct angle.
+
+**Final title:** 51 characters; HR-15 (Crémant de Loire), HR-16, HR-17 ("Crémant de Loire" at char 1), HR-18, HR-39 (idiom describes the drinker, not the wine's rating), HR-66 all clear. Third "[Wine]: [subtitle]" colon title in four episodes (Ep233, Ep236); subtitle types differ, so treated as a soft repeat.
+
+**AEO Discoverability:** All candidates shared "Crémant de Loire" and most "Champagne"; no evidence-based differentiation per `docs/title-research-reference.md`.
+
+---
+
 ### Ep237: Sylvaner (2022 Mouton Bleu Sylvaner, Alsace + 2023 Hans Wirsching Iphöfer Silvaner, Franken)
 **Date:** 2026-10-03
 **Series:** WTF is [Wine]? (first installment with a subtitle; prefix unchanged per HR-19)
